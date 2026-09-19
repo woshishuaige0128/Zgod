@@ -1,0 +1,15 @@
+{
+  "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+  "curve_id": "division1_guyan",
+  "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D1_Guyan\\full-grid\\stable_mask.csv",
+  "source_sha256": "1A4F130D65158E146E0987E1C5C06E100287540A2E4C73C7CCB9955803FA6707",
+  "mask_rows": 31,
+  "mask_columns": 67,
+  "stable_point_count": 672,
+  "component_count_8_connected": 1,
+  "hole_pixel_count": 0,
+  "returned_boundary_count": 1,
+  "selected_full_boundary_point_count": 191,
+  "selected_visible_open_boundary_point_count": 100,
+  "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+}

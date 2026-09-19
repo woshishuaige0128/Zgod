@@ -1,0 +1,28 @@
+{
+  "boundary_difference_rows_independently_recomputed": 335,
+  "boundary_rows_independently_recomputed": 737,
+  "check_summary": {
+    "fail": 0,
+    "pass": 64,
+    "total": 64
+  },
+  "claim_rows_independently_recomputed": 10,
+  "clean_probe_action_id": "b3c1029d-dc26-4b99-9b5f-e7b43302c89d",
+  "clean_probe_receipt_sha256": "519E7FE31F95132ED890B28083B851820A412DBCFC88F0B2675CA4D1C7BA75CF",
+  "contract_sha256": "D2FBF79774868C539BB9AD01EB1ACB0E833906D20E43A457D8C592CC0EE3095F",
+  "execution_pipeline_status": "PASS",
+  "figure_quality_expected_count": 4,
+  "figure_quality_pass_count": 4,
+  "formal_success_directories_created": false,
+  "fs_protocol_sha256": "3634772C2DC070FD4C24B8B7780B7006F918A80A08F033E8F15A2C09D5FBBC57",
+  "generator_sha256": "42B094B03D2DBA4EA8B4176EA21633BFCDBFFF0477B884AAE3B2F512FC8057C5",
+  "manual_visual_review_sha256": "9DA7E8095CE1E86B5F4EB25573FCCF868103888DD514A3CBFDA104A54D4E91F1",
+  "next_step_started": false,
+  "overall_status": "PASS",
+  "pointwise_rows_independently_recomputed": 10385,
+  "protected_file_count": 163,
+  "repeatability_status": "PASS",
+  "schema_version": "board20_step6_independent_validation_v2",
+  "scientific_object_gate_status": "FAIL_RETAIN_PLOTTING_LEVEL",
+  "validator_sha256": "A0FD70E370B6F0E729CC177C9CD67A9454448885A16B5097D92D678E4A74EFD2"
+}

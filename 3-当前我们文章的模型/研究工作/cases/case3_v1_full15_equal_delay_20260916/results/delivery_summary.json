@@ -1,0 +1,17 @@
+{
+  "earthquake_exceptions": [
+    {
+      "division": 1,
+      "n": 3,
+      "floor": 3,
+      "Guyan": 0.022577415344653354,
+      "CB": 0.022824390282239693
+    }
+  ],
+  "max_frf_identity_residual": 3.424395062609075e-14,
+  "matlab_complete_record_max": 3.6171756807316218e-12,
+  "theory_checks": 1605,
+  "formal_response_checks": 84,
+  "matlab_records": 6,
+  "max_refined_eq_nrmse": 0.005386781347759135
+}

@@ -1,0 +1,4 @@
+﻿component,status,evidence_level,evaluated_in_board20,scope_note
+critical_delay,EVALUATED_PLOTTING_LEVEL_HISTORICAL_VALUE_ONLY,历史值,True,历史掩膜派生量已审计但计算路线未闭合
+frequency_bands,NOT_EVALUATED,历史值,False,不在板块20稳定域范围
+response_amplitude_errors,NOT_EVALUATED,历史值,False,不在板块20稳定域范围

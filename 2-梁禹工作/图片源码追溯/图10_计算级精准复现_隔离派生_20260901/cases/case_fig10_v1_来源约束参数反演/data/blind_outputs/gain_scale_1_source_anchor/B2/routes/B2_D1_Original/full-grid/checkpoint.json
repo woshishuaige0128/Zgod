@@ -1,0 +1,18 @@
+{
+  "bundle_sha256": "92AEEA7E549D8630CEB1D7395ADD1575B22AFDF1226B493061B16362CB6E42ED",
+  "completed_point_count": 2077,
+  "contract_hash": "271AC6ADCFDAB74DAAC7168BEF111096F3EA65816000FFC8EFBD2B32B25A9014",
+  "contract_id": "B2",
+  "error": null,
+  "manifest_sha256": "0F8886ECE3E8DE74DEF9CFF1EFC9CE740606E8077AC3895A3FEE4B402CF1E5C7",
+  "mode": "full-grid",
+  "next_point_index": 2077,
+  "point_selection_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+  "results_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\gain_scale_1_source_anchor\\B2\\routes\\B2_D1_Original\\full-grid\\points.csv",
+  "results_csv_sha256": "4595F6A33BC8A714C21D0098DBB90CA9F8023334519130653F7506D28CB5516D",
+  "route_fingerprint": "1281D665A638A5DC979568FAE05CEB4A14A626909E24790D312A5A67AF87D266",
+  "route_id": "B2_D1_Original",
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "status": "COMPLETE",
+  "total_point_count": 2077
+}

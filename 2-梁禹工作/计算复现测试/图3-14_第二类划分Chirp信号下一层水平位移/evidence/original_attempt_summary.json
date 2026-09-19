@@ -1,0 +1,605 @@
+{
+  "schema": "board18-original-saved-state-attempt-v1",
+  "scope": "Frozen author SLX saved-state inspection/update/sim attempt; no path edits, no line repair, no input bypass, no save_system.",
+  "parameter_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\PDmonicanshu.m",
+  "models": [
+    {
+      "model_label": "第一类原始模型",
+      "model_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\lvxvjie_guyan_2.slx",
+      "sha256_before": "01D23182120E49F84BA333E4393E7CB56D01242C65A0E68FC84B1F31BCCD330E",
+      "sha256_after": "01D23182120E49F84BA333E4393E7CB56D01242C65A0E68FC84B1F31BCCD330E",
+      "sha256_match": true,
+      "parameter_status": "SUCCESS",
+      "load_status": "SUCCESS",
+      "update_status": "ERROR",
+      "simulation_status": "ERROR",
+      "dirty_after_load": "off",
+      "dirty_after_update": "off",
+      "dirty_after_sim": "off",
+      "load_error_identifier": "",
+      "load_error_message": "",
+      "update_error_identifier": "MATLAB:MException:MultipleErrors",
+      "update_error_message": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。",
+      "simulation_error_identifier": "MATLAB:MException:MultipleErrors",
+      "simulation_error_message": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。",
+      "close_status": "SUCCESS_WITHOUT_SAVE",
+      "close_error_identifier": "",
+      "close_error_message": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "model_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\lvxvjie_guyan.slx",
+      "sha256_before": "975B3D75137CADD04F08AF4583C51C4883CF6DE992080CC8009A1FF92E76099D",
+      "sha256_after": "975B3D75137CADD04F08AF4583C51C4883CF6DE992080CC8009A1FF92E76099D",
+      "sha256_match": true,
+      "parameter_status": "SUCCESS",
+      "load_status": "SUCCESS",
+      "update_status": "ERROR",
+      "simulation_status": "ERROR",
+      "dirty_after_load": "off",
+      "dirty_after_update": "off",
+      "dirty_after_sim": "off",
+      "load_error_identifier": "",
+      "load_error_message": "",
+      "update_error_identifier": "MATLAB:MException:MultipleErrors",
+      "update_error_message": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。",
+      "simulation_error_identifier": "MATLAB:MException:MultipleErrors",
+      "simulation_error_message": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。",
+      "close_status": "SUCCESS_WITHOUT_SAVE",
+      "close_error_identifier": "",
+      "close_error_message": ""
+    }
+  ],
+  "parameter_attempts": [
+    {
+      "model_label": "第一类原始模型",
+      "model_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\lvxvjie_guyan_2.slx",
+      "parameter_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\PDmonicanshu.m",
+      "status": "SUCCESS",
+      "MRrt_size": "15x15",
+      "CRrt_size": "15x15",
+      "KRrt_size": "15x15",
+      "error_identifier": "",
+      "error_message": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "model_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\lvxvjie_guyan.slx",
+      "parameter_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\PDmonicanshu.m",
+      "status": "SUCCESS",
+      "MRrt_size": "15x15",
+      "CRrt_size": "15x15",
+      "KRrt_size": "15x15",
+      "error_identifier": "",
+      "error_message": ""
+    }
+  ],
+  "callbacks": [
+    {
+      "model_label": "第一类原始模型",
+      "callback": "PreLoadFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "PostLoadFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "InitFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "StartFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "PauseFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "ContinueFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "StopFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "PreSaveFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "PostSaveFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第一类原始模型",
+      "callback": "CloseFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "PreLoadFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "PostLoadFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "InitFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "StartFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "PauseFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "ContinueFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "StopFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "PreSaveFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "PostSaveFcn",
+      "state": "EMPTY",
+      "value": ""
+    },
+    {
+      "model_label": "第二类原始模型",
+      "callback": "CloseFcn",
+      "state": "EMPTY",
+      "value": ""
+    }
+  ],
+  "fromfile_paths": [
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/\n地震-加速度1/Ground motion record/From File",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\ElCentroAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\ElCentroAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/\n地震-加速度1/Ground motion record/From File1",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\KobeAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\KobeAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/\n地震-加速度1/Ground motion record/From File2",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\MorganAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\MorganAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/\n地震-加速度1/Ground motion record/From File",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\ElCentroAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\ElCentroAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/\n地震-加速度1/Ground motion record/From File1",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\KobeAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\KobeAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/\n地震-加速度1/Ground motion record/From File2",
+      "file_name_saved": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\MorganAccelNoScaling.mat",
+      "is_absolute_path": true,
+      "absolute_path": "D:\\matlab\\SimTool_maRTHS_BenchM_V4 R2019b\\Support_files\\Ground_motions\\MorganAccelNoScaling.mat",
+      "absolute_path_basis": "SAVED_ABSOLUTE",
+      "path_exists_as_saved": false,
+      "path_exists_absolute": false
+    }
+  ],
+  "root_source_connections": [
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan_2/Gain5",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan_2/地震激励-力2",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan_2/地震激励-力1",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan_2/地震激励-力",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/Chirp Signal2",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "",
+      "destination_block_type": "",
+      "destination_port": null,
+      "connection_status": "UNCONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "source_block": "lvxvjie_guyan_2/Step1",
+      "source_block_type": "Step",
+      "source_port": 1,
+      "destination_block": "",
+      "destination_block_type": "",
+      "destination_port": null,
+      "connection_status": "UNCONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan/Gain5",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan/地震激励-力2",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan/地震激励-力1",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "lvxvjie_guyan/地震激励-力",
+      "destination_block_type": "Gain",
+      "destination_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/Chirp Signal2",
+      "source_block_type": "SubSystem",
+      "source_port": 1,
+      "destination_block": "",
+      "destination_block_type": "",
+      "destination_port": null,
+      "connection_status": "UNCONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "source_block": "lvxvjie_guyan/Step1",
+      "source_block_type": "Step",
+      "source_port": 1,
+      "destination_block": "",
+      "destination_block_type": "",
+      "destination_port": null,
+      "connection_status": "UNCONNECTED"
+    }
+  ],
+  "solver_settings": [
+    {
+      "model_label": "第一类原始模型",
+      "start_time": "0.0",
+      "stop_time": "40",
+      "solver_type": "Fixed-step",
+      "solver": "ode4",
+      "fixed_step": "dt"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "start_time": "0.0",
+      "stop_time": "40",
+      "solver_type": "Fixed-step",
+      "solver": "ode4",
+      "fixed_step": "dt"
+    }
+  ],
+  "to_workspace_variables": [
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/\n地震-加速度1/GROUND\nACCELERATION",
+      "variable_name": "EQ_input",
+      "save_format": "Array",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1/EQ scaling factor",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/\n地震-加速度1/To Workspace",
+      "variable_name": "t",
+      "save_format": "Array",
+      "sample_time": "dt",
+      "source_block": "lvxvjie_guyan_2/\n地震-加速度1/Clock",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/To Workspace",
+      "variable_name": "simout3",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan_2/Gain",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/To Workspace1",
+      "variable_name": "simout",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan_2/Gain7",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "block": "lvxvjie_guyan_2/To Workspace2",
+      "variable_name": "simout1",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan_2/Gain8",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/\n地震-加速度1/GROUND\nACCELERATION",
+      "variable_name": "EQ_input",
+      "save_format": "Array",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1/EQ scaling factor",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/\n地震-加速度1/To Workspace",
+      "variable_name": "t",
+      "save_format": "Array",
+      "sample_time": "dt",
+      "source_block": "lvxvjie_guyan/\n地震-加速度1/Clock",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/To Workspace",
+      "variable_name": "simout3",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan/Gain",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/To Workspace1",
+      "variable_name": "simout",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan/Gain7",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "block": "lvxvjie_guyan/To Workspace2",
+      "variable_name": "simout1",
+      "save_format": "Timeseries",
+      "sample_time": "-1",
+      "source_block": "lvxvjie_guyan/Gain8",
+      "source_port": 1,
+      "connection_status": "CONNECTED"
+    }
+  ],
+  "division2_mux6_inputs": [
+    {
+      "model_label": "第二类原始模型",
+      "mux_block": "lvxvjie_guyan/Mux6",
+      "input_port": 1,
+      "source_block": "lvxvjie_guyan/Demux3",
+      "source_port": 3,
+      "connection_status": "CONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "mux_block": "lvxvjie_guyan/Mux6",
+      "input_port": 2,
+      "source_block": "",
+      "source_port": null,
+      "connection_status": "UNCONNECTED"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "mux_block": "lvxvjie_guyan/Mux6",
+      "input_port": 3,
+      "source_block": "",
+      "source_port": null,
+      "connection_status": "UNCONNECTED"
+    }
+  ],
+  "simout_dimensions": [
+    {
+      "model_label": "第一类原始模型",
+      "variable_name": "simout3",
+      "expected_floor": "一层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "variable_name": "simout",
+      "expected_floor": "二层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    },
+    {
+      "model_label": "第一类原始模型",
+      "variable_name": "simout1",
+      "expected_floor": "三层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan_2/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan_2/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan_2/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "variable_name": "simout3",
+      "expected_floor": "一层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "variable_name": "simout",
+      "expected_floor": "二层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    },
+    {
+      "model_label": "第二类原始模型",
+      "variable_name": "simout1",
+      "expected_floor": "三层",
+      "present": false,
+      "value_class": "",
+      "time_size": "",
+      "data_size": "",
+      "capture_source": "",
+      "status": "NOT_AVAILABLE",
+      "note": "MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/Gain5' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'Gain' 的 'lvxvjie_guyan/地震激励-力2' 中的设置无效。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || MATLAB:MException:MultipleErrors: 多种原因导致错误。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/ 地震-加速度1/EQ scaling factor' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/Gain5' 中的参数 'Gain' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/地震激励-力2' 中的参数 'Gain' 时出错 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构1' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构2' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'C' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'B' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'A' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || Simulink:Parameters:InvParamSetting: 参数 'D' 的 'lvxvjie_guyan/数值子结构3' 中的设置无效。 || MATLAB:UndefinedFunction: 函数或变量 'EQ_intensity' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T_cb' 无法识别。 || MATLAB:UndefinedFunction: 函数或变量 'T' 无法识别。 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构1' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构2' 中的参数 'D' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'C' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'B' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'A' 时出错 || Simulink:Parameters:BlkParamUndefined: 计算 'lvxvjie_guyan/数值子结构3' 中的参数 'D' 时出错 || SLDD:sldd:VarMissingBase: 变量 'EQ_intensity' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T_cb' 不存在。 || SLDD:sldd:VarMissingBase: 变量 'T' 不存在。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_1.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_2.D'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.C'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.B'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.A'。 || MATLAB:undefinedVarOrClass: 无法解析名称 'G_3.D'。"
+    }
+  ],
+  "all_model_hashes_match": true,
+  "output_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\original_attempt"
+}

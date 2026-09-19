@@ -1,0 +1,131 @@
+{
+  "generated_at_utc": "2026-08-24T18:57:42.775538+00:00",
+  "status": "PASS",
+  "publication_executed": true,
+  "object_count": 11,
+  "success_directory_count": 11,
+  "package_records": [
+    {
+      "object_id": "F3-5",
+      "success_directory": "test/图3-5_单位激励下的3层响应",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "52DBF5674D33FE810FC25482F3061AD9EE9B42F3CD65FFDF5F1AF859EC3C4714",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-6",
+      "success_directory": "test/图3-6_第一类划分地震激励下一层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "76F27C2879F1806AD1708787039571B724DC24F3E3E507CE1C762CDC76AEC07D",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-7",
+      "success_directory": "test/图3-7_第一类划分地震激励下二层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "B7120D749470CD569DE088F8AA94A15214391B3C380154ACDC2DFA8CA698B9F9",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-8",
+      "success_directory": "test/图3-8_第一类划分地震激励下三层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "27E5C53406795D44BBCDD2027922477D446677BAAE237D9EF89CC1AC26C1F2A3",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-9",
+      "success_directory": "test/图3-9_第二类划分地震激励下一层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "43054F7109F54369C93A6288C0B9EFAFE71C58640C8B5200FAB6C9538AC95A4E",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-10",
+      "success_directory": "test/图3-10_第二类划分地震激励下三层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "655B187DD0CC2FC68D424B13FFFC6CE02631BACBC8A1A9C15C4657B97A38F0F8",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-11",
+      "success_directory": "test/图3-11_第一类划分Chirp信号下一层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "90E383A9545D65B7C465E8079A03F00F569A2758BF299E8FDEE8176D17AAAD64",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-12",
+      "success_directory": "test/图3-12_第一类划分Chirp信号下二层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "8F389F72FB4242B1710E23B781B3E572B614DEFFEC97A3FABCB9F8D4A91A6A05",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-13",
+      "success_directory": "test/图3-13_第一类划分Chirp信号下三层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "65C02A2BAB1457B2964E1D5A5CFCD1A731E4478E88855E9CF8520097B3E7BF97",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-14",
+      "success_directory": "test/图3-14_第二类划分Chirp信号下一层水平位移",
+      "package_file_count_excluding_manifest": 41,
+      "artifact_manifest_sha256": "69F80D15DF51401B8868F99614FDA1CBBD86C6991458C120D3FA804B08178000",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    },
+    {
+      "object_id": "F3-15",
+      "success_directory": "test/图3-15_第二类划分Chirp信号下三层水平位移",
+      "package_file_count_excluding_manifest": 43,
+      "artifact_manifest_sha256": "98A2BDE9394E649A067DA258A0F849352F1D820923F7CD5518D0A7E93E86AFAB",
+      "evidence_level": "计算级复现（现存代码/必要适配路线）",
+      "historical_pointwise_status": "作者历史逐点值：待决定"
+    }
+  ],
+  "gate_count": 15,
+  "gate_pass_count": 15,
+  "comparison_pass_count": 135,
+  "independent_matrix_pass_count": 60,
+  "independent_response_pass_count": 47,
+  "manual_history_excluded_count": 6,
+  "figure_pdf_count": 12,
+  "figure_png_count": 12,
+  "independent_figure_validation_status": "PASS",
+  "manual_visual_review_pass_count": 12,
+  "index_row_count": 45,
+  "index_target_rows_updated": 11,
+  "index_non_target_rows_unchanged": 34,
+  "index_sha256_before": "CF7B23BD6780B6AB9684CB4BBD3ED251D231DDB664FBB3AD0AEF97A059D477AF",
+  "index_sha256_after": "15CA2C1F20C2CB2CDD2AAF2BC89EFFE4CBD11953B16A7A26F76F294DF1178DD9",
+  "publish_manifest_sha256": "80BD3F25894BB2B96A677653E2D9C1F8A53D088CC3042B1111039050761779C0",
+  "publish_gate_results_sha256": "4C07D08517E56FCB780ED2F53CD9441122FBA2FAA1B75393FE0B77BB35868EC2",
+  "evidence_level": "计算级复现（现存代码/必要适配路线）",
+  "historical_pointwise_status": "作者历史逐点值：待决定",
+  "authoritative_hash_gates": {
+    "board18_input_count": 80,
+    "protected_source_count": 326,
+    "board17_artifact_count": 305,
+    "thesis_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+    "manuscript_0824_sha256": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76",
+    "authority_paths": [
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/input/input_manifest.csv",
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/outputs/independent_input_hash_recheck.csv",
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/input/plotting_baseline/验证记录/汇总/源文件冻结清单.csv",
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/outputs/protected_source_recheck.csv",
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/input/upstream_passports/board17/board17_artifact_manifest.csv",
+      "test/00_失败尝试与候选路线/板块18_图3-5至图3-15逐图计算复现/outputs/board17_artifact_recheck.csv"
+    ]
+  }
+}

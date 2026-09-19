@@ -1,0 +1,67 @@
+{
+  "schema_version": "FIG10_CANDIDATE_MANIFEST_V1",
+  "candidate_id": "B2__B2__f0dc3b89e41e",
+  "evidence_label": "目标引导的校准计算复现",
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D1_Original\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D1_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D1_Guyan\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    },
+    {
+      "curve_id": "division2_original",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D2_Original\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D2_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "input_type": "mask_csv",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p5\\B2\\routes\\B2_D2_Guyan\\full-grid\\stable_mask.csv",
+      "expected_shape": [
+        31,
+        67
+      ],
+      "boundary_mode": "matlab_bwboundaries_8_noholes_visible_open"
+    }
+  ]
+}

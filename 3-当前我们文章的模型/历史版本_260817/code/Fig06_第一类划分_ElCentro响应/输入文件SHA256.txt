@@ -1,0 +1,6 @@
+file=输入数据/第一类划分_ElCentro地震响应.csv
+sha256=E7149DD6777B2127527393CE1D7B126B040576F0A535618BE33E882738ACFC40
+bytes=6584073
+data_shape=40961x10
+time_range_s=0_to_40
+sample_interval_s=0.0009765625

@@ -1,0 +1,434 @@
+{
+  "schema_version": "FIG10_FINAL_DELIVERY_VALIDATION_V1",
+  "status": "PASS",
+  "check_count": 54,
+  "pass_count": 54,
+  "fail_count": 0,
+  "checks": [
+    {
+      "name": "input_exists__report",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\图10_硕士论文与当前文章差异汇报.html",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "input_exists__report_manifest",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\图10_硕士论文与当前文章差异汇报_生成清单.json",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "input_exists__plot_manifest",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比_生成清单.json",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "input_exists__evidence",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\final_evidence_summary_complete\\final_evidence_summary.json",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "input_exists__matlab",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\matlab_independent_fullgrid_validation\\gain_scale_0p625\\B1\\matlab_validation_summary.json",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "figure_output_exists__pdf",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比.pdf",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "figure_output_exists__png",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比.png",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "figure_output_exists__csv",
+      "status": "PASS",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比_逐点数据.csv",
+      "expected": "existing regular file"
+    },
+    {
+      "name": "html_doctype",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_utf8_meta",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_one_h1",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "html_section_ids",
+      "status": "PASS",
+      "actual": [
+        "actions",
+        "concepts",
+        "differences",
+        "evidence",
+        "identity",
+        "method",
+        "results",
+        "summary",
+        "top"
+      ],
+      "expected": [
+        "actions",
+        "concepts",
+        "differences",
+        "evidence",
+        "identity",
+        "method",
+        "results",
+        "summary"
+      ]
+    },
+    {
+      "name": "html_internal_anchors",
+      "status": "PASS",
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "html_external_resources",
+      "status": "PASS",
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "html_embedded_png_count",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "html_embedded_png_sha256",
+      "status": "PASS",
+      "actual": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5",
+      "expected": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5"
+    },
+    {
+      "name": "html_print_css",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_narrow_css",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_wide_table_scroll",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__绘图级复现通过、计算级精准复现未通过",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__目标引导的校准计算复现",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__6135/6135",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__0/6严格命中",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__12462",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__8.193445921733655e-14",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "html_fact__H07",
+      "status": "PASS",
+      "actual": "present",
+      "expected": "present"
+    },
+    {
+      "name": "plot_manifest_status",
+      "status": "PASS",
+      "actual": "PASS_GENERATED_WITH_STRICT_FAILURE_DISCLOSED",
+      "expected": "PASS_GENERATED_WITH_STRICT_FAILURE_DISCLOSED"
+    },
+    {
+      "name": "active_target_pdf_identical",
+      "status": "PASS",
+      "actual": "EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847",
+      "expected": "EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847"
+    },
+    {
+      "name": "selected_candidate_strict_0_of_6",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pdf_hash",
+      "status": "PASS",
+      "actual": "58F77C370B528C0D1F73C1918B1DCA25262672B8E63298A06D2A141E1A4522A5",
+      "expected": "58F77C370B528C0D1F73C1918B1DCA25262672B8E63298A06D2A141E1A4522A5"
+    },
+    {
+      "name": "png_hash",
+      "status": "PASS",
+      "actual": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5",
+      "expected": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5"
+    },
+    {
+      "name": "editable_csv_hash",
+      "status": "PASS",
+      "actual": "D2E63E6DB1C6F316418C8A64E0F0C3C2447E8C9B67947CBD5E4DEFF379FF7697",
+      "expected": "D2E63E6DB1C6F316418C8A64E0F0C3C2447E8C9B67947CBD5E4DEFF379FF7697"
+    },
+    {
+      "name": "pdf_single_page",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "pdf_no_raster_xobject",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pdf_no_type3_fonts",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "pdf_reasonable_page_size",
+      "status": "PASS",
+      "actual": [
+        535.43952,
+        445.37976
+      ],
+      "expected": "450-560 pt by 380-500 pt"
+    },
+    {
+      "name": "png_dimensions",
+      "status": "PASS",
+      "actual": [
+        4461,
+        3711
+      ],
+      "expected": ">=4000 x >=3000"
+    },
+    {
+      "name": "png_600_dpi",
+      "status": "PASS",
+      "actual": [
+        599.9988,
+        599.9988
+      ],
+      "expected": "600 +/- 1 dpi"
+    },
+    {
+      "name": "png_format",
+      "status": "PASS",
+      "actual": "PNG",
+      "expected": "PNG"
+    },
+    {
+      "name": "editable_csv_series_count",
+      "status": "PASS",
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "name": "editable_csv_row_count",
+      "status": "PASS",
+      "actual": 1001,
+      "expected": 1001
+    },
+    {
+      "name": "editable_csv_ms_conversion",
+      "status": "PASS",
+      "actual": 0.0,
+      "expected": "<=1e-12"
+    },
+    {
+      "name": "evidence_status",
+      "status": "PASS",
+      "actual": [
+        "PASS",
+        "COMPLETE"
+      ],
+      "expected": [
+        "PASS",
+        "COMPLETE"
+      ]
+    },
+    {
+      "name": "evidence_candidate_count",
+      "status": "PASS",
+      "actual": 35,
+      "expected": 35
+    },
+    {
+      "name": "evidence_curve_row_count",
+      "status": "PASS",
+      "actual": 210,
+      "expected": 210
+    },
+    {
+      "name": "evidence_calculation_strict_pass_zero",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "evidence_h07_present",
+      "status": "PASS",
+      "actual": {
+        "contract_id": "H07",
+        "status": "PRESENT",
+        "evaluation_directory": "cases/case_fig10_v1_来源约束参数反演/evaluation/h07_energy_fullgrid_v1",
+        "pending_reason": ""
+      },
+      "expected": "PRESENT"
+    },
+    {
+      "name": "matlab_status",
+      "status": "PASS",
+      "actual": [
+        "PASS",
+        true
+      ],
+      "expected": [
+        "PASS",
+        true
+      ]
+    },
+    {
+      "name": "matlab_point_count",
+      "status": "PASS",
+      "actual": 12462,
+      "expected": 12462
+    },
+    {
+      "name": "matlab_rho_tolerance",
+      "status": "PASS",
+      "actual": 8.193445921733655e-14,
+      "expected": "<=1e-9"
+    },
+    {
+      "name": "matlab_stable_zero_diff",
+      "status": "PASS",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "matlab_target_firewall",
+      "status": "PASS",
+      "actual": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "report_manifest_hash",
+      "status": "PASS",
+      "actual": "C81CAC2A7FD9076A2BBCE0076A1F8C27D06A7DFA47B68C4A314FF255709023D3",
+      "expected": "C81CAC2A7FD9076A2BBCE0076A1F8C27D06A7DFA47B68C4A314FF255709023D3"
+    },
+    {
+      "name": "report_manifest_candidate",
+      "status": "PASS",
+      "actual": "B1__B1__299d5bcf810b",
+      "expected": "B1__B1__299d5bcf810b"
+    }
+  ],
+  "pdf_resource_summary": {
+    "page_count": 1,
+    "image_xobject_count": 0,
+    "font_resource_count": 3,
+    "type3_font_count": 0,
+    "width_points": 535.43952,
+    "height_points": 445.37976
+  },
+  "artifacts": {
+    "report": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\图10_硕士论文与当前文章差异汇报.html",
+      "bytes": 634519,
+      "sha256": "C81CAC2A7FD9076A2BBCE0076A1F8C27D06A7DFA47B68C4A314FF255709023D3"
+    },
+    "report_manifest": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\图10_硕士论文与当前文章差异汇报_生成清单.json",
+      "bytes": 1606,
+      "sha256": "630CBDF09A56A8CFA0630A82F53AE6E219F78194B80263F27A65A90AD8F65B69"
+    },
+    "plot_manifest": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比_生成清单.json",
+      "bytes": 10192,
+      "sha256": "BEB4A623D92D3D7BD32F1EAA5ECB1D5A1E76273940796DF549DEEC34F3F4A38D"
+    },
+    "evidence": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\final_evidence_summary_complete\\final_evidence_summary.json",
+      "bytes": 967456,
+      "sha256": "BC2C6B6637A2FBFFA8FA46773CB3858597D5C4B8375B133DDF2B1C11813A8146"
+    },
+    "matlab": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\matlab_independent_fullgrid_validation\\gain_scale_0p625\\B1\\matlab_validation_summary.json",
+      "bytes": 10813,
+      "sha256": "A03E02C9FD4669F84DD5C8280BA7B0AE93F257FC6A373BD8F43622B9480BA491"
+    },
+    "pdf": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比.pdf",
+      "bytes": 110303,
+      "sha256": "58F77C370B528C0D1F73C1918B1DCA25262672B8E63298A06D2A141E1A4522A5"
+    },
+    "png": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比.png",
+      "bytes": 457076,
+      "sha256": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5"
+    },
+    "editable_csv": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比_逐点数据.csv",
+      "bytes": 348289,
+      "sha256": "D2E63E6DB1C6F316418C8A64E0F0C3C2447E8C9B67947CBD5E4DEFF379FF7697"
+    }
+  }
+}

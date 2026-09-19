@@ -1,0 +1,17 @@
+{
+  "root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911",
+  "label": "All_figures_tables",
+  "visible": false,
+  "environment": {
+    "matlab_release": "2025b",
+    "matlab_version": "25.2.0.2998904 (R2025b)",
+    "simulink_installed": true,
+    "control_system_installed": true
+  },
+  "output": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\运行结果\\20260911_191542_490_All_figures_tables",
+  "started_at": "2026-09-11 19:15:42",
+  "simulation_count": 4,
+  "status": "COMPLETED",
+  "elapsed_seconds": 76.893138,
+  "calculation_type": "fresh_calculations_with_Fig14_historical_redraw"
+}

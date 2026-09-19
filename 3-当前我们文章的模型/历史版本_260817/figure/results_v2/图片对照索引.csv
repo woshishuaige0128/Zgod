@@ -1,0 +1,6 @@
+稿件顺序,稿件标签,输出基名,独立源码入口,输入数据,梁禹大论文对照,大论文PDF页,来源性质,方法样式
+6,fig:eq-div1,fig06_eq_div1,源码/06_绘制fig06_eq_div1_第一类ElCentro响应.py,第一类划分_ElCentro地震响应.csv,图3-6和图3-8,42-43,已验收响应CSV绘图级重新排版,Original深灰色虚线；Craig-Bampton红色实线；Guyan蓝色点划线
+7,fig:eq-div2,fig07_eq_div2,源码/07_绘制fig07_eq_div2_第二类ElCentro响应.py,第二类划分_ElCentro地震响应.csv,图3-9和图3-10,44-45,已验收响应CSV绘图级重新排版,Original深灰色虚线；Craig-Bampton红色实线；Guyan蓝色点划线
+8,fig:chirp-div1,fig08_chirp_div1,源码/08_绘制fig08_chirp_div1_第一类Chirp响应.py,第一类划分_Chirp响应.csv,唯一编号图3-11和图3-13,46-48,已验收响应CSV绘图级重新排版,Original深灰色虚线；Craig-Bampton红色实线；Guyan蓝色点划线
+9,fig:chirp-div2,fig09_chirp_div2,源码/09_绘制fig09_chirp_div2_第二类Chirp响应.py,第二类划分_Chirp响应.csv,唯一编号图3-14和图3-15,48-49,已验收响应CSV绘图级重新排版,Original深灰色虚线；Craig-Bampton红色实线；Guyan蓝色点划线
+10,fig:stability-domain,fig10_stability_domain,源码/10_绘制fig10_stability_domain_双划分稳定域.py,图4-4与图4-5稳定域边界CSV,图4-4和图4-5,70,历史稳定边界快照绘图级复现,Original深灰色虚线；Craig-Bampton红色实线；Guyan蓝色点划线

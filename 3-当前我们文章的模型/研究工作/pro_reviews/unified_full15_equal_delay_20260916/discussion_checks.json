@@ -1,0 +1,231 @@
+{
+  "status": "STATIC_PASS_VISUAL_BLOCKED",
+  "checks": [
+    {
+      "name": "seven sections",
+      "passed": true
+    },
+    {
+      "name": "three comparison tables",
+      "passed": true
+    },
+    {
+      "name": "unique anchors",
+      "passed": true
+    },
+    {
+      "name": "all seven navigation links resolve",
+      "passed": true
+    },
+    {
+      "name": "no external rendering resources",
+      "passed": true
+    },
+    {
+      "name": "viewport and print rules present",
+      "passed": true
+    },
+    {
+      "name": "visual QA limitation explicit",
+      "passed": true
+    },
+    {
+      "name": "no placeholder replacement characters",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\calculation.mat",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\calculation.mat",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\model_and_cases.mat",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\model_and_cases.mat",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\audit_matrices.mat",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\audit_matrices.mat",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\prior_findings.json",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\findings.json",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\manuscript.tex",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\manuscript.tex",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\rths_reduce.m",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\rths_reduce.m",
+      "passed": true
+    },
+    {
+      "name": "source copy sources\\previous_delay_model.py",
+      "passed": true
+    },
+    {
+      "name": "original source D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\delay_model.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\build_report.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\finalize_delivery.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\unified_model.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\verify_error_identities.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\VERIFY_UNIFIED.m",
+      "passed": true
+    },
+    {
+      "name": "sealed audit code\\verify_unified.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit evidence-map.md",
+      "passed": true
+    },
+    {
+      "name": "sealed audit README.md",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\browser_qa.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\delivery_checks.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\model_summary.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\operators.mat",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\pdf_qa.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\protection_after.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\protection_before.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\validation_error_identities.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\validation_matlab.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit results\\validation_python.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit source_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\audit_matrices.mat",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\calculation.mat",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\manuscript.tex",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\model_and_cases.mat",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\previous_delay_model.py",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\prior_findings.json",
+      "passed": true
+    },
+    {
+      "name": "sealed audit sources\\rths_reduce.m",
+      "passed": true
+    },
+    {
+      "name": "sealed audit theory\\unified_full15.pdf",
+      "passed": true
+    },
+    {
+      "name": "sealed audit theory\\unified_full15.tex",
+      "passed": true
+    },
+    {
+      "name": "uploaded archive unchanged",
+      "passed": true
+    },
+    {
+      "name": "two completed responses",
+      "passed": true
+    },
+    {
+      "name": "exact response 1",
+      "passed": true
+    },
+    {
+      "name": "exact response 2",
+      "passed": true
+    },
+    {
+      "name": "explicit retraction saved",
+      "passed": true
+    }
+  ],
+  "check_count": 55,
+  "browser_qa": "blocked by browser local URL security policy; no workaround attempted",
+  "desktop_visual": false,
+  "mobile_visual": false,
+  "print_visual": false,
+  "scientific_computation_performed_this_turn": false
+}

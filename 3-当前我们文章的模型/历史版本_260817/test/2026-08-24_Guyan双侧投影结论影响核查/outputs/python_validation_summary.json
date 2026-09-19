@@ -1,0 +1,132 @@
+{
+  "schema_version": "2.0",
+  "generated_utc": "2026-08-24T09:31:45.890413+00:00",
+  "status": "PASS",
+  "exit_semantics": {
+    "PASS": 0,
+    "FAIL": 2,
+    "ERROR": 3
+  },
+  "isolated_test_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\test\\2026-08-24_Guyan双侧投影结论影响核查",
+  "inputs": {
+    "outputs/matrices/division_1_guyan_matrices.mat": {
+      "sha256": "f20ce8b083d1bae538d0e835a6d787e86d40e3ffc8ede4c5dd34e16403fc7737",
+      "bytes": 3487
+    },
+    "outputs/matrices/division_2_guyan_matrices.mat": {
+      "sha256": "608870774e521d80de180e203fd65e8a9c9bb58f88a7e7528dbc79af373e6c9f",
+      "bytes": 3205
+    },
+    "outputs/matrices/guyan_matrix_audit.csv": {
+      "sha256": "21df44d0706800aee5eb9b5133b0d05edb20c17b9f46d394b8ddeaf374e4e7f8",
+      "bytes": 880
+    },
+    "outputs/modal/guyan_modal_comparison.csv": {
+      "sha256": "7a4ef95123391695c0f3afa80f4d54784c40a643b6992ff722c62fc6be5abe07",
+      "bytes": 1377
+    },
+    "outputs/responses/historical_single_sided/第一类划分_ElCentro地震响应.csv": {
+      "sha256": "e7149dd6777b2127527393ce1d7b126b040576f0a535618be33e882738acfc40",
+      "bytes": 6584073
+    },
+    "outputs/responses/historical_single_sided/第一类划分_Chirp响应.csv": {
+      "sha256": "2fdc6b5bf3b48118a51dd147ece32b6711cefdcd702d88eec64cfc4e6a13df49",
+      "bytes": 7254991
+    },
+    "outputs/responses/historical_single_sided/第二类划分_ElCentro地震响应.csv": {
+      "sha256": "2899dfd2c03b22aaee701c7e4b3b70e40d49668531bb6734fa6b52e8246b5e5d",
+      "bytes": 6589237
+    },
+    "outputs/responses/historical_single_sided/第二类划分_Chirp响应.csv": {
+      "sha256": "88919c2afa4fc431edb08772a1dcb091b6d8dc1445253c0a4d30334223040457",
+      "bytes": 7248756
+    },
+    "outputs/responses/projected_congruence/第一类划分_ElCentro地震响应.csv": {
+      "sha256": "54e7c986901e84a6c88a53c51186828aba46eb39c2b0961576927b885636d100",
+      "bytes": 6584521
+    },
+    "outputs/responses/projected_congruence/第一类划分_Chirp响应.csv": {
+      "sha256": "4293a8fab79b6f5b75202b335e79c9b9af260720e99cd0fc5117e157e018ae1e",
+      "bytes": 7253578
+    },
+    "outputs/responses/projected_congruence/第二类划分_ElCentro地震响应.csv": {
+      "sha256": "d3f3970b5d46606e22d352606fe81027598db4a7965b9d96628e04ea7854525c",
+      "bytes": 6584678
+    },
+    "outputs/responses/projected_congruence/第二类划分_Chirp响应.csv": {
+      "sha256": "deb02a8cfeba5a48c802c4d8c68426691613d595e58b5474e25089f295afa0f1",
+      "bytes": 7255898
+    },
+    "outputs/metrics/historical_baseline_check.csv": {
+      "sha256": "78bed10833546b9582e363452d7e19507d314bc7fcad9f9fd8a83cc8e2abdd48",
+      "bytes": 598
+    },
+    "outputs/metrics/route_invariant_check.csv": {
+      "sha256": "7e9da1c23272c787023c34474954492bf1f83c2245902b0367f2b21214bff484",
+      "bytes": 381
+    },
+    "outputs/metrics/guyan_response_metrics.csv": {
+      "sha256": "dc4ab10da824d2468d09663505666a6ccba2013777efb978e58590d9ca40e462",
+      "bytes": 21841
+    }
+  },
+  "records": {
+    "total": 1582,
+    "passed": 1582,
+    "failed": 0,
+    "by_category": {
+      "matrix_export": 22,
+      "cb_basis": 8,
+      "matrix_invariant": 6,
+      "route_difference": 6,
+      "matrix_property": 48,
+      "matrix_audit_table": 40,
+      "modal_table": 48,
+      "response_input": 8,
+      "historical_baseline_record": 24,
+      "route_invariant": 28,
+      "response_metric_table": 1344
+    }
+  },
+  "violations": [],
+  "error": "",
+  "fixed_contract": {
+    "matrix_files": [
+      "outputs/matrices/division_1_guyan_matrices.mat",
+      "outputs/matrices/division_2_guyan_matrices.mat"
+    ],
+    "matrix_audit": "outputs/matrices/guyan_matrix_audit.csv",
+    "modal": "outputs/modal/guyan_modal_comparison.csv",
+    "historical_baseline": "outputs/metrics/historical_baseline_check.csv",
+    "route_invariant": "outputs/metrics/route_invariant_check.csv",
+    "response_metrics": "outputs/metrics/guyan_response_metrics.csv",
+    "response_routes": [
+      "historical_single_sided",
+      "projected_congruence"
+    ],
+    "expected_response_csv_count": 8,
+    "expected_response_metric_rows": 168
+  },
+  "tolerances": {
+    "matrix_gate": 1e-12,
+    "export_relative": 1e-10,
+    "cb_basis_relative": 1e-10,
+    "cb_eigenspace_relative": 1e-08,
+    "time_absolute_s": 1e-12,
+    "historical_baseline_absolute_mm": 1e-09,
+    "historical_baseline_relative": 1e-10,
+    "matlab_python_metric_absolute": 1e-09,
+    "matlab_python_metric_relative": 1e-08
+  },
+  "evidence_labels": {
+    "matrix_modal_response_metrics": "计算级复现",
+    "route_invariant": "计算级复现",
+    "historical_baseline": "历史值（MATLAB基线门槛记录；本脚本不读取隔离目录外原资产）",
+    "plotting": "未涉及",
+    "decision": "本脚本只验证，不替 Doctor Bego 选择论文权威路线"
+  },
+  "output_files": {
+    "validation_csv": "outputs/python_validation.csv",
+    "summary_json": "outputs/python_validation_summary.json"
+  }
+}

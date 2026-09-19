@@ -1,0 +1,4 @@
+﻿object_id,object_name,version,panel,source_dataset,source_mat_filename,source_column,floor,method,sample_count,window_start_s,window_end_s,peak_abs_mm,rms_mm,final_mm,min_mm,max_mm,status
+F3-5,单位激励下的3层响应,standard,full,unit,单位激励_原结构三层响应.mat,"response_mm[:,0,0]",Floor 1,Original,40961,0,40,2.217301809619308,1.2248585243405594,1.2368195329766809,0,2.217301809619308,PASS
+F3-5,单位激励下的3层响应,standard,full,unit,单位激励_原结构三层响应.mat,"response_mm[:,1,0]",Floor 2,Original,40961,0,40,5.4997089792850735,2.9669628058988287,2.9944624662647152,0,5.4997089792850735,PASS
+F3-5,单位激励下的3层响应,standard,full,unit,单位激励_原结构三层响应.mat,"response_mm[:,2,0]",Floor 3,Original,40961,0,40,7.9062369040845821,4.1905932973845106,4.2279337768520975,0,7.9062369040845821,PASS

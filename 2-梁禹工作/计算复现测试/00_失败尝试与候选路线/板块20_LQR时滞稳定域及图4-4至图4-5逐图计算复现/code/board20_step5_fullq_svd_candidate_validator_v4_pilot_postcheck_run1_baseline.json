@@ -1,0 +1,39 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v4_pilot_postcheck_run1_baseline_v1",
+  "recorded_date": "2026-08-25",
+  "status": "PASS",
+  "mode": "pilot-postcheck",
+  "exit_code": 0,
+  "total_check_count": 97,
+  "pass_count": 93,
+  "info_count": 4,
+  "fail_count": 0,
+  "candidate_point_count": 49,
+  "candidate_route_count": 5,
+  "stable_classification_mismatch_count": 0,
+  "rho_gate_failure_count": 0,
+  "independent_svd_failure_count": 0,
+  "formula_identity_failure_count": 0,
+  "unmatched_root_safety_failure_count": 0,
+  "protected_file_count": 137,
+  "protected_file_change_count": 0,
+  "validator_identity": {
+    "script_sha256": "8BB46EEC8A4F6592AFC3F4F5EEAC137F9BD6666C808F6AAB7293A982BCF6E5C1",
+    "contract_sha256": "2C7C7EB737F1DAB1B88A0AEAF9FCA9324E0B48E0789BB070696141DF30B1FE8D",
+    "revision_contract_sha256": "A484E2A066D4071C2A6705AA288F7D6E9C04651A94A35053BF009125D1C21A9F",
+    "binding_sha256": "A94978BDF49F45D4F61EAB92BA541ADA4D1CA9A4A3AA9EEAC64B1B3444FB5582"
+  },
+  "run1_artifact_sha256": {
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck.json": "AED1459414C9D010FB8145DF433C76CE2E14974E7E25150CF4CE8CC66D592CB6",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_checks.csv": "7F8F543367ED7A4BDBC2236BABF06EA7952B9545A3100D8127025414DD450C30",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_protected_hashes.csv": "0AAAC7E8BCB211949CDB74690D11D82931C702D1D069E7989FA561184F118962",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_report.md": "1C665AF28209B72805911B00361DAA60E3959487A514E584DF106061A0F874A9",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_artifact_manifest.csv": "1B8D7FECEE3B05A9A8301353DFF6F2EDAD9CFDC6009465E607A418FEF5840632",
+    "logs/step5_fullq_svd_candidate_validation_v4/v4_validator_v4_pilot_postcheck.log": "4C42511A6220B6FB7941CE91E75E6F02F83AF9938EDCA9491E4C58D29D9F13C4",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_route_summary.csv": "1B32EC52D86A1BD5F8FD9FF132401BBE2ADA76C22C0605D9842D1272BC269756",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_point_comparison.csv": "98A7C746458A800C9C13370BF3DE5D6FE5E7246A529AC8A63143D04122790FF4",
+    "outputs/step5_fullq_svd_candidate_audit_v4/v4_validator_v4_pilot_postcheck_previous_conditioning_points.csv": "2804683282E6569FF421056481BD6AE41418E7DB5EF2C5E49FCA6B290AF9BA23"
+  },
+  "second_pilot_postcheck_authorized_by_this_record": false,
+  "full_computation_or_postcheck_authorized_by_this_record": false
+}

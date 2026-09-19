@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "check_count": 7,
+  "pass_count": 7,
+  "fail_count": 0,
+  "figure_4_4_guyan_right_edge": "(52,2)..(52,10)",
+  "evidence_level": "candidate rerun of author surviving MAT files and plotting script",
+  "calculation_level_status": "not upgraded",
+  "thesis_pointwise_status": "four reduced-order curves do not match the thesis vector boundaries"
+}

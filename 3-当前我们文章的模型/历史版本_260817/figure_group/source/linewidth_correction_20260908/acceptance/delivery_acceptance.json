@@ -1,0 +1,56 @@
+{
+  "pass": true,
+  "date": "2026-09-08",
+  "slides": 15,
+  "figures_checked": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "figures_changed": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "duplicate_stroke_elements_removed": 98,
+  "explicit_dash_stroke_elements": 98,
+  "explicit_visible_dash_segments": 16691,
+  "max_dash_endpoint_error_source_pt": 7.44648787076585e-12,
+  "wps_compound_fill_cancellation_fixed": true,
+  "linewidth_measurements": 72,
+  "linewidth_max_error_source_pt": 0.00035547971179017424,
+  "linewidth_tolerance_source_pt": 0.02,
+  "current_edits_preserved": true,
+  "all_slide_xml_preserved": true,
+  "native_objects_text_baselines_and_captions_preserved": true,
+  "protected_sources_unchanged": 242,
+  "all_curve_pages_two_format_pixel_identical": true,
+  "ppt_is_legacy_binary": true,
+  "no_target_open_during_update": true,
+  "before_sha256": {
+    "figure_rths.ppt": "1fa85bd5e724d18367aa2d2a0f5229323287efae8b165d02ca375645b4d8bd84",
+    "figure_rths.pptx": "8b2bc30385fdca88e3d3137ba33c944fd0c69d915ebf9d72ce05c33d96297ede",
+    "README_使用说明.md": "5b71f75549a64bd9823d3123be16de1f31963a5f995c93b73a149f692640f464",
+    "文件清单_SHA256.csv": "84fd8379d525ac97636bd0650d4d1aebed4785d6063b4e9aed4a75162848158f"
+  },
+  "delivered_sha256": {
+    "figure_rths.pptx": "33d938843b40e61eaaa807e6d7384aa979c0f41b72347cf5f9fc6346fcde3a23",
+    "figure_rths.ppt": "4781a0f5ad3aa965cf05abed717c0d6e325408974891bc26e401f9fb07b3636c"
+  },
+  "backup_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\source\\linewidth_correction_20260908\\before"
+}

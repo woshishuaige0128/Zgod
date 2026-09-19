@@ -1,0 +1,31 @@
+{
+  "calculation_level_gate_pass": false,
+  "central_board_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "evaluated_components": [
+    "critical_delay"
+  ],
+  "evaluated_scope": [
+    "critical_delay"
+  ],
+  "excluded_scope": [
+    "frequency_bands",
+    "response_amplitude_errors"
+  ],
+  "failure_package_relative_path": "test/00_失败尝试与候选路线/结论C07_结论章频率区间、误差幅值与临界时滞总结",
+  "final_evidence_level": "历史值",
+  "formal_success_directory_allowed": false,
+  "formal_success_directory_exists": false,
+  "frequency_amplitude_status": "NOT_EVALUATED",
+  "not_evaluated_components": [
+    "frequency_bands",
+    "response_amplitude_errors"
+  ],
+  "object_id": "C07",
+  "object_type": "定量结论",
+  "paper_name": "结论章频率区间、误差幅值与临界时滞总结",
+  "schema_version": "BOARD20_STEP7_FAILURE_PACKAGE_V1",
+  "status": "FAILURE_EVIDENCE_PACKAGED",
+  "step6_run_manifest_sha256": "9721137F3EC1730F5F6538E9575A760CC3EE9FC544DDF68B7C40CD7396AB1503",
+  "step6_validation_manifest_sha256": "8C54084CAFD16EE76A0BF567F41F84A2AC37D8AFAA7AACC66C7ED35B843FA431",
+  "target_evidence_level": "计算级复现"
+}

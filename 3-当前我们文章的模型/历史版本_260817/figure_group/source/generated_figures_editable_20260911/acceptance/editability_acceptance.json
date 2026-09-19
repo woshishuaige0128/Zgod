@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "test_copies_only": true,
+  "results": [
+    {
+      "format": "pptx",
+      "actual_ungroup_and_text_edit_save_pass": true,
+      "slides": [
+        {
+          "slide": 16,
+          "ungrouped_native_object_count": 40,
+          "changed_text_object": "fig1_force_channel_title"
+        },
+        {
+          "slide": 17,
+          "ungrouped_native_object_count": 107,
+          "changed_text_object": "fig2_reference_frame_heading"
+        },
+        {
+          "slide": 18,
+          "ungrouped_native_object_count": 119,
+          "changed_text_object": "fig3_floor_1_psi"
+        },
+        {
+          "slide": 19,
+          "ungrouped_native_object_count": 294,
+          "changed_text_object": "fig4_division_I_numerical_title"
+        }
+      ]
+    },
+    {
+      "format": "ppt",
+      "actual_ungroup_and_text_edit_save_pass": true,
+      "slides": [
+        {
+          "slide": 16,
+          "ungrouped_native_object_count": 40,
+          "changed_text_object": "fig1_force_channel_title"
+        },
+        {
+          "slide": 17,
+          "ungrouped_native_object_count": 107,
+          "changed_text_object": "fig2_reference_frame_heading"
+        },
+        {
+          "slide": 18,
+          "ungrouped_native_object_count": 119,
+          "changed_text_object": "fig3_floor_1_psi"
+        },
+        {
+          "slide": 19,
+          "ungrouped_native_object_count": 294,
+          "changed_text_object": "fig4_division_I_numerical_title"
+        }
+      ]
+    }
+  ]
+}

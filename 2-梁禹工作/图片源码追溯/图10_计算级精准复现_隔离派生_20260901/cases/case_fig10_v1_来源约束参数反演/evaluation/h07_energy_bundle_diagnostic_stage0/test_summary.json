@@ -1,0 +1,19 @@
+{
+  "blind_core_sha256": "9F001CD1E57F8909070295EBC8E265B2CE6619784EE1ADDA75F762B49B377411",
+  "delay_decomposition_status": "BOARD20_LOW_RANK_HYBRID_DIAGNOSTIC",
+  "deterministic_two_build_hashes_checked": true,
+  "diagnostic_status": "HISTORICAL_SOURCE_COMPLETION_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+  "errors": 0,
+  "failures": 0,
+  "grid_points_computed": 0,
+  "materialization_manifest_sha256": "B72210994045E5232EC3C7EEE0680ED6439BDFD14A4A07CFBAC933F8A0258F2F",
+  "native_manifest_loaded_without_execution": true,
+  "real_stage0_routes_checked": 6,
+  "roots_computed": 0,
+  "schema_version": "FIG10_H07_ENERGY_BUNDLE_DIAGNOSTIC_TEST_V1",
+  "skipped": 0,
+  "source_line_and_hash_checks": 6,
+  "status": "PASS",
+  "synthetic_stage0_covered": true,
+  "tests_run": 6
+}

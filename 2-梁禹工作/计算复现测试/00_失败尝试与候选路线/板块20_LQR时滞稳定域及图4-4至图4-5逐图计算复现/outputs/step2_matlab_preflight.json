@@ -1,0 +1,164 @@
+{
+  "schema": "board20_matlab_preflight_v1",
+  "created_at": "2026-08-25T04:34:37+08:00",
+  "matlab_version": "25.2.0.2998904 (R2025b)",
+  "matlab_release": "2025b",
+  "computer": "PCWIN64",
+  "matlab_root": "D:\\Downlad\\Matlab",
+  "pid": 40208,
+  "starting_working_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code",
+  "licenses": {
+    "symbolic_toolbox": true,
+    "control_toolbox": true
+  },
+  "functions": [
+    {
+      "name": "syms",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\syms.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\syms.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "sym",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\@sym\\sym.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\@sym\\sym.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "solve",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgdivexpr\\solve.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgdivexpr\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgexpr\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgfeature\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgsubexpr\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgvalue\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgvariable\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\pde\\pde\\@femodel\\solve.m",
+        "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\@sym\\solve.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "vpa",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\vpa.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\vpa.m",
+        "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\@sym\\vpa.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "ss",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlmodels\\@ss\\ss.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlmodels\\@ss\\ss.m",
+        "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlmodels\\@DynamicSystem\\ss.m",
+        "D:\\Downlad\\Matlab\\toolbox\\ident\\ident\\@idParametric\\ss.m",
+        "D:\\Downlad\\Matlab\\toolbox\\mpc\\mpc\\@mpc\\ss.m",
+        "D:\\Downlad\\Matlab\\toolbox\\shared\\controllib\\engine\\@StaticModel\\ss.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "c2d",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlobsolete\\c2d.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlobsolete\\c2d.m",
+        "D:\\Downlad\\Matlab\\toolbox\\shared\\controllib\\engine\\@DynamicSystem\\c2d.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "dlqr",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrldesign\\dlqr.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\control\\ctrldesign\\dlqr.m"
+      ],
+      "available": true
+    },
+    {
+      "name": "eigs",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\matlab\\sparfun\\eigs.m",
+      "resolved_paths": [
+        "D:\\Downlad\\Matlab\\toolbox\\matlab\\sparfun\\eigs.m",
+        "D:\\Downlad\\Matlab\\toolbox\\parallel\\array\\distributed\\@codistributed\\eigs.m"
+      ],
+      "available": true
+    }
+  ],
+  "smoke": {
+    "symbolic": {
+      "status": "PASS",
+      "roots": [
+        -1,
+        1
+      ],
+      "error_identifier": "",
+      "error_message": ""
+    },
+    "control": {
+      "status": "PASS",
+      "discrete_A": [
+        [
+          0.999999000999417,
+          0.000998501166041925
+        ],
+        [
+          -0.0019970023320838495,
+          0.99700349750129114
+        ]
+      ],
+      "lqr_gain": [
+        0.23580406124391287,
+        0.23580398403727426
+      ],
+      "closed_loop_poles": [
+        0.9990004997709373,
+        0.99776643039255486
+      ],
+      "error_identifier": "",
+      "error_message": ""
+    }
+  },
+  "helper": {
+    "frozen_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_upstream\\新物理子结构方案\\fcn_newmark_beta_const.m",
+    "exists": true,
+    "filename_function_name": "fcn_newmark_beta_const",
+    "declared_function_name": "newmark_beta_constants",
+    "filename_matches_declaration": false,
+    "which_before_addpath": "",
+    "which_after_addpath": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_upstream\\新物理子结构方案\\fcn_newmark_beta_const.m",
+    "call_status": "PASS",
+    "call_values": [
+      4.194304E+6,
+      2048,
+      4096,
+      1,
+      1,
+      0,
+      0.00048828125,
+      0.00048828125
+    ],
+    "call_expected": [
+      4.194304E+6,
+      2048,
+      4096,
+      1,
+      1,
+      0,
+      0.00048828125,
+      0.00048828125
+    ],
+    "call_max_abs_error": 0,
+    "warning_identifier": "",
+    "warning_message": "",
+    "error_identifier": "",
+    "error_message": ""
+  },
+  "status": "PASS"
+}

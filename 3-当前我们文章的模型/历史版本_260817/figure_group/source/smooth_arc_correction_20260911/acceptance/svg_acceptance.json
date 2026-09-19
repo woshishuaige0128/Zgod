@@ -1,0 +1,2084 @@
+{
+  "pass": true,
+  "checked_at_local": "2026-09-11T17:41:11",
+  "scope": "Independent read-only smooth-arc SVG verification and actual sharp raster visual inspection",
+  "renderer": "Bundled Node sharp through Presentations rasterize_svg.mjs",
+  "direction_policy": "No fixed-angle or one-degree acceptance criterion; verifies continuous standard half-ellipse geometry and attached orient=auto endpoint markers.",
+  "qa_correction_record": "The first QA script treated marker height as only the markerHeight attribute. Inspection showed that the authorized triangle-height change also updates viewBox height, refY and the triangle coordinates. The final checks require those fields to agree exactly with the new height and unchanged width, then compare the entire remainder of the document to the backup. The initial diagnostic is retained in preview/svg/svg_acceptance_initial_scope_error.json.",
+  "total_rotation_arcs": 42,
+  "figures": [
+    {
+      "figure": 3,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\draft\\fig3_generated_editable.svg",
+      "sha256": "dc740a62a07ee3e386242966584205e9e79b456f853b93b5046607b3e6c6b984",
+      "backup": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\backup\\fig3_generated_editable.svg",
+      "backup_sha256": "eea65c942e2423bef0212b9161d2e0ec94852ead9d4db3c2c4f73ec0c0abb682",
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\preview\\svg\\fig3_sharp.png",
+      "render_sha256": "ae0a9fed574f8d9fb0f8cbe4fcf6dbccad73e5f1b756d02d420c49acad57a40e",
+      "render_pixels": [
+        1122,
+        1402
+      ],
+      "counts": {
+        "objects": 102,
+        "objects_by_kind": {
+          "path": 51,
+          "text": 33,
+          "ellipse": 18
+        },
+        "text": 33,
+        "tspan": 48,
+        "image": 0,
+        "smooth_rotation_arcs": 12,
+        "endpoint_markers": 17,
+        "independent_head_objects": 0
+      },
+      "checks": {
+        "expected_arc_count": true,
+        "standard_smooth_two_cubic_half_ellipses": true,
+        "no_line_command_in_rotation_paths": true,
+        "all_expected_endpoint_markers": true,
+        "no_separate_head_objects": true,
+        "only_arc_path_and_marker_height_related_changes": true,
+        "entire_other_document_unchanged": true,
+        "all_text_unchanged": true,
+        "no_image_or_foreign_object": true,
+        "render_dimensions_match": true,
+        "render_after_source": true,
+        "actual_render_visually_viewed": true,
+        "smooth_arc_and_attached_arrow_visible": true,
+        "no_visible_overlap_or_clipping": true
+      },
+      "changes": [
+        {
+          "id": "fig3_rotation_2_1",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_4",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_4",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_3",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_1",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_2",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_1_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_2_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_3_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_4_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_4",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_1",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_2_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_3_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_3_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_3",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_2_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_1_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_2",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_1_4_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_4_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_2_3",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_2",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig3_rotation_3_1_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        }
+      ],
+      "arcs": [
+        {
+          "id": "fig3_rotation_1_1",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_1_1_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_1_2",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_1_2_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_1_3",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_1_3_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_1_4",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_1_4_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_2_1",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_2_1_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_2_2",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_2_2_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_2_3",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_2_3_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_2_4",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_2_4_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_3_1",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_3_1_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_3_2",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_3_2_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_3_3",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_3_3_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig3_rotation_3_4",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig3_rotation_3_4_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        }
+      ],
+      "visual_observation": "The rotation shafts appear as continuous smooth half-ellipse arcs without vertical terminal stems. Arrowheads are attached to the curve endpoints. Red/black coordinate labels, subscripts, frame geometry and straight arrows remain clear."
+    },
+    {
+      "figure": 4,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\draft\\fig4_generated_editable.svg",
+      "sha256": "389d91599698172f750bd1d514d019fe479eb65fa1a27d9a518a43d9b2a39e4d",
+      "backup": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\backup\\fig4_generated_editable.svg",
+      "backup_sha256": "f5aaa53667f6b3799c5837523bcae44c75874a1aecfb6414aaf4134be31a4993",
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arc_smooth_20260911\\preview\\svg\\fig4_sharp.png",
+      "render_sha256": "61b3e8e005f92902d412acb527c84f61b6e21759181a7d9e87fd0e23df2cc4db",
+      "render_pixels": [
+        1254,
+        1254
+      ],
+      "counts": {
+        "objects": 253,
+        "objects_by_kind": {
+          "rect": 4,
+          "text": 88,
+          "path": 123,
+          "ellipse": 38
+        },
+        "text": 88,
+        "tspan": 129,
+        "image": 0,
+        "smooth_rotation_arcs": 30,
+        "endpoint_markers": 41,
+        "independent_head_objects": 0
+      },
+      "checks": {
+        "expected_arc_count": true,
+        "standard_smooth_two_cubic_half_ellipses": true,
+        "no_line_command_in_rotation_paths": true,
+        "all_expected_endpoint_markers": true,
+        "no_separate_head_objects": true,
+        "only_arc_path_and_marker_height_related_changes": true,
+        "entire_other_document_unchanged": true,
+        "all_text_unchanged": true,
+        "no_image_or_foreign_object": true,
+        "render_dimensions_match": true,
+        "render_after_source": true,
+        "actual_render_visually_viewed": true,
+        "smooth_arc_and_attached_arrow_visible": true,
+        "no_visible_overlap_or_clipping": true
+      },
+      "changes": [
+        {
+          "id": "fig4_II_phys_psi3_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi8_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi9_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi12_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi13_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi7_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi14_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi15_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi8_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi4_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi4_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi3_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi12_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi9_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi14_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi10_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi8_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi7_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi13_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi8_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi15_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi5_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi12_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi5_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi10_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi8_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi7_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi3_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi13_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi3_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi10_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi7_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi13_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi9_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi3_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi7_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi3_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi14_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi15_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi7_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi2_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi13_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi8_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi9_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi8_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi10_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi13_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi8_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi14_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi4_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi15_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi3_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi12_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi4_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi3_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_num_psi5_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_II_phys_psi2_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi2_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_num_psi5_arrow_end_marker",
+          "attributes": [
+            "markerHeight",
+            "refY",
+            "viewBox"
+          ],
+          "allowed": true
+        },
+        {
+          "id": "fig4_I_phys_psi2_arrow",
+          "attributes": [
+            "d"
+          ],
+          "allowed": true
+        }
+      ],
+      "arcs": [
+        {
+          "id": "fig4_I_num_psi12_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi12_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi13_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi13_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi14_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi14_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi15_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi15_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi7_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi7_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi8_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi8_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi9_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi9_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi10_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi10_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi3_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi3_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi4_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi4_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_num_psi5_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_num_psi5_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_phys_psi7_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_phys_psi7_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_phys_psi8_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_phys_psi8_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_phys_psi2_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_phys_psi2_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_I_phys_psi3_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_I_phys_psi3_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi13_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi13_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi14_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi14_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi15_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi15_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi8_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi8_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi9_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi9_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi10_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi10_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi3_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi3_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi4_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi4_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_num_psi5_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_num_psi5_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi12_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi12_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi13_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi13_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi7_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi7_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi8_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi8_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi2_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi2_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        },
+        {
+          "id": "fig4_II_phys_psi3_arrow",
+          "pass": true,
+          "commands": [
+            "M",
+            "C",
+            "C"
+          ],
+          "standard_half_ellipse_residual": 0.0,
+          "join_tangent_residual": 0.0,
+          "has_terminal_line": false,
+          "marker_id": "fig4_II_phys_psi3_arrow_end_marker",
+          "marker_orient": "auto",
+          "marker_changes": {
+            "markerHeight": {
+              "before": "3",
+              "after": "2"
+            },
+            "refY": {
+              "before": "1.5",
+              "after": "1"
+            },
+            "viewBox": {
+              "before": "0 0 3 3",
+              "after": "0 0 3 2"
+            }
+          },
+          "marker_dimension_fields_consistent": true,
+          "marker_triangle_d_before": "M0,0 L3,1.5 L0,3 Z",
+          "marker_triangle_d_after": "M0,0 L3,1 L0,2 Z"
+        }
+      ],
+      "visual_observation": "The rotation shafts appear as continuous smooth half-ellipse arcs without vertical terminal stems. Arrowheads are attached to the curve endpoints. Red/black coordinate labels, subscripts, frame geometry and straight arrows remain clear."
+    }
+  ]
+}

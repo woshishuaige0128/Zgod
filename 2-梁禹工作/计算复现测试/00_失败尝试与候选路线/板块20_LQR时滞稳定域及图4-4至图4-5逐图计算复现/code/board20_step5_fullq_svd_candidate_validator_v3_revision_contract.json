@@ -1,0 +1,89 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v3_revision_contract_v1",
+  "contract_status": "PRESEAL_AWAITING_INDEPENDENT_HELPER_REVIEW_AND_V3_IMPLEMENTATION",
+  "purpose": "Preregister the only two corrections allowed in a new isolated validator V3 after validator V2 permanently failed precheck. This is not an executable validation contract and authorizes no precheck or postcheck.",
+  "frozen_validator_v2_failure": {
+    "failure_attribution_relpath": "code/board20_step5_fullq_svd_candidate_validator_v2_precheck_failure_attribution.json",
+    "failure_attribution_sha256": "DD30D9953535DB959EDACEE6327C4FAA85D6284513AEE92B0D6C06A3AE595CBD",
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v2.py",
+    "script_sha256": "D6E0111413BD8E51A068AEDDFF509FC8159FC946E51EE1A0DFE53EF9DE2CB4A2",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v2.json",
+    "contract_sha256": "766E8E82CE6B03281F7C1A7EE566D7423B538725032FC7C8B2B521E66F74F61D",
+    "binding_record_relpath": "code/board20_step5_fullq_svd_candidate_validator_v2_v4_binding_record.json",
+    "binding_record_sha256": "84A722AC8E865CA6CC9DFB6AD2F82BDCAF16A5EA179EC81059F282BD1A503728",
+    "audit_primary_json_relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck.json",
+    "audit_primary_json_sha256": "8243C01B8DE0B2C93F5C757D533B3B91AF34F358896B31DBC24DE375054E8A64",
+    "verdict": "PRECHECK_FAIL_PERMANENT_IMMUTABLE",
+    "may_be_modified_or_rerun": false
+  },
+  "future_validator_v3_isolation": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v3.py",
+    "validation_contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v3.json",
+    "audit_output_root": "outputs/step5_fullq_svd_candidate_audit_v3",
+    "audit_log_root": "logs/step5_fullq_svd_candidate_validation_v3",
+    "may_read_or_write_validator_v2_audit_outputs": false,
+    "may_modify_v4_candidate": false,
+    "may_launch_v4_candidate": false
+  },
+  "allowed_fixes": [
+    {
+      "fix_id": "V3-FIX-001",
+      "v2_failed_check_id": "S5FQSV4-V2-PRE-0009",
+      "scope": "validator V1 to successor AST equivalence check only",
+      "rule": "Normalize non-executable representation such as function name/binding and audit-description string content before comparison, but compare the complete executable body structure, operators, calls, branches, indexing, constants used in decisions, and return expressions strictly. The scientific computation and every gate remain byte-for-byte or normalized-AST equivalent.",
+      "specific_v2_evidence": "24 of 25 registered functions matched exactly; verify_candidate_manifest differed only in audit description text changing 17 to a contract-driven 18.",
+      "scientific_effect": "NONE"
+    },
+    {
+      "fix_id": "V3-FIX-002",
+      "v2_failed_check_id": "S5FQSV4-V2-PRE-0020",
+      "scope": "static_diff_selftest identity domains only",
+      "rule": "Retain static_diff_selftest.json file-byte SHA-256 95CE2AEAAE81A3C76DC37CE04A2B7790F804B64A69C88EF838EC502838C772BD for file identity, and separately compare input_seal.static_diff_selftest_sha256 against canonical JSON SHA-256 5EBEEDD82C68C26C8251D67A234C72446587CA2A3E6E90003BDBE774AF8544B7.",
+      "scientific_effect": "NONE"
+    }
+  ],
+  "inherited_unchanged_bindings": {
+    "v4_candidate_contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "v4_candidate_script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "v4_input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "v4_preflight_sha256": "DDF29EB97BFECA61AD3F0A7FE7944C1077383F5408C59E6AE180168A0DA3DD6B",
+    "v4_selftest_sha256": "97EC46E0C59140FDA87B16F323259BDD070BBD4AB7AABC60C86C7395F4EA283C",
+    "v4_route_status_schema": "board20_step5_fullq_svd_candidate_v4_route_status_v4",
+    "prior_pilot_validator_audit_relpath": "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_pilot_postcheck.json",
+    "formal_contract_status_must_be_exact_whitelist": true,
+    "pilot_postcheck_default_enabled": false,
+    "full_postcheck_default_enabled": false,
+    "unexpected_v4_pilot_or_full_sealed_marker_is_precheck_hard_fail": true,
+    "v3_permanent_failure_and_v1_failed_audit_protection": true,
+    "step4_reference_and_indexing_contract": "UNCHANGED",
+    "scientific_formulas_and_gates": "UNCHANGED"
+  },
+  "inherited_representation_whitelist": [
+    {
+      "change_id": "V2-REP-001",
+      "rule": "JSON null/empty CSV and HDF5 NaN are equivalent only for the same explicitly nullable numeric fields preregistered in validator V2.",
+      "expanded": false
+    },
+    {
+      "change_id": "V2-REP-002",
+      "rule": "COMPACT_SCALAR_DELAY_AUGMENTATION uses NOT_APPLICABLE_COMPACT_SELECTED and FULL_Q_ORDINARY_HISTORY_COMPANION uses DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING.",
+      "expanded": false
+    }
+  ],
+  "forbidden_changes": [
+    "modifying or rerunning validator V2",
+    "overwriting validator V2 failure attribution or audit bundle",
+    "changing V4 candidate contract, script, static output, pilot, or full output",
+    "changing Step-4 references or MATLAB [l,j] indexing",
+    "changing route identities, matrix-order algorithm selection, formulas, roots, zero tolerance, pairing, rho, stable/critical rules, SVD residual mathematics, or thresholds",
+    "enabling pilot/full postcheck before a new formal V3 seal and explicit authorization",
+    "running V3 precheck before independent helper review and parent authorization"
+  ],
+  "current_authorization": {
+    "create_revision_contract": true,
+    "implement_validator_v3": false,
+    "run_validator_v3_precheck": false,
+    "run_validator_v3_pilot_postcheck": false,
+    "run_validator_v3_full_postcheck": false
+  }
+}

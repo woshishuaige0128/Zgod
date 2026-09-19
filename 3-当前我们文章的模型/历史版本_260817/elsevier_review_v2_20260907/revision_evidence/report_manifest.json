@@ -1,0 +1,576 @@
+{
+  "report": "RHTS第二版全文修改逐项对照与回退决策汇报.html",
+  "title": "RHTS第二版全文修改逐项对照与回退决策汇报",
+  "main_sha256": "c1cc160c45f0966fdd4a3f6a09a19965b2ffd298c6d0b67b10e80aa1b658e5c0",
+  "pdf_sha256": "b231d46714dfa8e7b17561e1f60ce662ae73dff884a978c4f6e7e949efb16139",
+  "operations": 64,
+  "table_cell_subdecisions": 30,
+  "decisions": [
+    {
+      "id": "change-001",
+      "title": "摘要：数据联动与有依据的结论",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-002",
+      "title": "界面力维数：避免直接相加不同局部向量",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-003",
+      "title": "装配坐标：补充局部至整体的映射",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-004",
+      "title": "装配平衡：纠正“既无协调也无平衡”的表述",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-005",
+      "title": "闭环信号：明确调节器使用数值状态",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-006",
+      "title": "模态与时滞：区分直接延迟和动力耦合",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-007",
+      "title": "附加反馈力：写明延迟与力的施加位置",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-008",
+      "title": "基准来源：区分原型截面与实际数值参数",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-009",
+      "title": "表1：梁弹性模量200改为206 GPa",
+      "file": "main.tex",
+      "category": "表格数据修正"
+    },
+    {
+      "id": "change-010",
+      "title": "表1：柱弹性模量200改为206 GPa",
+      "file": "main.tex",
+      "category": "表格数据修正"
+    },
+    {
+      "id": "change-011",
+      "title": "模型复现：集中补充边界、截面与质量",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-012",
+      "title": "固有频率与阻尼：按实际矩阵更新",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-013",
+      "title": "两种分析：保留通道位置而不混同模型",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-014",
+      "title": "准确性模型：明确整体缩聚的实际阶数及Guyan实现",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-015",
+      "title": "准确性仿真：按真实并行状态空间运行说明",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-016",
+      "title": "激励定义：补充完整输入并删除未验证的屈服判断",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-017",
+      "title": "新增图：地震与扫频输入",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-018",
+      "title": "MAC：明确平移与转角的单位",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-019",
+      "title": "扫频积分：固定频带端点，修正单调增长暗示",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-020",
+      "title": "模态指标定位：回到公式实际度量",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-021",
+      "title": "模态扩展：补齐重归一化和权重的计算规则",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-022",
+      "title": "指标解释：删除“等于进入延迟通道的响应”",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-023",
+      "title": "局部模型阶数：限定6/12阶的适用对象",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-024",
+      "title": "结果节导语：明确两套分析的对象",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-025",
+      "title": "模态精度段：更新频率和最大误差",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-026",
+      "title": "表3：逐格替换5个错误数值",
+      "file": "main.tex",
+      "category": "表格数据修正"
+    },
+    {
+      "id": "table-cell-09",
+      "title": "表3 · 划分2 · 第1阶 · Guyan · 频率误差(%)",
+      "category": "逐格数值",
+      "parent": "change-026"
+    },
+    {
+      "id": "table-cell-10",
+      "title": "表3 · 划分2 · 第1阶 · Craig–Bampton · 频率误差(%)",
+      "category": "逐格数值",
+      "parent": "change-026"
+    },
+    {
+      "id": "table-cell-13",
+      "title": "表3 · 划分2 · 第2阶 · Guyan · 频率误差(%)",
+      "category": "逐格数值",
+      "parent": "change-026"
+    },
+    {
+      "id": "table-cell-14",
+      "title": "表3 · 划分2 · 第2阶 · Craig–Bampton · 频率误差(%)",
+      "category": "逐格数值",
+      "parent": "change-026"
+    },
+    {
+      "id": "table-cell-16",
+      "title": "表3 · 划分2 · 第2阶 · Craig–Bampton · MAC",
+      "category": "逐格数值",
+      "parent": "change-026"
+    },
+    {
+      "id": "change-027",
+      "title": "表4：逐格替换21个错误数值",
+      "file": "main.tex",
+      "category": "表格数据修正"
+    },
+    {
+      "id": "table-cell-17",
+      "title": "表4 · 划分1 · El Centro · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-18",
+      "title": "表4 · 划分1 · El Centro · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-19",
+      "title": "表4 · 划分2 · El Centro · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-20",
+      "title": "表4 · 划分2 · El Centro · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-21",
+      "title": "表4 · 划分1 · Chirp, 0.1–1.9 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-23",
+      "title": "表4 · 划分2 · Chirp, 0.1–1.9 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-24",
+      "title": "表4 · 划分2 · Chirp, 0.1–1.9 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-25",
+      "title": "表4 · 划分1 · Chirp, 1.9–3.5 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-27",
+      "title": "表4 · 划分2 · Chirp, 1.9–3.5 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-28",
+      "title": "表4 · 划分2 · Chirp, 1.9–3.5 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-29",
+      "title": "表4 · 划分1 · Chirp, 3.5–5.4 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-31",
+      "title": "表4 · 划分2 · Chirp, 3.5–5.4 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-32",
+      "title": "表4 · 划分2 · Chirp, 3.5–5.4 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-33",
+      "title": "表4 · 划分1 · Chirp, 5.4–8.1 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-34",
+      "title": "表4 · 划分1 · Chirp, 5.4–8.1 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-35",
+      "title": "表4 · 划分2 · Chirp, 5.4–8.1 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-36",
+      "title": "表4 · 划分2 · Chirp, 5.4–8.1 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-37",
+      "title": "表4 · 划分1 · Chirp, 8.1–10 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-38",
+      "title": "表4 · 划分1 · Chirp, 8.1–10 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-39",
+      "title": "表4 · 划分2 · Chirp, 8.1–10 Hz · Guyan · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "table-cell-40",
+      "title": "表4 · 划分2 · Chirp, 8.1–10 Hz · Craig–Bampton · 首层NRMSE(%)",
+      "category": "逐格数值",
+      "parent": "change-027"
+    },
+    {
+      "id": "change-028",
+      "title": "表5：逐格替换4个错误数值",
+      "file": "main.tex",
+      "category": "表格数据修正"
+    },
+    {
+      "id": "table-cell-41",
+      "title": "表5 · 划分1 · 前5阶/两作动坐标 · Guyan · 模态重分配比",
+      "category": "逐格数值",
+      "parent": "change-028"
+    },
+    {
+      "id": "table-cell-42",
+      "title": "表5 · 划分1 · 前5阶/两作动坐标 · Craig–Bampton · 模态重分配比",
+      "category": "逐格数值",
+      "parent": "change-028"
+    },
+    {
+      "id": "table-cell-43",
+      "title": "表5 · 划分2 · 前5阶/两作动坐标 · Guyan · 模态重分配比",
+      "category": "逐格数值",
+      "parent": "change-028"
+    },
+    {
+      "id": "table-cell-44",
+      "title": "表5 · 划分2 · 前5阶/两作动坐标 · Craig–Bampton · 模态重分配比",
+      "category": "逐格数值",
+      "parent": "change-028"
+    },
+    {
+      "id": "change-029",
+      "title": "频率机理：删除不适用的普遍上界推论",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-030",
+      "title": "新增图：前两阶实际频率与恢复水平振型",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-031",
+      "title": "MAC解读：保留原判断，补上新振型证据",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-032",
+      "title": "地震结果：不再以幅值居中为由省略中层",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-033",
+      "title": "新增图与分析：中间楼层地震重构",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-034",
+      "title": "扫频时程：修正峰值时刻和末端幅值判断",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-035",
+      "title": "新增图与分析：中间楼层扫频重构",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-036",
+      "title": "首层误差分析：更新整段数值与非单调趋势",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-037",
+      "title": "响应小结：删除精度模型同阶的错误论据",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-038",
+      "title": "新增图与分析：峰值层间位移角分布",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-039",
+      "title": "调节器引入句：与明确后的力求和点一致",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-040",
+      "title": "稳定域：精确单位、参考模型及计算来源",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-041",
+      "title": "稳定性机理：保留物理解释，修正因果强度",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-042",
+      "title": "表5结果：重写已失效的稳定域同序关系",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-043",
+      "title": "模态份额解释：用具体坐标贡献替代能量转移断言",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-044",
+      "title": "新增图：15个物理坐标份额与两通道贡献",
+      "file": "main.tex",
+      "category": "新增结果图"
+    },
+    {
+      "id": "change-045",
+      "title": "删除0.3阈值及扫描前稳定性排名",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-046",
+      "title": "方法适用性：保留原段，更新误差与实际阶数",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-047",
+      "title": "结论第一段：纠正模态方程不含延迟的说法",
+      "file": "main.tex",
+      "category": "必要文字修订"
+    },
+    {
+      "id": "change-048",
+      "title": "结论第二段：表格联动并纳入中层验证",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-049",
+      "title": "结论第三段：更新指标并限制稳定性归因",
+      "file": "main.tex",
+      "category": "表格联动文字"
+    },
+    {
+      "id": "change-050",
+      "title": "图1：按式(3.6)重绘附加力反馈路径",
+      "file": "main.tex",
+      "category": "示意图必要修订"
+    },
+    {
+      "id": "change-051",
+      "title": "图2：英文原型几何与截面图",
+      "file": "main.tex",
+      "category": "示意图必要修订"
+    },
+    {
+      "id": "change-052",
+      "title": "图3：保留节点及15坐标，修正数值柱脚",
+      "file": "main.tex",
+      "category": "示意图必要修订"
+    },
+    {
+      "id": "change-053",
+      "title": "图4：保留双侧子结构与坐标信息的英文重绘",
+      "file": "main.tex",
+      "category": "示意图必要修订"
+    },
+    {
+      "id": "change-054",
+      "title": "重复文献引用：CraigBampton1968合并到Craig1968",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-055",
+      "title": "文献库：删除重复条目CraigBampton1968",
+      "file": "references.bib",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-056",
+      "title": "重复文献引用：ChenRicles2008b合并到ChenCR2008",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-057",
+      "title": "文献库：删除重复条目ChenRicles2008b",
+      "file": "references.bib",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-058",
+      "title": "浮动图：限定图片在相应正文节内",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-059",
+      "title": "浮动页：允许较大图片及时单独成页",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-060",
+      "title": "图4尺寸：增加等比例高度上限",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-061",
+      "title": "图文相邻：在地震与扫频结果前排完模态图",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-062",
+      "title": "图文相邻：在稳定性结果前排完响应图",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-063",
+      "title": "图文相邻：在模态份额结果前排完稳定域图",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    },
+    {
+      "id": "change-064",
+      "title": "图文相邻：在参考文献前排完正文图件",
+      "file": "main.tex",
+      "category": "格式与文献整理"
+    }
+  ],
+  "embedded_images": 20,
+  "bytes": 3256726
+}

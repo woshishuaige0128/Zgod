@@ -1,0 +1,12 @@
+﻿gate,status,value,limit
+"49,848固定键",PASS,49848,49848
+根数与总数,PASS,3356432/mismatch=0,3356432
+rho全点,PASS,"points=49848,max=8.060219158778636e-14",1e-09
+stable_class_critical,PASS,diff=0,0
+全点state残差,PASS,"M=8.667948287006294e-15,P=1.1427721301221084e-15",1e-08
+共享证书全根Hungarian,PASS,"points=2800,roots=168397,max=1.095457058397642e-12",1e-08
+共享证书state残差,PASS,7.61297814200346e-15,1e-08
+独立Laurent根残差,PASS,"roots=168397,max=4.107392297026362e-13",1e-08
+独立清幂多项式根残差,PASS,"roots=168397,max=4.107392297026362e-13（与Laurent相差非零标量z^clearing）",1e-08
+各自自动证书内部闭合,PASS,"M=2797,P=2791",2797/2791（浮点最小点选择差异）
+双轮确定性,PASS,"M=2runs,P=31/31",PASS

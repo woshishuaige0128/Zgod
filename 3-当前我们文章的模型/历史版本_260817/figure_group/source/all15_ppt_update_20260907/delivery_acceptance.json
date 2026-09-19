@@ -1,0 +1,158 @@
+{
+  "pass": true,
+  "slide_count_each_format": 15,
+  "native_shapes_first_four": [
+    39,
+    94,
+    114,
+    274
+  ],
+  "native_paths_first_four": 373,
+  "native_text_shapes_first_four": 148,
+  "math_groups_in_one_shape": 65,
+  "removed_detached_textboxes": 97,
+  "new_vector_figures": 11,
+  "protected_files_unchanged": 227,
+  "live_render": [
+    {
+      "slide": 1,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 10,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 11,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 12,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 13,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 14,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 15,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 2,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 3,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 4,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 5,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 6,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 7,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 8,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": 9,
+      "exact": true,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "review": "All 15 candidate slides viewed individually. All 15 PPTX renders pixel-identical. PPT slides 2,3,14 show minor serialization/render rounding and were individually viewed. No missing labels or cropping observed.",
+  "sha256": {
+    "figure_rths.ppt": "09928624d2e0c268f06373f9fd50700306e7e3b56ce3f647e77d7737a0df9cec",
+    "figure_rths.pptx": "8b2bc30385fdca88e3d3137ba33c944fd0c69d915ebf9d72ce05c33d96297ede"
+  }
+}

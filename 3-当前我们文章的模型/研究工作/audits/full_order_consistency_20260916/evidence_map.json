@@ -1,0 +1,80 @@
+[
+  {
+    "claim": "现稿原完整框架、几何、Rayleigh阻尼",
+    "file": "sources/manuscript.tex",
+    "start": 459,
+    "end": 470
+  },
+  {
+    "claim": "两种划分的局部坐标、缺失协调与模型阶数",
+    "file": "sources/manuscript.tex",
+    "start": 475,
+    "end": 519
+  },
+  {
+    "claim": "精度案例无控制、RK4与输入设置",
+    "file": "sources/manuscript.tex",
+    "start": 524,
+    "end": 535
+  },
+  {
+    "claim": "缩聚后共享坐标装配",
+    "file": "sources/manuscript.tex",
+    "start": 170,
+    "end": 182
+  },
+  {
+    "claim": "物理恢复先延迟保留坐标、模态当前更新",
+    "file": "sources/manuscript.tex",
+    "start": 308,
+    "end": 326
+  },
+  {
+    "claim": "按缩聚物理矩阵列分配时滞、惯性数值推进",
+    "file": "sources/manuscript.tex",
+    "start": 331,
+    "end": 366
+  },
+  {
+    "claim": "LQR及CR离散特征矩阵",
+    "file": "sources/manuscript.tex",
+    "start": 368,
+    "end": 413
+  },
+  {
+    "claim": "完整框架标准与旧Guyan矩阵及CB构造",
+    "file": "sources/full_frame/rths_reduce.m",
+    "start": 1,
+    "end": 68
+  },
+  {
+    "claim": "原Simulink负载投影与三楼层恢复",
+    "file": "sources/full_frame/rths_simulate.m",
+    "start": 1,
+    "end": 46
+  },
+  {
+    "claim": "当前划分二局部矩阵、装配及共同反馈",
+    "file": "sources/delayed/delay_model.py",
+    "start": 12,
+    "end": 125
+  },
+  {
+    "claim": "当前时滞矩阵、CR推进与物理端恢复",
+    "file": "sources/delayed/delay_model.py",
+    "start": 127,
+    "end": 199
+  },
+  {
+    "claim": "历史划分一局部质量、刚度及独立10%阻尼",
+    "file": "sources/historical/PDmonicanshu2.m",
+    "start": 91,
+    "end": 155
+  },
+  {
+    "claim": "历史划分一数值侧坐标长度与矩阵尺寸不一致",
+    "file": "sources/historical/New_Ns2.m",
+    "start": 1,
+    "end": 32
+  }
+]

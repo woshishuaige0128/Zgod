@@ -1,0 +1,36 @@
+source_name,equation,implementation,static_status,reason,evidence_cell
+energy_zonghe.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,质量归一化使论文分母数值为1，但激励向量身份仍未由脚本证明,C001|C002|C003
+energy_zonghe.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+energy_zonghe.mlx,4-43,E=0.5*omega^2*m*phi^2后按列归一化,STRUCTURAL_MATCH,按列归一化后0.5*omega^2逐列消去,C001|C002|C003
+energy_zonghe.mlx,4-44,E_total=E*participation_ratio,STRUCTURAL_MATCH,矩阵乘法结构与论文一致,C001|C002|C003
+energy_zonghe.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+energy_zonghe2.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,r0=MPrt*ones后代码仍计算phi^T*M*r，存在重复质量矩阵风险,C001|C002|C003
+energy_zonghe2.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+energy_zonghe2.mlx,4-43,E=0.5*omega^2*m*phi^2后按列归一化,STRUCTURAL_MATCH,按列归一化后0.5*omega^2逐列消去,C001|C002|C003
+energy_zonghe2.mlx,4-44,E_total=E*participation_ratio,STRUCTURAL_MATCH,矩阵乘法结构与论文一致,C001|C002|C003
+energy_zonghe2.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+Copy_of_energy_zonghe2.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,质量归一化使论文分母数值为1，但激励向量身份仍未由脚本证明,C001|C002|C003
+Copy_of_energy_zonghe2.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+Copy_of_energy_zonghe2.mlx,4-43,E=0.5*omega^2*m*phi^2后按列归一化,STRUCTURAL_MATCH,按列归一化后0.5*omega^2逐列消去,C001|C002|C003
+Copy_of_energy_zonghe2.mlx,4-44,E_total=E*participation_ratio,STRUCTURAL_MATCH,矩阵乘法结构与论文一致,C001|C002|C003
+Copy_of_energy_zonghe2.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+Copy_2_of_energy_zonghe2.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,r0=MPrt*ones后代码仍计算phi^T*M*r，存在重复质量矩阵风险,C001|C002|C003
+Copy_2_of_energy_zonghe2.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+Copy_2_of_energy_zonghe2.mlx,4-43,E=0.5*omega^2*m*phi^2；按列归一化被注释,FORMULA_MISMATCH,未形成论文要求的单模态坐标能量占比,C001|C002|C003
+Copy_2_of_energy_zonghe2.mlx,4-44,E_total=E*participation_ratio,INPUT_IDENTITY_MISMATCH,输入E未归一化，输出不再是综合能量占比,C001|C002|C003
+Copy_2_of_energy_zonghe2.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+energy_zonghe3.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,质量归一化使论文分母数值为1，但激励向量身份仍未由脚本证明,C001|C002|C003
+energy_zonghe3.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+energy_zonghe3.mlx,4-43,E=0.5*omega^2*m*phi^2后按列归一化,STRUCTURAL_MATCH,按列归一化后0.5*omega^2逐列消去,C001|C002|C003
+energy_zonghe3.mlx,4-44,E_total=E*participation_ratio,STRUCTURAL_MATCH,矩阵乘法结构与论文一致,C001|C002|C003
+energy_zonghe3.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+Copy_of_energy_zonghe3.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,质量归一化使论文分母数值为1，但激励向量身份仍未由脚本证明,C001|C002|C003
+Copy_of_energy_zonghe3.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+Copy_of_energy_zonghe3.mlx,4-43,E=0.5*omega^2*m*phi^2后按列归一化,STRUCTURAL_MATCH,按列归一化后0.5*omega^2逐列消去,C001|C002|C003
+Copy_of_energy_zonghe3.mlx,4-44,E_total=E*participation_ratio,STRUCTURAL_MATCH,矩阵乘法结构与论文一致,C001|C002|C003
+Copy_of_energy_zonghe3.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004
+Copy_2_of_energy_zonghe3.mlx,4-41,质量归一化phi后执行Gamma=phi^T*M*r,PARTIAL,质量归一化使论文分母数值为1，但激励向量身份仍未由脚本证明,C001|C002|C003
+Copy_2_of_energy_zonghe3.mlx,4-42,GammaSq=Gamma.^2; participation_ratio=GammaSq/sum(GammaSq),STRUCTURAL_MATCH,归一化结构与论文一致，但继承式(4-41)的激励身份风险,C001|C002|C003
+Copy_2_of_energy_zonghe3.mlx,4-43,E=0.5*omega^2*m*phi^2；按列归一化被注释,FORMULA_MISMATCH,未形成论文要求的单模态坐标能量占比,C001|C002|C003
+Copy_2_of_energy_zonghe3.mlx,4-44,E_total=E*participation_ratio,INPUT_IDENTITY_MISMATCH,输入E未归一化，输出不再是综合能量占比,C001|C002|C003
+Copy_2_of_energy_zonghe3.mlx,4-45,G:total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100 | CB:total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100,FORMULA_MISMATCH,最终标量使用能量和的相对变化，未执行论文逐坐标相对变化之和,C004

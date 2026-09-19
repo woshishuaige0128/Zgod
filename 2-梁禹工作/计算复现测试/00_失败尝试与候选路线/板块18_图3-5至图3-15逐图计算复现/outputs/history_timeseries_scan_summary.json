@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-08-24T18:23:56.349068+00:00",
+  "scan_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master",
+  "scope": "梁禹原工程内全部MAT/FIG/CSV，排除后建figure/test目录",
+  "total_candidates": 42,
+  "extension_counts": {
+    ".csv": 4,
+    ".mat": 38
+  },
+  "status_counts": {
+    "EXCLUDED_DIFFERENT_ANALYSIS": 17,
+    "EXCLUDED_EXCITATION_ONLY": 12,
+    "EXCLUDED_NO_TIME_RESPONSE_SIGNATURE": 3,
+    "EXCLUDED_STRUCTURAL_MATRIX": 4,
+    "MANUAL_REVIEW_REQUIRED": 6
+  },
+  "potential_review_count": 0,
+  "manual_review_count": 6,
+  "excluded_count": 36,
+  "potential_paths": [],
+  "policy": "扫描命中只获得历史候选身份；没有方法列、激励、楼层、时间轴和代码入口的联合证据，不得作为图3-5至图3-15计算级复现基准。",
+  "scan_csv_sha256": "92BF2093B0BE346844B002529DC3A5A77D12432F7F43B4A6B411AF2B42CE1A23"
+}

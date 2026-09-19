@@ -1,0 +1,83 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v4_revision_contract_v1",
+  "recorded_date": "2026-08-25",
+  "status": "SEALED_REVISION_SCOPE_PILOT_POSTCHECK_ONLY",
+  "purpose": "Authorize a new isolated validator V4 for read-only validation of the already sealed V4 candidate 49-point pilot. Validator V1, permanently failed validator V2, validator V3, and every predecessor audit remain immutable.",
+  "predecessor_validator_v3": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v3.py",
+    "script_sha256": "FF2129C32B0698B5871D77C699D4398C12802D7A9D952B65D78D67EFA874C50B",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v3.json",
+    "contract_sha256": "A00F3A0C605579ABC7058C2592ED6145A8659166A51E3CEE360E9673993D6F54",
+    "binding_relpath": "code/board20_step5_fullq_svd_candidate_validator_v3_v4_binding_record.json",
+    "binding_sha256": "BCCD145D3F251F1CB98CF8E9C05B5B3C203E424E3242F5EDFCDB63B9E197C965",
+    "revision_relpath": "code/board20_step5_fullq_svd_candidate_validator_v3_revision_contract.json",
+    "revision_sha256": "55A73B53BA79E514AA93C20454F63041ABE65FCDCA50DE0A107161142129ED7E",
+    "precheck_run1_baseline_relpath": "code/board20_step5_fullq_svd_candidate_validator_v3_precheck_run1_baseline.json",
+    "precheck_run1_baseline_sha256": "2EBA585CFDF470F0EA75CD2EE0685FCFBCD8BBEB6C9D88FDFA59BBB2CE596896",
+    "precheck_repeatability_relpath": "code/board20_step5_fullq_svd_candidate_validator_v3_precheck_repeatability.json",
+    "precheck_repeatability_sha256": "FC9B4410D1BA4B896FCD283317B7F3BA20426B35ECAB87922393FE48D7722A2D"
+  },
+  "predecessor_validator_v3_precheck_artifacts": {
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck.json": "EA7186294466486AF03C5DACB2B41C231A2522DECA0EA1703E07B87A7E72BF17",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_checks.csv": "7B34D326470589EE39B79D375FFC8FEBAD9254A3CDA1733C8342430864C5F033",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_protected_hashes.csv": "FA3A6BAC0E5D0298A651D84BB97A7E4B241C8074280896CDBE0C7526EF9F4353",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_report.md": "7741D12F5B819DDC0FBBAE909CCE69BFB7EF40AFF8D1B2F19A59F7FD87817089",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_artifact_manifest.csv": "28268AFB03D9E01F3D345D78BB22F5EBE2F9F861B8A7E70070EA8347F2F4C7E3",
+    "logs/step5_fullq_svd_candidate_validation_v3/v4_validator_v3_precheck.log": "3606858A3502D57715FB05F9AC8CA684AEFBFF88BD7216A4B18E6A17B49927B3"
+  },
+  "unchanged_scientific_core_functions": [
+    "matlab_numeric",
+    "matrix_order",
+    "prepared_terms",
+    "normalized_svd_residual",
+    "as_bool",
+    "as_float",
+    "parse_csv_record",
+    "float_equal",
+    "load_route_math",
+    "selector",
+    "direct_terms",
+    "consolidate_terms",
+    "polynomial_terms_from_coefficients",
+    "direct_formula_matrix",
+    "formula_identity_difference",
+    "h5_text",
+    "validate_root_group_layout",
+    "root_slice",
+    "expected_points",
+    "load_step4_reference",
+    "verify_repeatability",
+    "verify_run_status",
+    "verify_checkpoint",
+    "h5_point_scalar"
+  ],
+  "unchanged_operational_scientific_functions": [
+    "verify_candidate_manifest",
+    "validate_route_scientific"
+  ],
+  "allowed_changes": [
+    "New validator V4 script, contract, binding, revision record, audit_v4 directory, and validation_v4 log directory only.",
+    "Contract status becomes FORMAL_V4_VALIDATOR_V4_SEALED_PILOT_POSTCHECK_ONLY; pilot_postcheck_enabled is true and full_postcheck_enabled remains false.",
+    "Audit paths, version labels, audit prefixes, report prose, and predecessor identity checks advance from validator V3 to validator V4.",
+    "The sealed V4 pilot manifest, run status, repeatability, run-1 baseline, external repeatability record, and two non-scientific wrapper failure records are hash-bound.",
+    "Precheck marker policy expects the sealed pilot marker and requires the full directory to remain absent without parsing per-route scientific results.",
+    "Validator-generated CSV files use UTF-8-SIG; all CSV reads continue to use UTF-8-SIG.",
+    "Repeatability reads the sealed long schema keys baseline_artifact_manifest_sha256 and repeat_artifact_manifest_sha256; current manifest SHA is independently recomputed.",
+    "Full-postcheck is rejected before any full candidate output is parsed."
+  ],
+  "prohibited_changes": [
+    "Any change to Step-4 indexing or MAT transpose semantics.",
+    "Any change to Laurent or polynomial formulas, log-scaled spectral-norm SVD residuals, rho/stable gates, unmatched-root safety gates, HDF5 layout, checkpoint identity, or manifest identity logic.",
+    "Any change to the 1e-8 rho/residual gates, 1e-12 formula gate, rho<1 stable rule, or prior-failure verdicts.",
+    "Any modification of candidate, Step-4, original Step-5, validator V1/V2/V3, or predecessor audit files.",
+    "Any candidate computation or any full computation/postcheck."
+  ],
+  "activation_scope": {
+    "precheck": true,
+    "pilot_postcheck": true,
+    "full_postcheck": false,
+    "candidate_computation": false,
+    "explicit_postcheck_cli_authorization_required": true
+  },
+  "scientific_gate_change": false
+}

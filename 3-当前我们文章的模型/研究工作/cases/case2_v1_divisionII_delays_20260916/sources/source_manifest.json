@@ -1,0 +1,27 @@
+[
+  {
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\calculation.mat",
+    "copy": "sources\\calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+  },
+  {
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\必要输入\\EQ.mat",
+    "copy": "sources\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9"
+  },
+  {
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\frame_model.m",
+    "copy": "sources\\frame_model.m",
+    "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0"
+  },
+  {
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.tex",
+    "copy": "sources\\main_review_20260911_terms_red.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+  },
+  {
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\input\\local_candidates\\PDmonicanshu3.m",
+    "copy": "sources\\PDmonicanshu3.m",
+    "sha256": "c35c7bfb19c3a5e98626ff1a07c14481f53973947e2c382eb81bd9642d9cf40e"
+  }
+]

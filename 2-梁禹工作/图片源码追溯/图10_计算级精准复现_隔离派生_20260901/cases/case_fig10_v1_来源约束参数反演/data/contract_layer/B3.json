@@ -1,0 +1,290 @@
+{
+  "contract_hash": "829a407510a6c0aeaab2058dadb78801f4c5ff418194c96d0229535ea7d41ad1",
+  "contract_id": "B3",
+  "difference_from_r03": [
+    {
+      "candidate_value": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      },
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "actuation_and_delay_channels.division_2",
+      "r03_value": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "candidate_value": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      },
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "controller_channels.division_2",
+      "r03_value": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "candidate_value": "INSIDE_H",
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "delay_and_feedback.feedback_placement",
+      "r03_value": "OUTSIDE_H"
+    },
+    {
+      "candidate_value": "S_L^T H(z) [v(z) (W_C + DeltaC S_R) + (W_K + DeltaK S_R)]",
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "delay_and_feedback.feedback_formula",
+      "r03_value": "S_L^T [v(z) DeltaC + DeltaK] S_R"
+    },
+    {
+      "candidate_value": "W_C_active = W_C + DeltaC S_R; W_K_active = W_K + DeltaK S_R; projected feedback is retained for audit; external feedback matrices are zero",
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "delay_and_feedback.inside_bundle_rule",
+      "r03_value": "not_applicable; active physical delay factors remain W_C and W_K; projected feedback is external"
+    }
+  ],
+  "evidence_level": "ARTICLE_FORMULA_ON_BOARD20_MATRIX_PACKAGE_DIAGNOSTIC",
+  "label_cn": "当前文章通道与H内反馈算子骨架搭载板块20矩阵链",
+  "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+  "notes": [
+    "B3最接近当前文章的通道与反馈位置，但仍不是文章6/12维数值模型。",
+    "第一类三路线与B2相同，待B2物化后应按路线求解算子哈希复用。"
+  ],
+  "record_kind": "NEW_SKELETON",
+  "reuse_evidence": null,
+  "route_bundle_plan": [
+    {
+      "bundle_plan_id": "B3_D1_Original",
+      "dimension": 15,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Original",
+      "operator_action": "REUSE_B2_ROUTE_AFTER_MATERIALIZATION",
+      "reuse_from": "B2_D1_Original",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B3_D1_Guyan",
+      "dimension": 6,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Guyan",
+      "operator_action": "REUSE_B2_ROUTE_AFTER_MATERIALIZATION",
+      "reuse_from": "B2_D1_Guyan",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B3_D1_Craig_Bampton",
+      "dimension": 9,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Craig_Bampton",
+      "operator_action": "REUSE_B2_ROUTE_AFTER_MATERIALIZATION",
+      "reuse_from": "B2_D1_Craig_Bampton",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B3_D2_Original",
+      "dimension": 15,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Original",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B3_D2_Guyan",
+      "dimension": 5,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Guyan",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B3_D2_Craig_Bampton",
+      "dimension": 8,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Craig_Bampton",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    }
+  ],
+  "schema_version": "fig10-contract-v1",
+  "scientific_contract": {
+    "actuation_and_delay_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      }
+    },
+    "controller": {
+      "B_lower_block": "M_inverse",
+      "Q_diagonal": [
+        1000000,
+        1000000,
+        10000,
+        10000
+      ],
+      "R_diagonal": [
+        0.01,
+        0.01
+      ],
+      "force_embedding": "gain_direct",
+      "input_semantics": "generalized_force",
+      "local_matrix_contract": "standard_static_projection_of_full_local_MCK_on_actuation_coordinates",
+      "solver": "CARE",
+      "state_order": [
+        "q1",
+        "q2",
+        "qdot1",
+        "qdot2"
+      ]
+    },
+    "controller_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      }
+    },
+    "delay_and_feedback": {
+      "channel_to_delay_exponent": {
+        "channel_1": "l",
+        "channel_2": "j"
+      },
+      "delay_orientation": "H_LEFT",
+      "feedback_formula": "S_L^T H(z) [v(z) (W_C + DeltaC S_R) + (W_K + DeltaK S_R)]",
+      "feedback_placement": "INSIDE_H",
+      "inside_bundle_rule": "W_C_active = W_C + DeltaC S_R; W_K_active = W_K + DeltaK S_R; projected feedback is retained for audit; external feedback matrices are zero",
+      "physical_delay_formula": "S_L^T H(z) [v(z) W_C + W_K]"
+    },
+    "integration": {
+      "al_formula": "solve(4M+2dtC+dt^2K,4M)",
+      "alpha": null,
+      "mass_operator": "M/al",
+      "mass_operator_identity": "M/al = M + 0.5dtC + 0.25dt^2K",
+      "mode": "route_matrix_al"
+    },
+    "matrix_package": {
+      "article_dimension_contract_status": "BOARD20_NUMERIC_PACKAGE_IS_NOT_ARTICLE_6_AND_12_MODEL",
+      "craig_bampton_mode_count": 3,
+      "division_method_dimensions": {
+        "division_1": {
+          "Craig_Bampton": 9,
+          "Guyan": 6,
+          "Original": 15
+        },
+        "division_2": {
+          "Craig_Bampton": 8,
+          "Guyan": 5,
+          "Original": 15
+        }
+      },
+      "frozen_mat_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "guyan_projection": "standard_congruence_TtAT",
+      "id": "BOARD20_STEP8B_SUFFIX2_SUFFIX3"
+    },
+    "sampling": {
+      "delay_grid_status": "NOT_ASSIGNED_BY_CONTRACT_LAYER",
+      "dt_seconds": {
+        "denominator": 1024,
+        "numerator": 1
+      }
+    },
+    "stability_classification": {
+      "critical_rule": "abs(rho - 1) <= 1e-9",
+      "grid_assignment": "NOT_PART_OF_CONTRACT_LAYER",
+      "quantity": "maximum_modulus_of_physical_roots",
+      "stable_rule": "rho < 1"
+    }
+  },
+  "search_action": "MATERIALIZE_LATER_NO_SEARCH",
+  "source_basis": [
+    {
+      "claim": "当前文章同时采用第二类psi1/psi11与H内反馈。",
+      "classification": "SOURCE",
+      "pointer": "C05, C08 and C14",
+      "source_id": "board20_conflict_adjudication"
+    },
+    {
+      "claim": "CARE、论文Q/R、广义力、逐路线矩阵al和标准Guyan继承自R03。",
+      "classification": "VERIFIED_PRIOR_COMPUTATION",
+      "pointer": "R03 fullgrid contract",
+      "source_id": "board20_r03"
+    },
+    {
+      "claim": "文章算子搭载板块20的15/6/9与15/5/8维矩阵链；文章6/12维数值矩阵尚未闭合。",
+      "classification": "INFERENCE",
+      "pointer": "B3 design boundary",
+      "source_id": "board28_matrix_carryover"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checked_numeric_values": 232,
+  "maximum_absolute_difference": 2.4478197246935451E-12,
+  "frequency_tolerance": 1E-8,
+  "response_share_drift_tolerance": 1E-10,
+  "matlab_release": "2025b",
+  "table_values_checked": 44,
+  "table_values_maximum_absolute_difference": 2.4478197246935451E-12
+}

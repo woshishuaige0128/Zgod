@@ -1,0 +1,36 @@
+{
+  "pass": true,
+  "changed_zip_parts": [
+    "ppt/slides/slide18.xml",
+    "ppt/slides/slide19.xml"
+  ],
+  "unchanged_pages_verified": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "all_noncurve_objects_unchanged": true,
+  "target_pages_identical_between_formats": [
+    18,
+    19
+  ],
+  "protected_files_unchanged": 216,
+  "sha256": {
+    "pptx": "66cc9bec1077a4c60805def044a7e1b8059e47dc197cd361b81012a56b3b8a7a",
+    "ppt": "3d7b8877f68563c056a05466591507db2510798abbfa65ca6ad3a1f3f488ca0a"
+  }
+}

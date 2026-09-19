@@ -1,0 +1,29 @@
+{
+  "bundle": {
+    "contract_id": "H07",
+    "dimension": 6,
+    "dt": 0.0009765625,
+    "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\h07_energy_bundle_diagnostic\\numeric_bundles\\H07_D1_Guyan_native.mat",
+    "register_scales": [
+      132773566.05363153,
+      85842518.83076997
+    ],
+    "route_id": "H07_D1_Guyan",
+    "schema_version": "FIG10_BLIND_CORE_V1",
+    "sha256": "A7F79CA3D5C3BE444BC67D261081375655A28A8C37A523726074DB5A9A4FDBE5",
+    "shared_left_factor_relative_error": 0.0
+  },
+  "contract_hash": "D8FB69CE028C41283B5CCF908E26B8A39BE0C5F5AB9D280FCD4A98F95E865981",
+  "contract_id": "H07",
+  "critical_point_count": 0,
+  "maximum_rho": 0.9950324374397171,
+  "maximum_state_eigenpair_residual": 7.854180781945155e-16,
+  "minimum_rho": 0.9828842431472483,
+  "mode": "full-grid",
+  "point_count": 2077,
+  "route_id": "H07_D1_Guyan",
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "stable_point_count": 2077,
+  "status": "PASS"
+}

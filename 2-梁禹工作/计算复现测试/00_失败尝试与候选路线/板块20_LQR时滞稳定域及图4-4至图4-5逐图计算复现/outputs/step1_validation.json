@@ -1,0 +1,11 @@
+{
+  "schema": "board20_step1_validation_v1",
+  "created_at": "2026-08-25T04:30:59.924465+08:00",
+  "checks": 21,
+  "passed": 21,
+  "failed": 0,
+  "artifact_count": 258,
+  "artifact_manifest_sha256": "320842A60D9D9E6C7130AD16E75952B5FF6576E252F3A04AF962CBE41EC41728",
+  "failures": [],
+  "status": "PASS"
+}

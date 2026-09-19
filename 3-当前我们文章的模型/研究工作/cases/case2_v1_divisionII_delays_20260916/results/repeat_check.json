@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files": 16,
+  "max_absolute_difference": 0.0,
+  "note": "Delay values were integer steps throughout. Convert imported integers to double before displaying milliseconds; recomputed two delay pairs to confirm identical responses."
+}

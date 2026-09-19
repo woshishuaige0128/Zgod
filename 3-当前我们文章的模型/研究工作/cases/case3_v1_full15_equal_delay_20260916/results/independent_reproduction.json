@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "division": 1,
+      "method": "Guyan",
+      "middle_nrmse_pct": 0.02661109322087812,
+      "absolute_reproduction_delta": 0.0
+    },
+    {
+      "division": 1,
+      "method": "CB3",
+      "middle_nrmse_pct": 0.024377926642632674,
+      "absolute_reproduction_delta": 0.0
+    },
+    {
+      "division": 1,
+      "method": "Full15",
+      "endpoint_n": [
+        17,
+        18
+      ],
+      "rho": [
+        0.9999592530225534,
+        1.0000953399985941
+      ]
+    },
+    {
+      "division": 1,
+      "method": "Guyan",
+      "endpoint_n": [
+        14,
+        15
+      ],
+      "rho": [
+        0.9999730974326821,
+        1.0001439861460857
+      ]
+    },
+    {
+      "division": 1,
+      "method": "CB3",
+      "endpoint_n": [
+        16,
+        17
+      ],
+      "rho": [
+        0.9998660498586354,
+        1.0000047759729678
+      ]
+    },
+    {
+      "division": 2,
+      "method": "Guyan",
+      "middle_nrmse_pct": 0.9842180053037713,
+      "absolute_reproduction_delta": 0.0
+    },
+    {
+      "division": 2,
+      "method": "CB3",
+      "middle_nrmse_pct": 0.15909537306366456,
+      "absolute_reproduction_delta": 0.0
+    },
+    {
+      "division": 2,
+      "method": "Full15",
+      "endpoint_n": [
+        21,
+        22
+      ],
+      "rho": [
+        0.9998986421246943,
+        1.0000006512178465
+      ]
+    },
+    {
+      "division": 2,
+      "method": "Guyan",
+      "endpoint_n": [
+        14,
+        15
+      ],
+      "rho": [
+        0.9999748024761672,
+        1.0000301075762843
+      ]
+    },
+    {
+      "division": 2,
+      "method": "CB3",
+      "endpoint_n": [
+        18,
+        19
+      ],
+      "rho": [
+        0.9999068588195176,
+        1.0000239251130651
+      ]
+    }
+  ]
+}

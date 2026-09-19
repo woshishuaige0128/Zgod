@@ -1,0 +1,356 @@
+{
+  "checks": {
+    "completed_checkpoint_resume_preserves_points": true,
+    "full-grid_checkpoint_complete": true,
+    "full-grid_hash_manifest_exists": true,
+    "full-grid_point_count": true,
+    "full_grid_mask_all_stable": true,
+    "full_grid_mask_has_no_header": true,
+    "full_grid_mask_shape_3x4": true,
+    "no_atomic_temp_files_left": true,
+    "r03_classification_exact": true,
+    "r03_dominant_root_abs_error_le_1e-13": true,
+    "r03_residuals_pass": true,
+    "r03_rho_abs_error_le_1e-13": true,
+    "r03_root_counts_exact": true,
+    "r03_three_points_loaded_and_solved": true,
+    "sentinel_checkpoint_complete": true,
+    "sentinel_hash_manifest_exists": true,
+    "sentinel_point_count": true,
+    "sparse-band_checkpoint_complete": true,
+    "sparse-band_hash_manifest_exists": true,
+    "sparse-band_point_count": true,
+    "synthetic_rho_0p3": true,
+    "synthetic_root_count_two": true,
+    "synthetic_roots_are_0p2_0p3": true,
+    "synthetic_state_residual_pass": true
+  },
+  "code_hashes": {
+    "fig10_blind_core.py": "9F001CD1E57F8909070295EBC8E265B2CE6619784EE1ADDA75F762B49B377411",
+    "run_fig10_blind_search.py": "80D1BBE2F3DC49AFFDAF77DE619104BD582705AB344D96C48E6C9D6A8EBEDC6B",
+    "test_fig10_blind_search.py": "018D93DE7110DED3AA90AF7A0D2910FD9AA2BB95CAD605D9CB870812079AF30B"
+  },
+  "evidence": {
+    "r03_regression": {
+      "bundle_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8c_六链模型生成\\python\\候选数值包\\第1类_原结构15维__R03_论文CARE_矩阵al_广义力.mat",
+      "bundle_sha256": "D5E81B75E16F038F14C8CF0D9E4DA4550C875BF3CC17F513F31352DDF512DF2B",
+      "points": [
+        {
+          "actual_rho": 0.9991686925639454,
+          "actual_root_count": 30,
+          "actual_stability_code": -1,
+          "dominant_root_abs_error": 0.0,
+          "expected_rho": 0.9991686925639454,
+          "expected_root_count": 30,
+          "expected_stability_code": -1,
+          "j_samples": 0,
+          "l_samples": 0,
+          "maximum_state_residual": 5.092848436625681e-16,
+          "rho_abs_error": 0.0
+        },
+        {
+          "actual_rho": 1.0085777726708756,
+          "actual_root_count": 50,
+          "actual_stability_code": 1,
+          "dominant_root_abs_error": 0.0,
+          "expected_rho": 1.0085777726708756,
+          "expected_root_count": 50,
+          "expected_stability_code": 1,
+          "j_samples": 13,
+          "l_samples": 7,
+          "maximum_state_residual": 4.184301371693703e-16,
+          "rho_abs_error": 0.0
+        },
+        {
+          "actual_rho": 1.005622771865623,
+          "actual_root_count": 126,
+          "actual_stability_code": 1,
+          "dominant_root_abs_error": 0.0,
+          "expected_rho": 1.005622771865623,
+          "expected_root_count": 126,
+          "expected_stability_code": 1,
+          "j_samples": 66,
+          "l_samples": 30,
+          "maximum_state_residual": 4.3047058387953413e-16,
+          "rho_abs_error": 0.0
+        }
+      ],
+      "reference_csv_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8e_四候选全网格\\python\\步骤8E_Python全网格逐点结果.csv",
+      "reference_csv_sha256": "9028D1010EA698BECAEFC5026F9B705ECD032FFAD7D1575F65E74403150E225A"
+    },
+    "synthetic": {
+      "bundle_sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+      "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+      "maximum_state_residual": 3.706155217931675e-17,
+      "modes": {
+        "full-grid": {
+          "checkpoint": {
+            "bundle_sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+            "completed_point_count": 12,
+            "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+            "contract_id": "SYNTHETIC_CORE_CONTRACT",
+            "error": null,
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "full-grid",
+            "next_point_index": 12,
+            "point_selection_sha256": "6BDDC271B19C584E8DA93A2B699A6ADE03738AE9F2B6863EC337B5DF00E6AEFC",
+            "results_csv": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_full-grid\\routes\\synthetic_route\\full-grid\\points.csv",
+            "results_csv_sha256": "53777BD2A0959EC44FA93B8C36D2B39B9013D0A4B5696FAF1A0BB4C1A3CA51E8",
+            "route_fingerprint": "A31221F26339835C0AC2A359BA82BCA4F1C56DBCE3B917B40B1CAA9CFC216C11",
+            "route_id": "synthetic_route",
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "COMPLETE",
+            "total_point_count": 12
+          },
+          "first_run": {
+            "command": [
+              "D:\\Software\\python\\python.exe",
+              "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\run_fig10_blind_search.py",
+              "--manifest",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+              "--output-dir",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_full-grid",
+              "--mode",
+              "full-grid",
+              "--checkpoint-every",
+              "1"
+            ],
+            "returncode": 0,
+            "stderr": "",
+            "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"full-grid\",\n  \"route_count\": 1,\n  \"point_count\": 12,\n  \"hash_manifest\": \"C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_blind_regression_a17ygj9k\\\\run_full-grid\\\\artifact_hash_manifest.csv\"\n}\n"
+          },
+          "summary": {
+            "blind_calculation_only": true,
+            "manifest_path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "full-grid",
+            "point_count": 12,
+            "resume_requested": false,
+            "route_count": 1,
+            "route_summaries": [
+              {
+                "bundle": {
+                  "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                  "dimension": 1,
+                  "dt": 0.0009765625,
+                  "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+                  "path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\bundles\\synthetic_operator_bundle.npz",
+                  "register_scales": [
+                    1.0,
+                    1.0
+                  ],
+                  "route_id": "synthetic_route",
+                  "schema_version": "FIG10_BLIND_CORE_V1",
+                  "sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+                  "shared_left_factor_relative_error": 0.0
+                },
+                "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+                "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                "critical_point_count": 0,
+                "maximum_rho": 0.30000000000000004,
+                "maximum_state_eigenpair_residual": 3.706155217931675e-17,
+                "minimum_rho": 0.30000000000000004,
+                "mode": "full-grid",
+                "point_count": 12,
+                "route_id": "synthetic_route",
+                "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+                "stable_point_count": 12,
+                "status": "PASS"
+              }
+            ],
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "PASS"
+          }
+        },
+        "sentinel": {
+          "checkpoint": {
+            "bundle_sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+            "completed_point_count": 2,
+            "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+            "contract_id": "SYNTHETIC_CORE_CONTRACT",
+            "error": null,
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "sentinel",
+            "next_point_index": 2,
+            "point_selection_sha256": "8D635BBE25E1B7B37166CBCE03D3D8E5988E58FAFAF3685A32CC20C35165D7F1",
+            "results_csv": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_sentinel\\routes\\synthetic_route\\sentinel\\points.csv",
+            "results_csv_sha256": "0C5894373B18FC6139FC225926FE91F23E86F22C05A82BDACBE9AF217427D195",
+            "route_fingerprint": "18D2896BFF1C6CD4B6D11BB6C7673A312F6F2E7C898150C46337C8E8E140A64C",
+            "route_id": "synthetic_route",
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "COMPLETE",
+            "total_point_count": 2
+          },
+          "first_run": {
+            "command": [
+              "D:\\Software\\python\\python.exe",
+              "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\run_fig10_blind_search.py",
+              "--manifest",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+              "--output-dir",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_sentinel",
+              "--mode",
+              "sentinel",
+              "--checkpoint-every",
+              "1"
+            ],
+            "returncode": 0,
+            "stderr": "",
+            "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"sentinel\",\n  \"route_count\": 1,\n  \"point_count\": 2,\n  \"hash_manifest\": \"C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_blind_regression_a17ygj9k\\\\run_sentinel\\\\artifact_hash_manifest.csv\"\n}\n"
+          },
+          "resume_run": {
+            "command": [
+              "D:\\Software\\python\\python.exe",
+              "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\run_fig10_blind_search.py",
+              "--manifest",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+              "--output-dir",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_sentinel",
+              "--mode",
+              "sentinel",
+              "--checkpoint-every",
+              "1",
+              "--resume"
+            ],
+            "returncode": 0,
+            "stderr": "",
+            "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"sentinel\",\n  \"route_count\": 1,\n  \"point_count\": 2,\n  \"hash_manifest\": \"C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_blind_regression_a17ygj9k\\\\run_sentinel\\\\artifact_hash_manifest.csv\"\n}\n"
+          },
+          "summary": {
+            "blind_calculation_only": true,
+            "manifest_path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "sentinel",
+            "point_count": 2,
+            "resume_requested": false,
+            "route_count": 1,
+            "route_summaries": [
+              {
+                "bundle": {
+                  "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                  "dimension": 1,
+                  "dt": 0.0009765625,
+                  "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+                  "path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\bundles\\synthetic_operator_bundle.npz",
+                  "register_scales": [
+                    1.0,
+                    1.0
+                  ],
+                  "route_id": "synthetic_route",
+                  "schema_version": "FIG10_BLIND_CORE_V1",
+                  "sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+                  "shared_left_factor_relative_error": 0.0
+                },
+                "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+                "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                "critical_point_count": 0,
+                "maximum_rho": 0.30000000000000004,
+                "maximum_state_eigenpair_residual": 3.706155217931675e-17,
+                "minimum_rho": 0.30000000000000004,
+                "mode": "sentinel",
+                "point_count": 2,
+                "route_id": "synthetic_route",
+                "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+                "stable_point_count": 2,
+                "status": "PASS"
+              }
+            ],
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "PASS"
+          }
+        },
+        "sparse-band": {
+          "checkpoint": {
+            "bundle_sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+            "completed_point_count": 3,
+            "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+            "contract_id": "SYNTHETIC_CORE_CONTRACT",
+            "error": null,
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "sparse-band",
+            "next_point_index": 3,
+            "point_selection_sha256": "4141B58823E568A6D3312E4481D6EE2B14A013E540D7C2E88A516925721F62C6",
+            "results_csv": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_sparse-band\\routes\\synthetic_route\\sparse-band\\points.csv",
+            "results_csv_sha256": "3EF90B7D80E322196BBE21CD3E27605162EA6A74E0CD0D35BCAC8D0F756651E0",
+            "route_fingerprint": "070ABFFC35B1134D139D45F59EF925CDA00CCC69A605BC0E885463D408BF04C4",
+            "route_id": "synthetic_route",
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "COMPLETE",
+            "total_point_count": 3
+          },
+          "first_run": {
+            "command": [
+              "D:\\Software\\python\\python.exe",
+              "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\run_fig10_blind_search.py",
+              "--manifest",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+              "--output-dir",
+              "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\run_sparse-band",
+              "--mode",
+              "sparse-band",
+              "--checkpoint-every",
+              "1"
+            ],
+            "returncode": 0,
+            "stderr": "",
+            "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"sparse-band\",\n  \"route_count\": 1,\n  \"point_count\": 3,\n  \"hash_manifest\": \"C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_blind_regression_a17ygj9k\\\\run_sparse-band\\\\artifact_hash_manifest.csv\"\n}\n"
+          },
+          "summary": {
+            "blind_calculation_only": true,
+            "manifest_path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\synthetic_manifest.json",
+            "manifest_sha256": "A4A53B696C0C8CD316EBC120FD6FA9DDC0E979669DA5CD4654CC4768C0E4850A",
+            "mode": "sparse-band",
+            "point_count": 3,
+            "resume_requested": false,
+            "route_count": 1,
+            "route_summaries": [
+              {
+                "bundle": {
+                  "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                  "dimension": 1,
+                  "dt": 0.0009765625,
+                  "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+                  "path": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_blind_regression_a17ygj9k\\bundles\\synthetic_operator_bundle.npz",
+                  "register_scales": [
+                    1.0,
+                    1.0
+                  ],
+                  "route_id": "synthetic_route",
+                  "schema_version": "FIG10_BLIND_CORE_V1",
+                  "sha256": "830C20D6F850D4C62A0312D4F00028601165DE268862F73FD9EB1FF8C2A06D8A",
+                  "shared_left_factor_relative_error": 0.0
+                },
+                "contract_hash": "A0250F4F9750981100162F7E42CB68096ED432F0DB8105C3BFEB052A4D2093D2",
+                "contract_id": "SYNTHETIC_CORE_CONTRACT",
+                "critical_point_count": 0,
+                "maximum_rho": 0.30000000000000004,
+                "maximum_state_eigenpair_residual": 3.490578267708623e-17,
+                "minimum_rho": 0.30000000000000004,
+                "mode": "sparse-band",
+                "point_count": 3,
+                "route_id": "synthetic_route",
+                "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+                "stable_point_count": 3,
+                "status": "PASS"
+              }
+            ],
+            "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+            "status": "PASS"
+          }
+        }
+      },
+      "point00_rho": 0.30000000000000004,
+      "point00_roots_imag": [
+        0.0,
+        0.0
+      ],
+      "point00_roots_real": [
+        0.19999999999999998,
+        0.30000000000000004
+      ]
+    }
+  },
+  "schema_version": "FIG10_BLIND_REGRESSION_V1",
+  "scientific_search_executed": false,
+  "status": "PASS"
+}

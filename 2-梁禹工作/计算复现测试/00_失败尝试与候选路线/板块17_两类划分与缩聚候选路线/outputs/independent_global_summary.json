@@ -1,0 +1,173 @@
+{
+  "generated_at_utc": "2026-08-24T17:47:39.821370+00:00",
+  "route": "独立Python公式重建，不调用MATLAB缩聚代码",
+  "reference_mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\input\\upstream_u01\\reference_model_matlab.mat",
+  "reference_mat_sha256": "7F9C7C6ACEEDA106304B943F280CCFFF06CBA9137059857A4D89CB06D5B0DAB3",
+  "matrix_tolerance": 5e-12,
+  "static_tolerance": 5e-12,
+  "frequency_tolerance_hz": 5e-10,
+  "subspace_angle_tolerance_rad": 5e-08,
+  "check_count": 68,
+  "pass_count": 68,
+  "failure_count": 0,
+  "failures": [],
+  "division_dimensions": {
+    "1": {
+      "guyan": [
+        15,
+        6
+      ],
+      "craig_bampton": [
+        15,
+        9
+      ],
+      "retained_fixed_interface_modes": 3
+    },
+    "2": {
+      "guyan": [
+        15,
+        5
+      ],
+      "craig_bampton": [
+        15,
+        8
+      ],
+      "retained_fixed_interface_modes": 3
+    }
+  },
+  "historical_vs_projected_relative_differences": {
+    "1": {
+      "mass": 0.09977893886275215,
+      "damping": 0.009519997512151273,
+      "stiffness": 1.7079192548340845e-16
+    },
+    "2": {
+      "mass": 0.3730127025329254,
+      "damping": 0.08415963930168892,
+      "stiffness": 1.4724831969381851e-16
+    }
+  },
+  "legacy_cross_checks": {
+    "1": {
+      "matrix_comparison": {
+        "Mo": 0.0,
+        "Co": 0.0,
+        "Ko": 0.0,
+        "T": 1.181940843677321e-16,
+        "M_historical": 0.0,
+        "C_historical": 2.565428830882846e-17,
+        "K_historical": 1.3579893280426738e-16,
+        "M_projected": 5.120074203250748e-18,
+        "C_projected": 1.51576339836343e-16,
+        "K_projected": 1.8621098785190808e-17,
+        "Mf": 0.0,
+        "T_cb_fixed_interface_subspace_max_angle_rad": 9.719897978548043e-16,
+        "CB_frequency_max_abs_hz": 9.947598300641403e-14
+      },
+      "metadata": {
+        "legacy_master": [
+          1,
+          6,
+          11,
+          4,
+          9,
+          14
+        ],
+        "legacy_slave": [
+          2,
+          3,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          15
+        ],
+        "legacy_order": [
+          1,
+          6,
+          11,
+          4,
+          9,
+          14,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          15
+        ],
+        "legacy_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\input\\legacy_audit\\division_1_guyan_matrices.mat"
+      }
+    },
+    "2": {
+      "matrix_comparison": {
+        "Mo": 0.0,
+        "Co": 0.0,
+        "Ko": 0.0,
+        "T": 2.0650230441676593e-16,
+        "M_historical": 0.0,
+        "C_historical": 1.4801660492235566e-16,
+        "K_historical": 3.360233275318385e-16,
+        "M_projected": 3.7479304720839736e-17,
+        "C_projected": 4.0307109361503853e-16,
+        "K_projected": 1.4599233512056867e-16,
+        "Mf": 0.0,
+        "T_cb_fixed_interface_subspace_max_angle_rad": 7.722379680984194e-15,
+        "CB_frequency_max_abs_hz": 1.7763568394002505e-14
+      },
+      "metadata": {
+        "legacy_master": [
+          1,
+          11,
+          4,
+          9,
+          14
+        ],
+        "legacy_slave": [
+          6,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          15
+        ],
+        "legacy_order": [
+          1,
+          11,
+          4,
+          9,
+          14,
+          6,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          15
+        ],
+        "legacy_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\input\\legacy_audit\\division_2_guyan_matrices.mat"
+      }
+    }
+  },
+  "preliminary_run_attempts": [
+    {
+      "attempt": 1,
+      "result": "运行失败，未进入验收",
+      "cause": "通用相对误差函数对15x1载荷向量Mf错误指定Frobenius范数；确认Mf为向量后修正为按数组维数选择范数。"
+    }
+  ],
+  "output_mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\outputs\\independent_global_routes_python.mat",
+  "pass": true
+}

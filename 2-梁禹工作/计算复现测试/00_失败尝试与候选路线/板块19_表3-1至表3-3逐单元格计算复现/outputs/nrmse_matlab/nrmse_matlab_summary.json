@@ -1,0 +1,11 @@
+{
+  "input_files": 4,
+  "input_checks_pass": true,
+  "total_candidate_rows": 264,
+  "historical_candidate_rows": 72,
+  "historical_chirp_rows": 60,
+  "historical_elcentro_rows": 12,
+  "minimum_reference_range_mm": 6.0382902825220395,
+  "maximum_nrmse_percent": 27.681568547860056,
+  "status": "MATLAB_COMPUTATION_COMPLETE_PENDING_INDEPENDENT_CHECK"
+}

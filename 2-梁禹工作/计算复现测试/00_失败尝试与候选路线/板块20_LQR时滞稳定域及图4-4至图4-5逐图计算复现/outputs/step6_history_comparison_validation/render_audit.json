@@ -1,0 +1,60 @@
+{
+  "dpi": 180,
+  "renderer": "pdftoppm",
+  "rows": [
+    {
+      "exact_size_pass": true,
+      "exit_code": 0,
+      "expected_height_px": 603,
+      "expected_width_px": 1347,
+      "render_bytes": 45920,
+      "render_exists": true,
+      "render_height_px": 603,
+      "render_mode": "RGB",
+      "render_sha256": "E81B5F12FBD33BC793392B07D01C64BAA292E7790069D50D5C71BEE9003EE206",
+      "render_width_px": 1347,
+      "stem": "图4-4_历史最终掩膜边界_绘图级复核"
+    },
+    {
+      "exact_size_pass": true,
+      "exit_code": 0,
+      "expected_height_px": 603,
+      "expected_width_px": 1347,
+      "render_bytes": 46167,
+      "render_exists": true,
+      "render_height_px": 603,
+      "render_mode": "RGB",
+      "render_sha256": "692EEEC0C1A4719A773D6952FDD197692BF2CE56FFD111BE7CDD2A7266584F6B",
+      "render_width_px": 1347,
+      "stem": "图4-5_历史最终掩膜边界_绘图级复核"
+    },
+    {
+      "exact_size_pass": true,
+      "exit_code": 0,
+      "expected_height_px": 603,
+      "expected_width_px": 1347,
+      "render_bytes": 82908,
+      "render_exists": true,
+      "render_height_px": 603,
+      "render_mode": "RGB",
+      "render_sha256": "060C34EE9D020957425D3F963BEEA8547719E07AC93E2606FD2113E96C3DB6B4",
+      "render_width_px": 1347,
+      "stem": "图4-4_作者文件身份计算候选_失败诊断"
+    },
+    {
+      "exact_size_pass": true,
+      "exit_code": 0,
+      "expected_height_px": 603,
+      "expected_width_px": 1347,
+      "render_bytes": 70336,
+      "render_exists": true,
+      "render_height_px": 603,
+      "render_mode": "RGB",
+      "render_sha256": "D10233258A2D6D73079B02197AB54E04B0FB657C2655E3713ABDCC46166B461C",
+      "render_width_px": 1347,
+      "stem": "图4-5_作者文件身份计算候选_失败诊断"
+    }
+  ],
+  "singlefile": true,
+  "version": "pdftoppm version 25.02.0"
+}

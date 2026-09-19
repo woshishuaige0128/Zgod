@@ -1,0 +1,9 @@
+稿件顺序,稿件标签,输出基名,期刊稿图题,独立源码入口,输入数据,梁禹大论文对照,大论文PDF页,来源性质,对比检查重点
+1,fig:rths-loop,fig_rths_loop,Closed loop of an MDOF RTHS with multiple actuators.,源码/01_绘制fig_rths_loop_RTHS闭环图.py,第1至2章示意图参数.json,图2-1,21,依据原稿语义参数化矢量重绘,四个顺向模块、位移反馈、恢复力反馈和信号方向
+2,fig:pole-plane,fig_pole_plane,Mapping of the stability region from the s plane to the z plane.,源码/02_绘制fig_pole_plane_极点平面映射.py,图4-2_极点映射参数.json,图4-2,59,依据原稿公式和参数化矢量重绘,左半s平面、z平面单位圆、共轭极点映射和稳定区
+3,fig:benchmark-geometry,fig_benchmark_geometry,Geometry and member sections of the benchmark frame.,源码/03_绘制fig_benchmark_geometry_基准结构几何.py,第1至2章示意图参数.json,图2-3,28,依据原稿几何参数化矢量重绘,三跨三层、762 mm跨长、635 mm层高、W5x16柱和定制工字梁尺寸
+4,fig:dof-idealization,fig_dof_idealization,Degrees of freedom of the benchmark frame.,源码/04_绘制fig_dof_idealization_自由度理想化.py,第1至2章示意图参数.json,图2-4和图2-5,29-30,两幅参数化矢量重绘合并,面板(a)29自由度编号；面板(b)15自由度编号与每层水平自由度
+5,fig:division,fig_division,Substructure divisions and selection of the retained coordinates.,源码/05_绘制fig_division_两类子结构划分.py,图3-1与图3-2_结构自由度参数.json,图3-1和图3-2,37,两幅参数化矢量重绘合并,面板(a)第一类物理主自由度psi1和psi6；面板(b)第二类物理主自由度psi1和psi11且psi6为黑色从自由度
+6,fig:eq-response,fig_eq_response,Horizontal storey displacement under the El Centro record.,源码/06_绘制fig_eq_response_ElCentro响应.py,第一类划分_ElCentro地震响应.csv；第二类划分_ElCentro地震响应.csv,图3-6、图3-8、图3-9和图3-10,42-45,从已验收真实Simulink响应快照重新排版,面板(a)第一类一层；(b)第一类三层；(c)第二类一层；(d)第二类三层；局部窗10-11 s和21.5-22.5 s
+7,fig:chirp-response,fig_chirp_response,Horizontal storey displacement under the chirp excitation.,源码/07_绘制fig_chirp_response_Chirp响应.py,第一类划分_Chirp响应.csv；第二类划分_Chirp响应.csv,唯一编号图3-11、图3-13、图3-14和图3-15,46-49,从已验收真实Simulink响应快照重新排版,面板(a)第一类一层；(b)第一类三层；(c)第二类一层；(d)第二类三层；局部窗13-14 s和38-38.3 s；大论文后两图原题注重复为图3-13
+8,fig:stability-domain,fig_stability_domain,Stability domains in the plane of the two actuator delays.,源码/08_绘制fig_stability_domain_双划分稳定域.py,图4-4_第一类子结构划分稳定域_边界数据.csv；图4-5_第二类子结构划分稳定域_边界数据.csv,图4-4和图4-5,70,从历史稳定掩膜的已验收边界快照重新排版,面板(a)第一类；面板(b)第二类；三方法边界身份和毫秒坐标

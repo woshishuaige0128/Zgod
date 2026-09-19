@@ -1,3 +1,20 @@
+# 本仓库只跟踪三个整理后的文件夹。
+# RHTS 工作目录下的其余内容（原始工作目录、仿真中间结果、学位论文原件等）一律不纳入版本控制。
+/*
+!/.gitignore
+!/README.md
+!/1-基准模型/
+!/2-梁禹工作/
+!/3-当前我们文章的模型/
+
+# 三个文件夹内部的临时产物
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+node_modules/
+
+# ---- 以下继承自原仓库的 MATLAB 忽略规则 ----
 # Windows default autosave extension
 *.asv
 
@@ -14,18 +31,6 @@
 # Generated helpsearch folders
 helpsearch*/
 
-# Simulink code generation folders
+# Simulink code generation / cache folders
 slprj/
 sccprj/
-
-# Matlab code generation folders
-codegen/
-
-# Simulink autosave extension
-*.autosave
-
-# Simulink cache files
-*.slxc
-
-# Octave session info
-octave-workspace

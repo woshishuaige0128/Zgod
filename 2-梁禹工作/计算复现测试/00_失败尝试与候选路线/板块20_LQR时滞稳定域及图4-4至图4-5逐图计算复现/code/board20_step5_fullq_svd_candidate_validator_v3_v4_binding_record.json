@@ -1,0 +1,72 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v3_v4_binding_record_v1",
+  "record_status": "FORMAL_V4_VALIDATOR_V3_SEALED_PRECHECK_ONLY",
+  "purpose": "Externally bind the isolated validator V3 script and formal contract after static AST/JSON/CLI fail-closed checks. This binding authorizes no precheck or postcheck by itself.",
+  "validator_v3_identity": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v3.py",
+    "script_sha256": "FF2129C32B0698B5871D77C699D4398C12802D7A9D952B65D78D67EFA874C50B",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v3.json",
+    "contract_sha256": "A00F3A0C605579ABC7058C2592ED6145A8659166A51E3CEE360E9673993D6F54",
+    "revision_contract_relpath": "code/board20_step5_fullq_svd_candidate_validator_v3_revision_contract.json",
+    "revision_contract_sha256": "55A73B53BA79E514AA93C20454F63041ABE65FCDCA50DE0A107161142129ED7E",
+    "audit_output_root": "outputs/step5_fullq_svd_candidate_audit_v3",
+    "audit_root_readme_sha256": "7F3913FE6FCA000B44A8E26068FBCEFD9B4637AFD501A705248CBB20103C88D9",
+    "audit_log_root": "logs/step5_fullq_svd_candidate_validation_v3",
+    "log_root_readme_sha256": "FF862A21886DF5717C6AD5D0FFBCE9209E6D3A440D34A62B1D3C694609F7E772"
+  },
+  "v4_candidate_identity": {
+    "contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "preflight_sha256": "DDF29EB97BFECA61AD3F0A7FE7944C1077383F5408C59E6AE180168A0DA3DD6B",
+    "preflight_status": "PASS_58_OF_58",
+    "selftest_sha256": "97EC46E0C59140FDA87B16F323259BDD070BBD4AB7AABC60C86C7395F4EA283C",
+    "selftest_status": "PASS_80_OF_80",
+    "route_status_schema": "board20_step5_fullq_svd_candidate_v4_route_status_v4"
+  },
+  "static_diff_hash_domains": {
+    "file_relpath": "outputs/step5_fullq_svd_candidate_v4/static_diff_selftest.json",
+    "file_bytes_sha256": "95CE2AEAAE81A3C76DC37CE04A2B7790F804B64A69C88EF838EC502838C772BD",
+    "input_seal_field": "static_diff_selftest_sha256",
+    "input_seal_canonical_sha256": "5EBEEDD82C68C26C8251D67A234C72446587CA2A3E6E90003BDBE774AF8544B7",
+    "must_be_checked_independently": true
+  },
+  "frozen_validator_v2_failure": {
+    "failure_attribution_relpath": "code/board20_step5_fullq_svd_candidate_validator_v2_precheck_failure_attribution.json",
+    "failure_attribution_sha256": "DD30D9953535DB959EDACEE6327C4FAA85D6284513AEE92B0D6C06A3AE595CBD",
+    "script_sha256": "D6E0111413BD8E51A068AEDDFF509FC8159FC946E51EE1A0DFE53EF9DE2CB4A2",
+    "contract_sha256": "766E8E82CE6B03281F7C1A7EE566D7423B538725032FC7C8B2B521E66F74F61D",
+    "binding_record_sha256": "84A722AC8E865CA6CC9DFB6AD2F82BDCAF16A5EA179EC81059F282BD1A503728",
+    "audit_primary_json_sha256": "8243C01B8DE0B2C93F5C757D533B3B91AF34F358896B31DBC24DE375054E8A64",
+    "verdict": "PRECHECK_FAIL_PERMANENT_IMMUTABLE"
+  },
+  "validator_v3_revision_boundary": {
+    "strict_v1_v3_scientific_core_function_count": 24,
+    "scientific_core_ast_rule": "EXACT_AST_INCLUDING_EXECUTABLE_BODY",
+    "operational_manifest_function": "verify_candidate_manifest",
+    "operational_manifest_rule": "Only audit description prose is normalized; remaining executable AST must exactly equal V1 and enforce exact 18 paths, declared bytes/SHA, order, and no extra items.",
+    "inherited_representation_whitelist": ["V2-REP-001_NULLABLE_NUMERIC_NULL_NAN", "V2-REP-002_ALGORITHM_SPECIFIC_PAIRING_ROLE"],
+    "additional_scientific_representation_changes": 0,
+    "scientific_gate_changes": 0
+  },
+  "static_self_checks_completed": {
+    "python_ast_parse": "PASS",
+    "json_parse": "PASS",
+    "python_compile": "PASS",
+    "cli_help": "PASS",
+    "pilot_with_explicit_flag": "EXIT_2_NOT_SEALED_FOR_POSTCHECK_NO_PARSE",
+    "full_with_explicit_flag": "EXIT_2_NOT_SEALED_FOR_POSTCHECK_NO_PARSE",
+    "validator_v3_precheck_artifact_count": 0,
+    "validator_v3_log_artifact_count": 0,
+    "v4_candidate_pilot_directory_exists": false,
+    "v4_candidate_full_directory_exists": false
+  },
+  "authorization": {
+    "precheck_executed": false,
+    "precheck_authorized_by_this_binding": false,
+    "pilot_postcheck_enabled": false,
+    "full_postcheck_enabled": false,
+    "candidate_computation_authorized": false,
+    "next_action": "WAIT_FOR_INDEPENDENT_HELPER_REVIEW_AND_PARENT_AUTHORIZATION"
+  }
+}

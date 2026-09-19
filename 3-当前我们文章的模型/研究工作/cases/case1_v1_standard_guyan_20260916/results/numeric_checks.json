@@ -1,0 +1,1746 @@
+{
+  "status": "PASS",
+  "checks_passed": 290,
+  "checks": [
+    {
+      "name": "legacy frame 1 M",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy frame 1 C",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy frame 1 K",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Mg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Cg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Kg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Mcb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Ccb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 1 Kcb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 1 1",
+      "max_abs": 5.595524044110789e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 1 1",
+      "max_abs": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 1 1",
+      "max_abs": 9.992007221626409e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 1 1",
+      "max_abs": 2.1649348980190553e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 1 1",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 1 2",
+      "max_abs": 4.973799150320701e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 1 2",
+      "max_abs": 1.6653345369377348e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 1 2",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 1 2",
+      "max_abs": 1.887379141862766e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 1 2",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 1 3",
+      "max_abs": 2.0250467969162855e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 1 3",
+      "max_abs": 3.656797087359109e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 1 3",
+      "max_abs": 1.2906342661267445e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 1 3",
+      "max_abs": 6.328271240363392e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 1 3",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy aggregate deviation 1 2",
+      "max_abs": 2.3869795029440866e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 1 2 0",
+      "max_abs": 2.046918190501401e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 1 2 0",
+      "max_abs": 7.771561172376096e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 1 2 1",
+      "max_abs": 1.9984014443252818e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 1 2 1",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy aggregate deviation 1 3",
+      "max_abs": 1.645428585050901e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 1 3 0",
+      "max_abs": 1.935562821131498e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 1 3 0",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 1 3 1",
+      "max_abs": 2.4763524564264117e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 1 3 1",
+      "max_abs": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frame 2 M",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy frame 2 C",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy frame 2 K",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Mg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Cg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Kg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Mcb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Ccb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy reference 2 Kcb",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 2 1",
+      "max_abs": 5.595524044110789e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 2 1",
+      "max_abs": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 2 1",
+      "max_abs": 9.992007221626409e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 2 1",
+      "max_abs": 2.1649348980190553e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 2 1",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 2 2",
+      "max_abs": 4.618527782440651e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 2 2",
+      "max_abs": 6.349087922075114e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 2 2",
+      "max_abs": 3.157196726277789e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 2 2",
+      "max_abs": 3.608224830031759e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 2 2",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy eigenfrequency 2 3",
+      "max_abs": 1.1581846592889633e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy modal weights 2 3",
+      "max_abs": 2.5326962749261384e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal shares 2 3",
+      "max_abs": 1.2212453270876722e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy horizontal modes 2 3",
+      "max_abs": 4.107825191113079e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy modal sum 2 3",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy aggregate deviation 2 2",
+      "max_abs": 1.5543122344752192e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 2 2 0",
+      "max_abs": 2.490452288839151e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 2 2 0",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 2 2 1",
+      "max_abs": 2.4513724383723456e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 2 2 1",
+      "max_abs": 5.551115123125783e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy aggregate deviation 2 3",
+      "max_abs": 2.983724378680108e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 2 3 0",
+      "max_abs": 2.2148671785515717e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 2 3 0",
+      "max_abs": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy frequency error 2 3 1",
+      "max_abs": 3.046868313205664e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "legacy MAC 2 3 1",
+      "max_abs": 7.771561172376096e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy time 1 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy full response 1 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 eq 1",
+      "max_abs": 6.217248937900877e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 eq 2",
+      "max_abs": 7.771561172376096e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 eq 3",
+      "max_abs": 6.439293542825908e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 2 1 0",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 2 2 0",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 2 3 0",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 3 1 0",
+      "max_abs": 2.393918396847994e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 3 2 0",
+      "max_abs": 5.898059818321144e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 eq 3 3 0",
+      "max_abs": 1.474514954580286e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy time 1 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy full response 1 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 chirp 1",
+      "max_abs": 1.1546319456101628e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 chirp 2",
+      "max_abs": 7.549516567451064e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 1 chirp 3",
+      "max_abs": 6.661338147750939e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 0",
+      "max_abs": 1.3322676295501878e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 1",
+      "max_abs": 3.469446951953614e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 2",
+      "max_abs": 3.9968028886505635e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 3",
+      "max_abs": 5.662137425588298e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 4",
+      "max_abs": 3.0531133177191805e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 1 5",
+      "max_abs": 3.9968028886505635e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 2 0",
+      "max_abs": 1.1102230246251565e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 2 3 0",
+      "max_abs": 1.4432899320127035e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 0",
+      "max_abs": 1.3877787807814457e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 1",
+      "max_abs": 4.924988368515404e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 2",
+      "max_abs": 1.5612511283791264e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 3",
+      "max_abs": 2.8102520310824275e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 4",
+      "max_abs": 7.546047120499111e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 1 5",
+      "max_abs": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 2 0",
+      "max_abs": 5.898059818321144e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 1 chirp 3 3 0",
+      "max_abs": 4.683753385137379e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy time 2 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy full response 2 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 eq 1",
+      "max_abs": 6.217248937900877e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 eq 2",
+      "max_abs": 1.5543122344752192e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 eq 3",
+      "max_abs": 2.3314683517128287e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 2 1 0",
+      "max_abs": 4.263256414560601e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 2 2 0",
+      "max_abs": 4.085620730620576e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 2 3 0",
+      "max_abs": 4.085620730620576e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 3 1 0",
+      "max_abs": 3.469446951953614e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 3 2 0",
+      "max_abs": 3.8163916471489756e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 eq 3 3 0",
+      "max_abs": 4.5102810375396984e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy time 2 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy full response 2 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 chirp 1",
+      "max_abs": 1.1546319456101628e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 chirp 2",
+      "max_abs": 1.5987211554602254e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy drifts 2 chirp 3",
+      "max_abs": 7.105427357601002e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 0",
+      "max_abs": 1.4210854715202004e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 1",
+      "max_abs": 2.220446049250313e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 2",
+      "max_abs": 4.973799150320701e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 3",
+      "max_abs": 6.039613253960852e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 4",
+      "max_abs": 1.1934897514720433e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 1 5",
+      "max_abs": 8.881784197001252e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 2 0",
+      "max_abs": 1.4210854715202004e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 2 3 0",
+      "max_abs": 1.2434497875801753e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 0",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 1",
+      "max_abs": 1.6718397499726478e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 2",
+      "max_abs": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 3",
+      "max_abs": 7.28583859910259e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 4",
+      "max_abs": 9.540979117872439e-18,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 1 5",
+      "max_abs": 1.5265566588595902e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 2 0",
+      "max_abs": 2.706168622523819e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "legacy NRMSE 2 chirp 3 3 0",
+      "max_abs": 2.42861286636753e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frame 1 M",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard frame 1 C",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard frame 1 K",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 1 Mg",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 1 Mg",
+      "max_abs": 1.734723475976807e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 1 Cg",
+      "max_abs": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 1 Cg",
+      "max_abs": 8.326672684688674e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 1 Kg",
+      "max_abs": 2.168404344971009e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 1 Kg",
+      "max_abs": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "mass correction identity 1",
+      "max_abs": 8.326672684688674e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 T",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 T_cb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 Mcb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 Ccb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 Kcb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 1 Mf",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 1 1",
+      "max_abs": 5.595524044110789e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 1 1",
+      "max_abs": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 1 1",
+      "max_abs": 9.992007221626409e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 1 1",
+      "max_abs": 2.1649348980190553e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 1 1",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 1 2",
+      "max_abs": 3.552713678800501e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 1 2",
+      "max_abs": 1.942890293094024e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 1 2",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 1 2",
+      "max_abs": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 1 2",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 1 3",
+      "max_abs": 2.0250467969162855e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 1 3",
+      "max_abs": 3.656797087359109e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 1 3",
+      "max_abs": 1.2906342661267445e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 1 3",
+      "max_abs": 6.328271240363392e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 1 3",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard aggregate deviation 1 2",
+      "max_abs": 4.78089789979208e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 1 2 0",
+      "max_abs": 2.312833518453017e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 1 2 0",
+      "max_abs": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 1 2 1",
+      "max_abs": 1.5315526624704034e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 1 2 1",
+      "max_abs": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard aggregate deviation 1 3",
+      "max_abs": 1.645428585050901e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 1 3 0",
+      "max_abs": 1.935562821131498e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 1 3 0",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 1 3 1",
+      "max_abs": 2.4763524564264117e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 1 3 1",
+      "max_abs": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frame 2 M",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard frame 2 C",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard frame 2 K",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 2 Mg",
+      "max_abs": 3.469446951953614e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 2 Mg",
+      "max_abs": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 2 Cg",
+      "max_abs": 1.0408340855860843e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 2 Cg",
+      "max_abs": 8.326672684688674e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard projection 2 Kg",
+      "max_abs": 6.938893903907228e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard symmetry 2 Kg",
+      "max_abs": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "mass correction identity 2",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 T",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 T_cb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 Mcb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 Ccb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 Kcb",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "unchanged model part 2 Mf",
+      "max_abs": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 2 1",
+      "max_abs": 5.595524044110789e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 2 1",
+      "max_abs": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 2 1",
+      "max_abs": 9.992007221626409e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 2 1",
+      "max_abs": 2.1649348980190553e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 2 1",
+      "max_abs": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 2 2",
+      "max_abs": 1.7763568394002505e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 2 2",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 2 2",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 2 2",
+      "max_abs": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 2 2",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard eigenfrequency 2 3",
+      "max_abs": 1.1581846592889633e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard modal weights 2 3",
+      "max_abs": 2.5326962749261384e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal shares 2 3",
+      "max_abs": 1.2212453270876722e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard horizontal modes 2 3",
+      "max_abs": 4.107825191113079e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard modal sum 2 3",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "standard aggregate deviation 2 2",
+      "max_abs": 2.6922908347160046e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 2 2 0",
+      "max_abs": 2.0112800314109336e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 2 2 0",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 2 2 1",
+      "max_abs": 1.8118839761882555e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 2 2 1",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard aggregate deviation 2 3",
+      "max_abs": 2.983724378680108e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 2 3 0",
+      "max_abs": 2.2148671785515717e-12,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 2 3 0",
+      "max_abs": 6.661338147750939e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard frequency error 2 3 1",
+      "max_abs": 3.046868313205664e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard MAC 2 3 1",
+      "max_abs": 7.771561172376096e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard time 1 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged full CB response 1 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 eq 1",
+      "max_abs": 5.684341886080802e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 eq 2",
+      "max_abs": 5.3290705182007514e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 eq 3",
+      "max_abs": 9.592326932761353e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 eq 1",
+      "max_abs": 6.217248937900877e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 eq 2",
+      "max_abs": 2.6645352591003757e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 eq 3",
+      "max_abs": 6.439293542825908e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 2 1 0",
+      "max_abs": 1.3877787807814457e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 2 2 0",
+      "max_abs": 1.7694179454963432e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 2 3 0",
+      "max_abs": 2.6020852139652106e-18,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 3 1 0",
+      "max_abs": 2.393918396847994e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 3 2 0",
+      "max_abs": 5.898059818321144e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 eq 3 3 0",
+      "max_abs": 1.474514954580286e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard time 1 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged full CB response 1 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 chirp 1",
+      "max_abs": 9.237055564881302e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 chirp 2",
+      "max_abs": 1.2967404927621828e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 1 chirp 3",
+      "max_abs": 3.943512183468556e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 chirp 1",
+      "max_abs": 1.1546319456101628e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 chirp 2",
+      "max_abs": 8.881784197001252e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 1 chirp 3",
+      "max_abs": 6.661338147750939e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 0",
+      "max_abs": 1.3877787807814457e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 1",
+      "max_abs": 1.938011383317839e-18,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 2",
+      "max_abs": 3.4867941867133823e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 3",
+      "max_abs": 1.1622647289044608e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 4",
+      "max_abs": 9.8879238130678e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 1 5",
+      "max_abs": 7.494005416219807e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 2 0",
+      "max_abs": 4.163336342344337e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 2 3 0",
+      "max_abs": 3.469446951953614e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 0",
+      "max_abs": 1.3877787807814457e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 1",
+      "max_abs": 4.924988368515404e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 2",
+      "max_abs": 1.5612511283791264e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 3",
+      "max_abs": 2.8102520310824275e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 4",
+      "max_abs": 7.546047120499111e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 1 5",
+      "max_abs": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 2 0",
+      "max_abs": 5.898059818321144e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 1 chirp 3 3 0",
+      "max_abs": 4.683753385137379e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard time 2 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged full CB response 2 eq",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 eq 1",
+      "max_abs": 5.684341886080802e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 eq 2",
+      "max_abs": 6.750155989720952e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 eq 3",
+      "max_abs": 7.638334409421077e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 eq 1",
+      "max_abs": 6.217248937900877e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 eq 2",
+      "max_abs": 4.884981308350689e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 eq 3",
+      "max_abs": 2.3314683517128287e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 2 1 0",
+      "max_abs": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 2 2 0",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 2 3 0",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 3 1 0",
+      "max_abs": 3.469446951953614e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 3 2 0",
+      "max_abs": 3.8163916471489756e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 eq 3 3 0",
+      "max_abs": 4.5102810375396984e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard time 2 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "unchanged full CB response 2 chirp",
+      "max_abs": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 chirp 1",
+      "max_abs": 9.237055564881302e-14,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 chirp 2",
+      "max_abs": 2.611244553918368e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "independent RK4 mm 2 chirp 3",
+      "max_abs": 2.859934511434403e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 chirp 1",
+      "max_abs": 1.1546319456101628e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 chirp 2",
+      "max_abs": 3.1086244689504383e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard drifts 2 chirp 3",
+      "max_abs": 7.105427357601002e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 0",
+      "max_abs": 2.6645352591003757e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 1",
+      "max_abs": 1.0755285551056204e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 2",
+      "max_abs": 3.3306690738754696e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 3",
+      "max_abs": 4.884981308350689e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 4",
+      "max_abs": 7.632783294297951e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 1 5",
+      "max_abs": 8.881784197001252e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 2 0",
+      "max_abs": 2.220446049250313e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 2 3 0",
+      "max_abs": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 0",
+      "max_abs": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 1",
+      "max_abs": 1.6718397499726478e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 2",
+      "max_abs": 8.326672684688674e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 3",
+      "max_abs": 7.28583859910259e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 4",
+      "max_abs": 9.540979117872439e-18,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 1 5",
+      "max_abs": 1.5265566588595902e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 2 0",
+      "max_abs": 2.706168622523819e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "standard NRMSE 2 chirp 3 3 0",
+      "max_abs": 2.42861286636753e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ]
+}

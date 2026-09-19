@@ -1,0 +1,16 @@
+STATUS=PASS
+FIGURE=Fig07
+DESCRIPTION=第二类子结构划分，El Centro地震响应
+EVIDENCE_LEVEL=计算级复现（现存代码/必要适配路线）
+AUTHOR_HISTORICAL_POINT_VALUES=待决定
+DISPLACEMENT_DOF=Original:15,Guyan:5,Craig-Bampton:8
+RESPONSE_SIZE=[40961 3 3]
+TIME_RANGE_S=0,40
+FIXED_STEP_S=0.0009765625
+MAX_TIME_STEP_ERROR_S=0
+MAX_ABS_DIFFERENCE_TO_CURRENT_MM=4.9737991503207013e-14
+SIMULATION_SECONDS=5.292458
+COMPUTED_CSV=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig07_第二类划分_ElCentro全链计算\输出\本轮计算数据\Fig07_本轮全链计算响应.csv
+VECTOR_PDF=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig07_第二类划分_ElCentro全链计算\输出\本轮计算图\fig07_eq_div2_fullchain.pdf
+PNG_600DPI=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig07_第二类划分_ElCentro全链计算\输出\本轮计算图\fig07_eq_div2_fullchain.png
+RUNTIME_MODEL_COPY=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig07_第二类划分_ElCentro全链计算\输出\运行模型副本\fig07_division2_repro.slx

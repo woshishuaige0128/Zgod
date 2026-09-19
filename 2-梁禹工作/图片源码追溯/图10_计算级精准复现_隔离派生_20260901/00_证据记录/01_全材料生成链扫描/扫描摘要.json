@@ -1,0 +1,1717 @@
+{
+  "status": "SCAN_COMPLETE_WITH_READ_LIMITATIONS",
+  "started_epoch": 1788235934.5845022,
+  "finished_epoch": 1788236712.9306252,
+  "elapsed_seconds": 778.3461239337921,
+  "roots": [
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS"
+  ],
+  "excluded_delivery_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901",
+  "relevant_extensions": [
+    ".7z",
+    ".asv",
+    ".bak",
+    ".csv",
+    ".fig",
+    ".gz",
+    ".json",
+    ".log",
+    ".m",
+    ".mat",
+    ".md",
+    ".mdl",
+    ".mlx",
+    ".old",
+    ".orig",
+    ".original",
+    ".p",
+    ".r2023a",
+    ".r2023b",
+    ".rar",
+    ".sldd",
+    ".slx",
+    ".slxc",
+    ".tar",
+    ".txt",
+    ".xml",
+    ".zip"
+  ],
+  "file_count": 6135,
+  "extension_counts": {
+    ".csv": 1986,
+    ".gz": 4,
+    ".json": 1317,
+    ".log": 553,
+    ".m": 545,
+    ".mat": 539,
+    ".md": 553,
+    ".mlx": 268,
+    ".original": 2,
+    ".r2023a": 1,
+    ".r2023b": 10,
+    ".slx": 69,
+    ".slxc": 12,
+    ".txt": 201,
+    ".xml": 73,
+    ".zip": 2
+  },
+  "mat_field_count": 21319,
+  "mat_numeric_feature_count": 245,
+  "keyword_hit_count": 3320,
+  "io_statement_count": 3721,
+  "callback_workspace_hit_count": 350,
+  "archive_member_count": 5926,
+  "duplicate_file_row_count": 4195,
+  "error_count": 39,
+  "binary_limit_count": 0,
+  "source_protection_match_count": 6135,
+  "source_protection_changed_count": 0,
+  "source_protection_read_failed_count": 0,
+  "target_files": [
+    {
+      "ordinal": 469,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "extension": ".mat",
+      "size_bytes": 932,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "ordinal": 470,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "extension": ".mat",
+      "size_bytes": 1431,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    },
+    {
+      "ordinal": 668,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig06_第一类划分_ElCentro响应\\输出\\plotted_data.mat",
+      "extension": ".mat",
+      "size_bytes": 3339568,
+      "mtime_iso": "2026-09-01T00:06:41",
+      "sha256": "AEA99148F406BBF48B97CB26A69E79AE795BC452972EA0F54DB0FB7064A2C264"
+    },
+    {
+      "ordinal": 678,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig07_第二类划分_ElCentro响应\\输出\\plotted_data.mat",
+      "extension": ".mat",
+      "size_bytes": 3340418,
+      "mtime_iso": "2026-09-01T00:06:53",
+      "sha256": "22CC080EB67BBDE531FABC97D237BF387A11B6E187FCD85C8341C3C781CC05F4"
+    },
+    {
+      "ordinal": 688,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "extension": ".mat",
+      "size_bytes": 4241154,
+      "mtime_iso": "2026-09-01T00:07:06",
+      "sha256": "BFBD66789D01A4758D1ABCE6E73E4AE5F0E8CABE81FE623D002F30FB07A7858E"
+    },
+    {
+      "ordinal": 698,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "extension": ".mat",
+      "size_bytes": 4251147,
+      "mtime_iso": "2026-09-01T00:07:13",
+      "sha256": "EC8A43DC375A882976501B763604D69C4949B645CD5492B4F23F26CE8737A461"
+    },
+    {
+      "ordinal": 712,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+      "extension": ".mat",
+      "size_bytes": 3435,
+      "mtime_iso": "2026-09-01T00:07:19",
+      "sha256": "9312FB45595499C4242BF00DAC344CE016CB64F844CB410EA89ECB1F6C8BC7E4"
+    },
+    {
+      "ordinal": 964,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "extension": ".mat",
+      "size_bytes": 932,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "ordinal": 965,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "extension": ".mat",
+      "size_bytes": 1431,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    },
+    {
+      "ordinal": 1671,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_2.mat",
+      "extension": ".mat",
+      "size_bytes": 932,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "ordinal": 1672,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_3.mat",
+      "extension": ".mat",
+      "size_bytes": 1431,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    },
+    {
+      "ordinal": 2633,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_2.mat",
+      "extension": ".mat",
+      "size_bytes": 932,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "ordinal": 2634,
+      "root_index": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_3.mat",
+      "extension": ".mat",
+      "size_bytes": 1431,
+      "mtime_iso": "2026-08-06T17:18:59",
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    }
+  ],
+  "target_fields": [
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig06_第一类划分_ElCentro响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data",
+      "shape": "1x1",
+      "class": "struct",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig07_第二类划分_ElCentro响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data",
+      "shape": "1x1",
+      "class": "struct",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/actual_font_name",
+      "shape": "15x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/axis_index",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/floor_number",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/sample_indices",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/view_name",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/x_limits",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/axis_index",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/color_rgb",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/floor_number",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/line_style",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/marker_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/method_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/sample_indices",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/source_column",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/view_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/x_data",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/y_data",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/figure_id",
+      "shape": "5x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/floor_columns",
+      "shape": "3x2",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/floor_numbers",
+      "shape": "2x1",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/input_data",
+      "shape": "10x40961",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/input_file",
+      "shape": "17x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/local_windows_s",
+      "shape": "2x2",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/method_order_in_csv",
+      "shape": "3x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/method_order_in_figure",
+      "shape": "3x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/actual_font_name",
+      "shape": "15x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/axis_index",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/floor_number",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/sample_indices",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/view_name",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/axes/x_limits",
+      "shape": "6x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/axis_index",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/color_rgb",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/floor_number",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/line_style",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/marker_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/method_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/sample_indices",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/source_column",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/view_name",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/x_data",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/curves/y_data",
+      "shape": "1x18",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/figure_id",
+      "shape": "5x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/floor_columns",
+      "shape": "3x2",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/floor_numbers",
+      "shape": "2x1",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/input_data",
+      "shape": "10x40961",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/input_file",
+      "shape": "17x1",
+      "class": "uint16",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/local_windows_s",
+      "shape": "2x2",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/method_order_in_csv",
+      "shape": "3x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\输出\\plotted_data.mat",
+      "variable": "plotted_data/method_order_in_figure",
+      "shape": "3x1",
+      "class": "object",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+      "variable": "metadata",
+      "shape": "1x1",
+      "class": "struct",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+      "variable": "plottedData",
+      "shape": "6x1",
+      "class": "struct",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+      "variable": "__function_workspace__",
+      "shape": "1x3864",
+      "class": "uint8",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\稳定域\\cb_2.mat",
+      "variable": "stab",
+      "shape": "20x21",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\稳定域\\stab_2.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\稳定域\\stab_2_guyan.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\稳定域\\stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\CB_lqr_2.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\CB_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\guyan_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\guyan_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\origin_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\绘图\\origin_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\新结构稳定\\鲁旭杰方法复现\\guyan_PD.mat",
+      "variable": "stab",
+      "shape": "20x35",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\能量指标\\stab_3.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\alternative_lqr_route\\能量指标\\stab_3.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\CB_lqr_2.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\CB_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\guyan_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\guyan_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\origin_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_plotting\\作者绘图目录\\origin_lqr_3.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_stability_route\\稳定域\\cb_2.mat",
+      "variable": "stab",
+      "shape": "20x21",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_stability_route\\稳定域\\stab_2.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_stability_route\\稳定域\\stab_2_guyan.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_stability_route\\稳定域\\stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\legacy_stability_candidate\\鲁旭杰方法复现\\guyan_PD.mat",
+      "variable": "stab",
+      "shape": "20x35",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_C",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_g",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第一类划分最终绘图数据_lqr_2.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_C",
+      "shape": "45x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_g",
+      "shape": "41x95",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\第二类划分最终绘图数据_lqr_3.mat",
+      "variable": "stab_o",
+      "shape": "31x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "21x21",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\author_saved\\main_guyan_div2__rep03__stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep02\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep02\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep02\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\author_saved\\main_ori_div2__rep03__stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\scientific\\raw_stab.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\scientific\\scientific_arrays.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "variable": "stab",
+      "shape": "67x26",
+      "class": "float64",
+      "reader": "h5py"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\work\\stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\work\\stab_guyan_lqr.mat",
+      "variable": "stab",
+      "shape": "26x67",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\author_energy\\stab_3.mat",
+      "variable": "stab",
+      "shape": "20x20",
+      "class": "double",
+      "reader": "scipy.whosmat"
+    }
+  ],
+  "writer_like_hits": [
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR2.m",
+      "container": "file[utf-8]",
+      "line": 41,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 191,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 218,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 245,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 272,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2.m",
+      "container": "file[utf-8]",
+      "line": 180,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2_cb.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\ai-gen\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2_guyan.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig06_第一类划分_ElCentro响应\\RUN_THIS_FIGURE.m",
+      "container": "file[utf-8]",
+      "line": 187,
+      "statement": "save(matPath, 'plotted_data', '-v7');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig07_第二类划分_ElCentro响应\\RUN_THIS_FIGURE.m",
+      "container": "file[utf-8]",
+      "line": 187,
+      "statement": "save(matPath, 'plotted_data', '-v7');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig08_第一类划分_Chirp响应\\RUN_THIS_FIGURE.m",
+      "container": "file[utf-8]",
+      "line": 150,
+      "statement": "save(fullfile(outputDir, 'plotted_data.mat'), 'plotted_data', '-v7.3');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig09_第二类划分_Chirp响应\\RUN_THIS_FIGURE.m",
+      "container": "file[utf-8]",
+      "line": 150,
+      "statement": "save(fullfile(outputDir, 'plotted_data.mat'), 'plotted_data', '-v7.3');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\RUN_THIS_FIGURE.m",
+      "container": "file[utf-8]",
+      "line": 154,
+      "statement": "save(fullfile(outputDir, 'plotted_data.mat'), 'plottedData', 'metadata');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR2.m",
+      "container": "file[utf-8]",
+      "line": 41,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 191,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 218,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 245,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 272,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2.m",
+      "container": "file[utf-8]",
+      "line": 180,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2_cb.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure\\小论文Fig10复现\\03_原作者现存MAT与绘图候选\\历史稳定域候选代码\\monicanshu_2_guyan.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 3973,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4230,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4257,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4284,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4311,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4793,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4820,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4847,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\need-help\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4874,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\alternative_lqr_route\\能量指标\\luxvjie_ori_LQR2.m",
+      "container": "file[utf-8]",
+      "line": 42,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\alternative_lqr_route\\能量指标\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 43,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_ori_LQR2.m",
+      "container": "file[utf-8]",
+      "line": 41,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 191,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 218,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 245,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 272,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\monicanshu_2.m",
+      "container": "file[utf-8]",
+      "line": 180,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\monicanshu_2_cb.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\historical_stability_route\\稳定域\\monicanshu_2_guyan.m",
+      "container": "file[utf-8]",
+      "line": 101,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 193,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 220,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 247,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_guyan_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 274,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_ori_LQR2.m",
+      "container": "file[utf-8]",
+      "line": 41,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 191,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 218,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 245,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\mlx_code\\plotting_baseline\\第4章_缩聚对试验稳定性的影响\\原始来源副本\\luxvjie_ori_LQR3.m",
+      "container": "file[utf-8]",
+      "line": 272,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 3973,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4230,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4257,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4284,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4311,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4793,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4820,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4847,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\prior_audit\\2026-08-18_推导案例闭环.md",
+      "container": "file[utf-8]",
+      "line": 4874,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_code\\luxvjie_ori_LQR2__extracted.m",
+      "container": "file[utf-8]",
+      "line": 50,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_code\\luxvjie_ori_LQR3__extracted.m",
+      "container": "file[utf-8]",
+      "line": 51,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_code\\monicanshu_3__extracted.m",
+      "container": "file[utf-8]",
+      "line": 190,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_records\\luxvjie_ori_LQR2__record.json",
+      "container": "file[utf-8]",
+      "line": 32,
+      "statement": "\"stab = zeros(20);\\n%for l = 0:5\\nl = 0;\\n%for j = 0:5\\nj = 9;\\n\\nsyms z\\nH = sym(eye(18));\\nH(1,1) = z^(-l);\\nH(7,7) = z^(-j);\\n\\n%syms z\\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\\n ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\\n% S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\\ndet_G = det(G);\\nGcls_zero = vpa(solve(det_G == 0, z));\\ns = max(abs(Gcls_zero))\\nstab(l+1,j+1) = s;\\n%end\\n%end\\n%save('stab_guyan_lqr.mat', 'stab');\\n\""
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_records\\luxvjie_ori_LQR2__record.json",
+      "container": "file[utf-8]",
+      "line": 139,
+      "statement": "\"text\": \"stab = zeros(20);\\n%for l = 0:5\\nl = 0;\\n%for j = 0:5\\nj = 9;\\n\\nsyms z\\nH = sym(eye(18));\\nH(1,1) = z^(-l);\\nH(7,7) = z^(-j);\\n\\n%syms z\\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\\n ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\\n% S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\\ndet_G = det(G);\\nGcls_zero = vpa(solve(det_G == 0, z));\\ns = max(abs(Gcls_zero))\\nstab(l+1,j+1) = s;\\n%end\\n%end\\n%save('stab_guyan_lqr.mat', 'stab');\\n\","
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_records\\luxvjie_ori_LQR3__record.json",
+      "container": "file[utf-8]",
+      "line": 32,
+      "statement": "\"stab = zeros(20);\\n%for l = 0:5\\nl = 0;\\n%for j = 0:5\\nj = 6;\\n\\nsyms z\\nH = sym(eye(18));\\nH(1,1) = z^(-l);\\nH(13,13) = z^(-j);\\n\\n%syms z\\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\\n ((z-1)/z/dt*C2+K2)*H;\\n%+S'*DeltaG*S\\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\\n% S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\\ndet_G = det(G);\\nGcls_zero = vpa(solve(det_G == 0, z));\\ns = max(abs(Gcls_zero))\\nstab(l+1,j+1) = s;\\n%end\\n%end\\n%save('stab_guyan_lqr.mat', 'stab');\\n\""
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\extracted_mlx_records\\luxvjie_ori_LQR3__record.json",
+      "container": "file[utf-8]",
+      "line": 158,
+      "statement": "\"text\": \"stab = zeros(20);\\n%for l = 0:5\\nl = 0;\\n%for j = 0:5\\nj = 6;\\n\\nsyms z\\nH = sym(eye(18));\\nH(1,1) = z^(-l);\\nH(13,13) = z^(-j);\\n\\n%syms z\\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\\n ((z-1)/z/dt*C2+K2)*H;\\n%+S'*DeltaG*S\\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\\n% S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\\ndet_G = det(G);\\nGcls_zero = vpa(solve(det_G == 0, z));\\ns = max(abs(Gcls_zero))\\nstab(l+1,j+1) = s;\\n%end\\n%end\\n%save('stab_guyan_lqr.mat', 'stab');\\n\","
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\tables\\mlx_cells.csv",
+      "container": "file[utf-8]",
+      "line": 2238,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\tables\\mlx_cells.csv",
+      "container": "file[utf-8]",
+      "line": 2283,
+      "statement": "%save('stab_guyan_lqr.mat', 'stab');"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step2_static_inventory\\tables\\mlx_cells.csv",
+      "container": "file[utf-8]",
+      "line": 2905,
+      "statement": "save('stab_guyan_lqr.mat', 'stab');\""
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\WORKFLOW.md",
+      "container": "file[utf-8]",
+      "line": 1194,
+      "statement": "1. **完成整个RHTS资料树中的生成链缺失核验**：穷尽 `D:/JZ_PhD/10_论文_Papers/Li/RHTS/` 下与图10相关的 `.m/.mlx/.slx/.mdl/.sldd/.mat/.fig/.asv/.p`、日志、备份文本和压缩内容，追踪函数调用、`load/save/matfile/writematrix/assignin`、基础工作区变量、Simulink回调/模型工作区/数据字典和 `stab_o/stab_C/stab_g/lqr_2.mat/lqr_3.mat/plotted_data.mat` 写入者。除名称搜索外，以31×67/45×95/41×95数组、0/0.999取值、386点、双时滞循环、1024 Hz、谱半径/特征根等特征反向追踪，并结合相邻目录、时间戳、调用关系和输出形状给候选来源排序。验证方法为全根扩展名清单、全文/解包XML搜索、MAT字段与数值特征、同哈希副本、读取失败/二进制限制、源文件前后SHA-256及命中依赖表；预期结果是得到可复核的“存在完整生成入口”或“当前RHTS资料树中未找到完整前期计算程序”结论，禁止扩张成“作者从未写过”。"
+    }
+  ]
+}

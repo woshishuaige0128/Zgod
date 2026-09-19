@@ -1,0 +1,89 @@
+第3章真实仿真数据再生开始：2026-09-01 01:22:52
+MATLAB: 25.2.0.2998904 (R2025b)
+codeDir：D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\code
+BOARD18_RUN_ID：run1
+冻结输入根：D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\author_source
+隔离输出根：D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\outputs\adapted_run1
+
+fre =
+
+    2.7074
+    9.3284
+   18.4427
+   22.6736
+   24.2277
+   25.9882
+   29.1410
+   31.3416
+   33.1051
+   35.5959
+   37.8499
+   38.1964
+   39.7519
+   43.4709
+   44.1498
+
+已创建原始文件 "division1_repro.slx" 的副本，因为它上次是在早期版本的 Simulink 中保存的。要恢复原始版本，请将文件 "division1_repro.slx.r2023b" 重命名为 "division1_repro.slx"。
+
+您可以使用 <a href="matlab:slprivate('showprefs')">Simulink 预设项</a>关闭此功能。如果您不想再次看到此消息，请点击<a href="matlab:Simulink.internal.setPreferenceFlag('SimulinkShowPersistentBackupNotification', false)">此处</a>。
+已创建原始文件 "division2_repro.slx" 的副本，因为它上次是在早期版本的 Simulink 中保存的。要恢复原始版本，请将文件 "division2_repro.slx.r2023b" 重命名为 "division2_repro.slx"。
+
+您可以使用 <a href="matlab:slprivate('showprefs')">Simulink 预设项</a>关闭此功能。如果您不想再次看到此消息，请点击<a href="matlab:Simulink.internal.setPreferenceFlag('SimulinkShowPersistentBackupNotification', false)">此处</a>。
+端口验证：Mux6/1 <- Demux3/3，Line=1063。
+端口验证：Mux6/2 <- Demux4/3，Line=1074。
+端口验证：Mux6/3 <- Demux5/3，Line=1075。
+[警告: 模块 'division1_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 96 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division1_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 96 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division1_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 102 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division1_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 102 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division2_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 110 行)
+位置: run (第 112 行)] 
+[警告: 未连接模块 'division2_repro/Demux2' 的'输入端口 1'。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 110 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division2_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 110 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division1_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 116 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division1_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 116 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division2_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 121 行)
+位置: run (第 112 行)] 
+[警告: 未连接模块 'division2_repro/Demux2' 的'输入端口 1'。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 121 行)
+位置: run (第 112 行)] 
+[警告: 模块 'division2_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：run_board18_adapted>run_one_simulation (第 337 行)
+位置: run_board18_adapted (第 121 行)
+位置: run (第 112 行)] 
+方法列顺序：1=原结构，2=Guyan，3=Craig-Bampton。
+楼层输出顺序：simout3=一层，simout=二层，simout1=三层（适配后）。
+映射审计：第一类=lvxvjie_guyan_2.slx/组合主DOF[1,6,11,4,9,14]；第二类=lvxvjie_guyan.slx/组合主DOF[1,11,4,9,14]。
+第二类划分原模型断开的三层 Guyan/CB 输出已通过原 T/T_cb 恢复并补连。
+5组响应数据与统计均通过 NaN/Inf、时间单调性及局部窗样本检查。
+已刷新14项最终生成数据SHA-256：D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\outputs\adapted_run1\验证记录\第3章生成数据_SHA256.csv
+第3章真实仿真数据再生完成：2026-09-01 01:25:23

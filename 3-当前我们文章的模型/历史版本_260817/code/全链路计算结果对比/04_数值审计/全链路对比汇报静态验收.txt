@@ -1,0 +1,24 @@
+STATUS=PASS
+HTML=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\小论文Fig6至Fig10_全链路计算结果对比汇报.html
+HTML_SHA256=87A98E13A7E33843E776C3DECD5730CD8459A332BAADD8152D8E2FDC7DA5F29E
+STATIC_HTML=PASS
+NUMERIC_AUDIT=PASS
+STANDALONE_COPY=PASS
+FIGURE_FILES=PASS
+
+检查明细：
+- HTML5、UTF-8、中文语言、移动端viewport和唯一H1通过
+- 九个主体章节和九个导航目标完整且ID唯一
+- 五张必要对比图均内嵌、可解码、有替代文本且尺寸声明一致：1309x908、1309x908、1291x908、1291x908、1310x936
+- 无网络、本地旁置资源、外部样式表、脚本或CSS导入依赖
+- 计算级结论、Fig.10失败门、运行数字、代码映射和证据边界表述完整
+- 桌面、窄屏、宽表局部滚动和A4打印样式存在
+- 随机位置离线复制后哈希与五张图片保持；HTML SHA-256=87A98E13A7E33843E776C3DECD5730CD8459A332BAADD8152D8E2FDC7DA5F29E
+- Fig.6--Fig.9四对40961x10文件最大差0且SHA-256逐对相同
+- Fig.6--Fig.9四图40列全部逐元素完全相等
+- Fig.10的24条方法候选均未精确命中；8个候选面板均为0/3 FAIL
+- Fig.10全网格49,848点、3,356,432根且all_points_pass=true
+- 五份PDF、五份600dpi PNG和五份HTML内嵌预览数量正确；PNG分辨率与颜色模式通过
+- 交付清单74/74文件路径、字节数和SHA-256全部闭合
+
+浏览器桌面、390px窄屏和A4打印视觉检查另行记录。

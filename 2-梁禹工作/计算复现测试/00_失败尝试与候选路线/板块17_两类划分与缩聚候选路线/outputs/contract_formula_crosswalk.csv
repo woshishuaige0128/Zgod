@@ -1,0 +1,17 @@
+﻿route,matrix,formula,projection_type,classification,evidence,conflict_id,status
+current_generator_historical_guyan,T,T=[I;-Kss\Ksm],static transformation,EXECUTABLE_HISTORY,input/response_chain/regenerate_chapter3_data.m:267,,OBSERVED
+current_generator_historical_guyan,M,Mg=Mmm-Mms*(Kss\Ksm),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/regenerate_chapter3_data.m:268,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+current_generator_historical_guyan,C,Cg=Cmm-Cms*(Kss\Ksm),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/regenerate_chapter3_data.m:269,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+current_generator_historical_guyan,K,Kg=Kmm-Kms*(Kss\Ksm),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/regenerate_chapter3_data.m:270,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+standard_guyan_congruence,M,M_projected=T'*M*T,bilateral congruence,STANDARD_FORMULA,input/legacy_audit/audit_guyan_projection.m:48,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+standard_guyan_congruence,C,C_projected=T'*C*T,bilateral congruence,STANDARD_FORMULA,input/legacy_audit/audit_guyan_projection.m:49,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+standard_guyan_congruence,K,K_projected=T'*K*T,bilateral congruence,STANDARD_FORMULA,input/legacy_audit/audit_guyan_projection.m:50,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+current_generator_cb,M/C/K,A_cb=Tcb'*A_ordered*Tcb,bilateral congruence,EXECUTABLE_CURRENT,input/response_chain/regenerate_chapter3_data.m:277,,OBSERVED
+historical_mlx_division_1,M,MRren=Mmn-Mmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled2_转存.m:24,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_1,C,CRren=Cmn-Cmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled2_转存.m:25,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_1,K,KRren=Kmn-Kmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled2_转存.m:23,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_1,M/C/K,A_cb=T_cb'*A_ordered*T_cb,bilateral congruence,EXECUTABLE_HISTORY,input/response_chain/untitled2_转存.m:52-54,,OBSERVED
+historical_mlx_division_2,M,MRren=Mmn-Mmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled_转存.m:41,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_2,C,CRren=Cmn-Cmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled_转存.m:42,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_2,K,KRren=Kmn-Kmsn*(Ksn\Ksmn),single-sided elimination,EXECUTABLE_HISTORY,input/response_chain/untitled_转存.m:40,C02_GUYAN_FORMULA_ROUTE,OBSERVED
+historical_mlx_division_2,M/C/K,A_cb=T_cb'*A_ordered*T_cb,bilateral congruence,EXECUTABLE_HISTORY,input/response_chain/untitled_转存.m:69-71,,OBSERVED

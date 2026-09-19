@@ -1,0 +1,1526 @@
+{
+  "pass": true,
+  "pdf": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\preview\\explicit_pptx\\render.pdf",
+  "pdf_sha256": "cca33c0769fb4e504a24ad3d4eafdf754dac9682746acfeb08793ded1a2896c0",
+  "pptx": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\draft\\explicit_candidate.pptx",
+  "pptx_sha256": "33d938843b40e61eaaa807e6d7384aa979c0f41b72347cf5f9fc6346fcde3a23",
+  "tolerances_unchanged": {
+    "dpi": 432,
+    "vector_width_source_abs_pt": 0.02,
+    "width_abs_pt": 0.2,
+    "width_relative": 0.15,
+    "center_abs_pt": 0.35,
+    "mask_distance_pt": 0.5,
+    "curve_min_coverage": 0.99,
+    "curve_area_relative": 0.1,
+    "text_distance_pt": 0.4,
+    "text_min_coverage": 0.99,
+    "text_area_relative": 0.15,
+    "hatch_distance_pt": 0.35,
+    "hatch_min_coverage": 0.99,
+    "hatch_area_relative": 0.1,
+    "interior_rgb_abs_255": 4
+  },
+  "input_reports": [
+    "explicit_final_fig5_10",
+    "explicit_final_fig11_15",
+    "explicit_final_occlusion_gray",
+    "explicit_final_lightgray_source_tube",
+    "explicit_final_hatch_integral"
+  ],
+  "source_pdf_reference_only": true,
+  "regression_unchanged_first_fix_fig11_red_area_ratio": 1.3858480374504862,
+  "vector_source_width_max_abs_error_pt": 0.00035547971179017424,
+  "records": [
+    {
+      "figure": 5,
+      "pass": true,
+      "source_pdf_sha256": "54ab1e63391954a6c4992ab71ba5ee1b88cfff48c8646f2156c0e2724d54cdbd",
+      "native_vector_horizontal_line_checks": 0,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 6,
+      "pass": true,
+      "source_pdf_sha256": "c3ddf9e76ea7b6c96e8845493f79f307cf4d2e240e025e2658b8fbe32769baf2",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 7,
+      "pass": true,
+      "source_pdf_sha256": "8eb8be66a7c07451c925155d60d8bb114ff819198342919c06a91cd9ea6c8536",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 8,
+      "pass": true,
+      "source_pdf_sha256": "5fbc84021ac1aa2f7ec35c149bbb2971fb4bdf7928d638d84962b210cf75cb8b",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 9,
+      "pass": true,
+      "source_pdf_sha256": "6e7f28981255c516b6409ce3567d964c0c68ebd587a55b6f7f675f78fba3497a",
+      "native_vector_horizontal_line_checks": 5,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": [
+        {
+          "color": [
+            0.33332,
+            0.33338,
+            0.3333
+          ],
+          "raw_metric_failure_preserved": {
+            "source_pixels": 568,
+            "candidate_pixels": 567,
+            "source_coverage": 0.9929577464788732,
+            "candidate_coverage": 0.9735449735449735,
+            "source_to_candidate_p99_pt": 0.16666666666666666,
+            "candidate_to_source_p99_pt": 4.226621794912506,
+            "area_ratio": 0.9982394366197183,
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "pass": false
+          },
+          "resolved_by_source_order_occlusion_and_integrated_area": {
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "raw": {
+              "source_pixels": 568,
+              "candidate_pixels": 567,
+              "source_coverage": 0.9929577464788732,
+              "candidate_coverage": 0.9735449735449735,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 4.226621794912506,
+              "area_ratio": 0.9982394366197183
+            },
+            "unoccluded": {
+              "source_pixels": 564,
+              "candidate_pixels": 552,
+              "source_coverage": 1.0,
+              "candidate_coverage": 1.0,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 0.0,
+              "area_ratio": 0.9787234042553191
+            },
+            "integrated_area": null,
+            "source_pixels_in_source_defined_occlusion_band": 4,
+            "candidate_pixels_in_same_band": 15,
+            "source_drawing_order_pairs_gray_then_later_color": [
+              [
+                48,
+                49
+              ],
+              [
+                48,
+                50
+              ]
+            ],
+            "area_pass": true,
+            "pass": true
+          }
+        },
+        {
+          "color": [
+            0.73327,
+            0.73336,
+            0.73324
+          ],
+          "raw_metric_failure_preserved": {
+            "source_pixels": 9023,
+            "candidate_pixels": 10589,
+            "source_coverage": 0.9930178432893716,
+            "candidate_coverage": 0.9918783643403531,
+            "source_to_candidate_p99_pt": 0.16666666666666666,
+            "candidate_to_source_p99_pt": 0.23570226039551587,
+            "area_ratio": 1.1735564668070486,
+            "color": [
+              0.73327,
+              0.73336,
+              0.73324
+            ],
+            "pass": false
+          },
+          "resolved_by_source_order_occlusion_and_integrated_area": {
+            "color": [
+              0.73327,
+              0.73336,
+              0.73324
+            ],
+            "raw": {
+              "source_pixels": 8956,
+              "candidate_pixels": 10506,
+              "source_coverage": 1.0,
+              "candidate_coverage": 0.9993337140681515,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 0.16666666666666666,
+              "area_ratio": 1.1730683340777133
+            },
+            "unoccluded": {
+              "source_pixels": 3619,
+              "candidate_pixels": 4206,
+              "source_coverage": 1.0,
+              "candidate_coverage": 0.9990489776509748,
+              "source_to_candidate_p99_pt": 0.0,
+              "candidate_to_source_p99_pt": 0.16666666666666666,
+              "area_ratio": 1.1621995026250345
+            },
+            "integrated_area": {
+              "source_coverage_pixels": 5166.107421875,
+              "candidate_coverage_pixels": 5156.06640625,
+              "area_ratio": 0.9980563672403553
+            },
+            "source_pixels_in_source_defined_occlusion_band": 5337,
+            "candidate_pixels_in_same_band": 6300,
+            "source_drawing_order_pairs_gray_then_later_color": [
+              [
+                62,
+                109
+              ],
+              [
+                115,
+                177
+              ]
+            ],
+            "area_pass": true,
+            "pass": true
+          }
+        }
+      ]
+    },
+    {
+      "figure": 10,
+      "pass": true,
+      "source_pdf_sha256": "eaa1eef5abff583a2ad30d0cdbec1746aee944bd8cb65841ce0e80333d16f8cb",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 11,
+      "pass": true,
+      "source_pdf_sha256": "e5c5cff288e448cbde0a11a16d351234da9f40f9ea350962cf81274de94b8af7",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 12,
+      "pass": true,
+      "source_pdf_sha256": "7e1037e9b41482a50fade5e0d2552721f7ff170445cc0473f09047eb92c26105",
+      "native_vector_horizontal_line_checks": 5,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": [
+        {
+          "color": [
+            0.33332,
+            0.33338,
+            0.3333
+          ],
+          "raw_metric_failure_preserved": {
+            "source_pixels": 591,
+            "candidate_pixels": 572,
+            "source_coverage": 0.9543147208121827,
+            "candidate_coverage": 0.965034965034965,
+            "source_to_candidate_p99_pt": 4.186652528667635,
+            "candidate_to_source_p99_pt": 3.0528888881874754,
+            "area_ratio": 0.9678510998307953,
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "pass": false
+          },
+          "resolved_by_source_order_occlusion_and_integrated_area": {
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "raw": {
+              "source_pixels": 591,
+              "candidate_pixels": 572,
+              "source_coverage": 0.9543147208121827,
+              "candidate_coverage": 0.965034965034965,
+              "source_to_candidate_p99_pt": 4.186652528667635,
+              "candidate_to_source_p99_pt": 3.0528888881874754,
+              "area_ratio": 0.9678510998307953
+            },
+            "unoccluded": {
+              "source_pixels": 564,
+              "candidate_pixels": 552,
+              "source_coverage": 1.0,
+              "candidate_coverage": 1.0,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 0.0,
+              "area_ratio": 0.9787234042553191
+            },
+            "integrated_area": null,
+            "source_pixels_in_source_defined_occlusion_band": 27,
+            "candidate_pixels_in_same_band": 20,
+            "source_drawing_order_pairs_gray_then_later_color": [
+              [
+                48,
+                49
+              ],
+              [
+                48,
+                50
+              ]
+            ],
+            "area_pass": true,
+            "pass": true
+          }
+        }
+      ]
+    },
+    {
+      "figure": 13,
+      "pass": true,
+      "source_pdf_sha256": "8b730781c07834206cc115a6d98bffc22c64965fefae6772da4da4e73d92b467",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": [
+        {
+          "color": [
+            0.33332,
+            0.33338,
+            0.3333
+          ],
+          "raw_metric_failure_preserved": {
+            "source_pixels": 1185,
+            "candidate_pixels": 1244,
+            "source_coverage": 0.9873417721518988,
+            "candidate_coverage": 0.9895498392282959,
+            "source_to_candidate_p99_pt": 0.6871842709362768,
+            "candidate_to_source_p99_pt": 0.4606679161034712,
+            "area_ratio": 1.049789029535865,
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "pass": false
+          },
+          "resolved_by_source_order_occlusion_and_integrated_area": {
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "raw": {
+              "source_pixels": 1185,
+              "candidate_pixels": 1244,
+              "source_coverage": 0.9873417721518988,
+              "candidate_coverage": 0.9895498392282959,
+              "source_to_candidate_p99_pt": 0.6871842709362768,
+              "candidate_to_source_p99_pt": 0.4606679161034712,
+              "area_ratio": 1.049789029535865
+            },
+            "unoccluded": {
+              "source_pixels": 1079,
+              "candidate_pixels": 1143,
+              "source_coverage": 1.0,
+              "candidate_coverage": 1.0,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 0.16666666666666666,
+              "area_ratio": 1.0593141797961074
+            },
+            "integrated_area": null,
+            "source_pixels_in_source_defined_occlusion_band": 106,
+            "candidate_pixels_in_same_band": 101,
+            "source_drawing_order_pairs_gray_then_later_color": [
+              [
+                46,
+                53
+              ],
+              [
+                46,
+                54
+              ],
+              [
+                46,
+                56
+              ],
+              [
+                46,
+                58
+              ],
+              [
+                46,
+                60
+              ],
+              [
+                46,
+                61
+              ],
+              [
+                46,
+                63
+              ],
+              [
+                46,
+                65
+              ],
+              [
+                47,
+                53
+              ],
+              [
+                47,
+                54
+              ],
+              [
+                47,
+                60
+              ],
+              [
+                47,
+                61
+              ],
+              [
+                49,
+                53
+              ],
+              [
+                49,
+                56
+              ],
+              [
+                49,
+                60
+              ],
+              [
+                49,
+                63
+              ],
+              [
+                51,
+                53
+              ],
+              [
+                51,
+                58
+              ],
+              [
+                51,
+                60
+              ],
+              [
+                51,
+                65
+              ],
+              [
+                112,
+                119
+              ],
+              [
+                112,
+                122
+              ],
+              [
+                112,
+                124
+              ],
+              [
+                112,
+                126
+              ],
+              [
+                112,
+                127
+              ],
+              [
+                112,
+                129
+              ],
+              [
+                112,
+                131
+              ],
+              [
+                113,
+                119
+              ],
+              [
+                113,
+                120
+              ],
+              [
+                113,
+                126
+              ],
+              [
+                113,
+                127
+              ],
+              [
+                115,
+                119
+              ],
+              [
+                115,
+                122
+              ],
+              [
+                115,
+                126
+              ],
+              [
+                115,
+                129
+              ],
+              [
+                117,
+                119
+              ],
+              [
+                117,
+                126
+              ],
+              [
+                117,
+                131
+              ],
+              [
+                178,
+                185
+              ],
+              [
+                178,
+                186
+              ],
+              [
+                178,
+                188
+              ],
+              [
+                178,
+                190
+              ],
+              [
+                178,
+                192
+              ],
+              [
+                178,
+                193
+              ],
+              [
+                178,
+                195
+              ],
+              [
+                178,
+                197
+              ],
+              [
+                179,
+                185
+              ],
+              [
+                179,
+                186
+              ],
+              [
+                179,
+                192
+              ],
+              [
+                179,
+                193
+              ],
+              [
+                181,
+                185
+              ],
+              [
+                181,
+                188
+              ],
+              [
+                181,
+                192
+              ],
+              [
+                181,
+                195
+              ],
+              [
+                183,
+                185
+              ],
+              [
+                183,
+                190
+              ],
+              [
+                183,
+                192
+              ],
+              [
+                183,
+                197
+              ],
+              [
+                244,
+                251
+              ],
+              [
+                244,
+                252
+              ],
+              [
+                244,
+                256
+              ],
+              [
+                244,
+                258
+              ],
+              [
+                244,
+                259
+              ],
+              [
+                244,
+                261
+              ],
+              [
+                244,
+                263
+              ],
+              [
+                245,
+                251
+              ],
+              [
+                245,
+                252
+              ],
+              [
+                245,
+                258
+              ],
+              [
+                245,
+                259
+              ],
+              [
+                247,
+                251
+              ],
+              [
+                247,
+                254
+              ],
+              [
+                247,
+                258
+              ],
+              [
+                247,
+                261
+              ],
+              [
+                249,
+                251
+              ],
+              [
+                249,
+                258
+              ],
+              [
+                249,
+                263
+              ]
+            ],
+            "area_pass": true,
+            "pass": true
+          }
+        }
+      ]
+    },
+    {
+      "figure": 14,
+      "pass": true,
+      "source_pdf_sha256": "83d1d3a804c91dd1ab7c56a85fb7abb012c74b2b768b627343b6726347534fc0",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": []
+    },
+    {
+      "figure": 15,
+      "pass": true,
+      "source_pdf_sha256": "9af338f9e11ad4f686f5ad1b41094f205e5f358668d8efe9cd3813e5e291539b",
+      "native_vector_horizontal_line_checks": 3,
+      "text_bidirectional_coverage": [
+        1.0,
+        1.0
+      ],
+      "measurement_resolutions": [
+        {
+          "color": [
+            0.33332,
+            0.33338,
+            0.3333
+          ],
+          "raw_metric_failure_preserved": {
+            "source_pixels": 1352,
+            "candidate_pixels": 1352,
+            "source_coverage": 0.9792899408284024,
+            "candidate_coverage": 0.9844674556213018,
+            "source_to_candidate_p99_pt": 1.5904475791332213,
+            "candidate_to_source_p99_pt": 2.9150000000000014,
+            "area_ratio": 1.0,
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "pass": false
+          },
+          "resolved_by_source_order_occlusion_and_integrated_area": {
+            "color": [
+              0.33332,
+              0.33338,
+              0.3333
+            ],
+            "raw": {
+              "source_pixels": 1352,
+              "candidate_pixels": 1352,
+              "source_coverage": 0.9792899408284024,
+              "candidate_coverage": 0.9844674556213018,
+              "source_to_candidate_p99_pt": 1.5904475791332213,
+              "candidate_to_source_p99_pt": 2.9150000000000014,
+              "area_ratio": 1.0
+            },
+            "unoccluded": {
+              "source_pixels": 1152,
+              "candidate_pixels": 1154,
+              "source_coverage": 1.0,
+              "candidate_coverage": 1.0,
+              "source_to_candidate_p99_pt": 0.16666666666666666,
+              "candidate_to_source_p99_pt": 0.16666666666666666,
+              "area_ratio": 1.0017361111111112
+            },
+            "integrated_area": null,
+            "source_pixels_in_source_defined_occlusion_band": 200,
+            "candidate_pixels_in_same_band": 198,
+            "source_drawing_order_pairs_gray_then_later_color": [
+              [
+                72,
+                103
+              ],
+              [
+                72,
+                104
+              ],
+              [
+                72,
+                106
+              ],
+              [
+                72,
+                108
+              ],
+              [
+                72,
+                110
+              ],
+              [
+                72,
+                112
+              ],
+              [
+                72,
+                114
+              ],
+              [
+                72,
+                116
+              ],
+              [
+                72,
+                118
+              ],
+              [
+                72,
+                120
+              ],
+              [
+                72,
+                122
+              ],
+              [
+                72,
+                124
+              ],
+              [
+                72,
+                126
+              ],
+              [
+                72,
+                128
+              ],
+              [
+                72,
+                130
+              ],
+              [
+                72,
+                132
+              ],
+              [
+                72,
+                134
+              ],
+              [
+                72,
+                135
+              ],
+              [
+                72,
+                137
+              ],
+              [
+                72,
+                139
+              ],
+              [
+                72,
+                141
+              ],
+              [
+                72,
+                143
+              ],
+              [
+                72,
+                145
+              ],
+              [
+                72,
+                147
+              ],
+              [
+                72,
+                149
+              ],
+              [
+                72,
+                151
+              ],
+              [
+                72,
+                153
+              ],
+              [
+                72,
+                155
+              ],
+              [
+                72,
+                157
+              ],
+              [
+                72,
+                159
+              ],
+              [
+                72,
+                161
+              ],
+              [
+                72,
+                163
+              ],
+              [
+                73,
+                103
+              ],
+              [
+                73,
+                104
+              ],
+              [
+                73,
+                134
+              ],
+              [
+                73,
+                135
+              ],
+              [
+                75,
+                103
+              ],
+              [
+                75,
+                106
+              ],
+              [
+                75,
+                134
+              ],
+              [
+                75,
+                137
+              ],
+              [
+                77,
+                103
+              ],
+              [
+                77,
+                108
+              ],
+              [
+                77,
+                134
+              ],
+              [
+                77,
+                139
+              ],
+              [
+                79,
+                103
+              ],
+              [
+                79,
+                110
+              ],
+              [
+                79,
+                134
+              ],
+              [
+                79,
+                141
+              ],
+              [
+                81,
+                103
+              ],
+              [
+                81,
+                112
+              ],
+              [
+                81,
+                134
+              ],
+              [
+                81,
+                143
+              ],
+              [
+                83,
+                103
+              ],
+              [
+                83,
+                114
+              ],
+              [
+                83,
+                134
+              ],
+              [
+                83,
+                145
+              ],
+              [
+                85,
+                103
+              ],
+              [
+                85,
+                116
+              ],
+              [
+                85,
+                134
+              ],
+              [
+                85,
+                147
+              ],
+              [
+                87,
+                103
+              ],
+              [
+                87,
+                118
+              ],
+              [
+                87,
+                134
+              ],
+              [
+                87,
+                149
+              ],
+              [
+                89,
+                103
+              ],
+              [
+                89,
+                120
+              ],
+              [
+                89,
+                134
+              ],
+              [
+                89,
+                151
+              ],
+              [
+                91,
+                103
+              ],
+              [
+                91,
+                122
+              ],
+              [
+                91,
+                134
+              ],
+              [
+                91,
+                153
+              ],
+              [
+                93,
+                103
+              ],
+              [
+                93,
+                124
+              ],
+              [
+                93,
+                134
+              ],
+              [
+                93,
+                155
+              ],
+              [
+                95,
+                103
+              ],
+              [
+                95,
+                126
+              ],
+              [
+                95,
+                134
+              ],
+              [
+                95,
+                157
+              ],
+              [
+                97,
+                103
+              ],
+              [
+                97,
+                128
+              ],
+              [
+                97,
+                134
+              ],
+              [
+                97,
+                159
+              ],
+              [
+                99,
+                103
+              ],
+              [
+                99,
+                130
+              ],
+              [
+                99,
+                134
+              ],
+              [
+                99,
+                161
+              ],
+              [
+                101,
+                103
+              ],
+              [
+                101,
+                132
+              ],
+              [
+                101,
+                134
+              ],
+              [
+                101,
+                163
+              ],
+              [
+                311,
+                342
+              ],
+              [
+                311,
+                343
+              ],
+              [
+                311,
+                345
+              ],
+              [
+                311,
+                347
+              ],
+              [
+                311,
+                349
+              ],
+              [
+                311,
+                351
+              ],
+              [
+                311,
+                353
+              ],
+              [
+                311,
+                355
+              ],
+              [
+                311,
+                357
+              ],
+              [
+                311,
+                359
+              ],
+              [
+                311,
+                361
+              ],
+              [
+                311,
+                363
+              ],
+              [
+                311,
+                365
+              ],
+              [
+                311,
+                367
+              ],
+              [
+                311,
+                369
+              ],
+              [
+                311,
+                371
+              ],
+              [
+                311,
+                373
+              ],
+              [
+                311,
+                374
+              ],
+              [
+                311,
+                376
+              ],
+              [
+                311,
+                378
+              ],
+              [
+                311,
+                380
+              ],
+              [
+                311,
+                382
+              ],
+              [
+                311,
+                384
+              ],
+              [
+                311,
+                386
+              ],
+              [
+                311,
+                388
+              ],
+              [
+                311,
+                390
+              ],
+              [
+                311,
+                392
+              ],
+              [
+                311,
+                394
+              ],
+              [
+                311,
+                396
+              ],
+              [
+                311,
+                398
+              ],
+              [
+                311,
+                400
+              ],
+              [
+                311,
+                402
+              ],
+              [
+                312,
+                342
+              ],
+              [
+                312,
+                373
+              ],
+              [
+                312,
+                374
+              ],
+              [
+                314,
+                342
+              ],
+              [
+                314,
+                345
+              ],
+              [
+                314,
+                373
+              ],
+              [
+                314,
+                376
+              ],
+              [
+                316,
+                342
+              ],
+              [
+                316,
+                347
+              ],
+              [
+                316,
+                373
+              ],
+              [
+                316,
+                378
+              ],
+              [
+                318,
+                342
+              ],
+              [
+                318,
+                349
+              ],
+              [
+                318,
+                373
+              ],
+              [
+                318,
+                380
+              ],
+              [
+                320,
+                342
+              ],
+              [
+                320,
+                351
+              ],
+              [
+                320,
+                373
+              ],
+              [
+                320,
+                382
+              ],
+              [
+                322,
+                342
+              ],
+              [
+                322,
+                353
+              ],
+              [
+                322,
+                373
+              ],
+              [
+                322,
+                384
+              ],
+              [
+                324,
+                342
+              ],
+              [
+                324,
+                355
+              ],
+              [
+                324,
+                373
+              ],
+              [
+                324,
+                386
+              ],
+              [
+                326,
+                342
+              ],
+              [
+                326,
+                357
+              ],
+              [
+                326,
+                373
+              ],
+              [
+                326,
+                388
+              ],
+              [
+                328,
+                342
+              ],
+              [
+                328,
+                359
+              ],
+              [
+                328,
+                373
+              ],
+              [
+                328,
+                390
+              ],
+              [
+                330,
+                342
+              ],
+              [
+                330,
+                361
+              ],
+              [
+                330,
+                373
+              ],
+              [
+                330,
+                392
+              ],
+              [
+                332,
+                373
+              ],
+              [
+                332,
+                394
+              ],
+              [
+                334,
+                342
+              ],
+              [
+                334,
+                365
+              ],
+              [
+                334,
+                373
+              ],
+              [
+                334,
+                396
+              ],
+              [
+                336,
+                342
+              ],
+              [
+                336,
+                367
+              ],
+              [
+                336,
+                373
+              ],
+              [
+                336,
+                398
+              ],
+              [
+                338,
+                342
+              ],
+              [
+                338,
+                369
+              ],
+              [
+                338,
+                373
+              ],
+              [
+                338,
+                400
+              ],
+              [
+                340,
+                342
+              ],
+              [
+                340,
+                371
+              ],
+              [
+                340,
+                373
+              ],
+              [
+                340,
+                402
+              ]
+            ],
+            "area_pass": true,
+            "pass": true
+          }
+        },
+        {
+          "raw_hatch_metric_failure_preserved": {
+            "source_pixels": 432,
+            "candidate_pixels": 480,
+            "source_coverage": 1.0,
+            "candidate_coverage": 1.0,
+            "source_to_candidate_p99_pt": 0.0,
+            "candidate_to_source_p99_pt": 0.16666666666666666,
+            "area_ratio": 1.1111111111111112,
+            "source_rect": [
+              463.870849609375,
+              149.76522827148438,
+              494.2793884277344,
+              155.2393035888672
+            ],
+            "pass": false
+          },
+          "resolved_by_continuous_white_coverage": {
+            "source_rect": [
+              463.870849609375,
+              149.76522827148438,
+              494.2793884277344,
+              155.2393035888672
+            ],
+            "raw": {
+              "source_pixels": 432,
+              "candidate_pixels": 480,
+              "source_coverage": 1.0,
+              "candidate_coverage": 1.0,
+              "source_to_candidate_p99_pt": 0.0,
+              "candidate_to_source_p99_pt": 0.16666666666666666,
+              "area_ratio": 1.1111111111111112
+            },
+            "source_integrated_white_pixels": 507.76666259765625,
+            "candidate_integrated_white_pixels": 510.83697509765625,
+            "integrated_white_area_ratio": 1.006046699648009,
+            "pass": true
+          }
+        }
+      ]
+    }
+  ]
+}

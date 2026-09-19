@@ -1,0 +1,4 @@
+model_label,mux_block,input_port,source_block,source_port,connection_status
+第二类原始模型,lvxvjie_guyan/Mux6,1,lvxvjie_guyan/Demux3,3,CONNECTED
+第二类原始模型,lvxvjie_guyan/Mux6,2,,NaN,UNCONNECTED
+第二类原始模型,lvxvjie_guyan/Mux6,3,,NaN,UNCONNECTED

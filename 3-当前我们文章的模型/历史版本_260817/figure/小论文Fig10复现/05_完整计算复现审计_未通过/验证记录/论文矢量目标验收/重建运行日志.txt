@@ -1,0 +1,78 @@
+{
+  "status": "PLOT_LEVEL_TRACE_ONLY_NOT_CALCULATION_REPRODUCTION",
+  "source_pdf": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\梁禹手稿.pdf",
+  "source_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+  "source_page_physical": 70,
+  "coordinate_unit": "sample_step",
+  "sample_period_seconds": "1/1024",
+  "curves": [
+    {
+      "figure": "4-4",
+      "method": "Original",
+      "drawing_index": 19,
+      "point_count": 72,
+      "rightmost_tau1_step": 64,
+      "rightmost_tau2_steps": [
+        2
+      ]
+    },
+    {
+      "figure": "4-4",
+      "method": "CB",
+      "drawing_index": 92,
+      "point_count": 69,
+      "rightmost_tau1_step": 59,
+      "rightmost_tau2_steps": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "figure": "4-4",
+      "method": "Guyan",
+      "drawing_index": 162,
+      "point_count": 67,
+      "rightmost_tau1_step": 58,
+      "rightmost_tau2_steps": [
+        2,
+        3
+      ]
+    },
+    {
+      "figure": "4-5",
+      "method": "Original",
+      "drawing_index": 260,
+      "point_count": 69,
+      "rightmost_tau1_step": 57,
+      "rightmost_tau2_steps": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "figure": "4-5",
+      "method": "CB",
+      "drawing_index": 330,
+      "point_count": 56,
+      "rightmost_tau1_step": 51,
+      "rightmost_tau2_steps": [
+        2,
+        3
+      ]
+    },
+    {
+      "figure": "4-5",
+      "method": "Guyan",
+      "drawing_index": 387,
+      "point_count": 53,
+      "rightmost_tau1_step": 48,
+      "rightmost_tau2_steps": [
+        2,
+        3
+      ]
+    }
+  ]
+}

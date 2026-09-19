@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "records": [
+    {
+      "format": "candidate",
+      "all_15_native_objects_and_text_formats_preserved": true,
+      "all_15_captions_preserved": true,
+      "11_vector_media_match": true
+    },
+    {
+      "format": "pptx_opened",
+      "all_15_native_objects_and_text_formats_preserved": true,
+      "all_15_captions_preserved": true,
+      "11_vector_media_match": true
+    },
+    {
+      "format": "ppt_opened",
+      "all_15_native_objects_and_text_formats_preserved": true,
+      "all_15_captions_preserved": true,
+      "11_vector_media_match": true
+    },
+    {
+      "format": "finalized",
+      "all_15_native_objects_and_text_formats_preserved": true,
+      "all_15_captions_preserved": true,
+      "11_vector_media_match": true
+    }
+  ],
+  "protected_files_unchanged": 242,
+  "binary_ppt_verified": true,
+  "finalized_equals_candidate": true
+}

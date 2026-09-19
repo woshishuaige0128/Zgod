@@ -1,0 +1,73 @@
+{
+  "schema": "board20_outer_process_exit_v1",
+  "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.json",
+  "route_id": "alt_guyan_div1_stable_full_ps3",
+  "replicate": "rep01",
+  "timeout_seconds": 7200.0,
+  "execution_identity": {
+    "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.json",
+    "config_hash_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.sha256",
+    "config_expected_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+    "config_actual_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+    "config_match": true,
+    "files": [
+      {
+        "name": "stager",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+        "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+        "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+        "match": true
+      },
+      {
+        "name": "matlab_runner",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+        "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+        "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+        "match": true
+      },
+      {
+        "name": "outer_executor",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+        "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+        "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+        "match": true
+      }
+    ]
+  },
+  "command_argv": [
+    "D:\\Downlad\\Matlab\\bin\\matlab.exe",
+    "-batch",
+    "addpath('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code'); run_one_board20_candidate('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.json');"
+  ],
+  "command_windows": "D:\\Downlad\\Matlab\\bin\\matlab.exe -batch \"addpath('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code'); run_one_board20_candidate('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.json');\"",
+  "command_text_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\matlab_command.txt",
+  "combined_stdout_stderr_log": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\shell_stdout_stderr.log",
+  "started_at": {
+    "utc": "2026-08-25T00:25:54.751638+00:00",
+    "local": "2026-08-25T08:25:54.751638+08:00"
+  },
+  "finished_at": {
+    "utc": "2026-08-25T00:34:19.337483+00:00",
+    "local": "2026-08-25T08:34:19.337483+08:00"
+  },
+  "pid": 46308,
+  "actual_matlab_returncode": 0,
+  "timed_out": false,
+  "launch_exception": null,
+  "termination": {
+    "attempted": false
+  },
+  "status_read_error": null,
+  "status_returncode_consistency": {
+    "status_file_present": true,
+    "status_final_status": "SUCCESS",
+    "status_process_exit_semantics": "EXPECTED_ZERO",
+    "actual_matlab_returncode": 0,
+    "expected_returncode": 0,
+    "rule": "SUCCESS 必须对应 MATLAB returncode=0",
+    "result": "PASS"
+  },
+  "scientific_execution_status": "EXECUTION_SUCCESS",
+  "evidence_capture_status": "PASS",
+  "outer_script_exit_code": 0
+}

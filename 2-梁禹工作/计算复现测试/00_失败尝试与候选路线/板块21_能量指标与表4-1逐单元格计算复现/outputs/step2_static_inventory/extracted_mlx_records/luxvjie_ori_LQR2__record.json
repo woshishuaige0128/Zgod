@@ -1,0 +1,148 @@
+{
+  "archive_entries": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "matlab/document.xml",
+    "matlab/output.xml",
+    "metadata/coreProperties.xml",
+    "metadata/mwcoreProperties.xml",
+    "metadata/mwcorePropertiesExtension.xml",
+    "metadata/mwcorePropertiesReleaseInfo.xml"
+  ],
+  "assignments": [
+    "C1",
+    "C2",
+    "G",
+    "Gcls_zero",
+    "H",
+    "K1",
+    "K2",
+    "S",
+    "al",
+    "det_G",
+    "j",
+    "l",
+    "locate2",
+    "row_map",
+    "s",
+    "stab"
+  ],
+  "code_cells": [
+    "locate2 = [1,2,3,7,8,9]\n\n\n\nK2 = KRrt-KNrt_1-KPrt_1;\nC2 = CRrt-CNrt_1-CPrt_1;\nK1 = KRrt-K2;\nC1 = CRrt-C2;\n\nal = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\\MRrt*4;\n\nS = zeros(2, 18);\n\n% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行\n% 小矩阵第4-6行 → 大矩阵第6-8行\nrow_map = [1 7];\n\nfor i = 1:2\n    S(i, row_map(i)) = 1;\nend",
+    "stab = zeros(20);\n%for l = 0:5\nl = 0;\n%for j = 0:5\nj = 9;\n\nsyms z\nH = sym(eye(18));\nH(1,1) = z^(-l);\nH(7,7) = z^(-j);\n\n%syms z\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\n    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\n%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\ndet_G = det(G);\nGcls_zero = vpa(solve(det_G == 0, z));\ns = max(abs(Gcls_zero))\nstab(l+1,j+1) = s;\n%end\n%end\n%save('stab_guyan_lqr.mat', 'stab');\n"
+  ],
+  "document_xml_sha256": "DD70507A654D013AA11854DC29C8F51B51E365208E9F6E5C95CF15AB9AC4A13C",
+  "function_calls": [
+    "H",
+    "S",
+    "abs",
+    "det",
+    "eye",
+    "max",
+    "row_map",
+    "solve",
+    "stab",
+    "sym",
+    "vpa",
+    "zeros"
+  ],
+  "identifiers": [
+    "C1",
+    "C2",
+    "CNrt_1",
+    "CPrt_1",
+    "CRrt",
+    "DeltaG",
+    "G",
+    "Gcls_zero",
+    "H",
+    "K1",
+    "K2",
+    "KNrt_1",
+    "KPrt_1",
+    "KRrt",
+    "MRrt",
+    "S",
+    "abs",
+    "al",
+    "det",
+    "det_G",
+    "dt",
+    "eye",
+    "i",
+    "j",
+    "l",
+    "locate2",
+    "max",
+    "row_map",
+    "s",
+    "solve",
+    "stab",
+    "sym",
+    "syms",
+    "vpa",
+    "z",
+    "zeros"
+  ],
+  "output_metadata": {
+    "error_element_count": 0,
+    "error_messages": "",
+    "evaluation_state": "manual",
+    "output_status": "ready"
+  },
+  "output_xml_sha256": "D532DC49FE2FED91793FAEB4A6F44DB1DA734B9806FD3146143DFF0C4FCBCEFE",
+  "outputs": [
+    {
+      "columns": "6",
+      "element_sha256": "9193A35F4ED031D0EFFE70518A33CD5AC65FED80A609E7C26DFAAA40C720ED6E",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "6",
+        "element": "{\"value\":\"1\"}",
+        "header": "",
+        "name": "locate2",
+        "rows": "1",
+        "subtype": "double",
+        "type": "double",
+        "value": "     1     2     3     7     8     9\n",
+        "varSize": "1×6",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "1"
+      ],
+      "name": "locate2",
+      "output_index": 1,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[1]",
+      "rows": "1",
+      "value": "     1     2     3     7     8     9\n",
+      "var_size": "1×6",
+      "var_type": "double"
+    }
+  ],
+  "paragraphs": [
+    {
+      "cell_index": 1,
+      "kind": "code",
+      "paragraph_index": 1,
+      "style": "code",
+      "text": "locate2 = [1,2,3,7,8,9]\n\n\n\nK2 = KRrt-KNrt_1-KPrt_1;\nC2 = CRrt-CNrt_1-CPrt_1;\nK1 = KRrt-K2;\nC1 = CRrt-C2;\n\nal = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\\MRrt*4;\n\nS = zeros(2, 18);\n\n% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行\n% 小矩阵第4-6行 → 大矩阵第6-8行\nrow_map = [1 7];\n\nfor i = 1:2\n    S(i, row_map(i)) = 1;\nend",
+      "text_sha256": "9041F57EE7BEAEE582EF47120E3E9C2130DEF655C32378AB4F4EA37597AF3034",
+      "xml_xpath": "/w:document/w:body/w:p[1]"
+    },
+    {
+      "cell_index": 2,
+      "kind": "code",
+      "paragraph_index": 3,
+      "style": "code",
+      "text": "stab = zeros(20);\n%for l = 0:5\nl = 0;\n%for j = 0:5\nj = 9;\n\nsyms z\nH = sym(eye(18));\nH(1,1) = z^(-l);\nH(7,7) = z^(-j);\n\n%syms z\nG = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...\n    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\n%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\ndet_G = det(G);\nGcls_zero = vpa(solve(det_G == 0, z));\ns = max(abs(Gcls_zero))\nstab(l+1,j+1) = s;\n%end\n%end\n%save('stab_guyan_lqr.mat', 'stab');\n",
+      "text_sha256": "E776E8EA68C5230CF817AD71A3215D42E22AA3E4098DCC8BEC4BBB9D3B91C977",
+      "xml_xpath": "/w:document/w:body/w:p[3]"
+    }
+  ],
+  "source_name": "luxvjie_ori_LQR2.mlx",
+  "source_sha256": "8ECA148D813F0C7652F412F5896D2DB8EF5B1279CA0DCBBF10A1FFB45FEA5509",
+  "source_size_bytes": 3832,
+  "text_cells": []
+}

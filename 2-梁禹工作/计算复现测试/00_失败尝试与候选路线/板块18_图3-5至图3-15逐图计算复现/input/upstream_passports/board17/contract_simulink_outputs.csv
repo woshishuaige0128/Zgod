@@ -1,0 +1,10 @@
+﻿model_file,block_name,block_sid,workspace_output,save_format,evidence,status
+lvxvjie_guyan_2.slx,To Workspace,4397,simout3,Timeseries,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4397'][@Name=""To Workspace""]/P[@Name='VariableName']",PASS
+lvxvjie_guyan_2.slx,To Workspace1,4467,simout,Timeseries,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4467'][@Name=""To Workspace1""]/P[@Name='VariableName']",PASS
+lvxvjie_guyan_2.slx,To Workspace2,4474,simout1,Timeseries,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4474'][@Name=""To Workspace2""]/P[@Name='VariableName']",PASS
+lvxvjie_guyan.slx,To Workspace,4397,simout3,Timeseries,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4397'][@Name=""To Workspace""]/P[@Name='VariableName']",PASS
+lvxvjie_guyan.slx,To Workspace1,4467,simout,Timeseries,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4467'][@Name=""To Workspace1""]/P[@Name='VariableName']",PASS
+lvxvjie_guyan.slx,To Workspace2,4474,simout1,Timeseries,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4474'][@Name=""To Workspace2""]/P[@Name='VariableName']",PASS
+current_generator_mapping,floor1,,simout3,Timeseries (from frozen SLX),input/response_chain/regenerate_chapter3_data.m:332,PASS
+current_generator_mapping,floor2,,simout,Timeseries (from frozen SLX),input/response_chain/regenerate_chapter3_data.m:333,PASS
+current_generator_mapping,floor3,,simout1,Timeseries (from frozen SLX),input/response_chain/regenerate_chapter3_data.m:334,PASS

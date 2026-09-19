@@ -1,0 +1,15 @@
+{
+  "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+  "curve_id": "division1_guyan",
+  "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史稳定掩膜31x67\\历史_图4-4_Guyan_共同网格稳定掩膜31x67.csv",
+  "source_sha256": "E4CF6CB291D2863A23356400936B8A93A3BFD58B390DFC054C9E69140D3DB0C7",
+  "mask_rows": 31,
+  "mask_columns": 67,
+  "stable_point_count": 1044,
+  "component_count_8_connected": 1,
+  "hole_pixel_count": 0,
+  "returned_boundary_count": 1,
+  "selected_full_boundary_point_count": 137,
+  "selected_visible_open_boundary_point_count": 62,
+  "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+}

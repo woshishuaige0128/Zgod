@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pages": 10,
+  "no_blank_pages": true,
+  "text_within_pages": true,
+  "visual_review": "PASS",
+  "source_report_sha256": "e982c85fa86385ec207662ee4bd5f1c10bf8e6b707aff9850d5b6fea15323797",
+  "print_pdf_sha256": "7ecb00466fd8519d834bbd0e60c1102bebd98bf40be3adc1c080602db0f56dac",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "result": "10页联系图逐页查看；最终仅变更的第1与第10页再次全尺寸查看。文字、表格和页边界无裁切，无空白尾页。",
+  "qa_script": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\temp\\full_order_consistency_20260916\\qa_pdf.py"
+}

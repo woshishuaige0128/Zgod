@@ -1,0 +1,79 @@
+{
+  "schema_version": "FIG10_MASK_EXTRACTOR_REGRESSION_V1",
+  "status": "PASS",
+  "checks": {
+    "six_old_matlab_boundaries_reproduced_ordered_exact": true,
+    "historical_masks_do_not_false_pass_current_six_curve_target": true,
+    "only_two_original_curves_match_current_target": true,
+    "matlab_process_exit_zero": true
+  },
+  "target_evaluation_overall_status_expected_fail": "FAIL",
+  "target_curve_pass_ids": [
+    "division1_original",
+    "division2_original"
+  ],
+  "rows": [
+    {
+      "curve_id": "division1_original",
+      "extracted_point_count": 72,
+      "old_matlab_point_count": 72,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-4_Original_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "72D5C4371A6E780D2C3ADB7AA4625E1830BE0ABA099BD3E1DC326182D93D808C",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division1_original.csv",
+      "extracted_boundary_sha256": "A877968EFE0E098CF18FA1EABA7DC8F1E25D84A8918496E2761EE06BD6836654"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "extracted_point_count": 65,
+      "old_matlab_point_count": 65,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-4_Craig-Bampton_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "8D88959E52BAEDC023518E999A2F6DB56376185AE5CB5B0B02A80660A99F0A17",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division1_craig_bampton.csv",
+      "extracted_boundary_sha256": "4A84DDC5E502766B2404E95D9F6FF144436441EF3168B54A93E71A8BC02D19B1"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "extracted_point_count": 62,
+      "old_matlab_point_count": 62,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-4_Guyan_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "25A673F8CEF379C9FFEF64ACDDE994BF17C3743EDBE77F5AD75907D7661589D1",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division1_guyan.csv",
+      "extracted_boundary_sha256": "7172426CCDD0214A4887911E7ACD7C2D037DD210CEB7ABD63E5486D79E365568"
+    },
+    {
+      "curve_id": "division2_original",
+      "extracted_point_count": 69,
+      "old_matlab_point_count": 69,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-5_Original_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "73FCBA6D3F99DEB7508E84904EEF0EFDC00BCED23FC032057B72734A2D420D26",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division2_original.csv",
+      "extracted_boundary_sha256": "7F3D6D8F62A06B909DBB98D0DC4C386FC575455D4743B41122D57C54E926A4CF"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "extracted_point_count": 59,
+      "old_matlab_point_count": 59,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-5_Craig-Bampton_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "E89161F9DCAC6702D43F2D17F1F8F8CC06E667956E83DAC62EE9714A8D6FD337",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division2_craig_bampton.csv",
+      "extracted_boundary_sha256": "1C8713F40BDB85B4F120711E386CC08AF034383C245F98EE030BF554A782F3E0"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "extracted_point_count": 56,
+      "old_matlab_point_count": 56,
+      "ordered_exact": true,
+      "old_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\历史MATLAB边界\\历史_图4-5_Guyan_MATLAB可见开边界.csv",
+      "old_boundary_sha256": "8075D7914773449782B76AAF80612BF357E5529EC74EBBA13CAA400328FC80D5",
+      "extracted_boundary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\target_evaluation\\mask_boundary_extraction\\division2_guyan.csv",
+      "extracted_boundary_sha256": "FEDF0E47BE7867C1C3AD470DAC8BBF6F28BA4DC2DED6BED4854943F3A499FF45"
+    }
+  ],
+  "evaluator_sha256": "B3407620429F9EA2578E80450F59D88F2BDB5A0F6687193ED3C012AA93A35382",
+  "matlab_helper_sha256": "E3B1951FBA82199DECB0AACC27759D8E4A0961DF3D97EFE35B7F68FC7C0B15CF"
+}

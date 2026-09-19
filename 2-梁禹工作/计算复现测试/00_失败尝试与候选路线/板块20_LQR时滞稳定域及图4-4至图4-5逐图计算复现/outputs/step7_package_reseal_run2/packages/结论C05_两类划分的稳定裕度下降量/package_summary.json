@@ -1,0 +1,22 @@
+{
+  "calculation_level_gate_pass": false,
+  "central_board_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "critical_delay_component_review_level": "PLOTTING_LEVEL_HISTORICAL_MASK_DERIVATION",
+  "evaluated_scope": [
+    "critical_delay_from_historical_masks",
+    "critical_delay_from_available_candidate_masks"
+  ],
+  "excluded_scope": [],
+  "failure_package_relative_path": "test/00_失败尝试与候选路线/结论C05_两类划分的稳定裕度下降量",
+  "final_evidence_level": "历史值",
+  "formal_success_directory_allowed": false,
+  "formal_success_directory_exists": false,
+  "object_id": "C05",
+  "object_type": "定量结论",
+  "paper_name": "两类划分的稳定裕度下降量",
+  "schema_version": "BOARD20_STEP7_FAILURE_PACKAGE_V1",
+  "status": "FAILURE_EVIDENCE_PACKAGED",
+  "step6_run_manifest_sha256": "2F6F8BBD7CCB12E2A0896EE62193F89CDE9A7B4A27345EF4550F009C627DC37B",
+  "step6_validation_manifest_sha256": "10BAB8E166571C40547F6FE6FF3C8B985F3D88D1EEE37DEED57E43DC71E60CCF",
+  "target_evidence_level": "计算级复现"
+}

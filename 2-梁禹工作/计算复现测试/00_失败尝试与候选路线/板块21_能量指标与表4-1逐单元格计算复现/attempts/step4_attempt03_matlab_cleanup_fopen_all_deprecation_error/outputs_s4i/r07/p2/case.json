@@ -1,0 +1,67 @@
+{
+  "alias": "r07",
+  "case_id": "r07_p2",
+  "cb_K": "KP_cb",
+  "cb_M": "MP_cb",
+  "cb_T": "TP_cb",
+  "cb_sum_scope": "SELECTED",
+  "consumer_order": [
+    1,
+    7,
+    4,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9
+  ],
+  "coordinate_status": "COORDINATE_ORDER_AND_FORMULA_CONFLICT",
+  "d_cb": [
+    1,
+    2
+  ],
+  "d_guyan": [
+    1,
+    2
+  ],
+  "d_orig": [
+    1,
+    2
+  ],
+  "division_identity": "第二类划分局部物理子结构",
+  "energy_normalized": false,
+  "excitation_rule": "BINARY_FIRST_3",
+  "full_K": "KPrt",
+  "full_M": "MPrt",
+  "guyan_K": "KPren",
+  "guyan_M": "MPren",
+  "guyan_T": "TP",
+  "guyan_sum_scope": "ALL",
+  "historical_denominator": "GUYAN",
+  "historical_target_file": "h.mat",
+  "orig_sum_scope": "SELECTED",
+  "parameter_family": "rho=785e3.*1.7",
+  "producer_order": [
+    1,
+    7,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "replicate": "rep02",
+  "result_boundaries": [
+    "AUTHOR_ROUTE_REPRODUCED",
+    "PAPER_LITERAL_CONDITIONAL",
+    "TABLE4_1_NOT_ADJUDICATED"
+  ],
+  "route_id": "division2_tp17_copy2_coordinate_formula_conflict",
+  "route_label_cn": "第二类局部物理子结构：TP参数族1.7→Copy_2（坐标与公式冲突）",
+  "schema_version": "BOARD21_STEP4_CASE_V1",
+  "staged_relative_dir": "r07/p2",
+  "workspace_file": "u.mat"
+}

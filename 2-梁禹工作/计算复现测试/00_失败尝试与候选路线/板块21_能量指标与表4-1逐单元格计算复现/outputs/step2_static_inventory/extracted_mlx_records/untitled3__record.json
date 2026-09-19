@@ -1,0 +1,147 @@
+{
+  "archive_entries": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "matlab/document.xml",
+    "matlab/output.xml",
+    "metadata/coreProperties.xml",
+    "metadata/mwcoreProperties.xml",
+    "metadata/mwcorePropertiesExtension.xml",
+    "metadata/mwcorePropertiesReleaseInfo.xml"
+  ],
+  "assignments": [
+    "E_modal",
+    "E_modal_r",
+    "E_weighted",
+    "E_weighted_r",
+    "Gamma",
+    "Gamma_r",
+    "K",
+    "M",
+    "delta_E_weighted",
+    "omega",
+    "omega2",
+    "omega2_r",
+    "omega_r",
+    "phi",
+    "phi_r",
+    "r",
+    "r_r",
+    "w",
+    "w_r"
+  ],
+  "code_cells": [
+    "% 原系统模态\nK = KPrt;\nM = MPrt;\n\n% 模态分析\n[phi, omega2] = eig(K, M);\nomega = sqrt(diag(omega2));\nE_modal = 0.5 * omega.^2;\n\n% 加权因子（如模态参与因子）\nr = [1;0;0;1;0;0];     % 激励方向\nr_r = TP'*r\nGamma = phi' * M * r;\nw = Gamma.^2;          % 可作为加权因子\n\n% 加权总能量\nE_weighted = sum(w .* E_modal);\n\n% 缩聚后相同步骤\n[phi_r, omega2_r] = eig(K_r, M_r);\nomega_r = sqrt(diag(omega2_r));\nE_modal_r = 0.5 * omega_r.^2;\nGamma_r = phi_r' * M_r * r_r;   % 若缩聚后激励向量变了也要换\nw_r = Gamma_r.^2;\nE_weighted_r = sum(w_r .* E_modal_r);\n\n% 加权能量变化率\ndelta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100\n\n"
+  ],
+  "document_xml_sha256": "FDAC7CFC709B2441A409938D5CFE341D233516B6CA00FCA7B52849E9C0F26526",
+  "function_calls": [
+    "diag",
+    "eig",
+    "sqrt",
+    "sum"
+  ],
+  "identifiers": [
+    "E_modal",
+    "E_modal_r",
+    "E_weighted",
+    "E_weighted_r",
+    "Gamma",
+    "Gamma_r",
+    "K",
+    "KPrt",
+    "K_r",
+    "M",
+    "MPrt",
+    "M_r",
+    "TP",
+    "delta_E_weighted",
+    "diag",
+    "eig",
+    "omega",
+    "omega2",
+    "omega2_r",
+    "omega_r",
+    "phi",
+    "phi_r",
+    "r",
+    "r_r",
+    "sqrt",
+    "sum",
+    "w",
+    "w_r"
+  ],
+  "output_metadata": {
+    "error_element_count": 0,
+    "error_messages": "",
+    "evaluation_state": "manual",
+    "output_status": "ready"
+  },
+  "output_xml_sha256": "33627DFD38FA645D2F571604F556542DED32242159330DDF95B6823BD3A1E3F2",
+  "outputs": [
+    {
+      "columns": "1",
+      "element_sha256": "1D1DCBEE457F78695D7023505B18635F20C83F00E13B6196B97327A33DFB6A5F",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"0.5713\"}",
+        "header": "",
+        "name": "r_r",
+        "rows": "2",
+        "subtype": "double",
+        "type": "double",
+        "value": "    0.5713\n   -0.6895\n",
+        "varSize": "2×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "12"
+      ],
+      "name": "r_r",
+      "output_index": 1,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[1]",
+      "rows": "2",
+      "value": "    0.5713\n   -0.6895\n",
+      "var_size": "2×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "1",
+      "element_sha256": "839CE5BC3F3601FE61D841100EF8E38DF1AD814B3012ECF7A51E9E8446556123",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "name": "delta_E_weighted",
+        "rows": "1",
+        "value": "-1.3255"
+      },
+      "line_numbers": [
+        "28"
+      ],
+      "name": "delta_E_weighted",
+      "output_index": 2,
+      "output_type": "variable",
+      "output_xpath": "/embeddedOutputs/outputArray/element[2]",
+      "rows": "1",
+      "value": "-1.3255",
+      "var_size": "",
+      "var_type": ""
+    }
+  ],
+  "paragraphs": [
+    {
+      "cell_index": 1,
+      "kind": "code",
+      "paragraph_index": 1,
+      "style": "code",
+      "text": "% 原系统模态\nK = KPrt;\nM = MPrt;\n\n% 模态分析\n[phi, omega2] = eig(K, M);\nomega = sqrt(diag(omega2));\nE_modal = 0.5 * omega.^2;\n\n% 加权因子（如模态参与因子）\nr = [1;0;0;1;0;0];     % 激励方向\nr_r = TP'*r\nGamma = phi' * M * r;\nw = Gamma.^2;          % 可作为加权因子\n\n% 加权总能量\nE_weighted = sum(w .* E_modal);\n\n% 缩聚后相同步骤\n[phi_r, omega2_r] = eig(K_r, M_r);\nomega_r = sqrt(diag(omega2_r));\nE_modal_r = 0.5 * omega_r.^2;\nGamma_r = phi_r' * M_r * r_r;   % 若缩聚后激励向量变了也要换\nw_r = Gamma_r.^2;\nE_weighted_r = sum(w_r .* E_modal_r);\n\n% 加权能量变化率\ndelta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100\n\n",
+      "text_sha256": "D68B0A7F543018F3D87F7B4E1F99C2A7F8A0808C88E4AFA517FDCFA7A4649339",
+      "xml_xpath": "/w:document/w:body/w:p[1]"
+    }
+  ],
+  "source_name": "untitled3.mlx",
+  "source_sha256": "CC021A80CBD7D2E5C820B1B9141936AE197DE028C4983A6D60B5ED0C3FD0F777",
+  "source_size_bytes": 3739,
+  "text_cells": []
+}

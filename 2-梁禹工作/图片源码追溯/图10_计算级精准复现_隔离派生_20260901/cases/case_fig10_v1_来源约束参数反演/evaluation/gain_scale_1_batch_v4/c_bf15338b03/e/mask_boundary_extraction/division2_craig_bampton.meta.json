@@ -1,0 +1,15 @@
+{
+  "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+  "curve_id": "division2_craig_bampton",
+  "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\gain_scale_1_source_anchor\\B1\\routes\\B1_D2_Craig_Bampton\\full-grid\\stable_mask.csv",
+  "source_sha256": "2DFC546AC040DCB5AC56EBFA0EC65BE854C534E5B9EF66D6BAB4F925D132B282",
+  "mask_rows": 31,
+  "mask_columns": 67,
+  "stable_point_count": 688,
+  "component_count_8_connected": 1,
+  "hole_pixel_count": 0,
+  "returned_boundary_count": 1,
+  "selected_full_boundary_point_count": 133,
+  "selected_visible_open_boundary_point_count": 66,
+  "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+}

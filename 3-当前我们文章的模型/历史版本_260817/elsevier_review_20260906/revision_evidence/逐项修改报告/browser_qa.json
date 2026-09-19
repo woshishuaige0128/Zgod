@@ -1,0 +1,255 @@
+{
+  "checks": [
+    {
+      "name": "desktop_or_narrow_1440",
+      "pass": true,
+      "layout": {
+        "viewport": 1440,
+        "width": 1440,
+        "images": [
+          {
+            "ok": true,
+            "width": 3567,
+            "height": 1234
+          },
+          {
+            "ok": true,
+            "width": 795,
+            "height": 410
+          },
+          {
+            "ok": true,
+            "width": 3400,
+            "height": 1834
+          },
+          {
+            "ok": true,
+            "width": 575,
+            "height": 523
+          },
+          {
+            "ok": true,
+            "width": 2434,
+            "height": 1767
+          },
+          {
+            "ok": true,
+            "width": 608,
+            "height": 448
+          },
+          {
+            "ok": true,
+            "width": 3501,
+            "height": 1734
+          },
+          {
+            "ok": true,
+            "width": 3434,
+            "height": 1834
+          },
+          {
+            "ok": true,
+            "width": 908,
+            "height": 381
+          }
+        ],
+        "external": []
+      }
+    },
+    {
+      "name": "inline_images_1440",
+      "pass": true
+    },
+    {
+      "name": "external_dependencies_1440",
+      "pass": true
+    },
+    {
+      "name": "all_primary_items_1440",
+      "pass": true
+    },
+    {
+      "name": "all_decision_entries_1440",
+      "pass": true
+    },
+    {
+      "name": "search_finds_interface_1440",
+      "pass": true
+    },
+    {
+      "name": "spacing_filter_42_1440",
+      "pass": true
+    },
+    {
+      "name": "source_expand_1440",
+      "pass": true
+    },
+    {
+      "name": "exact_abstract_text_1440",
+      "pass": true
+    },
+    {
+      "name": "expanded_no_overflow_1440",
+      "pass": true,
+      "bounds": {
+        "width": 1440,
+        "viewport": 1440
+      }
+    },
+    {
+      "name": "desktop_or_narrow_390",
+      "pass": true,
+      "layout": {
+        "viewport": 390,
+        "width": 390,
+        "images": [
+          {
+            "ok": true,
+            "width": 3567,
+            "height": 1234
+          },
+          {
+            "ok": true,
+            "width": 795,
+            "height": 410
+          },
+          {
+            "ok": true,
+            "width": 3400,
+            "height": 1834
+          },
+          {
+            "ok": true,
+            "width": 575,
+            "height": 523
+          },
+          {
+            "ok": true,
+            "width": 2434,
+            "height": 1767
+          },
+          {
+            "ok": true,
+            "width": 608,
+            "height": 448
+          },
+          {
+            "ok": true,
+            "width": 3501,
+            "height": 1734
+          },
+          {
+            "ok": true,
+            "width": 3434,
+            "height": 1834
+          },
+          {
+            "ok": true,
+            "width": 908,
+            "height": 381
+          }
+        ],
+        "external": []
+      }
+    },
+    {
+      "name": "inline_images_390",
+      "pass": true
+    },
+    {
+      "name": "external_dependencies_390",
+      "pass": true
+    },
+    {
+      "name": "all_primary_items_390",
+      "pass": true
+    },
+    {
+      "name": "all_decision_entries_390",
+      "pass": true
+    },
+    {
+      "name": "search_finds_interface_390",
+      "pass": true
+    },
+    {
+      "name": "spacing_filter_42_390",
+      "pass": true
+    },
+    {
+      "name": "source_expand_390",
+      "pass": true
+    },
+    {
+      "name": "exact_abstract_text_390",
+      "pass": true
+    },
+    {
+      "name": "expanded_no_overflow_390",
+      "pass": true,
+      "bounds": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "decision_persistence",
+      "pass": true
+    },
+    {
+      "name": "decision_filter",
+      "pass": true
+    },
+    {
+      "name": "navigation_clears_filter",
+      "pass": true
+    },
+    {
+      "name": "export_all_entries",
+      "pass": true
+    },
+    {
+      "name": "export_choice_and_note",
+      "pass": true
+    },
+    {
+      "name": "export_exact_baseline",
+      "pass": true
+    },
+    {
+      "name": "qa_choices_cleared",
+      "pass": true
+    },
+    {
+      "name": "offline_moved",
+      "pass": true
+    },
+    {
+      "name": "expand_all_sources",
+      "pass": true
+    },
+    {
+      "name": "collapse_all_sources",
+      "pass": true
+    },
+    {
+      "name": "print_default_sources_hidden",
+      "pass": true
+    },
+    {
+      "name": "print_source_option",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "issues": []
+    },
+    {
+      "name": "no_network_requests",
+      "pass": true
+    }
+  ],
+  "issues": [],
+  "report": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\全文修改逐项对照与回退决策汇报.html"
+}

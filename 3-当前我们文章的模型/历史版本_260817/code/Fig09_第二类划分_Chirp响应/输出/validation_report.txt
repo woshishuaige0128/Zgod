@@ -1,0 +1,15 @@
+STATUS=PASS
+figure=Fig09_第二类划分_Chirp响应
+input_size=40961×10
+time_range_s=0,40
+time_step_s=0.0009765625
+axes_count=6
+curves_count=18
+actual_font=Times New Roman
+max_input_snapshot_error=0
+max_plotted_x_error=0
+max_plotted_y_error=0
+max_saved_data_error=0
+acceptance_limit=1e-12
+pdf_bytes=847302
+png_bytes=537977

@@ -1,0 +1,23 @@
+{
+  "schema_version": "FIG10_FINAL_REPORT_GENERATION_V1",
+  "status": "PASS",
+  "report": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\图10_硕士论文与当前文章差异汇报.html",
+  "report_sha256": "C81CAC2A7FD9076A2BBCE0076A1F8C27D06A7DFA47B68C4A314FF255709023D3",
+  "report_bytes": 634519,
+  "embedded_png": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\figures\\final_delivery\\图10_论文目标_历史候选_来源约束计算对比.png",
+  "embedded_png_sha256": "E3C2AB56DFE93455DF038D9DA4F3366F0A35C5A2B448DEC71074CBE6E50F61B5",
+  "selected_candidate_id": "B1__B1__299d5bcf810b",
+  "selected_candidate_strict_curve_pass_count": 0,
+  "active_and_target_pdf_sha256": "EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847",
+  "independent_matlab": {
+    "status": "PASS",
+    "point_count": 12462,
+    "max_rho_abs_diff": 8.193445921733655e-14,
+    "stable_difference_count": 0,
+    "max_residual": 1.2121353347660805e-15,
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\matlab_independent_fullgrid_validation\\gain_scale_0p625\\B1\\matlab_validation_summary.json",
+    "sha256": "A03E02C9FD4669F84DD5C8280BA7B0AE93F257FC6A373BD8F43622B9480BA491"
+  },
+  "external_resource_count_expected": 0,
+  "embedded_image_count_expected": 1
+}

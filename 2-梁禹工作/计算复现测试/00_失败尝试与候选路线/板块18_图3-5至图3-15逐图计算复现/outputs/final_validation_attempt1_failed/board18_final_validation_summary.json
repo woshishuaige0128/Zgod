@@ -1,0 +1,136 @@
+{
+  "generated_at_utc": "2026-08-24T19:00:14.528112+00:00",
+  "validator": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\code\\validate_board18_final.py",
+  "status": "FAIL",
+  "check_count": 1794,
+  "pass_count": 1793,
+  "failure_count": 1,
+  "category_counts": {
+    "publication": {
+      "PASS": 6,
+      "FAIL": 0
+    },
+    "index": {
+      "PASS": 7,
+      "FAIL": 0
+    },
+    "packages": {
+      "PASS": 24,
+      "FAIL": 0
+    },
+    "package_manifest": {
+      "PASS": 33,
+      "FAIL": 0
+    },
+    "package_manifest_item": {
+      "PASS": 453,
+      "FAIL": 0
+    },
+    "global_manifest": {
+      "PASS": 1,
+      "FAIL": 0
+    },
+    "global_manifest_item": {
+      "PASS": 464,
+      "FAIL": 0
+    },
+    "freeze": {
+      "PASS": 3,
+      "FAIL": 0
+    },
+    "freeze_item": {
+      "PASS": 79,
+      "FAIL": 1
+    },
+    "protected": {
+      "PASS": 3,
+      "FAIL": 0
+    },
+    "protected_item": {
+      "PASS": 326,
+      "FAIL": 0
+    },
+    "paper_sources": {
+      "PASS": 2,
+      "FAIL": 0
+    },
+    "board17": {
+      "PASS": 7,
+      "FAIL": 0
+    },
+    "board17_item": {
+      "PASS": 304,
+      "FAIL": 0
+    },
+    "numeric": {
+      "PASS": 7,
+      "FAIL": 0
+    },
+    "history": {
+      "PASS": 3,
+      "FAIL": 0
+    },
+    "figure_gate": {
+      "PASS": 2,
+      "FAIL": 0
+    },
+    "visual": {
+      "PASS": 3,
+      "FAIL": 0
+    },
+    "readme": {
+      "PASS": 12,
+      "FAIL": 0
+    },
+    "dependency": {
+      "PASS": 4,
+      "FAIL": 0
+    },
+    "pdf": {
+      "PASS": 36,
+      "FAIL": 0
+    },
+    "png": {
+      "PASS": 12,
+      "FAIL": 0
+    },
+    "figure_counts": {
+      "PASS": 1,
+      "FAIL": 0
+    },
+    "process": {
+      "PASS": 1,
+      "FAIL": 0
+    }
+  },
+  "required_counts": {
+    "success_directories": 11,
+    "figure_pairs": 12,
+    "pdf": 12,
+    "png": 12,
+    "index_rows": 45,
+    "index_unique_objects": 45,
+    "index_target_rows_updated": 11,
+    "frozen_inputs": 80,
+    "protected_sources": 326,
+    "board17_artifacts": 305,
+    "response_comparisons": 135,
+    "independent_matrix_checks": 60,
+    "independent_response_checks": 47,
+    "manual_visual_reviews": 12
+  },
+  "detail_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\final_validation\\board18_final_validation_detail.csv",
+  "detail_csv_sha256": "23850DA2A3B36EF9DDDC9A075620675BA4B5A5F23992A7640EA94B614458372A",
+  "failed_checks": [
+    {
+      "sequence": "1047",
+      "category": "freeze_item",
+      "check": "冻结输入源与隔离副本大小/SHA实时一致",
+      "object_id": "",
+      "artifact": "row 56: 45对象总索引",
+      "actual": "{\"copy\": {\"exists\": true, \"sha256\": \"CF7B23BD6780B6AB9684CB4BBD3ED251D231DDB664FBB3AD0AEF97A059D477AF\", \"size_bytes\": 24258}, \"hashes_consistent\": true, \"source\": {\"exists\": true, \"sha256\": \"15CA2C1F20C2CB2CDD2AAF2BC89EFFE4CBD11953B16A7A26F76F294DF1178DD9\", \"size_bytes\": 26260}}"
+    }
+  ],
+  "output_boundary": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\final_validation",
+  "mutations_outside_output_boundary": false
+}

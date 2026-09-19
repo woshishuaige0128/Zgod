@@ -1,0 +1,22 @@
+{
+  "command": [
+    "D:\\Downlad\\Matlab\\bin\\matlab.exe",
+    "-batch",
+    "addpath('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code'); compute_board21_step4_formulas('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\s4i','D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\s4\\a\\matlab','BOARD21_STEP4_A_MATLAB');"
+  ],
+  "cwd": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "duration_seconds": 51.20859160006512,
+  "finished_at": "2026-08-26T05:35:11.258860+08:00",
+  "name": "run_02_a_matlab",
+  "returncode": 0,
+  "started_at": "2026-08-26T05:34:20.050266+08:00",
+  "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "stderr_size_bytes": 0,
+  "stdout_sha256": "023E888C835BA7E99FAD9C949C102507DAC2BC9D8D8430E19FC41E5662FEDEBA",
+  "stdout_size_bytes": 1521,
+  "terminal_json": {},
+  "terminal_json_error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 767: invalid continuation byte",
+  "timed_out": false,
+  "timeout_error": "",
+  "timeout_seconds": 1800
+}

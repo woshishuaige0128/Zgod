@@ -1,0 +1,9 @@
+check_id,description,expected,actual,status
+D-RHO-001,诊断对象严格等于预声明4个唯一点,"((11, 39), (23, 41), (15, 40), (28, 43))","((11, 39), (23, 41), (15, 40), (28, 43))",PASS
+D-RHO-002,两条第二分区文件身份路线的冻结根与系数逐点完全相同,TRUE,TRUE,PASS
+D-RHO-003,full-q计算不删除任何根,每点deleted_root_count=0,"[0, 0, 0, 0]",PASS
+D-RHO-004,80位三起点与120位复核均可靠收敛,TRUE,TRUE,PASS
+D-RHO-005,四点MATLAB/compact绝对差仍严格超过1e-8,4个EXPECTED_FAIL均确认,"['3.3986683245501581e-08', '2.1142301909193861e-08', '1.4479864196559333e-08', '1.2270835236805056e-08']",EXPECTED_FAIL_CONFIRMED
+D-RHO-006,MATLAB/compact/full-q/高精度稳定分类一致,TRUE,TRUE,PASS
+D-RHO-007,四点均支持compact线性化病态而非公式冲突,TRUE,TRUE,PASS
+D-RHO-008,全部既有只读输入哈希在诊断前后不变,TRUE,TRUE,PASS

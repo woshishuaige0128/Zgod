@@ -1,0 +1,17 @@
+{
+  "slides_before": 15,
+  "slides_after": 19,
+  "original_changed_parts": [
+    "[Content_Types].xml",
+    "docProps/app.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "ppt/presentation.xml"
+  ],
+  "all_original_slide_and_media_parts_byte_identical": true,
+  "new_slide_native_counts": [
+    40,
+    107,
+    119,
+    294
+  ]
+}

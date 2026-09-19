@@ -1,0 +1,21 @@
+model_label,block,variable_name,save_format,sample_time,source_block,source_port,connection_status
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1/GROUND
+ACCELERATION,EQ_input,Array,-1,lvxvjie_guyan_2/
+地震-加速度1/EQ scaling factor,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1/To Workspace,t,Array,dt,lvxvjie_guyan_2/
+地震-加速度1/Clock,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/To Workspace,simout3,Timeseries,-1,lvxvjie_guyan_2/Gain,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/To Workspace1,simout,Timeseries,-1,lvxvjie_guyan_2/Gain7,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/To Workspace2,simout1,Timeseries,-1,lvxvjie_guyan_2/Gain8,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1/GROUND
+ACCELERATION,EQ_input,Array,-1,lvxvjie_guyan/
+地震-加速度1/EQ scaling factor,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1/To Workspace,t,Array,dt,lvxvjie_guyan/
+地震-加速度1/Clock,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/To Workspace,simout3,Timeseries,-1,lvxvjie_guyan/Gain,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/To Workspace1,simout,Timeseries,-1,lvxvjie_guyan/Gain7,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/To Workspace2,simout1,Timeseries,-1,lvxvjie_guyan/Gain8,1,CONNECTED

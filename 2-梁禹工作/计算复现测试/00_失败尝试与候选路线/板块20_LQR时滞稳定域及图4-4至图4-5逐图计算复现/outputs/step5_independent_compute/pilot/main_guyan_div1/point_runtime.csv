@@ -1,0 +1,8 @@
+﻿route_id,l,j,elapsed_seconds,point_status
+main_guyan_div1,0,0,0.003106700023636222,PASS
+main_guyan_div1,1,0,0.00346389994956553,PASS
+main_guyan_div1,0,1,0.0032839999767020345,PASS
+main_guyan_div1,2,5,0.006098999991081655,PASS
+main_guyan_div1,5,2,0.006171500077471137,PASS
+main_guyan_div1,10,10,0.011953799985349178,PASS
+main_guyan_div1,30,66,0.18358599999919534,PASS

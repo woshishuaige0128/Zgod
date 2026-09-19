@@ -1,0 +1,1410 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "figure 5 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 5 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 5 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 5 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 6 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 4 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 4 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 5 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 7 panel 5 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 4 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 4 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 5 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 8 panel 5 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 9 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 4 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 4 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 5 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 10 panel 5 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 4 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 4 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 5 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 11 panel 5 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 12 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 13 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 0 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 0 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 1 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 1 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 2 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 2 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 3 common xlim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "figure 15 panel 3 common ylim",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure9 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure9 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure9 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure9 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure9 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure12 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure12 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure12 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure12 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure12 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 0 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 0 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 0 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 1 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 1 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 1 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 2 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 2 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 2 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 3 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 3 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure13 3 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure9 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure9 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure9 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure9 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure9 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure12 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure12 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure12 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure12 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure12 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 0 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 0 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 0 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 1 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 1 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 1 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 2 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 2 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 2 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 3 0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 3 1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure13 3 2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure7 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure8 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure10 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure11 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure7 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure8 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure10 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel0 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel0 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel0 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel1 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel1 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel1 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel2 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel2 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel2 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel3 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel3 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel3 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel4 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel4 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel4 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel5 curve0",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel5 curve1",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "standard figure11 panel5 curve2",
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "name": "legacy figure15 division1 bars",
+      "max_abs": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "name": "legacy figure15 division2 bars",
+      "max_abs": 2.6645352591003757e-15,
+      "passed": true
+    },
+    {
+      "name": "standard figure15 division1 bars",
+      "max_abs": 6.938893903907228e-18,
+      "passed": true
+    },
+    {
+      "name": "standard figure15 division2 bars",
+      "max_abs": 8.326672684688674e-17,
+      "passed": true
+    }
+  ],
+  "checks_passed": 280,
+  "vector_PDFs": 20,
+  "PNGs_600dpi": 20,
+  "shared_scales": true,
+  "visual_review": "All 20 new and matched legacy figure PDFs inspected; time ticks and frequency labels corrected"
+}

@@ -1,0 +1,20 @@
+check_id,category,status,detail
+S4-001,source_protection,PASS,"direct_count=53; categories={'author_energy_tree': 36, 'theory': 1, 'manuscript': 1, 'central_baseline': 3, 'prior_audit': 2, 'upstream_passport': 7, 'upstream_candidate': 1, 'stability_evidence': 2}"
+S4-002,source_protection,PASS,anchor_failures=[]
+S4-003,staging,PASS,98 Step3 evidence + 5 Board17 external candidates
+S4-004,orchestration,PASS,status=PASS; success=4
+S4-005,instrument,PASS,tool_count=5
+S4-006,determinism,PASS,checks=8
+S4-007A,cross_language_cardinality,PASS,python_values=305382; matlab_values=305382; expected_each=305382
+S4-007,cross_language,PASS,rows=305382; max_abs=3.4332275390625e-05; max_scaled=0.46531172066248816
+S4-008A,cross_language_cardinality,PASS,"python_results=1096; matlab_results=1096; python_scopes={'HISTORICAL': 28, 'PAPER': 1068}; matlab_scopes={'HISTORICAL': 28, 'PAPER': 1068}"
+S4-008,cross_language,PASS,result_count=1096; max_error=5.7752913562580943e-11
+S4-009,modal_mac,PASS,mode_count=3282; max_1_minus_MAC=6.6613381477509392e-16
+S4-010,third_recompute,PASS,historical_result_rows=28
+S4-011,third_recompute,PASS,third_rows=1096; max_error=3.1900526664685458e-10
+S4-012,third_recompute,PASS,historical_intermediates=666; max_error=2.4738255888223648e-10
+S4-013,mutations,PASS,mutations=8
+S4-014,scope_boundary,PASS,formal_objects=0; board22_dirs=0
+S4-015,filesystem,PASS,max_utf16_units=136; reparse_count=0
+S4-016,process,PASS,target_process_count=0
+S4-017,scientific_boundary,PASS,distinct_boundary_statuses=16

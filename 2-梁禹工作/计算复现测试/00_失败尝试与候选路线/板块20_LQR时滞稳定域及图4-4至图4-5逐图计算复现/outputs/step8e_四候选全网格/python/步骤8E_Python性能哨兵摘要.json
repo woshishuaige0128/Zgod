@@ -1,0 +1,468 @@
+{
+  "eligible_bundle_fingerprints": [
+    {
+      "bundle_id": "D1_Original_R01",
+      "source_mat_sha256": "c356a66fed75965842b4a5e5689a7fce97fecfa8630f7bbc78da2198c376795f"
+    },
+    {
+      "bundle_id": "D1_Original_R02",
+      "source_mat_sha256": "9d04532ef2d78b5a8dbd50f3954278593b2115a9697c56870a67052127afdb3d"
+    },
+    {
+      "bundle_id": "D1_Original_R03",
+      "source_mat_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b"
+    },
+    {
+      "bundle_id": "D1_Original_R04",
+      "source_mat_sha256": "11ea250a7784909eebcd25d8ba5233ac12b514ab03b1ab15222e7078f594cf65"
+    },
+    {
+      "bundle_id": "D1_Guyan_R01",
+      "source_mat_sha256": "f611584bdcac9cb90d016b12e988bd4fb24f41734f3b5e3172b9ca269606e72e"
+    },
+    {
+      "bundle_id": "D1_Guyan_R02",
+      "source_mat_sha256": "eb2b9c2c654eed32fbfe58486c0692bd28d8db201a1b4dc04e323992f0ed3c66"
+    },
+    {
+      "bundle_id": "D1_Guyan_R03",
+      "source_mat_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94"
+    },
+    {
+      "bundle_id": "D1_Guyan_R04",
+      "source_mat_sha256": "81a4aeff3622c3dedbd5903b22bc45de7228bfc38f690cfe1343b1b1fbea9c09"
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R01",
+      "source_mat_sha256": "7733badda6fd6a3b8c67bfc899292ad0a2c81cd4806c54b7121545d7a6c60ae4"
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R02",
+      "source_mat_sha256": "40bf0228966135c4a38a641f2d712453290576c5ca376679274dc83e36b733be"
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R03",
+      "source_mat_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7"
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R04",
+      "source_mat_sha256": "be2bd7a30c58d5444370419b729588f0370dd9369dd3e555a82abedb99bf2845"
+    },
+    {
+      "bundle_id": "D2_Original_R01",
+      "source_mat_sha256": "829b482420e3cde154e37ff23209cb08c0382661a82f7fd058401eb8aa477173"
+    },
+    {
+      "bundle_id": "D2_Original_R02",
+      "source_mat_sha256": "a7ca10a84005d1197cd3b27e38ab657176a606678de0f50be0eab8f992856d7b"
+    },
+    {
+      "bundle_id": "D2_Original_R03",
+      "source_mat_sha256": "e4d1cbb734168c871aa514a747d10095841e831e219a505a4b6e70d30f81274c"
+    },
+    {
+      "bundle_id": "D2_Original_R04",
+      "source_mat_sha256": "222d635ccb073f4ffdb00684aeb367c2c1491b05c8bcc8c41426e7c44003c859"
+    },
+    {
+      "bundle_id": "D2_Guyan_R01",
+      "source_mat_sha256": "890f722105d401fd3f629f59fe5d00357119fe804830af0cc7c2783301cc2ce4"
+    },
+    {
+      "bundle_id": "D2_Guyan_R02",
+      "source_mat_sha256": "a04eb8a1c00cef6d0357d2bddad040378d2d10d9f6193d96fcfa71f5eee535f4"
+    },
+    {
+      "bundle_id": "D2_Guyan_R03",
+      "source_mat_sha256": "ff7c58e95f6cbf8960cfa2cae67fa6b9255be8395525bb47b762c3ca283af9f0"
+    },
+    {
+      "bundle_id": "D2_Guyan_R04",
+      "source_mat_sha256": "34a385c495b11ce8cd38ac5d3e618508446abd7acc3fda27bb45e7229f9c1bb6"
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R01",
+      "source_mat_sha256": "e07ed860373d6d0a9ce1d672a6285389750a770e24b452b5fa3f42e30949f30b"
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R02",
+      "source_mat_sha256": "5d0a80f1dacc1fe7a7290e1aacc8038c05049ec19dbec21cddfa6f3a2ae69f4d"
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R03",
+      "source_mat_sha256": "cb9e129087a4398816fc70dccc4ddd2b5a23e120f04801c3a410e5f9944cf514"
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R04",
+      "source_mat_sha256": "4253925de2646ce348fc42ca6d455eae72e8825fce211ab0d66cc37dacbcfc4f"
+    }
+  ],
+  "eligible_group_count": 24,
+  "environment": {
+    "blas_threads": 1,
+    "numpy": "2.4.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.2",
+    "scipy": "1.17.1"
+  },
+  "expected_full_grid_point_count": 49848,
+  "expected_full_grid_total_root_count": 3356432,
+  "expected_sentinel_total_root_count": 13232,
+  "group_summaries": [
+    {
+      "bundle_id": "D1_Original_R01",
+      "candidate_id": "R01",
+      "dimension": 15,
+      "group_index": 0,
+      "maximum_state_eigenpair_residual": 4.858763462331459e-16,
+      "mean_seconds_per_sentinel": 0.002722770010586828,
+      "projected_one_round_seconds_from_group_mean": 5.655193311988842,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.02722770010586828,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D1_Original_R02",
+      "candidate_id": "R02",
+      "dimension": 15,
+      "group_index": 1,
+      "maximum_state_eigenpair_residual": 5.461343992013561e-16,
+      "mean_seconds_per_sentinel": 0.002657069987617433,
+      "projected_one_round_seconds_from_group_mean": 5.518734364281408,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.02657069987617433,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D1_Original_R03",
+      "candidate_id": "R03",
+      "dimension": 15,
+      "group_index": 2,
+      "maximum_state_eigenpair_residual": 5.768887692496662e-16,
+      "mean_seconds_per_sentinel": 0.002962659997865558,
+      "projected_one_round_seconds_from_group_mean": 6.153444815566764,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.029626599978655577,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D1_Original_R04",
+      "candidate_id": "R04",
+      "dimension": 15,
+      "group_index": 3,
+      "maximum_state_eigenpair_residual": 4.398372159339332e-16,
+      "mean_seconds_per_sentinel": 0.0029061799868941307,
+      "projected_one_round_seconds_from_group_mean": 6.0361358327791095,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.029061799868941307,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D1_Guyan_R01",
+      "candidate_id": "R01",
+      "dimension": 6,
+      "group_index": 4,
+      "maximum_state_eigenpair_residual": 4.1216794732579015e-16,
+      "mean_seconds_per_sentinel": 0.0017931199865415693,
+      "projected_one_round_seconds_from_group_mean": 3.724310212046839,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.017931199865415692,
+      "sentinel_root_count": 478
+    },
+    {
+      "bundle_id": "D1_Guyan_R02",
+      "candidate_id": "R02",
+      "dimension": 6,
+      "group_index": 5,
+      "maximum_state_eigenpair_residual": 4.608269733982133e-16,
+      "mean_seconds_per_sentinel": 0.0020069099962711336,
+      "projected_one_round_seconds_from_group_mean": 4.168352062255145,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.020069099962711334,
+      "sentinel_root_count": 478
+    },
+    {
+      "bundle_id": "D1_Guyan_R03",
+      "candidate_id": "R03",
+      "dimension": 6,
+      "group_index": 6,
+      "maximum_state_eigenpair_residual": 3.8991423826700737e-16,
+      "mean_seconds_per_sentinel": 0.0018437800114043056,
+      "projected_one_round_seconds_from_group_mean": 3.8295310836867427,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.018437800114043057,
+      "sentinel_root_count": 478
+    },
+    {
+      "bundle_id": "D1_Guyan_R04",
+      "candidate_id": "R04",
+      "dimension": 6,
+      "group_index": 7,
+      "maximum_state_eigenpair_residual": 3.8822388834945175e-16,
+      "mean_seconds_per_sentinel": 0.0018557899980805813,
+      "projected_one_round_seconds_from_group_mean": 3.8544758260133674,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.018557899980805814,
+      "sentinel_root_count": 478
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R01",
+      "candidate_id": "R01",
+      "dimension": 9,
+      "group_index": 8,
+      "maximum_state_eigenpair_residual": 5.124369247466431e-16,
+      "mean_seconds_per_sentinel": 0.002104329993017018,
+      "projected_one_round_seconds_from_group_mean": 4.370693395496346,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.02104329993017018,
+      "sentinel_root_count": 538
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R02",
+      "candidate_id": "R02",
+      "dimension": 9,
+      "group_index": 9,
+      "maximum_state_eigenpair_residual": 4.0929973318169727e-16,
+      "mean_seconds_per_sentinel": 0.002215049997903407,
+      "projected_one_round_seconds_from_group_mean": 4.600658845645376,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.022150499979034066,
+      "sentinel_root_count": 538
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R03",
+      "candidate_id": "R03",
+      "dimension": 9,
+      "group_index": 10,
+      "maximum_state_eigenpair_residual": 6.29784402105709e-16,
+      "mean_seconds_per_sentinel": 0.0022010200074873863,
+      "projected_one_round_seconds_from_group_mean": 4.571518555551301,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.022010200074873865,
+      "sentinel_root_count": 538
+    },
+    {
+      "bundle_id": "D1_Craig_Bampton_R04",
+      "candidate_id": "R04",
+      "dimension": 9,
+      "group_index": 11,
+      "maximum_state_eigenpair_residual": 3.999161514648409e-16,
+      "mean_seconds_per_sentinel": 0.0022325800266116856,
+      "projected_one_round_seconds_from_group_mean": 4.637068715272471,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.022325800266116858,
+      "sentinel_root_count": 538
+    },
+    {
+      "bundle_id": "D2_Original_R01",
+      "candidate_id": "R01",
+      "dimension": 15,
+      "group_index": 12,
+      "maximum_state_eigenpair_residual": 5.478319710136696e-16,
+      "mean_seconds_per_sentinel": 0.0028094499837607147,
+      "projected_one_round_seconds_from_group_mean": 5.835227616271005,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.028094499837607145,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D2_Original_R02",
+      "candidate_id": "R02",
+      "dimension": 15,
+      "group_index": 13,
+      "maximum_state_eigenpair_residual": 4.392567924935026e-16,
+      "mean_seconds_per_sentinel": 0.003057549986988306,
+      "projected_one_round_seconds_from_group_mean": 6.350531322974711,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.03057549986988306,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D2_Original_R03",
+      "candidate_id": "R03",
+      "dimension": 15,
+      "group_index": 14,
+      "maximum_state_eigenpair_residual": 5.822658641117731e-16,
+      "mean_seconds_per_sentinel": 0.0030015500145964325,
+      "projected_one_round_seconds_from_group_mean": 6.23421938031679,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.030015500145964324,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D2_Original_R04",
+      "candidate_id": "R04",
+      "dimension": 15,
+      "group_index": 15,
+      "maximum_state_eigenpair_residual": 4.978795083935568e-16,
+      "mean_seconds_per_sentinel": 0.002996720001101494,
+      "projected_one_round_seconds_from_group_mean": 6.2241874422878025,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.02996720001101494,
+      "sentinel_root_count": 658
+    },
+    {
+      "bundle_id": "D2_Guyan_R01",
+      "candidate_id": "R01",
+      "dimension": 5,
+      "group_index": 16,
+      "maximum_state_eigenpair_residual": 3.471174812220096e-16,
+      "mean_seconds_per_sentinel": 0.001746230002027005,
+      "projected_one_round_seconds_from_group_mean": 3.6269197142100893,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.01746230002027005,
+      "sentinel_root_count": 458
+    },
+    {
+      "bundle_id": "D2_Guyan_R02",
+      "candidate_id": "R02",
+      "dimension": 5,
+      "group_index": 17,
+      "maximum_state_eigenpair_residual": 3.0514967971382887e-16,
+      "mean_seconds_per_sentinel": 0.0017679400043562055,
+      "projected_one_round_seconds_from_group_mean": 3.6720113890478387,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.017679400043562055,
+      "sentinel_root_count": 458
+    },
+    {
+      "bundle_id": "D2_Guyan_R03",
+      "candidate_id": "R03",
+      "dimension": 5,
+      "group_index": 18,
+      "maximum_state_eigenpair_residual": 4.786165702446492e-16,
+      "mean_seconds_per_sentinel": 0.0016223900020122528,
+      "projected_one_round_seconds_from_group_mean": 3.369704034179449,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.016223900020122528,
+      "sentinel_root_count": 458
+    },
+    {
+      "bundle_id": "D2_Guyan_R04",
+      "candidate_id": "R04",
+      "dimension": 5,
+      "group_index": 19,
+      "maximum_state_eigenpair_residual": 3.979320190777849e-16,
+      "mean_seconds_per_sentinel": 0.0017922100028954445,
+      "projected_one_round_seconds_from_group_mean": 3.7224201760138382,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.017922100028954446,
+      "sentinel_root_count": 458
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R01",
+      "candidate_id": "R01",
+      "dimension": 8,
+      "group_index": 20,
+      "maximum_state_eigenpair_residual": 3.6351564648693914e-16,
+      "mean_seconds_per_sentinel": 0.00212224000133574,
+      "projected_one_round_seconds_from_group_mean": 4.407892482774332,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.0212224000133574,
+      "sentinel_root_count": 518
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R02",
+      "candidate_id": "R02",
+      "dimension": 8,
+      "group_index": 21,
+      "maximum_state_eigenpair_residual": 4.315621715639855e-16,
+      "mean_seconds_per_sentinel": 0.0019846600131131708,
+      "projected_one_round_seconds_from_group_mean": 4.122138847236056,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.01984660013113171,
+      "sentinel_root_count": 518
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R03",
+      "candidate_id": "R03",
+      "dimension": 8,
+      "group_index": 22,
+      "maximum_state_eigenpair_residual": 4.0836167927847314e-16,
+      "mean_seconds_per_sentinel": 0.0020961400121450426,
+      "projected_one_round_seconds_from_group_mean": 4.353682805225254,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.020961400121450424,
+      "sentinel_root_count": 518
+    },
+    {
+      "bundle_id": "D2_Craig_Bampton_R04",
+      "candidate_id": "R04",
+      "dimension": 8,
+      "group_index": 23,
+      "maximum_state_eigenpair_residual": 1.3570895480183272e-16,
+      "mean_seconds_per_sentinel": 0.0019879700150340794,
+      "projected_one_round_seconds_from_group_mean": 4.129013721225783,
+      "sentinel_count": 10,
+      "sentinel_elapsed_seconds": 0.019879700150340796,
+      "sentinel_root_count": 518
+    }
+  ],
+  "input_index_sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+  "maximum_state_eigenpair_residual": 6.29784402105709e-16,
+  "mean_seconds_per_sentinel": 0.002270262918318622,
+  "projected_one_round_seconds_from_group_means": 113.16806595234667,
+  "projected_two_round_seconds_from_group_means": 226.33613190469333,
+  "projection_note": "conservative direct projection of each group's fixed 10-sentinel mean; certificate re-solves and artifact I/O are additional",
+  "rejected_before_any_loadmat_or_grid_count": 12,
+  "residual_limit": 1e-08,
+  "schema_version": 1,
+  "scope": "24 eligible groups x 10 frozen sentinels; no full-grid allocation",
+  "sentinel_points": [
+    {
+      "j_samples": 0,
+      "l_samples": 0,
+      "sentinel_id": "S00"
+    },
+    {
+      "j_samples": 0,
+      "l_samples": 1,
+      "sentinel_id": "S01"
+    },
+    {
+      "j_samples": 1,
+      "l_samples": 0,
+      "sentinel_id": "S02"
+    },
+    {
+      "j_samples": 7,
+      "l_samples": 3,
+      "sentinel_id": "S03"
+    },
+    {
+      "j_samples": 20,
+      "l_samples": 10,
+      "sentinel_id": "S04"
+    },
+    {
+      "j_samples": 33,
+      "l_samples": 15,
+      "sentinel_id": "S05"
+    },
+    {
+      "j_samples": 66,
+      "l_samples": 30,
+      "sentinel_id": "S06"
+    },
+    {
+      "j_samples": 48,
+      "l_samples": 1,
+      "sentinel_id": "S07"
+    },
+    {
+      "j_samples": 57,
+      "l_samples": 1,
+      "sentinel_id": "S08"
+    },
+    {
+      "j_samples": 64,
+      "l_samples": 1,
+      "sentinel_id": "S09"
+    }
+  ],
+  "sentinel_result_count": 240,
+  "sentinel_total_elapsed_seconds": 0.5448631003964692,
+  "sentinel_total_root_count": 13232,
+  "solver_source_sha256": "12fa6f9d931fec2e499dbea0d083df74e12301e856e685e18bca34295c40f327",
+  "status": "PASS_STEP8E_PYTHON_PERFORMANCE_SENTINELS"
+}

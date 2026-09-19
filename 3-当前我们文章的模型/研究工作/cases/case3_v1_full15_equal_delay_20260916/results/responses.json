@@ -1,0 +1,5070 @@
+{
+  "h": 0.0009765625,
+  "passive_integrator_error": {
+    "nrmse_range_pct": [
+      0.003096647589209035,
+      0.0027626565409075874,
+      0.002679101486241474
+    ],
+    "relative_l2_pct": [
+      0.031952328362045514,
+      0.02944192645769019,
+      0.029320298855818112
+    ],
+    "peak_bias_pct": [
+      -0.007530874989102254,
+      -6.883276357775073e-05,
+      0.007554138275335823
+    ],
+    "max_abs_error": [
+      9.798893392345444e-07,
+      2.232810011297201e-06,
+      3.304703211283455e-06
+    ],
+    "rms_abs_error": [
+      1.8698151577734817e-07,
+      4.456360618719642e-07,
+      6.541268008458444e-07
+    ],
+    "undefined_relative_metrics": "null when the reference denominator is zero"
+  },
+  "divisions": {
+    "1": {
+      "earthquake": {
+        "0": {
+          "file": "d1_n0_earthquake.npz",
+          "n": 0,
+          "tau_s": 0.0,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 5.276635442169231e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.003096647589209035,
+                  0.0027626565409075874,
+                  0.002679101486241474
+                ],
+                "relative_l2_pct": [
+                  0.031952328362045514,
+                  0.02944192645769019,
+                  0.029320298855818112
+                ],
+                "peak_bias_pct": [
+                  -0.007530874989102254,
+                  -6.883276357775073e-05,
+                  0.007554138275335823
+                ],
+                "max_abs_error": [
+                  9.798893392345444e-07,
+                  2.232810011297201e-06,
+                  3.304703211283455e-06
+                ],
+                "rms_abs_error": [
+                  1.8698151577734817e-07,
+                  4.456360618719642e-07,
+                  6.541268008458444e-07
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 0.0
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.020354180281497013,
+                  0.007890481808759122,
+                  0.0053199204283268225
+                ],
+                "relative_l2_pct": [
+                  0.2099971997137917,
+                  0.08408501326880492,
+                  0.05822113286834689
+                ],
+                "peak_bias_pct": [
+                  0.21151415103782523,
+                  0.08513709088158027,
+                  -0.043350905157940565
+                ],
+                "max_abs_error": [
+                  8.14133025504578e-06,
+                  7.822682527887717e-06,
+                  8.237844780577003e-06
+                ],
+                "rms_abs_error": [
+                  1.2289684049541809e-06,
+                  1.27281045451353e-06,
+                  1.2989894426504817e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.7397388681284385e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.02035418028149693,
+                  0.005691358422709361,
+                  0.026183297124073045
+                ],
+                "relative_l2_pct": [
+                  0.20999719971379008,
+                  0.061868977846791996,
+                  0.3033159246512833
+                ],
+                "peak_bias_pct": [
+                  0.21151415103783633,
+                  -0.011583754450266479,
+                  0.049704293350320845
+                ],
+                "max_abs_error": [
+                  1.282099252763113e-05,
+                  8.479226192083765e-06,
+                  2.1678228763817586e-05
+                ],
+                "rms_abs_error": [
+                  1.9353833148884655e-06,
+                  9.054668199527314e-07,
+                  3.4376408003858427e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.020354180281497013,
+                  0.007890481808759122,
+                  0.0053199204283268225
+                ],
+                "relative_l2_pct": [
+                  0.2099971997137917,
+                  0.08408501326880492,
+                  0.05822113286834689
+                ],
+                "peak_bias_pct": [
+                  0.21151415103782523,
+                  0.08513709088158027,
+                  -0.043350905157940565
+                ],
+                "max_abs_error": [
+                  8.14133025504578e-06,
+                  7.822682527887717e-06,
+                  8.237844780577003e-06
+                ],
+                "rms_abs_error": [
+                  1.2289684049541809e-06,
+                  1.27281045451353e-06,
+                  1.2989894426504817e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.01883016066777166,
+                  0.0068126558080309155,
+                  0.004125865698608703
+                ],
+                "relative_l2_pct": [
+                  0.19429639939118679,
+                  0.07260320213952777,
+                  0.04515380098268979
+                ],
+                "peak_bias_pct": [
+                  0.20396734718242404,
+                  0.08506819951579003,
+                  -0.03580004166992398
+                ],
+                "max_abs_error": [
+                  7.421589151926974e-06,
+                  7.161007469839303e-06,
+                  6.71169895006922e-06
+                ],
+                "rms_abs_error": [
+                  1.1370011867867328e-06,
+                  1.0989296209012963e-06,
+                  1.0073673371503116e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.7279376166677717e-18
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.013972944954666769,
+                  0.005754997392779826,
+                  0.004123445739468751
+                ],
+                "relative_l2_pct": [
+                  0.1441610161477436,
+                  0.06132819818387366,
+                  0.045126931033540735
+                ],
+                "peak_bias_pct": [
+                  0.1494339518484196,
+                  0.0607145764570452,
+                  -0.029234003827189544
+                ],
+                "max_abs_error": [
+                  5.207513924997305e-06,
+                  5.513929586584317e-06,
+                  6.204520296949998e-06
+                ],
+                "rms_abs_error": [
+                  8.436747457258148e-07,
+                  9.283363202354588e-07,
+                  1.0068407140812516e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.2062991814821384e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.013972944954666755,
+                  0.002973759796873241,
+                  0.018269092076642127
+                ],
+                "relative_l2_pct": [
+                  0.14416101614774293,
+                  0.032326812920498896,
+                  0.21163517067800594
+                ],
+                "peak_bias_pct": [
+                  0.14943395184841707,
+                  -0.0009611591605488731,
+                  0.025565940364445643
+                ],
+                "max_abs_error": [
+                  8.200809330704759e-06,
+                  2.29407728986452e-06,
+                  1.482207391684415e-05
+                ],
+                "rms_abs_error": [
+                  1.3286216468123055e-06,
+                  4.731103941431731e-07,
+                  2.3985740226325322e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.013972944954666769,
+                  0.005754997392779826,
+                  0.004123445739468751
+                ],
+                "relative_l2_pct": [
+                  0.1441610161477436,
+                  0.06132819818387366,
+                  0.045126931033540735
+                ],
+                "peak_bias_pct": [
+                  0.1494339518484196,
+                  0.0607145764570452,
+                  -0.029234003827189544
+                ],
+                "max_abs_error": [
+                  5.207513924997305e-06,
+                  5.513929586584317e-06,
+                  6.204520296949998e-06
+                ],
+                "rms_abs_error": [
+                  8.436747457258148e-07,
+                  9.283363202354588e-07,
+                  1.0068407140812516e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.01240100117192798,
+                  0.004608983988969156,
+                  0.0028761092515266003
+                ],
+                "relative_l2_pct": [
+                  0.12795800944361396,
+                  0.049118435693538,
+                  0.03147636744252194
+                ],
+                "peak_bias_pct": [
+                  0.14189182317521234,
+                  0.06064570190194658,
+                  -0.021682073928926245
+                ],
+                "max_abs_error": [
+                  4.8448908769363995e-06,
+                  5.113067016480205e-06,
+                  4.649644218937543e-06
+                ],
+                "rms_abs_error": [
+                  7.487962157411772e-07,
+                  7.434617527231217e-07,
+                  7.022280243006298e-07
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 1.6671154995539894e-18
+            }
+          }
+        },
+        "2": {
+          "file": "d1_n2_earthquake.npz",
+          "n": 2,
+          "tau_s": 0.001953125,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.527358176821509e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.8588864448712247,
+                  0.8400219086681833,
+                  0.8073932265554655
+                ],
+                "relative_l2_pct": [
+                  8.861263180372383,
+                  8.951703463537799,
+                  8.836099891643196
+                ],
+                "peak_bias_pct": [
+                  3.9070408753146233,
+                  3.665438851937358,
+                  3.7491156891584523
+                ],
+                "max_abs_error": [
+                  0.0002321782860368292,
+                  0.0006072504855005687,
+                  0.0009430309074756798
+                ],
+                "rms_abs_error": [
+                  5.185884617272941e-05,
+                  0.00013550359702830576,
+                  0.0001971449181417393
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.8597747594945413,
+                  0.8409100572119313,
+                  0.8077349305430815
+                ],
+                "relative_l2_pct": [
+                  8.871466526736844,
+                  8.961668486605372,
+                  8.839915054144399
+                ],
+                "peak_bias_pct": [
+                  3.899215765961428,
+                  3.665367496150921,
+                  3.7569530408170495
+                ],
+                "max_abs_error": [
+                  0.00023247564618009316,
+                  0.0006080103727578853,
+                  0.000943377598480474
+                ],
+                "rms_abs_error": [
+                  5.191484762993555e-05,
+                  0.0001356447465457808,
+                  0.00019721577131772897
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 1.8678980036559384e-17
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.03288662255757706,
+                  0.017101363238908714,
+                  0.014598775381485914
+                ],
+                "relative_l2_pct": [
+                  0.33212219342999183,
+                  0.17798489747076016,
+                  0.15606869693668562
+                ],
+                "peak_bias_pct": [
+                  0.2769602375046918,
+                  0.15140980141887173,
+                  0.004043271927300715
+                ],
+                "max_abs_error": [
+                  1.3708697459955538e-05,
+                  1.706304517476735e-05,
+                  2.0515699147374573e-05
+                ],
+                "rms_abs_error": [
+                  2.0478468428573286e-06,
+                  2.841401762939114e-06,
+                  3.6740661687262564e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.925660540602976e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.032886622557577204,
+                  0.01863691237537798,
+                  0.038164288188891324
+                ],
+                "relative_l2_pct": [
+                  0.3321221934299939,
+                  0.19769125415223968,
+                  0.43358646669230294
+                ],
+                "peak_bias_pct": [
+                  0.2769602375046964,
+                  -0.015479891967300577,
+                  0.18619324762617126
+                ],
+                "max_abs_error": [
+                  2.158849993693767e-05,
+                  1.907620642414669e-05,
+                  3.0155983627827218e-05
+                ],
+                "rms_abs_error": [
+                  3.2249556580430516e-06,
+                  3.0531859947624885e-06,
+                  5.197216900616413e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.8726925102488473,
+                  0.8531701029413654,
+                  0.8209391795923817
+                ],
+                "relative_l2_pct": [
+                  9.003702474329204,
+                  9.0918173522352,
+                  8.984346607400695
+                ],
+                "peak_bias_pct": [
+                  4.194822062506992,
+                  3.822398487043078,
+                  3.7533105480279345
+                ],
+                "max_abs_error": [
+                  0.00023812384999910476,
+                  0.0006195298243437189,
+                  0.0009564530096774033
+                ],
+                "rms_abs_error": [
+                  5.26924448689763e-05,
+                  0.0001376245269707972,
+                  0.00020045249580622845
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.8735246544848874,
+                  0.8540380510844466,
+                  0.8212725140901842
+                ],
+                "relative_l2_pct": [
+                  9.01334290983131,
+                  9.101574922460996,
+                  8.98807144068857
+                ],
+                "peak_bias_pct": [
+                  4.186975280712347,
+                  3.822327023216987,
+                  3.7611482165719714
+                ],
+                "max_abs_error": [
+                  0.0002384047127894453,
+                  0.0006202497859643689,
+                  0.0009567997006821975
+                ],
+                "rms_abs_error": [
+                  5.274509263942046e-05,
+                  0.00013776238491414094,
+                  0.00020052109448757748
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.3389294773882288e-17
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.024154581537987066,
+                  0.01579663090096228,
+                  0.014442181095205616
+                ],
+                "relative_l2_pct": [
+                  0.24393726013471465,
+                  0.1644057080136394,
+                  0.1543946204769238
+                ],
+                "peak_bias_pct": [
+                  0.2486155312754987,
+                  0.12839864094610534,
+                  0.02035299655353698
+                ],
+                "max_abs_error": [
+                  8.85899434356456e-06,
+                  1.3300866604502512e-05,
+                  1.9594914520482728e-05
+                ],
+                "rms_abs_error": [
+                  1.5041034833085967e-06,
+                  2.6246197021517056e-06,
+                  3.6346561665579983e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.560523807340773e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.02415458153798698,
+                  0.013970320287552723,
+                  0.028666601615938102
+                ],
+                "relative_l2_pct": [
+                  0.24393726013471423,
+                  0.1481903269665806,
+                  0.32568275465303625
+                ],
+                "peak_bias_pct": [
+                  0.24861553127549618,
+                  0.04873293714191689,
+                  0.12548758468584048
+                ],
+                "max_abs_error": [
+                  1.3951172194590078e-05,
+                  1.109661559165506e-05,
+                  2.194261869755982e-05
+                ],
+                "rms_abs_error": [
+                  2.368666902848176e-06,
+                  2.2886830921979455e-06,
+                  3.903820914049107e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.8731965799643351,
+                  0.8537580005893631,
+                  0.8214513774709986
+                ],
+                "relative_l2_pct": [
+                  9.008903038893783,
+                  9.098082290515359,
+                  8.989952093638243
+                ],
+                "peak_bias_pct": [
+                  4.1653699170194365,
+                  3.7985438665540614,
+                  3.7702317430989916
+                ],
+                "max_abs_error": [
+                  0.00023782088506270165,
+                  0.0006192489280263452,
+                  0.000957283989489007
+                ],
+                "rms_abs_error": [
+                  5.2722880177382795e-05,
+                  0.00013771936050450167,
+                  0.00020057756151836367
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.8740435741645545,
+                  0.8546290090846059,
+                  0.8217869247759025
+                ],
+                "relative_l2_pct": [
+                  9.018697310524509,
+                  9.107872825121945,
+                  8.993701191975465
+                ],
+                "peak_bias_pct": [
+                  4.15752535322905,
+                  3.7984724191477643,
+                  3.778070689893502
+                ],
+                "max_abs_error": [
+                  0.0002380972312170256,
+                  0.0006199953531540276,
+                  0.0009576306804938012
+                ],
+                "rms_abs_error": [
+                  5.277642600412394e-05,
+                  0.00013785771062402313,
+                  0.00020064669249791713
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.4149022653266974e-17
+            }
+          }
+        },
+        "3": {
+          "file": "d1_n3_earthquake.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.653873861174247e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  1.3569392629090822,
+                  1.326735921925322,
+                  1.2751927546152806
+                ],
+                "relative_l2_pct": [
+                  13.999750491138224,
+                  14.138377136292371,
+                  13.955691217464292
+                ],
+                "peak_bias_pct": [
+                  6.00952742858517,
+                  5.519969851992905,
+                  5.668562862407635
+                ],
+                "max_abs_error": [
+                  0.0003663480632674814,
+                  0.0009578349224940164,
+                  0.0014874200913553605
+                ],
+                "rms_abs_error": [
+                  8.193085933669567e-05,
+                  0.00021401523921271966,
+                  0.00031136968078874296
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  1.3578188060451817,
+                  1.3276427137320996,
+                  1.2755654295531689
+                ],
+                "relative_l2_pct": [
+                  14.010464896975256,
+                  14.148830504622701,
+                  13.959889088456116
+                ],
+                "peak_bias_pct": [
+                  6.001543983597986,
+                  5.51989721968153,
+                  5.676545211759821
+                ],
+                "max_abs_error": [
+                  0.00036674083526564566,
+                  0.0009585948097513329,
+                  0.0014877201033886706
+                ],
+                "rms_abs_error": [
+                  8.198770160028659e-05,
+                  0.000214158170499983,
+                  0.00031144080878911686
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.415883227574756e-17
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.05407554012398047,
+                  0.02661109322087812,
+                  0.022577415344653354
+                ],
+                "relative_l2_pct": [
+                  0.5421589924263412,
+                  0.2727588996731196,
+                  0.23776406969819133
+                ],
+                "peak_bias_pct": [
+                  0.3118739295330261,
+                  0.17122364971865578,
+                  0.03277820203599499
+                ],
+                "max_abs_error": [
+                  2.209119604577696e-05,
+                  2.4623169262237213e-05,
+                  3.057623387190582e-05
+                ],
+                "rms_abs_error": [
+                  3.4422965282910216e-06,
+                  4.486077429232684e-06,
+                  5.7676316745326516e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.6326979823759743e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.05407554012398085,
+                  0.04335762078780521,
+                  0.052530600478433935
+                ],
+                "relative_l2_pct": [
+                  0.5421589924263428,
+                  0.4527108981881025,
+                  0.5887150690454289
+                ],
+                "peak_bias_pct": [
+                  0.3118739295330208,
+                  -0.1407442986652315,
+                  0.31214803606640074
+                ],
+                "max_abs_error": [
+                  3.478928511145996e-05,
+                  4.24442170815836e-05,
+                  4.300031112696237e-05
+                ],
+                "rms_abs_error": [
+                  5.420939414631569e-06,
+                  7.205415968186493e-06,
+                  7.292194921207861e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  1.3802426895337465,
+                  1.3486797724170807,
+                  1.2973143937584317
+                ],
+                "relative_l2_pct": [
+                  14.240175517704582,
+                  14.372222040125736,
+                  14.197790118974385
+                ],
+                "peak_bias_pct": [
+                  6.340143507456091,
+                  5.700644995555513,
+                  5.7031991174312076
+                ],
+                "max_abs_error": [
+                  0.00037725384829360347,
+                  0.0009753178098912034,
+                  0.0015104824354555879
+                ],
+                "rms_abs_error": [
+                  8.333790077254829e-05,
+                  0.00021755499293057086,
+                  0.0003167712231779991
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  1.3810799527704747,
+                  1.3495716547006857,
+                  1.2976835662220394
+                ],
+                "relative_l2_pct": [
+                  14.25048181101943,
+                  14.382529575691462,
+                  14.201951727962511
+                ],
+                "peak_bias_pct": [
+                  6.3321351641853125,
+                  5.700572238880443,
+                  5.711184083253992
+                ],
+                "max_abs_error": [
+                  0.00037757409418348814,
+                  0.0009759981679793098,
+                  0.0015105142316636012
+                ],
+                "rms_abs_error": [
+                  8.339225421666148e-05,
+                  0.00021769546395270192,
+                  0.0003168411514242056
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 3.0992603237805907e-17
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.033351425464309574,
+                  0.024377926642632674,
+                  0.022824390282239693
+                ],
+                "relative_l2_pct": [
+                  0.33437992823105817,
+                  0.2498693455457032,
+                  0.2403649770818565
+                ],
+                "peak_bias_pct": [
+                  0.31034300736558607,
+                  0.16112176141009454,
+                  0.044761917399826795
+                ],
+                "max_abs_error": [
+                  1.2122621123761518e-05,
+                  2.0357629013136643e-05,
+                  3.0452781511071825e-05
+                ],
+                "rms_abs_error": [
+                  2.1230577785470456e-06,
+                  4.109611941729758e-06,
+                  5.830723948430869e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.415003332370824e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.03335142546430959,
+                  0.02246539509529466,
+                  0.03812361452968966
+                ],
+                "relative_l2_pct": [
+                  0.3343799282310569,
+                  0.23456843357516405,
+                  0.427254707840657
+                ],
+                "peak_bias_pct": [
+                  0.3103430073655912,
+                  0.06632747719712022,
+                  0.184115864552594
+                ],
+                "max_abs_error": [
+                  1.909074192718357e-05,
+                  1.7776823546485077e-05,
+                  2.8618461944736372e-05
+                ],
+                "rms_abs_error": [
+                  3.343398076452042e-06,
+                  3.733427102549479e-06,
+                  5.2922453906770415e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  1.3808646762322774,
+                  1.349664403603546,
+                  1.2982282622633952
+                ],
+                "relative_l2_pct": [
+                  14.246592649868308,
+                  14.382714774078545,
+                  14.207791482785838
+                ],
+                "peak_bias_pct": [
+                  6.338520584101087,
+                  5.689985486057838,
+                  5.715862137233691
+                ],
+                "max_abs_error": [
+                  0.0003740019858152442,
+                  0.0009766009393985305,
+                  0.001511244029387117
+                ],
+                "rms_abs_error": [
+                  8.337545580990299e-05,
+                  0.00021771382339217608,
+                  0.0003169943666546567
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  1.3817133582853944,
+                  1.3505585576645904,
+                  1.2985991204374834
+                ],
+                "relative_l2_pct": [
+                  14.257017517914065,
+                  14.39304710621106,
+                  14.211971625810122
+                ],
+                "peak_bias_pct": [
+                  6.330512363050638,
+                  5.689912736720002,
+                  5.723848059638501
+                ],
+                "max_abs_error": [
+                  0.00037427142909139503,
+                  0.000977360826655847,
+                  0.0015115907203919112
+                ],
+                "rms_abs_error": [
+                  8.343050045549542e-05,
+                  0.0002178546583888441,
+                  0.00031706469224676304
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 3.074933675126847e-17
+            }
+          }
+        }
+      },
+      "fast_chirp": {
+        "0": {
+          "file": "d1_n0_fast_chirp.npz",
+          "n": 0,
+          "tau_s": 0.0,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 6.280064897840283e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.08656355543543061,
+                  0.032080178109370444,
+                  0.01967817113847289
+                ],
+                "relative_l2_pct": [
+                  0.9265686742935398,
+                  0.3489164036944674,
+                  0.214768109496271
+                ],
+                "peak_bias_pct": [
+                  0.011906799954277082,
+                  0.010429317888700653,
+                  0.008975199109810409
+                ],
+                "max_abs_error": [
+                  8.188090619169871e-05,
+                  7.830222814746743e-05,
+                  7.14479597303606e-05
+                ],
+                "rms_abs_error": [
+                  1.5270370558839735e-05,
+                  1.4868400490977479e-05,
+                  1.3556968991859313e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.1509923204411679e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.08656355543543064,
+                  0.005685857430894148,
+                  0.12446657073759897
+                ],
+                "relative_l2_pct": [
+                  0.9265686742935381,
+                  0.06211649103138315,
+                  1.3331884288021314
+                ],
+                "peak_bias_pct": [
+                  0.011906799954278555,
+                  0.009755091129893848,
+                  0.005348971563002054
+                ],
+                "max_abs_error": [
+                  0.00012894630896330504,
+                  1.0959927754860405e-05,
+                  0.00023578961464431713
+                ],
+                "rms_abs_error": [
+                  2.4047827651716126e-05,
+                  2.570587488593233e-06,
+                  4.4198616975400944e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.06061526793178325,
+                  0.022483188067873267,
+                  0.013917795580845181
+                ],
+                "relative_l2_pct": [
+                  0.6488204899508093,
+                  0.24453583447958763,
+                  0.15189920974971463
+                ],
+                "peak_bias_pct": [
+                  0.010292447848169187,
+                  0.008748690996432412,
+                  0.008084932089893823
+                ],
+                "max_abs_error": [
+                  5.697541902923445e-05,
+                  5.479117470470424e-05,
+                  4.993613230174778e-05
+                ],
+                "rms_abs_error": [
+                  1.0692924963463648e-05,
+                  1.0420423582669008e-05,
+                  9.588448123395947e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.9525024827772313e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.06061526793178328,
+                  0.003683073342480094,
+                  0.08700407287914115
+                ],
+                "relative_l2_pct": [
+                  0.6488204899508082,
+                  0.040236603718379484,
+                  0.9319194907817053
+                ],
+                "peak_bias_pct": [
+                  0.010292447848167028,
+                  0.00799128265780244,
+                  0.006159215463156787
+                ],
+                "max_abs_error": [
+                  8.972506933737707e-05,
+                  9.640786247950422e-06,
+                  0.0001649248929235465
+                ],
+                "rms_abs_error": [
+                  1.6839251910966383e-05,
+                  1.665124806385045e-06,
+                  3.089552214459291e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        "2": {
+          "file": "d1_n2_fast_chirp.npz",
+          "n": 2,
+          "tau_s": 0.001953125,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.9223597504485193e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.11704163958504084,
+                  0.04458362451852685,
+                  0.02980464115357185
+                ],
+                "relative_l2_pct": [
+                  1.2717181756730025,
+                  0.4934438711553935,
+                  0.33136949729645876
+                ],
+                "peak_bias_pct": [
+                  0.14298398726876124,
+                  0.14085725293428183,
+                  0.13871697346685077
+                ],
+                "max_abs_error": [
+                  0.00012832180126050871,
+                  0.00012106110267649469,
+                  0.00011247596120452094
+                ],
+                "rms_abs_error": [
+                  2.2484769510059995e-05,
+                  2.2536587888179604e-05,
+                  2.2413749163856114e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.409258862016712e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.11704163958504073,
+                  0.01530391995342833,
+                  0.16542743450676067
+                ],
+                "relative_l2_pct": [
+                  1.2717181756730038,
+                  0.17031741933717756,
+                  1.8047853003969518
+                ],
+                "peak_bias_pct": [
+                  0.1429839872687634,
+                  0.13978762755113366,
+                  0.13321035780096305
+                ],
+                "max_abs_error": [
+                  0.0002020815767882027,
+                  4.388786906036474e-05,
+                  0.0003671918811250757
+                ],
+                "rms_abs_error": [
+                  3.5409085842614124e-05,
+                  7.553678256662293e-06,
+                  6.433275937859166e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.08486364105011149,
+                  0.03414331788069155,
+                  0.024191521178464685
+                ],
+                "relative_l2_pct": [
+                  0.922087516544069,
+                  0.37789235691540624,
+                  0.26896254749182863
+                ],
+                "peak_bias_pct": [
+                  0.14759114917030106,
+                  0.14537485517530566,
+                  0.14411523740481402
+                ],
+                "max_abs_error": [
+                  9.182617870280422e-05,
+                  8.819559706670012e-05,
+                  8.174840599842138e-05
+                ],
+                "rms_abs_error": [
+                  1.6303081668723504e-05,
+                  1.725911458572648e-05,
+                  1.819255882975928e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 1.9276766650896223e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.08486364105011147,
+                  0.015347372823291659,
+                  0.12067100891187667
+                ],
+                "relative_l2_pct": [
+                  0.9220875165440707,
+                  0.17080100659328173,
+                  1.3165002752873143
+                ],
+                "peak_bias_pct": [
+                  0.14759114917030455,
+                  0.14419019195560456,
+                  0.14071086398941396
+                ],
+                "max_abs_error": [
+                  0.00014460815543748705,
+                  4.5084798825173467e-05,
+                  0.00026710732859177677
+                ],
+                "rms_abs_error": [
+                  2.5674144360194485e-05,
+                  7.575125637416703e-06,
+                  4.692751842187573e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        "3": {
+          "file": "d1_n3_fast_chirp.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.307594305474387e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.14113219997118936,
+                  0.05520676832192696,
+                  0.03860230104906604
+                ],
+                "relative_l2_pct": [
+                  1.5466778602494815,
+                  0.6166849864731124,
+                  0.4331351418615092
+                ],
+                "peak_bias_pct": [
+                  0.21209146262276654,
+                  0.2100797435576371,
+                  0.2072071011780415
+                ],
+                "max_abs_error": [
+                  0.00016735156353654224,
+                  0.0001574289384988956,
+                  0.00014680707163216373
+                ],
+                "rms_abs_error": [
+                  2.8446704677908817e-05,
+                  2.9276354741400746e-05,
+                  3.0446608427376348e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.0356613174848333e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.1411321999711895,
+                  0.023521268102862796,
+                  0.1976519637389509
+                ],
+                "relative_l2_pct": [
+                  1.546677860249499,
+                  0.26417540467000594,
+                  2.17249917615295
+                ],
+                "peak_bias_pct": [
+                  0.2120914626227784,
+                  0.20849028326141286,
+                  0.20054046400453168
+                ],
+                "max_abs_error": [
+                  0.0002635457693488854,
+                  6.939451890999523e-05,
+                  0.00047710212019729426
+                ],
+                "rms_abs_error": [
+                  4.47979601226911e-05,
+                  1.2177474969130042e-05,
+                  8.079070138543866e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.1056358670756873,
+                  0.044542412145389274,
+                  0.03326214794232208
+                ],
+                "relative_l2_pct": [
+                  1.1576710126220375,
+                  0.49755922446286754,
+                  0.3732162274291353
+                ],
+                "peak_bias_pct": [
+                  0.21998234504032577,
+                  0.2177557625126244,
+                  0.21592492715594275
+                ],
+                "max_abs_error": [
+                  0.0001232172675769309,
+                  0.00011826308223745238,
+                  0.00011014312120269376
+                ],
+                "rms_abs_error": [
+                  2.129203905777948e-05,
+                  2.362100696425218e-05,
+                  2.6234694987900064e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.7451853332245106e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.10563586707568738,
+                  0.02405252299730909,
+                  0.14891902470990198
+                ],
+                "relative_l2_pct": [
+                  1.1576710126220504,
+                  0.2701421100410565,
+                  1.6368491988425724
+                ],
+                "peak_bias_pct": [
+                  0.2199823450403361,
+                  0.21615110230305104,
+                  0.21167890849990442
+                ],
+                "max_abs_error": [
+                  0.00019404294106603278,
+                  7.198468238964542e-05,
+                  0.00035740162321675406
+                ],
+                "rms_abs_error": [
+                  3.353077016973149e-05,
+                  1.2452517247933037e-05,
+                  6.087099884238323e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        }
+      },
+      "tones": [
+        {
+          "file": "d1_n2_tone1.npz",
+          "n": 2,
+          "tau_s": 0.001953125,
+          "frequency_hz": 2.7029021152733153,
+          "loading_duration_s": 14.7998046875,
+          "unloading_duration_s": 8.109375,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.008962386842370496,
+                  0.008952604301626366,
+                  0.008946730277492598
+                ],
+                "phase_error_deg": [
+                  0.0010810681556803312,
+                  0.0011209820030007058,
+                  0.0011426939544137548
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.009165250984528283
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.13151656009779966,
+                  0.13143840114571148,
+                  0.13139296997255467
+                ],
+                "phase_error_deg": [
+                  0.010967608735288112,
+                  0.011551369968079947,
+                  0.011882023837390307
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.13299913975924108
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7054853964892995,
+                "decay": 0.7416095645472389,
+                "rank": 8,
+                "embedding_residual": 3.9236056686218323e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.705485396485889,
+                "expected_decay": 0.7416095645514242,
+                "frequency_error_pct": 1.2605472221594027e-10,
+                "decay_error_pct": 5.643596701077058e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.012788526143968283,
+                0.033421684569076945,
+                0.049513120348657756
+              ],
+              "expected_phase_deg": [
+                -88.52370450041838,
+                -88.9807122475593,
+                -87.67745817521515
+              ],
+              "measured_amplitude": [
+                0.012787379986783823,
+                0.03341869245790654,
+                0.04950869054332819
+              ],
+              "measured_phase_deg": [
+                -88.52478556857406,
+                -88.9818332295623,
+                -87.67860086916956
+              ],
+              "convolution_residual": 4.858343685375761e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.009126604616271905,
+                  0.009116218530824671,
+                  0.009110002086865077
+                ],
+                "phase_error_deg": [
+                  0.0011371077520145293,
+                  0.0011776744919522965,
+                  0.0011996565698124222
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.009346429687791608
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.13318204449208615,
+                  0.133098919414687,
+                  0.13305086304138403
+                ],
+                "phase_error_deg": [
+                  0.011456397159448725,
+                  0.01204630629757768,
+                  0.012379589511210605
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.13477300460600108
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7055732936987096,
+                "decay": 0.7400245378619341,
+                "rank": 8,
+                "embedding_residual": 6.274148910116771e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.7055732936905215,
+                "expected_decay": 0.7400245378641845,
+                "frequency_error_pct": 3.0264679651281767e-10,
+                "decay_error_pct": 3.0410118867507663e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.012817247108768411,
+                0.03349637075061479,
+                0.04962291376913404
+              ],
+              "expected_phase_deg": [
+                -88.49260000592055,
+                -88.94822973586,
+                -87.64594649985773
+              ],
+              "measured_amplitude": [
+                0.012816077329302103,
+                0.03349331714825727,
+                0.04961839312065411
+              ],
+              "measured_phase_deg": [
+                -88.49373711367255,
+                -88.94940741035194,
+                -87.64714615642755
+              ],
+              "convolution_residual": 6.136092804059778e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  0.061212296122740935,
+                  0.0609457844942121,
+                  0.06039378013887897
+                ],
+                "relative_l2_pct": [
+                  0.22594637473183213,
+                  0.22495668442511357,
+                  0.222913048790452
+                ],
+                "peak_bias_pct": [
+                  0.22436737529063258,
+                  0.22328438183593008,
+                  0.22162392859863428
+                ],
+                "max_abs_error": [
+                  3.4582871368185955e-05,
+                  8.231702091128848e-05,
+                  0.00011310266229852539
+                ],
+                "rms_abs_error": [
+                  1.565580005955932e-05,
+                  4.0737140718365345e-05,
+                  5.980389693135246e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.009135966662321415,
+                  0.009125612643823278,
+                  0.009119405669277825
+                ],
+                "phase_error_deg": [
+                  0.0011347995175801271,
+                  0.0011754011217519921,
+                  0.0011974163502384758
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.009354721391437002
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.13327034926414738,
+                  0.13318756020467282,
+                  0.1331395707891092
+                ],
+                "phase_error_deg": [
+                  0.011430168102378626,
+                  0.012020381730073942,
+                  0.01235401602164666
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.13485346497966577
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7055648824154037,
+                "decay": 0.7399496370135995,
+                "rank": 8,
+                "embedding_residual": 2.81376141014307e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.7055648824126304,
+                "expected_decay": 0.7399496370163708,
+                "frequency_error_pct": 1.0249578963339445e-10,
+                "decay_error_pct": 3.7453373735729656e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.012818340260518079,
+                0.033499203355607694,
+                0.049627520828743214
+              ],
+              "expected_phase_deg": [
+                -88.49744869747902,
+                -88.9531309832377,
+                -87.65037926298736
+              ],
+              "measured_amplitude": [
+                0.012817169181225215,
+                0.033496146348070695,
+                0.04962299509379524
+              ],
+              "measured_phase_deg": [
+                -88.49858349699659,
+                -88.95430638435947,
+                -87.65157667933761
+              ],
+              "convolution_residual": 2.979806852894434e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  0.06283578661576786,
+                  0.06261056103697615,
+                  0.06233678584497575
+                ],
+                "relative_l2_pct": [
+                  0.23193899083261504,
+                  0.23110153290769353,
+                  0.23008467018535872
+                ],
+                "peak_bias_pct": [
+                  0.23293967546967642,
+                  0.23177993975931446,
+                  0.2309398775602785
+                ],
+                "max_abs_error": [
+                  3.200277396814971e-05,
+                  8.010985609374979e-05,
+                  0.00011674904782107282
+                ],
+                "rms_abs_error": [
+                  1.60710277861334e-05,
+                  4.184990408419999e-05,
+                  6.172792474874084e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        {
+          "file": "d1_n2_tone2.npz",
+          "n": 2,
+          "tau_s": 0.001953125,
+          "frequency_hz": 9.317310628277625,
+          "loading_duration_s": 10.8125,
+          "unloading_duration_s": 8.109375,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  4.934011843538144e-06,
+                  7.522527543102342e-05,
+                  0.00020424933202534135
+                ],
+                "phase_error_deg": [
+                  6.463254261887712e-05,
+                  0.00016478247641002125,
+                  0.00025231979573368075
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00032455702591863166
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  9.099612789942313e-05,
+                  0.0003328953422698788,
+                  5.834113059322021e-06
+                ],
+                "phase_error_deg": [
+                  0.00010183777978785477,
+                  0.00023324609094263759,
+                  0.0004796500455452118
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0005645887042743731
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.325498756796408,
+                "decay": 2.341849960569164,
+                "rank": 12,
+                "embedding_residual": 9.410500881229878e-11,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.32549875683483,
+                "expected_decay": 2.3418499598867006,
+                "frequency_error_pct": 4.1201486666864184e-10,
+                "decay_error_pct": 2.9142066537701794e-08,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.001284775280548495,
+                0.0012757576015763976,
+                0.001176706724922143
+              ],
+              "expected_phase_deg": [
+                -97.13889479320147,
+                -109.30005824382434,
+                110.98169407591382
+              ],
+              "measured_amplitude": [
+                0.0012847753439394595,
+                0.0012757585612685673,
+                0.0011767091283377685
+              ],
+              "measured_phase_deg": [
+                -97.13895942574409,
+                -109.30022302630076,
+                110.98194639570956
+              ],
+              "convolution_residual": 2.784906618711908e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  6.044086631185053e-06,
+                  4.8872825253454266e-05,
+                  0.00023206478116932772
+                ],
+                "phase_error_deg": [
+                  6.493995301451658e-05,
+                  0.0001726970808928891,
+                  0.00023533284276950532
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00032525214580794064
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  7.317173846832503e-05,
+                  0.00029820333935504095,
+                  7.036689555484088e-05
+                ],
+                "phase_error_deg": [
+                  0.00010612913857135242,
+                  0.0002550927024316451,
+                  0.0004606298905253265
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0005612691411787103
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.36384848753057,
+                "decay": 2.314593127670248,
+                "rank": 10,
+                "embedding_residual": 5.754250386908057e-11,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.363848487534847,
+                "expected_decay": 2.3145931276805833,
+                "frequency_error_pct": 4.568567746332519e-11,
+                "decay_error_pct": 4.4653170050423796e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.001301825084319315,
+                0.0012650841525551596,
+                0.0012330643903859402
+              ],
+              "expected_phase_deg": [
+                -91.42018043475599,
+                -103.6933409537332,
+                115.71608455641316
+              ],
+              "measured_amplitude": [
+                0.001301825005635879,
+                0.0012650847708375267,
+                0.0012330672518941195
+              ],
+              "measured_phase_deg": [
+                -91.42024537470903,
+                -103.6935136508141,
+                115.71631988925594
+              ],
+              "convolution_residual": 8.410530951727666e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  2.58856741911866,
+                  2.029008370503547,
+                  1.752887826342747
+                ],
+                "relative_l2_pct": [
+                  10.016607085986116,
+                  9.508904678947204,
+                  9.174748262667244
+                ],
+                "peak_bias_pct": [
+                  1.9527311070429407,
+                  1.4992613564244377,
+                  -0.18830070560618428
+                ],
+                "max_abs_error": [
+                  0.00013255111718165106,
+                  0.000125618955133487,
+                  0.00011442216696099796
+                ],
+                "rms_abs_error": [
+                  6.758554264660213e-05,
+                  6.473614253923958e-05,
+                  5.936838576380883e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  2.7825267534531406e-06,
+                  5.6218579458366946e-05,
+                  0.0002225909507602708
+                ],
+                "phase_error_deg": [
+                  6.482081887841926e-05,
+                  0.0001699593278465137,
+                  0.00024019079786859638
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0003243005460869396
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  7.823720951094515e-05,
+                  0.00030655048059990975,
+                  4.952196384078178e-05
+                ],
+                "phase_error_deg": [
+                  0.00010461890866080233,
+                  0.0002477308688817134,
+                  0.0004644867504468969
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0005598014582601013
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.352478193402321,
+                "decay": 2.3043797735914597,
+                "rank": 11,
+                "embedding_residual": 8.411909085491938e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.352478193301453,
+                "expected_decay": 2.304379774183527,
+                "frequency_error_pct": 1.078515055041862e-09,
+                "decay_error_pct": 2.5693125405013006e-08,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0013062653959910197,
+                0.00128001862880463,
+                0.0012260980811101177
+              ],
+              "expected_phase_deg": [
+                -93.07762038313334,
+                -105.228212111087,
+                114.20436452553697
+              ],
+              "measured_amplitude": [
+                0.0013062653596438356,
+                0.0012800193484129201,
+                0.0012261008102934937
+              ],
+              "measured_phase_deg": [
+                -93.07768520395221,
+                -105.22838207041485,
+                114.20460471633484
+              ],
+              "convolution_residual": 4.271072571142529e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  1.873940430377527,
+                  1.4781936376042812,
+                  1.282030214735914
+                ],
+                "relative_l2_pct": [
+                  7.251317796476897,
+                  6.927523119836614,
+                  6.710243695328924
+                ],
+                "peak_bias_pct": [
+                  2.191197776732008,
+                  1.6560309237116648,
+                  0.3265106239269798
+                ],
+                "max_abs_error": [
+                  9.463881890776725e-05,
+                  9.126974602507648e-05,
+                  8.376863843406897e-05
+                ],
+                "rms_abs_error": [
+                  4.8927171044126705e-05,
+                  4.716222733019056e-05,
+                  4.3420955525774763e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        {
+          "file": "d1_n3_tone1.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "frequency_hz": 2.703818391578906,
+          "loading_duration_s": 14.7939453125,
+          "unloading_duration_s": 8.765625,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.017578671574713933,
+                  0.017563487931171462,
+                  0.01755523792260627
+                ],
+                "phase_error_deg": [
+                  0.00183327561669541,
+                  0.0019056419774059435,
+                  0.0019444614950529086
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.017878261240867138
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.20686299545826792,
+                  0.20676704207651664,
+                  0.20672094684124342
+                ],
+                "phase_error_deg": [
+                  0.014892305010055768,
+                  0.01574245173738087,
+                  0.016225876518375044
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.20862065086741785
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.706034532606281,
+                "decay": 0.686999840743474,
+                "rank": 8,
+                "embedding_residual": 4.016626205183714e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.706034532596858,
+                "expected_decay": 0.6869998407482989,
+                "frequency_error_pct": 3.482325539039266e-10,
+                "decay_error_pct": 7.023159831476278e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.013803133975348613,
+                0.03607763499066685,
+                0.053445723478181634
+              ],
+              "expected_phase_deg": [
+                -89.56611398247304,
+                -90.00061372349948,
+                -87.89223199849604
+              ],
+              "measured_amplitude": [
+                0.013800707567760069,
+                0.03607129849959941,
+                0.05343634095426558
+              ],
+              "measured_phase_deg": [
+                -89.56794725808972,
+                -90.00251936547689,
+                -87.8941764599911
+              ],
+              "convolution_residual": 3.352129502953324e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.018081288021098985,
+                  0.018064904517822722,
+                  0.018056025966328715
+                ],
+                "phase_error_deg": [
+                  0.001956888043449518,
+                  0.002031076464115267,
+                  0.0020706482724567286
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.01841209729029726
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.21087658783301988,
+                  0.2107730017421705,
+                  0.21072339732971512
+                ],
+                "phase_error_deg": [
+                  0.015728787776129814,
+                  0.016592450124612475,
+                  0.0170817885679242
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.2127897910322026
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.706121913383669,
+                "decay": 0.6846141767148746,
+                "rank": 8,
+                "embedding_residual": 5.803774394273661e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.706121913365486,
+                "expected_decay": 0.684614176717491,
+                "frequency_error_pct": 6.719291789636372e-10,
+                "decay_error_pct": 3.821831739969639e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.013852588651152015,
+                0.036206531866362496,
+                0.0536356786128411
+              ],
+              "expected_phase_deg": [
+                -89.53728576273092,
+                -89.96981193598332,
+                -87.862988031565
+              ],
+              "measured_amplitude": [
+                0.013850083924699622,
+                0.03619999119095162,
+                0.053625994140783555
+              ],
+              "measured_phase_deg": [
+                -89.53924265077437,
+                -89.97184301244744,
+                -87.86505867983745
+              ],
+              "convolution_residual": 3.1344572306505047e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  0.09401974265306715,
+                  0.09355294744470875,
+                  0.09296550516125096
+                ],
+                "relative_l2_pct": [
+                  0.35342538592726325,
+                  0.35166329128418095,
+                  0.34944683471763854
+                ],
+                "peak_bias_pct": [
+                  0.3579761186255858,
+                  0.357055225275215,
+                  0.3553080139546612
+                ],
+                "max_abs_error": [
+                  5.713145099300529e-05,
+                  0.00013791222612158718,
+                  0.00019182029942160783
+                ],
+                "rms_abs_error": [
+                  2.595384984746782e-05,
+                  6.750010283919277e-05,
+                  9.936721177346091e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.01810782588520521,
+                  0.018091498591077393,
+                  0.01808262835016894
+                ],
+                "phase_error_deg": [
+                  0.0019527193704260723,
+                  0.0020270000679374314,
+                  0.0020666552544795595
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.018436821885451003
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.21107884804599797,
+                  0.21097575006707725,
+                  0.2109261429701692
+                ],
+                "phase_error_deg": [
+                  0.015689014248572195,
+                  0.016553318558202308,
+                  0.017043359924270703
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.21298125798260956
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7061133031279403,
+                "decay": 0.6845023073397627,
+                "rank": 8,
+                "embedding_residual": 3.0270019989625517e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.706113303123436,
+                "expected_decay": 0.6845023073416956,
+                "frequency_error_pct": 1.6644463585180347e-10,
+                "decay_error_pct": 2.8238522631340857e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.013854617522146617,
+                0.03621180846974248,
+                0.05364397835149143
+              ],
+              "expected_phase_deg": [
+                -89.54300204294168,
+                -89.97560942650668,
+                -87.86803691230902
+              ],
+              "measured_amplitude": [
+                0.013852108752128646,
+                0.036205257210923374,
+                0.05363427811025388
+              ],
+              "measured_phase_deg": [
+                -89.5449547623121,
+                -89.9776364265746,
+                -87.8701035675635
+              ],
+              "convolution_residual": 4.683810296728743e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  0.09715286109389676,
+                  0.09693530598349982,
+                  0.09665599048705698
+                ],
+                "relative_l2_pct": [
+                  0.36520295054145346,
+                  0.36437749611195946,
+                  0.3633189522674536
+                ],
+                "peak_bias_pct": [
+                  0.37270327500179273,
+                  0.37166090135917773,
+                  0.3708266599937053
+                ],
+                "max_abs_error": [
+                  5.321694352746105e-05,
+                  0.00013609112421104214,
+                  0.00019944998876846726
+                ],
+                "rms_abs_error": [
+                  2.681873719211502e-05,
+                  6.994053422530547e-05,
+                  0.00010331182796502728
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        {
+          "file": "d1_n3_tone2.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "frequency_hz": 9.322226326300436,
+          "loading_duration_s": 11.6875,
+          "unloading_duration_s": 8.765625,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  3.252205207360248e-05,
+                  9.450162339330603e-05,
+                  0.00010263379029984421
+                ],
+                "phase_error_deg": [
+                  1.1187744180571949e-05,
+                  1.8518117101989948e-05,
+                  7.872657135435602e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00011210606359828677
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.00012852306348065667,
+                  0.00029538928141281673,
+                  0.0006262001330248346
+                ],
+                "phase_error_deg": [
+                  3.686720929811242e-05,
+                  0.0001358094171170458,
+                  3.982291203335894e-06
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0004144531246397484
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.328170265022177,
+                "decay": 2.0458451359493357,
+                "rank": 12,
+                "embedding_residual": 5.279137260238812e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.328170265097029,
+                "expected_decay": 2.0458451356517418,
+                "frequency_error_pct": 8.024358955083244e-10,
+                "decay_error_pct": 1.4546253090941264e-08,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0014699317084906271,
+                0.0014592514471060412,
+                0.0013248212116122734
+              ],
+              "expected_phase_deg": [
+                -100.20195318755144,
+                -112.3623065527949,
+                107.88965729991395
+              ],
+              "measured_amplitude": [
+                0.0014699321865425828,
+                0.001459252826122348,
+                0.0013248198518980491
+              ],
+              "measured_phase_deg": [
+                -100.20196437529562,
+                -112.36232507091202,
+                107.88973602648531
+              ],
+              "convolution_residual": 5.514700457123936e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  3.075622645454246e-05,
+                  9.376079155298811e-05,
+                  8.896905044908365e-05
+                ],
+                "phase_error_deg": [
+                  1.304791518802642e-05,
+                  2.4357429634223916e-05,
+                  8.113498393604631e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00011278666845920844
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.00013503309612694636,
+                  0.0003267494255609904,
+                  0.0006007175236688589
+                ],
+                "phase_error_deg": [
+                  2.836445267820099e-05,
+                  0.00011860296967237647,
+                  3.6016185525218515e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.0004126801913003936
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.366330834727844,
+                "decay": 1.9956055444142102,
+                "rank": 10,
+                "embedding_residual": 3.282985845696086e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.366330834754104,
+                "expected_decay": 1.9956055445472765,
+                "frequency_error_pct": 2.803646204085908e-10,
+                "decay_error_pct": 6.6679661792079514e-09,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0015061784985906407,
+                0.0014629671779619884,
+                0.0014045321759404152
+              ],
+              "expected_phase_deg": [
+                -93.62944647098497,
+                -105.83813090924406,
+                113.39084372557618
+              ],
+              "measured_amplitude": [
+                0.0015061789618343107,
+                0.0014629685496515945,
+                0.001404530926341475
+              ],
+              "measured_phase_deg": [
+                -93.62945951890016,
+                -105.8381552666737,
+                113.3909248605601
+              ],
+              "convolution_residual": 3.566766692025703e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  3.055028284032947,
+                  2.8686680782911416,
+                  2.5499044174713945
+                ],
+                "relative_l2_pct": [
+                  11.75298803059781,
+                  11.243589971058817,
+                  11.328598996308768
+                ],
+                "peak_bias_pct": [
+                  2.5606257545393016,
+                  0.5703987020076252,
+                  2.2959210308462668
+                ],
+                "max_abs_error": [
+                  0.00017724985912401383,
+                  0.00016680070383989038,
+                  0.0001533668727494073
+                ],
+                "rms_abs_error": [
+                  9.040591705721042e-05,
+                  8.616352045624435e-05,
+                  7.940706790611741e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  3.128716852263125e-05,
+                  9.36509031435051e-05,
+                  9.35717940797609e-05
+                ],
+                "phase_error_deg": [
+                  1.2424050754895126e-05,
+                  2.2484609732498016e-05,
+                  7.98396901086506e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00011216100424301063
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.00013253257913348193,
+                  0.0003160007113978125,
+                  0.0006049887626979888
+                ],
+                "phase_error_deg": [
+                  3.0648503972082445e-05,
+                  0.00012249157659491295,
+                  2.5285040578959815e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.00041055331670685505
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.355019786718621,
+                "decay": 1.9830416243386635,
+                "rank": 12,
+                "embedding_residual": 2.1936825619232954e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.355019786740321,
+                "expected_decay": 1.9830416244102311,
+                "frequency_error_pct": 2.3195889653493396e-10,
+                "decay_error_pct": 3.608979781688504e-09,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0015155163450686776,
+                0.001484104573574166,
+                0.0014000490221320893
+              ],
+              "expected_phase_deg": [
+                -95.52692136225079,
+                -107.58166143826988,
+                111.59012825532761
+              ],
+              "measured_amplitude": [
+                0.0015155168192308305,
+                0.0014841059634515027,
+                0.0014000477120811013
+              ],
+              "measured_phase_deg": [
+                -95.52693378630154,
+                -107.5816839228796,
+                111.59020809501773
+              ],
+              "convolution_residual": 9.1316659642774e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  2.274435859541285,
+                  2.158595717833694,
+                  1.923871781907854
+                ],
+                "relative_l2_pct": [
+                  8.749973796727991,
+                  8.460499612441472,
+                  8.547289768281118
+                ],
+                "peak_bias_pct": [
+                  3.0889103778020175,
+                  1.6531274598402494,
+                  2.683321476822295
+                ],
+                "max_abs_error": [
+                  0.00013032458283024709,
+                  0.00012648986477671156,
+                  0.00011610271229842639
+                ],
+                "rms_abs_error": [
+                  6.730623763593833e-05,
+                  6.483573603298156e-05,
+                  5.9911664210579715e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        }
+      ],
+      "controlled": {
+        "0": {
+          "n": 0,
+          "stable": true,
+          "file": "d1_n0_controlled_eq.npz",
+          "models": {
+            "Full15": {
+              "nrmse_range_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "relative_l2_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "peak_bias_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rms_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "Guyan": {
+              "nrmse_range_pct": [
+                0.020340486959357532,
+                0.007883537175353528,
+                0.005313891835230318
+              ],
+              "relative_l2_pct": [
+                0.20990460068516556,
+                0.08403196725949115,
+                0.058170176685389
+              ],
+              "peak_bias_pct": [
+                0.21143325120505044,
+                0.08510338477285534,
+                -0.04334474184228876
+              ],
+              "max_abs_error": [
+                8.138595109423365e-06,
+                7.816879584808534e-06,
+                8.23064333095087e-06
+              ],
+              "rms_abs_error": [
+                1.2276626185541877e-06,
+                1.2712035830982427e-06,
+                1.297026899607689e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "CB3": {
+              "nrmse_range_pct": [
+                0.013962594097939797,
+                0.005749256957454832,
+                0.004118219884236621
+              ],
+              "relative_l2_pct": [
+                0.14408763883151765,
+                0.06128231042350366,
+                0.04508138022439507
+              ],
+              "peak_bias_pct": [
+                0.14937496838708414,
+                0.060690807323538834,
+                -0.029231050846278098
+              ],
+              "max_abs_error": [
+                5.203593347168339e-06,
+                5.509831782204641e-06,
+                6.1991936323872775e-06
+              ],
+              "rms_abs_error": [
+                8.427209666285904e-07,
+                9.270554424881421e-07,
+                1.0051845490984948e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            }
+          }
+        },
+        "2": {
+          "n": 2,
+          "stable": true,
+          "file": "d1_n2_controlled_eq.npz",
+          "models": {
+            "Full15": {
+              "nrmse_range_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "relative_l2_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "peak_bias_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rms_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "Guyan": {
+              "nrmse_range_pct": [
+                0.03285364805845037,
+                0.017071674038831124,
+                0.014569144657299719
+              ],
+              "relative_l2_pct": [
+                0.33189935616570077,
+                0.17773810049393576,
+                0.155807825035133
+              ],
+              "peak_bias_pct": [
+                0.2768735943317771,
+                0.1513754932449913,
+                0.004062584224669435
+              ],
+              "max_abs_error": [
+                1.3702408026729576e-05,
+                1.703284643913205e-05,
+                2.0470185226652456e-05
+              ],
+              "rms_abs_error": [
+                2.0450095746627805e-06,
+                2.835403265948269e-06,
+                3.6652500796400255e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "CB3": {
+              "nrmse_range_pct": [
+                0.024120910206917555,
+                0.01576555352255291,
+                0.014411626658688444
+              ],
+              "relative_l2_pct": [
+                0.24367810093915723,
+                0.1641397047507059,
+                0.15412326926025344
+              ],
+              "peak_bias_pct": [
+                0.24853842836067502,
+                0.12837978471317718,
+                0.020366725711954397
+              ],
+              "max_abs_error": [
+                8.850077231912622e-06,
+                1.3264823105122283e-05,
+                1.9549194903218346e-05
+              ],
+              "rms_abs_error": [
+                1.5014312028596758e-06,
+                2.6184720868996525e-06,
+                3.625622299798781e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            }
+          }
+        },
+        "3": {
+          "n": 3,
+          "stable": true,
+          "file": "d1_n3_controlled_eq.npz",
+          "models": {
+            "Full15": {
+              "nrmse_range_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "relative_l2_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "peak_bias_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rms_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "Guyan": {
+              "nrmse_range_pct": [
+                0.05404774075032915,
+                0.026561087244477758,
+                0.022525352901301126
+              ],
+              "relative_l2_pct": [
+                0.5419320161469248,
+                0.2723588807506096,
+                0.23731592330926043
+              ],
+              "peak_bias_pct": [
+                0.3117928331749464,
+                0.17114660626017875,
+                0.0328067134365436
+              ],
+              "max_abs_error": [
+                2.208299282870259e-05,
+                2.457472074156845e-05,
+                3.050290477676562e-05
+              ],
+              "rms_abs_error": [
+                3.4381931401761774e-06,
+                4.475984667231484e-06,
+                5.7522247164575994e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "CB3": {
+              "nrmse_range_pct": [
+                0.03330332987074391,
+                0.024322609425839133,
+                0.022770210643929954
+              ],
+              "relative_l2_pct": [
+                0.3339296046550926,
+                0.24940540344533715,
+                0.23989562279392534
+              ],
+              "peak_bias_pct": [
+                0.3102605765305299,
+                0.16111035594619155,
+                0.04478269005131086
+              ],
+              "max_abs_error": [
+                1.209484701623941e-05,
+                2.0298674758088137e-05,
+                3.0377458805069292e-05
+              ],
+              "rms_abs_error": [
+                2.118558125039089e-06,
+                4.098763949497222e-06,
+                5.814753226680593e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            }
+          }
+        }
+      },
+      "slow_chirp": {
+        "n": 2,
+        "tau_s": 0.001953125,
+        "band_hz": [
+          7.919714034035981,
+          10.714907222519267
+        ],
+        "selection": "85%-115% of reference second peak at normal nonzero delay",
+        "criterion": "All methods: complex amplitude versus FRF and change on halving speed <=1%",
+        "converged": true,
+        "runs": [
+          {
+            "file": "d1_n2_slow_chirp_speed1.npz",
+            "duration_s": 402.423828125,
+            "prelude_s": 10.7880859375,
+            "sweep_rate_hz_s": 0.006945893839106986,
+            "speed_factor": 1,
+            "models": {
+              "Full15": {
+                "quasisteady_complex_error_pct": 0.5106282797831312,
+                "change_from_previous_pct": null
+              },
+              "Guyan": {
+                "quasisteady_complex_error_pct": 0.5231264448784022,
+                "change_from_previous_pct": null
+              },
+              "CB3": {
+                "quasisteady_complex_error_pct": 0.5273943049648688,
+                "change_from_previous_pct": null
+              }
+            }
+          },
+          {
+            "file": "d1_n2_slow_chirp_speed2.npz",
+            "duration_s": 804.84765625,
+            "prelude_s": 10.7880859375,
+            "sweep_rate_hz_s": 0.003472946919553493,
+            "speed_factor": 2,
+            "models": {
+              "Full15": {
+                "quasisteady_complex_error_pct": 0.2553298173276672,
+                "change_from_previous_pct": 0.25532752403809145
+              },
+              "Guyan": {
+                "quasisteady_complex_error_pct": 0.2615794825497899,
+                "change_from_previous_pct": 0.2615779523789712
+              },
+              "CB3": {
+                "quasisteady_complex_error_pct": 0.26371388257822137,
+                "change_from_previous_pct": 0.2637122460191729
+              }
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "earthquake": {
+        "0": {
+          "file": "d2_n0_earthquake.npz",
+          "n": 0,
+          "tau_s": 0.0,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.961461969555377e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  5.4137957077179166e-11,
+                  5.305292203940568e-11,
+                  5.202753687552061e-11
+                ],
+                "relative_l2_pct": [
+                  5.585496063807547e-10,
+                  5.653590948882552e-10,
+                  5.69388617377345e-10
+                ],
+                "peak_bias_pct": [
+                  9.847274871977584e-11,
+                  9.038415378587848e-11,
+                  8.854824449004494e-11
+                ],
+                "max_abs_error": [
+                  1.6715578574078016e-14,
+                  4.3197650317905456e-14,
+                  6.347266462425338e-14
+                ],
+                "rms_abs_error": [
+                  3.2688046306193636e-15,
+                  8.55794556668095e-15,
+                  1.2703803005877967e-14
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.0030966476370859405,
+                  0.0027626565923726046,
+                  0.0026791015372270993
+                ],
+                "relative_l2_pct": [
+                  0.03195232885605673,
+                  0.029441927006158386,
+                  0.029320299413808835
+                ],
+                "peak_bias_pct": [
+                  -0.007530874890636922,
+                  -6.883267319365916e-05,
+                  0.007554138363890756
+                ],
+                "max_abs_error": [
+                  9.79889352923681e-07,
+                  2.232810049767296e-06,
+                  3.3047032722572506e-06
+                ],
+                "rms_abs_error": [
+                  1.8698151866824748e-07,
+                  4.456360701736359e-07,
+                  6.541268132944448e-07
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 1.8202801970600734e-19
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.642293930905134,
+                  0.6574065022212555,
+                  0.5485661190841506
+                ],
+                "relative_l2_pct": [
+                  6.626644994679602,
+                  7.005660212141368,
+                  6.003499739619949
+                ],
+                "peak_bias_pct": [
+                  2.2501385934427605,
+                  -2.8683738333298185,
+                  -0.47434903686903135
+                ],
+                "max_abs_error": [
+                  0.0002362525429586257,
+                  0.0005754843842671808,
+                  0.0006554996004856672
+                ],
+                "rms_abs_error": [
+                  3.878117108426302e-05,
+                  0.00010604597908888011,
+                  0.0001339459127043069
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.9069254491183136e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.6422939309051331,
+                  0.7590982330294634,
+                  0.8766617476313479
+                ],
+                "relative_l2_pct": [
+                  6.626644994679661,
+                  8.251919537420376,
+                  10.15553798779019
+                ],
+                "peak_bias_pct": [
+                  2.250138593442756,
+                  -6.273365411350802,
+                  3.6021671454438478
+                ],
+                "max_abs_error": [
+                  0.0003720512487537413,
+                  0.0006850851549673534,
+                  0.0007114061244560682
+                ],
+                "rms_abs_error": [
+                  6.107271036891807e-05,
+                  0.00012076875361613887,
+                  0.00011509811684590356
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.6422939308577365,
+                  0.6574065021740106,
+                  0.548566119033411
+                ],
+                "relative_l2_pct": [
+                  6.626644994193213,
+                  7.005660211640927,
+                  6.003499739067062
+                ],
+                "peak_bias_pct": [
+                  2.250138593543449,
+                  -2.868373833242027,
+                  -0.4743490367809031
+                ],
+                "max_abs_error": [
+                  0.00023625254294389996,
+                  0.0005754843842325913,
+                  0.0006554996004242597
+                ],
+                "rms_abs_error": [
+                  3.8781171081379817e-05,
+                  0.00010604597908119916,
+                  0.00013394591269183016
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.639413206644323,
+                  0.6548577462020231,
+                  0.5459799022667445
+                ],
+                "relative_l2_pct": [
+                  6.597696427880068,
+                  6.978889094043793,
+                  5.975247293147315
+                ],
+                "peak_bias_pct": [
+                  2.2424382634297855,
+                  -2.8684406916246257,
+                  -0.4668307314877135
+                ],
+                "max_abs_error": [
+                  0.0002353039351932996,
+                  0.0005734032973359875,
+                  0.0006522639761508959
+                ],
+                "rms_abs_error": [
+                  3.860899477326338e-05,
+                  0.00010563319138033295,
+                  0.00013330591940244346
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.5196249161150278e-17
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.028906010378681596,
+                  0.03087231272625556,
+                  0.027201041641593003
+                ],
+                "relative_l2_pct": [
+                  0.2982277424326756,
+                  0.3289911678578486,
+                  0.2976878096032109
+                ],
+                "peak_bias_pct": [
+                  0.046087866663619595,
+                  -0.11276923209671731,
+                  -0.002022174801496151
+                ],
+                "max_abs_error": [
+                  8.817952561087023e-06,
+                  2.6299012746840503e-05,
+                  3.172100546774536e-05
+                ],
+                "rms_abs_error": [
+                  1.7453207634694357e-06,
+                  4.980000378353441e-06,
+                  6.641803462587016e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.888099262180101e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.028906010378681547,
+                  0.03448430900304142,
+                  0.03581945243349579
+                ],
+                "relative_l2_pct": [
+                  0.29822774243267813,
+                  0.37486814066341523,
+                  0.414944316748243
+                ],
+                "peak_bias_pct": [
+                  0.04608786666360863,
+                  -0.22142185646308143,
+                  0.2671698879248962
+                ],
+                "max_abs_error": [
+                  1.3886539466278786e-05,
+                  2.9621817399135865e-05,
+                  2.5380508330282575e-05
+                ],
+                "rms_abs_error": [
+                  2.7485366353849337e-06,
+                  5.486282059952395e-06,
+                  4.702784777237109e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  0.02890601032622131,
+                  0.030872312675424656,
+                  0.027201041590394492
+                ],
+                "relative_l2_pct": [
+                  0.2982277418915526,
+                  0.3289911673163105,
+                  0.29768780904301456
+                ],
+                "peak_bias_pct": [
+                  0.046087866762137726,
+                  -0.11276923200643509,
+                  -0.002022174712949697
+                ],
+                "max_abs_error": [
+                  8.817952544856083e-06,
+                  2.629901270812668e-05,
+                  3.17210054066536e-05
+                ],
+                "rms_abs_error": [
+                  1.7453207603009652e-06,
+                  4.980000370151115e-06,
+                  6.641803450081306e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  0.026034356605924194,
+                  0.028215879065844426,
+                  0.02462684971810618
+                ],
+                "relative_l2_pct": [
+                  0.26863189530054243,
+                  0.3006996432943346,
+                  0.2695181938125026
+                ],
+                "peak_bias_pct": [
+                  0.038553520953404474,
+                  -0.11283798714783398,
+                  0.005531810804512141
+                ],
+                "max_abs_error": [
+                  7.878849964572908e-06,
+                  2.4144453085341196e-05,
+                  2.8518358266037443e-05
+                ],
+                "rms_abs_error": [
+                  1.5720043434800806e-06,
+                  4.551421084369646e-06,
+                  6.012867561659899e-06
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 5.399499013229753e-18
+            }
+          }
+        },
+        "3": {
+          "file": "d2_n3_earthquake.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 5.408505813061018e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  1.2081932644753304,
+                  1.1396848409972118,
+                  1.1407777628542328
+                ],
+                "relative_l2_pct": [
+                  12.465115211911812,
+                  12.145065067018628,
+                  12.484655475435531
+                ],
+                "peak_bias_pct": [
+                  6.183601308399942,
+                  5.235770354921084,
+                  5.025764310608587
+                ],
+                "max_abs_error": [
+                  0.00034046029575190593,
+                  0.0008636294041157472,
+                  0.0012439177817721325
+                ],
+                "rms_abs_error": [
+                  7.294970018853664e-05,
+                  0.0001838421044024898,
+                  0.00027854895394067856
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  1.209004141085229,
+                  1.1401469100728854,
+                  1.1416515442714714
+                ],
+                "relative_l2_pct": [
+                  12.474941430741005,
+                  12.150667656393077,
+                  12.494324921675904
+                ],
+                "peak_bias_pct": [
+                  6.175604754126479,
+                  5.235697918232076,
+                  5.033698102069339
+                ],
+                "max_abs_error": [
+                  0.0003407157085196298,
+                  0.0008640075616436664,
+                  0.0012442754912145343
+                ],
+                "rms_abs_error": [
+                  7.300198694516253e-05,
+                  0.00018391376974911665,
+                  0.0002787445254202311
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.336487704587519e-17
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  1.3255923927327304,
+                  0.9842180053037713,
+                  0.8879022057873179
+                ],
+                "relative_l2_pct": [
+                  13.315567440352654,
+                  10.147631830429253,
+                  9.407160508816892
+                ],
+                "peak_bias_pct": [
+                  4.0749388213433315,
+                  -0.8929407236567269,
+                  1.3779793186243026
+                ],
+                "max_abs_error": [
+                  0.0005012839102517433,
+                  0.0009724416763457549,
+                  0.0011639801969338809
+                ],
+                "rms_abs_error": [
+                  8.372123473616e-05,
+                  0.00016516046364088713,
+                  0.00022591461388390537
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.3139828356758607e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  1.325592392732729,
+                  1.0720881402754283,
+                  1.5251812128850437
+                ],
+                "relative_l2_pct": [
+                  13.31556744035273,
+                  11.290832906351536,
+                  17.119380385294175
+                ],
+                "peak_bias_pct": [
+                  4.0749388213433315,
+                  -4.477880124248729,
+                  2.3123533057374557
+                ],
+                "max_abs_error": [
+                  0.0007894234807114067,
+                  0.0010718257169922913,
+                  0.0011915041147089783
+                ],
+                "rms_abs_error": [
+                  0.0001318444641514329,
+                  0.00017780127297607637,
+                  0.0002099485188447449
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  2.0461112195954443,
+                  1.701759830937974,
+                  1.7627099103494308
+                ],
+                "relative_l2_pct": [
+                  21.110043267554882,
+                  18.134823884378473,
+                  19.29107197775953
+                ],
+                "peak_bias_pct": [
+                  10.510518100016355,
+                  4.2960773055681205,
+                  6.472997622035877
+                ],
+                "max_abs_error": [
+                  0.0006931757268193624,
+                  0.0014200326331939939,
+                  0.002062439979465018
+                ],
+                "rms_abs_error": [
+                  0.00012354248646362693,
+                  0.00027451019549713205,
+                  0.0004304089872861948
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  2.0453752826714866,
+                  1.7006571665530017,
+                  1.7623853999869608
+                ],
+                "relative_l2_pct": [
+                  21.104920974305724,
+                  18.124085453976868,
+                  19.28768540203436
+                ],
+                "peak_bias_pct": [
+                  10.502195691048437,
+                  4.296005515695808,
+                  6.4810407395021405
+                ],
+                "max_abs_error": [
+                  0.0006927517880756174,
+                  0.0014184307970611485,
+                  0.002061697927382926
+                ],
+                "rms_abs_error": [
+                  0.00012350367927566587,
+                  0.00027432804298142545,
+                  0.0004303022970466852
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 4.0033996714917136e-17
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.16006630675500494,
+                  0.15909537306366456,
+                  0.15125217197695104
+                ],
+                "relative_l2_pct": [
+                  1.6078650678815243,
+                  1.6403289343163097,
+                  1.6024889338265431
+                ],
+                "peak_bias_pct": [
+                  0.8259691395575309,
+                  0.46181720329563936,
+                  0.5709318763122981
+                ],
+                "max_abs_error": [
+                  4.8135560618570595e-05,
+                  0.00013956673923559097,
+                  0.00018150707884295346
+                ],
+                "rms_abs_error": [
+                  1.0109403851933463e-05,
+                  2.669760707151946e-05,
+                  3.848405354616251e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.4844912951690074e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.16006630675500472,
+                  0.16754970418531095,
+                  0.1864717375833331
+                ],
+                "relative_l2_pct": [
+                  1.607865067881533,
+                  1.764571066870455,
+                  2.093050045349886
+                ],
+                "peak_bias_pct": [
+                  0.8259691395575312,
+                  0.3193682457436223,
+                  0.8157581085962236
+                ],
+                "max_abs_error": [
+                  7.580403247019023e-05,
+                  0.00014905431114730933,
+                  0.00011423082576897566
+                ],
+                "rms_abs_error": [
+                  1.592032102666685e-05,
+                  2.7787408116705663e-05,
+                  2.566873023433807e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_CR": {
+                "nrmse_range_pct": [
+                  1.367131649330643,
+                  1.2897344214620814,
+                  1.291266239299415
+                ],
+                "relative_l2_pct": [
+                  14.104906905070273,
+                  13.744070206395708,
+                  14.13159920331863
+                ],
+                "peak_bias_pct": [
+                  7.060645086478133,
+                  5.721767246440802,
+                  5.625389877398476
+                ],
+                "max_abs_error": [
+                  0.0003840040289360045,
+                  0.000972428565247891,
+                  0.0014210589672914923
+                ],
+                "rms_abs_error": [
+                  8.254626711583227e-05,
+                  0.00020804654201985378,
+                  0.00031529441748219414
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "to_original_passive_RK4": {
+                "nrmse_range_pct": [
+                  1.367831552773718,
+                  1.2900615736965888,
+                  1.292063215215547
+                ],
+                "relative_l2_pct": [
+                  14.11378003441326,
+                  13.748324272762925,
+                  14.140442161404007
+                ],
+                "peak_bias_pct": [
+                  7.0525824831341435,
+                  5.721694475226703,
+                  5.633368965403677
+                ],
+                "max_abs_error": [
+                  0.00038419734477887144,
+                  0.0009726668182531975,
+                  0.0014213597501559062
+                ],
+                "rms_abs_error": [
+                  8.259229043594245e-05,
+                  0.00020809606650764892,
+                  0.00031546889201470283
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "response_decomposition_residual": 2.8619475754917156e-17
+            }
+          }
+        }
+      },
+      "fast_chirp": {
+        "0": {
+          "file": "d2_n0_fast_chirp.npz",
+          "n": 0,
+          "tau_s": 0.0,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 5.374390567558625e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  1.2749920971076913,
+                  0.7850677185834403,
+                  0.6656843904026216
+                ],
+                "relative_l2_pct": [
+                  13.647403127209145,
+                  8.538699632242908,
+                  7.265298032114793
+                ],
+                "peak_bias_pct": [
+                  0.0029635991439856016,
+                  -3.17457815415316,
+                  0.1777674608054551
+                ],
+                "max_abs_error": [
+                  0.0010740994310615309,
+                  0.0016589582767751925,
+                  0.002612591910155157
+                ],
+                "rms_abs_error": [
+                  0.0002249168450220671,
+                  0.00036386023832673316,
+                  0.0004586128749237432
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 2.4529789950981014e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  1.2749920971076911,
+                  0.8082496111854177,
+                  1.7794768714390221
+                ],
+                "relative_l2_pct": [
+                  13.647403127209092,
+                  8.829913576716018,
+                  19.06036263604937
+                ],
+                "peak_bias_pct": [
+                  0.002963599143978828,
+                  -5.111825285427787,
+                  7.034041547197337
+                ],
+                "max_abs_error": [
+                  0.001691495167026033,
+                  0.0018046162005073037,
+                  0.0026357364468914297
+                ],
+                "rms_abs_error": [
+                  0.00035419975594026305,
+                  0.00036541126178881106,
+                  0.0006318999245442247
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0389897258140473,
+                  0.03381900975476109,
+                  0.031423306227721715
+                ],
+                "relative_l2_pct": [
+                  0.41734259154291214,
+                  0.3678286080554287,
+                  0.34295484194954023
+                ],
+                "peak_bias_pct": [
+                  0.03098791599969417,
+                  -0.10658686197205844,
+                  0.02579882111948821
+                ],
+                "max_abs_error": [
+                  3.383756028803916e-05,
+                  8.184701093796951e-05,
+                  0.0001311385433472815
+                ],
+                "rms_abs_error": [
+                  6.878039588060489e-06,
+                  1.567430765277813e-05,
+                  2.164859656689325e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 5.823657931923147e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.03898972581404739,
+                  0.03581721262631164,
+                  0.05254352395473434
+                ],
+                "relative_l2_pct": [
+                  0.4173425915429116,
+                  0.3912935900895111,
+                  0.5628050787438976
+                ],
+                "peak_bias_pct": [
+                  0.030987915999694367,
+                  -0.1878246223140748,
+                  0.2919709519831041
+                ],
+                "max_abs_error": [
+                  5.3287496516597754e-05,
+                  8.443401639094197e-05,
+                  9.155407863921383e-05
+                ],
+                "rms_abs_error": [
+                  1.0831558406394497e-05,
+                  1.6193033288742526e-05,
+                  1.8658432348960175e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        "3": {
+          "file": "d2_n3_fast_chirp.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "models": {
+            "Full15": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.6764607194661414e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "relative_l2_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "peak_bias_pct": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "max_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "rms_abs_error": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "Guyan": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  2.5435261268823535,
+                  1.2277957536919384,
+                  1.0542340193416533
+                ],
+                "relative_l2_pct": [
+                  27.620644108663793,
+                  13.667346321577142,
+                  11.792886666807814
+                ],
+                "peak_bias_pct": [
+                  5.078433534304578,
+                  1.9471203474981105,
+                  5.532085392647095
+                ],
+                "max_abs_error": [
+                  0.0031071602396475734,
+                  0.0025206867651389082,
+                  0.004220727746725234
+                ],
+                "rms_abs_error": [
+                  0.0005047414206619366,
+                  0.0006408552783005893,
+                  0.0008189576377594462
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 4.288033739308663e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  2.5435261268823557,
+                  1.1419848457887782,
+                  3.23191884830991
+                ],
+                "relative_l2_pct": [
+                  27.62064410866384,
+                  12.793451801041222,
+                  34.905729967509835
+                ],
+                "peak_bias_pct": [
+                  5.078433534304566,
+                  0.08750524637339398,
+                  13.374263355916069
+                ],
+                "max_abs_error": [
+                  0.004893165731728461,
+                  0.0026319969430697934,
+                  0.006790707976090032
+                ],
+                "rms_abs_error": [
+                  0.0007948683789951765,
+                  0.0005819033125253515,
+                  0.001300737169494712
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "to_matched_full": {
+                "nrmse_range_pct": [
+                  0.2110245049079693,
+                  0.17096075791471813,
+                  0.16549174715099574
+                ],
+                "relative_l2_pct": [
+                  2.291556075114612,
+                  1.9030688767197235,
+                  1.8512259921781464
+                ],
+                "peak_bias_pct": [
+                  1.4773621089711748,
+                  1.3409339881354934,
+                  1.4667627945679085
+                ],
+                "max_abs_error": [
+                  0.0001932276677877702,
+                  0.0004542645875959747,
+                  0.0007473005603730563
+                ],
+                "rms_abs_error": [
+                  4.1876042583562893e-05,
+                  8.923398192449357e-05,
+                  0.00012855848685294663
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              },
+              "convolution_residual": 3.5599570197424e-13,
+              "story_drift_to_matched_full": {
+                "nrmse_range_pct": [
+                  0.21102450490796942,
+                  0.17236407111105218,
+                  0.27471752302840924
+                ],
+                "relative_l2_pct": [
+                  2.291556075114615,
+                  1.930963833821617,
+                  2.967034794573315
+                ],
+                "peak_bias_pct": [
+                  1.477362108971172,
+                  1.2624187191192318,
+                  1.8314118356664413
+                ],
+                "max_abs_error": [
+                  0.0003042955398232603,
+                  0.000447490199283581,
+                  0.000517956118043934
+                ],
+                "rms_abs_error": [
+                  6.59465237536424e-05,
+                  8.782885719520997e-05,
+                  0.00011056443867748576
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        }
+      },
+      "tones": [
+        {
+          "file": "d2_n3_tone1.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "frequency_hz": 2.7044390758398036,
+          "loading_duration_s": 14.791015625,
+          "unloading_duration_s": 10.9140625,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.014100912002712462,
+                  0.014086223096509976,
+                  0.014075591216511363
+                ],
+                "phase_error_deg": [
+                  0.0015442442988675249,
+                  0.0016006461284610184,
+                  0.001639406992819443
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.014362247707398978
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.17842925634239393,
+                  0.17832047632755366,
+                  0.1782323303270772
+                ],
+                "phase_error_deg": [
+                  0.013497520962005294,
+                  0.014225553702209475,
+                  0.014702109991216588
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.18005399453687915
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7067727150285523,
+                "decay": 0.705124824853248,
+                "rank": 8,
+                "embedding_residual": 5.292899409593153e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.7067727150375003,
+                "expected_decay": 0.7051248248551778,
+                "frequency_error_pct": 3.305800078123866e-10,
+                "decay_error_pct": 2.7368107780034734e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.013453230974373336,
+                0.03515127506839421,
+                0.052101817101087786
+              ],
+              "expected_phase_deg": [
+                -89.54361071344098,
+                -88.51077057780726,
+                -90.12107455234869
+              ],
+              "measured_amplitude": [
+                0.013451333946112117,
+                0.03514632358136681,
+                0.05209448346229626
+              ],
+              "measured_phase_deg": [
+                -89.54515495773985,
+                -88.51237122393572,
+                -90.12271395934151
+              ],
+              "convolution_residual": 4.660909132318562e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.011265811883298671,
+                  0.011073137700312596,
+                  0.010996235309845837
+                ],
+                "phase_error_deg": [
+                  0.015410719971056287,
+                  0.015430419482990395,
+                  0.015520439799200005
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.02919730278556926
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.20678043750572694,
+                  0.2054523160040178,
+                  0.20491665657985658
+                ],
+                "phase_error_deg": [
+                  0.12018999770994224,
+                  0.12082675492038449,
+                  0.12175727545015934
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.2948000631277341
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.719991555317617,
+                "decay": 0.6472392726520336,
+                "rank": 8,
+                "embedding_residual": 1.4995638689355742e-11,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.719991555315785,
+                "expected_decay": 0.6472392726488112,
+                "frequency_error_pct": 6.7346128673762e-11,
+                "decay_error_pct": 4.978684131629052e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.014549979485474632,
+                0.0367909315745413,
+                0.056420271340968615
+              ],
+              "expected_phase_deg": [
+                -82.6061025975935,
+                -80.36197348794272,
+                -83.20627177047967
+              ],
+              "measured_amplitude": [
+                0.01454834031215674,
+                0.036786857664026826,
+                0.05641406723516951
+              ],
+              "measured_phase_deg": [
+                -82.62151331756456,
+                -80.37740390742572,
+                -83.22179221027888
+              ],
+              "convolution_residual": 3.704765111050122e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  3.719904654364542,
+                  3.77712609779997,
+                  3.731950795778651
+                ],
+                "relative_l2_pct": [
+                  14.587304114128502,
+                  14.811292699533926,
+                  14.633792608525136
+                ],
+                "peak_bias_pct": [
+                  8.15471058021122,
+                  4.666561327741845,
+                  8.290168075875108
+                ],
+                "max_abs_error": [
+                  0.002092642511138551,
+                  0.005364612633084678,
+                  0.007844885881221737
+                ],
+                "rms_abs_error": [
+                  0.0010008540366815899,
+                  0.0026553162511548855,
+                  0.0038886783513105063
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.017251449577204703,
+                  0.01722694793878654,
+                  0.017210599666350745
+                ],
+                "phase_error_deg": [
+                  0.00245652653885487,
+                  0.0025220193318276247,
+                  0.0025703129108827364
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.01778357840484859
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.20491060013019258,
+                  0.20473549343834607,
+                  0.20460994579434288
+                ],
+                "phase_error_deg": [
+                  0.019917466332843508,
+                  0.020720186365807924,
+                  0.02126897013858092
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.20792502015988398
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 2.7074960908071803,
+                "decay": 0.6877993729389363,
+                "rank": 10,
+                "embedding_residual": 3.742705608908198e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 2.7074960908253,
+                "expected_decay": 0.6877993729090762,
+                "frequency_error_pct": 6.692424392440444e-10,
+                "decay_error_pct": 4.34139391103372e-09,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.01379398234524184,
+                0.035993995307618085,
+                0.05342065709934252
+              ],
+              "expected_phase_deg": [
+                -89.30245616062025,
+                -87.95316384162719,
+                -89.85595004658097
+              ],
+              "measured_amplitude": [
+                0.013791602683332863,
+                0.03598779464078535,
+                0.05341146308391002
+              ],
+              "measured_phase_deg": [
+                -89.3049126871591,
+                -87.95568586095901,
+                -89.85852035949186
+              ],
+              "convolution_residual": 3.5389786313133966e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  0.6374383957728019,
+                  0.6423588569242953,
+                  0.6388118046331086
+                ],
+                "relative_l2_pct": [
+                  2.4996629207284067,
+                  2.51888997128939,
+                  2.5049203423187496
+                ],
+                "peak_bias_pct": [
+                  2.532365633897106,
+                  2.3958994327878242,
+                  2.52929800300184
+                ],
+                "max_abs_error": [
+                  0.00034540516722346946,
+                  0.0009106502676189676,
+                  0.0013417505893374496
+                ],
+                "rms_abs_error": [
+                  0.0001715051461860734,
+                  0.0004515776989436073,
+                  0.0006656394393110066
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        },
+        {
+          "file": "d2_n3_tone2.npz",
+          "n": 3,
+          "tau_s": 0.0029296875,
+          "frequency_hz": 9.32959965253542,
+          "loading_duration_s": 14.552734375,
+          "unloading_duration_s": 10.9140625,
+          "duration_attempts": 1,
+          "models": {
+            "Full15": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  5.553577597794401e-07,
+                  2.583632241481837e-06,
+                  4.445373114059237e-06
+                ],
+                "phase_error_deg": [
+                  5.006066782920783e-06,
+                  1.3532277064915265e-05,
+                  2.1554002948996615e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 2.531497823163407e-05
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  3.758173661161379e-06,
+                  1.108548999262382e-05,
+                  1.4435982276239656e-05
+                ],
+                "phase_error_deg": [
+                  2.1205050321017137e-06,
+                  5.040512529436864e-06,
+                  1.0707317170716387e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 1.5552757049124984e-05
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.332515867634932,
+                "decay": 1.5136940349827168,
+                "rank": 12,
+                "embedding_residual": 1.0950019389136928e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.332515867652834,
+                "expected_decay": 1.5136940349103452,
+                "frequency_error_pct": 1.9182433419473455e-10,
+                "decay_error_pct": 4.781131046627252e-09,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0019966664647399993,
+                0.0019076444632510274,
+                0.0017839348870666222
+              ],
+              "expected_phase_deg": [
+                -92.96594979190614,
+                -94.82665763656249,
+                97.97043611890619
+              ],
+              "measured_amplitude": [
+                0.0019966664758286415,
+                0.001907644512537545,
+                0.001783934966369184
+              ],
+              "measured_phase_deg": [
+                -92.96595479797293,
+                -94.82667116883957,
+                97.97045767290913
+              ],
+              "convolution_residual": 6.659838914165052e-13
+            },
+            "Guyan": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  0.005791761032858389,
+                  0.012039711759670446,
+                  0.0024262073067937706
+                ],
+                "phase_error_deg": [
+                  0.00883473202610378,
+                  0.013957772171118134,
+                  0.004796936765412743
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.013722357730192886
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  0.020302529070492792,
+                  0.029268320458397667,
+                  0.011761605611737558
+                ],
+                "phase_error_deg": [
+                  0.014367843302442772,
+                  0.026157869084382748,
+                  0.007071897154486463
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 0.026974975115591125
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 10.034053928495418,
+                "decay": 0.5497590909404051,
+                "rank": 8,
+                "embedding_residual": 1.2581418593945113e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 10.03405392850522,
+                "expected_decay": 0.5497590908710649,
+                "frequency_error_pct": 9.768852393676752e-11,
+                "decay_error_pct": 1.2612844102477538e-08,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0008210235452841308,
+                0.00029948043816759083,
+                0.0009681044042183162
+              ],
+              "expected_phase_deg": [
+                -16.36006027949398,
+                -12.939524719051933,
+                167.1452756589853
+              ],
+              "measured_amplitude": [
+                0.0008209759935623645,
+                0.00029944438158605887,
+                0.0009680809159985236
+              ],
+              "measured_phase_deg": [
+                -16.35122554746788,
+                -12.925566946880815,
+                167.15007259575071
+              ],
+              "convolution_residual": 3.16034874381837e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  26.186423826637583,
+                  22.18747290497655,
+                  19.892809880051306
+                ],
+                "relative_l2_pct": [
+                  100.92425700020121,
+                  99.35434262613559,
+                  94.82291568619578
+                ],
+                "peak_bias_pct": [
+                  -26.174982725678813,
+                  -46.33904473798544,
+                  -39.34028038394208
+                ],
+                "max_abs_error": [
+                  0.0021745436511117437,
+                  0.001992919838143109,
+                  0.0018213625365511663
+                ],
+                "rms_abs_error": [
+                  0.0010531369401271928,
+                  0.0009962855343757684,
+                  0.0008990284575914049
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            },
+            "CB3": {
+              "steady_prediction": {
+                "amplitude_error_pct": [
+                  2.830249146157371e-07,
+                  2.0714691073564495e-06,
+                  4.805133890783964e-06
+                ],
+                "phase_error_deg": [
+                  5.861956505932988e-06,
+                  1.5560358810559098e-05,
+                  2.414621567842333e-05
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 2.8689925843300882e-05
+              },
+              "settling": {
+                "amplitude_error_pct": [
+                  3.8269877711272215e-06,
+                  1.1959376911008235e-05,
+                  1.738885120339262e-05
+                ],
+                "phase_error_deg": [
+                  2.4661760255430573e-06,
+                  4.901874349026068e-06,
+                  9.247713996354195e-06
+                ],
+                "valid": [
+                  true,
+                  true,
+                  true
+                ],
+                "complex_error_norm_pct": 1.588614990095364e-05
+              },
+              "steady_passed": true,
+              "free_identification": {
+                "frequency_hz": 9.34215178338353,
+                "decay": 1.3973815650408115,
+                "rank": 12,
+                "embedding_residual": 7.361066396817207e-10,
+                "sample_step_s": 0.0048828125,
+                "start_s": 0.2,
+                "duration_s": 5.859375,
+                "expected_frequency_hz": 9.342151783364868,
+                "expected_decay": 1.3973815650433454,
+                "frequency_error_pct": 1.9977353105105067e-10,
+                "decay_error_pct": 1.8133272661202682e-10,
+                "passed": true
+              },
+              "expected_amplitude": [
+                0.0021608438080582344,
+                0.002058516439019448,
+                0.0019466463220355348
+              ],
+              "expected_phase_deg": [
+                -90.08581666614704,
+                -91.68717891610815,
+                99.13776748249703
+              ],
+              "measured_amplitude": [
+                0.002160843814173961,
+                0.00205851648166098,
+                0.001946646415574497
+              ],
+              "measured_phase_deg": [
+                -90.08582252810355,
+                -91.68719447646696,
+                99.13779162871269
+              ],
+              "convolution_residual": 2.919823181186516e-13,
+              "full_record_error": {
+                "nrmse_range_pct": [
+                  2.4928006214115994,
+                  2.1330598422520124,
+                  1.905869195857343
+                ],
+                "relative_l2_pct": [
+                  9.607423000222239,
+                  9.551730353285189,
+                  9.084693170919326
+                ],
+                "peak_bias_pct": [
+                  8.382752217149715,
+                  6.612832578492553,
+                  5.195593263738671
+                ],
+                "max_abs_error": [
+                  0.00019459512975122982,
+                  0.0001860564061190843,
+                  0.0001674572739229932
+                ],
+                "rms_abs_error": [
+                  0.00010025272775544427,
+                  9.578092439346169e-05,
+                  8.613316338185298e-05
+                ],
+                "undefined_relative_metrics": "null when the reference denominator is zero"
+              }
+            }
+          }
+        }
+      ],
+      "controlled": {
+        "0": {
+          "n": 0,
+          "stable": true,
+          "file": "d2_n0_controlled_eq.npz",
+          "models": {
+            "Full15": {
+              "nrmse_range_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "relative_l2_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "peak_bias_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rms_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "Guyan": {
+              "nrmse_range_pct": [
+                0.6405001402363908,
+                0.6556643485665339,
+                0.5465363189851513
+              ],
+              "relative_l2_pct": [
+                6.611185188383013,
+                6.990577566549402,
+                5.984405820389867
+              ],
+              "peak_bias_pct": [
+                2.2500983794312206,
+                -2.8699629014336265,
+                -0.47693964324380306
+              ],
+              "max_abs_error": [
+                0.00023541582381236576,
+                0.0005734947451746398,
+                0.0006525533786485194
+              ],
+              "rms_abs_error": [
+                3.864271071782771e-05,
+                0.0001056837238650558,
+                0.0001333490050264217
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "CB3": {
+              "nrmse_range_pct": [
+                0.028803359482398583,
+                0.030778536634706255,
+                0.02709976277811291
+              ],
+              "relative_l2_pct": [
+                0.297305701627832,
+                0.32815532551098137,
+                0.29673412812100725
+              ],
+              "peak_bias_pct": [
+                0.04601884437214978,
+                -0.11286242864682941,
+                -0.002132738798289347
+              ],
+              "max_abs_error": [
+                8.780145517843334e-06,
+                2.619773258062761e-05,
+                3.157395130381742e-05
+              ],
+              "rms_abs_error": [
+                1.737766814179207e-06,
+                4.961060295232327e-06,
+                6.61205171071457e-06
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            }
+          }
+        },
+        "3": {
+          "n": 3,
+          "stable": true,
+          "file": "d2_n3_controlled_eq.npz",
+          "models": {
+            "Full15": {
+              "nrmse_range_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "relative_l2_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "peak_bias_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "max_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rms_abs_error": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "Guyan": {
+              "nrmse_range_pct": [
+                1.3233367792667985,
+                0.9801560768097629,
+                0.8834652491669636
+              ],
+              "relative_l2_pct": [
+                13.294688942839159,
+                10.113652413026262,
+                9.367733158074554
+              ],
+              "peak_bias_pct": [
+                4.076353814377063,
+                -0.893512989385899,
+                1.3757632485730624
+              ],
+              "max_abs_error": [
+                0.0004997633103642304,
+                0.0009684797729523732,
+                0.0011579875671008139
+              ],
+              "rms_abs_error": [
+                8.346443630511733e-05,
+                0.00016435561845720443,
+                0.00022462015425564526
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            },
+            "CB3": {
+              "nrmse_range_pct": [
+                0.1594179571310906,
+                0.15836927723905847,
+                0.15051595905243295
+              ],
+              "relative_l2_pct": [
+                1.6015667252405605,
+                1.634119157952126,
+                1.595980534338366
+              ],
+              "peak_bias_pct": [
+                0.8261297308100277,
+                0.46188660723349517,
+                0.5712194590035307
+              ],
+              "max_abs_error": [
+                4.79108357692333e-05,
+                0.000138930065897264,
+                0.00018052949746029867
+              ],
+              "rms_abs_error": [
+                1.0054681572616719e-05,
+                2.6555852808631655e-05,
+                3.8268531752859505e-05
+              ],
+              "undefined_relative_metrics": "null when the reference denominator is zero"
+            }
+          }
+        }
+      },
+      "slow_chirp": {
+        "n": 3,
+        "tau_s": 0.0029296875,
+        "band_hz": [
+          7.9301597046551064,
+          10.729039600415732
+        ],
+        "selection": "85%-115% of reference second peak at normal nonzero delay",
+        "criterion": "All methods: complex amplitude versus FRF and change on halving speed <=1%",
+        "converged": true,
+        "runs": [
+          {
+            "file": "d2_n3_slow_chirp_speed1.npz",
+            "duration_s": 964.490234375,
+            "prelude_s": 11.345703125,
+            "sweep_rate_hz_s": 0.0029019266302621814,
+            "speed_factor": 1,
+            "models": {
+              "Full15": {
+                "quasisteady_complex_error_pct": 0.5050594625525134,
+                "change_from_previous_pct": null
+              },
+              "Guyan": {
+                "quasisteady_complex_error_pct": 3.7852199233625043,
+                "change_from_previous_pct": null
+              },
+              "CB3": {
+                "quasisteady_complex_error_pct": 0.5907749053542407,
+                "change_from_previous_pct": null
+              }
+            }
+          },
+          {
+            "file": "d2_n3_slow_chirp_speed2.npz",
+            "duration_s": 1928.98046875,
+            "prelude_s": 11.345703125,
+            "sweep_rate_hz_s": 0.0014509633151310907,
+            "speed_factor": 2,
+            "models": {
+              "Full15": {
+                "quasisteady_complex_error_pct": 0.2525438067117749,
+                "change_from_previous_pct": 0.2525430499403781
+              },
+              "Guyan": {
+                "quasisteady_complex_error_pct": 1.8982896724986582,
+                "change_from_previous_pct": 1.89806856322421
+              },
+              "CB3": {
+                "quasisteady_complex_error_pct": 0.29540876843285013,
+                "change_from_previous_pct": 0.29540991019720886
+              }
+            }
+          },
+          {
+            "file": "d2_n3_slow_chirp_speed4.npz",
+            "duration_s": 3857.9609375,
+            "prelude_s": 11.345703125,
+            "sweep_rate_hz_s": 0.0007254816575655454,
+            "speed_factor": 4,
+            "models": {
+              "Full15": {
+                "quasisteady_complex_error_pct": 0.12627346636000406,
+                "change_from_previous_pct": 0.1262738895880636
+              },
+              "Guyan": {
+                "quasisteady_complex_error_pct": 0.9498587872052868,
+                "change_from_previous_pct": 0.9498454376502777
+              },
+              "CB3": {
+                "quasisteady_complex_error_pct": 0.14770589423833266,
+                "change_from_previous_pct": 0.1477084868223694
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "PASS",
+  "verification": "case_validation.json and matlab_case_validation.json; source model checks separate"
+}

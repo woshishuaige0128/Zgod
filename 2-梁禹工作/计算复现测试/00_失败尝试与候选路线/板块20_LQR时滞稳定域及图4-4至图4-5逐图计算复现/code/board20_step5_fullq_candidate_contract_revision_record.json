@@ -1,0 +1,26 @@
+{
+  "schema_version": "board20_step5_fullq_candidate_contract_revision_record_v1",
+  "status": "PRESEAL_DRAFT_SUPERSEDED",
+  "revision_timing": "Before input seal, preflight completion, selftest, pilot, or any scientific eigensolve.",
+  "superseded_draft": {
+    "relpath": "code/board20_step5_fullq_candidate_contract_v1_preseal_draft.json",
+    "original_pre_annotation_sha256": "274630E52752031C2D333A9B495224408AFCF35314CCCB021DB617655E982158",
+    "preserved_annotated_sha256": "6530332BD67C5A4083BF2188E1E4BE7AE91D11EA6FE6FDD18EF54A00CCFBDA7B",
+    "problematic_rule": "Every retained full-q root, including numerical splits of cleared-denominator multiple zero roots, was required to satisfy the original Laurent equation."
+  },
+  "formal_v2": {
+    "contract_relpath": "code/board20_step5_fullq_candidate_contract.json",
+    "contract_sha256_before_input_seal": "3D777C7DFCC1C480177EA0D0F8AE29892A15F6E2A5C1A2EBC73D7851422BC318",
+    "script_relpath": "code/compute_board20_step5_fullq_candidate.py",
+    "script_sha256_before_input_seal": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6"
+  },
+  "revision_reason": [
+    "Clearing Laurent negative powers introduces exact zero multiplicity that is not part of the physical Laurent root set.",
+    "An ordinary full-q companion can split those multiple zeros into nonzero numerical roots; they must be kept for audit and in the selected full-q rho but must not be mislabelled as physical Laurent roots.",
+    "V2 independently solves the compact spectrum at the same point and uses a preregistered optimal assignment to identify matched physical full-q roots and unmatched full-q origin-splitting diagnostics.",
+    "The strict 1e-8 polynomial and Laurent residual gates apply to every matched physical full-q root; unmatched roots remain saved and instead face fixed count, magnitude, nondominance, and stable-classification safety gates.",
+    "Full-q/compact rho and numerical root-distance differences are fully recorded as DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING and do not gate the candidate."
+  ],
+  "gate_relaxation_after_results": false,
+  "scientific_results_existed_when_revised": false
+}

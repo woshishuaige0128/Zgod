@@ -1,0 +1,22 @@
+{
+  "main_hunks": 104,
+  "main_hunks_covered": 104,
+  "forward_rebuild": "PASS",
+  "reverse_rebuild": "PASS",
+  "roundtrip_scope": "完整文本逐行含空白，行尾编码差异不计入语义diff；两版原始字节另以SHA256冻结",
+  "table345_changed_cells": 30,
+  "table345_cell_records": 30,
+  "spacing_items": 42,
+  "primary_items": 112,
+  "decision_entries": 198,
+  "file_inventory": 52,
+  "inventory_counts": {
+    "原样复制": 15,
+    "替换/重新生成": 8,
+    "仅保留在原目录": 8,
+    "新增": 21
+  },
+  "inline_images": 9,
+  "before_sha256": "c95d56ae0753f9627e6115419a5ae787c746e75750722a5bc69c2c09f0cab202",
+  "after_sha256": "b90e86429537adf8f9e98cd3e646f8f484ac003b123a05393734d7e29b623fe7"
+}

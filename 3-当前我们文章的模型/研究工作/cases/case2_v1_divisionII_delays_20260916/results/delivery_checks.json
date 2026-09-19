@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_files_unchanged": 5,
+  "previous_delivery_files_unchanged": 127,
+  "delay_pairs": 18,
+  "actual_response_comparisons": 144,
+  "max_response_relative_difference": 1.598071700719635e-10,
+  "full_time_series_arrays_checked": 288,
+  "scientific_figures": 39,
+  "report_pdf_pages": 23,
+  "manuscript_case_selection": "pending Doctor Bego",
+  "new_theory_proof": "not completed by this figure-selection task"
+}

@@ -1,0 +1,627 @@
+[
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9",
+    "bytes": 19354
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-4_CB_论文矢量边界.csv",
+    "sha256": "96b7adbbb508524c70f8655e3b9b92757dacef8ce74653ce12b47704b3985942",
+    "bytes": 2107
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-4_Guyan_论文矢量边界.csv",
+    "sha256": "1e0cdc14a84bd65db2a561741671acb16da2efe00cb8e880b4a4f03fdd07fb10",
+    "bytes": 2121
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-4_Original_论文矢量边界.csv",
+    "sha256": "0fc5115aed9c1ec3f709a89cb5f47751181b42aec2804001980693ee47e09b45",
+    "bytes": 2205
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-5_CB_论文矢量边界.csv",
+    "sha256": "2ef896d5c601b147ae22c00ae2e1fd6762a92b042bb19116271550f48c8c7da5",
+    "bytes": 1774
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-5_Guyan_论文矢量边界.csv",
+    "sha256": "bb68af002b787510a03efe946a03ecbfc6966060ca0d4fdd9b23a1ad9b0a3694",
+    "bytes": 1685
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\必要输入\\图4-5_Original_论文矢量边界.csv",
+    "sha256": "54c3a337998f4aa4c663d51f324385a3f6315053e8279ab57ed706af26ad0570",
+    "bytes": 2172
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\frame_model.m",
+    "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0",
+    "bytes": 6221
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_inputs.m",
+    "sha256": "3d28583cc0cc72316612d66e2f7054681a38658871fad5b8eba5950b154290cd",
+    "bytes": 851
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_make_simulink.m",
+    "sha256": "3a9dc80a689edf3f7f2a1911ac9db2408585251711e52631c2450315355177bc",
+    "bytes": 2118
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_metrics.m",
+    "sha256": "186c62666d15680bd03c50b798aab7dc769ca2eba17147fdb9f303fc03c0fabb",
+    "bytes": 3509
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_modes.m",
+    "sha256": "fdd70fc87845f4c364c6e6c3eef0c8ef8aa4c33c96d26effa9df10dedbccea42",
+    "bytes": 1956
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_reduce.m",
+    "sha256": "919e507c77b679b96dfbe6edc40bc43885afa9ef6bf49beb84beddcec6ed0d1d",
+    "bytes": 2651
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师汇报_图5至15与表3至5_20260911\\计算核心\\rths_simulate.m",
+    "sha256": "a5b550f3eaac376463959bca0e2cf0c8866047fd783a7d7c7ded29921674b389",
+    "bytes": 3370
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig1.png",
+    "sha256": "4313366249e2b914756439a3104f611a8335bb1dccc96573718977feb3cec818",
+    "bytes": 131033
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig10.png",
+    "sha256": "3eba853a9253dc6ad23ab90b2f3b92977d6dbbe948d51905388b1bf7a612f396",
+    "bytes": 1132780
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig11.png",
+    "sha256": "90a68c3932c1c0161c6748b65608597210a99feafac4da3d83c47e3fe769e3dc",
+    "bytes": 1160467
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig12.png",
+    "sha256": "6fc3be2dbf1708e1ac9a361040f6ce642583def05203e19c18aa7e586da8435d",
+    "bytes": 914974
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig13.png",
+    "sha256": "55f284a86437ceee34ac7c3e2e9871ade9e81065f07fe6b3207fa821da6cbfd4",
+    "bytes": 283216
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig14.png",
+    "sha256": "994d11a6a9af5fa4f1ff3cfca02e663c7f09e04ab292a06a2a01fa893a2a95e8",
+    "bytes": 284052
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig2.png",
+    "sha256": "eae72f3e908831c86209ee1b27a247924c01e3a44e6fff83694e39381d8094a1",
+    "bytes": 110460
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig3.png",
+    "sha256": "a05436946100d5610b565bd4fb16affd7e9da87769184b403355706c1cdf3035",
+    "bytes": 99298
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig4.png",
+    "sha256": "313dec01b16368eec75d9fe90c8d64c4708ec17043575d7e17ca2e50f3489508",
+    "bytes": 258692
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig5.png",
+    "sha256": "d31e771e01baaedf668444c52b7e61fd68093af208223eef0e7e946b20ca0b96",
+    "bytes": 951680
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig6.png",
+    "sha256": "3db839f27436b137fdd4cfe72202fe07f9a228ad7c48338925ba7ccbf30c65c4",
+    "bytes": 432344
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig7.png",
+    "sha256": "58a47aa92bc813f5a4948b6c44552ce75facc3668c1c0d7fe72d6d3acfa266a7",
+    "bytes": 1027019
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig8.png",
+    "sha256": "a4c22b07d2218597fc5fcac391d242eb77b5809d14ab9392d13f4e1fe6076fa8",
+    "bytes": 1143987
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\fig9.png",
+    "sha256": "9ef0114dbfd59437a05686d6c8c3187064a3acffbfa0fb6eec04c42d920eb90e",
+    "bytes": 1103524
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\README.md",
+    "sha256": "db1cc20982ff646e2dd9e1a7ca42bc2fccf1d08466bee7006c67f332522d4ab1",
+    "bytes": 2072
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-common.sty",
+    "sha256": "d830c770f805c1a3abf3eb413f3b14a40b515e1e46378e33f09bcd974cefe6c7",
+    "bytes": 76432
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-email.jpeg",
+    "sha256": "51cadbff5919f51f76f6f9238b18c9b5d512ea9234cb6d7fef7b53d9767fa845",
+    "bytes": 8764
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-facebook.jpeg",
+    "sha256": "ee892a2efc41325af58c7aa5c9356249d68524e796ed2e2da391652a9d2e4294",
+    "bytes": 3676
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-gplus.jpeg",
+    "sha256": "7a903863812ac3b33d64c5f774ea549793d2657880874ca6e7d4243f5a51516b",
+    "bytes": 7946
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-linkedin.jpeg",
+    "sha256": "3fa7b9ead03ed5d1976316aa1d69157eeeaefae04fab568a4d704185755f7f9f",
+    "bytes": 6124
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-sc.cls",
+    "sha256": "0ba919511e97af9e37c3056b7674d2a7cea225208afc6a412ec510284bbff777",
+    "bytes": 4410
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-twitter.jpeg",
+    "sha256": "bf2765da8cc4cc58fef109fd0f864b4fc39d7ba8e8040c8633542076ccdc91ef",
+    "bytes": 4655
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\cas-url.jpeg",
+    "sha256": "66e3c16ef98e082d61397c9644ccae92c227bae49fd7eba5bcad4a6623fd67d5",
+    "bytes": 7736
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\delivery_manifest.csv",
+    "sha256": "b84d4c3de3461b990e0e2754acde1b5b172daf5def6613dd3dab7e26e8e8b7e5",
+    "bytes": 9649
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\elsarticle-num-names.bst",
+    "sha256": "f7b33fba01050d3f65f56088bb4d4551a05b8c554f4d1884df9222a1e6db8e6b",
+    "bytes": 28892
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main.synctex.gz",
+    "sha256": "a92d370add004593104eb3616459c030d42951ba7f83d92e97d4bd81b4ffd413",
+    "bytes": 316169
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.abs",
+    "sha256": "1badf8b8cc589d89523152b6ec340c216eae6b7953dabc3b353aeec226245032",
+    "bytes": 1823
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.aux",
+    "sha256": "fd1303e932391bc6ebab64e335286243180a8c92e19dcec8465196e984aef2a7",
+    "bytes": 20294
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.bbl",
+    "sha256": "36c3e76ace4ce942a12a054401091bfdf5a6ced5e05cfa134510a675637adbe5",
+    "bytes": 19963
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.blg",
+    "sha256": "1f4d5743af514510e61973e620c9dbcf71074ce2dc744ce98f4fff1701ad0cd6",
+    "bytes": 1123
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.log",
+    "sha256": "d7a8baef5b71ee442529e44f87081f26f49f5e0f589b91c3098252923deaf68d",
+    "bytes": 41130
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.pdf",
+    "sha256": "76e72c791548935c2cda0152164cb1a752070d54fda642934fac83fced0f40a8",
+    "bytes": 9079816
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.synctex.gz",
+    "sha256": "3c2d000f1f2bf78f05fe62cda163fb2a5b10dc5a9eb32a981ca2e2c6c7301900",
+    "bytes": 313238
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d",
+    "bytes": 78066
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\main_review_20260911_terms_red_changes.md",
+    "sha256": "692de0e7cfdc2a3fea318d3c4e5982ab6a80636cca5bcedb5b75981124cd87fe",
+    "bytes": 1645
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\modal_terms_review_20260911\\fig15.png",
+    "sha256": "7d1c8253829547a40b7cf23cbc768e155c495834ac1dd623971c66a4bd24fa22",
+    "bytes": 581372
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\modal_terms_review_20260911\\fig15_labels.tex",
+    "sha256": "77ced09e777ce40e6e2d0f4c24388f4861a499fc80192f115920c3fb72671140",
+    "bytes": 1271
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\references.bib",
+    "sha256": "f9999488508832e447d17fc910739008e58954f987c43711ca0b6b85c1a3c30a",
+    "bytes": 15311
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\baseline\\fig12_horizontal_modes.pdf",
+    "sha256": "9b8cad7e8cd31eafc57c69d1e2550669b709e8ef72e45fc6789033395a662fc1",
+    "bytes": 104554
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\baseline\\fig16_modal_shares.pdf",
+    "sha256": "b2171f807f86f7f7f1f68edc2270b5203139454771075dab5b8fe1251692f97a",
+    "bytes": 171435
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\baseline\\main.pdf",
+    "sha256": "c646687b6ffffb3e6767aab4107f0220d4c4fe8a8cd8767f735d4862231a8fb3",
+    "bytes": 1043311
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\baseline\\main.tex",
+    "sha256": "0b9e021dfaa87eb184fdba769cc1b06c7a895d6d9ded20d9546a97a929a6655c",
+    "bytes": 81415
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\build_report.py",
+    "sha256": "234e199f6bc287d29af4a39dac73cda923af908424f69881f8fcff591fe3ca4f",
+    "bytes": 11920
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\compile_and_verify.py",
+    "sha256": "a7bca8e7a97cf7d9f2bdda169e17b44d6f5f71a2bb9f44a2009fe9c3a930ffa3",
+    "bytes": 4621
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\finalize.py",
+    "sha256": "d0550313c7d85acfa0dc5ed667f93f1ebff706d17e59e7b0fbf8a18d6e5f2454",
+    "bytes": 5420
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\plot_figure15.py",
+    "sha256": "6873efd07d63b27feb6d21d736f3c9a90913d2ad84beef286fea00b7288c71f5",
+    "bytes": 3668
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\plot_figure6.py",
+    "sha256": "7e6e74e30a68d6b324d9bfefb2e105d6ac39ef9eb2bbad13d875dcb60d46320c",
+    "bytes": 4652
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\prepare.py",
+    "sha256": "c9e14aacd064885693ade769d0c7fcc9f45d77fbb6428ed31f008746aead0d56",
+    "bytes": 1601
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\qa_report.cjs",
+    "sha256": "311ef04e403b9983c37a4dcfd03f1b59a097b74d2421ea192e7f6589afeecf8c",
+    "bytes": 4133
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\code\\revise_metric.py",
+    "sha256": "97eafb7986f86bf604a3bd549cae72f3650a8634b2c34e5c98b7818f3cb99763",
+    "bytes": 10774
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\actuator_share_deviations.csv",
+    "sha256": "b74ce106ac5769c2dfa35a84367f3bf4642c6c3ad2be1b07c70cae23a034f692",
+    "bytes": 813
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\explanation_calculations.json",
+    "sha256": "7a3a6861beb34288ac0c134ae6e302f051666c21841e4ef0e2351c574bb72b07",
+    "bytes": 79593
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\layout_figure_manifest.json",
+    "sha256": "5a44efa17f3051f33c398bc71c171c962c11abf18ca5d03bc8f8b8daa1ed0252",
+    "bytes": 8063
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\modal_share_deviation.json",
+    "sha256": "5b9fa5f8059cf8011ad4de744cea40f60dc2971c8624c34354a720c9129d8750",
+    "bytes": 3346
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\new_actuator_share_contributions.csv",
+    "sha256": "fde0e0f311bb5bc5742bd7599116ca4b3b9ca2fbd66af9282685c1b543288f12",
+    "bytes": 473
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\new_horizontal_modes.csv",
+    "sha256": "9d64743f987dd4d741f0b21ed5948c7eae2d5bf6023b797e0f568d673ea9d530",
+    "bytes": 988
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\new_modal_shares.csv",
+    "sha256": "1c9f8603bbd6b44391f431cd1044ce41ef01b21d80605250a77c79b015fca6e6",
+    "bytes": 2834
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\new_modes_frequencies.csv",
+    "sha256": "d9c86dba9eac0339a422e2300bfc345aa954fae8063a64cde7c0321e8da0757f",
+    "bytes": 880
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\data\\new_peak_drift.csv",
+    "sha256": "82d574adda7ec1c10a09dec2423a245f87aebcbf79982dc821dfc6eec5c5df1d",
+    "bytes": 1240
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\main_changes.diff",
+    "sha256": "8ce1b01eb9da699b56d2edbd9122ebfa68b8a52f39861cae34353ee01a9b7b87",
+    "bytes": 20684
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\manuscript_changes.json",
+    "sha256": "3d8eab8caaf2996f5085c2e940c71da5c80d7d723443a665ce6ad6578eced2dc",
+    "bytes": 8195
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\protected_previous.json",
+    "sha256": "26deca4817bcd3931b5a3113e6cb856515ab16c9840f6697e6390cfcc009de70",
+    "bytes": 17422
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\absolute_metric_numeric_checks.json",
+    "sha256": "3d74390d984820daeff318191880e1e5beb9fb8f6fb5258ea4cc883e059278ca",
+    "bytes": 1133
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\compile_1.log",
+    "sha256": "63287d88a012691a24ff6ab71ffd6a68ef7562be11023ed68b50088606be7026",
+    "bytes": 10635
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\compile_2.log",
+    "sha256": "36d7a18ea0b2e07e89dd669f77a132c79a10d90aa7705580b6561fb0487ea9be",
+    "bytes": 163
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\compile_3.log",
+    "sha256": "63287d88a012691a24ff6ab71ffd6a68ef7562be11023ed68b50088606be7026",
+    "bytes": 10635
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\compile_4.log",
+    "sha256": "63287d88a012691a24ff6ab71ffd6a68ef7562be11023ed68b50088606be7026",
+    "bytes": 10635
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\main.abs",
+    "sha256": "1c4b1bf3739ed11b10ac761fbf9821261670f9a24ad82e1ab8fb8817bed6a594",
+    "bytes": 1859
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\main.aux",
+    "sha256": "c8331fffe78e2c86eda1291f6ea215dce2e3416eafafd1fb8524cfad8278ac0e",
+    "bytes": 20676
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\main.blg",
+    "sha256": "4c2b8d2a6a256c76277746fbeb1bcf3458a02bfd50bc52bcacc99806f8d62158",
+    "bytes": 991
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\main.log",
+    "sha256": "3b40ca9964fc0cac4d9bc16e38920b6e4793084b4ce53337b6e65eb25e2273d4",
+    "bytes": 42528
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\compilation_logs\\main.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\figure15_values.json",
+    "sha256": "6e4f725928de36c9c4e0ce1be6fe675cb47b748effae295b4e321e5db093239c",
+    "bytes": 4533
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\figure6_layout.json",
+    "sha256": "38d5f569a68d51138e3c64524080ec03f6781f9ed312e71a6f3dda0d826ba21c",
+    "bytes": 5995
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\final_acceptance.json",
+    "sha256": "d690e9e70a23fffb88bae73ccc2d887a0ccd4ca6a3965ae72ea208e43ebbb279",
+    "bytes": 1169
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\manuscript_compile.json",
+    "sha256": "42b7b69cf242bc0792f89701c123bb7d1177d2f611b9cbdf109cf92fb7396e06",
+    "bytes": 4750
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\report_browser_checks.json",
+    "sha256": "a53c15616ed3d48e4dfe6958d43fd472a70496c616b1517e31ddb646c1f4326b",
+    "bytes": 1084
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\report_desktop.png",
+    "sha256": "139b0a729a3a062aba8c281a7f708811d616875c676e7c3c9eb902f856e09c5f",
+    "bytes": 155789
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\report_mobile.png",
+    "sha256": "4067b8ef3b56ac149d1480ddbf4d6eb16871cb623c88ec3bf9ea583ecf1275a0",
+    "bytes": 77533
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\refinement_evidence\\validation\\report_mobile_metric.png",
+    "sha256": "d4ca4cdc88763f24bf10b58b3ea99d548943d9ffe5d899ea1e1ce5a2e05d8c11",
+    "bytes": 63233
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig01_force_feedback.pdf",
+    "sha256": "20e4d96bbe809a0daf89c2b9b43e2c4973c561cf1a2bf4bf7d75f4292224f467",
+    "bytes": 92406
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig02_geometry.pdf",
+    "sha256": "5bc55cd6892b43d613761d8637370c8ce456ad87ffd981a624ad0e7bf2ea58ab",
+    "bytes": 24392
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig03_dofs.pdf",
+    "sha256": "5733cef2dd958baa673b99f44d1f2764c2a7d4ee6a38dad4846cfc69022695c1",
+    "bytes": 32748
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig04_divisions.pdf",
+    "sha256": "c198830f0245426c5411a3b320aa42ed7b62ef8bf7ce0a7b2e06cad4460496f0",
+    "bytes": 42330
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig06_eq_div1.pdf",
+    "sha256": "d330c293c415309179514169a503f2e7beda8329e1fcfe07f79c5286ca48fff0",
+    "bytes": 156950
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig07_eq_div2.pdf",
+    "sha256": "ca4ae65e23994059a6bb3bb2bb44e11526cac47cc81b2a83775f79760910bc5f",
+    "bytes": 158583
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig08_chirp_div1.pdf",
+    "sha256": "7fbf5443dd6e1cc541c808992df038139828cc1b4757376cc31c6c842f8626fc",
+    "bytes": 170070
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig09_chirp_div2.pdf",
+    "sha256": "3c3eee3d8df36501dc23a4669622eb2336c960cf57db1816500386373145f5cf",
+    "bytes": 172548
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig10_stability_domain.pdf",
+    "sha256": "eea26cefa38b9666aef48c6e9355b8b23c14365f8d0dffbd1e8e2e61646b9847",
+    "bytes": 104941
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig11_excitation.pdf",
+    "sha256": "69d1e5599fc96162762b0e072062bf5f1a43a9263fa9d596c6ce7edfa9699d4e",
+    "bytes": 160677
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig12_horizontal_modes.pdf",
+    "sha256": "6eeb71d9bba5efe7f9359638ffb0b47f4087fdd6fea635833222819d73e55029",
+    "bytes": 169657
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig12_horizontal_modes.png",
+    "sha256": "576c5298f841b2d4ce74e8b31c64cce168df03a42da8cddcc568b91328810920",
+    "bytes": 298957
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig13_middle_eq.pdf",
+    "sha256": "d8902937973e03074c8d9bd9e636e7b6fb921c83b230c35d6bbb268dc5d69656",
+    "bytes": 189013
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig14_middle_chirp.pdf",
+    "sha256": "b65b79b88111ad055499574d17ef31dc64bc3e1416a77ae1fcad8b8c2527e510",
+    "bytes": 205383
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig15_peak_drift.pdf",
+    "sha256": "6f38452b5d0c0463c85a005f2b6289d68b1bfa680c0e64ff17a46b5f61f049b5",
+    "bytes": 73606
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig15_peak_drift.png",
+    "sha256": "b52d13d7aa9c6de2549a85e715e3dc32560ba26f7fb0cc7ec5e367fd6070820c",
+    "bytes": 235651
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig16_modal_shares.pdf",
+    "sha256": "9bf316744d6ae9d72dfa4c9f3255bc178b90b42f42ef65c67243971e2a4ca315",
+    "bytes": 140932
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\submit_figure\\fig16_modal_shares.png",
+    "sha256": "641b7ee5467fec57ccca284a2be68c9fadd655e5fe5e6c905864f143548aa252",
+    "bytes": 396489
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\C_full.csv",
+    "sha256": "1ae2f4a6dfa1a72a1eb1906448b3b837c179537faa396296b14e81986c393d36",
+    "bytes": 2065
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9",
+    "bytes": 19354
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\K_full.csv",
+    "sha256": "0d383afaad3697ddd60537ba4ffd345b35ef4949edd7fdcf23b7326aaadc70b8",
+    "bytes": 2066
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\M_full.csv",
+    "sha256": "683654b25f2911259283f1e4c76c809c24cb3043bac6c2136173f85d389c8ac8",
+    "bytes": 720
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\README.txt",
+    "sha256": "97a80286c1867b883e2ef9fe747adf7e2c2055774e2c128c18c7dc5a787d4328",
+    "bytes": 623
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\division_II_matrices.mat",
+    "sha256": "0c222c211953aa6813c354f93fb3c00afab077bb7afab08f37c9f63070c601cc",
+    "bytes": 10064
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\division_I_matrices.mat",
+    "sha256": "366a7a3b8cb770a631f1876c446b5139ad0104202e1be091f2278805e92da088",
+    "bytes": 10976
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\response_division_1_chirp.csv",
+    "sha256": "2fdc6b5bf3b48118a51dd147ece32b6711cefdcd702d88eec64cfc4e6a13df49",
+    "bytes": 7254991
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\response_division_1_eq.csv",
+    "sha256": "e7149dd6777b2127527393ce1d7b126b040576f0a535618be33e882738acfc40",
+    "bytes": 6584073
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\response_division_2_chirp.csv",
+    "sha256": "88919c2afa4fc431edb08772a1dcb091b6d8dc1445253c0a4d30334223040457",
+    "bytes": 7248756
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\supplementary_data\\response_division_2_eq.csv",
+    "sha256": "2899dfd2c03b22aaee701c7e4b3b70e40d49668531bb6734fa6b52e8246b5e5d",
+    "bytes": 6589237
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\elsevier_review_v2_refined_20260907\\图6排版与图15变化幅度指标修改汇报.html",
+    "sha256": "70abf51a4bf6db823c296c3e09ff025c3d6e625f1265a94d4c6ac35d63e3996b",
+    "bytes": 947576
+  }
+]

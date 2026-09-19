@@ -1,0 +1,40 @@
+{
+  "command": [
+    "D:\\Downlad\\Matlab\\bin\\matlab.exe",
+    "-batch",
+    "addpath('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code'); compute_board21_step4_formulas('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\s4i','D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\s4\\b\\matlab','BOARD21_STEP4_B_MATLAB');"
+  ],
+  "cwd": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "duration_seconds": 46.00233560008928,
+  "finished_at": "2026-08-26T05:56:40.500610+08:00",
+  "name": "run_04_b_matlab",
+  "returncode": 0,
+  "started_at": "2026-08-26T05:55:54.498289+08:00",
+  "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "stderr_size_bytes": 0,
+  "stdout_sha256": "A87DF6CF10755118ADE8D6E6E4EB3C9D11E5ED7BCC22E73C9A7D6B88ED915F48",
+  "stdout_size_bytes": 739,
+  "terminal_json": {
+    "author_route_reproduction_count": 28,
+    "case_result_count": 1096,
+    "case_results_sha256": "925B02E449F552567E7BF72DFBE9D6DB25E2CDC452B7BB4692FDEACA27519216",
+    "execution_token": "BOARD21_STEP4_B_MATLAB",
+    "formula_4_45_evaluated_conditionally": true,
+    "historical_result_count": 28,
+    "implementation": "MATLAB_EIG_INDEPENDENT",
+    "input_case_count": 14,
+    "max_author_abs_error": 3.907985046680551e-14,
+    "paper_conditional_result_count": 1068,
+    "schema_version": "BOARD21_STEP4_COMPUTE_V1",
+    "scientific_status": "AUTHOR_ROUTE_REPRODUCED_AND_PAPER_LITERAL_CONDITIONAL_TABLE4_1_PENDING",
+    "status": "PASS",
+    "table4_1_adjudicated": false,
+    "value_row_count": 305382,
+    "values_sha256": "4223C9EF0B037780F07B45183CF71EAF6180945202D9C3AA0535E38F76A0EFFE",
+    "whole_model_candidate_count": 2
+  },
+  "terminal_json_error": "",
+  "timed_out": false,
+  "timeout_error": "",
+  "timeout_seconds": 1800
+}

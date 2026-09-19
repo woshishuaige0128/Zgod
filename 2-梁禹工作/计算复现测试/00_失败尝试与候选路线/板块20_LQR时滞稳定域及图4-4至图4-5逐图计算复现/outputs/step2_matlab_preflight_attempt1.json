@@ -1,0 +1,66 @@
+{
+  "schema": "board20_matlab_preflight_v1",
+  "created_at": "2026-08-25T04:33:12+08:00",
+  "matlab_version": "25.2.0.2998904 (R2025b)",
+  "matlab_release": "2025b",
+  "computer": "PCWIN64",
+  "matlab_root": "D:\\Downlad\\Matlab",
+  "pid": 44356,
+  "starting_working_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code",
+  "licenses": {
+    "symbolic_toolbox": true,
+    "control_toolbox": true
+  },
+  "functions": [
+    {
+      "name": "syms",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\syms.m",
+      "available": true
+    },
+    {
+      "name": "sym",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\@sym\\sym.m",
+      "available": true
+    },
+    {
+      "name": "solve",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\mbc\\mbcexpr\\@cgdivexpr\\solve.m",
+      "available": true
+    },
+    {
+      "name": "vpa",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\symbolic\\symbolic\\vpa.m",
+      "available": true
+    },
+    {
+      "name": "ss",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlmodels\\@ss\\ss.m",
+      "available": true
+    },
+    {
+      "name": "c2d",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrlobsolete\\c2d.m",
+      "available": true
+    },
+    {
+      "name": "dlqr",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\control\\ctrldesign\\dlqr.m",
+      "available": true
+    },
+    {
+      "name": "eigs",
+      "resolved_path": "D:\\Downlad\\Matlab\\toolbox\\matlab\\sparfun\\eigs.m",
+      "available": true
+    }
+  ],
+  "helper": {
+    "frozen_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_upstream\\新物理子结构方案\\fcn_newmark_beta_const.m",
+    "exists": true,
+    "filename_function_name": "fcn_newmark_beta_const",
+    "declared_function_name": "newmark_beta_constants",
+    "filename_matches_declaration": false,
+    "which_before_addpath": "",
+    "which_after_addpath": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\historical_upstream\\新物理子结构方案\\fcn_newmark_beta_const.m"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,256 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validation_contract_v1",
+  "purpose": "Independent read-only precheck and postcheck contract for the sealed Board20 Step-5 V3 full-q/SVD candidate. The validator never writes candidate, Step-4, prior Step-5, or prior-audit artifacts.",
+  "path_base": "parent directory of this contract's code directory",
+  "paths": {
+    "candidate_contract": "code/board20_step5_fullq_svd_candidate_contract.json",
+    "candidate_script": "code/compute_board20_step5_fullq_svd_candidate.py",
+    "base_compute": "code/compute_board20_step5_independent.py",
+    "v2_engine": "code/compute_board20_step5_fullq_candidate.py",
+    "route_manifest": "code/board20_step4_route_manifest.json",
+    "candidate_output_root": "outputs/step5_fullq_svd_candidate",
+    "step4_output_root": "outputs/step4_rho_grids",
+    "audit_output_root": "outputs/step5_fullq_svd_candidate_audit",
+    "audit_log_root": "logs/step5_fullq_svd_candidate_validation"
+  },
+  "sealed_candidate_identity": {
+    "candidate_contract_sha256": "AD1408907EF9800F8251526BF95F71D8D8972E5966CF608574081B09EFCBC5AE",
+    "candidate_script_sha256": "533AD1C13275B18F06E7015AB7E849217E4DB4253A73C5E968F0CB4D01B6305D",
+    "base_compute_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "v2_engine_sha256": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6",
+    "route_manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+    "input_seal_sha256": "A31C8D5BFB5DCD976E2B8C7F88893BF161AEDC91660A8F97E534DCAEBADCC570",
+    "preflight_sha256": "33A49A53BD1AB4A5C2E63AC8A2DB6E6BAB8EE1785925A82ABE2AE957EF5373AF",
+    "selftest_sha256": "0A24C8E6E4E3EB360837B052A52FAF5097A39D83ADD92FBE2A0F0D03D9EBFDEF",
+    "contracts_status_sha256": "38097109DDCC806252AF7300A8D6E7ECEF724CECCDB7EF49ACEA2B728C47E465",
+    "hard_residual_math_sha256": "E917A6232500DC98EBDAA1399048D404ABB7F793D263531298FF4C1A0B18245F",
+    "v2_failure_attribution_sha256": "964C58784CC9AF8A2806AAE1C07BCF604C2DD4F61B2E64119069770D7BD9A2EF",
+    "v2_immutability_baseline_sha256": "8BDDDD62B541A879E0289069E5BA25A48681338AEAEE3DDC626CA503C3F1D738"
+  },
+  "expected_candidate_preflight": {
+    "schema_version": "board20_step5_fullq_svd_candidate_preflight_v3",
+    "status": "PASS",
+    "check_count": 51,
+    "pass_count": 51,
+    "fail_count": 0,
+    "input_seal_sha256": "A31C8D5BFB5DCD976E2B8C7F88893BF161AEDC91660A8F97E534DCAEBADCC570"
+  },
+  "expected_candidate_selftest": {
+    "schema_version": "board20_step5_fullq_svd_candidate_selftest_v3",
+    "status": "PASS",
+    "check_count": 77,
+    "pass_count": 77,
+    "fail_count": 0,
+    "candidate_contract_sha256": "AD1408907EF9800F8251526BF95F71D8D8972E5966CF608574081B09EFCBC5AE",
+    "candidate_script_sha256": "533AD1C13275B18F06E7015AB7E849217E4DB4253A73C5E968F0CB4D01B6305D",
+    "v2_engine_sha256": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6",
+    "input_seal_sha256": "A31C8D5BFB5DCD976E2B8C7F88893BF161AEDC91660A8F97E534DCAEBADCC570"
+  },
+  "candidate_contract_rules": {
+    "schema_version": "board20_step5_fullq_svd_candidate_contract_v3",
+    "contract_status": "FORMAL_PRESEAL_V3",
+    "route_ids": [
+      "main_ori_div1",
+      "main_guyan_div1",
+      "alt_guyan_div1_stable_full_ps3",
+      "main_ori_div2",
+      "main_guyan_div2"
+    ],
+    "route_count": 5,
+    "pilot_total_points": 49,
+    "pilot_route_point_counts": {
+      "main_ori_div1": 5,
+      "main_guyan_div1": 11,
+      "alt_guyan_div1_stable_full_ps3": 11,
+      "main_ori_div2": 11,
+      "main_guyan_div2": 11
+    },
+    "full_shape": [31, 67],
+    "full_points_per_route": 2077,
+    "full_total_points": 10385,
+    "matrix_orders": {
+      "main_ori_div1": 15,
+      "main_guyan_div1": 5,
+      "alt_guyan_div1_stable_full_ps3": 5,
+      "main_ori_div2": 5,
+      "main_guyan_div2": 5
+    },
+    "selected_algorithms": {
+      "main_ori_div1": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "main_guyan_div1": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "alt_guyan_div1_stable_full_ps3": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "main_ori_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "main_guyan_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION"
+    },
+    "failed_route_ids": [
+      "main_cb_div1",
+      "main_cb_div2",
+      "energy_guyan_div1",
+      "energy_guyan_div2"
+    ],
+    "paper_route_ids": [
+      "master_thesis_route",
+      "manuscript_0824_route"
+    ],
+    "previous_conditioning_points": [[11, 39], [15, 40], [23, 41], [28, 43]],
+    "previous_conditioning_routes": ["main_ori_div2", "main_guyan_div2"],
+    "hard_residual_definition": "SIGMA_MIN_DIRECT_MATRIX_OVER_SUM_SPECTRAL_NORM_WEIGHT",
+    "vector_block_residual_role": "DIAGNOSTIC_ONLY_VECTOR_BLOCK_CONDITIONING",
+    "pairing_diagnostic_role": "DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING"
+  },
+  "source_isolation": {
+    "forbidden_path_literals": [
+      "outputs/step4_rho_grids",
+      "outputs/step5_independent_compute",
+      "outputs/step5_audit",
+      "outputs/step5_solver_conditioning",
+      "outputs/step5_fullq_candidate/pilot",
+      "outputs/step5_fullq_candidate/full",
+      "logs/step5_validation"
+    ],
+    "forbidden_execution_literals": [
+      "matlab.engine",
+      "subprocess.run",
+      "subprocess.popen",
+      "os.system("
+    ],
+    "allowed_manifest_numeric_result_use": false,
+    "algorithm_selector_argument": "matrix_order",
+    "algorithm_selector_expression": "ALGORITHM_FULL_Q if matrix_order <= 5 else ALGORITHM_COMPACT"
+  },
+  "protected_prior_evidence": {
+    "code/validate_board20_step5.py": "8F81638259AD120ED4D271F00779C7B84D42F041E606BE425CE74E0283B091F5",
+    "code/board20_step5_validation_contract.json": "8E8882E468FF8D9E7FD3D7BCF3FA8854D498F7242E2E457ED1718100FB707965",
+    "outputs/step5_audit/full_postcheck.json": "6B6A914518A18357E60D8B58CF3BDB7CCB624FE55AD44280EAF7A2A134CBB81A",
+    "outputs/step5_audit/full_postcheck_checks.csv": "BBAD19FFC2106962408571C59EF25D4871BD8745BB77AA373D1BF33CAF8380DA",
+    "outputs/step5_audit/full_postcheck_report.md": "EBC9FD3658D54109DA7534B698AD8AA0A7E93E375EA42D54869E0E08DA83D30E",
+    "logs/step5_validation/full_postcheck.log": "46AAD1E2E88958B1E7094F52B0DFCB33BC7BFFAF498025A28243D451DF45C3E8",
+    "code/diagnose_board20_step5_solver_conditioning.py": "C3E9AA3221386348F83CD6F7D5B80C12B7257C0E67CF9187192F4B0865BB4FEC",
+    "outputs/step5_solver_conditioning/diagnostic.json": "79A54FB505AF3577EB0C147E3515E8E2F1066777D206FA5299B954D8DD1BC3DC",
+    "outputs/step5_solver_conditioning/report.md": "D3BCAF1FBC9B098984C4D08BC6D4DA25E61202E2DBA24CFBF2EA6343DACBD97B",
+    "outputs/step5_solver_conditioning/artifact_manifest.csv": "6659D315EA4DE44B6EDE7A4900D7957E858AABE01E90C1AA9468E8946A6F16A7",
+    "outputs/step5_solver_conditioning/repeatability_check.json": "484BB3E7BE4FF0016E38E840D77AE931A5D8F0A5A7B9BEB25C8A7A744F248124",
+    "code/validate_board20_step5_fullq_candidate.py": "C025A4B653D31AA222898DE62690DF3001C83ECCF3769FE1AEE6D45F3885DA2D",
+    "code/board20_step5_fullq_candidate_validation_contract.json": "80DBEC3A7370CC964BA7827DFDE475D9A95D831BCA7D880248BC7F557E2E6F57",
+    "outputs/step5_fullq_candidate_audit/v2_precheck.json": "DED8B21A6BA585236077540F50888520CFC6490BE87AD12288C28D0225EDCC41",
+    "outputs/step5_fullq_candidate_audit/v2_precheck_checks.csv": "5E3F088364EA540521FD32BA695BE634C55571EE6C49251FB34B8D3DE07FAC85",
+    "outputs/step5_fullq_candidate_audit/v2_precheck_report.md": "F2718A81CA49303A98D302DD8FC5418B96431BF5938F05C95F7FDE2E4A8BA706",
+    "outputs/step5_fullq_candidate_audit/v2_protected_hashes.csv": "3A60393B96B089B03B98992067DE9756A75D6058AC4517500FE9437590B348AC",
+    "outputs/step5_fullq_candidate_audit/v2_precheck_artifact_manifest.csv": "0B8A3CEBC6845A38530B16F08E2B6E91A839E64EB8A239B4297E147D27F65C63",
+    "logs/step5_fullq_candidate_validation/v2_precheck.log": "0451923E58DBCFC53976ABA56413E1B2D295A05E44E10B896AD5EE1B07E60451"
+  },
+  "protected_v2_files": {
+    "code/board20_step5_fullq_candidate_contract_v1_preseal_draft.json": "6530332BD67C5A4083BF2188E1E4BE7AE91D11EA6FE6FDD18EF54A00CCFBDA7B",
+    "code/board20_step5_fullq_candidate_contract.json": "3D777C7DFCC1C480177EA0D0F8AE29892A15F6E2A5C1A2EBC73D7851422BC318",
+    "code/board20_step5_fullq_candidate_contract_revision_record.json": "9FA27BAA60A334B6FCB06AE1A2B562A296D885CD83B5DA6AFDC4600190BD8BB7",
+    "code/compute_board20_step5_fullq_candidate.py": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6",
+    "outputs/step5_fullq_candidate/input_seal.json": "A38F16625FE8597FDF91F62BC50C0BC25CB485234694CDCF3C94D35EAD3F203F",
+    "outputs/step5_fullq_candidate/preflight.json": "DA7BC36BF8BE601F00A7ED67F0341A61987D50481A1E6594674C9607870DFA4C",
+    "outputs/step5_fullq_candidate/selftest.json": "F6C33F22D781F61FD3467C03A73E44DB8B727693C9B5A3ABF644A5E9C07F63D7",
+    "outputs/step5_fullq_candidate/contracts_status.json": "99BF31CE432958EC03D94D4ACAB3E29AF5FE6A19F6274653DEF43C0EF8A1EC10"
+  },
+  "sealed_step4_references": {
+    "main_ori_div1": {
+      "mat_relpath": "outputs/step4_rho_grids/main_ori_div1/common_31x67_same_formula_candidate.mat",
+      "mat_sha256": "B8ABFE223CB836E984C05238AE8D03DFE240E4AFDD3D9CF6553EBCBED532A99F",
+      "status_relpath": "outputs/step4_rho_grids/main_ori_div1/status.json",
+      "status_sha256": "D8766A39536052A465AFC1B6D3E9F0057ADD4E4DB0D8DF62790B8B4B220BF8F1"
+    },
+    "main_guyan_div1": {
+      "mat_relpath": "outputs/step4_rho_grids/main_guyan_div1/common_31x67_same_formula_candidate.mat",
+      "mat_sha256": "0D03606A2ED4B621025AB21066B66D8D9C790DE00150581E9F28742042D289BB",
+      "status_relpath": "outputs/step4_rho_grids/main_guyan_div1/status.json",
+      "status_sha256": "5AC6C07F2AE6FA151F402373B6C047E49FD9F9B8FE9D07418CCEFEA3B53C09F4"
+    },
+    "alt_guyan_div1_stable_full_ps3": {
+      "mat_relpath": "outputs/step4_rho_grids/alt_guyan_div1_stable_full_ps3/common_31x67_same_formula_candidate.mat",
+      "mat_sha256": "FDA20E8698331109F0A8EAA328ACFC148727D0C457F7459E972CDDD64258F940",
+      "status_relpath": "outputs/step4_rho_grids/alt_guyan_div1_stable_full_ps3/status.json",
+      "status_sha256": "1C79EC0676CCD4FAAB7653A22F8F5B2E5A7C99770943DE7FFB80C1B74BFAAAC4"
+    },
+    "main_ori_div2": {
+      "mat_relpath": "outputs/step4_rho_grids/main_ori_div2/common_31x67_same_formula_candidate.mat",
+      "mat_sha256": "80327148547DEBC5FE1D23A77ED85ADC95E7BADF53E2B566354F0B624C5AEAC3",
+      "status_relpath": "outputs/step4_rho_grids/main_ori_div2/status.json",
+      "status_sha256": "D2D287A9D48141A8B524E0092CC5719A812C5945014454BC9D247F12DE850B63"
+    },
+    "main_guyan_div2": {
+      "mat_relpath": "outputs/step4_rho_grids/main_guyan_div2/common_31x67_same_formula_candidate.mat",
+      "mat_sha256": "96CB905205548F62B2A5A24A2906066C7619E79DA989F7E4D42CDC19783DC5BF",
+      "status_relpath": "outputs/step4_rho_grids/main_guyan_div2/status.json",
+      "status_sha256": "3594FAA220B0BB45EDF5CFA617A098BE64C7FA543C646BD66BCEDB90FA4654C6"
+    }
+  },
+  "sealed_step4_audit_manifest": {
+    "relpath": "outputs/step4_audit/artifact_manifest.csv",
+    "sha256": "986388A210D7AB04E87A31B4EAF6A400CBAEBCD48C7289977FB009096D209F6D",
+    "required_common_grid_role": "FINAL_GRID_MAT",
+    "required_common_grid_kind": "common_grid",
+    "identity_status": "PASS"
+  },
+  "postcheck": {
+    "explicit_authorization_flag": "--explicit-postcheck-authorization",
+    "candidate_run_status_schema": "board20_step5_fullq_svd_candidate_run_status_v3",
+    "candidate_route_status_schema": "board20_step5_fullq_svd_candidate_route_status_v3",
+    "candidate_checkpoint_schema": "board20_step5_fullq_svd_candidate_checkpoint_identity_v3",
+    "candidate_roots_h5_schema": "board20_step5_fullq_svd_candidate_roots_h5_v3",
+    "candidate_repeatability_schema": "board20_step5_fullq_svd_candidate_repeatability_v3",
+    "repeatability_required_for_pass": true,
+    "repeatability_required_identity": {
+      "status": "PASS",
+      "scientific_artifacts_match": true,
+      "baseline_equals_repeat_equals_actual_manifest_sha256": true
+    },
+    "checkpoint_allowed_states": ["COMPLETE"],
+    "resume_checkpoint_allowed_states_not_accepted_by_postcheck": ["IN_PROGRESS", "COMPLETE"],
+    "sealed_mode_artifact_manifest_sha256": {
+      "pilot": "3B9C41AB91E345C0642E12E94A5484FE61937B5E82107DAAD53B2CC890A50EDA",
+      "full": null
+    },
+    "scientific_manifest_fields": ["relpath", "bytes", "sha256"],
+    "scientific_manifest_row_count": 17,
+    "route_scientific_files": ["point_summary.csv", "roots.h5", "route_status.json"],
+    "mode_scientific_files": ["v2_immutability_postrun.json", "run_status.json"],
+    "operational_route_files": ["checkpoint.h5", "checkpoint.json", "point_runtime.csv"],
+    "point_runtime_fields": ["route_id", "l", "j", "elapsed_seconds", "point_status"],
+    "point_summary_fields": [
+      "route_id", "route_role", "declared_method", "division", "route_formula", "l", "j", "matrix_order", "algorithm_selector_field", "algorithm_selector_value", "selected_algorithm", "selected_order", "compact_order", "full_q_order", "polynomial_degree", "clearing_power", "raw_root_count", "finite_root_count", "nonfinite_root_count", "zero_root_tolerance", "removed_zero_root_count", "retained_root_count", "compact_pairing_performed", "compact_raw_root_count", "compact_retained_root_count", "compact_zero_root_tolerance", "compact_removed_zero_root_count", "rho_compact_pairing", "stable_compact_pairing", "full_q_compact_rho_abs_diff", "full_q_compact_root_match_max_relative_diff", "near_unit_root_match_max_relative_diff", "pairing_diagnostic_role", "matched_physical_root_count", "theoretical_extra_zero_count", "unmatched_full_root_count", "unmatched_count_within_theoretical", "unmatched_full_max_abs", "unmatched_full_below_0p9", "unmatched_full_strictly_nondominant", "origin_splitting_status", "origin_split_gate_role", "rho", "stable", "critical", "dominant_root_real", "dominant_root_imag", "max_gated_svd_polynomial_residual", "max_gated_svd_laurent_residual", "max_gated_vector_block_polynomial_residual_diagnostic", "max_gated_vector_block_laurent_residual_diagnostic", "max_unmatched_full_svd_polynomial_residual_diagnostic", "max_unmatched_full_svd_laurent_residual_diagnostic", "max_unmatched_full_vector_block_polynomial_residual_diagnostic", "max_unmatched_full_vector_block_laurent_residual_diagnostic", "max_near_unit_svd_polynomial_residual", "max_near_unit_svd_laurent_residual", "max_near_unit_vector_block_polynomial_residual_diagnostic", "max_near_unit_vector_block_laurent_residual_diagnostic", "dominant_svd_polynomial_residual", "dominant_svd_laurent_residual", "dominant_vector_block_polynomial_residual_diagnostic", "dominant_vector_block_laurent_residual_diagnostic", "hard_residual_definition", "vector_block_residual_role", "direct_formula_coefficient_relative_difference", "stable_classification_match", "all_gated_svd_residuals_finite", "point_status", "failure_code"
+    ],
+    "root_groups": ["selected/raw", "selected/retained", "pairing_compact/raw", "pairing_compact/retained"],
+    "root_datasets": ["offset", "count", "real", "imag", "svd_polynomial_residual", "svd_laurent_residual", "vector_block_polynomial_residual", "vector_block_laurent_residual", "finite", "removed_as_zero", "matched_physical", "unmatched_full", "paired_other_retained_index", "pair_relative_distance"],
+    "gates": {
+      "rho_abs_difference_to_step4": 1e-8,
+      "svd_polynomial_residual": 1e-8,
+      "svd_laurent_residual": 1e-8,
+      "formula_identity_relative_difference": 1e-12,
+      "saved_vs_recomputed_residual_abs_tolerance": 1e-12,
+      "saved_vs_recomputed_residual_relative_tolerance": 1e-8,
+      "csv_h5_float_abs_tolerance": 1e-14,
+      "stable_rule": "finite AND rho>0 AND rho<1",
+      "critical_rule": "abs(rho-1)<=1e-8",
+      "unmatched_full_max_abs_strictly_below": 0.9,
+      "origin_splitting_diagnostic_role": "INFO_UNLESS_SAFETY_GATE_FAILS"
+    },
+    "decision_policy": {
+      "hard_fail": [
+        "seal/source/schema/manifest/checkpoint/hash mismatch",
+        "missing or duplicate contracted point",
+        "rho abs difference to Step-4 greater than 1e-8",
+        "stable classification mismatch",
+        "independently recomputed gated polynomial or Laurent SVD residual nonfinite or greater than 1e-8",
+        "formula identity relative difference greater than 1e-12",
+        "unmatched full-root count/spectral-radius safety violation"
+      ],
+      "information_only": [
+        "old vector-block residual",
+        "compact/full-q rho and all-root distance diagnostics",
+        "origin multiplicity splitting when every unmatched-root safety gate passes"
+      ]
+    }
+  },
+  "mode_policy": {
+    "precheck": "May run immediately. It must not parse candidate pilot/full scientific files.",
+    "pilot-postcheck": "May run only after explicit external authorization and the explicit CLI flag; requires a sealed PASS 49-point run and repeatability record.",
+    "full-postcheck": "Implemented with the same checks over 5x2077=10385 points, but may run only after explicit external authorization and the explicit CLI flag. The validator never launches computation."
+  }
+}

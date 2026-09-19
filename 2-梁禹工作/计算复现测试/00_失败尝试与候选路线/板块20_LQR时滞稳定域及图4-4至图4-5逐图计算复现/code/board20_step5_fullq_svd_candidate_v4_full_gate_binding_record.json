@@ -1,0 +1,96 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_full_gate_binding_record_v1",
+  "recorded_date": "2026-08-25",
+  "status": "SEALED_STATIC_REVIEW_PASS_AWAITING_ROOT_AUTHORIZATION",
+  "purpose": "Bind the formal V2 gate contract, launcher, and revision after static and read-only evidence validation. This binding record is not a full authorization; its own SHA-256 must be bound together with the other three formal gate hashes by a future root-created full_authorization.json.",
+  "formal_gate_identity": {
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_contract.json",
+    "contract_sha256": "83F2DBFF885C9E9BCDF92E1BA6ED20EAC64CA82F25AE798559A07B9E496E58EC",
+    "launcher_relpath": "code/launch_board20_step5_fullq_svd_candidate_v4_full_v2.py",
+    "launcher_sha256": "6E4512997E12C733570B1B91B669315FE924745C20E08AE0C91DA81C1ADE155C",
+    "revision_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_revision_contract.json",
+    "revision_sha256": "03AFD62B2CB57B883C389D9E748F918EE1DE9860D239981891DD6E837F01A61F"
+  },
+  "waiting_lineage_immutability": {
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_waiting_contract.json",
+    "contract_sha256": "8047E2336FBFECC147861B08A480C269A0A0AD96E5E81A459CF58D136E698DCC",
+    "launcher_relpath": "code/launch_board20_step5_fullq_svd_candidate_v4_full.py",
+    "launcher_sha256": "202504A9A387E0103913746ADC4BB4C789BF73E501B7FE4FA25F60038592CE43",
+    "modified_by_formal_v2_work": false
+  },
+  "sealed_candidate_identity": {
+    "candidate_contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "candidate_script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "pilot_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+    "pilot_repeatability_sha256": "A574B00F434D7AD471134F52288D6B474503D53F02C824A35FD3677EEAE2A560",
+    "pilot_run_status_sha256": "445FAB2E3EF6F980B6B795B04768F7CA8CCD08C9C9F9C306F677A394347D1F14",
+    "preflight_pass_count": 58,
+    "selftest_pass_count": 80,
+    "pilot_route_count": 5,
+    "pilot_point_count": 49,
+    "pilot_checkpoint_complete_count": 5,
+    "pilot_checkpoint_h5_hash_order_match_count": 5
+  },
+  "sealed_validator_and_postcheck_identity": {
+    "validator_script_sha256": "8BB46EEC8A4F6592AFC3F4F5EEAC137F9BD6666C808F6AAB7293A982BCF6E5C1",
+    "validator_contract_sha256": "2C7C7EB737F1DAB1B88A0AEAF9FCA9324E0B48E0789BB070696141DF30B1FE8D",
+    "validator_revision_sha256": "A484E2A066D4071C2A6705AA288F7D6E9C04651A94A35053BF009125D1C21A9F",
+    "validator_binding_sha256": "A94978BDF49F45D4F61EAB92BA541ADA4D1CA9A4A3AA9EEAC64B1B3444FB5582",
+    "validator_precheck_repeatability_sha256": "7994C7107EAB4E37A300DD4E49CF48FD37EFE0DCB0CF5D736F6215F645ECEB95",
+    "pilot_postcheck_main_sha256": "AED1459414C9D010FB8145DF433C76CE2E14974E7E25150CF4CE8CC66D592CB6",
+    "pilot_postcheck_artifact_count": 9,
+    "pilot_postcheck_pass_count": 93,
+    "pilot_postcheck_info_count": 4,
+    "pilot_postcheck_fail_count": 0,
+    "pilot_postcheck_run1_baseline_sha256": "E2C05F3211E03B0D37F707760D3C37A7C81AAF76FDEC6156F5823F71BB94F4E8",
+    "pilot_postcheck_repeatability_sha256": "337E79B7120A033A45C23E9E57C254C9DC43FCB7D7C5A711288C57FEAFE791C5",
+    "pilot_postcheck_run_count": 2,
+    "pilot_postcheck_artifact_mismatch_count": 0,
+    "pilot_postcheck_hard_gate_failure_count": 0
+  },
+  "static_review": {
+    "formal_contract_json_parse": "PASS",
+    "revision_contract_json_parse": "PASS",
+    "launcher_python_ast_parse": "PASS",
+    "launcher_cli_help": "PASS",
+    "candidate_import_absent": true,
+    "subprocess_run_call_count": 1,
+    "subprocess_shell_false": true,
+    "authorization_gate_precedes_sealed_evidence_mode_boundary_and_candidate_command": true,
+    "authorization_file_absent_static_fail_closed": true,
+    "waiting_lineage_hashes": "PASS",
+    "candidate_fixed_hash_schema_repeatability_manifest_and_pilot_routes": "PASS",
+    "validator_v4_identity_and_precheck_repeatability": "PASS",
+    "pilot_postcheck_97_checks_and_9_artifacts": "PASS",
+    "pilot_postcheck_two_run_determinism": "PASS",
+    "full_point_order_2077": "PASS",
+    "launcher_full_or_resume_mode_executed_during_review": false,
+    "candidate_invoked_during_review": false,
+    "full_directory_created_during_review": false,
+    "authorization_created_during_review": false
+  },
+  "review_iteration_record": {
+    "initial_read_only_evidence_test_failure_count": 1,
+    "cause": "The first formal draft used the preregistered but incorrect precheck key each_run_protected_file_change_count instead of the sealed document's actual key protected_file_change_count_each_run.",
+    "classification": "FORMAL_GATE_FIELD_NAME_IMPLEMENTATION_ERROR_BEFORE_SEAL_NOT_SCIENTIFIC_FAILURE",
+    "correction": "The formal contract and V2 launcher were corrected before this binding record was created; their hashes changed and the revision record was updated.",
+    "final_read_only_evidence_retest": "PASS",
+    "candidate_or_validator_files_modified": false
+  },
+  "authorization_boundary": {
+    "formal_contract_status": "SEALED_AWAITING_ROOT_AUTHORIZATION",
+    "effective_full_authorization": false,
+    "full_authorization_relpath": "code/full_authorization.json",
+    "future_authorization_must_bind_four_gate_hashes": [
+      "contract",
+      "launcher",
+      "revision",
+      "binding"
+    ],
+    "future_authorization_must_bind_user_original_goal_attestation": true,
+    "this_binding_record_authorizes_full": false
+  },
+  "full_authorization_existed_at_seal": false,
+  "full_directory_existed_at_seal": false
+}

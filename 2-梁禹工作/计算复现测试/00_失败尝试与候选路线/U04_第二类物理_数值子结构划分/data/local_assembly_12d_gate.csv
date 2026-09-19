@@ -1,0 +1,9 @@
+Gate,Expected,Observed,Result,Evidence
+Physical substructure Craig-Bampton matrix available,5 DOF for each physical candidate,"PASS: PDmonicanshu2.m=5, PDmonicanshu3.m=5",PASS,local_pd_reductions.mat
+Numerical substructure Craig-Bampton matrix available,9 DOF for each numerical candidate,"FAIL: New_Ns2/New_Ns3 contain no Guyan or Craig-Bampton reduction",FAIL,New_Ns2.m and New_Ns3.m exact source plus local_new_script_attempts.csv
+Two shared-interface coordinates explicitly assembled,2 shared coordinates and an explicit Boolean/assembly operator,"FAIL: locate arrays exist, but no reduced P/N assembly operator exists",FAIL,locate/locate2 dimensions in local_interface_dimension_audit.csv
+Physical matrix and load-vector dimensions internally compatible,matrix rows equal load-vector rows,"FAIL: New_Ps3 has 9x9 matrices and 6x1 vectors (New_Ps2 is 6/6)",FAIL,unit_coeff_dimension_probe rows in local_interface_dimension_audit.csv
+Numerical matrix and load-vector dimensions internally compatible,matrix rows equal load-vector rows,"FAIL: New_Ns2 has 11x11 matrices and 15x1 vectors; New_Ns3 is not a reduced 9-DOF model",FAIL,unit_coeff_dimension_probe rows in local_interface_dimension_audit.csv
+Newmark a0/a1 provenance available in frozen inputs,author-defined coefficient values or initialization route,"FAIL: SLX declares a0/a1 as workspace parameters but frozen inputs provide no values",FAIL,local_slx_static_probe XML and frozen m-file search
+Assembled 12x12 M/C/K matrices produced by frozen route,all three matrices finite and dimension 12x12,"FAIL: no frozen script creates assembled 12x12 M/C/K matrices",FAIL,all six frozen local-candidate scripts
+Final 12-DOF calculation-level reproduction gate,all preceding gates PASS,"FAIL_PENDING_DECISION",FAIL_PENDING_DECISION,local_assembly_12d_gate.csv

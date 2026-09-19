@@ -1,0 +1,222 @@
+{
+  "schema_version": "board20_step5_validation_contract_v1",
+  "purpose": "Independent Python scalar-delay-state validation and strictly post-hoc MATLAB/Python comparison for Board 20 Step 5.",
+  "separation_policy": {
+    "compute_may_read": [
+      "code/board20_step4_route_manifest.json",
+      "the five sealed Step-2 workspace_complete.mat files referenced by that manifest"
+    ],
+    "compute_forbidden_path_fragments": [
+      "outputs/step4_rho_grids",
+      "outputs\\step4_rho_grids"
+    ],
+    "compute_forbidden_scientific_inputs": [
+      "rho",
+      "poles",
+      "raw_roots",
+      "stable",
+      "critical"
+    ],
+    "comparison_may_read_step4_only_after_compute_artifacts_are_closed_and_hashed": true,
+    "comparison_must_not_modify_compute_outputs": true
+  },
+  "paths": {
+    "compute_script": "code/compute_board20_step5_independent.py",
+    "compute_contract": "code/board20_step5_compute_contract.json",
+    "step4_manifest": "code/board20_step4_route_manifest.json",
+    "step4_output_root": "outputs/step4_rho_grids",
+    "compute_output_root": "outputs/step5_independent_compute",
+    "audit_output_root": "outputs/step5_audit",
+    "validation_log_root": "logs/step5_validation",
+    "input_manifest": "input/input_manifest.csv",
+    "input_freeze_validation": "outputs/input_freeze_validation.json"
+  },
+  "sealed_compute_identity": {
+    "compute_script_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "compute_contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2"
+  },
+  "numeric_gates": {
+    "rho_absolute_difference_max": 1e-08,
+    "root_relative_matching_difference_max": 1e-08,
+    "relative_residual_max": 1e-08,
+    "critical_absolute_distance": 1e-08,
+    "direct_formula_relative_difference_max": 1e-12,
+    "formula_identity_relative_difference_max": 1e-12,
+    "H_placement_relative_difference_max": 1e-12,
+    "stable_rule": "finite rho and rho > 0 and rho < 1",
+    "critical_rule": "finite rho and abs(rho - 1) <= 1e-8",
+    "zero_root_rule": "remove only when clearing_power > 0 and abs(root) <= recorded zero_root_tolerance",
+    "near_unit_root_minimum_modulus": 0.9,
+    "strict_full_root_set_policy": "DIAGNOSTIC_ONLY: do not relax zero_root_tolerance or delete a theoretical root count. If a full-q companion splits a multiple clearing-origin root above the registered tolerance, report STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING while separately adjudicating dominant rho and near-unit roots."
+  },
+  "common_grid": {
+    "l_values": [0, 30],
+    "j_values": [0, 66],
+    "shape": [31, 67],
+    "points_per_route": 2077,
+    "route_count": 5,
+    "total_points": 10385
+  },
+  "routes": [
+    {
+      "route_id": "main_ori_div1",
+      "route_role": "PRIMARY",
+      "division": "div1",
+      "formula": "ORI_DIV1_H_RIGHT",
+      "matrix_order": 15,
+      "delay_dofs_one_based": [1, 6],
+      "lqr_status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]]
+    },
+    {
+      "route_id": "main_guyan_div1",
+      "route_role": "PRIMARY",
+      "division": "div1",
+      "formula": "GUYAN_DIV1_H_LEFT",
+      "matrix_order": 5,
+      "delay_dofs_one_based": [1, 2],
+      "lqr_status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]]
+    },
+    {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "route_role": "ALTERNATIVE_NOT_PRIMARY",
+      "division": "div1",
+      "formula": "GUYAN_DIV1_H_LEFT",
+      "matrix_order": 5,
+      "delay_dofs_one_based": [1, 2],
+      "lqr_status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]]
+    },
+    {
+      "route_id": "main_ori_div2",
+      "route_role": "PRIMARY",
+      "division": "div2",
+      "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "matrix_order": 5,
+      "delay_dofs_one_based": [1, 2],
+      "lqr_status": "DISCRETE_DARE_RECOMPUTE_REQUIRED",
+      "feedback_placement": "OUTSIDE_H",
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66], [25, 40], [25, 60], [5, 66]]
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "route_role": "PRIMARY",
+      "division": "div2",
+      "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "matrix_order": 5,
+      "delay_dofs_one_based": [1, 2],
+      "lqr_status": "DISCRETE_DARE_RECOMPUTE_REQUIRED",
+      "feedback_placement": "OUTSIDE_H",
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66], [25, 40], [25, 60], [5, 66]]
+    }
+  ],
+  "scalar_delay_state_contract": {
+    "state": "x_k=[q_k,q_(k-1),scalar_chain_1,scalar_chain_2]",
+    "channel_chain_orders": "[l,j]",
+    "compact_scalar_augmented_order": "2*matrix_order+l+j",
+    "full_q_companion_pilot_order": "matrix_order*(max(l,j)+2)",
+    "order_identity_warning": "The compact scalar-delay realization and the full-q Laurent companion are different linearizations. Record both orders and compare only their retained nonzero roots.",
+    "nonzero_root_equivalence": "The compact retained roots must satisfy the same Laurent characteristic matrix. Complete compact/full-q root-set equality is diagnostic because a multiple clearing-origin zero may numerically split above the fixed zero tolerance; never force-delete by theoretical multiplicity.",
+    "right_H_signal": "coordinate signal e_r^T q with D0 e_r and Dm1 e_r output directions",
+    "left_H_signal": "u_r(k)=e_r^T D0 q_k+e_r^T Dm1 q_(k-1)",
+    "div2_feedback": "S^T(DeltaC/dt+DeltaK)S and S^T(-DeltaC/dt)S are undelayed and outside H"
+  },
+  "required_point_columns": [
+    "route_id", "route_role", "declared_method", "route_formula", "l", "j",
+    "matrix_order", "compact_order", "full_q_order", "poly_degree", "clearing_power",
+    "compact_raw_root_count", "compact_removed_zero_count", "compact_retained_root_count",
+    "compact_zero_root_tolerance",
+    "rho_compact", "stable_compact", "critical_compact",
+    "max_polynomial_residual_compact", "max_laurent_residual_compact",
+    "full_crosscheck_performed", "full_raw_root_count", "full_removed_zero_count",
+    "full_zero_root_tolerance",
+    "full_retained_root_count", "rho_full", "stable_full",
+    "max_polynomial_residual_full", "max_laurent_residual_full",
+    "compact_full_rho_abs_diff", "root_match_max_relative_diff",
+    "near_unit_root_match_max_relative_diff", "extra_full_roots_are_zero",
+    "strict_root_set_status", "theoretical_extra_zero_count", "observed_extra_zero_count",
+    "full_q_origin_multiplicity_splitting_count", "full_q_origin_multiplicity_splitting_max_abs",
+    "direct_formula_coefficient_relative_difference", "dominant_root_real", "dominant_root_imag",
+    "point_status", "failure_code"
+  ],
+  "required_route_files": [
+    "route_status.json",
+    "point_summary.csv",
+    "roots.h5",
+    "checkpoint.h5",
+    "checkpoint.json",
+    "point_runtime.csv"
+  ],
+  "required_top_level_compute_files": [
+    "preflight.json",
+    "selftest.json",
+    "contracts_status.json",
+    "{mode}/run_status.json",
+    "{mode}/artifact_manifest.csv"
+  ],
+  "required_hdf5_semantics": {
+    "point_group": "points",
+    "point_fields": [
+      "l", "j", "point_status", "rho_compact", "stable_compact", "critical_compact",
+      "max_polynomial_residual_compact", "max_laurent_residual_compact",
+      "compact_order", "full_q_order", "poly_degree", "clearing_power",
+      "compact_zero_root_tolerance", "full_zero_root_tolerance",
+      "compact_removed_zero_count", "full_removed_zero_count", "full_crosscheck_performed",
+      "rho_full", "compact_full_rho_abs_diff", "root_match_max_relative_diff",
+      "near_unit_root_match_max_relative_diff", "extra_full_roots_are_zero",
+      "strict_root_set_status", "theoretical_extra_zero_count", "observed_extra_zero_count",
+      "full_q_origin_multiplicity_splitting_count", "full_q_origin_multiplicity_splitting_max_abs",
+      "record_json"
+    ],
+    "ragged_groups": ["compact/raw", "compact/retained", "full_q/raw", "full_q/retained"],
+    "ragged_fields": ["offset", "count", "real", "imag", "polynomial_residual", "laurent_residual"]
+  },
+  "paper_routes": [
+    {
+      "route_id": "masters_thesis_formula",
+      "required_status": "CONTRACT_NOT_CLOSED",
+      "forbidden_to_emit_rho_grid": true,
+      "unresolved": ["input_unit", "B_mapping", "scalar_alpha_numeric_entry", "second_division_coordinate_mapping", "continuous_CARE_numeric_entry"]
+    },
+    {
+      "route_id": "manuscript_0824_formula",
+      "required_status": "CONTRACT_NOT_CLOSED",
+      "forbidden_to_emit_rho_grid": true,
+      "unresolved": ["input_unit", "B_a_mapping", "scalar_alpha_numeric_entry", "psi1_psi11_coordinate_mapping", "psi6_reconstruction_mapping", "continuous_CARE_numeric_entry"]
+    }
+  ],
+  "failed_routes": [
+    {"route_id": "main_cb_div1", "required_status": "EXECUTION_FAIL", "forbidden_to_emit_grid": true},
+    {"route_id": "main_cb_div2", "required_status": "EXECUTION_FAIL", "forbidden_to_emit_grid": true},
+    {"route_id": "energy_guyan_div1", "required_status": "EXECUTION_FAIL", "forbidden_to_emit_grid": true},
+    {"route_id": "energy_guyan_div2", "required_status": "EXECUTION_FAIL", "forbidden_to_emit_grid": true}
+  ],
+  "audit_sampling": {
+    "fixed_points": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]],
+    "additional_div2_points": [[25, 40], [25, 60], [5, 66]],
+    "random_points_per_route": 16,
+    "random_seed_rule": "first 64 bits of SHA-256(route_id + compute_contract_sha256)",
+    "boundary_rule": "all points whose strict stable classification differs from at least one orthogonal in-grid neighbour, union all critical points",
+    "required_checks": [
+      "direct Laurent residual for every compact retained root",
+      "dominant rho equivalence",
+      "strict stability classification equivalence",
+      "dominant and modulus-at-least-0.9 root equivalence"
+    ],
+    "diagnostic_checks": [
+      "complete post-hoc root-set equivalence; report STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING without weakening the zero-root rule"
+    ]
+  },
+  "protected_source_policy": {
+    "input_manifest_expected_sha256": "A5D5ED0977547438365C1967EE8A0C63FF5259006CB4979050871F1957069E94",
+    "frozen_manifest_rows": 185,
+    "verify_every_frozen_copy_hash": true,
+    "verify_live_source_when_policy_is_immutable": true,
+    "never_write_protected_sources": true
+  },
+  "failed_route_forbidden_grid_locations": [
+    "outputs/step5_independent_compute/{route_id}",
+    "outputs/step4_rho_grids/{route_id}"
+  ]
+}

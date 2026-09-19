@@ -1,0 +1,119 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v5_full_postcheck_repeatability_v1",
+  "recorded_date": "2026-08-25",
+  "status": "PASS",
+  "mode": "full-postcheck",
+  "record_created_only_after_two_run_comparison": true,
+  "run_count": 2,
+  "each_run_exit_code": 0,
+  "each_run_overall_status": "PASS",
+  "each_run_total_checks": 104,
+  "each_run_pass_count": 100,
+  "each_run_info_count": 4,
+  "each_run_fail_count": 0,
+  "each_run_point_comparison_count": 10385,
+  "each_run_previous_conditioning_point_count": 8,
+  "artifact_count_compared": 9,
+  "artifact_match_count": 9,
+  "artifact_mismatch_count": 0,
+  "scientific_report_and_log_artifacts_byte_identical": true,
+  "comparison_rule": "BYTE_COUNT_AND_SHA256_EQUAL_FOR_ALL_NINE_ARTIFACTS",
+  "run1_baseline_relpath": "code/board20_step5_fullq_svd_candidate_validator_v5_full_postcheck_run1_baseline.json",
+  "run1_baseline_sha256": "2E41D06112E0BFBCF34DBA86372D6502387E17BAFCB74DE538786F4DE3181130",
+  "validator_identity": {
+    "script_sha256": "FF8059A8E594A143652B087F07F97593233FF6462152A2BC610AF4FB0BEA83C1",
+    "contract_sha256": "8DE11BE268A7BC66E8085BDCF1032018B8230586EF4B0C3413D7672BA4B0358B",
+    "revision_sha256": "DD1C1EAF2F44A42DE8F39F6A5BF4BB0077B8E4CF8F0E050499328F8704EB68A3",
+    "binding_sha256": "F3B7718E036FD100BA0C3593FEFC7FED9814117BDB2BCEB0CFC77FB769054424"
+  },
+  "candidate_identity": {
+    "full_artifact_manifest_sha256": "F35365D414E722ABCE201750B5D7F6DC3B315348414CD057C7A51FB817E135B9",
+    "full_run_status_sha256": "6B5225875E708CA3580D715D8071F8A76FB29A9E80FD39AFA7BE8EF1F941B7C4",
+    "full_run_metadata_sha256": "3298ABD78A710973238BD39221FB129317CDB485F2480B3AD99A91E5C1FED95F",
+    "candidate_full_rerun_required": false,
+    "candidate_full_repeatability_file_expected": false,
+    "candidate_computation_launched_by_either_validator_run": false,
+    "candidate_outputs_modified_by_either_validator_run": false,
+    "protected_full_file_count": 35,
+    "postcheck_protected_file_count": 163,
+    "protected_file_change_count_each_run": 0
+  },
+  "run1_artifacts": {
+    "logs/step5_fullq_svd_candidate_validation_v5_full/v5_full_validator_full_postcheck.log": {
+      "bytes": 20174,
+      "sha256": "7CBC52F24F50A98D46148F576147C2060AA3B18C5933954CF846F6F9D539C2E0"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck.json": {
+      "bytes": 513567,
+      "sha256": "F3B995D9CFB265849B288E8F5E4C44C4E9E842B7D5F541B1CF8095D519106DDE"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_artifact_manifest.csv": {
+      "bytes": 871,
+      "sha256": "5EB5C441894297279DC5DFD260F8F291442C455C02B9019164D6EEA123F047D3"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_checks.csv": {
+      "bytes": 460613,
+      "sha256": "EB5BDD550EE5D36E13769A92ADF545E0BA8D4369F948D6608200351D8BFB8111"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_point_comparison.csv": {
+      "bytes": 2428683,
+      "sha256": "FE62A96F4EAA3D8ECE1ED5DAD47336CBF3CFAD98E0986D3AAD059D0B4B0A1E23"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_previous_conditioning_points.csv": {
+      "bytes": 2214,
+      "sha256": "2804683282E6569FF421056481BD6AE41418E7DB5EF2C5E49FCA6B290AF9BA23"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_protected_hashes.csv": {
+      "bytes": 33131,
+      "sha256": "F90F03F088BD69C9A88A60BC78DD3A6F17CC236CB5E072CC86D97D382612408B"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_report.md": {
+      "bytes": 2222,
+      "sha256": "D32BC6E6C53A8A3006316128C1647C4A664EB09493049D84922D2D4D25F0D212"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_route_summary.csv": {
+      "bytes": 825,
+      "sha256": "179BB5659395809CCA658FBF5EB37A02C2E27392DB2A731BF117C44A6646CF9A"
+    }
+  },
+  "run2_artifacts": {
+    "logs/step5_fullq_svd_candidate_validation_v5_full/v5_full_validator_full_postcheck.log": {
+      "bytes": 20174,
+      "sha256": "7CBC52F24F50A98D46148F576147C2060AA3B18C5933954CF846F6F9D539C2E0"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck.json": {
+      "bytes": 513567,
+      "sha256": "F3B995D9CFB265849B288E8F5E4C44C4E9E842B7D5F541B1CF8095D519106DDE"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_artifact_manifest.csv": {
+      "bytes": 871,
+      "sha256": "5EB5C441894297279DC5DFD260F8F291442C455C02B9019164D6EEA123F047D3"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_checks.csv": {
+      "bytes": 460613,
+      "sha256": "EB5BDD550EE5D36E13769A92ADF545E0BA8D4369F948D6608200351D8BFB8111"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_point_comparison.csv": {
+      "bytes": 2428683,
+      "sha256": "FE62A96F4EAA3D8ECE1ED5DAD47336CBF3CFAD98E0986D3AAD059D0B4B0A1E23"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_previous_conditioning_points.csv": {
+      "bytes": 2214,
+      "sha256": "2804683282E6569FF421056481BD6AE41418E7DB5EF2C5E49FCA6B290AF9BA23"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_protected_hashes.csv": {
+      "bytes": 33131,
+      "sha256": "F90F03F088BD69C9A88A60BC78DD3A6F17CC236CB5E072CC86D97D382612408B"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_report.md": {
+      "bytes": 2222,
+      "sha256": "D32BC6E6C53A8A3006316128C1647C4A664EB09493049D84922D2D4D25F0D212"
+    },
+    "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_route_summary.csv": {
+      "bytes": 825,
+      "sha256": "179BB5659395809CCA658FBF5EB37A02C2E27392DB2A731BF117C44A6646CF9A"
+    }
+  },
+  "step5_independent_validation_repeatability_gate": "PASS",
+  "step6_historical_mask_comparison_authorized_by_this_record": false
+}

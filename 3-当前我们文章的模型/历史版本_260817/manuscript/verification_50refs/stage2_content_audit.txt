@@ -1,0 +1,24 @@
+RHTS STAGE 2 CLEAN SOURCE AUDIT
+
+Output TeX: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\main_50refs_clean.tex
+TeX bytes: 52644
+TeX SHA-256: EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995
+Output BibTeX: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\reference_50refs_clean.bib
+BibTeX bytes: 16610
+BibTeX SHA-256: F48DD73DF3DF7927E90D07C1B81D24A540079A081B9039D494250E6078BB77EA
+
+PASS | Abstract equals the source abstract after removal of one rev wrapper
+PASS | Six-section body equals the source after only authorized wrapper, citation, and figure-path conversions
+PASS | rev wrappers removed: 45; their contents retained
+PASS | citedoi/newcitedoi converted to cite: 25/35
+PASS | safeincludegraphics converted to includegraphics: 10
+PASS | figure paths mapped to ten existing self-contained files
+PASS | labels preserved in order: 59 unique
+PASS | citation commands/unique keys: 60/50
+PASS | all 50 citation keys match all 50 BibTeX keys
+PASS | all begin/end environment sequences remain balanced and unchanged
+PASS | forbidden revision, DOI, placeholder, and custom-command remnants: 0
+PASS | BibTeX differs only by removal of doi and note fields
+PASS | historical main.tex/reference.bib were not targeted
+
+NOTE | Bibliographic author and journal corrections remain workflow task 3.

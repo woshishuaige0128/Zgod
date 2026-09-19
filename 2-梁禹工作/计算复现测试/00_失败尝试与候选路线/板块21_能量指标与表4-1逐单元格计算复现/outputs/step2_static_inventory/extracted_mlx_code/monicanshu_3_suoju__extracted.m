@@ -1,0 +1,293 @@
+% Static extraction from monicanshu_3_suoju.mlx
+% Source SHA-256: D7AC9307B1A07D7AA442FDF37E7882BAE3EC519C021A5A317FFE9D9374E70D01
+% No MATLAB execution was performed.
+
+%% CODE_CELL_C001
+dt = 1/1024;
+%%% MATERIAL PROPERTIES
+Lb = 762/1000;                      % Beam length (m)
+Lc = 635/1000;                      % Column length (m)
+Ic = 2.520*(25.4/1000)^4;           % 2nd Moment of Area x column (m^4)
+Ib = 0.6132*(25.4/1000)^4;          % 2nd Moment of Area x beam (m^4)
+Ac = 1.670*(25.4/1000)^2;           % Cross sectional Area column (m^2)
+Ab = 0.947*(25.4/1000)^2;           % Cross sectional Area beam (m^2)
+
+KRrt  = zeros(15,15);                   % Initialize stiffness matrix
+MRrt  = zeros(15,15);                   % Initialize mass matrix
+CRrt  = zeros(15,15);                   % Initialize damping matrix
+
+E = 206e9;                          % steel modulus of elasticity (Pa)
+rho = 785e3.*1.7;                       % steel density (kg/m^3)
+
+%%% MASS MATRIX
+
+mass_b = rho*Ab*Lb;                 % Total Beam Element Mass [kg]
+mass_c = rho*Ac*Lc;                 % Total Beam Column Mass [kg]
+
+% Lumped mass matrix
+M1 = (3*mass_b + 4*mass_c)/2;
+%M1 = mass_b + mass_c;
+M2 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3*2)/8;
+M3 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3*2)/8;
+M4 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3)/8;
+M5 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3)/8;
+MRrt = diag([M1 M2 M3 M1 M3 M2 M1 M2 M3 M1 M3 M2 M1 M4 M5 M1 M5 M4]);
+
+
+%%% STIFFNESS MATRIX
+
+% Plane Beam-Column Element Stiffness Matrix
+kc = [Ac*E/Lc       0              0         -Ac*E/Lc    0              0           ;
+       0        12*E*Ic/Lc^3   6*E*Ic/Lc^2    0         -12*E*Ic/Lc^3   6*E*Ic/Lc^2 ;
+       0        6*E*Ic/Lc^2    4*E*Ic/Lc      0         -6*E*Ic/Lc^2    2*E*Ic/Lc   ;
+      -Ac*E/Lc      0              0         Ac*E/Lc     0              0           ;
+       0        -12*E*Ic/Lc^3  -6*E*Ic/Lc^2   0         12*E*Ic/Lc^3    -6*E*Ic/Lc^2;
+       0        6*E*Ic/Lc^2    2*E*Ic/Lc      0         -6*E*Ic/Lc^2    4*E*Ic/Lc]  ;
+kb = [Ab*E/Lb       0              0         -Ab*E/Lb    0              0           ;
+       0        12*E*Ib/Lb^3   6*E*Ib/Lb^2    0         -12*E*Ib/Lb^3   6*E*Ib/Lb^2 ;
+       0        6*E*Ib/Lb^2    4*E*Ib/Lb      0         -6*E*Ib/Lb^2    2*E*Ib/Lb   ;
+      -Ab*E/Lb      0              0         Ab*E/Lb     0              0           ;
+       0        -12*E*Ib/Lb^3  -6*E*Ib/Lb^2   0         12*E*Ib/Lb^3    -6*E*Ib/Lb^2;
+       0        6*E*Ib/Lb^2    2*E*Ib/Lb      0         -6*E*Ib/Lb^2    4*E*Ib/Lb]  ;
+% Neglecting axial deformations:
+kc(1,1:end) = zeros(1,size(kc,1));
+kc(4,1:end) = zeros(1,size(kc,1));
+kc(1:end,1) = zeros(1,size(kc,1));
+kc(1:end,4) = zeros(1,size(kc,1));
+%%% Transformation matrices
+theta_c = pi/2;
+theta_b = 0;
+
+Tc = [cos(theta_c)   sin(theta_c)   0       0             0          0 ;
+      -sin(theta_c)  cos(theta_c)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_c)   sin(theta_c)  0 ;  
+       0                    0       0   -sin(theta_c)  cos(theta_c)  0 ;
+       0                    0       0       0             0          1  ];
+   
+Tb = [cos(theta_b)   sin(theta_b)   0       0             0          0 ;
+      -sin(theta_b)  cos(theta_b)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_b)   sin(theta_b)  0 ;  
+       0                    0       0   -sin(theta_b)  cos(theta_b)  0 ;
+       0                    0       0       0             0          1  ];
+
+Kc = Tc'*kc*Tc;         %Global stiffness matrix of columns
+Kb = Tb'*kb*Tb;         %Global stiffness matrix of the beam
+KRrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0	0	0	0;
+Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0;
+0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0;
+0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0;
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0;
+0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6);
+0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6)	Kb(1,4)	0	0;
+0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6)	0	0	0;
+0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)	0	Kb(3,6)	0;
+0	0	0	0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+Kb(4,4)	Kc(4,6)	Kc(4,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)	Kb(6,6)+Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+% Rayleigh Damping Method
+[V, D] = eig(KRrt, MRrt);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+fre = diag(sqrt(D)/(2*pi))
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRrt = alphas(1) * MRrt + alphas(2) * KRrt;
+
+%给出物理子结构定位
+locate2 = [1,2,3,7,8,9,13,14,15];
+KPrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6)	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+Kc(6,1)	Kc(6,3)	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0;
+Kc(6,1)	0	Kc(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6);
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	Kc(6,1)	0	Kc(6,3)	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6);
+];
+
+M6 = mass_b + 2*mass_c;
+%M3 = (mass_b)*(Lb.^2)/12+(mass_c)*(Lc.^2)/12;
+MPrt = diag([M6 M2 M2 M6 M4 M4 M6 M4 M4]);
+
+% Compute damping matrix
+CPrt = alphas(1) * MPrt + alphas(2) * KPrt;
+
+index1 = [1,7];
+index2 = [2,3,4,5,6,8,9];
+index3 = [1,4,7];
+index4 = [2,3,5,6,8,9];
+order = [index3,index4];
+
+Mmn = MPrt(index1,index1);
+Mmsn = MPrt(index1,index2);
+
+Cmn = CPrt(index1,index1);
+Cmsn = CPrt(index1,index2);
+
+Kmn = KPrt(index1,index1);
+Kmsn = KPrt(index1,index2);
+Ksn = KPrt(index2,index2);
+Ksmn = KPrt(index2,index1);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index1)); % 主自由度单位矩阵
+TP = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KPrt(index2,index2);
+Mss = MPrt(index2,index2);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KPrt(index2,index1);
+
+n_mn = length(index1);
+TP_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index1, index2];
+
+MP_cb = TP_cb' * MPrt(idx_all, idx_all) * TP_cb;
+KP_cb = TP_cb' * KPrt(idx_all, idx_all) * TP_cb;
+CP_cb = TP_cb' * CPrt(idx_all, idx_all) * TP_cb;
+
+%% CODE_CELL_C002
+KNrt = KRrt;
+KNrt(locate2,locate2) = KRrt(locate2,locate2)-KPrt;
+MNrt = MRrt;
+MNrt(locate2,locate2) = MRrt(locate2,locate2)-MPrt;
+CNrt = CRrt;
+CNrt(locate2,locate2) = CRrt(locate2,locate2)-CPrt;
+
+KNrt_1 = KNrt;
+KPrt_1 = KRrt-KNrt_1;
+MNrt_1 = MNrt;
+MPrt_1 = MRrt-MNrt_1;
+CNrt_1 = CNrt;
+CPrt_1 = CRrt-CNrt_1;
+
+locate1 = [4,5,6,10,11,12,16,17,18];
+KNrt_2 = KNrt(locate1,locate1);
+MNrt_2 = MNrt(locate1,locate1);
+CNrt_2 = alphas(1) * MNrt_2 + alphas(2) * KNrt_2;
+
+KNrt_1 = zeros(18);
+CNrt_1 = zeros(18);
+KNrt_1(locate1,locate1) = KNrt_2;
+CNrt_1(locate1,locate1) = CNrt_2;
+
+Mmn = MNrt_2(index3,index3);
+Mmsn = MNrt_2(index3,index4);
+
+Cmn = CNrt_2(index3,index3);
+Cmsn = CNrt_2(index3,index4);
+
+Kmn = KNrt_2(index3,index3);
+Kmsn = KNrt_2(index3,index4);
+Ksn = KNrt_2(index4,index4);
+Ksmn = KNrt_2(index4,index3);
+
+KNren = (Kmn-Kmsn*(Ksn\Ksmn));
+MNren = (Mmn-Mmsn*(Ksn\Ksmn));
+CNren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵
+TN = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KNrt_2(index4,index4);
+Mss = MNrt_2(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KNrt_2(index4,index3);
+
+n_mn = length(index3);
+TN_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MN_cb = TN_cb' * MNrt_2(idx_all, idx_all) * TN_cb;
+KN_cb = TN_cb' * KNrt_2(idx_all, idx_all) * TN_cb;
+CN_cb = TN_cb' * CNrt_2(idx_all, idx_all) * TN_cb;
+
+%% CODE_CELL_C003
+index5 = [1,13,4,10,16];
+index6 = [7,2,3,5,6,8,9,11,12,14,15,17,18];
+order = [index5,index6];
+
+Mmn = MRrt(index5,index5);
+Mmsn = MRrt(index5,index6);
+
+Cmn = CRrt(index5,index5);
+Cmsn = CRrt(index5,index6);
+
+Kmn = KRrt(index5,index5);
+Kmsn = KRrt(index5,index6);
+Ksn = KRrt(index6,index6);
+Ksmn = KRrt(index6,index5);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index5)); % 主自由度单位矩阵
+T = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KRrt(index6,index6);
+Mss = MRrt(index6,index6);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index6,index5);
+
+n_mn = length(index5);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index5, index6];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;

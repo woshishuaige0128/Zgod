@@ -1,0 +1,10 @@
+﻿comparison,dataset_id,filename,floor,method,sample_count,time_max_abs_s,response_max_abs_mm,response_rmse_mm,relative_fro,peak_normalized_max_abs,correlation,time_tolerance_s,abs_tolerance_mm,peak_normalized_tolerance,status
+adapted_run1_vs_run2,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Original,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_run2,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Guyan,40961,0.0,0.0,0.0,0.0,0.0,0.9999999999999999,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_run2,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Craig-Bampton,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_2026_plotting_baseline,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Original,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-10,1e-10,PASS
+adapted_run1_vs_2026_plotting_baseline,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Guyan,40961,0.0,0.0,0.0,0.0,0.0,0.9999999999999999,1e-14,1e-10,1e-10,PASS
+adapted_run1_vs_2026_plotting_baseline,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Craig-Bampton,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-10,1e-10,PASS
+independent_rk4_vs_adapted_run1,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Original,40961,0.0,9.592326932761353e-14,9.783485227727979e-15,1.5499799692392517e-15,2.775423713602875e-15,1.0,1e-14,1e-08,1e-08,PASS
+independent_rk4_vs_adapted_run1,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Guyan,40961,0.0,5.258016244624741e-13,8.40299842959573e-14,1.1789131402146844e-14,1.3661482188178777e-14,1.0000000000000002,1e-14,1e-08,1e-08,PASS
+independent_rk4_vs_adapted_run1,division2_chirp,第二类划分_Chirp响应.mat,Floor 3,Craig-Bampton,40961,0.0,7.105427357601002e-14,9.231219388512952e-15,1.4622022552045914e-15,2.055342129252606e-15,1.0000000000000002,1e-14,1e-08,1e-08,PASS

@@ -1,0 +1,10 @@
+﻿comparison,dataset_id,filename,floor,method,sample_count,time_max_abs_s,response_max_abs_mm,response_rmse_mm,relative_fro,peak_normalized_max_abs,correlation,time_tolerance_s,abs_tolerance_mm,peak_normalized_tolerance,status
+adapted_run1_vs_run2,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Original,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_run2,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Guyan,40961,0.0,0.0,0.0,0.0,0.0,1.0000000000000002,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_run2,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Craig-Bampton,40961,0.0,0.0,0.0,0.0,0.0,1.0000000000000002,1e-14,1e-12,1e-12,PASS
+adapted_run1_vs_2026_plotting_baseline,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Original,40961,0.0,0.0,0.0,0.0,0.0,1.0,1e-14,1e-10,1e-10,PASS
+adapted_run1_vs_2026_plotting_baseline,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Guyan,40961,0.0,0.0,0.0,0.0,0.0,1.0000000000000002,1e-14,1e-10,1e-10,PASS
+adapted_run1_vs_2026_plotting_baseline,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Craig-Bampton,40961,0.0,0.0,0.0,0.0,0.0,1.0000000000000002,1e-14,1e-10,1e-10,PASS
+independent_rk4_vs_adapted_run1,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Original,40961,0.0,3.774758283725532e-15,5.762043500255904e-16,9.846257532082e-16,1.1491454134721985e-15,1.0000000000000002,1e-14,1e-08,1e-08,PASS
+independent_rk4_vs_adapted_run1,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Guyan,40961,0.0,1.1657341758564144e-14,2.0378588841496586e-15,3.4765911280946463e-15,3.4771403917062192e-15,1.0000000000000004,1e-14,1e-08,1e-08,PASS
+independent_rk4_vs_adapted_run1,division1_elcentro,第一类划分_ElCentro地震响应.mat,Floor 1,Craig-Bampton,40961,0.0,1.7541523789077473e-14,3.603914854528704e-15,6.1581307647924345e-15,5.3322034778097335e-15,1.0000000000000002,1e-14,1e-08,1e-08,PASS

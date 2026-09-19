@@ -1,0 +1,47 @@
+{
+  "overall": "PASS",
+  "failures": [],
+  "comparisons": {
+    "M_relative_frobenius": 0.0,
+    "C_relative_frobenius": 8.755160685636229e-15,
+    "K_relative_frobenius": 8.911736205594244e-18,
+    "all_frequency_max_abs_hz": 1.1368683772161603e-13,
+    "expected_first5_max_abs_hz": 3.0382807381101884e-11,
+    "rayleigh_alpha_relative": 3.3008707149579736e-14,
+    "rayleigh_beta_relative": 1.0986798122340558e-14,
+    "expected_alpha_relative": 3.029727763371122e-13,
+    "expected_beta_relative": 3.5403727083793913e-13
+  },
+  "first5_frequency_hz": [
+    2.7074257419151797,
+    9.328408686762627,
+    18.442670056469616,
+    22.673559221815015,
+    24.22774873212086
+  ],
+  "horizontal_cumulative_first2": 0.932125240043846,
+  "horizontal_cumulative_first5": 0.980607619065411,
+  "all_ones_cumulative_first2": 0.8812913590932983,
+  "all_ones_cumulative_first5": 0.9209657184623948,
+  "all_modes_horizontal_sum": 1.0,
+  "all_modes_ones_sum": 0.9999999999999998,
+  "energy_zonghe_declared_rows": 15,
+  "energy_zonghe_visible_history_count": 10,
+  "energy_zonghe_visible_historical_first5": [
+    0.804,
+    0.1281,
+    0.0485,
+    0.0,
+    0.0
+  ],
+  "energy_zonghe_visible_historical_first5_cumulative": 0.9806,
+  "energy_zonghe_history_max_abs_vs_independent": 3.141159543832567e-05,
+  "energy_zonghe_code_markers": {
+    "horizontal_direction_after_reorder": true,
+    "reorder_index3_index4": true,
+    "reorder_stiffness": true,
+    "reorder_mass": true,
+    "mass_weighted_gamma": true,
+    "normalized_gamma_square": true
+  }
+}

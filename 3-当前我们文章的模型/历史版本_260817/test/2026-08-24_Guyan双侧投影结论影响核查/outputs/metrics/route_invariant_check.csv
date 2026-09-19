@@ -1,0 +1,5 @@
+division,excitation,max_abs_original_cb_error_mm,reference_scale_mm,allowed_max_error_mm,relative_frobenius_error,relative_tolerance,pass
+1,ElCentro,0,12.3511473035324,2.23511473035324e-09,0,1e-10,1
+1,Chirp,0,34.5644556800949,4.45644556800949e-09,0,1e-10,1
+2,ElCentro,0,12.3511473035324,2.23511473035324e-09,0,1e-10,1
+2,Chirp,0,34.5705333261708,4.45705333261708e-09,0,1e-10,1

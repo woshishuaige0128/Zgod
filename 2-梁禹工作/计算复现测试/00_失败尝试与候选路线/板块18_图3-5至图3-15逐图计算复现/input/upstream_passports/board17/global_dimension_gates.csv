@@ -1,0 +1,9 @@
+division,route,reduced_dof,transform_rows,transform_columns,state_dimension,input_dimension,output_dimension,expected_reduced_dof,dimension_gate_pass
+1,完整15自由度,15,15,15,30,15,15,15,1
+1,作者历史Guyan单边式,6,15,6,12,6,6,6,1
+1,标准Guyan合同投影,6,15,6,12,6,6,6,1
+1,确定性Craig-Bampton升序3模态,9,15,9,18,9,9,9,1
+2,完整15自由度,15,15,15,30,15,15,15,1
+2,作者历史Guyan单边式,5,15,5,10,5,5,5,1
+2,标准Guyan合同投影,5,15,5,10,5,5,5,1
+2,确定性Craig-Bampton升序3模态,8,15,8,16,8,8,8,1

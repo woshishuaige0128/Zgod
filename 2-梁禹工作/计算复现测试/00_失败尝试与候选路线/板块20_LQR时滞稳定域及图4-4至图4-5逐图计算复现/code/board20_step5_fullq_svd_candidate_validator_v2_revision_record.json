@@ -1,0 +1,97 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v2_revision_record_v1",
+  "record_status": "PRESEAL_REVISION_WHITELIST_IMMUTABLE_DO_NOT_OVERWRITE",
+  "purpose": "Define the only two representation-level corrections allowed in validator V2 before any isolated V4 candidate seal, precheck, or scientific postcheck.",
+  "timing": {
+    "created_after_validator_v1_failure": true,
+    "created_before_v4_candidate_identity_available": true,
+    "created_before_v2_precheck": true,
+    "created_before_v2_pilot_postcheck": true,
+    "created_before_v2_full_postcheck": true,
+    "post_result_gate_relaxation": false
+  },
+  "superseded_validator_identity": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate.py",
+    "script_sha256": "19CCAC6A1630B9A61783326012F207963EA88970E980EEBD018F73D28DEDE8AC",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract.json",
+    "contract_sha256": "7FADDA206DEF90A6201D9607CEEAB6A5BDADF02E8623D737E4C19785A0ACBA76",
+    "failure_attribution_relpath": "code/board20_step5_fullq_svd_candidate_validator_v1_failure_attribution.json",
+    "failure_attribution_sha256": "3B924DBFC48C68651ABEEF9156613EAE891D750B837DEEA9BECC13B140F9271E",
+    "verdict": "FAIL_PERMANENT_IMMUTABLE"
+  },
+  "validator_v2_isolation": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v2.py",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v2.json",
+    "audit_output_root": "outputs/step5_fullq_svd_candidate_audit_v2",
+    "audit_log_root": "logs/step5_fullq_svd_candidate_validation_v2",
+    "target_candidate_generation": "V4_ISOLATED_PENDING_SEAL",
+    "may_read_or_write_v1_audit_outputs": false,
+    "may_modify_v3_candidate": false,
+    "may_launch_candidate_computation": false
+  },
+  "allowed_representation_changes": [
+    {
+      "change_id": "V2-REP-001",
+      "scope": "CSV/record_json/HDF5 point scalar equivalence only",
+      "old_rule": "JSON null and HDF5 NaN compare unequal.",
+      "new_rule": "For fields declared nullable numeric by the sealed output schema, JSON null/empty CSV and HDF5 NaN are semantically equivalent representations of missing numeric data.",
+      "forbidden_extension": "Finite numbers, infinities, booleans, strings, roots, residuals, rho, stable, critical, counts, and statuses may not use this equivalence.",
+      "scientific_effect": "NONE"
+    },
+    {
+      "change_id": "V2-REP-002",
+      "scope": "pairing_diagnostic_role identity only",
+      "old_rule": "Every selected algorithm must use DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING.",
+      "new_rule": "COMPACT_SCALAR_DELAY_AUGMENTATION selected points must use NOT_APPLICABLE_COMPACT_SELECTED; FULL_Q_ORDINARY_HISTORY_COMPANION selected points must use DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING.",
+      "forbidden_extension": "No route-specific, point-specific, rho-dependent, MATLAB-dependent, or result-dependent override is allowed.",
+      "scientific_effect": "NONE"
+    }
+  ],
+  "explicitly_unchanged": [
+    "five file-identity routes and 49-point pilot set",
+    "31x67 full grid and 10385 total points",
+    "matrix_order-only algorithm selection",
+    "MATLAB-v7.3 transpose restoration and [l,j] indexing",
+    "M/al as solve(al.T,M.T).T",
+    "Original right-H, Guyan left-H, and Division-II feedback-outside formulas",
+    "cleared polynomial and original unconsolidated Laurent direct terms",
+    "spectral 2-norm plus log-scale direct sigma_min residual",
+    "1e-8 polynomial and Laurent hard residual gates",
+    "1e-12 formula identity gate",
+    "1e-8 Step-4 rho absolute-difference gate",
+    "finite positive rho and rho<1 stable rule",
+    "stable_classification_match hard gate",
+    "unmatched full-root count, <0.9, and strictly-nondominant hard gates",
+    "origin splitting information-only role when every safety gate passes",
+    "repeatability baseline=repeat=actual manifest gate",
+    "five COMPLETE checkpoint and HDF5-hash gates",
+    "Step-4 audit-manifest and common-grid SHA-256 identity",
+    "V2/V3/compact-failure evidence protection",
+    "candidate output read-only and validator-output isolation"
+  ],
+  "candidate_v4_requirements_not_validator_exceptions": {
+    "route_status_schema_must_be": "board20_step5_fullq_svd_candidate_route_status_v4",
+    "checkpoint_schema_must_be": "board20_step5_fullq_svd_candidate_checkpoint_identity_v4",
+    "route_status_schema_may_not_be_overwritten_by_checkpoint_identity": true,
+    "candidate_v3_route_status_schema_failure_may_not_be_accepted": true,
+    "candidate_v3_scientific_outputs_may_not_be_revalidated_as_v4": true
+  },
+  "waiting_policy": {
+    "required_before_v2_precheck": [
+      "final V4 candidate contract path and SHA-256",
+      "final V4 candidate script path and SHA-256",
+      "final V4 input-seal path and SHA-256",
+      "V4 output-root path",
+      "V4 preflight/selftest schema and hashes"
+    ],
+    "current_status": "WAITING_V4_SEAL",
+    "postcheck_allowed_now": false,
+    "full_allowed_now": false
+  },
+  "revision_boundary": {
+    "additional_change_requires_new_revision_record": true,
+    "overwriting_validator_v1_or_its_failure_artifacts_forbidden": true,
+    "lowering_any_scientific_gate_forbidden": true,
+    "retroactively_reclassifying_validator_v1_forbidden": true
+  }
+}

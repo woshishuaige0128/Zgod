@@ -1,0 +1,83 @@
+﻿division,category,check,actual,criterion,result
+global,完整模型,MATLAB_vs_Python_MRrt,0.0,relative_error<=5e-12,PASS
+global,完整模型,MATLAB_vs_Python_CRrt,0.0,relative_error<=5e-12,PASS
+global,完整模型,MATLAB_vs_Python_KRrt,0.0,relative_error<=5e-12,PASS
+global,完整模型,15阶频率最大绝对差,4.973799150320701e-14,<=5e-10 Hz,PASS
+1,自由度契约,MATLAB_vs_Python_master,"[1, 6, 11, 4, 9, 14]","=[1, 6, 11, 4, 9, 14]",PASS
+1,自由度契约,MATLAB_vs_Python_slave,"[2, 3, 5, 7, 8, 10, 12, 13, 15]","=[2, 3, 5, 7, 8, 10, 12, 13, 15]",PASS
+1,自由度契约,MATLAB_vs_Python_order,"[1, 6, 11, 4, 9, 14, 2, 3, 5, 7, 8, 10, 12, 13, 15]","=[1, 6, 11, 4, 9, 14, 2, 3, 5, 7, 8, 10, 12, 13, 15]",PASS
+1,逐矩阵,MATLAB_vs_Python_Mo,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Co,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Ko,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Ksm,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Kss,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Mss,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_static_relation,1.3074027199048387e-16,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_T,1.1819408436773208e-16,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_M_historical,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_C_historical,2.565428830882846e-17,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_K_historical,1.357989328042674e-16,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_M_projected,5.120074203250748e-18,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_C_projected,1.5157633983634305e-16,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_K_projected,1.8621098785190805e-17,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_Mf,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_R_guyan_natural,1.181940843677321e-16,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_floor_recovery_guyan,0.0,relative_error<=5e-12,PASS
+1,逐矩阵,MATLAB_vs_Python_input_guyan,0.0,relative_error<=5e-12,PASS
+1,Craig-Bampton,固定界面保留3模态子空间最大夹角,1.1193579796572982e-15,<=5e-08 rad,PASS
+1,Craig-Bampton,列缩放对齐后的T_cb,1.2534242915425536e-16,relative_error<=5e-12,PASS
+1,Craig-Bampton,列缩放对齐后的M_cb,6.8200242188422584e-18,relative_error<=5e-12,PASS
+1,Craig-Bampton,列缩放对齐后的C_cb,1.515849642681764e-16,relative_error<=5e-12,PASS
+1,Craig-Bampton,列缩放对齐后的K_cb,1.8728970708116328e-17,relative_error<=5e-12,PASS
+1,恢复接口,列缩放对齐后的自然坐标CB恢复矩阵,1.2534242915425536e-16,relative_error<=5e-12,PASS
+1,恢复接口,列缩放对齐后的三层CB恢复矩阵,0.0,relative_error<=5e-12,PASS
+1,模态频率,MATLAB_vs_Python_historical_guyan_全阶,1.7763568394002505e-14,max_abs<=5e-10 Hz,PASS
+1,模态频率,MATLAB_vs_Python_projected_guyan_全阶,5.684341886080802e-14,max_abs<=5e-10 Hz,PASS
+1,模态频率,MATLAB_vs_Python_sorted_cb_全阶,9.947598300641403e-14,max_abs<=5e-10 Hz,PASS
+1,作者原脚本,逐字节相同ASCII文件名副本执行,status=SUCCESS;mat_success=True;csv_success=True;mat_hash=True;csv_hash=True,SUCCESS;MAT/CSV success=true;MAT/CSV bytecopy_sha256_match=true,PASS
+1,作者原脚本,中文原文件名直接运行失败如实保留,status=FAILED;identifier=MATLAB:m_illegal_character,FAILED;MATLAB:m_illegal_character,PASS
+1,作者原脚本,bytecopy原脚本_vs_MATLAB重建_T,0.0,relative_error<=5e-12,PASS
+1,作者原脚本,bytecopy原脚本_vs_MATLAB重建_M_historical,0.0,relative_error<=5e-12,PASS
+1,作者原脚本,bytecopy原脚本_vs_MATLAB重建_C_historical,0.0,relative_error<=5e-12,PASS
+1,作者原脚本,bytecopy原脚本_vs_MATLAB重建_K_historical,0.0,relative_error<=5e-12,PASS
+1,作者原脚本,bytecopy原脚本_vs_MATLAB重建_Mf,0.0,relative_error<=5e-12,PASS
+2,自由度契约,MATLAB_vs_Python_master,"[1, 11, 4, 9, 14]","=[1, 11, 4, 9, 14]",PASS
+2,自由度契约,MATLAB_vs_Python_slave,"[6, 2, 3, 5, 7, 8, 10, 12, 13, 15]","=[6, 2, 3, 5, 7, 8, 10, 12, 13, 15]",PASS
+2,自由度契约,MATLAB_vs_Python_order,"[1, 11, 4, 9, 14, 6, 2, 3, 5, 7, 8, 10, 12, 13, 15]","=[1, 11, 4, 9, 14, 6, 2, 3, 5, 7, 8, 10, 12, 13, 15]",PASS
+2,逐矩阵,MATLAB_vs_Python_Mo,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Co,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Ko,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Ksm,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Kss,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Mss,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_static_relation,2.4398311810699667e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_T,2.0650230441676593e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_M_historical,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_C_historical,1.4801660492235566e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_K_historical,3.360233275318385e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_M_projected,3.7479304720839736e-17,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_C_projected,4.030710936150385e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_K_projected,1.4599233512056867e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_Mf,0.0,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_R_guyan_natural,2.0650230441676588e-16,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_floor_recovery_guyan,7.57076043496814e-17,relative_error<=5e-12,PASS
+2,逐矩阵,MATLAB_vs_Python_input_guyan,9.148609855502003e-18,relative_error<=5e-12,PASS
+2,Craig-Bampton,固定界面保留3模态子空间最大夹角,7.70384137618203e-15,<=5e-08 rad,PASS
+2,Craig-Bampton,列缩放对齐后的T_cb,3.891023931441308e-16,relative_error<=5e-12,PASS
+2,Craig-Bampton,列缩放对齐后的M_cb,4.9542019907455005e-17,relative_error<=5e-12,PASS
+2,Craig-Bampton,列缩放对齐后的C_cb,4.028913283864715e-16,relative_error<=5e-12,PASS
+2,Craig-Bampton,列缩放对齐后的K_cb,1.4614392193492015e-16,relative_error<=5e-12,PASS
+2,恢复接口,列缩放对齐后的自然坐标CB恢复矩阵,3.891023931441308e-16,relative_error<=5e-12,PASS
+2,恢复接口,列缩放对齐后的三层CB恢复矩阵,8.19695219838784e-17,relative_error<=5e-12,PASS
+2,模态频率,MATLAB_vs_Python_historical_guyan_全阶,4.263256414560601e-14,max_abs<=5e-10 Hz,PASS
+2,模态频率,MATLAB_vs_Python_projected_guyan_全阶,4.618527782440651e-14,max_abs<=5e-10 Hz,PASS
+2,模态频率,MATLAB_vs_Python_sorted_cb_全阶,1.7763568394002505e-14,max_abs<=5e-10 Hz,PASS
+2,作者原脚本,逐字节相同ASCII文件名副本执行,status=SUCCESS;mat_success=True;csv_success=True;mat_hash=True;csv_hash=True,SUCCESS;MAT/CSV success=true;MAT/CSV bytecopy_sha256_match=true,PASS
+2,作者原脚本,中文原文件名直接运行失败如实保留,status=FAILED;identifier=MATLAB:m_illegal_character,FAILED;MATLAB:m_illegal_character,PASS
+2,作者原脚本,bytecopy原脚本_vs_MATLAB重建_T,0.0,relative_error<=5e-12,PASS
+2,作者原脚本,bytecopy原脚本_vs_MATLAB重建_M_historical,0.0,relative_error<=5e-12,PASS
+2,作者原脚本,bytecopy原脚本_vs_MATLAB重建_C_historical,0.0,relative_error<=5e-12,PASS
+2,作者原脚本,bytecopy原脚本_vs_MATLAB重建_K_historical,0.0,relative_error<=5e-12,PASS
+2,作者原脚本,bytecopy原脚本_vs_MATLAB重建_Mf,0.0,relative_error<=5e-12,PASS
+global,MATLAB内部门槛,global_route_summary.internal_gate_pass,True,true,PASS
+global,制品哈希,global_output_hashes逐项重算,rows=13;problems=0,problems=0,PASS

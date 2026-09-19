@@ -1,0 +1,2 @@
+energy_route_status,energy_error_identifier,energy_error_message
+EXPECTED_DIMENSION_FAILURE,MATLAB:innerdim,用于矩阵乘法的维度不正确。请检查并确保第一个矩阵中的列数与第二个矩阵中的行数匹配。要单独对矩阵的每个元素进行运算，请使用 TIMES (.*)执行按元素相乘。

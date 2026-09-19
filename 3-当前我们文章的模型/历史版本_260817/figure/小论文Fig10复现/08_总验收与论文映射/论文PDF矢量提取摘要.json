@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "evidence_level": "PLOT_LEVEL_VECTOR_TRACE_ONLY",
+  "calculation_reproduction": false,
+  "source_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+  "source_pdf_physical_page": 70,
+  "curve_count": 6,
+  "point_count": 386
+}

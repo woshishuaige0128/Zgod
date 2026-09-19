@@ -1,0 +1,14 @@
+函数或变量 'KPren' 无法识别。
+
+出错 luxvjie_guyan_LQR3 (第 4 行)
+K2(index1,index1) = KRren(index1,index1)-KPren;
+                                         ^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_one_board20_candidate>run_in_base (第 328 行)
+evalin('base', sprintf("run('%s');", escaped));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_one_board20_candidate (第 135 行)
+    run_in_base(cfg.candidate_mlx);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

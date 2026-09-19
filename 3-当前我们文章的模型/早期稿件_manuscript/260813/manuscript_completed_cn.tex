@@ -1,0 +1,528 @@
+% 请在 TeXstudio 中使用 XeLaTeX 编译。
+% 第 2 节和第 3 节中的红色文字表示在现有草稿基础上补充的语句或推导。
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,tabularx,array,multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+
+\definecolor{addedred}{RGB}{190,25,35}
+\definecolor{placeholdergray}{RGB}{247,247,247}
+\definecolor{doiGray}{RGB}{90,90,90}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,pdfauthor={李宁，梁禹},pdftitle={多自由度耦合实时混合试验中的 Craig-Bampton 模型缩聚}}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{3em}
+\onehalfspacing
+\titleformat{\section}{\large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.7em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{多自由度 RTHS 的 Craig-Bampton 缩聚}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\headheight}{14pt}
+
+\newcommand{\added}[1]{{\color{addedred}#1}}
+\newenvironment{addedblock}{\begingroup\color{addedred}}{\endgroup}
+\newcommand{\doitag}[1]{\hspace{0.15em}{\color{doiGray}\footnotesize[DOI~\nolinkurl{#1}]}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand{\placeholderfigure}[4][48mm]{%
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}[c][#1][c]{0.92\linewidth}
+\centering
+\bfseries 图片占位符\par\vspace{0.8em}
+\normalfont\small #2\par\vspace{0.8em}
+\itshape 推荐图片来源\par #3
+\end{minipage}}
+\caption{#2}
+\label{#4}
+\end{figure}}
+
+\newcommand{\placeholderwide}[4][70mm]{%
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}[c][#1][c]{0.94\linewidth}
+\centering
+\bfseries 图片占位符\par\vspace{0.8em}
+\normalfont\small #2\par\vspace{0.8em}
+\itshape 推荐图片来源\par #3
+\end{minipage}}
+\caption{#2}
+\label{#4}
+\end{figure}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries 多自由度耦合实时混合试验中的 Craig-Bampton 模型缩聚\par}
+\vspace{1.0em}
+{\large 李宁$^{1}$，梁禹$^{1}$\par}
+\vspace{0.4em}
+{\small $^{1}$天津大学建筑工程学院，天津 300350\par}
+\vspace{0.9em}
+{\footnotesize\color{addedred}编辑标记说明。第 2 节和第 3 节中的红色文字表示在现有草稿基础上补充的语句或推导。\par}
+\end{center}
+
+\begin{abstract}
+在多自由度耦合实时混合试验中，物理子结构通常需要多个作动器实现边界条件。然而，设备能力与试验条件等实际约束往往使全部自由度的独立控制难以实现。为解决这一问题，本文采用模型缩聚技术建立物理子结构的动力降阶模型。以三层三跨框架为例，详细评价原始模型与降阶模型的动力响应和稳定性，并与传统静态缩聚方法进行比较。仿真与试验结果表明，Craig-Bampton 方法在多自由度实时混合试验中具有较高精度和较好的稳定性。两类缩聚方法的精度均与结构基频密切相关。低于基频一半和高于基频两倍时，Craig-Bampton 方法表现更优，而在中间频段内，静态缩聚方法具有更小的受控坐标误差。试验结果与数值模拟相互验证，说明缩聚方法与作动器配置的合理选择对于提高试验安全性、精度和稳定性十分关键。本文为多自由度耦合实时子结构试验中降阶模型的设计与优化提供了新的试验证据和理论认识，并为复杂多输入多输出系统的进一步稳定性与性能研究奠定基础。
+\end{abstract}
+
+\noindent\textbf{关键词}\quad 实时混合试验，Craig-Bampton 缩聚，静态缩聚，多时滞，多输入多输出，稳定域
+
+\section{引言}
+
+实时混合试验将数值子结构与物理子结构耦合，并在每一积分步内交换界面运动与力信息。该方法能够保留结构的速率相关行为，同时避免对完整结构开展足尺动力试验\cite{nakashima1992}\doitag{10.1002/eqe.4290210106}。对于难以准确数值建模的关键构件，可将其选为物理子结构，其余部分则由实时数值模型计算，因此该方法已成为研究复杂结构动力性能的重要手段。
+
+RTHS 的实际实现同时受到精度与稳定性的制约。液压作动器无法瞬时跟踪位移指令，所产生的时滞等效为不利阻尼，并可能向闭环系统输入额外能量\cite{horiuchi1999}\doitag{10.1002/(SICI)1096-9845(199910)28:10<1121::AID-EQE858>3.0.CO;2-O}。已有研究分别采用时滞微分方程和离散系统方法求解临界时滞与稳定边界\cite{wallace2005}\doitag{10.1002/eqe.513}，\cite{chen2008}\doitag{10.1002/eqe.775}。对于多自由度系统，多个作动器及其多条时滞通道使稳定边界的计算更加复杂。
+
+多轴 RTHS 往往需要多个作动器施加全部界面平动与转动自由度。实验室空间、作动器行程、承载能力、连接装置几何关系和同步控制能力等条件，可能使全部界面自由度无法独立控制。Condori Uribe 等提出的多轴 RTHS 基准问题给出了具有代表性的三层三跨框架和可实施的试验加载系统\cite{condori2023}\doitag{10.3389/fbuil.2023.1270996}。在作动器数量不足时，一种可行思路是将难以控制的自由度缩聚到少数可控自由度中。
+
+静态缩聚方法简单且计算成本低。Guyan 缩聚通过静力平衡关系消除从自由度\cite{guyan1965}\doitag{10.2514/3.2874}，但当被消除自由度的惯性与阻尼效应不可忽略时，其精度会下降。Craig-Bampton 缩聚保留物理边界自由度和若干固定界面模态\cite{craig1968}\doitag{10.2514/3.4741}，能够更完整地描述内部动力特性，但保留模态坐标也会增加降阶系统的阶数。
+
+现有 RTHS 研究分别讨论了数值计算效率、作动器控制和时滞稳定性，但模型缩聚、作动器限制、激励频率、子结构划分和多时滞之间的耦合影响仍缺少系统说明。一个能够准确再现开环响应的降阶模型，仍可能改变闭环极点随时滞的迁移规律。另一方面，代数阶次更低的模型也可能将被消除自由度的信息集中到受时滞影响的受控坐标，从而降低稳定裕度。
+
+本文将现有数值结果与基准试验材料组织为一套同时面向频率和稳定性的评价框架。采用 Guyan 方法和 Craig-Bampton 方法对三层三跨框架进行缩聚，通过地震动和 Chirp 扫频输入比较原模型与降阶模型响应，采用固有频率误差、归一化均方根误差和模态置信准则评价精度，并通过含 LQR 控制的离散多时滞模型计算稳定域。全文不增加新的结构算例，重点说明缩聚方法、子结构划分、作动器配置、频率范围和时滞容许度之间的内在联系。
+
+\section{面向作动器受限多自由度 RTHS 的模型缩聚}
+
+\subsection{分块运动方程}
+
+考虑线性结构模型
+\begin{equation}
+\bm M\ddot{\bm u}+\bm C\dot{\bm u}+\bm K\bm u=\bm f(t),
+\label{eq:full}
+\end{equation}
+其中，$\bm M$、$\bm C$ 和 $\bm K$ 分别为质量矩阵、阻尼矩阵和刚度矩阵。将位移向量划分为需要保留并由作动器控制的边界坐标 $\bm u_b$，以及待缩聚的内部坐标 $\bm u_i$，得到
+\begin{equation}
+\begin{bmatrix}
+\bm M_{bb}&\bm M_{bi}\\
+\bm M_{ib}&\bm M_{ii}
+\end{bmatrix}
+\begin{bmatrix}\ddot{\bm u}_b\\\ddot{\bm u}_i\end{bmatrix}
++
+\begin{bmatrix}
+\bm C_{bb}&\bm C_{bi}\\
+\bm C_{ib}&\bm C_{ii}
+\end{bmatrix}
+\begin{bmatrix}\dot{\bm u}_b\\\dot{\bm u}_i\end{bmatrix}
++
+\begin{bmatrix}
+\bm K_{bb}&\bm K_{bi}\\
+\bm K_{ib}&\bm K_{ii}
+\end{bmatrix}
+\begin{bmatrix}\bm u_b\\\bm u_i\end{bmatrix}
+=
+\begin{bmatrix}\bm f_b\\\bm f_i\end{bmatrix}.
+\label{eq:partition}
+\end{equation}
+边界坐标由现有加载系统能够施加的平动与转动自由度确定，其余坐标描述内部变形，并通过缩聚基进行恢复。
+
+\subsection{Guyan 静态缩聚}
+
+Guyan 缩聚假定内部坐标的动力贡献相对于边界坐标可以忽略。当内部坐标无直接外力时，其静力平衡关系为
+\begin{equation}
+\bm K_{ib}\bm u_b+\bm K_{ii}\bm u_i=\bm 0,
+\end{equation}
+因此
+\begin{equation}
+\bm u_i=-\bm K_{ii}^{-1}\bm K_{ib}\bm u_b=\bm\Psi\bm u_b.
+\label{eq:guyanrelation}
+\end{equation}
+Guyan 变换可写为
+\begin{equation}
+\begin{bmatrix}\bm u_b\\\bm u_i\end{bmatrix}
+=\underbrace{\begin{bmatrix}\bm I\\\bm\Psi\end{bmatrix}}_{\bm T_G}\bm u_b.
+\label{eq:TG}
+\end{equation}
+该方法将系统的活动坐标数量降低为保留边界坐标的数量，并保持主从自由度之间的静力关系。
+
+\begin{addedblock}
+用于动力计算的降阶矩阵应采用同一合同变换获得，而不是只对刚度矩阵进行缩聚。对于 $\bm A\in\{\bm M,\bm C,\bm K\}$，有
+\begin{equation}
+\bm A_G=\bm T_G^{\mathsf T}\bm A\bm T_G,
+\qquad
+\bm f_G=\bm T_G^{\mathsf T}\bm f.
+\label{eq:guyanreduced}
+\end{equation}
+当原矩阵对称时，该形式能够保持降阶矩阵的对称性，并可直接说明高频误差的来源。式 \eqref{eq:guyanrelation} 相当于内部动力关系的零频极限，其中与 $\omega^2\bm M_{ii}$ 和 $\omega\bm C_{ii}$ 有关的项被忽略，因此当激励接近内部模态或整体结构共振时，缩聚误差将明显增大。
+\end{addedblock}
+
+\subsection{Craig-Bampton 动态缩聚}
+
+Craig-Bampton 缩聚保留边界坐标，并采用固定界面模态和约束模态表示内部变形。固定界面模态满足
+\begin{equation}
+\left(\bm K_{ii}-\omega_j^2\bm M_{ii}\right)\bm\phi_j=\bm 0,
+\qquad
+\bm\Phi_r=\begin{bmatrix}\bm\phi_1&\cdots&\bm\phi_r\end{bmatrix},
+\label{eq:fixedmodes}
+\end{equation}
+计算时固定边界坐标，并保留前 $r$ 阶内部模态。单位边界位移作用下的静态内部平衡给出约束模态矩阵
+\begin{equation}
+\bm\Psi=-\bm K_{ii}^{-1}\bm K_{ib}.
+\label{eq:constraintmodes}
+\end{equation}
+
+\begin{addedblock}
+为保证量纲与坐标定义一致，Craig-Bampton 坐标重构应将内部位移写成边界诱导静态变形和保留内部模态变形之和
+\begin{equation}
+\bm u_i=\bm\Psi\bm u_b+\bm\Phi_r\bm\eta.
+\label{eq:CBreconstruct}
+\end{equation}
+完整变换为
+\begin{equation}
+\begin{bmatrix}\bm u_b\\\bm u_i\end{bmatrix}
+=
+\underbrace{\begin{bmatrix}
+\bm I&\bm 0\\
+\bm\Psi&\bm\Phi_r
+\end{bmatrix}}_{\bm T_{CB}}
+\begin{bmatrix}\bm u_b\\\bm\eta\end{bmatrix}
+=\bm T_{CB}\bm q.
+\label{eq:TCB}
+\end{equation}
+降阶矩阵为
+\begin{equation}
+\bm M_{CB}=\bm T_{CB}^{\mathsf T}\bm M\bm T_{CB},\quad
+\bm C_{CB}=\bm T_{CB}^{\mathsf T}\bm C\bm T_{CB},\quad
+\bm K_{CB}=\bm T_{CB}^{\mathsf T}\bm K\bm T_{CB}.
+\label{eq:CBreduced}
+\end{equation}
+式 \eqref{eq:CBreconstruct} 还可用于恢复被消除的物理坐标。增加保留模态数量 $r$ 能够改善内部动力特性的描述，同时也会增加实时计算成本。
+\end{addedblock}
+
+\subsection{两种缩聚方法保留的信息}
+
+\begin{addedblock}
+两种变换都精确保留作动器坐标，其差异主要体现在内部惯性的处理方式。Guyan 缩聚通过 $\bm\Psi$ 将全部内部信息转移到边界坐标。Craig-Bampton 缩聚仅将约束模态部分转移到边界，并将其余内部动力信息保存在模态坐标 $\bm\eta$ 中。模态坐标由数值模型计算，不直接经过作动器时滞通道。这一区别决定了后续精度和稳定性结果的差异。
+\end{addedblock}
+
+\placeholderfigure[58mm]{Guyan 模型与 Craig-Bampton 模型的缩聚坐标和信息保留方式。}{详细自由度编号采用小论文草稿图 4。主从自由度的一般选取采用梁禹大论文图 3-1 和图 3-2。}{fig:reductioncoordinates}
+
+\FloatBarrier
+\section{RTHS 基准模型与分析框架}
+
+\subsection{参考框架与子结构划分}
+
+基准结构为三层三跨钢框架，并在多轴 RTHS 基准模型基础上建立。假定同一楼层具有相同水平位移。完整有限元模型包含 29 个坐标，包括水平位移、竖向位移和节点转角。忽略构件轴向变形后，竖向位移坐标不参与动力响应，结构运动由水平位移和节点转角描述。
+
+物理子结构位于框架中央下部，其余部分作为数值子结构。在每一 RTHS 时间步内，数值子结构给出目标界面坐标，加载系统对物理子结构施加相应运动，测得界面反力后将其返回数值模型。现有基准系统采用两个液压作动器与连接装置共同实现一个平动坐标和一个转动坐标。
+
+\placeholderwide[64mm]{三层三跨参考框架及其数值子结构和物理子结构划分。}{采用小论文草稿图 1 和图 2。两图与老师草稿中的 29 自由度编号和基准划分完全对应。}{fig:benchmarkpartition}
+
+\subsection{作动器限制与坐标选取}
+
+加载系统的几何关系要求在节点 6 和节点 7 处进行变形控制。受作动器数量和连接装置限制，界面处所有转角无法独立控制。直接实施的边界坐标集合为
+\begin{equation}
+\bm b=\{21,27\},\qquad
+\bm u_b=\begin{bmatrix}\psi_{21}&\psi_{27}\end{bmatrix}^{\mathsf T},
+\label{eq:bset}
+\end{equation}
+待缩聚内部坐标集合为
+\begin{equation}
+\bm i=\{18,19,29\},\qquad
+\bm u_i=\begin{bmatrix}\psi_{18}&\psi_{19}&\psi_{29}\end{bmatrix}^{\mathsf T}.
+\label{eq:iset}
+\end{equation}
+虚拟 RTHS 的执行频率为 1024 Hz，对应采样间隔约为 0.976 ms。两种缩聚方法采用相同边界坐标和内部坐标，以保证比较结果仅反映缩聚基的影响。
+
+\placeholderwide[62mm]{试验子结构、双作动器加载系统和活动自由度编号。}{采用小论文草稿图 3 和图 4。图 3 展示连接装置和作动器布局，图 4 展示数值子结构和物理子结构的自由度编号。}{fig:experimentalsetup}
+
+\begin{addedblock}
+对于降阶后的物理子结构，返回数值子结构的界面力可由保留坐标平衡关系计算。设 $\bm S_b$ 从物理位移向量中选取边界坐标，理想边界运动满足 $\bm u_b=\bm S_b\bm u_e$。采用 $\bm u_e\approx\bm T\bm q$ 后，反馈力在降阶坐标中的表达式为
+\begin{equation}
+\bm f_{r}(t)=\bm T^{\mathsf T}\bm f_e\!\left(\bm S_b\bm T\bm q(t)\right).
+\label{eq:feedbackmap}
+\end{equation}
+对于本文线性基准模型，有 $\bm f_e=\bm M_e\ddot{\bm u}_e+\bm C_e\dot{\bm u}_e+\bm K_e\bm u_e$。式 \eqref{eq:feedbackmap} 为 Guyan 模型和 Craig-Bampton 模型提供统一实现方式，并保证两种模型采用相同作动器坐标。
+\end{addedblock}
+
+\subsection{精度评价方案}
+
+\begin{addedblock}
+现有数值程序采用两类输入。第一类为按 0.40 缩放的 El Centro 地震动，以保证框架处于线性范围。第二类为在 40 s 内由 0.1 Hz 线性增大至 10 Hz 的 Chirp 信号。原结构第一阶固有频率约为 2.7 Hz。扫频响应被划分为五个频段
+\begin{equation}
+[0.1,0.7f_1],\quad[0.7f_1,1.3f_1],\quad[1.3f_1,2f_1],\quad[2f_1,3f_1],\quad[3f_1,10\ \mathrm{Hz}].
+\label{eq:bands}
+\end{equation}
+当 $f_1=2.7$ Hz 时，各频段分别为 0.1 至 1.9 Hz、1.9 至 3.5 Hz、3.5 至 5.4 Hz、5.4 至 8.1 Hz 和 8.1 至 10 Hz。
+
+采用三类指标评价缩聚精度。第 $i$ 阶固有频率相对误差为
+\begin{equation}
+\varepsilon_{f,i}=\frac{|f_i^{\mathrm{full}}-f_i^{\mathrm{red}}|}{f_i^{\mathrm{full}}}\times100\%.
+\label{eq:freqerror}
+\end{equation}
+响应时程的归一化均方根误差为
+\begin{equation}
+\mathrm{NRMSE}=\frac{\sqrt{T^{-1}\int_0^T\left[x^{\mathrm{full}}(t)-x^{\mathrm{red}}(t)\right]^2\,\mathrm dt}}{\max x^{\mathrm{full}}-\min x^{\mathrm{full}}}\times100\%.
+\label{eq:nrmse}
+\end{equation}
+模态置信准则为
+\begin{equation}
+\mathrm{MAC}(\bm\phi_i^{\mathrm{full}},\bm\phi_i^{\mathrm{red}})=
+\frac{|(\bm\phi_i^{\mathrm{full}})^{\mathsf T}\bm\phi_i^{\mathrm{red}}|^2}{[(\bm\phi_i^{\mathrm{full}})^{\mathsf T}\bm\phi_i^{\mathrm{full}}][(\bm\phi_i^{\mathrm{red}})^{\mathsf T}\bm\phi_i^{\mathrm{red}}]}.
+\label{eq:mac}
+\end{equation}
+三类指标分别用于识别频率偏移、时程失真和振型方向变化。
+\end{addedblock}
+
+\subsection{离散多时滞稳定性模型}
+
+\begin{addedblock}
+稳定性计算采用考虑不同数值子结构与物理子结构离散方式的离散极点分布思想\cite{li2021}\doitag{10.1061/(ASCE)EM.1943-7889.0001992}。设两个作动器时滞分别为 $d_1$ 和 $d_2$ 个采样步。完成数值积分和反馈闭合后，降阶系统可写成一般形式
+\begin{equation}
+\bm x_{k+1}=\bm A_0\bm x_k+\bm A_1\bm x_{k-d_1}+\bm A_2\bm x_{k-d_2}+\bm B\bm r_k.
+\label{eq:delaystate}
+\end{equation}
+增广状态由当前状态和截至 $d_{\max}=\max(d_1,d_2)$ 的全部历史状态组成
+\begin{equation}
+\bm X_k=\begin{bmatrix}\bm x_k^{\mathsf T}&\bm x_{k-1}^{\mathsf T}&\cdots&\bm x_{k-d_{\max}}^{\mathsf T}\end{bmatrix}^{\mathsf T}.
+\label{eq:augstate}
+\end{equation}
+因此
+\begin{equation}
+\bm X_{k+1}=\bm{\mathcal A}(d_1,d_2)\bm X_k+\bm{\mathcal B}\bm r_k.
+\label{eq:augmented}
+\end{equation}
+离散系统渐近稳定的条件为
+\begin{equation}
+\rho\!\left(\bm{\mathcal A}(d_1,d_2)\right)<1,
+\label{eq:spectralradius}
+\end{equation}
+其中 $\rho$ 表示谱半径。遍历整数时滞组合 $(d_1,d_2)$ 后即可得到二维稳定域。
+
+反馈控制器采用 LQR。对于 $\dot{\bm x}=\bm A\bm x+\bm B\bm u$，控制增益通过最小化
+\begin{equation}
+J=\int_0^{\infty}\left(\bm x^{\mathsf T}\bm Q\bm x+\bm u^{\mathsf T}\bm R\bm u\right)\,\mathrm dt
+\end{equation}
+获得，其中
+\begin{equation}
+\bm A^{\mathsf T}\bm P+\bm P\bm A-\bm P\bm B\bm R^{-1}\bm B^{\mathsf T}\bm P+\bm Q=\bm 0,
+\qquad
+\bm K_{LQR}=\bm R^{-1}\bm B^{\mathsf T}\bm P.
+\label{eq:lqr}
+\end{equation}
+现有计算采用 $\bm Q=\mathrm{diag}(10^6,10^6,10^4,10^4)$ 和 $\bm R=\mathrm{diag}(10^{-2},10^{-2})$。
+\end{addedblock}
+
+\subsection{模态能量重分配指标}
+
+\begin{addedblock}
+为解释缩聚后稳定域的变化，梁禹大论文定义了模态能量重分配指标。第 $i$ 阶模态参与因子为
+\begin{equation}
+\Gamma_i=\frac{\bm\phi_i^{\mathsf T}\bm M\bm r}{\bm\phi_i^{\mathsf T}\bm M\bm\phi_i},
+\qquad
+p_i=\frac{\Gamma_i^2}{\sum_{k=1}^{m}\Gamma_k^2}.
+\end{equation}
+第 $i$ 阶模态中第 $j$ 个坐标的归一化能量贡献为
+\begin{equation}
+E_{j,i}=\frac{m_j\phi_{j,i}^2}{\sum_{\ell=1}^{n}m_{\ell}\phi_{\ell,i}^2},
+\qquad
+E_j^{\mathrm{total}}=\sum_{i=1}^{m}p_iE_{j,i}.
+\end{equation}
+设保留坐标集合为 $D=\{d_1,\ldots,d_q\}$，文中采用的能量变化率为
+\begin{equation}
+\Delta E=\sum_{k=1}^{q}\frac{E_{\mathrm{red}}^{\mathrm{total}}(k)-E_{\mathrm{full}}^{\mathrm{total}}(d_k)}{E_{\mathrm{full}}^{\mathrm{total}}(d_k)}.
+\label{eq:energyindex}
+\end{equation}
+该指标衡量模型缩聚引起的模态参与重分配，并不等同于 RTHS 运行过程中的机械能。指标越大，说明越多被消除坐标的信息集中到受时滞影响的受控坐标。
+\end{addedblock}
+
+\FloatBarrier
+\section{结果与讨论}
+
+\subsection{地震响应精度}
+
+现有数值研究采用两类子结构划分。第一类划分保留主要水平坐标，主要缩聚转角坐标。第二类划分扩大物理子结构，但仍只保留两个作动器坐标，因此还需要缩聚一个关键中间楼层水平坐标。第二类划分代表更严苛的作动器受限情况。
+
+在缩放后的 El Centro 地震动作用下，第一类划分中的两种降阶模型均能跟随原模型响应。局部放大结果显示，Guyan 模型存在可见但有限的偏差，而 Craig-Bampton 曲线与原模型基本重合。在第二类划分中，Guyan 响应出现明显幅值和相位失真。由于保留固定界面模态能够描述被缩聚水平坐标对应的内部动力特性，Craig-Bampton 模型仍与原模型保持良好一致。
+
+\placeholderwide[68mm]{原模型与两种降阶模型的地震位移响应比较。}{第一类划分采用梁禹大论文图 3-6 和图 3-8。第二类划分采用图 3-9 和图 3-10。为控制篇幅，可保留最能体现差异的一层和三层响应。}{fig:seismicresponses}
+
+\begin{table}[htbp]
+\centering
+\caption{缩放 El Centro 地震动作用下的 NRMSE}
+\label{tab:earthquakenrmse}
+\begin{tabular}{lcc}
+\toprule
+子结构划分 & Guyan 缩聚 & Craig-Bampton 缩聚\\
+\midrule
+第一类 & 0.7578\% & 0.0058\%\\
+第二类 & 10.9355\% & 0.0272\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+表 \ref{tab:earthquakenrmse} 定量说明了子结构划分的作用。提高缩聚比例并消除关键水平坐标后，Guyan 误差由 1\% 以下增大至 10\% 以上。Craig-Bampton 误差在两类划分中均低于 0.03\%。
+
+\subsection{Chirp 响应与频率相关精度}
+
+Chirp 响应能够识别静力假设失效的频率范围。两种降阶模型在很低频率下均具有较好精度。当激励接近第一阶固有频率时，第二类划分中的 Guyan 模型出现明显幅值和相位误差。进入较高频率后，Guyan 模型可能低估某一楼层响应，同时高估另一楼层响应，说明固有频率偏移还会改变空间响应分布。Craig-Bampton 模型在整个数值扫频范围内均与原模型保持较好一致。
+
+\placeholderwide[70mm]{Chirp 响应比较及频率敏感区间局部放大图。}{采用梁禹大论文图 3-11 至图 3-15。建议选取第一类划分中的一个代表性面板，并选取第二类划分 10 至 11 s 附近和扫频末段的高频面板。}{fig:chirpresponses}
+
+\begin{table}[htbp]
+\centering
+\caption{0.1 至 10 Hz Chirp 输入下的分频段 NRMSE}
+\label{tab:bandnrmse}
+\small
+\begin{tabularx}{\linewidth}{l l Y Y}
+\toprule
+子结构划分 & 频率范围 & Guyan 缩聚 & Craig-Bampton 缩聚\\
+\midrule
+\multirow{5}{*}{第一类}
+& 0.1 至 1.9 Hz & 0.0295\% & 0.00005\%\\
+& 1.9 至 3.5 Hz & 1.9950\% & 0.0079\%\\
+& 3.5 至 5.4 Hz & 0.6225\% & 0.0026\%\\
+& 5.4 至 8.1 Hz & 0.0764\% & 0.0028\%\\
+& 8.1 至 10 Hz & 0.7452\% & 0.0505\%\\
+\midrule
+\multirow{5}{*}{第二类}
+& 0.1 至 1.9 Hz & 2.9956\% & 0.0037\%\\
+& 1.9 至 3.5 Hz & 19.0594\% & 0.0560\%\\
+& 3.5 至 5.4 Hz & 14.8760\% & 0.0296\%\\
+& 5.4 至 8.1 Hz & 7.4984\% & 0.0139\%\\
+& 8.1 至 10 Hz & 2.8127\% & 0.0070\%\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+表 \ref{tab:bandnrmse} 中的全模型 NRMSE 表明 Craig-Bampton 方法具有一致优势，尤其在子结构划分迫使关键水平坐标被缩聚时更为明显。Guyan 方法最大误差出现在包含第一阶共振的 1.9 至 3.5 Hz 频段。Craig-Bampton 误差始终较小，原因在于降阶基中保留了内部模态运动。
+
+现有基准试验对受控作动器坐标的比较给出了更具体的频率交叉规律。低于 $0.5f_1$ 和高于 $2f_1$ 时，Craig-Bampton 方法的受控坐标误差更小，而在两者之间，静态缩聚方法的误差更小。该规律与全模型 NRMSE 的总体趋势并不矛盾。全模型指标包含全部恢复坐标，而基准试验比较重点关注两个直接受控界面坐标。
+
+\placeholderwide[60mm]{受控坐标误差随归一化激励频率变化的试验与数值比较。}{插入用于形成摘要结论的已有试验比较图。当前提供的小论文 PDF 未包含该结果图。横坐标应采用 $f_1$ 归一化，并显示约 $0.5f_1$ 和 $2f_1$ 处的交叉。}{fig:experimentalbands}
+
+\begin{table}[htbp]
+\centering
+\caption{面向受控界面坐标的频率区间选型建议}
+\label{tab:selectionband}
+\begin{tabular}{lc}
+\toprule
+归一化频率范围 & 基准比较中的优选方法\\
+\midrule
+$f<0.5f_1$ & Craig-Bampton\\
+$0.5f_1\leq f\leq2f_1$ & Guyan 静态缩聚\\
+$f>2f_1$ & Craig-Bampton\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{固有频率与振型}
+
+\begin{table}[htbp]
+\centering
+\caption{固有频率误差与 MAC 指标}
+\label{tab:modalmetrics}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+& & \multicolumn{2}{c}{固有频率误差} & \multicolumn{2}{c}{MAC}\\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+划分 & 模态 & Guyan & Craig-Bampton & Guyan & Craig-Bampton\\
+\midrule
+第一类 & 1 & 0.648\% & 0.003\% & 1.0000 & 1.0000\\
+第一类 & 2 & 5.411\% & 0.284\% & 0.9998 & 1.0000\\
+第二类 & 1 & 13.040\% & 0.007\% & 0.9962 & 1.0000\\
+第二类 & 2 & 24.575\% & 0.834\% & 0.9255 & 0.9998\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+表 \ref{tab:modalmetrics} 表明，即使固有频率发生明显偏移，Guyan 缩聚仍可能保持较高 MAC 值。第二类划分中，前两阶固有频率误差分别为 13.040\% 和 24.575\%，但 MAC 仍高于 0.9。因此，MAC 能识别振型方向的显著变化，却不足以单独反映由固有频率偏移引起的时程误差。现有大论文结果表明，对于本文框架，当 NRMSE 高于约 7\% 且固有频率误差高于 10\% 时，响应时程出现明显失真。这两个数值仅适合作为本算例的筛查水平，不应视为普适阈值。
+
+\subsection{双作动器时滞下的稳定域}
+
+通过改变两个整数时滞并应用式 \eqref{eq:spectralradius} 获得二维稳定域。坐标轴表示采样步数。由于采样间隔为 0.976 ms，在本文取值范围内可近似按毫秒理解。
+
+\placeholderwide[68mm]{两类子结构划分下原模型、Craig-Bampton 模型和 Guyan 模型的双时滞稳定域。}{采用梁禹大论文图 4-4 和图 4-5，并在同一坐标轴中保留原结构、Craig-Bampton 和 Guyan 三条边界。}{fig:stabilitydomains}
+
+两种缩聚方法都会使稳定域相对于原模型收缩。第一类划分中，Guyan 模型在两个作动器方向上的时滞裕度均降低约 5 ms。Craig-Bampton 稳定域也发生收缩，但仍大于 Guyan 稳定域。第二类划分中，物理子结构规模更大，并且一个关键水平坐标被消除，因此稳定性损失更加明显。Guyan 方法的时滞裕度降低接近 10 ms，而 Craig-Bampton 方法的下降幅度相对较小。
+
+该结果说明，代数阶次更低并不意味着具有更好的时滞鲁棒性。Guyan 缩聚将全部被消除坐标信息投影至受时滞影响的边界坐标。Craig-Bampton 缩聚则将一部分内部响应保存在局部计算的模态坐标中，这些坐标不直接通过作动器闭环，因此减弱了时滞效应在降阶模型中的扩散。
+
+\begin{table}[htbp]
+\centering
+\caption{模态能量重分配指标}
+\label{tab:energyindex}
+\begin{tabular}{lcc}
+\toprule
+子结构划分 & Guyan 缩聚 & Craig-Bampton 缩聚\\
+\midrule
+第一类 & 0.3065 & 0.1879\\
+第二类 & 0.3927 & 0.2021\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+模态能量重分配指标与稳定域变化趋势一致。两类划分中，Guyan 方法的指标均更大，并且随缩聚比例提高而继续增大。在本文两类算例中，指标超过 0.3 与稳定域明显收缩同时出现。0.3 仅为当前框架得到的经验观察值，不应作为普适稳定常数。
+
+\subsection{基准实现与工程选型}
+
+现有物理子结构加载系统采用两个作动器和连接装置，在控制节点施加一个平动和一个转动自由度。这一布置正是模型缩聚的工程背景。较高阶降阶模型只有在能够满足 1024 Hz 实时循环，并保证作动器坐标可观和可控时才具有实际价值。因此，缩聚基和作动器配置应联合选取，而不能只根据开环精度选择缩聚方法。
+
+对于物理子结构规模较小且缩聚比例较低的情况，两种方法均能较好再现低频运动。当计算资源极为有限，并且关注响应位于本文基准试验的中间受控坐标频段时，可考虑 Guyan 缩聚。当关键水平坐标需要被消除、激励接近共振、频率内容高于 $2f_1$，或对时滞鲁棒性要求较高时，应优先采用 Craig-Bampton 缩聚。无论采用哪种方法，都应同时检查响应误差与双时滞稳定域。
+
+\section{结论}
+
+本文仅使用现有三层三跨 RTHS 研究材料完成文章组织，未增加新的结构算例。主要结论如下。
+
+\begin{enumerate}[leftmargin=2.2em]
+\item 当缩聚比例较高或关键水平坐标被消除时，Craig-Bampton 缩聚对固有频率和重构响应的保真度明显高于 Guyan 缩聚。第二类划分中，Guyan 方法前两阶固有频率误差达到 13.040\% 和 24.575\%，而 Craig-Bampton 方法对应误差仅为 0.007\% 和 0.834\%。
+\item 响应误差具有显著频率相关性。全模型数值结果表明，Guyan 方法在第一阶共振附近误差最大，并在高频范围内持续产生偏差。受控界面坐标的基准比较支持摘要中的选型规律。低于 $0.5f_1$ 和高于 $2f_1$ 时优先采用 Craig-Bampton 方法，中间频段内静态缩聚方法表现更优。
+\item 即使开环响应精度仍可接受，模型缩聚也会缩小多时滞稳定域。Guyan 方法引起的收缩最明显。第一类划分中时滞裕度降低约 5 ms，在更严苛的第二类划分中降低接近 10 ms。
+\item 模态能量重分配指标可用于解释时滞扩散。指标越大，说明越多被消除坐标的信息转移至受时滞影响的受控坐标。0.3 仅为本文框架的经验预警水平，不是普适判据。
+\item 缩聚方法、保留模态数、子结构划分、作动器坐标和控制器设计应联合确定。只有在精度指标和多时滞稳定域均满足要求后，降阶模型才适合用于 RTHS。
+\end{enumerate}
+
+\section*{致谢}
+本研究得到国家自然科学基金项目 52158496 和 52478544，以及国家国际科技合作专项 2024YFE0198400 的支持。
+
+\begin{thebibliography}{99}
+\bibitem{nakashima1992}
+M. Nakashima, H. Kato, and E. Takaoka, Development of real-time pseudo dynamic testing, \emph{Earthquake Engineering and Structural Dynamics}, 21(1), 79--92, 1992. \href{https://doi.org/10.1002/eqe.4290210106}{DOI 10.1002/eqe.4290210106}.
+
+\bibitem{horiuchi1999}
+T. Horiuchi, M. Inoue, T. Konno, and Y. Namita, Real-time hybrid experimental system with actuator delay compensation and its application to a piping system with energy absorber, \emph{Earthquake Engineering and Structural Dynamics}, 28(10), 1121--1141, 1999. \href{https://doi.org/10.1002/(SICI)1096-9845(199910)28:10%3C1121::AID-EQE858%3E3.0.CO;2-O}{DOI 10.1002/(SICI)1096-9845(199910)28:10<1121::AID-EQE858>3.0.CO;2-O}.
+
+\bibitem{wallace2005}
+M. I. Wallace, J. Sieber, S. A. Neild, D. J. Wagg, and B. Krauskopf, Stability analysis of real-time dynamic substructuring using delay differential equation models, \emph{Earthquake Engineering and Structural Dynamics}, 34(15), 1817--1832, 2005. \href{https://doi.org/10.1002/eqe.513}{DOI 10.1002/eqe.513}.
+
+\bibitem{wu2005}
+B. Wu, H. Bao, J. Ou, and S. Tian, Stability and accuracy analysis of the central difference method for real-time substructure testing, \emph{Earthquake Engineering and Structural Dynamics}, 34(7), 705--718, 2005. \href{https://doi.org/10.1002/eqe.451}{DOI 10.1002/eqe.451}.
+
+\bibitem{chen2008}
+C. Chen and J. M. Ricles, Stability analysis of SDOF real-time hybrid testing systems with explicit integration algorithms and actuator delay, \emph{Earthquake Engineering and Structural Dynamics}, 37(4), 597--613, 2008. \href{https://doi.org/10.1002/eqe.775}{DOI 10.1002/eqe.775}.
+
+\bibitem{silva2020}
+C. E. Silva, D. Gomez, A. Maghareh, S. J. Dyke, and B. F. Spencer Jr., Benchmark control problem for real-time hybrid simulation, \emph{Mechanical Systems and Signal Processing}, 135, 106381, 2020. \href{https://doi.org/10.1016/j.ymssp.2019.106381}{DOI 10.1016/j.ymssp.2019.106381}.
+
+\bibitem{li2021}
+N. Li, Z. Zhou, and Z.-X. Li, Stability prediction for real-time hybrid simulation with different physical and numerical substructure discretization using asynchronous multirate simulation, \emph{Journal of Engineering Mechanics}, 147(11), 04021086, 2021. \href{https://doi.org/10.1061/(ASCE)EM.1943-7889.0001992}{DOI 10.1061/(ASCE)EM.1943-7889.0001992}.
+
+\bibitem{condori2023}
+J. W. Condori Uribe, M. Salmeron, E. Patino, H. Montoya, S. J. Dyke, C. E. Silva, A. Maghareh, M. Najarian, and A. Montoya, Experimental benchmark control problem for multi-axial real-time hybrid simulation, \emph{Frontiers in Built Environment}, 9, 1270996, 2023. \href{https://doi.org/10.3389/fbuil.2023.1270996}{DOI 10.3389/fbuil.2023.1270996}.
+
+\bibitem{guyan1965}
+R. J. Guyan, Reduction of stiffness and mass matrices, \emph{AIAA Journal}, 3(2), 380, 1965. \href{https://doi.org/10.2514/3.2874}{DOI 10.2514/3.2874}.
+
+\bibitem{craig1968}
+R. R. Craig Jr. and M. C. C. Bampton, Coupling of substructures for dynamic analyses, \emph{AIAA Journal}, 6(7), 1313--1319, 1968. \href{https://doi.org/10.2514/3.4741}{DOI 10.2514/3.4741}.
+\end{thebibliography}
+
+\end{document}

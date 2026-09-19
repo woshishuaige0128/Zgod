@@ -1,0 +1,361 @@
+{
+  "archive_entries": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "mathml/eqn1.mml",
+    "matlab/_rels/document.xml.rels",
+    "matlab/document.xml",
+    "matlab/output.xml",
+    "metadata/coreProperties.xml",
+    "metadata/mwcoreProperties.xml",
+    "metadata/mwcorePropertiesExtension.xml",
+    "metadata/mwcorePropertiesReleaseInfo.xml"
+  ],
+  "assignments": [
+    "C1",
+    "C2",
+    "G",
+    "Gcls_zero",
+    "H",
+    "K1",
+    "K2",
+    "S",
+    "al",
+    "det_G",
+    "dt",
+    "index1",
+    "index2",
+    "j",
+    "row_map",
+    "s",
+    "stab"
+  ],
+  "code_cells": [
+    "index1 = [1,2,7,8,9];\nindex2 = [3,4,5,6,7,8,9];\nK2 = KR_cb;\nK2(index1,index1) = KR_cb(index1,index1)-KP_cb;\nK2(index2,index2) = KR_cb(index2,index2)-KN_cb;\nC2 = CR_cb;\nC2(index1,index1) = CR_cb(index1,index1)-CP_cb;\nC2(index2,index2) = CR_cb(index2,index2)-CN_cb;\nC1 = CR_cb-C2;\nK1 = KR_cb-K2;\n\n\ndt = 1/1024;\nal = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\\MR_cb*4;\nal = diag(diag(al));",
+    "% 2. 选择矩阵 S: 6x15\nS = zeros(2, 9);\n\n% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行\n% 小矩阵第4-6行 → 大矩阵第6-8行\nrow_map = [1 2];\n\nfor i = 1:2\n    S(i, row_map(i)) = 1;\nend\n\n%    for j = 1:30",
+    "stab = zeros(20);\nfor l = 0:15\n%l =5;\n%for j = 0:15\n%j = 25;\nj = 0;\n%j = 0;\n%z=tf('z',dt);\nsyms z\n%l = 19;\n%j = 5;\nH = sym(eye(9,9));\nH(1,1) = z^(-l);\nH(2,2) = z^(-j);\n\n%syms z\nG = (z-1)^2/z/dt^2*MR_cb/al+(z-1)/z/dt*C1+K1+...\n    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\n%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\ndet_G = det(G);\nGcls_zero = vpa(solve(det_G == 0, z));\ns = max(abs(Gcls_zero))\nstab(l+1,j+1) = s;\nend\n%end\n"
+  ],
+  "document_xml_sha256": "9367743688AD5201EF82B84CD6CC809EF8ECB4C3E3B745AD7F8FD74496777EEC",
+  "function_calls": [
+    "C2",
+    "CR_cb",
+    "H",
+    "K2",
+    "KR_cb",
+    "S",
+    "abs",
+    "det",
+    "diag",
+    "eye",
+    "max",
+    "row_map",
+    "solve",
+    "stab",
+    "sym",
+    "vpa",
+    "zeros"
+  ],
+  "identifiers": [
+    "C1",
+    "C2",
+    "CN_cb",
+    "CP_cb",
+    "CR_cb",
+    "DeltaG",
+    "G",
+    "Gcls_zero",
+    "H",
+    "K1",
+    "K2",
+    "KN_cb",
+    "KP_cb",
+    "KR_cb",
+    "MR_cb",
+    "S",
+    "abs",
+    "al",
+    "det",
+    "det_G",
+    "diag",
+    "dt",
+    "eye",
+    "i",
+    "index1",
+    "index2",
+    "j",
+    "l",
+    "max",
+    "row_map",
+    "s",
+    "solve",
+    "stab",
+    "sym",
+    "syms",
+    "vpa",
+    "z",
+    "zeros"
+  ],
+  "output_metadata": {
+    "error_element_count": 0,
+    "error_messages": "",
+    "evaluation_state": "manual",
+    "output_status": "error"
+  },
+  "output_xml_sha256": "D9D7C0224DDF8F40AE5BDADD96DEF2201F84938B03EC0282FF0484ABF0268FA9",
+  "outputs": [
+    {
+      "columns": "",
+      "element_sha256": "7899BD060EA80130D113C55048336155D578703B91377112D21065EBA3B4D44E",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372623020197877825501959388335</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 1,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[1]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372623020197877825501959388335</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "57793C8D6C1D9625E58E2FBD9F792DA96CCE250C4AF8A9C7519133C87A34C1B2",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372713837312028206260928774657</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 2,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[2]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372713837312028206260928774657</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "61E0268CB7A849E628C357F1D0603E0B90F9FE3E44104AB657E891EC7E595C9C",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372804664145067326624531939722</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 3,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[3]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372804664145067326624531939722</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "198D90F3B2CA11B97785C149858F385F0F7127DE413AD146F0BB493A08B261EF",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372895498908524853260399711741</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 4,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[4]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372895498908524853260399711741</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "AE597984D7E67AB4DD82FB19669996B3E5E0E4A5A1A52BC46D40672C54943041",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372986339815381874642608368385</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 5,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[5]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99372986339815381874642608368385</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "1FF20357140089A75A7BF734F8FABBFDC2683AA1291647C30E35DCFF382AA9EB",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99373077185080211549699174144795</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 6,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[6]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>0.99373077185080211549699174144795</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "14E9F8D9005120C23CFA57B2F542467A30B7C592F052699FE39A897D566DE798",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>1.0010420668747476643460657796625</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 7,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[7]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>1.0010420668747476643460657796625</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "45D2F830B25889ECAEC3C0621A6D8C53AC1E64EC5022044947E57E69E510FEB9",
+      "large_fields": {},
+      "leaf_fields": {
+        "name": "s",
+        "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>1.0083855030859788594015289874936</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n"
+      },
+      "line_numbers": [
+        "50"
+      ],
+      "name": "s",
+      "output_index": 8,
+      "output_type": "symbolic",
+      "output_xpath": "/embeddedOutputs/outputArray/element[8]",
+      "rows": "",
+      "value": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'>\n  <semantics>\n    <mn>1.0083855030859788594015289874936</mn>\n    <annotation encoding='OutputVersion'>\n      1.0\n    </annotation>\n    \n  </semantics>\n</math>\n",
+      "var_size": "",
+      "var_type": ""
+    }
+  ],
+  "paragraphs": [
+    {
+      "cell_index": 1,
+      "kind": "text",
+      "paragraph_index": 1,
+      "style": "text",
+      "text": "缩聚",
+      "text_sha256": "92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985",
+      "xml_xpath": "/w:document/w:body/w:p[1]"
+    },
+    {
+      "cell_index": 1,
+      "kind": "code",
+      "paragraph_index": 2,
+      "style": "code",
+      "text": "index1 = [1,2,7,8,9];\nindex2 = [3,4,5,6,7,8,9];\nK2 = KR_cb;\nK2(index1,index1) = KR_cb(index1,index1)-KP_cb;\nK2(index2,index2) = KR_cb(index2,index2)-KN_cb;\nC2 = CR_cb;\nC2(index1,index1) = CR_cb(index1,index1)-CP_cb;\nC2(index2,index2) = CR_cb(index2,index2)-CN_cb;\nC1 = CR_cb-C2;\nK1 = KR_cb-K2;\n\n\ndt = 1/1024;\nal = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\\MR_cb*4;\nal = diag(diag(al));",
+      "text_sha256": "F4432D198643C713C0115BA67057F8939FD8CCAA1BAECC356262CB0904CD0801",
+      "xml_xpath": "/w:document/w:body/w:p[2]"
+    },
+    {
+      "cell_index": 2,
+      "kind": "text",
+      "paragraph_index": 3,
+      "style": "text",
+      "text": "\\frac{X\\left(z\\right)}{F\\left(z\\right)}=\\frac{1}{\\frac{{\\left(z-1\\right)}^2 }{\\alpha z\\Delta t^2 }M+\\frac{z-1}{z\\Delta t}C_1 +{\\mathrm{K}}_1 +z^{-j} \\left(\\frac{z-1}{z\\Delta t}C_2 +{\\mathrm{K}}_2 \\right)}",
+      "text_sha256": "1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11",
+      "xml_xpath": "/w:document/w:body/w:p[3]"
+    },
+    {
+      "cell_index": 3,
+      "kind": "text",
+      "paragraph_index": 4,
+      "style": "text",
+      "text": "按照上述公式计算传递函数",
+      "text_sha256": "2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2",
+      "xml_xpath": "/w:document/w:body/w:p[4]"
+    },
+    {
+      "cell_index": 2,
+      "kind": "code",
+      "paragraph_index": 5,
+      "style": "code",
+      "text": "% 2. 选择矩阵 S: 6x15\nS = zeros(2, 9);\n\n% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行\n% 小矩阵第4-6行 → 大矩阵第6-8行\nrow_map = [1 2];\n\nfor i = 1:2\n    S(i, row_map(i)) = 1;\nend\n\n%    for j = 1:30",
+      "text_sha256": "2CE7F0544A0F8FF37CF9F5AA00798419D18CC38998286480171E94057C952169",
+      "xml_xpath": "/w:document/w:body/w:p[5]"
+    },
+    {
+      "cell_index": 4,
+      "kind": "text",
+      "paragraph_index": 6,
+      "style": "text",
+      "text": "这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼",
+      "text_sha256": "6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE",
+      "xml_xpath": "/w:document/w:body/w:p[6]"
+    },
+    {
+      "cell_index": 5,
+      "kind": "text",
+      "paragraph_index": 7,
+      "style": "text",
+      "text": "实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别",
+      "text_sha256": "E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1",
+      "xml_xpath": "/w:document/w:body/w:p[7]"
+    },
+    {
+      "cell_index": 6,
+      "kind": "text",
+      "paragraph_index": 8,
+      "style": "text",
+      "text": "定义循环，求解稳定域",
+      "text_sha256": "1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5",
+      "xml_xpath": "/w:document/w:body/w:p[8]"
+    },
+    {
+      "cell_index": 3,
+      "kind": "code",
+      "paragraph_index": 9,
+      "style": "code",
+      "text": "stab = zeros(20);\nfor l = 0:15\n%l =5;\n%for j = 0:15\n%j = 25;\nj = 0;\n%j = 0;\n%z=tf('z',dt);\nsyms z\n%l = 19;\n%j = 5;\nH = sym(eye(9,9));\nH(1,1) = z^(-l);\nH(2,2) = z^(-j);\n\n%syms z\nG = (z-1)^2/z/dt^2*MR_cb/al+(z-1)/z/dt*C1+K1+...\n    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;\n%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...\n%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;\ndet_G = det(G);\nGcls_zero = vpa(solve(det_G == 0, z));\ns = max(abs(Gcls_zero))\nstab(l+1,j+1) = s;\nend\n%end\n",
+      "text_sha256": "120FA3FCED6E033AAD6AC29E9D10C9DED92E1226C24ADFE2F137D72F6EE08CE3",
+      "xml_xpath": "/w:document/w:body/w:p[9]"
+    }
+  ],
+  "source_name": "luxvjie_cb_LQR2.mlx",
+  "source_sha256": "803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD",
+  "source_size_bytes": 5285,
+  "text_cells": [
+    "缩聚",
+    "\\frac{X\\left(z\\right)}{F\\left(z\\right)}=\\frac{1}{\\frac{{\\left(z-1\\right)}^2 }{\\alpha z\\Delta t^2 }M+\\frac{z-1}{z\\Delta t}C_1 +{\\mathrm{K}}_1 +z^{-j} \\left(\\frac{z-1}{z\\Delta t}C_2 +{\\mathrm{K}}_2 \\right)}",
+    "按照上述公式计算传递函数",
+    "这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼",
+    "实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别",
+    "定义循环，求解稳定域"
+  ]
+}

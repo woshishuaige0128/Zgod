@@ -1,26 +1,132 @@
-# LiangYuStability
+# RTHS 缩聚方法研究：三套模型对照资料
 
-#### Description
-Multiple Input-Multiple Output system stabaility analysis
+本仓库把这项研究涉及的三套模型分开整理，便于逐套阅读和相互对照。
 
-#### Software Architecture
-Software architecture description
+---
 
-#### Installation
+## 三者的关系
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+三套模型不是并列的三个方案，而是一条继承链：
 
-#### Instructions
+```
+maRTHS 多轴实时混合试验基准问题（三层三跨钢框架，SAP2000，29 自由度）
+        │  借用几何与截面，重新装配为 15 自由度平面模型
+        ▼
+梁禹硕士论文《实时混合实验系统缩聚方法研究及其稳定性分析》
+        │  沿用同一套矩阵与参数，扩充理论表述、对照路线与评价指标
+        ▼
+当前投稿文章
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+| | 1-基准模型 | 2-梁禹工作 | 3-当前我们文章的模型 |
+|---|---|---|---|
+| 结构矩阵来源 | SAP2000 导出 | 自行装配 | 沿用梁禹 |
+| 自由度数 | 29（含竖向位移） | 15（忽略竖向） | 15，同左 |
+| 物理子结构范围 | 一层一跨的一榀门式子框架 | 外跨下两层 / 外跨全三层 | 同左，两类划分 |
+| 作动器 | 2 个，经连杆合成为单点的平动 + 转动（多轴） | 2 个，分别推两个楼层的水平位移（多点） | 同左 |
+| 缩聚的地位 | 附带步骤，仅用于反力计算中的位移重构 | **研究对象**：Guyan 与 Craig–Bampton 对比 | 同左，另加整框架直接缩聚对照 |
+| 作动器模型 | 实测辨识的 2×2 传递函数矩阵，含交叉耦合与不确定性 | 纯时滞（整数倍采样步） | 同左 |
+| 控制器 | RoDeAC 自适应补偿（递推最小二乘） | LQR 力反馈 | 同左 |
+| 研究问题 | 怎么把作动器控好 | 缩聚方法选得好不好 | 同左，理论化与指标扩充 |
 
-#### Contribution
+---
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+## 1-基准模型
+
+多轴实时混合试验基准问题的 RoDeAC 解答方案（Quiroz、Gálmez、Fermandois，智利联邦圣玛利亚理工大学）。
+
+**关键文件**
+
+| 路径 | 内容 |
+|---|---|
+| `maRTHS-bmk-RoDeAC/Support_files/FE_Model/REF_SAP2000_Model/K_matrix.csv` | 参考结构 29×29 刚度矩阵（SAP2000 导出） |
+| `maRTHS-bmk-RoDeAC/Support_files/FE_Model/REF_SAP2000_Model/Joint_DOF.xlsx` | 29 个自由度的编号表：3 个层水平位移 + 12 个节点竖向位移 + 14 个节点转角 |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/build_reference.m` | 参考结构装配、Rayleigh 阻尼 |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/build_physical_ideal.m` | 理想物理试件（3 个全局自由度：x_27、@_29、@_21） |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/build_numerical.m` | 数值子结构 = 参考结构矩阵逐项减去试件贡献 |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/physicalFrame_feedbackForce.m` | 虚拟试件 5 自由度精细模型，以及 5→2 的静力缩聚 |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/fcn_coupler_geometry.m` | 连杆几何（连接点 ±127 mm，倾角 ±25.46°），两个作动器合成平动 + 转动 |
+| `maRTHS-bmk-RoDeAC/Support_files/Add_Code_Data/fcn_build_uncert_plant.m` | 作动器 2×2 传递函数矩阵与零极点不确定性 |
+| `maRTHS-bmk-RoDeAC/Support_files/S3_Controller.m` | RoDeAC 自适应补偿器 |
+| `maRTHS-bmk-RoDeAC/Model_vmaRHTS_R2019b.slx` | 主 Simulink 模型 |
+
+**阅读时要注意的一点**：`physicalFrame_feedbackForce.m` 末尾算出的 `K_phys_2dof / C_phys_2dof / M_phys_2dof` 在整个 Simulink 模型里**一次都没有被引用**。实际进入回路的是完整的 5 自由度矩阵，而静力缩聚矩阵 `-inv(Koo)*Kot` 只出现在 `Feedback Force Computation` 子系统里，用途是把两个作动坐标扩展成 5 维位移场再算反力，最后用 `Selector, Indices = [1 2 3]` 取前三个分量送回数值子结构。也就是说，基准模型在运动学上用了 Guyan 假设（独立自由度就是 2 个），但没有把缩聚固化成一组系统矩阵去积分。
+
+---
+
+## 2-梁禹工作
+
+| 子目录 | 内容 |
+|---|---|
+| `原始MATLAB工程/` | 梁禹的原始 MATLAB/Simulink 工程，原样保留 |
+| `图片源码追溯/` | 硕士论文 28 张图的来源追溯与重绘代码 |
+| `计算复现测试/` | 逐图计算级复现与模型核查记录 |
+| `文献笔记/` | 精读笔记 |
+| `求助简报/` | 外部审查用的自包含简报 |
+| `WORKFLOW.md`、`current.md` | 追溯工作的工作流与现场快照 |
+
+**关键文件**
+
+| 路径 | 内容 |
+|---|---|
+| `原始MATLAB工程/结构缩聚代码/matlabGB2.mlx` | 在基准模型试件上练习 Guyan 与 Craig–Bampton 的脚本，开头直接调用 `M_phys_5dof / C_phys_5dof / K_phys_5dof` |
+| `原始MATLAB工程/结构缩聚代码/GBmerhod.mlx` | Craig–Bampton 练习，此处用的是标准双侧投影 |
+| `原始MATLAB工程/能量指标/PDmonicanshu2.m` | 15 自由度模型参数装配 |
+| `原始MATLAB工程/新结构稳定/` | 稳定域计算与绘图 |
+| `计算复现测试/00_上游模型身份证/` | 六个上游计算门槛的逐项核查（U01 参考结构矩阵、U05 Guyan 三条公式路线、U06 Craig–Bampton 实现） |
+
+---
+
+## 3-当前我们文章的模型
+
+| 子目录 | 内容 |
+|---|---|
+| `投稿稿件/` | 当前 Elsevier 格式稿件与配图 |
+| `研究工作/` | 研究工作流、案例计算、模型核查与报告 |
+| `历史版本_260817/` | 前一版工作目录（当前研究工作引用了其中的既有计算包） |
+| `早期稿件_manuscript/` | 更早的稿件版本 |
+
+**关键文件**
+
+| 路径 | 内容 |
+|---|---|
+| `投稿稿件/main_review_20260911_terms_red.tex` | 当前稿件正文 |
+| `研究工作/cases/case1_v1_standard_guyan_20260916/code/frame_model.m` | 实际使用的 15 自由度框架装配 |
+| `研究工作/audits/full_order_consistency_20260916/MODEL_AUDIT.md` | 完整框架基准与两套模型一致性核查 |
+| `研究工作/WORKFLOW.md` | 研究工作流与进度 |
+
+---
+
+## 已查证的三个技术要点
+
+**① Guyan 的两种实现相差很大，现稿用的是其中一种**
+
+现稿正文式 (5) 写的是合同投影 `T'MT`，但精度对照实际用的是代入式实现 `M_G = M_rr + M_rc·Ψ_G`。由于该模型的质量矩阵是严格对角的集中质量矩阵（`M_rc` 全为零），代入式实现在数值上等于直接截断 `M_rr`，与合同投影相差的正是 `Ψ'·M_cc·Ψ` 一项：
+
+| 划分 | 代入式 vs 合同投影，质量矩阵 | 阻尼矩阵 | 刚度矩阵 |
+|---|---|---|---|
+| 第一类（外跨下两层） | 9.977893886 % | 0.951999751 % | 1e-14 量级（等价） |
+| 第二类（外跨全三层） | 37.301270253 % | 8.415963930 % | 1e-14 量级（等价） |
+
+反映到频率上，第二类划分的一阶/二阶频率误差由 19.040 % / 30.574 % 降为 0.480 % / 7.549 %。
+
+**② 代入式实现的来源可以追溯到基准模型**
+
+基准模型 `physicalFrame_feedbackForce.m` 对刚度做静力凝聚、对质量直接截断 `M = M(1:2,1:2)`；梁禹的练习脚本直接在该试件模型上写成，变量名与分块完全对应。但两者的使用场合不同：基准模型只用它算一个反力输出，旁边有完整的数值子结构兜底；本研究把它当作系统矩阵去积分，矩阵本身的准确性直接决定频率与响应。
+
+**③ 正文材料表与实际计算参数不一致**
+
+正文表 2 写 ρ = 7850 kg/m³，而 `frame_model.m` 实际使用 ρ = 785e3 × 1.9 = 1 491 500 kg/m³（等效密度，折算了楼面附加质量；基准模型自身的 `build_physical_ideal.m` 用的是 785e3）。按表中数值无法复核出正文给出的前五阶频率 2.71 / 9.33 / 18.44 / 22.67 / 24.23 Hz。该项在 `2-梁禹工作/计算复现测试/00_上游模型身份证/U01_参考结构参数与15自由度矩阵/` 中标注为"待决定"。
+
+---
+
+## 本次整理的筛选规则
+
+为控制仓库体积，本仓库只收录**模型定义、计算代码与小体积输入数据**：
+
+- **收录**：`.m` `.mlx` `.slx` `.py` `.tex` `.bib` `.md` `.cls` `.sty` `.bst` `.txt` 等代码与文本文件（不限大小）；`.mat` `.csv` `.json` `.npz` `.h5` `.xlsx` 等数据文件中不超过 2 MB 的部分。
+- **不收录**：仿真中间结果（原始工作目录中此类文件合计约 8.4 GB，最大单文件 357 MB）、图件与渲染输出（`.png` `.pdf` `.svg`，约 1.9 GB）、`tmp/` 与 `temp/` 临时目录、`node_modules/`。
+- **例外**：`1-基准模型` 体积很小，整体原样收录，含其中的模型截图；`2-梁禹工作/原始MATLAB工程/` 为仓库既有内容，原样保留未作筛选。
+- **不收录的敏感材料**：学位论文原件与答辩材料（梁禹硕士论文 PDF/DOCX/PPTX、滕雪大论文）未纳入本仓库。
+
+原始完整工作目录保留在本地 `D:\JZ_PhD\10_论文_Papers\Li\RHTS` 下，未作任何改动。

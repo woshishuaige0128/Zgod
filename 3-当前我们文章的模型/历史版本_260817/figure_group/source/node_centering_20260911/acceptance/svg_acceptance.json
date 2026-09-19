@@ -1,0 +1,1249 @@
+{
+  "pass": true,
+  "checked_at_local": "2026-09-11T17:54:16",
+  "scope": "Grouped SVG node-label centering, exact preservation of other SVG source bytes, and actual sharp render review",
+  "total_centered_node_groups": 54,
+  "total_continuous_arcs_preserved": 42,
+  "centering_method": {
+    "source_pdf": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\preview\\centered.pdf",
+    "source_pdf_sha256": "27eaa33e7325af3e0ccb8639395e7a3badda5d79c8a3a723b81eefa1f5d0d326",
+    "node_count": 54,
+    "method": "One Times New Roman baseline offset ratio = median((PDF text baseline_y - circle center_y) / PDF font_size), measured from all 54 centered nodes on actual WPS PDF pages 18 and 19.",
+    "uniform_ratio": 0.34114821413730056,
+    "ratio_min": 0.34106315450465424,
+    "ratio_max": 0.34513790030726194
+  },
+  "centering_formula": "text x = circle cx; text-anchor = middle; text y = circle cy + 0.34114821413730056 * unchanged font-size",
+  "no_per_number_offsets": true,
+  "renderer": "Bundled sharp via presentations/container_tools/rasterize_svg.mjs",
+  "figures": [
+    {
+      "figure": 3,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\draft\\fig3_generated_editable_centered_nodes.svg",
+      "sha256": "d8add953eeb05c8f607500b28cf335661b631fbf924b162284a5d755d43db229",
+      "backup": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\backup\\fig3_generated_editable_smooth_arc.svg",
+      "backup_sha256": "dc740a62a07ee3e386242966584205e9e79b456f853b93b5046607b3e6c6b984",
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\preview\\svg\\fig3_centered_sharp.png",
+      "render_sha256": "21379ef368413764d4b608144e40891323aec75638554eeedeaccfb7d558c093",
+      "render_pixels": [
+        1122,
+        1402
+      ],
+      "counts": {
+        "node_groups": 16,
+        "native_objects": 102,
+        "text": 33,
+        "tspan": 48,
+        "continuous_rotation_arcs": 12,
+        "endpoint_markers": 17,
+        "image": 0
+      },
+      "checks": {
+        "exact_node_group_count": true,
+        "all_node_groups_centered": true,
+        "all_other_source_bytes_unchanged": true,
+        "all_continuous_arcs_unchanged": true,
+        "all_other_texts_unchanged": true,
+        "native_objects_and_text_preserved": true,
+        "no_image_or_foreign_object": true,
+        "render_after_source": true,
+        "render_size_matches_svg": true,
+        "actual_render_visually_viewed": true,
+        "node_digits_visually_centered": true,
+        "no_visible_text_overlap_or_clipping": true,
+        "output_matches_build_sha256": true,
+        "backup_matches_build_sha256": true
+      },
+      "nodes": [
+        {
+          "group_id": "fig3_node_1_centered_group",
+          "number": "1",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 63.0,
+          "cy": 1187.0,
+          "x": 63.0,
+          "baseline_y": 1200.64592857,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482142500006
+        },
+        {
+          "group_id": "fig3_node_2_centered_group",
+          "number": "2",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 320.0,
+          "cy": 1187.0,
+          "x": 320.0,
+          "baseline_y": 1200.64592857,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482142500006
+        },
+        {
+          "group_id": "fig3_node_3_centered_group",
+          "number": "3",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 577.0,
+          "cy": 1187.0,
+          "x": 577.0,
+          "baseline_y": 1200.64592857,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482142500006
+        },
+        {
+          "group_id": "fig3_node_4_centered_group",
+          "number": "4",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 833.0,
+          "cy": 1187.0,
+          "x": 833.0,
+          "baseline_y": 1200.64592857,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482142500006
+        },
+        {
+          "group_id": "fig3_node_5_centered_group",
+          "number": "5",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 63.0,
+          "cy": 857.0,
+          "x": 63.0,
+          "baseline_y": 870.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_6_centered_group",
+          "number": "6",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 320.0,
+          "cy": 857.0,
+          "x": 320.0,
+          "baseline_y": 870.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_7_centered_group",
+          "number": "7",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 577.0,
+          "cy": 857.0,
+          "x": 577.0,
+          "baseline_y": 870.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_8_centered_group",
+          "number": "8",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 833.0,
+          "cy": 857.0,
+          "x": 833.0,
+          "baseline_y": 870.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_9_centered_group",
+          "number": "9",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 63.0,
+          "cy": 521.0,
+          "x": 63.0,
+          "baseline_y": 534.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_10_centered_group",
+          "number": "10",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 320.0,
+          "cy": 521.0,
+          "x": 320.0,
+          "baseline_y": 534.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_11_centered_group",
+          "number": "11",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 577.0,
+          "cy": 521.0,
+          "x": 577.0,
+          "baseline_y": 534.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_12_centered_group",
+          "number": "12",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 833.0,
+          "cy": 521.0,
+          "x": 833.0,
+          "baseline_y": 534.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.34114821412499907
+        },
+        {
+          "group_id": "fig3_node_13_centered_group",
+          "number": "13",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 98.0,
+          "cy": 188.0,
+          "x": 98.0,
+          "baseline_y": 201.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482141249998
+        },
+        {
+          "group_id": "fig3_node_14_centered_group",
+          "number": "14",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 355.0,
+          "cy": 188.0,
+          "x": 355.0,
+          "baseline_y": 201.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482141249998
+        },
+        {
+          "group_id": "fig3_node_15_centered_group",
+          "number": "15",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 612.0,
+          "cy": 188.0,
+          "x": 612.0,
+          "baseline_y": 201.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482141249998
+        },
+        {
+          "group_id": "fig3_node_16_centered_group",
+          "number": "16",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 868.0,
+          "cy": 188.0,
+          "x": 868.0,
+          "baseline_y": 201.645928565,
+          "font_size": 40.0,
+          "actual_baseline_ratio": 0.3411482141249998
+        }
+      ],
+      "arcs": [
+        {
+          "id": "fig3_rotation_1_1",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_1_2",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_1_3",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_1_4",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_2_1",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_2_2",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_2_3",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_2_4",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_3_1",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_3_2",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_3_3",
+          "unchanged": true
+        },
+        {
+          "id": "fig3_rotation_3_4",
+          "unchanged": true
+        }
+      ],
+      "visual_observation": "All node labels are centered horizontally and vertically by the same Times New Roman rule. One-digit and two-digit labels fit their circles. Each circle and label form one SVG group. All other labels, frame lines, continuous arcs and endpoint markers retain their prior rendering."
+    },
+    {
+      "figure": 4,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\draft\\fig4_generated_editable_centered_nodes.svg",
+      "sha256": "f16e4551aa63f95fb3bf80426ba6955839bed2a6eecc127fa704ba70319edef0",
+      "backup": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\backup\\fig4_generated_editable_smooth_arc.svg",
+      "backup_sha256": "389d91599698172f750bd1d514d019fe479eb65fa1a27d9a518a43d9b2a39e4d",
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_node_center_20260911\\preview\\svg\\fig4_centered_sharp.png",
+      "render_sha256": "cecb802f2dc889c25824d647993432e0be4cf2aad4dedf6d4a46f7e4d2ea79e5",
+      "render_pixels": [
+        1254,
+        1254
+      ],
+      "counts": {
+        "node_groups": 38,
+        "native_objects": 253,
+        "text": 88,
+        "tspan": 129,
+        "continuous_rotation_arcs": 30,
+        "endpoint_markers": 41,
+        "image": 0
+      },
+      "checks": {
+        "exact_node_group_count": true,
+        "all_node_groups_centered": true,
+        "all_other_source_bytes_unchanged": true,
+        "all_continuous_arcs_unchanged": true,
+        "all_other_texts_unchanged": true,
+        "native_objects_and_text_preserved": true,
+        "no_image_or_foreign_object": true,
+        "render_after_source": true,
+        "render_size_matches_svg": true,
+        "actual_render_visually_viewed": true,
+        "node_digits_visually_centered": true,
+        "no_visible_text_overlap_or_clipping": true,
+        "output_matches_build_sha256": true,
+        "backup_matches_build_sha256": true
+      },
+      "nodes": [
+        {
+          "group_id": "fig4_I_num_node13_centered_group",
+          "number": "13",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 129.0,
+          "cy": 115.0,
+          "x": 129.0,
+          "baseline_y": 124.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793095
+        },
+        {
+          "group_id": "fig4_I_num_node14_centered_group",
+          "number": "14",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 281.0,
+          "cy": 115.0,
+          "x": 281.0,
+          "baseline_y": 124.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793095
+        },
+        {
+          "group_id": "fig4_I_num_node15_centered_group",
+          "number": "15",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 433.0,
+          "cy": 115.0,
+          "x": 433.0,
+          "baseline_y": 124.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793095
+        },
+        {
+          "group_id": "fig4_I_num_node16_centered_group",
+          "number": "16",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 587.0,
+          "cy": 115.0,
+          "x": 587.0,
+          "baseline_y": 124.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793095
+        },
+        {
+          "group_id": "fig4_I_num_node9_centered_group",
+          "number": "9",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 122.0,
+          "cy": 249.0,
+          "x": 122.0,
+          "baseline_y": 258.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node10_centered_group",
+          "number": "10",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 273.0,
+          "cy": 249.0,
+          "x": 273.0,
+          "baseline_y": 258.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node11_centered_group",
+          "number": "11",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 426.0,
+          "cy": 249.0,
+          "x": 426.0,
+          "baseline_y": 258.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node12_centered_group",
+          "number": "12",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 581.0,
+          "cy": 249.0,
+          "x": 581.0,
+          "baseline_y": 258.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node6_centered_group",
+          "number": "6",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 273.0,
+          "cy": 377.0,
+          "x": 273.0,
+          "baseline_y": 386.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node7_centered_group",
+          "number": "7",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 422.0,
+          "cy": 377.0,
+          "x": 422.0,
+          "baseline_y": 386.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node8_centered_group",
+          "number": "8",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 578.0,
+          "cy": 377.0,
+          "x": 578.0,
+          "baseline_y": 386.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node3_centered_group",
+          "number": "3",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 422.0,
+          "cy": 500.0,
+          "x": 422.0,
+          "baseline_y": 509.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_num_node4_centered_group",
+          "number": "4",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 577.0,
+          "cy": 500.0,
+          "x": 577.0,
+          "baseline_y": 509.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node9_centered_group",
+          "number": "9",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 896.0,
+          "cy": 217.0,
+          "x": 896.0,
+          "baseline_y": 226.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node10_centered_group",
+          "number": "10",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1045.0,
+          "cy": 215.0,
+          "x": 1045.0,
+          "baseline_y": 224.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node5_centered_group",
+          "number": "5",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 890.0,
+          "cy": 344.0,
+          "x": 890.0,
+          "baseline_y": 353.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node6_centered_group",
+          "number": "6",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1038.0,
+          "cy": 344.0,
+          "x": 1038.0,
+          "baseline_y": 353.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node1_centered_group",
+          "number": "1",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 890.0,
+          "cy": 488.0,
+          "x": 890.0,
+          "baseline_y": 497.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_I_phys_node2_centered_group",
+          "number": "2",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1040.0,
+          "cy": 488.0,
+          "x": 1040.0,
+          "baseline_y": 497.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node14_centered_group",
+          "number": "14",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 281.0,
+          "cy": 703.0,
+          "x": 281.0,
+          "baseline_y": 712.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node15_centered_group",
+          "number": "15",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 433.0,
+          "cy": 703.0,
+          "x": 433.0,
+          "baseline_y": 712.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node16_centered_group",
+          "number": "16",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 587.0,
+          "cy": 703.0,
+          "x": 587.0,
+          "baseline_y": 712.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node10_centered_group",
+          "number": "10",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 273.0,
+          "cy": 834.0,
+          "x": 273.0,
+          "baseline_y": 843.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node11_centered_group",
+          "number": "11",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 426.0,
+          "cy": 834.0,
+          "x": 426.0,
+          "baseline_y": 843.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node12_centered_group",
+          "number": "12",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 581.0,
+          "cy": 834.0,
+          "x": 581.0,
+          "baseline_y": 843.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node6_centered_group",
+          "number": "6",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 273.0,
+          "cy": 962.0,
+          "x": 273.0,
+          "baseline_y": 971.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node7_centered_group",
+          "number": "7",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 422.0,
+          "cy": 962.0,
+          "x": 422.0,
+          "baseline_y": 971.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node8_centered_group",
+          "number": "8",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 578.0,
+          "cy": 962.0,
+          "x": 578.0,
+          "baseline_y": 971.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node3_centered_group",
+          "number": "3",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 422.0,
+          "cy": 1087.0,
+          "x": 422.0,
+          "baseline_y": 1096.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_num_node4_centered_group",
+          "number": "4",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 577.0,
+          "cy": 1087.0,
+          "x": 577.0,
+          "baseline_y": 1096.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node13_centered_group",
+          "number": "13",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 893.0,
+          "cy": 704.0,
+          "x": 893.0,
+          "baseline_y": 713.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node14_centered_group",
+          "number": "14",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1044.0,
+          "cy": 703.0,
+          "x": 1044.0,
+          "baseline_y": 712.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node9_centered_group",
+          "number": "9",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 890.0,
+          "cy": 834.0,
+          "x": 890.0,
+          "baseline_y": 843.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node10_centered_group",
+          "number": "10",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1038.0,
+          "cy": 834.0,
+          "x": 1038.0,
+          "baseline_y": 843.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node5_centered_group",
+          "number": "5",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 887.0,
+          "cy": 961.0,
+          "x": 887.0,
+          "baseline_y": 970.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node6_centered_group",
+          "number": "6",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1037.0,
+          "cy": 962.0,
+          "x": 1037.0,
+          "baseline_y": 971.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node1_centered_group",
+          "number": "1",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 890.0,
+          "cy": 1089.0,
+          "x": 890.0,
+          "baseline_y": 1098.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        },
+        {
+          "group_id": "fig4_II_phys_node2_centered_group",
+          "number": "2",
+          "pass": true,
+          "checks": {
+            "group_contains_exactly_circle_and_text": true,
+            "circle_unchanged": true,
+            "number_text_content_style_size_unchanged": true,
+            "horizontal_at_circle_center": true,
+            "same_uniform_font_baseline_rule": true
+          },
+          "cx": 1040.0,
+          "cy": 1089.0,
+          "x": 1040.0,
+          "baseline_y": 1098.89329821,
+          "font_size": 29.0,
+          "actual_baseline_ratio": 0.34114821413793145
+        }
+      ],
+      "arcs": [
+        {
+          "id": "fig4_I_num_psi12_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi13_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi14_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi15_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi7_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi8_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi9_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi10_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi3_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi4_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_num_psi5_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_phys_psi7_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_phys_psi8_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_phys_psi2_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_I_phys_psi3_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi13_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi14_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi15_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi8_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi9_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi10_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi3_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi4_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_num_psi5_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi12_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi13_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi7_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi8_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi2_arrow",
+          "unchanged": true
+        },
+        {
+          "id": "fig4_II_phys_psi3_arrow",
+          "unchanged": true
+        }
+      ],
+      "visual_observation": "All node labels are centered horizontally and vertically by the same Times New Roman rule. One-digit and two-digit labels fit their circles. Each circle and label form one SVG group. All other labels, frame lines, continuous arcs and endpoint markers retain their prior rendering."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "boundary_difference_rows": 335,
+  "boundary_rows": 737,
+  "check_summary": {
+    "fail": 0,
+    "info": 8,
+    "pass": 107,
+    "total": 115
+  },
+  "clean_probe_action_id": "d4b1bc8f-cde0-4009-9bdf-e1bdb0a01e13",
+  "clean_probe_receipt_sha256": "CD15608081F039B887D3C3F0751F09D78269C6B321998784EF7684D3A5413928",
+  "confusion_rows": 7,
+  "contract_sha256": "D2FBF79774868C539BB9AD01EB1ACB0E833906D20E43A457D8C592CC0EE3095F",
+  "execution_status": "PASS",
+  "extension_sequence_rows": 56,
+  "figure_pdf_count": 4,
+  "figure_png_count": 4,
+  "formal_success_directories_created": false,
+  "fs_protocol_sha256": "3634772C2DC070FD4C24B8B7780B7006F918A80A08F033E8F15A2C09D5FBBC57",
+  "generator_sha256": "42B094B03D2DBA4EA8B4176EA21633BFCDBFFF0477B884AAE3B2F512FC8057C5",
+  "next_step_started": false,
+  "object_gate_status": "FAIL_RETAIN_PLOTTING_LEVEL",
+  "pointwise_comparison_rows": 10385,
+  "route_eligibility_rows": 7,
+  "schema_version": "board20_step6_history_comparison_output_v1",
+  "target_cell_rows": 6
+}

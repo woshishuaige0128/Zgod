@@ -1,0 +1,8 @@
+{
+  "status": "STATIC_PASS",
+  "report_sha256": "757e65312ebb8cf9f7592580c6d596036d8a990523555b9cd606e13e4230a160",
+  "images": 41,
+  "tables": 3,
+  "offline_embedded_resources": true,
+  "viewport_visual": "NOT_RUN; earlier local HTML URL safety restriction retained; no workaround used"
+}

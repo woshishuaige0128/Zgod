@@ -1,0 +1,455 @@
+{
+  "summary": {
+    "pass": true,
+    "checked_rotation_arrows": 42,
+    "by_slide": {
+      "18": 12,
+      "19": 30
+    },
+    "native_arrows_total": 58,
+    "standard_two_quarter_cubic_half_ellipse_count": 42,
+    "no_line_segment_count": 42,
+    "unchanged_endpoints_and_transform_count": 42,
+    "continuous_join_tangent_count": 42,
+    "native_small_head_count": 42,
+    "vertical_angle_is_acceptance_criterion": false
+  },
+  "input_sha256": {
+    "backup\\current.pptx": "8849edbe13a4551cb462bef80bb7be38788a6174b38c92111976534b98cd28ac",
+    "draft\\cubic.pptx": "66cc9bec1077a4c60805def044a7e1b8059e47dc197cd361b81012a56b3b8a7a",
+    "patch_records.json": "67f6922e2e592ae96b817d0fe56a2ef0b5ecff9ec8c768a099b02df0c94b4274",
+    "preview\\cubic_18.png": "a653e28631e90d070aa9376a62c752bf86cde4bdf630312cfa4dace60d056a15",
+    "preview\\cubic_19.png": "d2c061b81e01fdbb83a0b955c49f37d3f7607097051cc7b49ba695d9fb61d256"
+  },
+  "method": "Compare all 42 named paths with the rounded standard two-quarter cubic construction k=4(sqrt(2)-1)/3, require exactly M+2C with no line segment, compare original endpoints and all shape/group transforms, and verify native triangle heads. The cubic construction is the standard approximation of a half ellipse.",
+  "visual_review": {
+    "reviewed_pages": [
+      18,
+      19
+    ],
+    "status": "PASS",
+    "notes_zh": "已查看两页实际WPS PNG：弧线连续接到小箭头，未见上轮末端竖直钩段或折线；箭头随曲线自然倾斜。"
+  },
+  "per_arrow": [
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_1",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_2",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_3",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_4",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_1",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_2",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_3",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_4",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_1",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_2",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_3",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_4",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi10_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi13_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi14_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi15_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi3_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi4_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi5_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi8_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi9_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi12_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi13_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi2_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi3_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi7_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi8_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi10_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi12_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi13_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi14_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi15_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi3_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi4_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi5_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi7_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi8_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi9_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi2_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi3_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi7_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi8_arrow",
+      "pass": true,
+      "rounded_standard_controls": true,
+      "endpoints_and_transform_unchanged": true,
+      "no_line_segment": true,
+      "native_small_head": true,
+      "continuous_join_tangent": true
+    }
+  ]
+}

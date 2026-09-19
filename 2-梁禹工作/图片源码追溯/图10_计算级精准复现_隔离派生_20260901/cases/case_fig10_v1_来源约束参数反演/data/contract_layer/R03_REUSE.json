@@ -1,0 +1,242 @@
+{
+  "contract_hash": "20e3d26326c590af155e0db5adc3e6ed2686c3e09136fa76869c53bb776130d0",
+  "contract_id": "R03_REUSE",
+  "difference_from_r03": [
+    {
+      "candidate_value": "same_scientific_contract",
+      "classification": "NO_CHANGE_REUSE",
+      "field": "scientific_contract",
+      "r03_value": "same_scientific_contract"
+    }
+  ],
+  "evidence_level": "BOARD20_FULLGRID_VERIFIED_REUSE",
+  "label_cn": "板块20 R03既有六路线全网格复用记录",
+  "materialization_status": "EXISTING_BOARD20_BUNDLES_REUSED",
+  "notes": [
+    "本记录只复用既有六个R03数值包和既有全网格结果，不触发求根或网格计算。",
+    "R03保留为已知基线，不能改名为板块28新候选。"
+  ],
+  "record_kind": "KNOWN_REUSE",
+  "reuse_evidence": {
+    "fullgrid_point_count": 12462,
+    "fullgrid_status": "PASS_FULLGRID_DUAL_SOLVER_SHARED_CERTIFICATE",
+    "rerun_policy": "DO_NOT_RERUN_KNOWN_CONTRACT",
+    "route_bundles": [
+      {
+        "bundle_id": "D1_Original_R03",
+        "critical_point_count": 0,
+        "dimension": 15,
+        "division": 1,
+        "mat_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b",
+        "maximum_rho_difference": 2.6423307986078726e-14,
+        "method": "Original",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_原结构15维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 16,
+        "stable_point_count": 65
+      },
+      {
+        "bundle_id": "D1_Guyan_R03",
+        "critical_point_count": 0,
+        "dimension": 6,
+        "division": 1,
+        "mat_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94",
+        "maximum_rho_difference": 2.398081733190338e-14,
+        "method": "Guyan",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Guyan缩聚6维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 16,
+        "stable_point_count": 45
+      },
+      {
+        "bundle_id": "D1_Craig_Bampton_R03",
+        "critical_point_count": 0,
+        "dimension": 9,
+        "division": 1,
+        "mat_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7",
+        "maximum_rho_difference": 3.730349362740526e-14,
+        "method": "Craig_Bampton",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Craig-Bampton缩聚9维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 16,
+        "stable_point_count": 62
+      },
+      {
+        "bundle_id": "D2_Original_R03",
+        "critical_point_count": 0,
+        "dimension": 15,
+        "division": 2,
+        "mat_sha256": "e4d1cbb734168c871aa514a747d10095841e831e219a505a4b6e70d30f81274c",
+        "maximum_rho_difference": 1.7541523789077473e-14,
+        "method": "Original",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第2类_原结构15维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 66,
+        "stable_point_count": 403
+      },
+      {
+        "bundle_id": "D2_Guyan_R03",
+        "critical_point_count": 0,
+        "dimension": 5,
+        "division": 2,
+        "mat_sha256": "ff7c58e95f6cbf8960cfa2cae67fa6b9255be8395525bb47b762c3ca283af9f0",
+        "maximum_rho_difference": 1.3100631690576847e-14,
+        "method": "Guyan",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第2类_Guyan缩聚5维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 66,
+        "stable_point_count": 634
+      },
+      {
+        "bundle_id": "D2_Craig_Bampton_R03",
+        "critical_point_count": 0,
+        "dimension": 8,
+        "division": 2,
+        "mat_sha256": "cb9e129087a4398816fc70dccc4ddd2b5a23e120f04801c3a410e5f9944cf514",
+        "maximum_rho_difference": 8.060219158778636e-14,
+        "method": "Craig_Bampton",
+        "overall_pass": true,
+        "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第2类_Craig-Bampton缩聚8维__R03_论文CARE_矩阵al_广义力.mat",
+        "rightmost_stable_j": 66,
+        "stable_point_count": 589
+      }
+    ],
+    "source_candidate_id": "R03"
+  },
+  "route_bundle_plan": [],
+  "schema_version": "fig10-contract-v1",
+  "scientific_contract": {
+    "actuation_and_delay_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    "controller": {
+      "B_lower_block": "M_inverse",
+      "Q_diagonal": [
+        1000000,
+        1000000,
+        10000,
+        10000
+      ],
+      "R_diagonal": [
+        0.01,
+        0.01
+      ],
+      "force_embedding": "gain_direct",
+      "input_semantics": "generalized_force",
+      "local_matrix_contract": "standard_static_projection_of_full_local_MCK_on_actuation_coordinates",
+      "solver": "CARE",
+      "state_order": [
+        "q1",
+        "q2",
+        "qdot1",
+        "qdot2"
+      ]
+    },
+    "controller_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    "delay_and_feedback": {
+      "channel_to_delay_exponent": {
+        "channel_1": "l",
+        "channel_2": "j"
+      },
+      "delay_orientation": "H_LEFT",
+      "feedback_formula": "S_L^T [v(z) DeltaC + DeltaK] S_R",
+      "feedback_placement": "OUTSIDE_H",
+      "inside_bundle_rule": "not_applicable; active physical delay factors remain W_C and W_K; projected feedback is external",
+      "physical_delay_formula": "S_L^T H(z) [v(z) W_C + W_K]"
+    },
+    "integration": {
+      "al_formula": "solve(4M+2dtC+dt^2K,4M)",
+      "alpha": null,
+      "mass_operator": "M/al",
+      "mass_operator_identity": "M/al = M + 0.5dtC + 0.25dt^2K",
+      "mode": "route_matrix_al"
+    },
+    "matrix_package": {
+      "article_dimension_contract_status": "BOARD20_NUMERIC_PACKAGE_IS_NOT_ARTICLE_6_AND_12_MODEL",
+      "craig_bampton_mode_count": 3,
+      "division_method_dimensions": {
+        "division_1": {
+          "Craig_Bampton": 9,
+          "Guyan": 6,
+          "Original": 15
+        },
+        "division_2": {
+          "Craig_Bampton": 8,
+          "Guyan": 5,
+          "Original": 15
+        }
+      },
+      "frozen_mat_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "guyan_projection": "standard_congruence_TtAT",
+      "id": "BOARD20_STEP8B_SUFFIX2_SUFFIX3"
+    },
+    "sampling": {
+      "delay_grid_status": "NOT_ASSIGNED_BY_CONTRACT_LAYER",
+      "dt_seconds": {
+        "denominator": 1024,
+        "numerator": 1
+      }
+    },
+    "stability_classification": {
+      "critical_rule": "abs(rho - 1) <= 1e-9",
+      "grid_assignment": "NOT_PART_OF_CONTRACT_LAYER",
+      "quantity": "maximum_modulus_of_physical_roots",
+      "stable_rule": "rho < 1"
+    }
+  },
+  "search_action": "REUSE_EXISTING_NO_RERUN",
+  "source_basis": [
+    {
+      "claim": "R03六路线数值包均已生成并通过包级检查。",
+      "classification": "VERIFIED_PRIOR_COMPUTATION",
+      "pointer": "six R03 bundle rows",
+      "source_id": "board20_bundle_index"
+    },
+    {
+      "claim": "R03已包含在板块20六路线31乘67跨语言全网格验证中，不得重复运行。",
+      "classification": "VERIFIED_PRIOR_COMPUTATION",
+      "pointer": "PASS validation summary",
+      "source_id": "board20_fullgrid_validation"
+    }
+  ]
+}

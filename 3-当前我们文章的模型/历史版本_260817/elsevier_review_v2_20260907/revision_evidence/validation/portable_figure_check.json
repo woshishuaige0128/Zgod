@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "make_figures.py independent execution",
+      "passed": true
+    },
+    {
+      "check": "make_diagrams.py independent execution",
+      "passed": true
+    },
+    {
+      "check": "fig01_force_feedback.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig02_geometry.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig03_dofs.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig04_divisions.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig11_excitation.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig12_horizontal_modes.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig13_middle_eq.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig14_middle_chirp.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig15_peak_drift.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "fig16_modal_shares.pdf pixel equality at 120 dpi",
+      "passed": true
+    },
+    {
+      "check": "new_actuator_share_contributions.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_excitation.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_horizontal_modes.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_middle_chirp.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_middle_eq.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_modal_shares.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_modes_frequencies.csv exact data equality",
+      "passed": true
+    },
+    {
+      "check": "new_peak_drift.csv exact data equality",
+      "passed": true
+    }
+  ],
+  "figure_count": 10,
+  "isolated_copy": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\revision_v2_20260907\\independent_figure_copy",
+  "comparison": "Exact rendered pixel equality at 120 dpi; all regenerated numeric CSV files byte-identical"
+}

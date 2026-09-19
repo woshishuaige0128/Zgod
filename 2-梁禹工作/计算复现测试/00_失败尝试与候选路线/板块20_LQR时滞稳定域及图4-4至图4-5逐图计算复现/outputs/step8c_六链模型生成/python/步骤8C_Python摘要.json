@@ -1,0 +1,64 @@
+{
+  "bundle_count": 36,
+  "candidate_count": 6,
+  "candidate_counts": {
+    "R01": 6,
+    "R02": 6,
+    "R03": 6,
+    "R04": 6,
+    "R05": 6,
+    "R06": 6
+  },
+  "controller_stability_extrema": {
+    "CARE_max_real_part": -1.2373194020996015,
+    "DARE_max_spectral_radius": 0.9987366942216257
+  },
+  "formula_valid_bundle_count": 24,
+  "global_checks": {
+    "R01_R04_only_are_paper_grid_eligible": true,
+    "all_bundle_checks_pass": true,
+    "division2_historical_guyan_S_L_second_row_is_zero": true,
+    "exact_36_bundles": true,
+    "formula_valid_bundle_count_is_24": true,
+    "historical_diagnostic_bundle_count_is_12": true,
+    "historical_guyan_is_frozen_H_left": true,
+    "historical_guyan_petrov_base_MCK_closed": true,
+    "no_pdf_or_history_mask_input": true,
+    "only_one_numeric_input": true,
+    "six_candidates_each_have_six_routes": true,
+    "six_routes_each_have_six_candidates": true
+  },
+  "historical_diagnostic_not_formula_valid_bundle_count": 12,
+  "input_mat": "outputs/step8b_论文代码矩阵合同/步骤8B_基础矩阵与选择矩阵.mat",
+  "input_policy": "ONLY_STEP8B_DETERMINISTIC_MAT_NO_PDF_NO_MASK",
+  "input_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+  "maximum_errors": {
+    "frozen_historical_guyan_activity_relative_error": 0.0,
+    "local_projection_relative_error": 1.6055809742053307e-16,
+    "matrix_al_identity_relative_error": 2.5916412151923004e-16,
+    "petrov_historical_base_relative_error": 1.2368618905282994e-16,
+    "riccati_relative_residual": 4.383798593177323e-11,
+    "selector_contract_relative_error": 0.0,
+    "zero_delay_C_closure_relative_error": 1.9852045616791214e-19,
+    "zero_delay_K_closure_relative_error": 5.117973944714969e-18
+  },
+  "notes": [
+    "R01-R04均为H左乘，反馈项位于H之外。",
+    "R05-R06的Original保留(L_C/L_K) H S_R右乘，Craig-Bampton保留S' H (W_C/W_K)左乘。",
+    "R05-R06历史单边Guyan恢复步骤8B冻结身份：S_R左乘与S_R双侧反馈；Petrov右乘仅保留审计字段。",
+    "R03-R06的matrix_al均由各包自己的M/C/K逐路线重算。",
+    "R05-R06仅作历史规则诊断，不计入论文公式有效候选。",
+    "本步骤没有计算31x67稳定域，也没有按论文曲线选择候选。"
+  ],
+  "route_count": 6,
+  "route_counts": {
+    "D1_Craig_Bampton": 6,
+    "D1_Guyan": 6,
+    "D1_Original": 6,
+    "D2_Craig_Bampton": 6,
+    "D2_Guyan": 6,
+    "D2_Original": 6
+  },
+  "schema": "board20-step8c-python-summary-v1",
+  "status": "PASS"
+}

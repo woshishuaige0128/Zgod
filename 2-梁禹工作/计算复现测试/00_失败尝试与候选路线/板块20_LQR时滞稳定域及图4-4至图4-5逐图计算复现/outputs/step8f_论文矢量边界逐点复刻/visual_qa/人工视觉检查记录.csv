@@ -1,0 +1,3 @@
+figure,review_source,status,curve_markers_complete,legend_overlap,axis_label_legible,rightmost_low_points_visible,notes
+图4-4,最终PDF的300dpi重渲染,PASS,PASS,PASS,PASS,PASS,"Original、CB、Guyan三条完整；Guyan最右列tau1=58的tau2=2和3清晰可见"
+图4-5,最终PDF的300dpi重渲染,PASS,PASS,PASS,PASS,PASS,"Original、CB、Guyan三条完整；三条曲线的右侧低点均未裁切"

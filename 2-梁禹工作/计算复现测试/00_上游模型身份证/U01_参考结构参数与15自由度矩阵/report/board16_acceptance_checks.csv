@@ -1,0 +1,33 @@
+﻿check,actual,expected,result
+对象总数与ID唯一,45/45,45/45,PASS
+只使用四种固定证据标签,none,none,PASS
+U01索引等级,计算级复现,计算级复现,PASS
+U02索引等级,计算级复现,计算级复现,PASS
+U02状态保留历史/待决定边界,当前代码15阶频率与作者energy_zonghe.mlx水平参与度已计算闭合；论文五频率仍为历史值，其旧版本来源待决定,同时包含历史值和待决定,PASS
+C01索引保持历史值,历史值,历史值,PASS
+U01成功目录,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_上游模型身份证\U01_参考结构参数与15自由度矩阵,directory with README,PASS
+U02限定成功目录,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_上游模型身份证\U02_完整模型前五阶频率与质量参与系数,directory with README,PASS
+U01失败目录,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\U01_参考结构参数与15自由度矩阵,directory with README,PASS
+U02失败目录,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\U02_完整模型前五阶频率与质量参与系数,directory with README,PASS
+C01失败目录,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\结论C01_完整参考模型的固有频率与模态质量参与度,directory with README,PASS
+C01不得建立整体成功目录,False,False,PASS
+候选区独立验证总结果,PASS,PASS,PASS
+预注册数值门槛全部通过,14/14,all PASS and >=14 checks,PASS
+板块16隔离输入哈希,9/9,9/9 MATCH,PASS
+现存代码前五阶频率,max_abs=3.0382807381101884e-11,<1e-9 Hz,PASS
+水平方向前五阶累计,0.980607619065411,0.980607619065411 +/-1e-12,PASS
+MLX历史输出契约,declared=15;visible=10;markers=6/6,declared15;visible10;markers6/6,PASS
+论文五频率必须明确为未精确闭合,max_relative=2.65995225475%,five unequal values; max>2.5%,PASS
+energy.m真实18维失败,"{'energy_route_status': 'EXPECTED_DIMENSION_FAILURE', 'energy_error_identifier': 'MATLAB:innerdim', 'energy_error_message': '用于矩阵乘法的维度不正确。请检查并确保第一个矩阵中的列数与第二个矩阵中的行数匹配。要单独对矩阵的每个元素进行运算，请使用 TIMES (.*)执行按元素相乘。'}",EXPECTED_DIMENSION_FAILURE/MATLAB:innerdim,PASS
+energy.m审计文字是18维,写死18维向量,写死18维向量,PASS
+U01自包含独立验证,summary=PASS;inputs=9/9,PASS;9/9 MATCH;PASS log,PASS
+U02自包含独立验证,summary=PASS;inputs=9/9,PASS;9/9 MATCH;PASS log,PASS
+U02矢量PDF与600dpi PNG证据图,pdf=38567;png=400968;copies_match=True,valid PDF/PNG and output=visual hash,PASS
+保护源即时哈希复核,326/326,326/326 MATCH,PASS
+保护源位于test外,none,none,PASS
+硕士论文哈希不变,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,PASS
+小论文母版哈希不变,15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76,15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76,PASS
+Python代码语法,files=3;errors=[],>=3 files;no errors,PASS
+中文证据报告完整,chars=13058;markers=6/6,>10000 chars;6/6 markers,PASS
+失败迭代与最终日志保留,[],four nonempty logs,PASS
+板块16工件清单非空,166,>=100 files,PASS

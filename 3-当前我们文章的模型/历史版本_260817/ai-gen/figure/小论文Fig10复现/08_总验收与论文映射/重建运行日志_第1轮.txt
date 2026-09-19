@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "evidence_level": "PLOT_LEVEL_VECTOR_TRACE_ONLY",
+  "calculation_reproduction": false,
+  "point_count": 386,
+  "sampling_period_seconds": 0.0009765625,
+  "conversion": "tau_ms=(tau_step-1)*1000/1024",
+  "preserve_point_order": true,
+  "drawstyle": "default ordered polyline",
+  "styles": {
+    "Original": {
+      "color": "#555555",
+      "linestyle": "--",
+      "marker": "o",
+      "zorder": 4
+    },
+    "Craig-Bampton": {
+      "color": "#EE6677",
+      "linestyle": "-",
+      "marker": "s",
+      "zorder": 3
+    },
+    "Guyan": {
+      "color": "#4477AA",
+      "linestyle": "-.",
+      "marker": "^",
+      "zorder": 2
+    }
+  },
+  "figure_size_inches": [
+    6.3,
+    2.72
+  ],
+  "pdf": "02_小论文Fig10最终图\\PDF\\fig10_stability_domain.pdf",
+  "png": "02_小论文Fig10最终图\\PNG\\fig10_stability_domain.png",
+  "combined_csv": "01_论文矢量边界主数据\\Fig10_六条论文边界_采样步与毫秒.csv"
+}

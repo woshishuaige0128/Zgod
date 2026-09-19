@@ -1,0 +1,313 @@
+{
+  "check_count": 48,
+  "checks": [
+    {
+      "check_id": "matlab_right_division_identity",
+      "detail": 5.551115123125783e-17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "right_division_not_elementwise",
+      "detail": "solve(al.T,M.T).T differs from elementwise division",
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.compact_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.full_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.rho_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.near_unit_root_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.compact_poly_residual",
+      "detail": 8.871743370546233e-17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.compact_laurent_residual",
+      "detail": 1.0580207230391226e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l0.j0.formula_identity",
+      "detail": 1.4890331511441637e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.compact_order",
+      "detail": 17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.full_order",
+      "detail": 30,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.rho_match",
+      "detail": 2.55351295663786e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.near_unit_root_match",
+      "detail": 3.715604213194723e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.compact_poly_residual",
+      "detail": 1.6266968015831684e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.compact_laurent_residual",
+      "detail": 1.6194235416496536e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "ORI_DIV1_H_RIGHT.l2.j3.formula_identity",
+      "detail": 9.954753252197575e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.compact_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.full_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.rho_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.near_unit_root_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.compact_poly_residual",
+      "detail": 1.3722500843583824e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.compact_laurent_residual",
+      "detail": 1.594245708542997e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l0.j0.formula_identity",
+      "detail": 2.9402041918704085e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.compact_order",
+      "detail": 17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.full_order",
+      "detail": 30,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.rho_match",
+      "detail": 1.3322676295501878e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.near_unit_root_match",
+      "detail": 5.293820135684622e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.compact_poly_residual",
+      "detail": 2.5148708354867817e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.compact_laurent_residual",
+      "detail": 2.490902896797579e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "GUYAN_DIV1_H_LEFT.l2.j3.formula_identity",
+      "detail": 1.3363020188563064e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.compact_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.full_order",
+      "detail": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.rho_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.near_unit_root_match",
+      "detail": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.compact_poly_residual",
+      "detail": 2.6643657526159537e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.compact_laurent_residual",
+      "detail": 2.653958068820051e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.formula_identity",
+      "detail": 4.956253116239726e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.compact_order",
+      "detail": 17,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.full_order",
+      "detail": 30,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.rho_match",
+      "detail": 3.3306690738754696e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.near_unit_root_match",
+      "detail": 9.813219156061533e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.compact_poly_residual",
+      "detail": 3.0662340313653305e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.compact_laurent_residual",
+      "detail": 3.037398125861348e-14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.formula_identity",
+      "detail": 3.056438689490121e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "left_right_placement_identifiable",
+      "detail": 1.9068387490443819,
+      "status": "PASS"
+    },
+    {
+      "check_id": "feedback_outside_H_identifiable",
+      "detail": 3.483612440049944,
+      "status": "PASS"
+    },
+    {
+      "check_id": "master_contract_remains_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "check_id": "manuscript_contract_remains_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    }
+  ],
+  "completed_at": "2026-08-25T10:37:12+08:00",
+  "diagnostics_not_acceptance_gates": [
+    {
+      "compact_retained_count": 12,
+      "diagnostic_id": "ORI_DIV1_H_RIGHT.l0.j0.strict_all_root_set",
+      "full_retained_count": 12,
+      "observed_extra_zero_count": 0,
+      "root_match_max_relative_diff": 0.0,
+      "status": "PASS",
+      "theoretical_extra_zero_count": 0
+    },
+    {
+      "compact_retained_count": 17,
+      "diagnostic_id": "ORI_DIV1_H_RIGHT.l2.j3.strict_all_root_set",
+      "full_retained_count": 17,
+      "observed_extra_zero_count": 13,
+      "root_match_max_relative_diff": 3.715604213194723e-14,
+      "status": "PASS",
+      "theoretical_extra_zero_count": 13
+    },
+    {
+      "compact_retained_count": 12,
+      "diagnostic_id": "GUYAN_DIV1_H_LEFT.l0.j0.strict_all_root_set",
+      "full_retained_count": 12,
+      "observed_extra_zero_count": 0,
+      "root_match_max_relative_diff": 0.0,
+      "status": "PASS",
+      "theoretical_extra_zero_count": 0
+    },
+    {
+      "compact_retained_count": 17,
+      "diagnostic_id": "GUYAN_DIV1_H_LEFT.l2.j3.strict_all_root_set",
+      "full_retained_count": 29,
+      "observed_extra_zero_count": 1,
+      "root_match_max_relative_diff": Infinity,
+      "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+      "theoretical_extra_zero_count": 13
+    },
+    {
+      "compact_retained_count": 12,
+      "diagnostic_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l0.j0.strict_all_root_set",
+      "full_retained_count": 12,
+      "observed_extra_zero_count": 0,
+      "root_match_max_relative_diff": 0.0,
+      "status": "PASS",
+      "theoretical_extra_zero_count": 0
+    },
+    {
+      "compact_retained_count": 17,
+      "diagnostic_id": "DIV2_H_LEFT_FEEDBACK_OUTSIDE.l2.j3.strict_all_root_set",
+      "full_retained_count": 29,
+      "observed_extra_zero_count": 1,
+      "root_match_max_relative_diff": Infinity,
+      "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+      "theoretical_extra_zero_count": 13
+    }
+  ],
+  "elapsed_seconds": 0.04629450000356883,
+  "evidence_label": "ALGORITHMIC_SELFTEST_NOT_SCIENTIFIC_RESULT",
+  "fail_count": 0,
+  "input_identity": {
+    "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+    "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E"
+  },
+  "pass_count": 48,
+  "schema_version": "board20_step5_selftest_v1",
+  "status": "PASS"
+}

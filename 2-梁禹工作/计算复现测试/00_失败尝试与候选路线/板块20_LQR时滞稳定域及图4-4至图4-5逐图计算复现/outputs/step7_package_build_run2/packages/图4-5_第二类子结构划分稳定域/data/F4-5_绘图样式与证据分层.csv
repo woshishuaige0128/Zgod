@@ -1,0 +1,7 @@
+﻿figure_id,artifact_role,panel,method,route_id,color,linestyle,marker,rendered_object,evidence_level,font_family,mathtext_fontset
+F4-5,HISTORICAL_PLOTTING_LEVEL,single_axis,Original,,#555555,--,o,upper_boundary_step_from_historical_mask,PLOTTING_LEVEL_REPRODUCTION,DejaVu Serif,cm
+F4-5,HISTORICAL_PLOTTING_LEVEL,single_axis,Craig-Bampton,,#EE6677,-,s,upper_boundary_step_from_historical_mask,PLOTTING_LEVEL_REPRODUCTION,DejaVu Serif,cm
+F4-5,HISTORICAL_PLOTTING_LEVEL,single_axis,Guyan,,#4477AA,-.,^,upper_boundary_step_from_historical_mask,PLOTTING_LEVEL_REPRODUCTION,DejaVu Serif,cm
+F4-5,COMPUTED_FAILURE_DIAGNOSTIC,main_ori_div2,Original,main_ori_div2,#555555,--,o,stable_cells_and_rho_equals_one_contour_preserving_holes,ROUTE_LEVEL_COMPUTATION_ONLY,DejaVu Serif,cm
+F4-5,COMPUTED_FAILURE_DIAGNOSTIC,main_guyan_div2,Guyan,main_guyan_div2,#4477AA,-.,^,stable_cells_and_rho_equals_one_contour_preserving_holes,ROUTE_LEVEL_COMPUTATION_ONLY,DejaVu Serif,cm
+F4-5,MISSING_ROUTE,figure_annotation,Craig-Bampton,,#EE6677,-,s,explicit_missing_route_annotation,DO_NOT_CREATE,DejaVu Serif,cm

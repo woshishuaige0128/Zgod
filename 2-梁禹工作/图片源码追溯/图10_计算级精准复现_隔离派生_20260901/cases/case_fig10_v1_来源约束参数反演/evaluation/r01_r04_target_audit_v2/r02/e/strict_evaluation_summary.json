@@ -1,0 +1,420 @@
+{
+  "schema_version": "FIG10_STRICT_TARGET_EVALUATOR_V1",
+  "overall_status": "FAIL",
+  "evidence_label": "板块20封存计算掩膜的目标侧只读评价",
+  "claim_boundary": "目标引导的校准计算复现；本评估器不证明已恢复作者原始参数合同。",
+  "candidate_id": "ARCHIVED_R02",
+  "manifest": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v2\\r02\\m.json",
+    "sha256": "54800BF782C40B78E1116FF9465EA3E47114FB45718836D16BCCC092D9F637E6",
+    "candidate_id": "ARCHIVED_R02",
+    "evidence_label": "板块20封存计算掩膜的目标侧只读评价"
+  },
+  "target": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+    "sha256": "9312FB45595499C4242BF00DAC344CE016CB64F844CB410EA89ECB1F6C8BC7E4",
+    "point_count": 386,
+    "target_internal_step_to_ms_max_abs_error": 0.0
+  },
+  "coordinate_contract": {
+    "step_index_base": 1,
+    "sampling_frequency_hz": 1024,
+    "conversion": "tau_ms=(tau_step-1)*1000/1024",
+    "ms_tolerance": 1e-12
+  },
+  "strict_gate": {
+    "expected_curve_point_counts": [
+      72,
+      69,
+      67,
+      69,
+      56,
+      53
+    ],
+    "expected_total_point_count": 386,
+    "candidate_total_point_count": 570,
+    "total_point_count_exact": false,
+    "curve_pass_count": 0,
+    "curve_count": 6,
+    "ordered_exact_required_orientation": "ORIGINAL_ONLY",
+    "set_difference_count": 952
+  },
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Original",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Original_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 72,
+      "candidate_point_count": 95,
+      "expected_point_count": 72,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 72,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        64,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        31
+      ],
+      "endpoint_l1_error_steps_original": 3,
+      "symmetric_hausdorff_steps": 19.313207915827967,
+      "symmetric_hausdorff_ms": 18.86055460530075,
+      "point_levenshtein_original": 93,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division1_original",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Original_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Craig-Bampton",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Craig-Bampton_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 69,
+      "candidate_point_count": 95,
+      "expected_point_count": 69,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 69,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": false,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        59,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        26
+      ],
+      "endpoint_l1_error_steps_original": 13,
+      "symmetric_hausdorff_steps": 20.591260281974,
+      "symmetric_hausdorff_ms": 20.108652619115237,
+      "point_levenshtein_original": 95,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division1_craig_bampton",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Craig-Bampton_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    },
+    {
+      "curve_id": "division1_guyan",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Guyan",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Guyan_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 67,
+      "candidate_point_count": 95,
+      "expected_point_count": 67,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 67,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": false,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        58,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        24
+      ],
+      "endpoint_l1_error_steps_original": 16,
+      "symmetric_hausdorff_steps": 21.95449840010015,
+      "symmetric_hausdorff_ms": 21.439939843847803,
+      "point_levenshtein_original": 95,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division1_guyan",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Guyan_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    },
+    {
+      "curve_id": "division2_original",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Original",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Original_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 69,
+      "candidate_point_count": 95,
+      "expected_point_count": 69,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 69,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": false,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        57,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        28
+      ],
+      "endpoint_l1_error_steps_original": 13,
+      "symmetric_hausdorff_steps": 21.213203435596427,
+      "symmetric_hausdorff_ms": 20.716018980074637,
+      "point_levenshtein_original": 95,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division2_original",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Original_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Craig-Bampton",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Craig-Bampton_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 56,
+      "candidate_point_count": 95,
+      "expected_point_count": 56,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 56,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": false,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        51,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        24
+      ],
+      "endpoint_l1_error_steps_original": 23,
+      "symmetric_hausdorff_steps": 27.65863337187866,
+      "symmetric_hausdorff_ms": 27.010384152225257,
+      "point_levenshtein_original": 95,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division2_craig_bampton",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Craig-Bampton_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    },
+    {
+      "curve_id": "division2_guyan",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Guyan",
+      "input_type": "mask_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Guyan_R02_稳定掩膜31x67.csv",
+      "candidate_source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+      "target_point_count": 53,
+      "candidate_point_count": 95,
+      "expected_point_count": 53,
+      "point_count_exact": false,
+      "candidate_unique_point_count": 95,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 53,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": false,
+      "candidate_start_endpoint": [
+        67,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        48,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        23
+      ],
+      "endpoint_l1_error_steps_original": 27,
+      "symmetric_hausdorff_steps": 30.4138126514911,
+      "symmetric_hausdorff_ms": 29.700988917471776,
+      "point_levenshtein_original": 95,
+      "point_levenshtein_reversed_diagnostic": 95,
+      "candidate_declared_ms_present": false,
+      "candidate_declared_step_to_ms_max_abs_error": null,
+      "ordered_candidate_to_target_ms_max_abs_error": null,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": {
+        "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+        "curve_id": "division2_guyan",
+        "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Guyan_R02_稳定掩膜31x67.csv",
+        "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+        "mask_rows": 31,
+        "mask_columns": 67,
+        "stable_point_count": 2077,
+        "component_count_8_connected": 1,
+        "hole_pixel_count": 0,
+        "returned_boundary_count": 1,
+        "selected_full_boundary_point_count": 193,
+        "selected_visible_open_boundary_point_count": 95,
+        "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+      }
+    }
+  ],
+  "evaluator": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\strict_target_evaluator.py",
+    "sha256": "B3407620429F9EA2578E80450F59D88F2BDB5A0F6687193ED3C012AA93A35382"
+  }
+}

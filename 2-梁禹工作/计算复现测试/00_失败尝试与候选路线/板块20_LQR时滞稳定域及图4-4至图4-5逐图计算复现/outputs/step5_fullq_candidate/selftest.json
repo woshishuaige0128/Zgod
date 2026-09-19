@@ -1,0 +1,372 @@
+{
+  "candidate_contract_sha256": "3D777C7DFCC1C480177EA0D0F8AE29892A15F6E2A5C1A2EBC73D7851422BC318",
+  "candidate_script_sha256": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6",
+  "check_count": 63,
+  "checks": [
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.algorithm",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.point_status",
+      "detail": "GATED_PHYSICAL_POLYNOMIAL_RESIDUAL;GATED_PHYSICAL_LAURENT_RESIDUAL",
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.root_count",
+      "detail": 20,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.rho",
+      "detail": 0.9997338687224716,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.poly_residual",
+      "detail": 1.736594338981195e-08,
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.laurent_residual",
+      "detail": 1.7363850133874677e-08,
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.formula_identity",
+      "detail": 1.248198367439184e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.pairing_mode",
+      "detail": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.unmatched_count",
+      "detail": [
+        7,
+        7
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.unmatched_below_0p9",
+      "detail": 2.5721567113733357e-09,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.unmatched_nondominant",
+      "detail": [
+        2.5721567113733357e-09,
+        0.9997338687224716
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.GUYAN_DIV1_H_LEFT.1.2.stable_match",
+      "detail": [
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.algorithm",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.point_status",
+      "detail": "GATED_PHYSICAL_POLYNOMIAL_RESIDUAL;GATED_PHYSICAL_LAURENT_RESIDUAL",
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.root_count",
+      "detail": 20,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.rho",
+      "detail": 0.9997267980160272,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.poly_residual",
+      "detail": 3.934582572464684e-06,
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.laurent_residual",
+      "detail": 3.934474327859885e-06,
+      "status": "FAIL"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.formula_identity",
+      "detail": 1.4126439469666534e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.pairing_mode",
+      "detail": true,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.unmatched_count",
+      "detail": [
+        6,
+        7
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.unmatched_below_0p9",
+      "detail": 2.7248356098652973e-09,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.unmatched_nondominant",
+      "detail": [
+        2.7248356098652973e-09,
+        0.9997267980160272
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n5.DIV2_H_LEFT_FEEDBACK_OUTSIDE.2.1.stable_match",
+      "detail": [
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.algorithm",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.point_status",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.root_count",
+      "detail": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.rho",
+      "detail": 0.9998516192091509,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.poly_residual",
+      "detail": 1.745911627700893e-12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.laurent_residual",
+      "detail": 1.7458160941648372e-12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.formula_identity",
+      "detail": 1.1884437769439035e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.pairing_mode",
+      "detail": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.unmatched_count",
+      "detail": [
+        0,
+        9
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.unmatched_below_0p9",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.unmatched_nondominant",
+      "detail": [
+        null,
+        0.9998516192091509
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.ORI_DIV1_H_RIGHT.1.2.stable_match",
+      "detail": [
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.algorithm",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.point_status",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.root_count",
+      "detail": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.rho",
+      "detail": 0.9998518548063288,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.poly_residual",
+      "detail": 4.0139540133144616e-11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.laurent_residual",
+      "detail": 4.013867844745107e-11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.formula_identity",
+      "detail": 2.1464357175177807e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.pairing_mode",
+      "detail": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.unmatched_count",
+      "detail": [
+        0,
+        9
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.unmatched_below_0p9",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.unmatched_nondominant",
+      "detail": [
+        null,
+        0.9998518548063288
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.GUYAN_DIV1_H_LEFT.2.1.stable_match",
+      "detail": [
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.algorithm",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.point_status",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.root_count",
+      "detail": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.rho",
+      "detail": 0.9998403332250361,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.poly_residual",
+      "detail": 2.8327397321603752e-12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.laurent_residual",
+      "detail": 2.8314005824535857e-12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.formula_identity",
+      "detail": 2.043818677697689e-15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.pairing_mode",
+      "detail": false,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.unmatched_count",
+      "detail": [
+        0,
+        9
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.unmatched_below_0p9",
+      "detail": null,
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.unmatched_nondominant",
+      "detail": [
+        null,
+        0.9998403332250361
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "n6.DIV2_H_LEFT_FEEDBACK_OUTSIDE.1.2.stable_match",
+      "detail": [
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "selector_n5",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "selector_n6",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "selector_n15",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    }
+  ],
+  "fail_count": 6,
+  "input_seal_sha256": "A38F16625FE8597FDF91F62BC50C0BC25CB485234694CDCF3C94D35EAD3F203F",
+  "pass_count": 57,
+  "schema_version": "board20_step5_fullq_candidate_selftest_v2",
+  "status": "FAIL"
+}

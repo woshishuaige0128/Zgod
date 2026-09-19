@@ -1,0 +1,392 @@
+{
+  "cross_route_identity": {
+    "independent_arrays_exactly_equal": true,
+    "independent_variables_compared": [
+      "M",
+      "C",
+      "K",
+      "A",
+      "B",
+      "Ad",
+      "Bd",
+      "Q",
+      "R",
+      "P",
+      "K_lqr",
+      "Acl",
+      "DeltaK",
+      "DeltaC",
+      "closed_loop_poles"
+    ],
+    "route_pair": [
+      "main_ori_div2",
+      "main_guyan_div2"
+    ],
+    "workspace_arrays_exactly_equal": true,
+    "workspace_variables_compared": [
+      "MPren",
+      "CPren",
+      "KPren",
+      "M",
+      "C",
+      "K",
+      "A",
+      "B",
+      "Ad",
+      "Bd",
+      "Q",
+      "R",
+      "K_lqr",
+      "Acl",
+      "DeltaK",
+      "DeltaC",
+      "dt",
+      "S"
+    ]
+  },
+  "evidence_labels": {
+    "historical_figure_values": "历史值",
+    "historical_program_execution": "计算级复现由步骤2另行裁决",
+    "paper_formula_validation": "CONTRACT_NOT_CLOSED",
+    "plot_reproduction": "本步骤未执行，不升级",
+    "this_independent_lqr_check": "SCALE_AWARE_PASS_STRICT_ABS_FAIL"
+  },
+  "generated_files": [
+    "route_lqr_summary.csv",
+    "lqr_variable_comparison.csv",
+    "design_poles.csv",
+    "recomputed_lqr_matrices.csv",
+    "source_contract_checks.csv",
+    "thesis_manuscript_contract_matrix.csv",
+    "audit.json",
+    "步骤5_LQR独立复算与论文合同缺口审计.md",
+    "artifact_manifest.csv"
+  ],
+  "historical_program_constants": {
+    "B_lower_block": "solve(MPren, I)",
+    "DeltaC": "MPren @ K_lqr[:,n:2*n]",
+    "DeltaK": "MPren @ K_lqr[:,0:n]",
+    "Q_diagonal": [
+      1000000.0,
+      1.0,
+      100000.0,
+      1.0
+    ],
+    "R_diagonal": [
+      0.1,
+      0.01
+    ],
+    "dt_seconds": 0.0009765625,
+    "state_order": [
+      "q1",
+      "q2",
+      "qdot1",
+      "qdot2"
+    ]
+  },
+  "independence": {
+    "actual_step4_rho_inputs": [],
+    "dare_implementation": "scipy.linalg.solve_discrete_are",
+    "forbidden_input_root": "outputs/step4_rho_grids",
+    "matlab_used_for_recalculation": false,
+    "step4_rho_or_poles_read": false,
+    "zoh_implementation": "scipy.linalg.expm on augmented [A B;0 0] matrix"
+  },
+  "input_hash_after": {
+    "main_guyan_div2": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+    "main_ori_div2": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+  },
+  "input_hash_before": {
+    "main_guyan_div2": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+    "main_ori_div2": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+  },
+  "overall_status": "STRICT_ABS_GATE_FAIL_AND_PAPER_CONTRACT_NOT_CLOSED",
+  "paper_contract_summary": {
+    "liang_thesis": {
+      "required_field_count": 20,
+      "specified_field_count": 8,
+      "status": "CONTRACT_NOT_CLOSED",
+      "unclosed_field_count": 12
+    },
+    "manuscript_0824": {
+      "required_field_count": 20,
+      "specified_field_count": 9,
+      "status": "CONTRACT_NOT_CLOSED",
+      "unclosed_field_count": 11
+    }
+  },
+  "paper_contract_verdict": "待决定",
+  "routes": [
+    {
+      "acl_strict_abs_pass": "NOT_APPLICABLE",
+      "active_c2d_count": 0,
+      "active_dlqr_count": 0,
+      "active_dlqr_lines": "",
+      "all_scale_aware_pass": "NOT_APPLICABLE",
+      "closed_loop_rho": "",
+      "division": "div1",
+      "lqr_gain_and_delta_strict_abs_pass": "NOT_APPLICABLE",
+      "route_id": "main_ori_div1",
+      "status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "workspace_sha256": "NOT_READ",
+      "workspace_unchanged": "NOT_APPLICABLE",
+      "zoh_strict_abs_pass": "NOT_APPLICABLE"
+    },
+    {
+      "acl_strict_abs_pass": "NOT_APPLICABLE",
+      "active_c2d_count": 0,
+      "active_dlqr_count": 0,
+      "active_dlqr_lines": "",
+      "all_scale_aware_pass": "NOT_APPLICABLE",
+      "closed_loop_rho": "",
+      "division": "div1",
+      "lqr_gain_and_delta_strict_abs_pass": "NOT_APPLICABLE",
+      "route_id": "main_guyan_div1",
+      "status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "workspace_sha256": "NOT_READ",
+      "workspace_unchanged": "NOT_APPLICABLE",
+      "zoh_strict_abs_pass": "NOT_APPLICABLE"
+    },
+    {
+      "acl_strict_abs_pass": "NOT_APPLICABLE",
+      "active_c2d_count": 0,
+      "active_dlqr_count": 0,
+      "active_dlqr_lines": "",
+      "all_scale_aware_pass": "NOT_APPLICABLE",
+      "closed_loop_rho": "",
+      "division": "div1",
+      "lqr_gain_and_delta_strict_abs_pass": "NOT_APPLICABLE",
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "status": "LQR_NOT_PRESENT_IN_EXECUTED_SOURCE",
+      "workspace_sha256": "NOT_READ",
+      "workspace_unchanged": "NOT_APPLICABLE",
+      "zoh_strict_abs_pass": "NOT_APPLICABLE"
+    },
+    {
+      "DeltaC_max_abs_error": "5.1531242206692696e-07",
+      "DeltaK_max_abs_error": "2.3590284399688244e-05",
+      "K_lqr_max_abs_error": "1.6386763945774874e-08",
+      "K_lqr_relative_fro_error": "7.0758076407452527e-12",
+      "acl_strict_abs_pass": "TRUE",
+      "active_c2d_count": 1,
+      "active_dlqr_count": 1,
+      "active_dlqr_lines": "155",
+      "all_scale_aware_pass": "TRUE",
+      "closed_loop_rho": "0.99547020792374319",
+      "dare_residual_max_abs": "4.073150921612978e-05",
+      "dare_residual_scaled_fro": "7.9379167576106137e-16",
+      "division": "div2",
+      "lqr_gain_and_delta_strict_abs_pass": "FALSE",
+      "route_id": "main_ori_div2",
+      "status": "SCALE_AWARE_PASS_STRICT_ABS_FAIL",
+      "workspace_sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "workspace_unchanged": "TRUE",
+      "zoh_strict_abs_pass": "TRUE"
+    },
+    {
+      "DeltaC_max_abs_error": "5.1531242206692696e-07",
+      "DeltaK_max_abs_error": "2.3590284399688244e-05",
+      "K_lqr_max_abs_error": "1.6386763945774874e-08",
+      "K_lqr_relative_fro_error": "7.0758076407452527e-12",
+      "acl_strict_abs_pass": "TRUE",
+      "active_c2d_count": 1,
+      "active_dlqr_count": 1,
+      "active_dlqr_lines": "157",
+      "all_scale_aware_pass": "TRUE",
+      "closed_loop_rho": "0.99547020792374319",
+      "dare_residual_max_abs": "4.073150921612978e-05",
+      "dare_residual_scaled_fro": "7.9379167576106137e-16",
+      "division": "div2",
+      "lqr_gain_and_delta_strict_abs_pass": "FALSE",
+      "route_id": "main_guyan_div2",
+      "status": "SCALE_AWARE_PASS_STRICT_ABS_FAIL",
+      "workspace_sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "workspace_unchanged": "TRUE",
+      "zoh_strict_abs_pass": "TRUE"
+    }
+  ],
+  "schema_version": "board20_step5_lqr_audit_v1",
+  "scope": "historical_discrete_lqr_core_and_paper_contract_only",
+  "software": {
+    "h5py": "3.16.0",
+    "numpy": "2.4.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.2",
+    "scipy": "1.17.1"
+  },
+  "source_contract_checks": [
+    {
+      "actual": "E0E220E1B7549FA2F623DEDA02CE16C1726CEC061247626BF7A407438440D2FA",
+      "check": "extracted_author_m_sha256",
+      "expected": "E0E220E1B7549FA2F623DEDA02CE16C1726CEC061247626BF7A407438440D2FA",
+      "route_id": "main_ori_div1",
+      "status": "PASS"
+    },
+    {
+      "actual": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+      "check": "extracted_author_m_sha256",
+      "expected": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+      "route_id": "main_guyan_div1",
+      "status": "PASS"
+    },
+    {
+      "actual": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+      "check": "extracted_author_m_sha256",
+      "expected": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "status": "PASS"
+    },
+    {
+      "actual": "7366D13BDDEC707AB7DD98F9BC7C359935CBE9AC0037A4FA28680B457BD4AADE",
+      "check": "extracted_author_m_sha256",
+      "expected": "7366D13BDDEC707AB7DD98F9BC7C359935CBE9AC0037A4FA28680B457BD4AADE",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "107,138",
+      "check": "M_equals_MPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "139",
+      "check": "C_equals_CPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "109,140",
+      "check": "K_equals_KPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "153",
+      "check": "Q_historical",
+      "expected": "one active matching line",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "154",
+      "check": "R_historical",
+      "expected": "one active matching line",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "160",
+      "check": "DeltaK_historical",
+      "expected": "one active matching line",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "161",
+      "check": "DeltaC_historical",
+      "expected": "one active matching line",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "check": "workspace_complete_sha256",
+      "expected": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "route_id": "main_ori_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "49DA7B5D7E8B57E311C263555E94FADB053341D6B5BDA5AAEAC4C28445298624",
+      "check": "extracted_author_m_sha256",
+      "expected": "49DA7B5D7E8B57E311C263555E94FADB053341D6B5BDA5AAEAC4C28445298624",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "109,140",
+      "check": "M_equals_MPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "141",
+      "check": "C_equals_CPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "111,142",
+      "check": "K_equals_KPren",
+      "expected": "one or more active matching lines; last assignment governs A/B",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "155",
+      "check": "Q_historical",
+      "expected": "one active matching line",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "156",
+      "check": "R_historical",
+      "expected": "one active matching line",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "162",
+      "check": "DeltaK_historical",
+      "expected": "one active matching line",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "163",
+      "check": "DeltaC_historical",
+      "expected": "one active matching line",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    },
+    {
+      "actual": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "check": "workspace_complete_sha256",
+      "expected": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "route_id": "main_guyan_div2",
+      "status": "PASS"
+    }
+  ],
+  "source_hashes": {
+    "alt_guyan_div1_stable_full_ps3:source_m": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+    "analyze_board20_step5_lqr.py": "10EE351233515A0A84FCF249F894A930A16290E9C046A90116FFB3A96F8D327E",
+    "board20_step4_route_manifest.json": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+    "main_guyan_div1:source_m": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F",
+    "main_guyan_div2:source_m": "49DA7B5D7E8B57E311C263555E94FADB053341D6B5BDA5AAEAC4C28445298624",
+    "main_guyan_div2:workspace_complete.mat": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+    "main_ori_div1:source_m": "E0E220E1B7549FA2F623DEDA02CE16C1726CEC061247626BF7A407438440D2FA",
+    "main_ori_div2:source_m": "7366D13BDDEC707AB7DD98F9BC7C359935CBE9AC0037A4FA28680B457BD4AADE",
+    "main_ori_div2:workspace_complete.mat": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+    "manuscript_0824.tex": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76",
+    "板块20_公式语义审计_草稿.md": "3BAC10BFC72E8B8FFC2FA54B20A518B134097DA8530DE52C35AF865DAF0B5C10"
+  },
+  "tolerances": {
+    "primary_strict_absolute": {
+      "can_be_replaced_by_scale_aware_gate": false,
+      "definition": "max(abs(independent-reference)) <= 1e-8",
+      "value": 1e-08
+    },
+    "secondary_scale_aware": {
+      "atol": 1e-08,
+      "definition": "abs(diff) <= atol + rtol*abs(reference) elementwise",
+      "role": "diagnostic_only",
+      "rtol": 1e-08
+    }
+  }
+}

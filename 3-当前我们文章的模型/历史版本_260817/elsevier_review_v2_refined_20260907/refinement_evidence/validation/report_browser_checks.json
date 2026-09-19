@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checks_passed": 13,
+  "checks": [
+    {
+      "name": "two inline images loaded",
+      "passed": true
+    },
+    {
+      "name": "desktop no page overflow",
+      "passed": true
+    },
+    {
+      "name": "figure6 navigation",
+      "passed": true
+    },
+    {
+      "name": "all16changes expanded",
+      "passed": true
+    },
+    {
+      "name": "32 exact source/new snippets",
+      "passed": true
+    },
+    {
+      "name": "all16changes collapsed",
+      "passed": true
+    },
+    {
+      "name": "four new table5 values",
+      "passed": true
+    },
+    {
+      "name": "eight exact rounded bar values",
+      "passed": true
+    },
+    {
+      "name": "mobile no page overflow",
+      "passed": true
+    },
+    {
+      "name": "no external requests",
+      "passed": true
+    },
+    {
+      "name": "no script errors",
+      "passed": true
+    },
+    {
+      "name": "moved single file offline works",
+      "passed": true
+    },
+    {
+      "name": "offline expansion works",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external_requests": []
+}

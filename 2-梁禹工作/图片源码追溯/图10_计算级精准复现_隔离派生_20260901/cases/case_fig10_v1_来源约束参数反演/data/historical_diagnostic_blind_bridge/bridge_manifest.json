@@ -1,0 +1,136 @@
+{
+  "artifacts": [
+    {
+      "bytes": 9136,
+      "relative_path": "array_hash_inventory.csv",
+      "sha256": "D88DEFA728426A2AD4CFCB39E3E370A87C08E5DC129A091BDA907EEB2602ABAB"
+    },
+    {
+      "bytes": 28221,
+      "relative_path": "manifests/H05.json",
+      "sha256": "37ADF9E0AE0035EB8690931DB568B392A23D78933E6A8CEC374E932004E675E6"
+    },
+    {
+      "bytes": 28221,
+      "relative_path": "manifests/H06.json",
+      "sha256": "58B5ED0DA7D786ABBFB3824A9137BB73130DB98BA565D5B2CF153F829F8136AD"
+    },
+    {
+      "bytes": 841,
+      "relative_path": "manifests/manifest_index.json",
+      "sha256": "61373E96B7669A4A375AD0F6FCA9661EAE949321721F359F912A419CA348998E"
+    },
+    {
+      "bytes": 4819,
+      "relative_path": "numeric_bundles/H05/H05_D1_Craig_Bampton_native.mat",
+      "sha256": "9CEAAE4E3675FB54AFBC0E77B38EA694D5907B2E78B0C48E11A616315D7137D6"
+    },
+    {
+      "bytes": 3826,
+      "relative_path": "numeric_bundles/H05/H05_D1_Guyan_native.mat",
+      "sha256": "998E57F1CC04D6C8F406FF7F4EFE56B3673696CF4CB4695A90ED920BFDFAAFF8"
+    },
+    {
+      "bytes": 6738,
+      "relative_path": "numeric_bundles/H05/H05_D1_Original_native.mat",
+      "sha256": "B47375010C5AC6A3D53A70F738CB514A5EDDD3FCB38E3710B88EF81FD3D10074"
+    },
+    {
+      "bytes": 4690,
+      "relative_path": "numeric_bundles/H05/H05_D2_Craig_Bampton_native.mat",
+      "sha256": "8C61B3813E528F7AED4ABAFAC556B69F28E31537C74F7AB538F5D9E4494412D5"
+    },
+    {
+      "bytes": 3644,
+      "relative_path": "numeric_bundles/H05/H05_D2_Guyan_native.mat",
+      "sha256": "DD585A97B343C9CF8D499B4BAA0D4E8D2A715666662B41EE630DF53B307A533B"
+    },
+    {
+      "bytes": 6827,
+      "relative_path": "numeric_bundles/H05/H05_D2_Original_native.mat",
+      "sha256": "399642C110ED355349E35733212FBE6C39087C6A5DB073ECBD6C85844948B573"
+    },
+    {
+      "bytes": 4820,
+      "relative_path": "numeric_bundles/H06/H06_D1_Craig_Bampton_native.mat",
+      "sha256": "C24E47D3502738326CBAE042ECB37174BCF03F6B9DC659F9B01D3E306C10B2F0"
+    },
+    {
+      "bytes": 3825,
+      "relative_path": "numeric_bundles/H06/H06_D1_Guyan_native.mat",
+      "sha256": "1988B07DBEF1AB6FED65587692DCC5840A96450F61FF1B9BD509B3419046E010"
+    },
+    {
+      "bytes": 6728,
+      "relative_path": "numeric_bundles/H06/H06_D1_Original_native.mat",
+      "sha256": "BAA6C8DD2ABB5930569EFE5A7659FBEF13361770090E1B6B46C16A3E6C42B7AE"
+    },
+    {
+      "bytes": 4689,
+      "relative_path": "numeric_bundles/H06/H06_D2_Craig_Bampton_native.mat",
+      "sha256": "E7DC5A3F809D5C488D356D8CA9F58130F51B945A2731325B06A7966C47B9F86D"
+    },
+    {
+      "bytes": 3648,
+      "relative_path": "numeric_bundles/H06/H06_D2_Guyan_native.mat",
+      "sha256": "41CC1679C0ED2DA9774C0005A5D8CB0DC097228D206427B65891975E12C6DAB4"
+    },
+    {
+      "bytes": 6791,
+      "relative_path": "numeric_bundles/H06/H06_D2_Original_native.mat",
+      "sha256": "3790E0FA96C47CDED5BD2182EBD691386EBFFBDCBF517DE8B47B72C5C6C3EB37"
+    },
+    {
+      "bytes": 4581,
+      "relative_path": "source_hash_inventory.csv",
+      "sha256": "A52F85939F078CCF637E31979E32CDBB3A1C22973CE5451C5399A445F4343547"
+    },
+    {
+      "bytes": 6103,
+      "relative_path": "stage0_gate_results.csv",
+      "sha256": "C66F026E80F61C5F7D991072DCD6D53E263316CCE726B025B8A9165805C498B4"
+    }
+  ],
+  "contracts": {
+    "H05": {
+      "contract_sha256": "1AA8245F4C403D9EDD773B8C0AC5434553EAAB9D2D367EE387DA044F6B4CE959",
+      "manifest_path": "manifests/H05.json",
+      "manifest_sha256": "37ADF9E0AE0035EB8690931DB568B392A23D78933E6A8CEC374E932004E675E6",
+      "route_count": 6
+    },
+    "H06": {
+      "contract_sha256": "B9F62E7F4A31429244822D28BE40BECA4020EBC5FB0E98D86EF55F256574B23F",
+      "manifest_path": "manifests/H06.json",
+      "manifest_sha256": "58B5ED0DA7D786ABBFB3824A9137BB73130DB98BA565D5B2CF153F829F8136AD",
+      "route_count": 6
+    }
+  },
+  "counts": {
+    "diagnostic_contracts": 2,
+    "grid_points_computed": 0,
+    "native_route_bundles": 12,
+    "roots_computed": 0,
+    "routes_per_contract": 6,
+    "source_formula_gate_zero": 12,
+    "source_paper_grid_gate_zero": 12,
+    "source_route_mats": 12,
+    "stage0_fail": 0,
+    "stage0_pass": 12
+  },
+  "diagnostic_status": "HISTORICAL_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+  "formula_gate_policy": {
+    "blind_core_modified": false,
+    "legacy_source_direct_load_expected": "BLOCKED_BEFORE_OPERATOR_CONVERSION",
+    "native_bridge_identity": "HISTORICAL_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+    "source_formula_valid_code_required": 0,
+    "source_paper_grid_eligible_code_required": 0
+  },
+  "schema_version": "FIG10_HISTORICAL_DIAGNOSTIC_BRIDGE_V1",
+  "source_board_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python",
+  "source_evidence_hashes": {
+    "六路线六候选索引.csv": "E78F3AAE56CCEF63B222BC5BF2CF648AC6305C78E40D86B8A48B047C5EA3ADDA",
+    "步骤8C_Python摘要.json": "3D519F413CEE339DAD63142AFE208ABAC97154ECA57FFDAE5098C69FE789669E",
+    "步骤8C_Python自检.csv": "230BD728F753DA97B39EE9448B2726FDCB3EB8CEA767040A16B50C02C785A591"
+  },
+  "status": "PASS_STAGE0_HISTORICAL_DIAGNOSTIC_BRIDGE"
+}

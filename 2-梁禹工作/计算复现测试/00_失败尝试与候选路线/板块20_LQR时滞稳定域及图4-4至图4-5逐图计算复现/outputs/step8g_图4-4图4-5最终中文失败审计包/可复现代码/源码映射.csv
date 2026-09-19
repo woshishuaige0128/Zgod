@@ -1,0 +1,16 @@
+顺序,中文文件名,权威源码项目相对路径,用途,运行位置说明
+1,01_六链基础模型生成_MATLAB.m,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/build_board20_step8c_routes_matlab.m,从冻结工作区生成两类划分的Original/Guyan/Craig--Bampton六条模型链,在权威code目录运行
+2,02_四候选数值包生成_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/build_board20_step8c_candidate_bundles.py,生成R01至R04公式候选及R05/R06诊断阻断包,在权威code目录运行
+3,03_六链与候选独立验收_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/validate_board20_step8c.py,独立重算矩阵合同和候选身份,在权威code目录运行
+4,04_冻结单点求根_MATLAB.m,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/run_board20_step8d_pilot_matlab.m,冻结试点最小增广求根,在权威code目录运行
+5,05_冻结单点求根_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/run_board20_step8d_pilot_python.py,独立冻结试点最小增广求根,在权威code目录运行
+6,06_冻结单点双求解器验收_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/validate_board20_step8d.py,比较MATLAB/Python试点根和残差,在权威code目录运行
+7,07_全网格求根_MATLAB.m,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/run_board20_step8e_fullgrid_matlab.m,24组31乘67全网格求根,在权威code目录运行
+8,08_全网格求根_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/run_board20_step8e_fullgrid_python.py,24组31乘67全网格独立求根及双轮确定性,在权威code目录运行
+9,09_全网格双求解器验收_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/validate_board20_step8e.py,49848点与3356432根跨实现验收,在权威code目录运行
+10,10_候选与论文目标裁决绘图_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/build_board20_step8f_adjudication.py,生成掩膜边界裁决表和四份比较图,在权威code目录运行
+11,11_候选裁决独立验收_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/validate_board20_step8f.py,独立151项验收且不导入构建器,在权威code目录运行
+12,12_正式工件双轮确定性_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/code/check_board20_step8f_repeatability.py,79份正式工件双轮SHA256比较,在权威code目录运行
+13,13_论文矢量边界逐点复刻_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8f_论文矢量边界逐点复刻/code/rebuild_thesis_vector_trace.py,从冻结六条目标CSV绘制论文矢量边界,在论文矢量复刻code目录运行
+14,14_论文矢量边界独立验收_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8f_论文矢量边界逐点复刻/code/validate_thesis_vector_trace.py,重新打开论文PDF并逐点验证六条目标,在论文矢量复刻code目录运行
+15,15_论文矢量边界双轮确定性_Python.py,test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8f_论文矢量边界逐点复刻/code/check_repeatability.py,验证两份论文目标图双轮确定性,在论文矢量复刻code目录运行

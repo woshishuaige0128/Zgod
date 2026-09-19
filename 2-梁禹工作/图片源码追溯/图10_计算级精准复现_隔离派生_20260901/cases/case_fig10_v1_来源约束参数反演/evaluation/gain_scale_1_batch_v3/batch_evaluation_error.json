@@ -1,0 +1,6 @@
+{
+  "schema_version": "FIG10_BATCH_TARGET_EVALUATOR_V1",
+  "status": "ERROR",
+  "error_type": "ValueError",
+  "error_message": "稳定掩膜不是单一8连通分量：division2_original"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "old": "the corresponding natural frequencies (Hz) are listed beneath each panel.",
+    "new": "the corresponding natural frequencies (Hz) are listed within each panel.",
+    "reason": "图6频率已移入相应子图，使用8pt。"
+  },
+  {
+    "old": "while a modal redistribution ratio measures the change in low-order modal content associated with the actuator-driven DOFs.",
+    "new": "while a \\rev{modal-share deviation measures the magnitude of the change in low-order modal content at the actuator-driven DOFs.}",
+    "reason": "引言中的指标名称和用途与绝对变化定义一致。"
+  },
+  {
+    "old": "The change in low-order modal distribution is described by a modal redistribution ratio, which combines the relative changes at the actuated coordinates.",
+    "new": "The change in low-order modal distribution is measured by a modal-share deviation, which combines the magnitudes of the relative changes at the actuated coordinates.",
+    "reason": "按用户选择将指标用于衡量变化幅度。"
+  },
+  {
+    "old": "The modal redistribution ratio is then obtained as",
+    "new": "The \\rev{modal-share deviation} is then obtained as",
+    "reason": "统一公式引导语。"
+  },
+  {
+    "old": "\\Delta E=\\sum_{k=1}^{n_{\\mathrm{a}}}\n\t\\frac{E^{\\mathrm{red}}(d_{k})-E^{\\mathrm{full}}(d_{k})}{E^{\\mathrm{full}}(d_{k})}.",
+    "new": "\\rev{\\Delta E=\\sum_{k=1}^{n_{\\mathrm{a}}}\n\t\\left|\\frac{E^{\\mathrm{red}}(d_{k})-E^{\\mathrm{full}}(d_{k})}{E^{\\mathrm{full}}(d_{k})}\\right|.}",
+    "reason": "逐个坐标先取绝对值再相加；不是对原求和结果取绝对值。"
+  },
+  {
+    "old": "Equation \\eqref{eq:energy-change} sums the relative change of the modal share of each actuated coordinate. \\rev{The terms have separate denominators and retain their signs; their sum is a modal-share indicator rather than a total energy-transfer measure or a stability criterion.}",
+    "new": "\\rev{Equation \\eqref{eq:energy-change} sums the magnitudes of the relative modal-share changes at the actuated coordinates. A smaller value indicates better preservation of the selected modal distribution.}",
+    "reason": "以偏离程度说明指标，删除围绕正负和抵消的旧论述。"
+  },
+  {
+    "old": "The modal redistribution ratio finally describes how the low-order modal shares at the actuated coordinates change under condensation.",
+    "new": "The modal-share deviation finally measures the change in low-order modal shares at the actuated coordinates under condensation.",
+    "reason": "统一结果章节的指标介绍。"
+  },
+  {
+    "old": "\\subsection{Modal redistribution ratio and applicability of the two methods}",
+    "new": "\\subsection{\\rev{Modal-share deviation} and applicability of the two methods}",
+    "reason": "章节标题随指标名称更新。"
+  },
+  {
+    "old": "The modal redistribution ratio of Eq. \\eqref{eq:energy-change} is listed in Table \\ref{tab:energy}. \\rev{It is evaluated from the full-frame accuracy models using their first five modes. Guyan gives \\(-0.0414\\) in division I and \\(0.8914\\) in division II; the corresponding Craig--Bampton values are \\(0.0039\\) and \\(0.0365\\). Craig--Bampton is closer to zero in magnitude in both divisions, indicating a smaller change in the selected coordinate shares. The signed values do not have the same ordering in both divisions.}",
+    "new": "The \\rev{modal-share deviation} of Eq. \\eqref{eq:energy-change} is listed in Table \\ref{tab:energy}. \\rev{It is evaluated from the full-frame accuracy models using their first five modes. Guyan gives \\(0.0455\\) in division I and \\(1.3859\\) in division II; the corresponding Craig--Bampton values are \\(0.0039\\) and \\(0.0423\\). Craig--Bampton gives the smaller deviation in both divisions and more closely preserves the selected coordinate shares.}",
+    "reason": "更新四个模型的指标和对应判断，删除原有符号排序讨论。"
+  },
+  {
+    "old": "\\caption{Modal redistribution ratio of the four condensed models.}",
+    "new": "\\caption{\\rev{Modal-share deviation} of the four condensed models.}",
+    "reason": "表5标题统一为变化幅度。"
+  },
+  {
+    "old": "I  & \\rev{-0.0414} & \\rev{0.0039}",
+    "new": "I  & \\rev{0.0455} & \\rev{0.0039}",
+    "reason": "表5划分I改为逐项绝对值之和。"
+  },
+  {
+    "old": "II & \\rev{0.8914} & \\rev{0.0365}",
+    "new": "II & \\rev{1.3859} & \\rev{0.0423}",
+    "reason": "表5划分II改为逐项绝对值之和。"
+  },
+  {
+    "old": "Figure \\ref{fig:modal-shares} resolves this change into the physical-coordinate distribution and the two actuator contributions. In division II, Guyan increases the first-storey share by 113.87\\% and decreases the third-storey share by 24.73\\%, whose signed relative contributions sum to \\(\\Delta E=0.8914\\). Craig--Bampton gives changes of 3.94\\% and \\(-0.29\\%\\) at the same coordinates. The figure thus locates the redistribution that the scalar index combines, while also showing why its sign cannot be read as a change in total modal energy.",
+    "new": "Figure \\ref{fig:modal-shares} shows the physical-coordinate distribution and the relative deviation at each actuated coordinate. In division II, the Guyan first- and third-storey shares deviate from the full-order values by 113.87\\% and 24.73\\%, giving \\(\\Delta E=1.3859\\). The corresponding Craig--Bampton deviations are 3.94\\% and 0.29\\%, with \\(\\Delta E=0.0423\\). The coordinate-wise comparison locates the changes combined by the scalar index.",
+    "reason": "右图按幅度解读；保持数值来源和坐标定位，删除对正负的反复强调。"
+  },
+  {
+    "old": "Low-order modal-share distribution and actuator contributions. (a,c) Shares on the fifteen physical coordinates. (b,d) Signed relative changes at the two actuated coordinates, whose sum gives the ratio in Table \\ref{tab:energy}. The top and bottom rows correspond to divisions I and II, respectively.",
+    "new": "Low-order modal-share distribution and coordinate-wise deviations. (a,c) Shares on the fifteen physical coordinates. (b,d) Magnitudes of the relative deviations at the two actuated coordinates, whose sum is reported in Table \\ref{tab:energy}. The top and bottom rows correspond to divisions I and II, respectively.",
+    "reason": "图15图注与全部非负柱值一致。"
+  },
+  {
+    "old": "The modal-share ratio is available once a reduced model has been formed and can be used alongside frequency and response errors to inspect the effect of a retained-coordinate choice. Its separate coordinate contributions are particularly useful when a horizontal coordinate is condensed. Stability is assessed from the delayed closed-loop model, including its regulator and integration algorithm; the present ratio provides no threshold for the admissible channel delays.",
+    "new": "The modal-share deviation is available once a reduced model has been formed and can be used alongside frequency and response errors to inspect the effect of a retained-coordinate choice. Its coordinate-wise values are particularly useful when a horizontal coordinate is condensed. Delay stability is assessed from the closed-loop model with its regulator and integration algorithm.",
+    "reason": "统一指标名称，精简重复限制，保留一次明确的稳定性分析口径。"
+  },
+  {
+    "old": "The full-frame modal redistribution ratios are 0.0039 and 0.0365 for Craig--Bampton and \\(-0.0414\\) and 0.8914 for Guyan in divisions I and II, respectively. Their coordinate-wise contributions describe the change in low-order modal distribution; closed-loop poles remain the criterion for delay stability.",
+    "new": "The full-frame modal-share deviations are 0.0039 and 0.0423 for Craig--Bampton and 0.0455 and 1.3859 for Guyan in divisions I and II, respectively. These values show that Craig--Bampton more closely preserves the low-order modal distribution at the actuated coordinates.",
+    "reason": "结论同步新指标四值，围绕模态分布保真性表述。"
+  }
+]

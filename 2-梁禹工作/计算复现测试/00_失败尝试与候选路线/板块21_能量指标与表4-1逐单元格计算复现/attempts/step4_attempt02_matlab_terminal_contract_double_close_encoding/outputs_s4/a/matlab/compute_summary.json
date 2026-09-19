@@ -1,0 +1,18 @@
+{
+  "schema_version": "BOARD21_STEP4_COMPUTE_V1",
+  "implementation": "MATLAB_EIG_INDEPENDENT",
+  "status": "PASS",
+  "input_case_count": 14,
+  "whole_model_candidate_count": 2,
+  "value_row_count": 305382,
+  "case_result_count": 1096,
+  "historical_result_count": 28,
+  "paper_conditional_result_count": 1068,
+  "author_route_reproduction_count": 28,
+  "max_author_abs_error": 3.907985046680551E-14,
+  "formula_4_45_evaluated_conditionally": true,
+  "table4_1_adjudicated": false,
+  "scientific_status": "AUTHOR_ROUTE_REPRODUCED_AND_PAPER_LITERAL_CONDITIONAL_TABLE4_1_PENDING",
+  "values_sha256": "E6DAF9AA05F0E49CFD8ECC9890E1B8498C1A056C5FFE56DCAD89EEA19438158D",
+  "case_results_sha256": "925B02E449F552567E7BF72DFBE9D6DB25E2CDC452B7BB4692FDEACA27519216"
+}

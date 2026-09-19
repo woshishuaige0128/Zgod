@@ -1,0 +1,187 @@
+{
+  "blind_calculation_only": true,
+  "manifest_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_manifests\\gain_scale_0_target_guided_inferred\\B3.json",
+  "manifest_sha256": "5406F8A4E443B46D83C9DCF9F2356E470BBDA00436F12BABBEAE485ECC647817",
+  "mode": "full-grid",
+  "point_count": 12462,
+  "resume_requested": false,
+  "route_count": 6,
+  "route_summaries": [
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 15,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B2_D1_Original.mat",
+        "register_scales": [
+          133344418.79554696,
+          87594328.59414715
+        ],
+        "route_id": "B3_D1_Original",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "D5B4EF1F1CF006CA84E995479FA90BAB1D595B9C11EF465397D8A665387707F2",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.017045425929388,
+      "maximum_state_eigenpair_residual": 8.265703338673006e-16,
+      "minimum_rho": 0.9991697741274327,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D1_Original",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 65,
+      "status": "PASS"
+    },
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 9,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B2_D1_Craig_Bampton.mat",
+        "register_scales": [
+          114638556.66729876,
+          61820849.76197626
+        ],
+        "route_id": "B3_D1_Craig_Bampton",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "A264143C700A6FF600A84502BD90712AE1A78C116756F42E500978FE901083FC",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.0168098117845608,
+      "maximum_state_eigenpair_residual": 9.928371862939288e-16,
+      "minimum_rho": 0.9991697646918628,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D1_Craig_Bampton",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 62,
+      "status": "PASS"
+    },
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 6,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B2_D1_Guyan.mat",
+        "register_scales": [
+          114636483.24955635,
+          61819479.55570566
+        ],
+        "route_id": "B3_D1_Guyan",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "B819B3CC61D7FE993586050D0BE5411D127156479711EFE00C64DCE91C5F22C6",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.0181529553595308,
+      "maximum_state_eigenpair_residual": 7.991407734532724e-16,
+      "minimum_rho": 0.9991697634849254,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D1_Guyan",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 45,
+      "status": "PASS"
+    },
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 15,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B3_D2_Original.mat",
+        "register_scales": [
+          91113665.68018237,
+          59112190.53125178
+        ],
+        "route_id": "B3_D2_Original",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "4460A13522AB6C0FEE0F73C840CAA28D59B6090BEB759A6C9473DD94A070190B",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.009071095039368,
+      "maximum_state_eigenpair_residual": 8.490960932945146e-16,
+      "minimum_rho": 0.9954312710948884,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D2_Original",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 818,
+      "status": "PASS"
+    },
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 8,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B3_D2_Craig_Bampton.mat",
+        "register_scales": [
+          41686017.39537883,
+          8376925.638176247
+        ],
+        "route_id": "B3_D2_Craig_Bampton",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "CA96318E819CD6219A6328782F55DDE57D179EEA9403A8CFE558D631EDCDF38C",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.0094278959118421,
+      "maximum_state_eigenpair_residual": 7.253114896681051e-16,
+      "minimum_rho": 0.995430993358923,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D2_Craig_Bampton",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 685,
+      "status": "PASS"
+    },
+    {
+      "bundle": {
+        "contract_id": "B3",
+        "dimension": 5,
+        "dt": 0.0009765625,
+        "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0_target_guided_inferred\\new_route_bundles\\B3_D2_Guyan.mat",
+        "register_scales": [
+          41681533.58111926,
+          8368776.039603927
+        ],
+        "route_id": "B3_D2_Guyan",
+        "schema_version": "FIG10_BLIND_CORE_V1",
+        "sha256": "D17C809D5487434E74FC863BB7C6375050FA6E438023E5251F3FF658701632C1",
+        "shared_left_factor_relative_error": 0.0
+      },
+      "contract_hash": "FBD3F08B6B55B99C5D26ADFAEF2C5D8ABCB4C5DBBB4AD5017D017E12A29BB3A1",
+      "contract_id": "B3",
+      "critical_point_count": 0,
+      "maximum_rho": 1.0114131665682295,
+      "maximum_state_eigenpair_residual": 1.3709310960531648e-15,
+      "minimum_rho": 0.9954256673403126,
+      "mode": "full-grid",
+      "point_count": 2077,
+      "route_id": "B3_D2_Guyan",
+      "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+      "stable_point_count": 332,
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "status": "PASS"
+}

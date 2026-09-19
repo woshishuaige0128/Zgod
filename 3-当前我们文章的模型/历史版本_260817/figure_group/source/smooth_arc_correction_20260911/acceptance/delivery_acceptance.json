@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "date": "2026-09-11",
+  "slides": 19,
+  "changed_slides": [
+    18,
+    19
+  ],
+  "smooth_native_rotation_arrows": 42,
+  "actual_edit_tests_two_formats": 84,
+  "protected_files_unchanged": 216,
+  "before_sha256": {
+    "figure_rths.ppt": "2791039528e6f534a241c95783f2584748dedc640ce33b9d1e20e2e3f8dbb1fb",
+    "figure_rths.pptx": "5a453b3ea96af549e75d404ef1faafce1d6d3042e680b76d2d225e844bcc8c3f",
+    "fig3_generated_editable.svg": "eea65c942e2423bef0212b9161d2e0ec94852ead9d4db3c2c4f73ec0c0abb682",
+    "fig4_generated_editable.svg": "f5aaa53667f6b3799c5837523bcae44c75874a1aecfb6414aaf4134be31a4993",
+    "README_使用说明.md": "1edf56602aef83eeb5945d9c9d29efdb69171ea5a6b13461e71b8196649438e8",
+    "文件清单_SHA256.csv": "9f5cd145ac7da49be273f8e45c0c811acae05b41e3f85d78e01966922919136d"
+  },
+  "delivered_sha256": {
+    "figure_rths_smooth_arc.pptx": "66cc9bec1077a4c60805def044a7e1b8059e47dc197cd361b81012a56b3b8a7a",
+    "figure_rths_smooth_arc.ppt": "3d7b8877f68563c056a05466591507db2510798abbfa65ca6ad3a1f3f488ca0a",
+    "fig3_generated_editable_smooth_arc.svg": "dc740a62a07ee3e386242966584205e9e79b456f853b93b5046607b3e6c6b984",
+    "fig4_generated_editable_smooth_arc.svg": "389d91599698172f750bd1d514d019fe479eb65fa1a27d9a518a43d9b2a39e4d"
+  },
+  "backup_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\source\\smooth_arc_correction_20260911\\before",
+  "delivery_mode": "new filenames because current PPT is held by another program",
+  "original_deck_and_svg_unchanged": true
+}

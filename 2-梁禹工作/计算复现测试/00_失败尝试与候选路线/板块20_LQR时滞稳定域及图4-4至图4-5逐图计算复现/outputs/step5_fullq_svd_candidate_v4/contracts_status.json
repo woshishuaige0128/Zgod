@@ -1,0 +1,59 @@
+{
+  "candidate_output_policy": "Only the five calculable route IDs may receive route directories.",
+  "noncomputable_failed_routes": [
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "main_cb_div1",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "main_cb_div2",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "energy_guyan_div1",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "energy_guyan_div2",
+      "upstream_status": "EXECUTION_FAIL"
+    }
+  ],
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_contracts_status_v4",
+  "scientific_contracts": {
+    "manuscript_0824_route": {
+      "borrowing_policy": "Do not substitute author-program or historical matrices.",
+      "evidence_label": "待决定",
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "master_thesis_route": {
+      "borrowing_policy": "Do not substitute author-program or historical matrices.",
+      "evidence_label": "待决定",
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "sealed_author_file_identity_routes": {
+      "evidence_label": "计算级复现候选",
+      "route_count": 5,
+      "status": "CALCULABLE"
+    }
+  },
+  "v2_candidate_status": "PERMANENT_FAIL_IMMUTABLE",
+  "v3_candidate_status": "PERMANENT_VALIDATOR_FAIL_IMMUTABLE",
+  "v3_not_gate_relaxation_statement": "V4 changes no scientific algorithm, root, input, tolerance, pairing, rho, classification, residual, or threshold. V3 remains permanently validator-FAIL because every route_status schema_version was overwritten by checkpoint identity. V4 preregisters only that metadata merge-order repair plus necessary V4 paths, schemas, seals, and immutable-evidence checks before any V4 preflight/selftest/pilot.",
+  "v3_scientific_output_reuse_policy": "FORBIDDEN"
+}

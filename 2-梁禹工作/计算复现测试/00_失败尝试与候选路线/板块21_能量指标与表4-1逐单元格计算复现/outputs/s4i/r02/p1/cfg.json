@@ -1,0 +1,102 @@
+{
+  "allowed_work_files": [
+    "PDmonicanshu2.m",
+    "Copy_of_energy_zonghe2.mlx"
+  ],
+  "candidate_mlx": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs\\division1_pd19_copy\\rep01\\work\\Copy_of_energy_zonghe2.mlx",
+  "config_hash_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\metadata\\run_config.sha256",
+  "created_at": "2026-08-26T04:42:20.858727+08:00",
+  "diary_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\matlab_diary.log",
+  "division_identity": "第一类划分局部物理子结构",
+  "embedded_historical_percent": [
+    9.6488,
+    9.315
+  ],
+  "error_report": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\error_report.txt",
+  "execution_status": "STAGED_NOT_RUN",
+  "expected_energy_lengths": [
+    6,
+    2,
+    5
+  ],
+  "input_contracts": [
+    {
+      "author_original_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\能量指标\\PDmonicanshu2.m",
+      "copied_sha256": "ADF1C89A4C9443168DCBBBBC5F9AAA1C68CE275C4F49E449C1CBABDEF86FF110",
+      "expected_sha256": "ADF1C89A4C9443168DCBBBBC5F9AAA1C68CE275C4F49E449C1CBABDEF86FF110",
+      "frozen_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\author_energy\\PDmonicanshu2.m",
+      "kind": "upstream",
+      "name": "PDmonicanshu2.m",
+      "order": 1,
+      "size_bytes": 5191,
+      "staged_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs\\division1_pd19_copy\\rep01\\work\\PDmonicanshu2.m"
+    },
+    {
+      "author_original_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\liangyustability-master\\能量指标\\Copy_of_energy_zonghe2.mlx",
+      "copied_sha256": "80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D",
+      "expected_sha256": "80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D",
+      "frozen_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\input\\author_energy\\Copy_of_energy_zonghe2.mlx",
+      "kind": "candidate",
+      "name": "Copy_of_energy_zonghe2.mlx",
+      "order": 2,
+      "size_bytes": 66965,
+      "staged_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs\\division1_pd19_copy\\rep01\\work\\Copy_of_energy_zonghe2.mlx"
+    }
+  ],
+  "instrument_contracts": [
+    {
+      "expected_sha256": "9DEE64A057A82343227C2F49B23BEECB5A5AF076877CB2A54B478FCFAE769AA1",
+      "name": "stage_board21_step3_runs.py",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\stage_board21_step3_runs.py"
+    },
+    {
+      "expected_sha256": "692B749833FD5A30526AE3CA6F2CEE55630F0A908BE0A75BC8E9B4F294E08D00",
+      "name": "run_one_board21_energy_route.m",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\run_one_board21_energy_route.m"
+    },
+    {
+      "expected_sha256": "CEB805DF2F4E83DF4C2B93350AF257B0058923C372D5735A5730FE4694C47DD6",
+      "name": "execute_board21_step3_route.py",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\execute_board21_step3_route.py"
+    },
+    {
+      "expected_sha256": "FFD6D9A5E25C2CE17DB43A2A633D2549A6A9540A040C135CB144D20C7B73E273",
+      "name": "run_board21_step3_all.py",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\run_board21_step3_all.py"
+    },
+    {
+      "expected_sha256": "EF9FF39E2804658A76E84DAEFDF8AFF6EADC14C0F8FDC71EB99E5DD756D00BCE",
+      "name": "validate_board21_step3_runs.py",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\validate_board21_step3_runs.py"
+    }
+  ],
+  "instrument_sha256": {
+    "execute_board21_step3_route.py": "CEB805DF2F4E83DF4C2B93350AF257B0058923C372D5735A5730FE4694C47DD6",
+    "run_board21_step3_all.py": "FFD6D9A5E25C2CE17DB43A2A633D2549A6A9540A040C135CB144D20C7B73E273",
+    "run_one_board21_energy_route.m": "692B749833FD5A30526AE3CA6F2CEE55630F0A908BE0A75BC8E9B4F294E08D00",
+    "stage_board21_step3_runs.py": "9DEE64A057A82343227C2F49B23BEECB5A5AF076877CB2A54B478FCFAE769AA1",
+    "validate_board21_step3_runs.py": "EF9FF39E2804658A76E84DAEFDF8AFF6EADC14C0F8FDC71EB99E5DD756D00BCE"
+  },
+  "log_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01",
+  "matlab_command_txt": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\matlab_command.txt",
+  "matlab_executable": "D:\\Downlad\\Matlab\\bin\\matlab.exe",
+  "matlab_stderr_log": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\matlab_stderr.log",
+  "matlab_stdout_log": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\matlab_stdout.log",
+  "output_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01",
+  "parameter_family": "rho=785e3.*1.9",
+  "process_exit_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\metadata\\process_exit.json",
+  "replicate": "rep01",
+  "route_id": "division1_pd19_copy",
+  "route_label_cn": "第一类局部物理子结构：PD参数族1.9→Copy_of_energy_zonghe2",
+  "schema_version": "BOARD21_STEP3_ROUTE_CONFIG_V1",
+  "scientific_mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\scientific\\historical_energy_outputs.mat",
+  "shell_log": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs\\division1_pd19_copy\\rep01\\shell_stdout_stderr.log",
+  "static_boundary": "STATIC_DIMENSION_AND_COORDINATE_PASS",
+  "status_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\metadata\\run_status.json",
+  "upstream_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs\\division1_pd19_copy\\rep01\\work\\PDmonicanshu2.m",
+  "variable_inventory_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\metadata\\variable_inventory.json",
+  "work_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs\\division1_pd19_copy\\rep01\\work",
+  "workspace_after_upstream": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\workspace\\workspace_after_upstream.mat",
+  "workspace_failure": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\workspace\\workspace_failure.mat",
+  "workspace_success": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\division1_pd19_copy\\rep01\\workspace\\workspace_complete.mat"
+}

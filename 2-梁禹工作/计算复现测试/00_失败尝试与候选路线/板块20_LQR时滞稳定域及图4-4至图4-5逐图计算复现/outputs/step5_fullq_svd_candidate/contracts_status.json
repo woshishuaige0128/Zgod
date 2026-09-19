@@ -1,0 +1,57 @@
+{
+  "candidate_output_policy": "Only the five calculable route IDs may receive route directories.",
+  "noncomputable_failed_routes": [
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "main_cb_div1",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "main_cb_div2",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "energy_guyan_div1",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "candidate_policy": "DO_NOT_CREATE",
+      "candidate_status": "CONTRACT_NOT_EXECUTABLE",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "manifest_rho_grid_policy": "DO_NOT_CREATE",
+      "route_id": "energy_guyan_div2",
+      "upstream_status": "EXECUTION_FAIL"
+    }
+  ],
+  "schema_version": "board20_step5_fullq_svd_candidate_contracts_status_v3",
+  "scientific_contracts": {
+    "manuscript_0824_route": {
+      "borrowing_policy": "Do not substitute author-program or historical matrices.",
+      "evidence_label": "待决定",
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "master_thesis_route": {
+      "borrowing_policy": "Do not substitute author-program or historical matrices.",
+      "evidence_label": "待决定",
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "sealed_author_file_identity_routes": {
+      "evidence_label": "计算级复现候选",
+      "route_count": 5,
+      "status": "CALCULABLE"
+    }
+  },
+  "v2_candidate_status": "PERMANENT_FAIL_IMMUTABLE",
+  "v3_not_gate_relaxation_statement": "V3 does not lower or remove the 1e-8 residual threshold. V2 remains permanently FAIL because its preregistered companion-vector-block residual exceeded 1e-8 at two synthetic roots. V3 preregisters a different, eigenvector-independent residual before any V3 input seal, selftest, pilot, or scientific solve; the selected ordinary-eig roots and every root-based decision remain unchanged."
+}

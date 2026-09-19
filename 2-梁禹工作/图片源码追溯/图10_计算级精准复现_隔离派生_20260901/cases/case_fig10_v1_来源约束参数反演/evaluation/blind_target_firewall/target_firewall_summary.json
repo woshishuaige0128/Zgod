@@ -1,0 +1,172 @@
+{
+  "checks": {
+    "dynamic_temporary_directory_pass": true,
+    "static_blind_files_pass": true
+  },
+  "dynamic_evidence": {
+    "audit_event_count": 3,
+    "checks": {
+      "all_three_malicious_paths_rejected": true,
+      "copied_code_hashes_match": true,
+      "decoy_hashes_unchanged": true,
+      "good_synthetic_point_count_two": true,
+      "good_synthetic_run_passed": true,
+      "no_denied_file_open_attempt_reached_os": true
+    },
+    "decoy_hashes_after": {
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\fig10_stability_domain.pdf": "C5B389094F8C9CEBB3F8AB3A8350481E3D32195446F4999FE58ABE4267BA5BCF",
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\plotted_data.mat": "352DB2C55477D02AF9B2C440FFA186F4F8BF3E069EB7E0C336A7EA2B48C4CEFB",
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\target_boundary.csv": "783B9F295A0D338E2F33D328D030D164635EF5EACB7B2E11FD05C9F81D9868A8"
+    },
+    "decoy_hashes_before": {
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\fig10_stability_domain.pdf": "C5B389094F8C9CEBB3F8AB3A8350481E3D32195446F4999FE58ABE4267BA5BCF",
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\plotted_data.mat": "352DB2C55477D02AF9B2C440FFA186F4F8BF3E069EB7E0C336A7EA2B48C4CEFB",
+      "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\decoy_inputs\\target_boundary.csv": "783B9F295A0D338E2F33D328D030D164635EF5EACB7B2E11FD05C9F81D9868A8"
+    },
+    "denied_attempt_count": 0,
+    "good_run": {
+      "command": [
+        "D:\\Software\\python\\python.exe",
+        "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\code\\run_fig10_blind_search.py",
+        "--manifest",
+        "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\good_manifest.json",
+        "--output-dir",
+        "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\good_run_output",
+        "--mode",
+        "sentinel",
+        "--checkpoint-every",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"mode\": \"sentinel\",\n  \"route_count\": 1,\n  \"point_count\": 2,\n  \"hash_manifest\": \"C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_firewall_dxiouhs4\\\\good_run_output\\\\artifact_hash_manifest.csv\"\n}\n"
+    },
+    "malicious_runs": [
+      {
+        "command": [
+          "D:\\Software\\python\\python.exe",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\code\\run_fig10_blind_search.py",
+          "--manifest",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_1.json",
+          "--output-dir",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_1_output",
+          "--mode",
+          "sentinel",
+          "--checkpoint-every",
+          "1"
+        ],
+        "returncode": 1,
+        "stderr": "{\n  \"schema_version\": \"FIG10_BLIND_SEARCH_RUN_V1\",\n  \"status\": \"ERROR\",\n  \"error_type\": \"BlindContractError\",\n  \"error_message\": \"数值算子包路径命中防火墙标记：plotted\"\n}\n",
+        "stdout": ""
+      },
+      {
+        "command": [
+          "D:\\Software\\python\\python.exe",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\code\\run_fig10_blind_search.py",
+          "--manifest",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_2.json",
+          "--output-dir",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_2_output",
+          "--mode",
+          "sentinel",
+          "--checkpoint-every",
+          "1"
+        ],
+        "returncode": 1,
+        "stderr": "{\n  \"schema_version\": \"FIG10_BLIND_SEARCH_RUN_V1\",\n  \"status\": \"ERROR\",\n  \"error_type\": \"BlindContractError\",\n  \"error_message\": \"数值算子包后缀必须是 ('.mat', '.npz')：C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_firewall_dxiouhs4\\\\decoy_inputs\\\\target_boundary.csv\"\n}\n",
+        "stdout": ""
+      },
+      {
+        "command": [
+          "D:\\Software\\python\\python.exe",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\code\\run_fig10_blind_search.py",
+          "--manifest",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_3.json",
+          "--output-dir",
+          "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4\\malicious_3_output",
+          "--mode",
+          "sentinel",
+          "--checkpoint-every",
+          "1"
+        ],
+        "returncode": 1,
+        "stderr": "{\n  \"schema_version\": \"FIG10_BLIND_SEARCH_RUN_V1\",\n  \"status\": \"ERROR\",\n  \"error_type\": \"BlindContractError\",\n  \"error_message\": \"数值算子包后缀必须是 ('.mat', '.npz')：C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\fig10_firewall_dxiouhs4\\\\decoy_inputs\\\\fig10_stability_domain.pdf\"\n}\n",
+        "stdout": ""
+      }
+    ],
+    "status": "PASS",
+    "temporary_work_root": "C:\\Users\\lenovo\\AppData\\Local\\Temp\\fig10_firewall_dxiouhs4"
+  },
+  "schema_version": "FIG10_TARGET_FIREWALL_VALIDATION_V1",
+  "static_evidence": [
+    {
+      "file_access_calls": [
+        {
+          "function": "open",
+          "line": 95
+        },
+        {
+          "function": "loadmat",
+          "line": 149
+        },
+        {
+          "function": "load",
+          "line": 150
+        }
+      ],
+      "forbidden_exact_literal_hits": [],
+      "forbidden_imports": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.io",
+        "scipy.linalg",
+        "typing"
+      ],
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\fig10_blind_core.py",
+      "sha256": "9F001CD1E57F8909070295EBC8E265B2CE6619784EE1ADDA75F762B49B377411"
+    },
+    {
+      "file_access_calls": [
+        {
+          "function": "read_text",
+          "line": 170
+        },
+        {
+          "function": "open",
+          "line": 176
+        }
+      ],
+      "forbidden_exact_literal_hits": [],
+      "forbidden_imports": [],
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "fig10_blind_core",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "re",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\run_fig10_blind_search.py",
+      "sha256": "80D1BBE2F3DC49AFFDAF77DE619104BD582705AB344D96C48E6C9D6A8EBEDC6B"
+    }
+  ],
+  "status": "PASS",
+  "validator_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\validate_target_firewall.py",
+  "validator_sha256": "B3BBFBAF672553B1557E358E9D2CDAFA591488C2474335C06B1CDA4DD198E387"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v2_v4_binding_record_v1",
+  "record_status": "FORMAL_V4_BINDING_METADATA_CORRECTION_PRECHECK_ONLY",
+  "purpose": "Bind validator V2 to the final sealed V4 candidate identities without modifying the immutable preseal revision record. This record corrects metadata discovered after V4 source sealing; it changes no scientific formula, algorithm, root, residual, tolerance, classification, or decision gate.",
+  "immutable_preseal_revision_record": {
+    "relpath": "code/board20_step5_fullq_svd_candidate_validator_v2_revision_record.json",
+    "sha256": "7C9CE34477ED2B299193EB505492F317A6EAC9DF2CB8C1D6F6EDD851149CADBD",
+    "modified": false
+  },
+  "v4_candidate_identity": {
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_contract.json",
+    "contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "script_relpath": "code/compute_board20_step5_fullq_svd_candidate_v4.py",
+    "script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_relpath": "outputs/step5_fullq_svd_candidate_v4/input_seal.json",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "preflight_relpath": "outputs/step5_fullq_svd_candidate_v4/preflight.json",
+    "preflight_sha256": "DDF29EB97BFECA61AD3F0A7FE7944C1077383F5408C59E6AE180168A0DA3DD6B",
+    "preflight_status": "PASS_58_OF_58",
+    "selftest_relpath": "outputs/step5_fullq_svd_candidate_v4/selftest.json",
+    "selftest_sha256": "97EC46E0C59140FDA87B16F323259BDD070BBD4AB7AABC60C86C7395F4EA283C",
+    "selftest_status": "PASS_80_OF_80"
+  },
+  "metadata_corrections": [
+    {
+      "correction_id": "V4-BIND-001",
+      "preseal_placeholder": "board20_step5_fullq_svd_candidate_route_status_v4",
+      "sealed_actual": "board20_step5_fullq_svd_candidate_v4_route_status_v4",
+      "evidence": "code/compute_board20_step5_fullq_svd_candidate_v4.py write_route_outputs explicit schema_version",
+      "scientific_effect": "NONE"
+    },
+    {
+      "correction_id": "V4-BIND-002",
+      "rule": "The V4 full postcheck prior-pilot dependency is contract-driven and points only to outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_pilot_postcheck.json. A V3 pilot audit can never satisfy it.",
+      "scientific_effect": "NONE"
+    },
+    {
+      "correction_id": "V4-BIND-003",
+      "rule": "The legacy waiting guard releases only for the exact FORMAL_V4_SEALED_PRECHECK_ONLY status. Pilot and full postcheck remain disabled in that status.",
+      "scientific_effect": "NONE"
+    }
+  ],
+  "representation_revision_whitelist": [
+    "V2-REP-001 JSON null/empty CSV and HDF5 NaN equivalence only for explicitly nullable numeric fields",
+    "V2-REP-002 compact-selected NOT_APPLICABLE label and full-q-selected conditioning-diagnostic label"
+  ],
+  "all_scientific_contracts_unchanged": true,
+  "pilot_postcheck_enabled": false,
+  "full_postcheck_enabled": false,
+  "candidate_computation_authorized": false
+}

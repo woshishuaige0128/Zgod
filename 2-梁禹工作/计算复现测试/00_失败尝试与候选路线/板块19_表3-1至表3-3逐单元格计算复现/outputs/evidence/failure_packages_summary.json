@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "表3-1_两类划分前两阶固有频率相对误差",
+    "表3-2_两类划分前两阶MAC",
+    "表3-3_两类划分五个Chirp频段及ElCentro响应NRMSE"
+  ],
+  "package_count": 3,
+  "formal_success_directories_present": 0,
+  "status": "PASS"
+}

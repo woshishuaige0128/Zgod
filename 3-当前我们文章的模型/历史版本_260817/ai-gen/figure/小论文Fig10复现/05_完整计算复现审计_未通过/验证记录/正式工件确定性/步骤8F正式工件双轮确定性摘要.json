@@ -1,0 +1,90 @@
+{
+  "builder_command": [
+    "D:\\Software\\python\\python.exe",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\build_board20_step8f_adjudication.py",
+    "--render"
+  ],
+  "builder_output": "STEP8F_RENDER_DONE: 4 PDF + 4 PNG",
+  "builder_returncode": 0,
+  "builder_sha256": "FAB44151974523DCCE9FCF1C1551D39E28C6594AE95A3B01F5A8A7A56BACBEE7",
+  "comparison_csv": "outputs/step8f_计算候选与论文目标裁决/repeatability/步骤8F正式工件双轮逐文件比较.csv",
+  "difference_counts": {
+    "added_after": 0,
+    "category_mismatch": 0,
+    "difference": 0,
+    "identical": 79,
+    "missing_after": 0,
+    "sha256_mismatch": 0,
+    "size_mismatch": 0
+  },
+  "difference_file_count": 0,
+  "excluded_top_level_directories": [
+    "repeatability",
+    "validation",
+    "visual_qa"
+  ],
+  "first_round_file_count": 79,
+  "first_round_structure": {
+    "actual": {
+      "data_or_adjudication": 70,
+      "pdf": 4,
+      "plot_hash_manifest": 1,
+      "png": 4,
+      "total": 79,
+      "unexpected_figure_file": 0
+    },
+    "checks": {
+      "data_or_adjudication_count_exact": true,
+      "pdf_count_exact": true,
+      "plot_hash_manifest_count_exact": true,
+      "png_count_exact": true,
+      "total_file_count_exact": true,
+      "unexpected_figure_file_count_zero": true
+    },
+    "expected": {
+      "data_or_adjudication": 70,
+      "pdf": 4,
+      "plot_hash_manifest": 1,
+      "png": 4,
+      "total": 79,
+      "unexpected_figure_file": 0
+    },
+    "passed": true
+  },
+  "overall_gate": "PASS_79_OF_79_BYTE_IDENTICAL",
+  "passed": true,
+  "path_set_exact": true,
+  "purpose": "FORMAL_ARTIFACT_BYTE_REPEATABILITY",
+  "repeatability_script_sha256": "0260F0546C73AACD40A933DF46841A1D6D08B1562A6369225B4F56B134095151",
+  "second_round_file_count": 79,
+  "second_round_structure": {
+    "actual": {
+      "data_or_adjudication": 70,
+      "pdf": 4,
+      "plot_hash_manifest": 1,
+      "png": 4,
+      "total": 79,
+      "unexpected_figure_file": 0
+    },
+    "checks": {
+      "data_or_adjudication_count_exact": true,
+      "pdf_count_exact": true,
+      "plot_hash_manifest_count_exact": true,
+      "png_count_exact": true,
+      "total_file_count_exact": true,
+      "unexpected_figure_file_count_zero": true
+    },
+    "expected": {
+      "data_or_adjudication": 70,
+      "pdf": 4,
+      "plot_hash_manifest": 1,
+      "png": 4,
+      "total": 79,
+      "unexpected_figure_file": 0
+    },
+    "passed": true
+  },
+  "sha256_identical_file_count": 79,
+  "step": "8F",
+  "summary_json": "outputs/step8f_计算候选与论文目标裁决/repeatability/步骤8F正式工件双轮确定性摘要.json"
+}

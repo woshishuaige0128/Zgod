@@ -1,0 +1,532 @@
+{
+  "models": [
+    {
+      "division": 1,
+      "internal_modes": 0,
+      "order": 6,
+      "retained": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        6
+      ],
+      "basis_condition": 4.581759353650774,
+      "projected_mass_min_eigenvalue": 68.03027184481624
+    },
+    {
+      "division": 1,
+      "internal_modes": 3,
+      "order": 9,
+      "retained": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        6
+      ],
+      "basis_condition": 88.94377474003156,
+      "projected_mass_min_eigenvalue": 0.8905896145085176
+    },
+    {
+      "division": 1,
+      "internal_modes": 9,
+      "order": 15,
+      "retained": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        6
+      ],
+      "basis_condition": 156.44992268919452,
+      "projected_mass_min_eigenvalue": 0.8426357180072483
+    },
+    {
+      "division": 2,
+      "internal_modes": 0,
+      "order": 5,
+      "retained": [
+        1,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        11
+      ],
+      "basis_condition": 3.363767948828903,
+      "projected_mass_min_eigenvalue": 68.04561203518622
+    },
+    {
+      "division": 2,
+      "internal_modes": 3,
+      "order": 8,
+      "retained": [
+        1,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        11
+      ],
+      "basis_condition": 80.13121390466691,
+      "projected_mass_min_eigenvalue": 0.469419056307949
+    },
+    {
+      "division": 2,
+      "internal_modes": 10,
+      "order": 15,
+      "retained": [
+        1,
+        11,
+        4,
+        9,
+        14
+      ],
+      "actuation": [
+        1,
+        11
+      ],
+      "basis_condition": 349.3585243852441,
+      "projected_mass_min_eigenvalue": 0.4365947096481489
+    }
+  ],
+  "interface_models": [
+    {
+      "division": 1,
+      "retained_global": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14,
+        3,
+        7,
+        8
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "physical_retained": [
+        1,
+        6,
+        3,
+        7,
+        8
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        12,
+        13,
+        15
+      ],
+      "physical_internal": [
+        2
+      ],
+      "numerical_modes": 0,
+      "physical_modes": 0,
+      "order": 9,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 5,
+      "physical_available_modes": 1
+    },
+    {
+      "division": 1,
+      "retained_global": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14,
+        3,
+        7,
+        8
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "physical_retained": [
+        1,
+        6,
+        3,
+        7,
+        8
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        12,
+        13,
+        15
+      ],
+      "physical_internal": [
+        2
+      ],
+      "numerical_modes": 1,
+      "physical_modes": 1,
+      "order": 11,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 5,
+      "physical_available_modes": 1
+    },
+    {
+      "division": 1,
+      "retained_global": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14,
+        3,
+        7,
+        8
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "physical_retained": [
+        1,
+        6,
+        3,
+        7,
+        8
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        12,
+        13,
+        15
+      ],
+      "physical_internal": [
+        2
+      ],
+      "numerical_modes": 3,
+      "physical_modes": 1,
+      "order": 13,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 5,
+      "physical_available_modes": 1
+    },
+    {
+      "division": 1,
+      "retained_global": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14,
+        3,
+        7,
+        8
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "physical_retained": [
+        1,
+        6,
+        3,
+        7,
+        8
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        12,
+        13,
+        15
+      ],
+      "physical_internal": [
+        2
+      ],
+      "numerical_modes": 5,
+      "physical_modes": 1,
+      "order": 15,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 5,
+      "physical_available_modes": 1
+    },
+    {
+      "division": 2,
+      "retained_global": [
+        1,
+        11,
+        6,
+        4,
+        9,
+        14,
+        3,
+        8,
+        13
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13
+      ],
+      "physical_retained": [
+        1,
+        11,
+        3,
+        6,
+        8,
+        13
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        15
+      ],
+      "physical_internal": [
+        2,
+        7,
+        12
+      ],
+      "numerical_modes": 0,
+      "physical_modes": 0,
+      "order": 9,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 3,
+      "physical_available_modes": 3
+    },
+    {
+      "division": 2,
+      "retained_global": [
+        1,
+        11,
+        6,
+        4,
+        9,
+        14,
+        3,
+        8,
+        13
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13
+      ],
+      "physical_retained": [
+        1,
+        11,
+        3,
+        6,
+        8,
+        13
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        15
+      ],
+      "physical_internal": [
+        2,
+        7,
+        12
+      ],
+      "numerical_modes": 1,
+      "physical_modes": 1,
+      "order": 11,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 3,
+      "physical_available_modes": 3
+    },
+    {
+      "division": 2,
+      "retained_global": [
+        1,
+        11,
+        6,
+        4,
+        9,
+        14,
+        3,
+        8,
+        13
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13
+      ],
+      "physical_retained": [
+        1,
+        11,
+        3,
+        6,
+        8,
+        13
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        15
+      ],
+      "physical_internal": [
+        2,
+        7,
+        12
+      ],
+      "numerical_modes": 2,
+      "physical_modes": 2,
+      "order": 13,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 3,
+      "physical_available_modes": 3
+    },
+    {
+      "division": 2,
+      "retained_global": [
+        1,
+        11,
+        6,
+        4,
+        9,
+        14,
+        3,
+        8,
+        13
+      ],
+      "all_common": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13
+      ],
+      "physical_retained": [
+        1,
+        11,
+        3,
+        6,
+        8,
+        13
+      ],
+      "numerical_internal": [
+        5,
+        10,
+        15
+      ],
+      "physical_internal": [
+        2,
+        7,
+        12
+      ],
+      "numerical_modes": 3,
+      "physical_modes": 3,
+      "order": 15,
+      "numerical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "physical_internal_mass_min_eigenvalue": 51.08781197921776,
+      "numerical_available_modes": 3,
+      "physical_available_modes": 3
+    }
+  ],
+  "negative_controls": [
+    {
+      "division": 1,
+      "internal_modes": 0,
+      "structural_delayed_K_shortcut_relative_difference": 0.15038550283418534
+    },
+    {
+      "division": 1,
+      "internal_modes": 3,
+      "structural_delayed_K_shortcut_relative_difference": 0.1504197386076744
+    },
+    {
+      "division": 1,
+      "internal_modes": 9,
+      "structural_delayed_K_shortcut_relative_difference": 0.15118147884735378
+    },
+    {
+      "division": 2,
+      "internal_modes": 0,
+      "structural_delayed_K_shortcut_relative_difference": 0.1522311289872147
+    },
+    {
+      "division": 2,
+      "internal_modes": 3,
+      "structural_delayed_K_shortcut_relative_difference": 0.1526795436167959
+    },
+    {
+      "division": 2,
+      "internal_modes": 10,
+      "structural_delayed_K_shortcut_relative_difference": 0.16073995288515724
+    }
+  ],
+  "fixed_test_gain": [
+    [
+      11.440297459847402,
+      -0.010652177618556849,
+      14.411430029172708,
+      8.436237365123988
+    ],
+    [
+      47.63957186503307,
+      13.47179306460911,
+      20.309450241647976,
+      44.215310746897295
+    ]
+  ],
+  "gain_note": "Copied from the prior verified Division II Full15; used as a fixed algebraic test parameter in both divisions, not a validated Division I control design."
+}

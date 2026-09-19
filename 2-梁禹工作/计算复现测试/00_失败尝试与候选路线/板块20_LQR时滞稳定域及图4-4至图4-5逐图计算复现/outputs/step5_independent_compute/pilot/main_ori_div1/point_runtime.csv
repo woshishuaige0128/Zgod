@@ -1,0 +1,8 @@
+﻿route_id,l,j,elapsed_seconds,point_status
+main_ori_div1,0,0,0.009599699988029897,PASS
+main_ori_div1,1,0,0.00900510000064969,PASS
+main_ori_div1,0,1,0.009416399989277124,PASS
+main_ori_div1,2,5,0.012802900047972798,PASS
+main_ori_div1,5,2,0.013705999939702451,PASS
+main_ori_div1,10,10,0.021560800028964877,PASS
+main_ori_div1,30,66,0.2989325999515131,PASS

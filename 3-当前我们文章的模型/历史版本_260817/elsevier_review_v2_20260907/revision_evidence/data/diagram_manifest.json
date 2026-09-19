@@ -1,0 +1,18 @@
+[
+  {
+    "file": "fig01_force_feedback",
+    "pdf_sha256": "20e4d96bbe809a0daf89c2b9b43e2c4973c561cf1a2bf4bf7d75f4292224f467"
+  },
+  {
+    "file": "fig02_geometry",
+    "pdf_sha256": "5bc55cd6892b43d613761d8637370c8ce456ad87ffd981a624ad0e7bf2ea58ab"
+  },
+  {
+    "file": "fig03_dofs",
+    "pdf_sha256": "5733cef2dd958baa673b99f44d1f2764c2a7d4ee6a38dad4846cfc69022695c1"
+  },
+  {
+    "file": "fig04_divisions",
+    "pdf_sha256": "c198830f0245426c5411a3b320aa42ed7b62ef8bf7ce0a7b2e06cad4460496f0"
+  }
+]

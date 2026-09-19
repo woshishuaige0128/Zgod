@@ -1,0 +1,7 @@
+figure,method,论文矢量复刻入口,作者现存绘图数据,现存MAT与论文,作者候选计算代码,计算代码裁决
+图4-4,Original,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_2.mat::stab_o,逐点一致,新结构稳定/稳定域/luxvjie_ori_LQR2.mlx,只计算单点且没有完整扫描；不是lqr_2.mat生成器
+图4-4,Craig-Bampton,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_2.mat::stab_C,不一致：现存最右列55而论文59,新结构稳定/稳定域/luxvjie_cb_LQR2.mlx,引用未定义MRren且没有LQR；只扫21×21；不是lqr_2.mat生成器
+图4-4,Guyan,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_2.mat::stab_g,不一致：现存最右列52而论文58,新结构稳定/稳定域/luxvjie_guyan_LQR2.mlx,5×5 Guyan且没有LQR；只扫21×21；不是lqr_2.mat生成器
+图4-5,Original,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_3.mat::stab_o,逐点一致,新结构稳定/稳定域/luxvjie_ori_LQR3.mlx,文件名写Original但实际进入5×5 Guyan与离散LQR路线；不是lqr_3.mat生成器
+图4-5,Craig-Bampton,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_3.mat::stab_C,不一致：现存最右列54而论文51,新结构稳定/稳定域/luxvjie_cb_LQR3.mlx,与LQR2字节完全相同；引用未定义MRren且没有LQR；不是lqr_3.mat生成器
+图4-5,Guyan,code/rebuild_thesis_vector_trace.py,liangyustability-master/新结构稳定/绘图/lqr_3.mat::stab_g,不一致：现存最右列51而论文48,新结构稳定/稳定域/luxvjie_guyan_LQR3.mlx,5×5 Guyan加离散LQR并分段扫描；只保存stab_guyan_lqr.mat；不是lqr_3.mat生成器

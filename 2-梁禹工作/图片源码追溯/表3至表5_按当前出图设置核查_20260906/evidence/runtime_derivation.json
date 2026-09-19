@@ -1,0 +1,38 @@
+[
+  {
+    "figure": "Fig06",
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig06_第一类划分_ElCentro全链计算",
+    "runtime": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\table345_audit_20260906\\temp\\Fig06_第一类划分_ElCentro全链计算",
+    "entry": "RUN_FIG06_FULLCHAIN.m",
+    "calculation_sections_1_to_7_exact": true,
+    "plots_executed": false,
+    "reference_csv_read": false
+  },
+  {
+    "figure": "Fig07",
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig07_第二类划分_ElCentro全链计算",
+    "runtime": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\table345_audit_20260906\\temp\\Fig07_第二类划分_ElCentro全链计算",
+    "entry": "RUN_FIG07_FULLCHAIN.m",
+    "calculation_sections_1_to_7_exact": true,
+    "plots_executed": false,
+    "reference_csv_read": false
+  },
+  {
+    "figure": "Fig08",
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig08_第一类划分_Chirp全链计算",
+    "runtime": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\table345_audit_20260906\\temp\\Fig08_第一类划分_Chirp全链计算",
+    "entry": "RUN_FIG08_FULLCHAIN.m",
+    "calculation_sections_1_to_7_exact": true,
+    "plots_executed": false,
+    "reference_csv_read": false
+  },
+  {
+    "figure": "Fig09",
+    "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig09_第二类划分_Chirp全链计算",
+    "runtime": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\table345_audit_20260906\\temp\\Fig09_第二类划分_Chirp全链计算",
+    "entry": "RUN_FIG09_FULLCHAIN.m",
+    "calculation_sections_1_to_7_exact": true,
+    "plots_executed": false,
+    "reference_csv_read": false
+  }
+]

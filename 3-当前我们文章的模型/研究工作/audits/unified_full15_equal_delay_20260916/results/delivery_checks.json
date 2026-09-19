@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "validation": [
+    {
+      "file": "validation_python.json",
+      "checks": 1066,
+      "max_normalized_residual": 2.8265197444203047e-14,
+      "independent_repeat": "PASS"
+    },
+    {
+      "file": "validation_matlab.json",
+      "checks": 432,
+      "max_normalized_residual": 4.8672787995972997e-14,
+      "independent_repeat": "PASS"
+    },
+    {
+      "file": "validation_error_identities.json",
+      "checks": 24,
+      "max_normalized_residual": 1.2850326475838137e-11,
+      "independent_repeat": "PASS"
+    }
+  ],
+  "total_checks": 1522,
+  "all_tests_tolerance": 1e-10,
+  "max_normalized_residual": 1.2850326475838137e-11,
+  "frozen_sources_unchanged": 7,
+  "prior_delivery_files_unchanged": 487,
+  "independent_temp_repeat": "PASS",
+  "exported_matrices_repeat": "bitwise equal",
+  "theory_pdf_pages": 7,
+  "report_print_pages": 10,
+  "visual_qa": "PASS",
+  "new_time_histories": 0,
+  "new_pole_scans": 0,
+  "route_adoption": "pending user research decision",
+  "pro_review": "prepared locally; not sent or received",
+  "report_sha256": "22470491d06595498dee8c1d862e32620657bd93a3c23ef596c11451915f20a8",
+  "theory_pdf_sha256": "126f1ea3f5b99c5e6b249f1bee2009d51a9ac37a0aa445c0408cd7d25be9fa3e"
+}

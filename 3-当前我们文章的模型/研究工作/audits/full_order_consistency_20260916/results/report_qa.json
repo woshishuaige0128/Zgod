@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "sections": 9,
+  "tables": 9,
+  "anchors": true,
+  "externalAssets": 0,
+  "overflow": false,
+  "desktop": "1500x1050",
+  "mobile": "390x844",
+  "offlineMoved": true,
+  "navigation": true,
+  "printGenerated": true,
+  "visualReview": "PASS",
+  "report_sha256": "e982c85fa86385ec207662ee4bd5f1c10bf8e6b707aff9850d5b6fea15323797",
+  "reviewed_images": [
+    "desktop.png",
+    "delay_desktop.png",
+    "mobile.png",
+    "table_mobile.png"
+  ],
+  "result": "离线移动副本、桌面与窄屏、目录跳转检查通过；截图已查看，无整页溢出或遮挡。",
+  "qa_script": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\temp\\full_order_consistency_20260916\\qa_report.cjs"
+}

@@ -1,0 +1,261 @@
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs,tabularx,array,enumitem}
+\usepackage{xcolor,hyperref,fancyhdr}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlist{nosep,leftmargin=2em}
+\newcommand{\mat}[1]{\bm{#1}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{原完整框架等时滞模型：候选方案与代数核验}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{15pt}
+\title{原15自由度完整框架的等时滞统一模型\\[5pt]\large 可审查推导、两条缩聚路线与修改范围}
+\author{Doctor Bego研究材料\\本地整理与核验：Codex}
+\date{2026年9月16日}
+\begin{document}
+\maketitle
+
+\section{研究目标与当前选择}
+
+本方案把原15自由度框架作为共同结构空间，先定义两个通道的等时滞反馈，再对完整闭环一致投影。要核验的核心关系是：零内部模态等于标准Guyan，全部内部模态恢复同一个完整闭环，中间阶数的差异可归入选定基底的截断。
+
+\textbf{本轮状态：}两个候选基底路线已完成本地代数原型。Python完成1066项检查，最大归一化残差$2.827\times10^{-14}$；MATLAB独立构造基底与完整历史递推，432项检查的最大残差$4.868\times10^{-14}$。标准均为$10^{-10}$。本轮完成的是方案与代数验证；正式路线、实验接口解释和外部理论审查待确认。
+
+原框架的质量、刚度、Rayleigh阻尼、几何和质量参数保持现有来源。沿用线性结构、常时滞、两个通道等时滞、数值惯性不延迟及既定CR时间递推。完整15坐标的运动为数值指令参考；作动坐标的物理运动另经延迟映射。因此，有时滞完整参照是带明确反馈路径的虚拟闭环。
+
+\textbf{两条可行路线：}
+\begin{itemize}
+\item 完整框架直接缩聚：沿用原无时滞精度案例的保留坐标，划分一/二Guyan为6/5阶，保留3个内部模态的CB为9/8阶。它直接延续“保留哪些原框架自由度”的误差问题。
+\item 完整界面协调后做局部缩聚：将所有共同界面坐标保留，再分别进行子结构CB。两种划分的Guyan均为9阶；局部模态数量和原6/12阶路线不同。它延续“分别缩聚物理与数值子结构”的研究形式。
+\end{itemize}
+
+两条路线均需明示未作动界面的理想补充协调及其力传递。数学模型中的协调不能直接等同于两台实际作动器的实现能力。若严格保持旧模型只连接两个坐标、其他共有坐标独立，其完整空间仍为18/19，而非原15。
+
+\section{先在完整物理坐标定义反馈路径}
+
+在原框架中，选择两个作动坐标并对相同的两个信号施加时滞。定义物理侧用于反馈的运动为
+\begin{equation}\label{eq:motion}
+ \mat x_P(t)=(\mat I-\mat B\mat S)\mat x(t)+\mat B\mat S\mat x(t-\tau).
+\end{equation}
+其中，$\mat x\in\mathbb R^{15}$为原框架的位移/转角坐标，$\mat S\in\mathbb R^{2\times15}$抽取两个水平作动位移，$\mat B=\mat S^T$把通道力放回完整坐标，$\tau$为两通道共同延迟。划分一抽取原坐标1和6，划分二抽取1和11。未选坐标在此候选模型中采用当前时刻的协调运动。
+
+将物理与数值部分的刚度和阻尼嵌入原15坐标，可写为
+\begin{equation}
+ \mat K=\mat K_N+\mat K_P,\qquad
+ \mat C=\mat C_N+\mat C_P,\qquad \mat C=\alpha\mat M+\beta\mat K.
+\end{equation}
+其中，各局部贡献依照上轮核查的单元几何与质量分配嵌入，$\alpha,\beta$为现有完整框架的Rayleigh系数。惯性全部通过完整$\mat M$数值推进。
+
+若通道控制力采用相同固定增益并随该通道共同延迟，完整平衡方程为
+\begin{align}
+ \mat M\ddot{\mat x}+\mat C_N\dot{\mat x}+\mat K_N\mat x
+ +\mat C_P\dot{\mat x}_P+\mat K_P\mat x_P
+ +\mat B[\mat G_d\mat S\mat x(t-\tau)+\mat G_v\mat S\dot{\mat x}(t-\tau)]
+ =\mat f a_g(t).\label{eq:balance}
+\end{align}
+其中，$\mat G_d,\mat G_v\in\mathbb R^{2\times2}$分别为位移与速度反馈增益；$a_g$沿用现有代码的输入符号，$\mat f=\mat M\mat\gamma$，$\mat\gamma$在三个楼层水平位移位置取1，其余取0。若使用常见负号地震记法，应对所有模型同时改为$-\mat M\mat\gamma a_g$。
+
+展开式\eqref{eq:motion}，得到适合统一投影的低秩反馈形式：
+\begin{equation}\label{eq:full}
+ \mat M\ddot{\mat x}+\mat C_0\dot{\mat x}+\mat K_0\mat x
+ +\mat U_C\mat S\dot{\mat x}(t-\tau)+\mat U_K\mat S\mat x(t-\tau)
+ =\mat f a_g(t),
+\end{equation}
+\begin{align}
+ \mat C_0&=\mat C-\mat C_P\mat B\mat S,&
+ \mat K_0&=\mat K-\mat K_P\mat B\mat S,\label{eq:current}\\
+ \mat U_C&=\mat C_P\mat B+\mat B\mat G_v,&
+ \mat U_K&=\mat K_P\mat B+\mat B\mat G_d.\label{eq:ports}
+\end{align}
+其中，$\mat U_C,\mat U_K\in\mathbb R^{15\times2}$把两个延迟信号映射到完整广义力。物理反力的作用坐标可超过两个；这正是实验解释必须说明非作动界面传力的原因。
+
+零时滞时，式\eqref{eq:full}恢复
+\begin{equation}\label{eq:zero}
+ \mat M\ddot{\mat x}+(\mat C+\mat B\mat G_v\mat S)\dot{\mat x}
+ +(\mat K+\mat B\mat G_d\mat S)\mat x=\mat f a_g.
+\end{equation}
+这与原无控制框架相差控制项。控制增益设为零时才恢复原被动结构方程；即使方程相同，CR与旧RK4的离散响应仍应分别核查。
+
+\section{全部算子一致投影及两个极限}
+
+对任一候选基底，令$\mat x\approx\mat T\mat q$，并在平衡方程左侧乘$\mat T^T$，得到
+\begin{equation}\label{eq:reduced}
+ \mat M_r\ddot{\mat q}+\mat C_{0r}\dot{\mat q}+\mat K_{0r}\mat q
+ +\mat U_{Cr}\mat S_r\dot{\mat q}(t-\tau)
+ +\mat U_{Kr}\mat S_r\mat q(t-\tau)=\mat f_r a_g,
+\end{equation}
+\begin{align}
+ \mat A_r&=\mat T^T\mat A\mat T\quad(\mat A=\mat M,\mat C,\mat K,\mat C_0,\mat K_0),\\
+ \mat U_{Cr}&=\mat T^T\mat U_C,\quad
+ \mat U_{Kr}=\mat T^T\mat U_K,\quad
+ \mat S_r=\mat S\mat T,\quad \mat f_r=\mat T^T\mat f.\label{eq:projection}
+\end{align}
+其中，$\mat q$为缩聚坐标。两个延迟通道的数量保持为2；其输入映射与反力映射都保留在式\eqref{eq:projection}中。
+
+对于楼层输出矩阵$\mat L$，数值指令输出和物理恢复输出分别为
+\begin{align}
+ \mat y_N(t)&=\mat L\mat T\mat q(t),\\
+ \mat y_P(t)&=\mat L(\mat I-\mat B\mat S)\mat T\mat q(t)
+ +\mat L\mat B\mat S\mat T\mat q(t-\tau).\label{eq:output}
+\end{align}
+同一比较中各模型须选取同一种输出。不能将一个模型的当前数值位移与另一个模型的延迟物理位移混用。
+
+按保留与内部坐标排序，标准Guyan及CB基底为
+\begin{equation}\label{eq:basis}
+ \mat T_G=\begin{bmatrix}\mat I\\\mat\Psi\end{bmatrix},\qquad
+ \mat T_{CB,m}=\begin{bmatrix}\mat I&\mat0\\\mat\Psi&\mat\Phi_m\end{bmatrix},\qquad
+ \mat\Psi=-\mat K_{cc}^{-1}\mat K_{cr}.
+\end{equation}
+其中，$\mat\Phi_m$为保留的固定界面模态；在质量正定的内部空间求解
+$\mat K_{cc}\mat\phi_j=\omega_j^2\mat M_{cc}\mat\phi_j$并做质量归一化。下标$r,c$在本式分别表示保留与内部坐标。
+
+\textbf{零模态极限。} $m=0$时两个基底相同。因为结构、时滞、控制、荷载及输出均按同一基底投影，CB0与标准Guyan的整个闭环相同。
+
+\textbf{全空间极限。} 全部内部模态组成完整基底$\mat W$时，$\mat W$可逆。令完整连续频域算子为
+\begin{equation}\label{eq:continuous}
+ \mat Z_F(s,\tau)=s^2\mat M+s\mat C_0+\mat K_0
+ +e^{-s\tau}(s\mat U_C+\mat U_K)\mat S.
+\end{equation}
+一致投影给出$\mat Z_r=\mat T^T\mat Z_F\mat T$。取$\mat T=\mat W$，在算子可逆处有
+\begin{equation}\label{eq:fullspace}
+ \mat W(\mat W^T\mat Z_F\mat W)^{-1}\mat W^T=\mat Z_F^{-1}.
+\end{equation}
+因此，同输入、同初始历史、同输出映射下恢复原完整闭环。特征行列式仅乘常数$\det(\mat W)^2$，有限特征根不变。
+
+\textbf{应替换的旧操作。} 直接对缩聚物理矩阵选作动列会形成
+\begin{equation}
+ (\mat T^T\mat K_P\mat T)\mat E_r,
+ \qquad\text{而完整路径的投影为}\qquad
+ \mat T^T\mat K_P\mat B\mat S\mat T.\label{eq:shortcut}
+\end{equation}
+其中$\mat E_r$为缩聚坐标的作动选择矩阵。这两式一般不同。式\eqref{eq:projection}直接投影已定义的反馈力路径，避免把坐标改变混入模型改变。
+
+\section{既定CR递推的一致性}
+
+本轮沿用现有代码的算法质量矩阵和速度更新：
+\begin{align}
+ \widehat{\mat M}&=\mat M+\frac h2\mat C+\frac{h^2}{4}\mat K,\label{eq:mass}\\
+ \widehat{\mat M}\mat a_k&=\mat f a_{g,k}-\mat C_0\mat v_k-\mat K_0\mat x_k
+ -\mat U_C\mat S\mat v_{k-n}-\mat U_K\mat S\mat x_{k-n},\\
+ \mat v_{k+1}&=\mat v_k+h\mat a_k,\qquad
+ \mat x_{k+1}=\mat x_k+h\mat v_{k+1},\qquad \tau=nh.\label{eq:step}
+\end{align}
+其中$h=1/1024$秒，$n$为两个通道共同的整数延迟步数。式\eqref{eq:mass}中的$\mat C,\mat K$为完整结构矩阵，沿用旧实现，不将控制增益额外放入算法质量矩阵。
+
+利用$\mat v_k=(\mat x_k-\mat x_{k-1})/h$，设齐次试探解$\mat x_k=\mat u z^k$，可得
+\begin{align}\label{eq:characteristic}
+ \mat Z_F(z,n)={}&\frac{z-2+z^{-1}}{h^2}\widehat{\mat M}
+ +\frac{1-z^{-1}}h\mat C_0+\mat K_0\\
+ &+z^{-n}\left(\frac{1-z^{-1}}h\mat U_C+\mat U_K\right)\mat S,\qquad z\ne0.\notag
+\end{align}
+由于式\eqref{eq:mass}对各矩阵为线性组合，先投影再按同一规则离散满足
+\begin{equation}\label{eq:discrete_projection}
+ \widehat{\mat M}_r=\mat T^T\widehat{\mat M}\mat T,\qquad
+ \mat Z_r(z,n)=\mat T^T\mat Z_F(z,n)\mat T.
+\end{equation}
+因此，全模态恢复同样适用于既定离散算法，不需要用连续系统极限替代离散证明。
+
+只保存当前、前一步缩聚位移及更早的两个通道历史，可构造状态
+\begin{equation}
+ \mat\eta_k=[\mat q_k^T,\mat q_{k-1}^T,
+ (\mat S_r\mat q_{k-2})^T,\ldots,(\mat S_r\mat q_{k-n-1})^T]^T.
+\end{equation}
+其中$n=0$时没有额外历史块，状态维数为$2r+2n$。完整基底恢复时，定义状态映射
+\[\mat P=\operatorname{diag}(\mat W,\mat W,\mat I_{2n}).\]
+该映射满足
+\begin{equation}\label{eq:similarity}
+ \mat A_F\mat P=\mat P\mat A_r,\qquad \mat b_F=\mat P\mat b_r.
+\end{equation}
+相似关系保证全部离散极点一致。式\eqref{eq:characteristic}只在$z\ne0$处使用；增广状态关系同时保留可能的零根。
+
+Python检查了0、1、4、5步等时滞以及单位圆与非单位圆上的复数测试点；MATLAB另用完整坐标历史构造递推矩阵。这里检查系数和单步代数，没有积分地震/扫频记录，也没有扫描稳定边界。
+
+\section{两种基底路线会改变哪些论文问题}
+
+\subsection{完整框架直接缩聚}
+保留原无时滞案例的坐标选择：划分一保留$[1,6,11,4,9,14]$；划分二保留$[1,11,4,9,14]$。内部模态数量分别为9和10，质量子块均正定。划分二的中间层位移仍属于内部坐标，因此可以研究其动态遗漏与误差的关系。
+
+本路线将两个物理切分对应的反馈矩阵嵌入完整框架，但缩聚基底由完整框架构造。需要在文中明确：其作用是统一原精度案例与等时滞误差验证，不能再称为原有“分别缩聚两个子结构再只连接两个坐标”的实现。
+
+\subsection{保留完整共同界面，再分别缩聚}
+另一种选择是将所有共同界面坐标加入各侧保留集合。数值侧原先的额外保留坐标继续保留，物理侧保留全部共同界面。两侧在这些坐标上使用同一个变量，局部静力约束及内部模态共同形成一个兼容的15行全局基底。
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule 项目&划分一&划分二\\\midrule
+共同界面坐标&$1,3,6,7,8$&$1,3,6,8,11,13$\\
+数值侧保留/内部数&9/5&9/3\\
+物理侧保留/内部数&5/1&6/3\\
+装配Guyan阶数&$9+5-5=9$&$9+6-6=9$\\
+CB阶数&$9+m_N+m_P$，$m_N\le5,m_P\le1$&$9+m_N+m_P$，$m_N,m_P\le3$\\
+全部内部模态&$9+5+1=15$&$9+3+3=15$\\\bottomrule
+\end{tabularx}
+\end{center}
+
+划分一原数值侧零质量坐标$\psi_7$现在是共享保留坐标。数值侧内部质量块和物理侧内部质量块均正定；在当前坐标与单位下，最小特征值均为51.0878119792。该数值用于正定性核验，混合位移/转角坐标下不解释为普通质量的物理量。原局部质量分配未修改。
+
+划分二的中间层位移$\psi_6$成为共享保留坐标。因此，这一路线不能继续用“中间层位移被缩聚”解释其误差。并且每侧保留3模态已是全部模态：CB与完整模型一致属于精确恢复检查，不能单独作为有限阶CB近似优越性的证据。后续可用每侧1或2模态考察11/13阶近似，但本轮未开展这些响应案例。
+
+\subsection{比较口径}
+两种物理划分的作动位置和物理反馈矩阵不同，所以非零时滞下各自有对应的完整15阶闭环。各划分内比较完整、Guyan、CB时保持同一路径；跨划分比较时分别报告相对于各自完整闭环的偏差，并将作动位置变化与基底截断作用区分。
+
+本轮所有代数检查复用上一轮划分二已核验的固定$2\times4$增益，作为相同测试系数。它用于检查坐标等价性，没有为划分一完成控制性能设计。后续可以保留共同控制或选择零控制作为主比较，必须在选定路线后统一决定。
+
+\section{通向定量误差理论的直接表达}
+
+对给定非奇异频域算子和相同输入，缩聚求解及其完整空间残量为
+\begin{equation}
+ \mat q_r=(\mat T^T\mat Z_F\mat T)^{-1}\mat T^T\mat f\,u,\qquad
+ \mat r=\mat f u-\mat Z_F\mat T\mat q_r.
+\end{equation}
+其中，$u$为该频域输入幅值，$\mat r$表示缩聚解代回完整平衡方程后留下的不平衡力。若同一物理输出算子为$\mat Y_F$，响应误差严格满足
+\begin{equation}\label{eq:error}
+ \mat e=\mat y_r-\mat y_F=-\mat Y_F\mat Z_F^{-1}\mat r,\qquad
+ \|\mat e\|\le\|\mat Y_F\mat Z_F^{-1}\|\,\|\mat r\|.
+\end{equation}
+该式将误差分为基底遗漏留下的残量与完整闭环对残量的放大。临界附近是否放大误差，要同时检查相关方向的参与，不保证误差随时滞单调增大。
+
+在完整CB坐标中按保留与遗漏模态分块，且遗漏块可逆时，精确消去遗漏坐标给出
+\begin{equation}\label{eq:schur}
+ (\mat Z_{rr}-\mat Z_{ro}\mat Z_{oo}^{-1}\mat Z_{or})\mat q_r
+ =\mat f_r u-\mat Z_{ro}\mat Z_{oo}^{-1}\mat f_o u.
+\end{equation}
+其中下标$o$表示遗漏模态。直接截断采用$\mat Z_{rr}\widetilde{\mat q}_r=\mat f_r u$，因此同时遗漏了动态修正项和荷载修正项。时滞在这些块中通过式\eqref{eq:continuous}或\eqref{eq:characteristic}进入。
+
+对于固定整数时滞及既定离散算法，零初始历史下，任意给定地震或扫频采样都具有有限和精确表达
+\begin{equation}\label{eq:finite}
+ \mat e_k=\sum_{j=0}^{k-1}\left[
+ \mat O_r\mat A_r^{k-1-j}\mat b_r-
+ \mat O_F\mat A_F^{k-1-j}\mat b_F\right]a_{g,j}.
+\end{equation}
+这里$\mat O_r,\mat O_F$为相应增广状态的同一种输出矩阵。式\eqref{eq:finite}是离散模型的矩阵幂解析表达，适用于有限时间；不等于任意实测地震的简单初等函数闭式解。本轮没有据此生成新的时程误差数据。频域式若解释为稳态频响，还需共同稳定条件。
+
+本轮另对式\eqref{eq:error}和\eqref{eq:schur}进行了24项代数核验，覆盖两种划分、Guyan/保留3模态CB及3个复数测试点；最大归一化残差$1.286\times10^{-11}$，满足$10^{-10}$标准。有限时程公式本轮只完成推导，后续需以独立时间递推验证。
+
+\section{建议、修改范围与审查问题}
+
+\textbf{建议优先采用完整框架直接缩聚路线，作为缩聚误差理论的主验证。}它保留原来的6/5阶Guyan和9/8阶CB，并可连续增加内部模态恢复原15阶；也保留了划分二中间层位移被缩聚这一需要解释的机制。若论文必须以“两个子结构各自缩聚再装配”为主，则选择完整共同界面路线，并同步改变阶数与案例解释。
+
+需要修改的位置为：原缩聚装配与保留坐标表；延迟恢复式；时滞运动方程中的当前项与延迟项；荷载与物理输出；CR特征矩阵中的一致投影；以及两种划分的控制设计口径。已经封存的旧数值继续作为历史记录，新路线使用新版本。
+
+\textbf{请求审查：}
+\begin{enumerate}
+\item 原15坐标的选列延迟与未作动界面理想协调，能否作为本文明确限定的虚拟RTHS参照？哪些实际运动/反力需要额外的数值耦合、量测或约束？
+\item 为回答用户的原完整框架精度问题，宜采用完整框架基底，还是完整共同界面的局部基底？各自论文定位需要怎样表述？
+\item 式\eqref{eq:motion}--\eqref{eq:output}的力作用、延迟位置及输出是否一致？数值惯性假定是否保持？
+\item 式\eqref{eq:mass}--\eqref{eq:similarity}是否准确对应既定CR实现？零时滞同控制参照与原被动框架应怎样并列？
+\item 式\eqref{eq:error}--\eqref{eq:finite}是否适合作为后续误差推导起点？对遗漏块可逆性、稳定性和指标归一化还需哪些条件？
+\end{enumerate}
+
+\section*{证据与来源}
+本文件依赖同目录上一级的冻结sources、code和results。核心入口为：
+\begin{itemize}
+\item \texttt{unified\_model.py}与\texttt{verify\_unified.py}：候选模型及Python核验；
+\item \texttt{VERIFY\_UNIFIED.m}：MATLAB独立核验；
+\item \texttt{verify\_error\_identities.py}：残量和遗漏模态恒等式核验。
+\end{itemize}
+输入和产物的SHA-256列于交付清单；原件保持。
+
+CB的约束模态加固定界面模态构造及质量/刚度变换，可参照NASA Goddard的技术材料：Scott Gordon, \emph{Craig Bampton Models}, 1999，2008更新，收录于\emph{FEMCI -- The Book}，第11--21页。\url{https://etd.gsfc.nasa.gov/wp-content/uploads/2025/04/FEMCI-The-Book.pdf}。本稿的时滞统一公式由当前模型直接推导，文献并不替代本项目的接口可实现性审查。
+
+\textbf{外部审查状态：}材料已在本地准备；尚未发送，尚未收到Pro反馈。本文件为候选模型说明，不是对原稿的已采纳修订。
+\end{document}

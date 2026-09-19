@@ -1,0 +1,2065 @@
+{
+  "status": "PASS",
+  "checks_passed": 405,
+  "main_sha256": "c1cc160c45f0966fdd4a3f6a09a19965b2ffd298c6d0b67b10e80aa1b658e5c0",
+  "pdf_sha256": "b231d46714dfa8e7b17561e1f60ce662ae73dff884a978c4f6e7e949efb16139",
+  "report_sha256": "eb9385e406deaf602baf45040c1ce26182b57cecbbb067461ebbba21fc92f017",
+  "protected_original_files": 94,
+  "operations": 64,
+  "review_positions": 94,
+  "numbered_figures": 15,
+  "manuscript_pages": 38,
+  "numeric_comparisons": 232,
+  "numeric_max_abs_difference": 2.447819724693545e-12,
+  "technical_checks": 350,
+  "portable_artifact_checks": 20,
+  "browser_checks": 26,
+  "print_reports": [
+    {
+      "mode": "summary",
+      "pages": 49,
+      "all_titles_with_first_explanation": true,
+      "picture_count": 20,
+      "no_empty_or_overflow_page": true
+    },
+    {
+      "mode": "full",
+      "pages": 79,
+      "all_titles_with_first_explanation": true,
+      "picture_count": 20,
+      "no_empty_or_overflow_page": true
+    }
+  ],
+  "manuscript_visual_status": "REVIEWED_WITH_INHERITED_LIMITATIONS",
+  "remaining_scientific_work": [
+    "双侧部分界面模型及界面位移差",
+    "原稳定边界匹配闭环、实际增益与边界内外时程"
+  ],
+  "checks": [
+    {
+      "check": "manuscript bound to completed technical and numeric checks",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "PDF bound to completed technical and visual checks",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-common.sty",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-email.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-facebook.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-gplus.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-linkedin.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-sc.cls",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-twitter.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-url.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\elsarticle-num-names.bst",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.abs",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.aux",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.bbl",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.blg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.log",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.out",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.synctex.gz",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\references.bib",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig01_rths_loop_optionD.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig02_pole_mapping_optionB.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig03_benchmark_geometry_optionC.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig04a_dof_assumptions_optionD.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig04b_dof_idealized_optionD.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig05a_divisionI_concept_optionD.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig05b_divisionII_concept_optionD.png",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig06_eq_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig07_eq_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig10_stability_domain.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-common.sty",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-email.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-facebook.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-gplus.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-linkedin.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-sc.cls",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-twitter.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-url.jpeg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\elsarticle-num-names.bst",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.abs",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.aux",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.bbl",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.blg",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.log",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.out",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\references.bib",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\修改说明.md",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\全文修改逐项对照与回退决策汇报.html",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\additional_metrics.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\change_operations.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\delivery_hashes.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\main.diff",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\source_hashes.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\table345_verified_values.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\validation.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\visual_qa.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig01_force_feedback.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig02_geometry.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig03_dofs.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig04_divisions.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig06_eq_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig07_eq_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig10_stability_domain.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\C_full.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\division_II_matrices.mat",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\division_I_matrices.mat",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\K_full.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\M_full.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\README.txt",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\finish_assets.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\revise.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\verify_and_report.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\browser_qa.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\build_report.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\catalog.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\coverage_check.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\finalize_report.py",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\final_acceptance.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\hunks.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\main_全部104项.diff",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\qa_report.cjs",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\references_两处删除.diff",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\report_files_sha256.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\static_and_protection_qa.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\turn_start_hashes.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\visual_qa.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\全部修改清单.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\全部修改清单.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "protected D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\表3至表5_按当前出图设置核查_20260906\\evidence\\main_source_readonly.tex",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-001",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-002",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-003",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-004",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-005",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-006",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-007",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-008",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-009",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-010",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-011",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-012",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-013",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-014",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-015",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-016",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-017",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-018",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-019",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-020",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-021",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-022",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-023",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-024",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-025",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-026",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-027",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-028",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-029",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-030",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-031",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-032",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-033",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-034",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-035",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-036",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-037",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-038",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-039",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-040",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-041",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-042",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-043",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-044",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-045",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-046",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-047",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-048",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-049",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-050",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-051",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-052",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-053",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-054",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-056",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-058",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-059",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-060",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-061",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-062",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-063",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-064",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "main.tex forward reconstruction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-064",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-063",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-062",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-061",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-060",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-059",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-058",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-056",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-054",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-053",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-052",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-051",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-050",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-049",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-048",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-047",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-046",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-045",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-044",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-043",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-042",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-041",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-040",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-039",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-038",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-037",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-036",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-035",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-034",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-033",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-032",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-031",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-030",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-029",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-028",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-027",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-026",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-025",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-024",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-023",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-022",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-021",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-020",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-019",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-018",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-017",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-016",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-015",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-014",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-013",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-012",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-011",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-010",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-009",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-008",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-007",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-006",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-005",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-004",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-003",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-002",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-001",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "main.tex exact reverse reconstruction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-055",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "unique original operation change-057",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "references.bib forward reconstruction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-057",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-055",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "references.bib exact reverse reconstruction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "HTML parser and UTF-8 declaration",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all IDs unique",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "20 embedded images",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 3",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 4",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 5",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 6",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 7",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 8",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 9",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 10",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 11",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 12",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 13",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 14",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 15",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 16",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 17",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 18",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 19",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "embedded PNG 20",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no external rendering dependencies",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "no external CSS resource",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "formatting section is last",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all 64 changes present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "30 explicit changed table-cell decisions",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "new additions explicitly say original has no content",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "two bibliography removals explicitly labelled",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "report metadata matches actual manuscripts",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "94 review positions unique",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "26 browser checks match final HTML",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "10 portable figures and 8 numeric CSV files reproduce",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary print no empty pages",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary print no text beyond page",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "summary A4 page size",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary print includes 20 pictures",
+      "passed": true,
+      "details": 20
+    },
+    {
+      "check": "summary title and first explanation change-001",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-002",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-003",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-004",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-005",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-006",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-007",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-008",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-009",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-010",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-011",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-012",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-013",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-014",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-015",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-016",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-017",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-018",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-019",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-020",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-021",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-022",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-023",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-024",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-025",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-026",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-027",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-028",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-029",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-030",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-031",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-032",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-033",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-034",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-035",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-036",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-037",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-038",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-039",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-040",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-041",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-042",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-043",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-044",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-045",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-046",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-047",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-048",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-049",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-050",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-051",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-052",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-053",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-054",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-055",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-056",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-057",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-058",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-059",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-060",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-061",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-062",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-063",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary title and first explanation change-064",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "summary no footer-only final page",
+      "passed": true,
+      "details": 571
+    },
+    {
+      "check": "full print no empty pages",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full print no text beyond page",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "full A4 page size",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full print includes 20 pictures",
+      "passed": true,
+      "details": 20
+    },
+    {
+      "check": "full title and first explanation change-001",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-002",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-003",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-004",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-005",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-006",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-007",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-008",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-009",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-010",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-011",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-012",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-013",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-014",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-015",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-016",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-017",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-018",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-019",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-020",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-021",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-022",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-023",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-024",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-025",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-026",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-027",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-028",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-029",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-030",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-031",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-032",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-033",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-034",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-035",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-036",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-037",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-038",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-039",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-040",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-041",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-042",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-043",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-044",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-045",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-046",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-047",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-048",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-049",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-050",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-051",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-052",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-053",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-054",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-055",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-056",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-057",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-058",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-059",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-060",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-061",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-062",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-063",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full title and first explanation change-064",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "full no footer-only final page",
+      "passed": true,
+      "details": 298
+    },
+    {
+      "check": "report complete word comparison present",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "clean root no test directories",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "15 required PDF figures",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "4 editable diagram sources",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "10 high-resolution PNG figure previews",
+      "passed": true,
+      "details": ""
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "builder_sha256": "59C0CC5455C287EADD66CFE90BB38BD48AEB0DD737A02020202DC7F3A3D757E8",
+  "conflict_count": 7,
+  "conflict_ids": [
+    "C01_DIV1_R_COMMENT",
+    "C03_DIV1_MODAL_SORT",
+    "C01_DIV2_R_COMMENT",
+    "C03_DIV2_MODAL_SORT",
+    "C02_GUYAN_FORMULA_ROUTE",
+    "C04_DIV2_PHYSICAL_PRELUDE",
+    "C05_DIV2_THIRD_FLOOR_REPAIR"
+  ],
+  "division_count": 2,
+  "dof_membership_row_count": 30,
+  "formula_row_count": 16,
+  "gate_count": 22,
+  "gate_pass_count": 22,
+  "input_freeze_manifest_sha256": "FEE6A49FA0D90913DC312DF0275D71A1426A807C061C85E0C7ED9968D63F6B8A",
+  "input_policy": "read only from candidate_root/input",
+  "key_findings": {
+    "cb_retained_modes_r": 3,
+    "current_modal_sort": "ascending_eigenvalue",
+    "division_1": {
+      "cb_width": 9,
+      "guyan_width": 6,
+      "master": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14
+      ],
+      "slave": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15
+      ]
+    },
+    "division_2": {
+      "cb_width": 8,
+      "guyan_width": 5,
+      "master": [
+        1,
+        11,
+        4,
+        9,
+        14
+      ],
+      "psi6": "slave_recovered_by_P_times_T_and_P_times_Tcb",
+      "slave": [
+        6,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15
+      ]
+    },
+    "historical_guyan": "single_sided_elimination",
+    "historical_modal_sort": "none_explicit",
+    "model_callbacks": "no_nonempty_standard_model_callbacks_in_frozen_slx",
+    "standard_guyan": "bilateral_congruence_T_transpose_A_T",
+    "workspace_outputs": {
+      "simout": "floor2",
+      "simout1": "floor3",
+      "simout3": "floor1"
+    }
+  },
+  "overall_status": "PASS",
+  "schema_version": "board17-contract-v1",
+  "simulink_callback_row_count": 16,
+  "simulink_output_row_count": 9,
+  "simulink_workspace_row_count": 51
+}

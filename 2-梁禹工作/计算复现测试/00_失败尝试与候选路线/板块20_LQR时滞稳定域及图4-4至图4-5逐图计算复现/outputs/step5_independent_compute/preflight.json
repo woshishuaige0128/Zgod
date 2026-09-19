@@ -1,0 +1,203 @@
+{
+  "check_count": 31,
+  "checks": [
+    {
+      "check_id": "contract_schema",
+      "detail": "board20_step5_independent_compute_contract_v1",
+      "status": "PASS"
+    },
+    {
+      "check_id": "manifest_schema",
+      "detail": "board20_step4_route_manifest_v1",
+      "status": "PASS"
+    },
+    {
+      "check_id": "route_count",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "pilot_point_count",
+      "detail": 41,
+      "status": "PASS"
+    },
+    {
+      "check_id": "pilot_point_uniqueness_per_route",
+      "detail": "Each route has unique (l,j) points.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "source_has_no_forbidden_result_path",
+      "detail": "The computation source has no MATLAB-result directory literal.",
+      "status": "PASS"
+    },
+    {
+      "check_id": "master_thesis_contract_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "check_id": "manuscript_contract_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "check_id": "four_failed_routes_do_not_create",
+      "detail": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.workspace_hash",
+      "detail": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.matrix_order",
+      "detail": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.right_division_residual",
+      "detail": 2.5550613158195143e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.workspace_hash",
+      "detail": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.right_division_residual",
+      "detail": 1.9046106453310572e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.workspace_hash",
+      "detail": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.workspace_hash",
+      "detail": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.restored_S_shape",
+      "detail": [
+        2,
+        5
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.workspace_hash",
+      "detail": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.restored_S_shape",
+      "detail": [
+        2,
+        5
+      ],
+      "status": "PASS"
+    }
+  ],
+  "completed_at": "2026-08-25T10:37:11+08:00",
+  "dependencies": {
+    "blas_lapack": "{'Compilers': {'c': {'name': 'msvc', 'linker': 'link', 'version': '19.44.35223', 'commands': 'cl'}, 'cython': {'name': 'cython', 'linker': 'cython', 'version': '3.2.4', 'commands': 'cython'}, 'c++': {'name': 'msvc', 'linker': 'link', 'version': '19.44.35223', 'commands': 'cl'}}, 'Machine Information': {'host': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'windows'}, 'build': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'windows'}}, 'Build Dependencies': {'blas': {'name': 'scipy-openblas', 'found': True, 'version': '0.3.31.dev', 'detection method': 'pkgconfig', 'include directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-0q_f6wui/cp314-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include', 'lib directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-0q_f6wui/cp314-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib', 'openblas configuration': 'OpenBLAS 0.3.31.dev  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24', 'pc file directory': 'D:/a/numpy-release/numpy-release/.openblas'}, 'lapack': {'name': 'scipy-openblas', 'found': True, 'version': '0.3.31.dev', 'detection method': 'pkgconfig', 'include directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-0q_f6wui/cp314-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include', 'lib directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-0q_f6wui/cp314-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib', 'openblas configuration': 'OpenBLAS 0.3.31.dev  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24', 'pc file directory': 'D:/a/numpy-release/numpy-release/.openblas'}}, 'Python Information': {'path': 'C:\\\\Users\\\\runneradmin\\\\AppData\\\\Local\\\\Temp\\\\build-env-lwwt97tb\\\\Scripts\\\\python.exe', 'version': '3.14'}, 'SIMD Extensions': {'baseline': ['X86_V2'], 'found': ['X86_V3']}}",
+    "h5py": "3.16.0",
+    "numpy": "2.4.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "D:\\Software\\python\\python.exe",
+    "scipy": "1.17.1",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "elapsed_seconds": 0.07030739996116608,
+  "fail_count": 0,
+  "input_identity": {
+    "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+    "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+    "workspace_sha256": {
+      "alt_guyan_div1_stable_full_ps3": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "main_guyan_div1": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "main_guyan_div2": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "main_ori_div1": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "main_ori_div2": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+    }
+  },
+  "pass_count": 31,
+  "schema_version": "board20_step5_preflight_v1",
+  "status": "PASS"
+}

@@ -1,0 +1,19 @@
+{
+  "blind_core_sha256": "9F001CD1E57F8909070295EBC8E265B2CE6619784EE1ADDA75F762B49B377411",
+  "bridge_manifest_sha256": "9D901DFE98753909456396F25521892E3F6F71753B93583A2516E8CB3E72A2C1",
+  "deterministic_two_build_hashes_checked": true,
+  "diagnostic_status": "HISTORICAL_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+  "errors": 0,
+  "failures": 0,
+  "grid_points_computed": 0,
+  "legacy_formula_gate_direct_rejection_checked": true,
+  "legacy_paper_grid_gate_rejection_checked": true,
+  "native_manifests_loaded_without_execution": 2,
+  "real_stage0_routes_checked": 12,
+  "roots_computed": 0,
+  "schema_version": "FIG10_HISTORICAL_DIAGNOSTIC_BRIDGE_TEST_V1",
+  "skipped": 0,
+  "status": "PASS",
+  "synthetic_stage0_covered": true,
+  "tests_run": 6
+}

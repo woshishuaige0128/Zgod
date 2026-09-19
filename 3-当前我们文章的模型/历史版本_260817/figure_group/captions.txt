@@ -1,0 +1,29 @@
+Fig. 1. Virtual MDOF RTHS model with delayed physical reactions and an additional delayed force feedback.
+
+Fig. 2. Geometry and member sections of the reference frame: (a) reference frame; (b) beam I section. All dimensions are in mm. The numerical section properties are specified in the text.
+
+Fig. 3. Degrees of freedom and node numbering of the idealized numerical model.
+
+Fig. 4. Substructure divisions and local retained coordinates: (a) division I; (b) division II. In each panel, the numerical substructure is on the left and the physical substructure is on the right. Red coordinates are retained; the other labelled coordinates are condensed. The physical and numerical coordinate sets are listed in Table 2.
+
+Fig. 5. Ground-acceleration inputs: (a) El Centro record scaled by 0.40; (b) linear chirp from 0.1 to 10 Hz.
+
+Fig. 6. First two horizontal mode shapes expanded to the three storeys: (a) division I, mode 1; (b) division I, mode 2; (c) division II, mode 1; (d) division II, mode 2. Each shape is normalised by its largest horizontal component. The corresponding natural frequencies in Hz are listed within each panel.
+
+Fig. 7. Horizontal storey displacement of division I under the El Centro record: (a–c) first storey; (d–f) third storey. The three columns show the complete response over 0–40 s and enlarged views over 10–11 s and 21.5–22.5 s, respectively.
+
+Fig. 8. Horizontal storey displacement of division II under the El Centro record: (a–c) first storey; (d–f) third storey. The three columns show the complete response over 0–40 s and enlarged views over 10–11 s and 21.5–22.5 s, respectively.
+
+Fig. 9. Reconstructed middle-storey displacement (ψ₆) in division II under El Centro excitation: (a) response comparison; (b) Guyan error, NRMSE = 10.798%; (c) Craig–Bampton error, NRMSE = 0.031%. Errors are measured relative to the full-order response. The two error panels use different vertical scales.
+
+Fig. 10. Horizontal storey displacement of division I under the chirp excitation: (a–c) first storey; (d–f) third storey. The three columns show the complete response over 0–40 s and enlarged views over 13–14 s and 38–38.3 s, respectively.
+
+Fig. 11. Horizontal storey displacement of division II under the chirp excitation: (a–c) first storey; (d–f) third storey. The three columns show the complete response over 0–40 s and enlarged views over 13–14 s and 38–38.3 s, respectively.
+
+Fig. 12. Reconstructed middle-storey displacement (ψ₆) in division II under chirp excitation: (a) response comparison; (b) Guyan error, NRMSE = 11.749%; (c) Craig–Bampton error, NRMSE = 0.034%. Errors are measured relative to the full-order response. The two error panels use different vertical scales.
+
+Fig. 13. Peak absolute interstorey drift profiles: (a) division I under El Centro excitation; (b) division II under El Centro excitation; (c) division I under chirp excitation; (d) division II under chirp excitation.
+
+Fig. 14. Stability domains in the plane of the two actuator delays: (a) division I; (b) division II.
+
+Fig. 15. Low-order modal-share distribution and coordinate-wise deviations: (a) division I, shares on the fifteen physical coordinates; (b) division I, magnitudes of the relative deviations at the two actuated coordinates; (c) division II, shares on the fifteen physical coordinates; (d) division II, magnitudes of the relative deviations at the two actuated coordinates. The sum of the two coordinate-wise deviation magnitudes is reported in Table 5.

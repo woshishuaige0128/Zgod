@@ -1,0 +1,616 @@
+ D O C TO R B E G O · 导 师 现 场 汇 报 用
+
+
+ Fig.6–Fig.9
+ MATLAB 全计算链复现
+ 四张案例分析图均从结构参数开始重新计算，不读取旧响应来出图。每张图
+ 都有一个可单独复制、可独立运行的 MATLAB 入口；Fig.10 按您的要求不
+ 在本报告范围内。
+
+
+
+   4 / 4 PASS
+   正式包重跑
+
+
+
+
+   4 / 4 PASS
+   项目外独立副本
+
+
+
+
+   40961 × 3 × 3
+   每图响应数组
+
+
+
+
+   0
+   保存后与当前CSV差值
+
+
+
+
+先给导师一句话结论
+“我现在可以针对小论文 Fig.6、Fig.7、Fig.8、Fig.9，分别在 MATLAB 中从 15 自
+由度结构参数开始，重建 Original、Guyan 和 Craig–Bampton 三套模型，重新生
+成地震或扫频激励，调用 Simulink 以固定步长积分 40 秒，再用本轮新算的响应直
+接绘图；四个入口都已在项目外独立运行通过。”
+ 这次不是读取结果文件的绘图级复现。参考 CSV 到第 9 节才被读取，只用于末端逐点验收；前 8 节
+ 已经完成计算和绘图。
+
+
+
+
+ 现场建议：先演示 Fig.6 全链，预留 1–2 分钟给 MATLAB 首次加载 Simulink；其余图通常更快。导
+ 师若只需要看四图全部通过，再运行根目录的 RUN_ALL_FOUR.m。
+
+
+
+打开总操作指南         打开四图批量入口           打开验收总报告
+
+
+
+
+现场到底怎么操作 MATLAB
+
+ 1   启动 MATLAB。本机已用 MATLAB R2025b 验证；需要 Simulink 和 Control System
+     Toolbox。
+
+
+
+
+ 2   在左侧“当前文件夹”的地址栏粘贴演示包路径：D:\JZ_PhD\10_论文
+     _Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09，然后回车。
+
+
+
+
+ 3   进入要讲的单图文件夹，双击唯一的 RUN_FIGxx_FULLCHAIN.m。不要直接双击原始 .slx 后
+     按 Run，因为工作区变量和输入适配尚未建立。
+
+
+
+
+ 4   完整演示：点击编辑器上方绿色“运行”或按 F5。逐段讲：把光标放进某个 %% 章节，按
+     Ctrl+Enter；必须从第1节按顺序执行到第9节。
+
+
+
+
+ 5   看命令窗口。程序会打印 [1/9] 到 [9/9]；最后必须同时出现 STATUS=PASS 和
+     FULL_CHAIN=PASS。
+
+
+
+
+ 6   在工作区展示证据。依次查看 M_full、M_guyan、M_cb、T_guyan、T_cb、
+     excitation_input 和 response_mm。
+
+
+
+
+ 7   展示运行副本与输出。命令窗口输入 open_system(runtime_model_file) 可打开本轮实际
+            运行的模型副本；图和数据保存在当前单图文件夹的 输出 内。
+
+
+
+
+现场可直接输入的核对命令
+
+    size(M_full)        % 应为 15×15
+    size(M_guyan)       % 第一类6×6；第二类5×5
+    size(M_cb)          % 第一类9×9；第二类8×8
+    size(T_guyan)       % 15×6 或 15×5
+    size(T_cb)          % 15×9 或 15×8
+    size(response_mm)   % 必须为 40961×3×3
+    max_abs_difference_to_current
+    open_system(runtime_model_file)
+
+
+
+
+    小论文图         MATLAB 中打开的主文件                工况
+
+
+    Fig.6          RUN_FIG06_FULLCHAIN.m       第一类子结构划分；El Centro 1940 NS × 0.40
+
+
+    Fig.7          RUN_FIG07_FULLCHAIN.m       第二类子结构划分；El Centro 1940 NS × 0.40
+
+
+    Fig.8          RUN_FIG08_FULLCHAIN.m       第一类子结构划分；0.1–10 Hz、40 s 线性 Chirp
+
+
+    Fig.9          RUN_FIG09_FULLCHAIN.m       第二类子结构划分；同一次 0.1–10 Hz、40 s 线性 Ch
+
+                                                                                  
+
+
+
+
+这条计算链到底在做什么
+可以把三种模型想成三张“结构地图”：Original 把全部 15 个位移自由度都留
+下；Guyan 只保留界面上的关键自由度，用静力关系猜回其余位移；Craig–
+Bampton 除界面自由度外，还保留 3 个固定界面振动模态，因此通常能更好地跟
+住动力响应。
+
+
+
+                                           几何与材料
+                                        PDmonicanshu.m
+                                            →
+  15×15
+ M、C、K
+
+
+
+
+  →
+Guyan / CB
+   缩聚
+
+
+
+
+  →
+   三套
+ 状态空间
+
+  →
+
+
+El Centro
+ 或 Chirp
+  →
+
+
+
+
+ Simulink
+  ode4
+  →
+
+
+
+
+40961×3×3
+ 楼层响应
+  →
+
+
+
+
+ 本轮数据
+ 直接绘图
+  →
+
+
+
+
+ 最后才读
+参考CSV验收
+ Original
+ 直接求解全部 15 个二阶自由度。状态向量由位移和速度组成，所以状态维数为 30。
+
+
+
+
+ Guyan
+ 假设从自由度惯性作用可忽略，用刚度静力平衡将它们表达成主自由度。第一类保留6个，第二类保留
+ 5个二阶自由度。
+
+
+
+
+ Craig–Bampton
+ 在静力约束模态之外再保留3个从自由度固定界面模态。第一类为6+3=9个，第二类为5+3=8个二阶自
+ 由度。
+
+
+
+
+ 同一把尺子比较
+ 三套模型最后都恢复成一、二、三层的物理位移，单位为 mm，所以图上比较的是同一物理量。
+
+
+
+
+二阶动力方程如何进入 Simulink
+     M q̈ + C q̇ + K q = f →                ， A = [0 I; −M⁻¹K −M⁻¹C]
+                               ẋ = A x + B f
+
+每个二阶自由度有“位移”和“速度”两个状态，所以 15 个自由度变成 30 个状态；6 个自由度变成 12 个
+状态。程序把三套状态空间分别放入 G_1、G_2、G_3，由同一个激励并行驱动。
+
+
+
+
+主文件九段代码：逐段应该怎么讲
+四个入口的主体代码完全相同，文件名用于自动选择图号、划分、激励和输出名。以下行号以 Fig.6 的
+RUN_FIG06_FULLCHAIN.m 为例，另外三份对应位置一致。
+ 1     63–86         建立原结构。运行本图文件夹自带的 PDmonicanshu.m。其中几何和材料参
+                     数位于16–24行，质量矩阵装配位于26–40行，刚度矩阵位于43–104行，
+                     Rayleigh阻尼位于106–122行。输出 M_full、C_full、K_full，均为
+                     15×15。
+
+
+ 2     88–102        复制并适配 Simulink。冻结原 .slx 不修改；程序复制到 输出/运行模型
+                     副本，加入本轮 From Workspace 输入、改成本地地震路径，并固定求解
+                     器。第二类模型只在副本中补齐三层 Guyan、Craig–Bampton 输出线。
+
+
+ 3     104–125       重新缩聚。按当前图的 master、slave 重排 M/C/K，计算 T_guyan；求
+                     固定界面特征向量，按频率排序并保留前3阶，形成 T_cb。
+
+
+ 4     127–134       建立三套状态空间并恢复楼层位移。Original、Guyan、Craig–Bampton
+                     分别形成 G_1、G_2、G_3；恢复矩阵把降阶坐标投影回一、二、三层水平
+                     位移。
+
+
+ 5     136–158       现场产生激励。Fig.6/7 从 EQ.mat 取 El Centro 并乘0.40；Fig.8/9 用公式
+                     逐点生成0.1–10 Hz线性Chirp。这里产生的是加速度输入，不是响应。
+
+
+ 6     160–168       真正进行数值积分。调用派生模型，求解器为四阶定步长 Runge–Kutta
+                     ode4，步长 dt=1/1024 s，终止时间40 s。
+
+
+ 7     169–189       整理本轮响应。simout3、simout、simout1 分别是一、二、三层；每个
+                     输出的3列是 Original、Guyan、Craig–Bampton。最终形成
+                     response_mm(时间,楼层,方法)，即40961×3×3。
+
+
+ 8     191–203       直接使用新算数据出图。没有读取参考CSV。每张图画一层和三层；每层含
+                     0–40 s全时程和两个局部窗，保存矢量PDF与600 dpi PNG。
+
+
+ 9     205–228       末端验收。直到图已经画完，程序才读取 参考结果_仅用于末端验收，比较
+                     40961×10个数字；小于1e−12 mm才打印两个PASS。
+
+
+真正执行计算的局部函数
+
+函数/行号                    作用
+
+
+prepare_model_copy       复制和适配模型副本，设定 ode4、40 s、固定步长；修复第二类模型三层输
+290–368
+ 函数/行号                          作用
+
+
+ build_reduction_models         主从自由度重排、Guyan缩聚、固定界面模态排序、Craig–Bampton变换和
+ 370–428
+
+
+ second_order_ss                把 M/C/K 二阶方程改写成一阶状态空间。
+ 430–438
+
+
+ run_one_simulation             把本轮激励送入 Simulink 并调用 sim()。
+ 448–461
+
+
+ make_response_arrays           将三个楼层输出统一为40961×3×3。
+ 463–480
+
+
+ plot_journal_figure            按小论文布局绘制六个坐标轴并输出PDF/PNG。
+ 506–603
+
+
+
+
+核心缩聚公式：现场要诚实说明
+
+ % 梁禹现存路线中的 Guyan 写法
+ T     = [eye(nm); -Kss\Ksm];
+ Mg = Mmm - Mms*(Kss\Ksm);
+ Cg   = Cmm - Cms*(Kss\Ksm);                                         
+
+ Kg = Kmm - Kms*(Kss\Ksm);
+
+
+ % Craig–Bampton：约束模态 + 前3个固定界面模态
+ Tcb = [eye(nm), zeros(nm,3); -Kss\Ksm, phi(:,1:3)];
+ Mcb = Tcb' * M * Tcb;
+ Ccb = Tcb' * C * Tcb;
+ Kcb = Tcb' * K * Tcb;
+
+
+
+
+每一张图：打开什么、算什么、应该看到什么
+逐图现场卡
+                                                   FULL_CHAIN=PASS
+
+Fig.6
+
+第一类子结构划分；El Centro 1940 NS × 0.40
+
+
+ 现场只打开这个文件
+
+ D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至
+ Fig09\Fig06_第一类划分_ElCentro全链计算\RUN_FIG06_FULLCHAIN.m
+
+
+   在 MATLAB 关联程序中打开
+
+
+
+
+Fig.6 本轮实际计算后直接绘制的 600 dpi 图。
+
+
+ 运行模型副本来源
+ lvxvjie_guyan_2.slx
+
+
+
+ 位移自由度 Original / Guyan / CB
+ 15 / 6 / 9
+
+
+
+ 状态维数 Original / Guyan / CB
+ 30 / 12 / 18
+
+
+
+ 局部放大窗口
+10–11 s；21.5–22.5 s
+
+
+
+一层绝对峰值
+Original 3.28484；Craig–Bampton 3.28973；Guyan 3.35257 mm
+
+
+
+三层绝对峰值
+Original 12.35115；Craig–Bampton 12.34754；Guyan 12.32156 mm
+
+
+
+  本图的主、从自由度和讲解重点
+逐图现场卡
+                                                   FULL_CHAIN=PASS
+
+Fig.7
+
+第二类子结构划分；El Centro 1940 NS × 0.40
+
+
+ 现场只打开这个文件
+
+ D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至
+ Fig09\Fig07_第二类划分_ElCentro全链计算\RUN_FIG07_FULLCHAIN.m
+
+
+   在 MATLAB 关联程序中打开
+
+
+
+
+Fig.7 本轮实际计算后直接绘制的 600 dpi 图。
+
+
+ 运行模型副本来源
+ lvxvjie_guyan.slx
+
+
+
+ 位移自由度 Original / Guyan / CB
+ 15 / 5 / 8
+
+
+
+ 状态维数 Original / Guyan / CB
+ 30 / 10 / 16
+
+
+
+ 局部放大窗口
+10–11 s；21.5–22.5 s
+
+
+
+一层绝对峰值
+Original 3.28484；Craig–Bampton 3.28633；Guyan 3.02304 mm
+
+
+
+三层绝对峰值
+Original 12.35115；Craig–Bampton 12.35089；Guyan 13.42530 mm
+
+
+
+  本图的主、从自由度和讲解重点
+逐图现场卡
+                                                     FULL_CHAIN=PASS
+
+Fig.8
+
+第一类子结构划分；0.1–10 Hz、40 s 线性 Chirp
+
+
+ 现场只打开这个文件
+
+ D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至
+ Fig09\Fig08_第一类划分_Chirp全链计算\RUN_FIG08_FULLCHAIN.m
+
+
+   在 MATLAB 关联程序中打开
+
+
+
+
+Fig.8 本轮实际计算后直接绘制的 600 dpi 图。
+
+
+ 运行模型副本来源
+ lvxvjie_guyan_2.slx
+
+
+
+ 位移自由度 Original / Guyan / CB
+ 15 / 6 / 9
+
+
+
+ 状态维数 Original / Guyan / CB
+ 30 / 12 / 18
+
+
+
+ 局部放大窗口
+13–14 s；38–38.3 s
+
+
+
+一层绝对峰值
+Original 8.83496；Craig–Bampton 8.83589；Guyan 8.92547 mm
+
+
+
+三层绝对峰值
+Original 34.56167；Craig–Bampton 34.56446；Guyan 34.70386 mm
+
+
+
+  本图的主、从自由度和讲解重点
+逐图现场卡
+                                                     FULL_CHAIN=PASS
+
+Fig.9
+
+第二类子结构划分；同一次 0.1–10 Hz、40 s 线性 Chirp
+
+
+ 现场只打开这个文件
+
+ D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至
+ Fig09\Fig09_第二类划分_Chirp全链计算\RUN_FIG09_FULLCHAIN.m
+
+
+   在 MATLAB 关联程序中打开
+
+
+
+
+Fig.9 本轮实际计算后直接绘制的 600 dpi 图。
+
+
+ 运行模型副本来源
+ lvxvjie_guyan.slx
+
+
+
+ 位移自由度 Original / Guyan / CB
+ 15 / 5 / 8
+
+
+
+ 状态维数 Original / Guyan / CB
+ 30 / 10 / 16
+
+
+
+ 局部放大窗口
+   13–14 s；38–38.3 s
+
+
+
+   一层绝对峰值
+   Original 8.83496；Craig–Bampton 8.83771；Guyan 8.91072 mm
+
+
+
+   三层绝对峰值
+   Original 34.56167；Craig–Bampton 34.57053；Guyan 38.48789 mm
+
+
+
+     本图的主、从自由度和讲解重点
+
+
+
+
+与硕士论文和小论文理论表述的差别
+
+ 可以确认
+     四图都能从参数和模型重新算出，不依赖旧响应作为计算输入。
+     每图有40961个时间点，0–40 s，步长1/1024 s。
+     保存后的四份新算CSV与当前参考CSV逐字节相同。
+     Craig–Bampton保留3个固定界面模态。
+
+
+
+
+ 不能混说
+     这不是找回梁禹当年保存的 MATLAB 工作区。
+     原始第二类 .slx 不能原样直接运行；只在派生副本中补线。
+     历史 Guyan 代码不是小论文理论部分的完整双侧合同投影。
+     Fig.9当前小论文版本不会与硕士论文图3-15的历史混合窗口完全相同。
+
+
+
+
+差别一：Guyan 代码与小论文理论公式
+小论文理论部分写的是 T' * M * T、T' * C * T、T' * K * T 的双侧合同投影；现存计算代码使用上面
+所列的单侧缩聚式。为了追踪“梁禹现存代码怎样得到图”，本演示保留历史写法。因此可以说“结果链稳
+定复现”，不能说“代码已经证明理论公式完全一致”。
+差别二：Fig.9 与硕士论文图3-15
+硕士论文图3-15的0–40 s主图来自第二类划分 Chirp 三层响应，但两个局部窗历史上混入了第二类 El
+Centro 三层响应的10–11 s和21.5–22.5 s。当前小论文 Fig.9 采用物理一致版本：主图和两个局部窗全部来
+自同一次 Chirp 计算，窗口为13–14 s和38–38.3 s。这是修正数据源混用，不是复现失败。
+
+
+为什么不能直接运行原始 SLX
+原模型要求工作区中先存在 G_1、G_2、G_3、T、T_cb 等变量，并保存了作者电脑的旧绝对路径；第二类模
+型的三层 Guyan 和 Craig–Bampton 输出还缺连接。主脚本先计算变量，再复制原模型，在副本中接入本轮
+输入和补齐输出；冻结输入不改。
+
+
+
+
+我如何证明这套现场演示稳定
+    验收项          实际结果
+
+
+    正式包一次运行四图    ALL_FOUR_FULL_CHAINS=PASS，4/4通过。
+
+
+    项目外独立副本      复制到 C:\Windows\Temp\liangyu_live_demo_board27_20260901_01，从 te
+
+
+    输入与代码冻结清单    36/36个条目哈希通过；每个单图文件夹9个固定条目。
+
+
+    数值           MATLAB内存最大差4.9737991503207013e−14 mm；CSV格式化后最大差0，且
+
+
+    输出尺寸         四图均为40961×3×3，无NaN/Inf，时间步长误差0。
+
+
+    图形           4个单页纯矢量PDF；4个600 dpi PNG；无Type 3字体。
+
+                                                                            
+
+
+
+
+    黄色警告怎样判断：Chirp Signal2、Step1 或第二类模型 Demux2 的未连接警告来自被旁路的原模
+    型遗留块。警告后继续到 FULL_CHAIN=PASS 属于正常；红色错误或缺少最终PASS才是失败。
+
+
+
+本HTML所有图像都以 Base64 内嵌，无外部字体、样式表、脚本或图片依赖。复制这一个HTML文件
+即可离线查看和打印。
+交付范围：小论文案例分析 Fig.6–Fig.9；Fig.10 不在本报告范围。
+生成于 2026-09-01。计算证据等级：现存代码与必要模型适配路线的计算级复现。
+

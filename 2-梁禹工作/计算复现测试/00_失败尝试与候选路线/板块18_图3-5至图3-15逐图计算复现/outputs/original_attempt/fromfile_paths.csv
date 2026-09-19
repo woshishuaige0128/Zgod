@@ -1,0 +1,13 @@
+model_label,block,file_name_saved,is_absolute_path,absolute_path,absolute_path_basis,path_exists_as_saved,path_exists_absolute
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1/Ground motion record/From File,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\ElCentroAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\ElCentroAccelNoScaling.mat,SAVED_ABSOLUTE,0,0
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1/Ground motion record/From File1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\KobeAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\KobeAccelNoScaling.mat,SAVED_ABSOLUTE,0,0
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1/Ground motion record/From File2,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\MorganAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\MorganAccelNoScaling.mat,SAVED_ABSOLUTE,0,0
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1/Ground motion record/From File,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\ElCentroAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\ElCentroAccelNoScaling.mat,SAVED_ABSOLUTE,0,0
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1/Ground motion record/From File1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\KobeAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\KobeAccelNoScaling.mat,SAVED_ABSOLUTE,0,0
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1/Ground motion record/From File2,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\MorganAccelNoScaling.mat,1,D:\matlab\SimTool_maRTHS_BenchM_V4 R2019b\Support_files\Ground_motions\MorganAccelNoScaling.mat,SAVED_ABSOLUTE,0,0

@@ -1,0 +1,139 @@
+{
+  "schema_version": "BOARD20_STEP7_PUBLICATION_CONTRACT_V1",
+  "board": "板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "fixed_grid": {
+    "tau_step_seconds": 0.0009765625,
+    "tau1_steps": 67,
+    "tau2_steps": 31,
+    "point_count": 2077,
+    "candidate_stable_rule": "isfinite(rho) and rho < 1",
+    "axis_intercept_rule": "ORIGIN_CONNECTED_CONTIGUOUS_PREFIX_LAST_STABLE_INDEX_NO_HOLE_CROSSING"
+  },
+  "index_contract": {
+    "pre_snapshot_relative_path": "input/project_contract/全部对象总索引_板块20前快照.csv",
+    "live_relative_path_from_project": "test/00_总索引与复现规则/全部对象总索引.csv",
+    "expected_row_count": 45,
+    "expected_column_count": 15,
+    "expected_changed_cells": 8,
+    "expected_preserved_cells": 667,
+    "allowed_changed_fields": [
+      "当前状态",
+      "备注"
+    ]
+  },
+  "objects": [
+    {
+      "object_id": "F4-4",
+      "object_type": "论文图片",
+      "paper_name": "图4-4 第一类子结构划分稳定域",
+      "package_name": "图4-4_第一类子结构划分稳定域",
+      "target_evidence_level": "计算级复现",
+      "final_evidence_level": "绘图级复现",
+      "evaluated_scope": [
+        "historical_mask_plotting",
+        "continuous_rho_candidate_comparison"
+      ],
+      "excluded_scope": [],
+      "index_current_status": "历史31×67稳定掩膜与边界可逐点重画；Original/Guyan主连续rho路线分别错配1389/951点，Craig-Bampton连续路线缺失，计算级对象门FAIL",
+      "index_note": "主路线仅2/3齐全、0/3掩膜精确匹配；第一类Guyan替代路线错配1037点且不得替代主路线；正式成功目录不创建，完整计算候选保存在失败证据包",
+      "method_cell_count": 3,
+      "primary_continuous_rho_cell_count": 2,
+      "exact_mask_match_cell_count": 0,
+      "route_ids": [
+        "main_ori_div1",
+        "main_cb_div1",
+        "main_guyan_div1",
+        "alt_guyan_div1_stable_full_ps3"
+      ],
+      "expected_mask_mismatch": {
+        "main_ori_div1": 1389,
+        "main_guyan_div1": 951,
+        "alt_guyan_div1_stable_full_ps3": 1037
+      }
+    },
+    {
+      "object_id": "F4-5",
+      "object_type": "论文图片",
+      "paper_name": "图4-5 第二类子结构划分稳定域",
+      "package_name": "图4-5_第二类子结构划分稳定域",
+      "target_evidence_level": "计算级复现",
+      "final_evidence_level": "绘图级复现",
+      "evaluated_scope": [
+        "historical_mask_plotting",
+        "continuous_rho_candidate_comparison",
+        "common_grid_hole_audit",
+        "outside_grid_sequence_audit"
+      ],
+      "excluded_scope": [],
+      "index_current_status": "历史31×67稳定掩膜与边界可逐点重画；Original/Guyan主连续rho路线分别错配1213/895点，Craig-Bampton连续路线缺失，计算级对象门FAIL",
+      "index_note": "主路线仅2/3齐全、0/3掩膜精确匹配；Original/Guyan候选除身份字段外数值载荷相同且存在孔洞，只证明文件载荷重复；正式成功目录不创建",
+      "method_cell_count": 3,
+      "primary_continuous_rho_cell_count": 2,
+      "exact_mask_match_cell_count": 0,
+      "route_ids": [
+        "main_ori_div2",
+        "main_cb_div2",
+        "main_guyan_div2"
+      ],
+      "expected_mask_mismatch": {
+        "main_ori_div2": 1213,
+        "main_guyan_div2": 895
+      }
+    },
+    {
+      "object_id": "C05",
+      "object_type": "定量结论",
+      "paper_name": "两类划分的稳定裕度下降量",
+      "package_name": "结论C05_两类划分的稳定裕度下降量",
+      "target_evidence_level": "计算级复现",
+      "final_evidence_level": "历史值",
+      "evaluated_scope": [
+        "critical_delay_from_historical_masks",
+        "critical_delay_from_available_candidate_masks"
+      ],
+      "excluded_scope": [],
+      "index_current_status": "已从历史掩膜按tau1轴、tau2轴和等时滞对角线三种原点连续截距派生下降量，但论文“约5 ms/接近10 ms”没有唯一标量口径；当前计算路线不支持计算级升级",
+      "index_note": "历史第一类Original到Craig-Bampton为8.7890625/4.8828125/1.953125 ms，Original到Guyan为11.71875/7.8125/4.8828125 ms；第二类对应值为2.9296875/1.953125/2.9296875 ms和5.859375/2.9296875/3.90625 ms，顺序均为tau1/tau2/对角线；保持历史值，不拟合单一5或10 ms"
+    },
+    {
+      "object_id": "C07",
+      "object_type": "定量结论",
+      "paper_name": "结论章频率区间、误差幅值与临界时滞总结",
+      "package_name": "结论C07_结论章频率区间、误差幅值与临界时滞总结",
+      "target_evidence_level": "计算级复现",
+      "final_evidence_level": "历史值",
+      "evaluated_scope": [
+        "critical_delay"
+      ],
+      "excluded_scope": [
+        "frequency_bands",
+        "response_amplitude_errors"
+      ],
+      "index_current_status": "仅临界时滞分量完成历史掩膜派生审计，仍无唯一“降低5 ms以上”的计算级闭合；频率区间和响应幅值分量未在板块20评价，C07整体保持历史值",
+      "index_note": "现有第一类Original到Guyan主候选的tau1截距下降为-1.953125 ms，第二类Original/Guyan候选差为0，均不支持论文标量结论；频带和幅值部分不得用板块20证据升级"
+    }
+  ],
+  "immutable_scientific_dispositions": {
+    "execution_pipeline_status": "PASS",
+    "scientific_object_gate": "FAIL_RETAIN_PLOTTING_LEVEL",
+    "historical_mask_role": "PLOTTING_LEVEL_HISTORICAL_VALUE_ONLY",
+    "craig_bampton_route_status": "NOT_COMPUTABLE_MISSING_ROUTE",
+    "c07_frequency_bands": "NOT_EVALUATED",
+    "c07_response_amplitude_errors": "NOT_EVALUATED",
+    "formal_success_directory_count": 0,
+    "failure_package_count": 4
+  },
+  "sealed_hashes": {
+    "step6_run1_manifest_sha256": "2F6F8BBD7CCB12E2A0896EE62193F89CDE9A7B4A27345EF4550F009C627DC37B",
+    "step6_run2_manifest_sha256": "2F6F8BBD7CCB12E2A0896EE62193F89CDE9A7B4A27345EF4550F009C627DC37B",
+    "step6_validation_manifest_sha256": "10BAB8E166571C40547F6FE6FF3C8B985F3D88D1EEE37DEED57E43DC71E60CCF",
+    "step6_validation_summary_sha256": "595380957408ADD6415AE2C7C6251729FCD9B12774ABD26C87616382482D6705",
+    "step6_clean_probe_action_id": "d4b1bc8f-cde0-4009-9bdf-e1bdb0a01e13",
+    "step6_clean_probe_receipt_sha256": "CD15608081F039B887D3C3F0751F09D78269C6B321998784EF7684D3A5413928",
+    "step6_generator_sha256": "42B094B03D2DBA4EA8B4176EA21633BFCDBFFF0477B884AAE3B2F512FC8057C5",
+    "step6_validator_sha256": "A0FD70E370B6F0E729CC177C9CD67A9454448885A16B5097D92D678E4A74EFD2",
+    "step6_contract_sha256": "D2FBF79774868C539BB9AD01EB1ACB0E833906D20E43A457D8C592CC0EE3095F",
+    "thesis_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+    "manuscript_sha256": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76"
+  }
+}

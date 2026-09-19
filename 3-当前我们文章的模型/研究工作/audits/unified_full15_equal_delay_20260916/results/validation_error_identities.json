@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "tests": 24,
+  "tolerance": 1e-10,
+  "max_normalized_residual": 1.2850326475838137e-11,
+  "checks": [
+    {
+      "name": "d1_m0_3Hz_output_error",
+      "normalized_residual": 1.2850326475838137e-11,
+      "passed": true
+    },
+    {
+      "name": "d1_m0_3Hz_omitted_schur",
+      "normalized_residual": 1.3629738094539198e-15,
+      "passed": true
+    },
+    {
+      "name": "d1_m0_9Hz_output_error",
+      "normalized_residual": 8.064761747484071e-14,
+      "passed": true
+    },
+    {
+      "name": "d1_m0_9Hz_omitted_schur",
+      "normalized_residual": 1.086344865582565e-15,
+      "passed": true
+    },
+    {
+      "name": "d1_m0_20Hz_output_error",
+      "normalized_residual": 2.2971761057348073e-16,
+      "passed": true
+    },
+    {
+      "name": "d1_m0_20Hz_omitted_schur",
+      "normalized_residual": 7.876620633060342e-16,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_3Hz_output_error",
+      "normalized_residual": 1.1563517496857818e-11,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_3Hz_omitted_schur",
+      "normalized_residual": 1.4013472526859827e-14,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_9Hz_output_error",
+      "normalized_residual": 1.257626575314067e-13,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_9Hz_omitted_schur",
+      "normalized_residual": 6.666390242652866e-16,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_20Hz_output_error",
+      "normalized_residual": 1.530411537923988e-14,
+      "passed": true
+    },
+    {
+      "name": "d1_m3_20Hz_omitted_schur",
+      "normalized_residual": 1.7217762028948442e-15,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_3Hz_output_error",
+      "normalized_residual": 1.8206622694109956e-13,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_3Hz_omitted_schur",
+      "normalized_residual": 6.038183765305823e-16,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_9Hz_output_error",
+      "normalized_residual": 3.0858423041540895e-15,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_9Hz_omitted_schur",
+      "normalized_residual": 1.6096327846192438e-15,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_20Hz_output_error",
+      "normalized_residual": 2.642429354222373e-16,
+      "passed": true
+    },
+    {
+      "name": "d2_m0_20Hz_omitted_schur",
+      "normalized_residual": 1.5672529181741247e-15,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_3Hz_output_error",
+      "normalized_residual": 7.206004989264494e-13,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_3Hz_omitted_schur",
+      "normalized_residual": 5.064318524480965e-16,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_9Hz_output_error",
+      "normalized_residual": 5.10206954764623e-14,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_9Hz_omitted_schur",
+      "normalized_residual": 3.2936915640594135e-16,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_20Hz_output_error",
+      "normalized_residual": 8.614851699985813e-16,
+      "passed": true
+    },
+    {
+      "name": "d2_m3_20Hz_omitted_schur",
+      "normalized_residual": 9.417677887492099e-16,
+      "passed": true
+    }
+  ],
+  "new_time_histories": 0,
+  "scope": "frequency residual and omitted-mode Schur identities only"
+}

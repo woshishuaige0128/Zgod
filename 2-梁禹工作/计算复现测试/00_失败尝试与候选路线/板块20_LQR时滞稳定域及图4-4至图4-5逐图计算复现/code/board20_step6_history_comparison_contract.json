@@ -1,0 +1,368 @@
+{
+  "schema_version": "board20_step6_history_comparison_contract_v1",
+  "created_date": "2026-08-25",
+  "purpose": "Compare every available continuous rho grid with the six historical plotting masks on the exact common 31x67 physical grid, preserve missing and conflicting routes, and render evidence-separated candidate figures without fitting.",
+  "path_base": "parent directory of this contract's code directory",
+  "immutability_rule": "All bound inputs are read-only. Writes are limited to the two fixed Step-6 output directories, the Step-6 validation directory, and the Step-6 log directory.",
+  "grid_contract": {
+    "shape": [31, 67],
+    "point_count": 2077,
+    "l_start": 0,
+    "l_end": 30,
+    "j_start": 0,
+    "j_end": 66,
+    "logical_indexing": "mask[l,j] = MATLAB mask(l+1,j+1)",
+    "horizontal_coordinate": "tau1_ms = j * 1000 / 1024",
+    "vertical_coordinate": "tau2_ms = l * 1000 / 1024",
+    "dt_seconds": 0.0009765625,
+    "dt_milliseconds": 0.9765625,
+    "stable_rule": "finite(rho) and rho < 1.0",
+    "historical_rule": "finite(value) and value > 0.0 and value < 1.0",
+    "axis_intercept_definition": "ORIGIN_CONNECTED_CONTIGUOUS_PREFIX_LAST_STABLE_INDEX_NO_HOLE_CROSSING",
+    "critical_tolerance": 1e-08,
+    "calculation_level_mask_mismatch_gate": 0,
+    "calculation_level_boundary_row_mismatch_gate": 0
+  },
+  "input_bindings": [
+    {
+      "relpath": "input/historical_plotting/作者绘图目录/lqr_2.mat",
+      "bytes": 932,
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "relpath": "input/historical_plotting/作者绘图目录/lqr_3.mat",
+      "bytes": 1431,
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    },
+    {
+      "relpath": "input/historical_plotting/作者绘图目录/huitu_2.m",
+      "bytes": 1497,
+      "sha256": "85CB7D5300F3F820AFA80926B76F0430718709BD55722F45486F2F8B9848D1BC"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat",
+      "bytes": 932,
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat",
+      "bytes": 1431,
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_清洗数据.mat",
+      "bytes": 3014,
+      "sha256": "587E921C2BEEFBCE2EE0F870EA66A342952C52A601383E0A36064C2134F51DBE"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_清洗数据.mat",
+      "bytes": 2968,
+      "sha256": "9D7578BB96D818DF0D43D1D508882E3ADBBDA314C4DE5903967BD4F077E75DA3"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_边界数据.csv",
+      "bytes": 22117,
+      "sha256": "58F45ADB3FA125A61AB636696E72AAD82FAB05EAD8556B742394069D681A372D"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_边界数据.csv",
+      "bytes": 20941,
+      "sha256": "BAB62AFA096E5427AB0D8ABA49F6CCBE4556890E82178132628F4654FCE6F10E"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/第4章稳定域统计.csv",
+      "bytes": 1796,
+      "sha256": "4D46A8BC30700B5E4906142916C7EA45E73F3CE8C2F2A21467D61E306726C722"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/原稿PDF第070页.png",
+      "bytes": 588050,
+      "sha256": "1145CD4C9602A74E2F0A5DF96432A2F54B3524D7004867390B4DCDEBB34216FB"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/PDF结果/图4-4_第一类子结构划分稳定域.pdf",
+      "bytes": 102658,
+      "sha256": "6234A98AAD0075310BC8B99E76F3D5CE5CC6E59A0CCC0D5C9059D35AB0CFD6A2"
+    },
+    {
+      "relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/PDF结果/图4-5_第二类子结构划分稳定域.pdf",
+      "bytes": 102669,
+      "sha256": "52D099AAE6FBD97993DDC71631B8CC51CA231E1E388821189551C2675FC2378B"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/artifact_manifest.csv",
+      "bytes": 1912,
+      "sha256": "F35365D414E722ABCE201750B5D7F6DC3B315348414CD057C7A51FB817E135B9"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/run_status.json",
+      "bytes": 58826,
+      "sha256": "6B5225875E708CA3580D715D8071F8A76FB29A9E80FD39AFA7BE8EF1F941B7C4"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck.json",
+      "bytes": 513567,
+      "sha256": "F3B995D9CFB265849B288E8F5E4C44C4E9E842B7D5F541B1CF8095D519106DDE"
+    },
+    {
+      "relpath": "outputs/step1_artifact_manifest.csv",
+      "bytes": 38334,
+      "sha256": "320842A60D9D9E6C7130AD16E75952B5FF6576E252F3A04AF962CBE41EC41728"
+    },
+    {
+      "relpath": "outputs/step4_audit/artifact_manifest.csv",
+      "bytes": 5176,
+      "sha256": "986388A210D7AB04E87A31B4EAF6A400CBAEBCD48C7289977FB009096D209F6D"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_artifact_manifest.csv",
+      "bytes": 871,
+      "sha256": "5EB5C441894297279DC5DFD260F8F291442C455C02B9019164D6EEA123F047D3"
+    },
+    {
+      "relpath": "code/board20_step5_fullq_svd_candidate_validator_v5_full_postcheck_repeatability.json",
+      "bytes": 6173,
+      "sha256": "AD0E70177C9F486536D23C7122827FD2F7B5D1FFFFB55C7FA2436453F9A14403"
+    },
+    {
+      "relpath": "code/board20_step4_route_manifest.json",
+      "bytes": 34630,
+      "sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div1/point_summary.csv",
+      "bytes": 1630560,
+      "sha256": "F7DD7FCE2CB06DD1C9C8A327C3C2FA208C5A885C255F99238FFCA93D061DC58E"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div1/route_status.json",
+      "bytes": 2478,
+      "sha256": "67ED5A9C2A70268D658E5C5DCBC3793DD10ED7C1507C6F8CEBE82912016D0E4A"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div1/point_summary.csv",
+      "bytes": 2091161,
+      "sha256": "57C72BF3A5EF702744EBFDF7D77CAE422E1C3958669774AF1D6F2D4C7028CC0D"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div1/route_status.json",
+      "bytes": 2484,
+      "sha256": "2025924F562B7E1B9F92AFADB65F1DFB49CED8578041AE9C91F0F5C9C97498F6"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/alt_guyan_div1_stable_full_ps3/point_summary.csv",
+      "bytes": 2133466,
+      "sha256": "FDF7DD4F4CD518F6A878B362E2A2016AAFC2B063AA95AE47432800B5BB4A6979"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/alt_guyan_div1_stable_full_ps3/route_status.json",
+      "bytes": 2515,
+      "sha256": "18C2453C9E11CF26CEF507CC84514E319AC3FD8FA11F33202006DBD044DE5658"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div2/point_summary.csv",
+      "bytes": 2101308,
+      "sha256": "63978F23DA9ECD81CD1E30BE9D70716C2826CEDB1174E1B8A7F582650F421998"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div2/route_status.json",
+      "bytes": 2478,
+      "sha256": "2B7885ED5DC7939173D75AFEA6ABA3814B89838F3B6FB156C2F8BFC5376485AC"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div2/point_summary.csv",
+      "bytes": 2099231,
+      "sha256": "7D7AF69E097D4AEE615B896E66A687EC90E029E8F9759D2FBE0B9189F187D2B3"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div2/route_status.json",
+      "bytes": 2480,
+      "sha256": "DA2233D585E6324684E90AB44B668A044FB0F12334A47E84C8769ED0C70D1A45"
+    },
+    {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v5_full/v5_full_validator_full_postcheck_protected_hashes.csv",
+      "bytes": 33131,
+      "sha256": "F90F03F088BD69C9A88A60BC78DD3A6F17CC236CB5E072CC86D97D382612408B"
+    }
+  ],
+  "historical_masks": {
+    "div1": {
+      "figure_id": "F4-4",
+      "figure_name": "图4-4_第一类子结构划分稳定域",
+      "raw_relpath": "input/historical_plotting/作者绘图目录/lqr_2.mat",
+      "duplicate_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat",
+      "clean_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_清洗数据.mat",
+      "boundary_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_边界数据.csv"
+    },
+    "div2": {
+      "figure_id": "F4-5",
+      "figure_name": "图4-5_第二类子结构划分稳定域",
+      "raw_relpath": "input/historical_plotting/作者绘图目录/lqr_3.mat",
+      "duplicate_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat",
+      "clean_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_清洗数据.mat",
+      "boundary_relpath": "input/plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_边界数据.csv"
+    }
+  },
+  "method_variables": {
+    "Original": {
+      "historical_variable": "stab_o",
+      "clean_variable": "original_stable_mask"
+    },
+    "Craig-Bampton": {
+      "historical_variable": "stab_C",
+      "clean_variable": "craig_bampton_stable_mask"
+    },
+    "Guyan": {
+      "historical_variable": "stab_g",
+      "clean_variable": "guyan_stable_mask"
+    }
+  },
+  "routes": [
+    {
+      "route_id": "main_ori_div1",
+      "division": "div1",
+      "figure_id": "F4-4",
+      "method": "Original",
+      "route_role": "PRIMARY",
+      "route_formula": "ORI_DIV1_H_RIGHT",
+      "step4_mat_relpath": "outputs/step4_rho_grids/main_ori_div1/common_31x67_same_formula_candidate.mat",
+      "point_summary_relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div1/point_summary.csv"
+    },
+    {
+      "route_id": "main_guyan_div1",
+      "division": "div1",
+      "figure_id": "F4-4",
+      "method": "Guyan",
+      "route_role": "PRIMARY",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "step4_mat_relpath": "outputs/step4_rho_grids/main_guyan_div1/common_31x67_same_formula_candidate.mat",
+      "point_summary_relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div1/point_summary.csv"
+    },
+    {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "division": "div1",
+      "figure_id": "F4-4",
+      "method": "Guyan",
+      "route_role": "ALTERNATIVE_NOT_PRIMARY",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "step4_mat_relpath": "outputs/step4_rho_grids/alt_guyan_div1_stable_full_ps3/common_31x67_same_formula_candidate.mat",
+      "point_summary_relpath": "outputs/step5_fullq_svd_candidate_v4/full/alt_guyan_div1_stable_full_ps3/point_summary.csv"
+    },
+    {
+      "route_id": "main_ori_div2",
+      "division": "div2",
+      "figure_id": "F4-5",
+      "method": "Original",
+      "route_role": "PRIMARY",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "step4_mat_relpath": "outputs/step4_rho_grids/main_ori_div2/common_31x67_same_formula_candidate.mat",
+      "point_summary_relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_ori_div2/point_summary.csv"
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "division": "div2",
+      "figure_id": "F4-5",
+      "method": "Guyan",
+      "route_role": "PRIMARY",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "step4_mat_relpath": "outputs/step4_rho_grids/main_guyan_div2/common_31x67_same_formula_candidate.mat",
+      "point_summary_relpath": "outputs/step5_fullq_svd_candidate_v4/full/main_guyan_div2/point_summary.csv"
+    }
+  ],
+  "target_cells": [
+    {"figure_id": "F4-4", "division": "div1", "method": "Original"},
+    {"figure_id": "F4-4", "division": "div1", "method": "Craig-Bampton"},
+    {"figure_id": "F4-4", "division": "div1", "method": "Guyan"},
+    {"figure_id": "F4-5", "division": "div2", "method": "Original"},
+    {"figure_id": "F4-5", "division": "div2", "method": "Craig-Bampton"},
+    {"figure_id": "F4-5", "division": "div2", "method": "Guyan"}
+  ],
+  "second_division_extension_contract": [
+    {
+      "method": "Craig-Bampton",
+      "variable": "stab_C",
+      "raw_shape": [45, 95],
+      "sequence_row_1based": 36,
+      "sequence_column_start_1based": 68,
+      "sequence_column_end_1based": 95,
+      "expected_values": "1..28"
+    },
+    {
+      "method": "Guyan",
+      "variable": "stab_g",
+      "raw_shape": [41, 95],
+      "sequence_row_1based": 32,
+      "sequence_column_start_1based": 68,
+      "sequence_column_end_1based": 95,
+      "expected_values": "1..28"
+    }
+  ],
+  "plot_style": {
+    "Original": {"color": "#555555", "linestyle": "--", "marker": "o"},
+    "Craig-Bampton": {"color": "#EE6677", "linestyle": "-", "marker": "s"},
+    "Guyan": {"color": "#4477AA", "linestyle": "-.", "marker": "^"},
+    "Guyan_alternative_marker": "D",
+    "font_family": "DejaVu Serif",
+    "mathtext_fontset": "cm",
+    "required_pdf_font_names": ["DejaVuSerif", "Cmmi10", "Cmr10"],
+    "font_size_pt": 9,
+    "figure_size_inch": [7.48, 3.35],
+    "dpi": 600,
+    "pdf_page_count": 1,
+    "pdf_encrypted_allowed": false,
+    "pdf_rotation_degrees": 0,
+    "pdf_user_unit": 1.0,
+    "pdf_cropbox_equals_mediabox": true,
+    "required_pdf_fonts_embedded": true,
+    "forbid_pdf_type3_fonts": true,
+    "forbid_pdf_image_xobjects": true,
+    "forbid_pdf_inline_images": true,
+    "png_mode": "RGBA",
+    "title_allowed": false,
+    "grid_allowed": false,
+    "legend_frame_allowed": false,
+    "evidence_separation": "Historical plotting-level masks and computed route candidates must occupy separate axes; a missing Craig-Bampton computation must be written explicitly on the computed axis."
+  },
+  "conclusion_scope": {
+    "C05": "Derive axis-specific delay intercepts, stable-point and area-proxy changes for the available historical and computed Original/Guyan comparisons. Do not compress conflicting axes into one fitted scalar.",
+    "C07": "Only the critical-delay clause is evaluated in Board20. Frequency-band and response-amplitude clauses remain outside Step6."
+  },
+  "object_gate": {
+    "figure_requirements": [
+      "all three method cells have a PRIMARY continuous rho grid",
+      "every candidate stable flag equals finite(rho) and rho < 1.0",
+      "every primary mask matches its historical mask at all 2077 points",
+      "every primary boundary row matches the frozen historical boundary",
+      "the generated PDF and PNG pass the figure-quality gates"
+    ],
+    "failure_policy": "If any requirement is absent or false, retain PLOTTING_LEVEL_REPRODUCTION, store the candidate in the Board20 failure route, and do not create a formal success directory.",
+    "formal_success_directories": [
+      "test/图4-4_第一类子结构划分稳定域",
+      "test/图4-5_第二类子结构划分稳定域",
+      "test/结论C05_两类划分的稳定裕度下降量",
+      "test/结论C07_结论章频率区间、误差幅值与临界时滞总结"
+    ]
+  },
+  "manual_visual_review_contract": {
+    "relpath": "code/board20_step6_manual_visual_review.csv",
+    "bytes": 1654,
+    "sha256": "9DA7E8095CE1E86B5F4EB25573FCCF868103888DD514A3CBFDA104A54D4E91F1",
+    "render_tool": "pdftoppm",
+    "render_dpi": 180,
+    "row_count": 4,
+    "binding_rule": "Each PASS row binds one unique final PDF and its independently rendered PNG by filename, byte count, and SHA-256."
+  },
+  "clean_probe_receipt_contract": {
+    "relpath": "logs/step6_history_comparison/clean_probe_record.json",
+    "schema_version": "board20_step6_clean_probe_receipt_v1",
+    "required_status": "COMPLETED",
+    "required_targets": ["run1", "run2", "validation"],
+    "required_post_state": "EMPTY_DIRECTORY"
+  },
+  "fixed_output_roots": {
+    "run1": "outputs/step6_history_comparison_run1",
+    "run2": "outputs/step6_history_comparison_run2",
+    "validation": "outputs/step6_history_comparison_validation",
+    "logs": "logs/step6_history_comparison"
+  }
+}

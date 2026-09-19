@@ -1,0 +1,5 @@
+division,method,paper_value,unit_printed,evidence_level,matching_rule,matched_routes,matched_saved_percent,matched_div100,match_status,formula_compliant_match
+第一类划分,Guyan,0.3065,none,历史值,saved_percent/100 rounded to 4 decimals,,,,NO_SAVED_OUTPUT_MATCH,False
+第一类划分,Craig-Bampton,0.1879,none,历史值,saved_percent/100 rounded to 4 decimals,,,,NO_SAVED_OUTPUT_MATCH,False
+第二类划分,Guyan,0.3927,none,历史值,saved_percent/100 rounded to 4 decimals,Copy_2_of_energy_zonghe3.mlx,39.2658,0.392658,NUMERIC_MATCH_FORMULA_INVALID,False
+第二类划分,Craig-Bampton,0.2021,none,历史值,saved_percent/100 rounded to 4 decimals,Copy_2_of_energy_zonghe3.mlx,20.2060,0.202060,NUMERIC_MATCH_FORMULA_INVALID,False

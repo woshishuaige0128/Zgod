@@ -1,0 +1,21 @@
+model_label,source_block,source_block_type,source_port,destination_block,destination_block_type,destination_port,connection_status
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1,SubSystem,1,lvxvjie_guyan_2/Gain5,Gain,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1,SubSystem,1,lvxvjie_guyan_2/地震激励-力2,Gain,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1,SubSystem,1,lvxvjie_guyan_2/地震激励-力1,Gain,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/
+地震-加速度1,SubSystem,1,lvxvjie_guyan_2/地震激励-力,Gain,1,CONNECTED
+第一类原始模型,lvxvjie_guyan_2/Chirp Signal2,SubSystem,1,,,NaN,UNCONNECTED
+第一类原始模型,lvxvjie_guyan_2/Step1,Step,1,,,NaN,UNCONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1,SubSystem,1,lvxvjie_guyan/Gain5,Gain,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1,SubSystem,1,lvxvjie_guyan/地震激励-力2,Gain,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1,SubSystem,1,lvxvjie_guyan/地震激励-力1,Gain,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/
+地震-加速度1,SubSystem,1,lvxvjie_guyan/地震激励-力,Gain,1,CONNECTED
+第二类原始模型,lvxvjie_guyan/Chirp Signal2,SubSystem,1,,,NaN,UNCONNECTED
+第二类原始模型,lvxvjie_guyan/Step1,Step,1,,,NaN,UNCONNECTED

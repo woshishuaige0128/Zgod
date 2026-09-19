@@ -1,0 +1,16 @@
+{
+  "artifact_manifest_sha256": "3B9C41AB91E345C0642E12E94A5484FE61937B5E82107DAAD53B2CC890A50EDA",
+  "completed_at": "2026-08-25T11:35:39+08:00",
+  "elapsed_seconds": 6.207364800036885,
+  "mode": "pilot",
+  "repeatability": {
+    "baseline_artifact_manifest_sha256": "3B9C41AB91E345C0642E12E94A5484FE61937B5E82107DAAD53B2CC890A50EDA",
+    "mode": "pilot",
+    "repeat_artifact_manifest_sha256": "3B9C41AB91E345C0642E12E94A5484FE61937B5E82107DAAD53B2CC890A50EDA",
+    "schema_version": "board20_step5_fullq_svd_candidate_repeatability_v3",
+    "scientific_artifacts_match": true,
+    "status": "PASS"
+  },
+  "requested_mode": "pilot",
+  "schema_version": "board20_step5_fullq_svd_candidate_run_metadata_v3"
+}

@@ -1,0 +1,48 @@
+{
+  "fresh_simulations_passed": 4,
+  "time_points_per_case": 40961,
+  "max_response_difference_mm": 4.973799150320701e-14,
+  "cross_language_metrics": 44,
+  "max_cross_language_difference": 2.490452288839151e-12,
+  "source_hash_matches": 72,
+  "source_hash_total": 72,
+  "submission_pdf_matches": [
+    {
+      "figure": "fig06_eq_div1.pdf",
+      "same_bytes": true,
+      "sha256": "d330c293c415309179514169a503f2e7beda8329e1fcfe07f79c5286ca48fff0"
+    },
+    {
+      "figure": "fig07_eq_div2.pdf",
+      "same_bytes": true,
+      "sha256": "ca4ae65e23994059a6bb3bb2bb44e11526cac47cc81b2a83775f79760910bc5f"
+    },
+    {
+      "figure": "fig08_chirp_div1.pdf",
+      "same_bytes": true,
+      "sha256": "7fbf5443dd6e1cc541c808992df038139828cc1b4757376cc31c6c842f8626fc"
+    },
+    {
+      "figure": "fig09_chirp_div2.pdf",
+      "same_bytes": true,
+      "sha256": "3c3eee3d8df36501dc23a4669622eb2336c960cf57db1816500386373145f5cf"
+    }
+  ],
+  "simulation_log_warning_occurrences": 10,
+  "table_agreement": {
+    "3": {
+      "total": 16,
+      "matched": 11
+    },
+    "4": {
+      "total": 24,
+      "matched": 3
+    },
+    "5": {
+      "total": 4,
+      "matched": 0
+    }
+  },
+  "computation_validation": "PASS",
+  "manuscript_three_tables_all_agree": false
+}

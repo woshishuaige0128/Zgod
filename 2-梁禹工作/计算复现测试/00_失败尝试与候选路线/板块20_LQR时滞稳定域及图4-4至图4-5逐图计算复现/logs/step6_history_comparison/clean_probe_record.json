@@ -1,0 +1,56 @@
+{
+  "action_id": "d4b1bc8f-cde0-4009-9bdf-e1bdb0a01e13",
+  "completed_utc": "2026-08-25T08:58:35.687100Z",
+  "contract_sha256": "D2FBF79774868C539BB9AD01EB1ACB0E833906D20E43A457D8C592CC0EE3095F",
+  "fs_protocol_sha256": "3634772C2DC070FD4C24B8B7780B7006F918A80A08F033E8F15A2C09D5FBBC57",
+  "postconditions": {
+    "run1": {
+      "directory_count": 0,
+      "file_count": 0,
+      "state": "EMPTY_DIRECTORY"
+    },
+    "run2": {
+      "directory_count": 0,
+      "file_count": 0,
+      "state": "EMPTY_DIRECTORY"
+    },
+    "validation": {
+      "directory_count": 0,
+      "file_count": 0,
+      "state": "EMPTY_DIRECTORY"
+    }
+  },
+  "schema_version": "board20_step6_clean_probe_receipt_v1",
+  "script_sha256": "ADE11FF3F0E34D36DC2910F72060763CE290EC7D02C5848F63700F3C81165251",
+  "started_utc": "2026-08-25T08:58:35.642347Z",
+  "status": "COMPLETED",
+  "targets": {
+    "run1": {
+      "directory_count": 2,
+      "file_count": 26,
+      "lexical_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_run1",
+      "logical_relpath": "outputs/step6_history_comparison_run1",
+      "manifest_sha256": "9721137F3EC1730F5F6538E9575A760CC3EE9FC544DDF68B7C40CD7396AB1503",
+      "resolved_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_run1",
+      "state": "COMMITTED"
+    },
+    "run2": {
+      "directory_count": 2,
+      "file_count": 26,
+      "lexical_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_run2",
+      "logical_relpath": "outputs/step6_history_comparison_run2",
+      "manifest_sha256": "9721137F3EC1730F5F6538E9575A760CC3EE9FC544DDF68B7C40CD7396AB1503",
+      "resolved_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_run2",
+      "state": "COMMITTED"
+    },
+    "validation": {
+      "directory_count": 1,
+      "file_count": 14,
+      "lexical_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_validation",
+      "logical_relpath": "outputs/step6_history_comparison_validation",
+      "manifest_sha256": "8C54084CAFD16EE76A0BF567F41F84A2AC37D8AFAA7AACC66C7ED35B843FA431",
+      "resolved_absolute_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step6_history_comparison_validation",
+      "state": "COMMITTED"
+    }
+  }
+}

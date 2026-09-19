@@ -1,0 +1,138 @@
+{
+  "schema_version": "board20_step5_fullq_candidate_contract_v2",
+  "contract_status": "FORMAL_PRESEAL_V2",
+  "purpose": "Second isolated Python candidate for five sealed author file-identity routes. Solver selection is determined only by matrix order; no MATLAB rho, pole, stability, validator, conditioning, or prior Step-5 result is a computation input.",
+  "supersedes": {
+    "draft_relpath": "code/board20_step5_fullq_candidate_contract_v1_preseal_draft.json",
+    "draft_original_pre_annotation_sha256": "274630E52752031C2D333A9B495224408AFCF35314CCCB021DB617655E982158",
+    "draft_status": "PRESEAL_DRAFT_SUPERSEDED",
+    "revision_timing": "Before input seal, selftest, pilot, or any scientific solve.",
+    "revision_reason": "Numerical splits of multiple zero roots introduced by clearing Laurent negative powers are not physical Laurent roots. V2 preserves them and keeps them in full-q rho, but applies the 1e-8 Laurent/polynomial residual gate only to deterministically matched physical full-q roots."
+  },
+  "path_base": "parent directory of this contract's code directory",
+  "route_manifest_relpath": "code/board20_step4_route_manifest.json",
+  "route_manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+  "base_compute_relpath": "code/compute_board20_step5_independent.py",
+  "base_compute_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+  "base_compute_usage": [
+    "contracted route and matrix dataclasses",
+    "MATLAB-v7.3 h5py transpose restoration",
+    "M/al as scipy.linalg.solve(al.T,M.T).T",
+    "Laurent coefficients and direct formula",
+    "compact scalar-delay and full-q ordinary-history matrices",
+    "normalized polynomial and direct-Laurent residuals"
+  ],
+  "allowed_input_roots": ["code", "outputs/step2_runs"],
+  "forbidden_computation_inputs": [
+    "outputs/step4_rho_grids",
+    "outputs/step5_independent_compute",
+    "outputs/step5_audit",
+    "outputs/step5_solver_conditioning",
+    "logs/step5_validation",
+    "MATLAB rho/poles/stable/critical arrays",
+    "validator or conditioning results",
+    "prior Step-5 CSV/HDF5/JSON"
+  ],
+  "manifest_field_policy": {
+    "allowed_route_identity_fields": ["route_id", "route_name", "route_role", "declared_method", "division", "route_formula", "workspace_relpath", "matrix_variable_map", "file_contracts"],
+    "workspace_contract_role": "workspace_complete",
+    "statement": "The route manifest is read only for route/matrix/workspace identity and workspace SHA-256. Grid result paths and all Step-4 numerical results are ignored."
+  },
+  "output_root_relpath": "outputs/step5_fullq_candidate",
+  "log_root_relpath": "logs/step5_fullq_candidate",
+  "algorithm_selection": {
+    "selector_field": "matrix_order",
+    "route_or_point_override_allowed": false,
+    "matlab_result_dependent_selection_allowed": false,
+    "rules": [
+      {"predicate": "matrix_order <= 5", "selected_algorithm": "FULL_Q_ORDINARY_HISTORY_COMPANION", "selected_order": "matrix_order*(max(l,j)+2)", "auxiliary_algorithm": "COMPACT_SCALAR_DELAY_AUGMENTATION_PAIRING_ONLY"},
+      {"predicate": "matrix_order > 5", "selected_algorithm": "COMPACT_SCALAR_DELAY_AUGMENTATION", "selected_order": "2*matrix_order+l+j", "auxiliary_algorithm": "NONE"}
+    ],
+    "expected_matrix_orders": {"main_ori_div1": 15, "main_guyan_div1": 5, "alt_guyan_div1_stable_full_ps3": 5, "main_ori_div2": 5, "main_guyan_div2": 5},
+    "expected_selected_algorithms": {
+      "main_ori_div1": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "main_guyan_div1": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "alt_guyan_div1_stable_full_ps3": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "main_ori_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "main_guyan_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION"
+    }
+  },
+  "matlab_storage_policy": {
+    "format": "MATLAB v7.3 HDF5",
+    "array_restore": "Each contracted numeric dataset is converted to float64 and transposed after h5py read.",
+    "right_division": "M/al is only scipy.linalg.solve(al.T,M.T).T; inverse and elementwise division are forbidden."
+  },
+  "root_and_pairing_policy": {
+    "selected_full_q_raw_roots": "Every ordinary full-q eig root is saved, including numerical splits of exact multiple zero roots.",
+    "selected_compact_raw_roots": "For matrix_order>5 every compact root is selected and saved. For matrix_order<=5 every auxiliary compact root is saved for deterministic pairing only.",
+    "fixed_zero_rule": "Only if clearing_power>0, remove a finite root with abs(root)<=max(1e-12,100*eps*solver_order*max(1,median(abs(finite_nonzero_roots)))). This rule is identical for selected full-q and auxiliary compact spectra.",
+    "no_forced_origin_removal": true,
+    "selected_full_q_rho": "max(abs(all finite full-q roots above fixed zero tolerance)); unmatched full-q roots remain in this maximum.",
+    "pairing_cost": "abs(compact_i-full_j)/max(1,abs(compact_i),abs(full_j))",
+    "pairing_algorithm": "scipy.optimize.linear_sum_assignment on rows=all retained compact roots and columns=all retained full-q roots, preserving solver array order; matched full-q columns are physical-root candidates and all other full-q columns are unmatched origin-splitting diagnostics.",
+    "pairing_failure": "If retained full-q count is less than retained compact count, the point fails.",
+    "matched_physical_residual_gate": "Every matched full-q root must have finite polynomial and direct-Laurent residual <=1e-8.",
+    "unmatched_full_policy": "Every unmatched full-q root and its residuals are saved. Their residuals are DIAGNOSTIC_ONLY because these roots represent numerical splitting of cleared-denominator zero multiplicity; no unmatched root is deleted or corrected.",
+    "compact_conditioning_diagnostic": "Full-q/compact rho difference, optimal matching distance, and abs(z)>=0.9 matching distance are recorded as DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING and are not candidate PASS gates.",
+    "compact_selected_route_gate": "For matrix_order>5, every retained selected compact root must have finite polynomial and direct-Laurent residual <=1e-8."
+  },
+  "numeric_gates": {
+    "rho_finite_and_strictly_positive": true,
+    "max_matched_physical_polynomial_residual": 1e-8,
+    "max_matched_physical_direct_laurent_residual": 1e-8,
+    "max_selected_compact_polynomial_residual": 1e-8,
+    "max_selected_compact_direct_laurent_residual": 1e-8,
+    "direct_formula_coefficient_relative_difference": 1e-12,
+    "unmatched_full_count_not_above_theoretical_extra": true,
+    "unmatched_full_max_abs_strictly_below": 0.9,
+    "unmatched_full_must_be_strictly_nondominant": true,
+    "full_q_compact_stable_classification_must_match": true,
+    "full_q_compact_rho_difference_gate_role": "DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING",
+    "full_q_compact_root_distance_gate_role": "DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING",
+    "near_unit_root_threshold": 0.9,
+    "stable_definition": "rho < 1",
+    "critical_definition": "abs(rho-1) <= 1e-8",
+    "gate_relaxation_allowed": false
+  },
+  "modes": {
+    "preflight": "Read-only contract/dependency/manifest/workspace/order/forbidden-input/failed-route checks, then immutable input_seal.",
+    "selftest": "Deterministic synthetic tests of order selection, pairing, physical-root gates, unmatched-root safety gates, and compact-selected gates.",
+    "pilot": "Exactly preregistered sealed-workspace points; requires PASS preflight and selftest.",
+    "full": "Five fresh 31x67 grids; does not copy or read first Step-5 CSV/HDF5 outputs.",
+    "resume": "Only matching candidate checkpoint identity may resume."
+  },
+  "full_grid": {"l_start": 0, "l_end": 30, "j_start": 0, "j_end": 66, "shape": [31, 67], "points_per_route": 2077, "total_points": 10385},
+  "required_pilot_points": [[11, 39], [15, 40], [23, 41], [28, 43]],
+  "pilot_points": {
+    "main_ori_div1": [[0, 0], [1, 0], [0, 1], [10, 10], [30, 66]],
+    "main_guyan_div1": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [11, 39], [15, 40], [23, 41], [28, 43], [30, 66]],
+    "alt_guyan_div1_stable_full_ps3": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [11, 39], [15, 40], [23, 41], [28, 43], [30, 66]],
+    "main_ori_div2": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [11, 39], [15, 40], [23, 41], [28, 43], [30, 66]],
+    "main_guyan_div2": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [11, 39], [15, 40], [23, 41], [28, 43], [30, 66]]
+  },
+  "routes": [
+    {"route_id": "main_ori_div1", "route_role": "PRIMARY", "declared_method": "Original", "division": "div1", "route_formula": "ORI_DIV1_H_RIGHT", "workspace_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat", "workspace_sha256": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923", "matrix_variables": {"M": "MRrt", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"}, "delay_dofs_matlab_1_based": [1, 6]},
+    {"route_id": "main_guyan_div1", "route_role": "PRIMARY", "declared_method": "Guyan", "division": "div1", "route_formula": "GUYAN_DIV1_H_LEFT", "workspace_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat", "workspace_sha256": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7", "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"}, "delay_dofs_matlab_1_based": [1, 2]},
+    {"route_id": "alt_guyan_div1_stable_full_ps3", "route_role": "ALTERNATIVE_NOT_PRIMARY", "declared_method": "Guyan", "division": "div1", "route_formula": "GUYAN_DIV1_H_LEFT", "workspace_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat", "workspace_sha256": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305", "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"}, "delay_dofs_matlab_1_based": [1, 2]},
+    {"route_id": "main_ori_div2", "route_role": "PRIMARY", "declared_method": "Original", "division": "div2", "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE", "workspace_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat", "workspace_sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061", "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK"}, "delay_dofs_matlab_1_based": [1, 2]},
+    {"route_id": "main_guyan_div2", "route_role": "PRIMARY", "declared_method": "Guyan", "division": "div2", "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE", "workspace_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat", "workspace_sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21", "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK"}, "delay_dofs_matlab_1_based": [1, 2]}
+  ],
+  "scientific_contracts": {
+    "sealed_author_file_identity_routes": {"status": "CALCULABLE", "evidence_label": "计算级复现候选", "route_count": 5},
+    "master_thesis_route": {"status": "CONTRACT_NOT_CLOSED", "evidence_label": "待决定", "borrowing_policy": "Do not substitute author-program or historical matrices."},
+    "manuscript_0824_route": {"status": "CONTRACT_NOT_CLOSED", "evidence_label": "待决定", "borrowing_policy": "Do not substitute author-program or historical matrices."}
+  },
+  "noncomputable_failed_routes": [
+    {"route_id": "main_cb_div1", "upstream_status": "EXECUTION_FAIL", "candidate_status": "CONTRACT_NOT_EXECUTABLE", "candidate_policy": "DO_NOT_CREATE"},
+    {"route_id": "main_cb_div2", "upstream_status": "EXECUTION_FAIL", "candidate_status": "CONTRACT_NOT_EXECUTABLE", "candidate_policy": "DO_NOT_CREATE"},
+    {"route_id": "energy_guyan_div1", "upstream_status": "EXECUTION_FAIL", "candidate_status": "CONTRACT_NOT_EXECUTABLE", "candidate_policy": "DO_NOT_CREATE"},
+    {"route_id": "energy_guyan_div2", "upstream_status": "EXECUTION_FAIL", "candidate_status": "CONTRACT_NOT_EXECUTABLE", "candidate_policy": "DO_NOT_CREATE"}
+  ],
+  "per_route_scientific_files": ["point_summary.csv", "roots.h5", "route_status.json"],
+  "per_route_operational_files": ["checkpoint.h5", "checkpoint.json", "point_runtime.csv"],
+  "repeatability_policy": {
+    "deterministic_scientific_files": ["point_summary.csv", "roots.h5", "route_status.json", "run_status.json", "artifact_manifest.csv"],
+    "operational_files_excluded": ["checkpoint.h5", "checkpoint.json", "point_runtime.csv", "run_metadata.json", "logs/step5_fullq_candidate"],
+    "required_checks": ["pilot scientific manifest repeat", "full scientific hash audit", "full recomputation repeat if measured runtime remains practical"]
+  }
+}

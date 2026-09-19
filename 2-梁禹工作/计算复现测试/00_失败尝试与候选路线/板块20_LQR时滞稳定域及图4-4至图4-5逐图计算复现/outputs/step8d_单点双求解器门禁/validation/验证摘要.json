@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "gate": "312键",
+      "status": "PASS",
+      "value": "312",
+      "limit": "312"
+    },
+    {
+      "gate": "R05_R06读取前阻断",
+      "status": "PASS",
+      "value": "12+12",
+      "limit": "12"
+    },
+    {
+      "gate": "冻结试点",
+      "status": "PASS",
+      "value": "exact",
+      "limit": "exact"
+    },
+    {
+      "gate": "物理根数",
+      "status": "PASS",
+      "value": "18728根/0异常",
+      "limit": "18728根/0异常"
+    },
+    {
+      "gate": "Hungarian全物理根",
+      "status": "PASS",
+      "value": "18728根,max=4.397593400540245e-13",
+      "limit": "1e-08"
+    },
+    {
+      "gate": "rho差",
+      "status": "PASS",
+      "value": "312点,max=3.552713678800501e-14",
+      "limit": "1e-09"
+    },
+    {
+      "gate": "稳定_临界分类",
+      "status": "PASS",
+      "value": "312点/0异常",
+      "limit": "0"
+    },
+    {
+      "gate": "状态_多项式残差",
+      "status": "PASS",
+      "value": "312点,max=2.83279170446408e-11",
+      "limit": "1e-08"
+    },
+    {
+      "gate": "复数探针行列式等价",
+      "status": "PASS",
+      "value": "2496探针,max=4.263256414560601e-13",
+      "limit": "1e-08"
+    },
+    {
+      "gate": "gamma独立重算",
+      "status": "PASS",
+      "value": "624通道,max=2.989682671199899e-15",
+      "limit": "1e-12"
+    },
+    {
+      "gate": "两轮确定性证据",
+      "status": "PASS",
+      "value": "MATLAB=2轮,Python=7工件",
+      "limit": "MATLAB=2轮且Python=7/7 equal"
+    }
+  ],
+  "probe_angles_radian": [
+    0.173,
+    0.419,
+    0.731,
+    1.087,
+    1.533,
+    2.071,
+    2.617,
+    2.941
+  ],
+  "probe_revision_note": "首轮非单位模探针在高时滞点因 |z|**m0 下溢造成假FAIL；改用预声明单位圆非实探针，等价式和1e-8门限未变。",
+  "validator_sha256": "62bc70c9ebffd5a530ebb2876acdbe878b7f8e02c69c44af0ade6e1582aa6e95"
+}

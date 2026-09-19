@@ -1,0 +1,176 @@
+PASS | primary files exist and are non-empty: 4/4
+PASS | formal TeX SHA-256: actual='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995', expected='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995'
+PASS | formal BibTeX SHA-256: actual='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A', expected='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A'
+PASS | abstract equals source after removing only its rev wrapper
+PASS | abstract wrapper removal: actual=Counter({'rev': 1, 'safeincludegraphics': 0, 'mapped_figures': 0}), expected=Counter({'rev': 1})
+PASS | six-section body equals source after authorized wrapper/citation/figure conversions
+PASS | authorized body conversion counts: actual=Counter({'rev': 44, 'newcitedoi': 35, 'citedoi': 25, 'safeincludegraphics': 10, 'mapped_figures': 10}), expected=Counter({'rev': 44, 'newcitedoi': 35, 'citedoi': 25, 'safeincludegraphics': 10, 'mapped_figures': 10})
+PASS | unique labels: actual=59, expected=59
+PASS | citation occurrences: actual=60, expected=60
+PASS | unique citation keys: actual=50, expected=50
+PASS | used image order: actual=['fig01_rths_loop_optionD.png', 'fig03_benchmark_geometry_optionC.png', 'fig04b_dof_idealized_optionD.png', 'fig05a_divisionI_concept_optionD.png', 'fig05b_divisionII_concept_optionD.png', 'fig06_eq_div1.pdf', 'fig07_eq_div2.pdf', 'fig08_chirp_div1.pdf', 'fig09_chirp_div2.pdf', 'fig10_stability_domain.pdf'], expected=['fig01_rths_loop_optionD.png', 'fig03_benchmark_geometry_optionC.png', 'fig04b_dof_idealized_optionD.png', 'fig05a_divisionI_concept_optionD.png', 'fig05b_divisionII_concept_optionD.png', 'fig06_eq_div1.pdf', 'fig07_eq_div2.pdf', 'fig08_chirp_div1.pdf', 'fig09_chirp_div2.pdf', 'fig10_stability_domain.pdf']
+PASS | balanced environments
+PASS | forbidden TeX remnants are absent: 0
+PASS | parent-directory references in TeX: actual=0, expected=0
+PASS | local bibliography selected
+PASS | final BibTeX DOI literals: actual=0, expected=0
+PASS | final BibTeX nolinkurl literals: actual=0, expected=0
+PASS | final BibTeX entries: actual=50, expected=50
+PASS | used image exists: fig01_rths_loop_optionD.png
+PASS | used image hash: fig01_rths_loop_optionD.png: actual='92E92289886561083AB92DB3087B3777A07BE04A1C5B1F35BED5FC40BE143C56', expected='92E92289886561083AB92DB3087B3777A07BE04A1C5B1F35BED5FC40BE143C56'
+PASS | used image exists: fig03_benchmark_geometry_optionC.png
+PASS | used image hash: fig03_benchmark_geometry_optionC.png: actual='C7A158F44B8E938A683DB1D08C3B5CAA3181F52B84EE4AC2FFA1B22502D8AB48', expected='C7A158F44B8E938A683DB1D08C3B5CAA3181F52B84EE4AC2FFA1B22502D8AB48'
+PASS | used image exists: fig04b_dof_idealized_optionD.png
+PASS | used image hash: fig04b_dof_idealized_optionD.png: actual='CAD6994A2C9979D3F2F452097282202F401CDA87BDE22D33E2642704B56AC1FB', expected='CAD6994A2C9979D3F2F452097282202F401CDA87BDE22D33E2642704B56AC1FB'
+PASS | used image exists: fig05a_divisionI_concept_optionD.png
+PASS | used image hash: fig05a_divisionI_concept_optionD.png: actual='2A6F1DB254E664D38F3C7E45309C9B01DA45CEAEDEFD26F6E8DB2D5F1F038D13', expected='2A6F1DB254E664D38F3C7E45309C9B01DA45CEAEDEFD26F6E8DB2D5F1F038D13'
+PASS | used image exists: fig05b_divisionII_concept_optionD.png
+PASS | used image hash: fig05b_divisionII_concept_optionD.png: actual='54E8E86F1F0D3924F19456014BBCF6AE93FF2648981BB7AF5F4E28351E70493B', expected='54E8E86F1F0D3924F19456014BBCF6AE93FF2648981BB7AF5F4E28351E70493B'
+PASS | used image exists: fig06_eq_div1.pdf
+PASS | used image hash: fig06_eq_div1.pdf: actual='D330C293C415309179514169A503F2E7BEDA8329E1FCFE07F79C5286CA48FFF0', expected='D330C293C415309179514169A503F2E7BEDA8329E1FCFE07F79C5286CA48FFF0'
+PASS | used image exists: fig07_eq_div2.pdf
+PASS | used image hash: fig07_eq_div2.pdf: actual='CA4AE65E23994059A6BB3BB2BB44E11526CAC47CC81B2A83775F79760910BC5F', expected='CA4AE65E23994059A6BB3BB2BB44E11526CAC47CC81B2A83775F79760910BC5F'
+PASS | used image exists: fig08_chirp_div1.pdf
+PASS | used image hash: fig08_chirp_div1.pdf: actual='7FBF5443DD6E1CC541C808992DF038139828CC1B4757376CC31C6C842F8626FC', expected='7FBF5443DD6E1CC541C808992DF038139828CC1B4757376CC31C6C842F8626FC'
+PASS | used image exists: fig09_chirp_div2.pdf
+PASS | used image hash: fig09_chirp_div2.pdf: actual='3C3EEE3D8DF36501DC23A4669622EB2336C960CF57DB1816500386373145F5CF', expected='3C3EEE3D8DF36501DC23A4669622EB2336C960CF57DB1816500386373145F5CF'
+PASS | used image exists: fig10_stability_domain.pdf
+PASS | used image hash: fig10_stability_domain.pdf: actual='EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847', expected='EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847'
+PASS | local support file exists: cas-sc.cls
+PASS | local support file exists: cas-common.sty
+PASS | local support file exists: elsarticle-num-names.bst
+PASS | local support file exists: cas-email.jpeg
+PASS | local support file exists: cas-facebook.jpeg
+PASS | local support file exists: cas-gplus.jpeg
+PASS | local support file exists: cas-linkedin.jpeg
+PASS | local support file exists: cas-twitter.jpeg
+PASS | local support file exists: cas-url.jpeg
+PASS | accepted Stage 4 PDF exists
+PASS | formal final PDF exists
+PASS | accepted PDF SHA-256: actual='11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101', expected='11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101'
+PASS | final PDF SHA-256: actual='11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101', expected='11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101'
+PASS | final/accepted PDF byte equality
+PASS | final PDF pages: actual=28, expected=28
+PASS | final PDF is not encrypted
+PASS | double question marks: actual=0, expected=0
+PASS | citation placeholders: actual=0, expected=0
+PASS | visible DOI: actual=0, expected=0
+PASS | visible nolinkurl: actual=0, expected=0
+PASS | draft subtitle: actual=0, expected=0
+PASS | missing-figure notice: actual=0, expected=0
+PASS | visible rev command: actual=0, expected=0
+PASS | font records: actual=28, expected=28
+PASS | all fonts embedded: 28/28
+PASS | pdfplumber pages: actual=28, expected=28
+PASS | uniform final PDF dimensions: actual=1, expected=1
+PASS | red PDF text characters: actual=0, expected=0
+PASS | out-of-bounds PDF text characters: actual=0, expected=0
+PASS | frozen-source validator exit code: actual=0, expected=0
+PASS | frozen-source validator PASS marker
+PASS | Stage 3 bibliography validator exit code: actual=0, expected=0
+PASS | Stage 3 bibliography validator PASS marker
+PASS | Stage 4 PDF validator exit code: actual=0, expected=0
+PASS | Stage 4 PDF validator PASS marker
+STATUS: PASS
+
+## frozen-source validator
+PASS | frozen files: 19
+PASS | citation commands: 60
+PASS | unique citation keys: 50
+PASS | BibTeX entries: 50
+PASS | missing citation keys: 0
+PASS | uncited BibTeX entries: 0
+PASS | rev/citedoi/newcitedoi/newcommand: 45/25/35/6
+PASS | expected missing figure path: figure/selected_v2/fig02_rths_loop_optionC.png
+## Stage 3 bibliography validator
+RHTS STAGE 3 BIBTEX VALIDATION
+
+Mode: full
+Source Bib: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\rths_references_verified_expanded.bib
+Target Bib: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\reference_50refs_clean.bib
+Target TeX: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\main_50refs_clean.tex
+Crossref cache: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\verification_50refs\crossref_metadata_50.json
+Metadata audit: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\verification_50refs\stage3_metadata_audit.md
+Target bytes: 16906
+Target SHA-256: 7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A
+
+Source entries: 50
+Target entries: 50
+Citation occurrences: 60
+Unique cited keys: 50
+Parsed authors in Family, Given form: 170/170
+Duplicate normalized titles: 0
+Target DOI literals: 0
+Protected source DOI values: 50 (50 unique)
+Crossref records: 50
+Crossref titles compared: 50
+Crossref author lists compared: 50
+Crossref cache SHA-256: 013C3C48255FFFFAF3102F065B0EC98B1189AD93E56C43CBA3DD221CB00199AF
+
+STATUS: PASS
+PASS | 50-key TeX/Bib closure and all static bibliography contracts passed
+PASS | All original DOI values map one-to-one to successful Crossref cache records
+PASS | Target metadata agrees with populated Crossref fields
+PASS | Stage-3 metadata audit interface passed
+## Stage 4 PDF validator
+PASS  required non-empty files: 7/7
+PASS  TeX SHA-256: actual='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995', expected='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995'
+PASS  BibTeX SHA-256: actual='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A', expected='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A'
+INFO  PDF bytes: 1431589
+INFO  PDF SHA-256: 11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101
+PASS  forbidden source token \\rev: actual=0, expected=0
+PASS  forbidden source token \\citedoi: actual=0, expected=0
+PASS  forbidden source token \\newcitedoi: actual=0, expected=0
+PASS  forbidden source token \\newcommand: actual=0, expected=0
+PASS  forbidden source token \\nolinkurl: actual=0, expected=0
+PASS  forbidden source token literal DOI: actual=0, expected=0
+PASS  forbidden source token red text command: actual=0, expected=0
+PASS  forbidden source token \\safeincludegraphics: actual=0, expected=0
+PASS  sections: actual=6, expected=6
+PASS  subsections: actual=12, expected=12
+PASS  equation environments: actual=22, expected=22
+PASS  subequations environments: actual=2, expected=2
+PASS  align environments: actual=2, expected=2
+PASS  table environments: actual=5, expected=5
+PASS  figure environments: actual=9, expected=9
+PASS  included graphics: actual=10, expected=10
+PASS  all included graphics exist: 10/10
+PASS  all included graphics loaded by pdfLaTeX: 10/10
+PASS  citation occurrences: actual=60, expected=60
+PASS  unique cited keys: actual=50, expected=50
+PASS  bibcite records: actual=50, expected=50
+PASS  bibitems: actual=50, expected=50
+PASS  newlabel records: actual=59, expected=59
+PASS  LaTeX errors: actual=0, expected=0
+PASS  undefined citations: actual=0, expected=0
+PASS  undefined references: actual=0, expected=0
+PASS  rerun requests: actual=0, expected=0
+PASS  overfull boxes: actual=0, expected=0
+PASS  underfull boxes: actual=0, expected=0
+PASS  missing characters: actual=0, expected=0
+PASS  missing files: actual=0, expected=0
+PASS  BibTeX warnings: actual=0, expected=0
+PASS  BibTeX errors: actual=0, expected=0
+PASS  BibTeX completed: 50 entries
+PASS  PDF pages: actual=28, expected=28
+PASS  PDF is not encrypted
+PASS  double question marks: actual=0, expected=0
+PASS  citation placeholders: actual=0, expected=0
+PASS  visible DOI: actual=0, expected=0
+PASS  visible nolinkurl: actual=0, expected=0
+PASS  draft subtitle: actual=0, expected=0
+PASS  missing-figure notice: actual=0, expected=0
+PASS  visible revision command: actual=0, expected=0
+PASS  title present
+PASS  abstract present
+PASS  references present
+PASS  font records: actual=28, expected=28
+PASS  all fonts embedded: 28/28
+PASS  pdfplumber pages: actual=28, expected=28
+PASS  uniform page dimensions: actual=1, expected=1
+INFO  page dimensions: [(544.25, 742.68)]
+PASS  all pages contain extractable text
+PASS  out-of-bounds text characters: actual=0, expected=0
+PASS  red PDF text characters: actual=0, expected=0
+INFO  PDF text colors: {'(0.0,)': 45770, '(0.5,)': 6}
+STATUS: PASS

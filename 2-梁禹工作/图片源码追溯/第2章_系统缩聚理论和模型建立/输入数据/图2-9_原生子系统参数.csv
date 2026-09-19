@@ -1,0 +1,2 @@
+子系统语义,原模型显示名,SID,输入块,刚度增益,阻尼增益,质量增益,求和块,输出块,定位规则
+物理子结构恢复力计算,Feedback Force Computation1,4367,输入位移,KPrt,CPrt,MPrt,Sum,反馈力,"在IncludeCommented=on条件下唯一同时包含KPrt、CPrt、MPrt三个一级Gain块的顶层子系统；论文用分支为Commented=on"

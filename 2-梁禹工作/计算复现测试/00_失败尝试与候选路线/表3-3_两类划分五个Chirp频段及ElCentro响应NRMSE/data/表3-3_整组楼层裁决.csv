@@ -1,0 +1,5 @@
+﻿division,excitation,target_cell_count,floor1_rounded_matches,floor2_rounded_matches,floor3_rounded_matches,floor1_absolute_difference_sum,floor2_absolute_difference_sum,floor3_absolute_difference_sum,inferred_uniform_floor,best_match_count,all_cells_match_on_one_floor,inference_rule,evidence_label
+1,Chirp,10,1,9,2,1.5071741155418572,0.0003876747807621087,0.3773831131407214,2,9,False,unique maximum rounded matches using historical route; no per-cell floor switching,部分计算闭合/历史值待决定
+1,ElCentro,2,0,2,0,0.05198047247080109,5.7575355481772304e-05,0.02089617035449365,2,2,True,unique maximum rounded matches using historical route; no per-cell floor switching,计算级复现（当前冻结响应；楼层由整组唯一闭合推断）
+2,Chirp,10,0,0,0,22.6905403761123,23.62016325820893,23.936363610986543,NONE,0,False,unique maximum rounded matches using historical route; no per-cell floor switching,部分计算闭合/历史值待决定
+2,ElCentro,2,0,0,2,0.026075162203951317,0.14164074482174938,1.8583884184936172e-05,3,2,True,unique maximum rounded matches using historical route; no per-cell floor switching,计算级复现（当前冻结响应；楼层由整组唯一闭合推断）

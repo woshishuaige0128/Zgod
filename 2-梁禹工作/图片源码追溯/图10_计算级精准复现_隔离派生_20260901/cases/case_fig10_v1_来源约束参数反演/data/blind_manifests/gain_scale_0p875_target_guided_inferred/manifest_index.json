@@ -1,0 +1,27 @@
+{
+  "contract_count": 3,
+  "files": [
+    {
+      "bytes": 25343,
+      "name": "B1.json",
+      "sha256": "ABDFF24AC0F659FEB3ED6AF413F52768F22B8A505F5DD1424F0A1BFEEA1F6827"
+    },
+    {
+      "bytes": 25343,
+      "name": "B2.json",
+      "sha256": "B0F12533A33455D7DCA5450C25156E9FF278E017350BF541AC03623DA8D67931"
+    },
+    {
+      "bytes": 25415,
+      "name": "B3.json",
+      "sha256": "693E8E6A134450205670D9B5FA91A2CABEF6A5B439154CF3D649E427210030DA"
+    }
+  ],
+  "full_grid_points_per_route": 2077,
+  "route_count": 18,
+  "schema_version": "FIG10_BLIND_MANIFEST_INDEX_V1",
+  "scientific_search_executed": false,
+  "sentinel_points_per_route": 10,
+  "sparse_band_points_per_route": 465,
+  "status": "PASS"
+}

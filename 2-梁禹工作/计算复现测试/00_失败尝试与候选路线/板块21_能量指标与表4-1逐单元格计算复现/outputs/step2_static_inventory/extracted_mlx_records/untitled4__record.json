@@ -1,0 +1,145 @@
+{
+  "archive_entries": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "matlab/document.xml",
+    "matlab/output.xml",
+    "metadata/coreProperties.xml",
+    "metadata/mwcoreProperties.xml",
+    "metadata/mwcorePropertiesExtension.xml",
+    "metadata/mwcorePropertiesReleaseInfo.xml"
+  ],
+  "assignments": [
+    "E_modal",
+    "E_modal_r",
+    "E_weighted",
+    "E_weighted_r",
+    "Gamma",
+    "Gamma2",
+    "Gamma2_norm",
+    "K",
+    "M",
+    "delta_E_weighted",
+    "omega",
+    "omega2",
+    "omega2_r",
+    "omega_r",
+    "phi",
+    "phi_r",
+    "r",
+    "r_r"
+  ],
+  "code_cells": [
+    "% 原系统模态\nK = KPrt;\nM = MPrt;\n\n% 模态分析\n[phi, omega2] = eig(K, M);\nomega = sqrt(diag(omega2));\nE_modal = 0.5 * omega.^2;\n\n% 加权因子（如模态参与因子）\nr = [1;0;0;1;0;0;1;0;0];     % 激励方向\nr_r = TP'*r\n% 假设你已有 M, phi, r\nGamma = phi' * M * r;\nGamma2 = Gamma.^2;\nGamma2_norm = Gamma2 / sum(Gamma2);  % 归一化\n\n% 可用于加权能量\nomega = sqrt(diag(omega2));  % 来自 eig(K, M)\nE_weighted = sum(Gamma2_norm .* E_modal);\n\n% 缩聚后相同步骤\n[phi_r, omega2_r] = eig(K_r, M_r);\nomega_r = sqrt(diag(omega2_r));\nE_modal_r = 0.5 * omega_r.^2;\nGamma = phi_r' * M_r * r_r;\nGamma2 = Gamma.^2;\nGamma2_norm = Gamma2 / sum(Gamma2);  % 归一化\n\n% 可用于加权能量\nomega = sqrt(diag(omega2));  % 来自 eig(K, M)\nE_weighted_r = sum(Gamma2_norm .* E_modal_r);\n\n% 加权能量变化率\ndelta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100\n\n"
+  ],
+  "document_xml_sha256": "93B68BF0B704E9C6111516B018F4502D4FF042B66F8E0A45FE8D3385D19804D1",
+  "function_calls": [
+    "diag",
+    "eig",
+    "sqrt",
+    "sum"
+  ],
+  "identifiers": [
+    "E_modal",
+    "E_modal_r",
+    "E_weighted",
+    "E_weighted_r",
+    "Gamma",
+    "Gamma2",
+    "Gamma2_norm",
+    "K",
+    "KPrt",
+    "K_r",
+    "M",
+    "MPrt",
+    "M_r",
+    "TP",
+    "delta_E_weighted",
+    "diag",
+    "eig",
+    "omega",
+    "omega2",
+    "omega2_r",
+    "omega_r",
+    "phi",
+    "phi_r",
+    "r",
+    "r_r",
+    "sqrt",
+    "sum"
+  ],
+  "output_metadata": {
+    "error_element_count": 0,
+    "error_messages": "",
+    "evaluation_state": "manual",
+    "output_status": "ready"
+  },
+  "output_xml_sha256": "97742E9FF99325A354BAED840495685260F4C122D2DAED28722CCE4BC640638C",
+  "outputs": [
+    {
+      "columns": "1",
+      "element_sha256": "6CE84B699DF3E9938FBFE667F7B686A21B9F955A8C98F0A0389012A3F5003C07",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"1.7324\"}",
+        "header": "",
+        "name": "r_r",
+        "rows": "2",
+        "subtype": "double",
+        "type": "double",
+        "value": "    1.7324\n   -0.6225\n",
+        "varSize": "2×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "12"
+      ],
+      "name": "r_r",
+      "output_index": 1,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[1]",
+      "rows": "2",
+      "value": "    1.7324\n   -0.6225\n",
+      "var_size": "2×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "1",
+      "element_sha256": "C25C03096B5393EC7D6BC09A8C7218B0A6840FC3E857674770A0C19B7EE9051A",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "name": "delta_E_weighted",
+        "rows": "1",
+        "value": "-81.4718"
+      },
+      "line_numbers": [
+        "35"
+      ],
+      "name": "delta_E_weighted",
+      "output_index": 2,
+      "output_type": "variable",
+      "output_xpath": "/embeddedOutputs/outputArray/element[2]",
+      "rows": "1",
+      "value": "-81.4718",
+      "var_size": "",
+      "var_type": ""
+    }
+  ],
+  "paragraphs": [
+    {
+      "cell_index": 1,
+      "kind": "code",
+      "paragraph_index": 1,
+      "style": "code",
+      "text": "% 原系统模态\nK = KPrt;\nM = MPrt;\n\n% 模态分析\n[phi, omega2] = eig(K, M);\nomega = sqrt(diag(omega2));\nE_modal = 0.5 * omega.^2;\n\n% 加权因子（如模态参与因子）\nr = [1;0;0;1;0;0;1;0;0];     % 激励方向\nr_r = TP'*r\n% 假设你已有 M, phi, r\nGamma = phi' * M * r;\nGamma2 = Gamma.^2;\nGamma2_norm = Gamma2 / sum(Gamma2);  % 归一化\n\n% 可用于加权能量\nomega = sqrt(diag(omega2));  % 来自 eig(K, M)\nE_weighted = sum(Gamma2_norm .* E_modal);\n\n% 缩聚后相同步骤\n[phi_r, omega2_r] = eig(K_r, M_r);\nomega_r = sqrt(diag(omega2_r));\nE_modal_r = 0.5 * omega_r.^2;\nGamma = phi_r' * M_r * r_r;\nGamma2 = Gamma.^2;\nGamma2_norm = Gamma2 / sum(Gamma2);  % 归一化\n\n% 可用于加权能量\nomega = sqrt(diag(omega2));  % 来自 eig(K, M)\nE_weighted_r = sum(Gamma2_norm .* E_modal_r);\n\n% 加权能量变化率\ndelta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100\n\n",
+      "text_sha256": "5D6F2C8EA90A57A38DA7B816066CE57E47967E769599E08F6CE2C31C1D630328",
+      "xml_xpath": "/w:document/w:body/w:p[1]"
+    }
+  ],
+  "source_name": "untitled4.mlx",
+  "source_sha256": "AA7CB11E993998938AFDC1A085A1E9FC8EDB03151DBD33B34A1684C71142BF6D",
+  "source_size_bytes": 3803,
+  "text_cells": []
+}

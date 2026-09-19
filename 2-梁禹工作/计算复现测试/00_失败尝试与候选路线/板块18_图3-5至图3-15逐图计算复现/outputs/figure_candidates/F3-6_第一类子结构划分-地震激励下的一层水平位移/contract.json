@@ -1,0 +1,145 @@
+{
+  "schema_version": "board18.figure_contract.v1",
+  "object_id": "F3-6",
+  "figure_number": "3-6",
+  "object_name": "第一类子结构划分-地震激励下的一层水平位移",
+  "object_directory": "F3-6_第一类子结构划分-地震激励下的一层水平位移",
+  "versions": [
+    {
+      "version": "standard",
+      "figure_basename": "F3-6_第一类子结构划分-地震激励下的一层水平位移",
+      "panels": [
+        {
+          "panel": "full",
+          "source_dataset": "division1_elcentro",
+          "source_mat_filename": "第一类划分_ElCentro地震响应.mat",
+          "floors": [
+            "Floor 1"
+          ],
+          "methods": [
+            "Original",
+            "Craig-Bampton",
+            "Guyan"
+          ],
+          "window_start_s": 0.0,
+          "window_end_s": 40.0,
+          "window_inclusive": true
+        },
+        {
+          "panel": "zoom_1",
+          "source_dataset": "division1_elcentro",
+          "source_mat_filename": "第一类划分_ElCentro地震响应.mat",
+          "floors": [
+            "Floor 1"
+          ],
+          "methods": [
+            "Original",
+            "Craig-Bampton",
+            "Guyan"
+          ],
+          "window_start_s": 10.0,
+          "window_end_s": 11.0,
+          "window_inclusive": true
+        },
+        {
+          "panel": "zoom_2",
+          "source_dataset": "division1_elcentro",
+          "source_mat_filename": "第一类划分_ElCentro地震响应.mat",
+          "floors": [
+            "Floor 1"
+          ],
+          "methods": [
+            "Original",
+            "Craig-Bampton",
+            "Guyan"
+          ],
+          "window_start_s": 21.5,
+          "window_end_s": 22.5,
+          "window_inclusive": true
+        }
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "dataset_id": "division1_elcentro",
+      "filename": "第一类划分_ElCentro地震响应.mat",
+      "relative_path": "outputs/adapted_run1/输入数据/第一类划分_ElCentro地震响应.mat",
+      "sha256": "90F5C7D8C2C46569623E25C5062D039A1C10463C6B35F5F71995D910545CD667"
+    }
+  ],
+  "mat_method_order": [
+    "Original",
+    "Guyan",
+    "Craig-Bampton"
+  ],
+  "mat_floor_order": [
+    "Floor 1",
+    "Floor 2",
+    "Floor 3"
+  ],
+  "plotting_method_order": [
+    "Original",
+    "Craig-Bampton",
+    "Guyan"
+  ],
+  "sample_count": 40961,
+  "time_contract": {
+    "start_s": 0.0,
+    "end_s": 40.0,
+    "step_s": 0.0009765625,
+    "sample_count": 40961,
+    "validation": "exact array equality with arange(40961)/1024"
+  },
+  "style": {
+    "font_family": "DejaVu Serif",
+    "font_size_pt": 9,
+    "pdf_fonttype": 42,
+    "ps_fonttype": 42,
+    "no_title": true,
+    "no_grid": true,
+    "ticks": "inward on all four sides",
+    "method_styles": {
+      "Original": {
+        "color": "#555555",
+        "linestyle": "--",
+        "marker": "o",
+        "zorder": 4
+      },
+      "Craig-Bampton": {
+        "color": "#EE6677",
+        "linestyle": "-",
+        "marker": "^",
+        "zorder": 3
+      },
+      "Guyan": {
+        "color": "#4477AA",
+        "linestyle": "-.",
+        "marker": "s",
+        "zorder": 2
+      }
+    },
+    "floor_styles_for_F3_5": null
+  },
+  "output_contract": {
+    "figures_directory": "figures",
+    "figure_plot_data_csv": "data/figure_plot_data.csv",
+    "metrics_csv": "metrics.csv",
+    "contract_json": "contract.json",
+    "pdf": "single-page vector with embedded TrueType fonts",
+    "png_dpi": 600
+  },
+  "comparison_evidence": {
+    "source_csv": "outputs/comparisons/response_column_comparisons.csv",
+    "sha256": "3E8B2C9CFDB6EFBB7D8512413488043430F28D180C7E89829B5074C00497C13E",
+    "row_count": 135,
+    "expected_row_count": 135,
+    "comparisons": [
+      "adapted_run1_vs_run2",
+      "adapted_run1_vs_2026_plotting_baseline",
+      "independent_rk4_vs_adapted_run1"
+    ],
+    "all_pass": true
+  },
+  "historical_value_status": "历史值：论文原始逐点曲线数组未找到；本对象由现存代码必要适配路线的adapted_run1重算MAT绘图，最高标签为计算级复现候选。"
+}

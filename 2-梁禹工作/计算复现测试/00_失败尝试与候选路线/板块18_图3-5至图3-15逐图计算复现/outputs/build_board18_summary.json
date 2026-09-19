@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-08-24T18:23:56.369173+00:00",
+  "script": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\code\\build_board18_contract_and_freeze.py",
+  "script_sha256_before_summary_write": "822E242373D2AC6A503F80960FF39775D788F3537B9B778D11B735D9E1B7B75D",
+  "overall_status": "PASS",
+  "figure_contract_rows": 11,
+  "figure_contract_sha256": "8E5B5A0E8340E10797DBE3E1C19FF0CC35C242E6A2ACA12DE384B83ADE115DBF",
+  "baseline_dataset_count": 5,
+  "baseline_dataset_pass_count": 5,
+  "protected_source_count": 326,
+  "protected_source_match_count": 326,
+  "board17_artifact_count": 305,
+  "board17_artifact_match_count": 305,
+  "freeze_source_count": 80,
+  "freeze_match_count": 80,
+  "freeze_manifest_sha256": "C3622F98E9CBCD5C1CC8B45C7225027F29F8BB6556FDFF0ACD199AD0F82185BB",
+  "history_scan_count": 42,
+  "history_extension_counts": {
+    ".csv": 4,
+    ".mat": 38
+  },
+  "history_status_counts": {
+    "EXCLUDED_DIFFERENT_ANALYSIS": 17,
+    "EXCLUDED_EXCITATION_ONLY": 12,
+    "EXCLUDED_NO_TIME_RESPONSE_SIGNATURE": 3,
+    "EXCLUDED_STRUCTURAL_MATRIX": 4,
+    "MANUAL_REVIEW_REQUIRED": 6
+  },
+  "history_potential_review_count": 0,
+  "history_manual_review_count": 6,
+  "success_directories_created": 0,
+  "preexisting_success_directories": [],
+  "protected_pass": true,
+  "board17_pass": true,
+  "baseline_pass": true,
+  "freeze_pass": true,
+  "thesis_hash_ok": true,
+  "source_assets_modified": false,
+  "simulation_run": false,
+  "plot_run": false
+}

@@ -1,0 +1,82 @@
+{
+  "alias": "r01",
+  "case_id": "r01_p1",
+  "cb_K": "KR_cb",
+  "cb_M": "MR_cb",
+  "cb_T": "T_cb",
+  "cb_sum_scope": "SELECTED",
+  "consumer_order": [
+    1,
+    6,
+    11,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15
+  ],
+  "coordinate_status": "PASS",
+  "d_cb": [
+    1,
+    2,
+    3
+  ],
+  "d_guyan": [
+    1,
+    2,
+    3
+  ],
+  "d_orig": [
+    1,
+    2,
+    3
+  ],
+  "division_identity": "旧15自由度水平主坐标参考体系；不绑定表4-1两类整体划分",
+  "energy_normalized": true,
+  "excitation_rule": "BINARY_FIRST_3",
+  "full_K": "KRrt",
+  "full_M": "MRrt",
+  "guyan_K": "KRren",
+  "guyan_M": "MRren",
+  "guyan_T": "T",
+  "guyan_sum_scope": "ALL",
+  "historical_denominator": "ORIGINAL",
+  "historical_target_file": "h.mat",
+  "orig_sum_scope": "SELECTED",
+  "parameter_family": "rho=785e3.*1.9",
+  "producer_order": [
+    1,
+    6,
+    11,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15
+  ],
+  "replicate": "rep01",
+  "result_boundaries": [
+    "AUTHOR_ROUTE_REPRODUCED",
+    "PAPER_LITERAL_CONDITIONAL",
+    "TABLE4_1_NOT_ADJUDICATED"
+  ],
+  "route_id": "reference15_pd19_energy",
+  "route_label_cn": "旧15自由度参考体系：PD参数族1.9→energy_zonghe",
+  "schema_version": "BOARD21_STEP4_CASE_V1",
+  "staged_relative_dir": "r01/p1",
+  "workspace_file": "u.mat"
+}

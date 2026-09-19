@@ -1,0 +1,27 @@
+﻿field_id,pdf_page,printed_page,equation_or_figure,evidence,contract_value,status,reproduction_constraint
+dt,70,60,图4-4/图4-5后正文,采样时间dt=1/1024 s；坐标是采样时间倍数,1/1024 s=0.9765625 ms,SPECIFIED,图轴显示整数步，不得把1格精确写成1 ms
+integer_delay,57,47,式(4-2),tau=n*Delta t，n属于正整数；延迟为z^(-n),整数步时滞,SPECIFIED,论文理论不含n=0；若源码从0开始必须列为冲突
+cr_alpha,65,55,式(4-24),加速度项含标量alpha，但附近及全文没有数值定义,MISSING,NOT_CLOSED,不可把源码矩阵al当成论文标量alpha
+source_newmark_alpha,65,55,论文外部代码补全,两套后缀上游Newmark依赖均保存alpha=0.25、delta=0.5,alpha=0.25,SOURCE_COMPLETION_ONLY,可以作为有限候选输入，但不得写成论文已给数值
+delay_block,65,55,式(4-25),时滞左乘整个C2/K2界面反馈括号,H(z)[sC2+K2],SPECIFIED,实现为局部通道H左乘
+H_definition,66,56,式(4-26)后正文,"H(z)=diag(z^(-j),z^(-i))",2×2对角时滞矩阵,SPECIFIED,j/i与图轴仍需源码绑定
+H_orientation,66,56,式(4-27)、(4-28),论文只写H左乘C2/K2块，没有右乘H,LEFT,SPECIFIED,右乘H的作者脚本属于冲突历史路线
+delayed_terms,63,54,式(4-18)、(4-21),仅C2、K2受作动器动态误差影响,C2和K2,SPECIFIED,M、C1、K1不得进入H
+division1_channels,69,59,4.5节正文,第一类主自由度psi1、psi6，两个受控自由度各有独立时滞,psi1/psi6,SPECIFIED,两通道都进入H
+division2_channels,69,59,4.5节正文,第二类主自由度psi1、psi6、psi11；psi1/psi6有时滞，psi11无时滞,"delay(psi1,psi6); no_delay(psi11)",SPECIFIED,第二类不能改成延迟psi1/psi11
+lqr_equation,68,58,式(4-31),xdot=A x+B u,连续时间状态空间,SYMBOLIC_ONLY,A/B数值与输入单位未给全
+lqr_objective,68,58,式(4-32),0到无穷的连续时间二次性能指标,continuous infinite horizon,SPECIFIED,不能用离散性能指标冒充
+lqr_Q,68,58,式(4-32)后正文,Q前两项修正位移、后两项修正速度,"diag(1e6,1e6,1e4,1e4)",SPECIFIED,"状态顺序[q1,q2,qdot1,qdot2]"
+lqr_R,68,58,式(4-32)后正文,两输入权重,"diag(1e-2,1e-2)",SPECIFIED,两作动器
+lqr_solver,68,58,式(4-33),连续代数Riccati方程,CARE,SPECIFIED,不得用DARE/dlqr替代后仍称论文原式
+lqr_gain,68,58,式(4-34)、(4-35),K=R^-1 B^T P；u=-Kx,连续时间状态反馈,SPECIFIED,输入语义与单位仍未闭合
+lqr_partition,68,59,式(4-38)至(4-40),K_qdot与K_q分别修正速度和位移,s*K_qdot+K_q,SPECIFIED,s=(z-1)/(z*dt)
+lqr_delay_placement,69,59,式(4-38)至(4-40),H[C2/K2]+[K_qdot/K_q],OUTSIDE_H,SPECIFIED_FORMULA_TEXT_CONFLICT,公式明确在H外；正文信号路径未解释
+division1_lqr,70,60,4.4.2、4.5、图4-4,同章明确选用LQR并随后绘制第一类稳定域,YES,SPECIFIED,图4-4完整复现应包含LQR
+division2_lqr,70,60,4.4.2、4.5、图4-5,章节语义指向LQR闭环，但三主自由度如何映射到四维状态未说明,YES_BUT_MAPPING_MISSING,NOT_CLOSED,不得臆造psi11状态/反馈映射
+stability_metric,66,56,式(4-29),主导闭环极点为全部极点的最大模,rho=max(abs(poles)),SPECIFIED,不是最大实部
+stability_class,66,56,式(4-29)后正文,rho<1稳定，rho=1临界，rho>1失稳,stable iff rho<1,SPECIFIED,等于1不得归入稳定
+axes,70,60,图4-4、图4-5,横轴tau1、纵轴tau2，单位为采样步数,x=tau1; y=tau2,SPECIFIED,j/i到横纵轴仍须源码裁决
+grid_shape,70,60,图4-4、图4-5,PDF未给循环上限、31×67尺寸或数组下标约定,MISSING,NOT_CLOSED,网格范围只能来自作者MAT/源码
+root_polynomial,66,56,式(4-23)等,根分解排版使用求和符号，和特征多项式逻辑冲突,按特征方程直接求根,TYPOGRAPHICAL_CONFLICT,不得照抄求和根式
+K3_label,64,54,式(4-18)、(4-20),式(4-20)右侧K2与前式K3标号不一致,INTERNAL_CONFLICT,TYPOGRAPHICAL_CONFLICT,装配须回查源码

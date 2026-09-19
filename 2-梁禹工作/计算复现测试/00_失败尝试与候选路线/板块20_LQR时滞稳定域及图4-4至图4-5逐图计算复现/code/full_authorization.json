@@ -1,0 +1,26 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_full_authorization_v1",
+  "authorization_status": "AUTHORIZED",
+  "effective_authorization": true,
+  "authorized_modes": [
+    "full",
+    "resume"
+  ],
+  "checkpoint_every": 25,
+  "full_output_relpath": "outputs/step5_fullq_svd_candidate_v4/full",
+  "gate_identity_sha256": {
+    "contract": "83F2DBFF885C9E9BCDF92E1BA6ED20EAC64CA82F25AE798559A07B9E496E58EC",
+    "launcher": "6E4512997E12C733570B1B91B669315FE924745C20E08AE0C91DA81C1ADE155C",
+    "revision": "03AFD62B2CB57B883C389D9E748F918EE1DE9860D239981891DD6E837F01A61F",
+    "binding": "6689B7B80D05DB74D99956DC551044CCEE319ED69394A1C7DA1819AB4F3EB427"
+  },
+  "root_attestation": {
+    "generated_by_role": "ROOT_AGENT",
+    "basis_type": "USER_ORIGINAL_GOAL",
+    "user_original_goal_verbatim": "/goal [$eli5](C:\\Users\\lenovo\\\\.codex\\skills\\eli5\\SKILL.md) 你建立一个test的文件夹，我知道你现在可以根据mat来进行绘图，但是我需要完整的复制梁禹的整个工作的线路，我需要你根据他的硕士大论文，去复现他的每一个计算结果，哪怕不是对的，但是我想知道他是怎么得到这样的计算结果的。我要求逐图复现，我所设想的思路是：首先阅读他的硕士大论文，然后寻找当前的所有代码，看看哪个符合，然后进行尝试，对比的基准就是绘图时候用到的数据。\n如果成功复现，那么就建立一个子文件夹，命名为那个图名。否则进行其他可能性的尝试。\n当所有计算结果都完成后，在最后你要用eli5的skill给我详细解释梁禹是怎么工作的，和我们的小论文（manuscript\\_0824.tex）所描述的有什么区别。",
+    "user_original_goal_sha256": "1B2A79416D1625790B3782CD0FB07A62CDF9333433FC23B3CEE3AC7707DFA686",
+    "decision": "AUTHORIZE_V4_FULL_AFTER_INDEPENDENT_PILOT_POSTCHECK_PASS_AND_GATE_REVIEW",
+    "pilot_audit_was_pass_before_authorization": true,
+    "formal_gate_was_independently_reviewed": true
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "registry_version": "known-board20-contracts-v1",
+  "purpose": "登记板块20已经实际完成全网格的R01至R04科学合同，并单列未进入全网格的R05与R06诊断合同；用于板块28按科学合同哈希去重。",
+  "hash_contract": {
+    "algorithm": "sha256",
+    "canonicalization": "UTF-8 JSON; ensure_ascii=false; sort_keys=true; separators=(',', ':'); allow_nan=false",
+    "included": "scientific_contract only",
+    "excluded": [
+      "contract_id",
+      "display_name",
+      "paths",
+      "timestamps",
+      "provenance_wording",
+      "evaluation_results"
+    ]
+  },
+  "source_fingerprints": [
+    {
+      "source_id": "board20_step8b_frozen_mat",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/步骤8B_基础矩阵与选择矩阵.mat",
+      "sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "role": "冻结结构、恢复、选择与局部矩阵输入"
+    },
+    {
+      "source_id": "board20_candidate_chain_contract",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/有限候选整链清单.csv",
+      "sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+      "role": "R01至R06来源、可执行性与公式有效性合同"
+    },
+    {
+      "source_id": "board20_conflict_adjudication",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/合同冲突与裁决.csv",
+      "sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+      "role": "CARE/DARE、alpha/al、H内外、psi6/psi11与Guyan冲突裁决"
+    },
+    {
+      "source_id": "board20_bundle_index",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/六路线六候选索引.csv",
+      "sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+      "role": "六路线乘六候选数值包索引与包哈希"
+    },
+    {
+      "source_id": "board20_fullgrid_route_statistics",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/24组稳定统计.csv",
+      "sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+      "role": "R01至R04六路线全网格统计"
+    },
+    {
+      "source_id": "board20_fullgrid_validation",
+      "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/验证摘要.json",
+      "sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+      "role": "49,848点跨语言全网格总门禁"
+    }
+  ],
+  "grid_contract": {
+    "l_steps": {
+      "start": 0,
+      "stop": 30,
+      "count": 31
+    },
+    "j_steps": {
+      "start": 0,
+      "stop": 66,
+      "count": 67
+    },
+    "points_per_route": 2077,
+    "routes_per_candidate": 6,
+    "points_per_candidate": 12462,
+    "channel_to_delay_exponent": {
+      "channel_1": "l",
+      "channel_2": "j"
+    }
+  },
+  "base_scientific_contract_r03": {
+    "matrix_package": {
+      "id": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "frozen_mat_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "division_method_dimensions": {
+        "division_1": {
+          "Original": 15,
+          "Guyan": 6,
+          "Craig_Bampton": 9
+        },
+        "division_2": {
+          "Original": 15,
+          "Guyan": 5,
+          "Craig_Bampton": 8
+        }
+      },
+      "guyan_projection": "standard_congruence_TtAT",
+      "craig_bampton_mode_count": 3,
+      "article_dimension_contract_status": "BOARD20_NUMERIC_PACKAGE_IS_NOT_ARTICLE_6_AND_12_MODEL"
+    },
+    "controller": {
+      "solver": "CARE",
+      "state_order": [
+        "q1",
+        "q2",
+        "qdot1",
+        "qdot2"
+      ],
+      "input_semantics": "generalized_force",
+      "B_lower_block": "M_inverse",
+      "force_embedding": "gain_direct",
+      "Q_diagonal": [
+        1000000,
+        1000000,
+        10000,
+        10000
+      ],
+      "R_diagonal": [
+        0.01,
+        0.01
+      ],
+      "local_matrix_contract": "standard_static_projection_of_full_local_MCK_on_actuation_coordinates"
+    },
+    "integration": {
+      "mode": "route_matrix_al",
+      "alpha": null,
+      "al_formula": "solve(4M+2dtC+dt^2K,4M)",
+      "mass_operator": "M/al",
+      "mass_operator_identity": "M/al = M + 0.5dtC + 0.25dt^2K"
+    },
+    "sampling": {
+      "dt_seconds": {
+        "numerator": 1,
+        "denominator": 1024
+      },
+      "delay_grid_status": "NOT_ASSIGNED_BY_CONTRACT_LAYER"
+    },
+    "actuation_and_delay_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    "controller_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    "delay_and_feedback": {
+      "delay_orientation": "H_LEFT",
+      "feedback_placement": "OUTSIDE_H",
+      "physical_delay_formula": "S_L^T H(z) [v(z) W_C + W_K]",
+      "feedback_formula": "S_L^T [v(z) DeltaC + DeltaK] S_R",
+      "inside_bundle_rule": "not_applicable; active physical delay factors remain W_C and W_K; projected feedback is external",
+      "channel_to_delay_exponent": {
+        "channel_1": "l",
+        "channel_2": "j"
+      }
+    },
+    "stability_classification": {
+      "quantity": "maximum_modulus_of_physical_roots",
+      "stable_rule": "rho < 1",
+      "critical_rule": "abs(rho - 1) <= 1e-9",
+      "grid_assignment": "NOT_PART_OF_CONTRACT_LAYER"
+    }
+  },
+  "fullgrid_known_contracts": [
+    {
+      "contract_id": "R01",
+      "display_name": "论文CARE_alpha025_广义力",
+      "coverage_status": "FULLGRID_6_ROUTES_31_BY_67_PASS",
+      "search_policy": "KNOWN_DO_NOT_RERUN",
+      "overrides_from_r03": [
+        {
+          "path": "integration.mode",
+          "value": "scalar_alpha_0p25"
+        },
+        {
+          "path": "integration.alpha",
+          "value": 0.25
+        },
+        {
+          "path": "integration.al_formula",
+          "value": null
+        },
+        {
+          "path": "integration.mass_operator",
+          "value": "M/alpha"
+        },
+        {
+          "path": "integration.mass_operator_identity",
+          "value": "M/alpha with alpha = 0.25"
+        }
+      ],
+      "contract_hash": "32f5acb86035a5bd8756e146f7a47fc9746b8aa128549ca153249ffde5bbd80e"
+    },
+    {
+      "contract_id": "R02",
+      "display_name": "论文CARE_alpha025_加速度",
+      "coverage_status": "FULLGRID_6_ROUTES_31_BY_67_PASS",
+      "search_policy": "KNOWN_DO_NOT_RERUN",
+      "overrides_from_r03": [
+        {
+          "path": "controller.input_semantics",
+          "value": "acceleration"
+        },
+        {
+          "path": "controller.B_lower_block",
+          "value": "identity"
+        },
+        {
+          "path": "controller.force_embedding",
+          "value": "left_multiply_local_mass"
+        },
+        {
+          "path": "integration.mode",
+          "value": "scalar_alpha_0p25"
+        },
+        {
+          "path": "integration.alpha",
+          "value": 0.25
+        },
+        {
+          "path": "integration.al_formula",
+          "value": null
+        },
+        {
+          "path": "integration.mass_operator",
+          "value": "M/alpha"
+        },
+        {
+          "path": "integration.mass_operator_identity",
+          "value": "M/alpha with alpha = 0.25"
+        }
+      ],
+      "contract_hash": "22199257e8267581d2fa79962e00d2822ed68c896222929d25bdb669bea42918"
+    },
+    {
+      "contract_id": "R03",
+      "display_name": "论文CARE_矩阵al_广义力",
+      "coverage_status": "FULLGRID_6_ROUTES_31_BY_67_PASS",
+      "search_policy": "KNOWN_REUSE_ONLY_NO_RERUN",
+      "overrides_from_r03": [],
+      "contract_hash": "20e3d26326c590af155e0db5adc3e6ed2686c3e09136fa76869c53bb776130d0"
+    },
+    {
+      "contract_id": "R04",
+      "display_name": "论文CARE_矩阵al_加速度",
+      "coverage_status": "FULLGRID_6_ROUTES_31_BY_67_PASS",
+      "search_policy": "KNOWN_DO_NOT_RERUN",
+      "overrides_from_r03": [
+        {
+          "path": "controller.input_semantics",
+          "value": "acceleration"
+        },
+        {
+          "path": "controller.B_lower_block",
+          "value": "identity"
+        },
+        {
+          "path": "controller.force_embedding",
+          "value": "left_multiply_local_mass"
+        }
+      ],
+      "contract_hash": "f7169d9be9bfdf6b1f7facc40fa1ce5bf5bf950d6dd30c820dc24c508938e8d5"
+    }
+  ],
+  "non_fullgrid_diagnostics": [
+    {
+      "contract_id": "R05",
+      "coverage_status": "BUNDLES_BUILT_FULLGRID_POINTS_ZERO",
+      "controller": "DARE",
+      "input_semantics": "generalized_force_with_historical_mass_after_gain",
+      "integration": "route_matrix_al",
+      "guyan_projection": "historical_single_sided",
+      "delay_orientation": "H_RIGHT_FOR_ORIGINAL_H_LEFT_FOR_REDUCED",
+      "feedback_placement": "OUTSIDE_H",
+      "formula_status": "HISTORICAL_DIAGNOSTIC_NOT_FORMULA_VALID"
+    },
+    {
+      "contract_id": "R06",
+      "coverage_status": "BUNDLES_BUILT_FULLGRID_POINTS_ZERO",
+      "controller": "NONE",
+      "input_semantics": "none",
+      "integration": "route_matrix_al",
+      "guyan_projection": "historical_single_sided",
+      "delay_orientation": "H_RIGHT_FOR_ORIGINAL_H_LEFT_FOR_REDUCED",
+      "feedback_placement": "OUTSIDE_H",
+      "formula_status": "HISTORICAL_DIAGNOSTIC_NOT_FORMULA_VALID"
+    }
+  ]
+}

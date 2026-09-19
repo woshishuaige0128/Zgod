@@ -1,0 +1,179 @@
+{
+  "archive_status": "VALIDATOR_CONTRACT_FAILURE_ATTEMPT_PRESERVED",
+  "artifact_file_count": 340,
+  "artifact_total_size_bytes": 14017492,
+  "attempt_file_manifest": "attempt_file_manifest.csv",
+  "attempt_id": "step3_attempt02_20260826_validator_sum_scope_contract_failure",
+  "correct_route7_author_contract": {
+    "cb_denominator": "energy_sum_guyan",
+    "coordinate_order_correct": false,
+    "energy_sum_cb": "sum(E_total_cb(d2))",
+    "energy_sum_guyan": "sum(E_total_guyan)",
+    "energy_sum_orig": "sum(E_total(d))",
+    "guyan_denominator": "energy_sum_guyan",
+    "paper_formula_correct": false,
+    "retained_one_based": [
+      1,
+      2
+    ],
+    "source": "Copy_2_of_energy_zonghe3.mlx C004",
+    "source_sha256": "446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D"
+  },
+  "created_at": "2026-08-26T04:24:13.100339+08:00",
+  "internal_absolute_paths_are_historical": true,
+  "moved_roots": [
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\tmp\\step3_runs",
+      "logical_root": "tmp_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\outputs\\step3_stage",
+      "logical_root": "outputs_step3_stage",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_stage"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\outputs\\step3_runs",
+      "logical_root": "outputs_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\logs\\step3_runs",
+      "logical_root": "logs_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\outputs\\step3_orchestration",
+      "logical_root": "outputs_step3_orchestration",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_orchestration"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\outputs\\step3_validation",
+      "logical_root": "outputs_step3_validation",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_validation"
+    }
+  ],
+  "path_budget": {
+    "building": {
+      "label": "building archive",
+      "limit": 240,
+      "maximum_length": 239,
+      "maximum_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\.b02\\outputs\\step3_orchestration\\process_query_captures\\13__division2_tp17_copy2_coordinate_formula_conflict__rep01__before.stderr.log",
+      "over_limit_count": 0,
+      "projected_path_count": 348
+    },
+    "final": {
+      "label": "final archive",
+      "limit": 240,
+      "maximum_length": 238,
+      "maximum_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\a02\\outputs\\step3_orchestration\\process_query_captures\\13__division2_tp17_copy2_coordinate_formula_conflict__rep01__before.stderr.log",
+      "over_limit_count": 0,
+      "projected_path_count": 348
+    }
+  },
+  "physical_archive_directory": "a02",
+  "pinned_file_sha256": {
+    "outputs/step3_orchestration/run_all_summary.json": "2823E1D47718215C810E9AE8EC6B5638D59B936BB9B0229C4585A985A84EF354",
+    "outputs/step3_validation/checks.csv": "E4B6BA59429EC033AFBAD33F6612D2649D094928557B774DB7C55C87EB949CC7",
+    "outputs/step3_validation/repeat_comparison.csv": "7273447D016B3030C8A25CE821D588778B717496DBD2B4FFD16AA719BAFEF2E3",
+    "outputs/step3_validation/route_results.csv": "A52A1FE7112BEFEBE86B0A3A8124F773012F427F31339BA38C40C984C41BEBFA",
+    "outputs/step3_validation/validation_summary.json": "CE8C7BCCC8C1E151727AC42751EF90946D9699C090AFFDAB23644A2CD494D6A4"
+  },
+  "process_after_archive": {
+    "returncode": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_size_bytes": 0,
+    "stdout_sha256": "24EA80ABCE7E6249558819A7D45FAA55033F9394F5D8812D7409AB17B81192B7",
+    "stdout_size_bytes": 172,
+    "target_processes": []
+  },
+  "process_before_archive": {
+    "returncode": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_size_bytes": 0,
+    "stdout_sha256": "24EA80ABCE7E6249558819A7D45FAA55033F9394F5D8812D7409AB17B81192B7",
+    "stdout_size_bytes": 172,
+    "target_processes": []
+  },
+  "reason": "The V3 orchestration completed all 14 author runs, but the V2 independent validator incorrectly declared route 7 sum_scope=all_vectors.",
+  "root_counts": {
+    "logs_step3_runs": {
+      "file_count": 70,
+      "total_size_bytes": 115522
+    },
+    "outputs_step3_orchestration": {
+      "file_count": 123,
+      "total_size_bytes": 505908
+    },
+    "outputs_step3_runs": {
+      "file_count": 112,
+      "total_size_bytes": 6727585
+    },
+    "outputs_step3_stage": {
+      "file_count": 3,
+      "total_size_bytes": 28529
+    },
+    "outputs_step3_validation": {
+      "file_count": 4,
+      "total_size_bytes": 5564634
+    },
+    "tmp_step3_runs": {
+      "file_count": 28,
+      "total_size_bytes": 1075314
+    }
+  },
+  "schema_version": "BOARD21_STEP3_ATTEMPT_ARCHIVE_V2",
+  "scientific_interpretation": "All seven author routes executed twice and route 7 was exactly repeatable. This attempt is not accepted as the final Step3 evidence because its sealed validator used the wrong historical sum scope.",
+  "semantic_diagnosis": {
+    "failed_check_ids": [
+      "S3-ALL-ROUTES-REPEAT",
+      "S3-REPEAT-07",
+      "S3-SCIENTIFIC-FORMULA-13",
+      "S3-SCIENTIFIC-FORMULA-14"
+    ],
+    "orchestration_checks": {
+      "all_contracts": true,
+      "all_route_evidence_success": true,
+      "fourteen_author_successes": true,
+      "fourteen_runs": true,
+      "fourteen_unique_tokens": true,
+      "no_infrastructure_failure": true,
+      "no_unstarted": true,
+      "schema_v3": true,
+      "sixteen_subprocesses": true,
+      "status_pass": true,
+      "thirty_process_queries": true,
+      "zero_final_targets": true
+    },
+    "route7_author_values": {
+      "energy_sum_cb_selected": 29856.69162409193,
+      "energy_sum_guyan": 36887.32701500341,
+      "energy_sum_orig_selected": 22403.23860163083,
+      "total_increase_cb": 20.20599925668106,
+      "total_increase_guyan": 39.26575760689132
+    },
+    "route7_repeat_max_abs": 0.0,
+    "route7_repeat_max_rel": 0.0,
+    "validation_checks": {
+      "all_runs_scientifically_readable": true,
+      "counts_247_of_251": true,
+      "exact_failed_ids": true,
+      "no_publication_or_process_leak": true,
+      "schema_v2": true,
+      "seven_author_success_routes": true,
+      "six_repeat_routes": true,
+      "status_fail": true,
+      "unique_ids": true
+    }
+  },
+  "standard_step3_roots_absent_after_archive": true,
+  "tool_snapshot_count": 5,
+  "tool_snapshot_manifest": "tool_snapshot_manifest.csv",
+  "tool_snapshot_sha256": {
+    "execute_board21_step3_route.py": "CEB805DF2F4E83DF4C2B93350AF257B0058923C372D5735A5730FE4694C47DD6",
+    "run_board21_step3_all.py": "FFD6D9A5E25C2CE17DB43A2A633D2549A6A9540A040C135CB144D20C7B73E273",
+    "run_one_board21_energy_route.m": "692B749833FD5A30526AE3CA6F2CEE55630F0A908BE0A75BC8E9B4F294E08D00",
+    "stage_board21_step3_runs.py": "9DEE64A057A82343227C2F49B23BEECB5A5AF076877CB2A54B478FCFAE769AA1",
+    "validate_board21_step3_runs.py": "AA6343FF2F0694BCF4E7ED3E3B7E842538FB33650026B062086095DBF0E703F5"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "pass": true,
+  "checked_at_local": "2026-09-11T15:38:01",
+  "scope": "SVG XML editability and actual raster visual review only",
+  "render_engine": "Bundled Node sharp through Presentations skill container_tools/rasterize_svg.mjs",
+  "font_substitution_needed": false,
+  "repair_record": {
+    "before": "SVG serialization used indentation inside text elements with xml:space=preserve. Whitespace between tspan elements rendered as wide spaces, separating formulas/subscripts and causing overlap or clipping.",
+    "diagnosis": "QA-only copies removing whitespace-only text/tspan-tail nodes rendered correctly through the same sharp helper.",
+    "fix": "Root agent changed finish_native.py SVG serialization to pretty_print=False and regenerated all four draft SVGs.",
+    "after": "The four regenerated draft SVGs contain zero formatting whitespace nodes inside text and were rerendered directly into preview/svg_v2 and individually visually inspected."
+  },
+  "figures": [
+    {
+      "figure": 1,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\draft\\fig1_generated_editable.svg",
+      "sha256": "f8e08f95f4a9d7ea3f15bac78cc866a073308b01085e3aae725f70ef0e9297a6",
+      "object_count": 40,
+      "object_count_scope": "Direct graphical children of figure group; excludes white background, metadata and tspan children",
+      "object_counts": {
+        "rect": 5,
+        "path": 18,
+        "ellipse": 2,
+        "text": 15
+      },
+      "text_count": 15,
+      "tspan_count": 52,
+      "image_count": 0,
+      "font_families": [
+        "Times New Roman"
+      ],
+      "text_internal_format_whitespace_nodes": 0,
+      "unique_ids": true,
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\preview\\svg_v2\\fig1_sharp.png",
+      "render_sha256": "1e77076e4e4ea8b6e623a6f904b7106f3e6e132bc01da34f5acfbea2c2151c0d",
+      "render_pixels": [
+        1672,
+        941
+      ],
+      "rendered_after_source": true,
+      "visual_review_pass": true,
+      "visual_observation": "Times New Roman, bold/italic formula terms, subscripts, superscripts and q-dot are visible. Formula lines stay within their respective blocks. Summation signs, feedback junction, arrows and connectors are complete without visible clipping."
+    },
+    {
+      "figure": 2,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\draft\\fig2_generated_editable.svg",
+      "sha256": "34ce68e2585008f9d522514f66509e40abf7d0a54209a2a3824b8cbe2dad140b",
+      "object_count": 107,
+      "object_count_scope": "Direct graphical children of figure group; excludes white background, metadata and tspan children",
+      "object_counts": {
+        "text": 15,
+        "path": 92
+      },
+      "text_count": 15,
+      "tspan_count": 15,
+      "image_count": 0,
+      "font_families": [
+        "Times New Roman"
+      ],
+      "text_internal_format_whitespace_nodes": 0,
+      "unique_ids": true,
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\preview\\svg_v2\\fig2_sharp.png",
+      "render_sha256": "8df99588b6f7f45df738f40fd8002fec3ec2d6fbcb42f620cb72720210991637",
+      "render_pixels": [
+        1672,
+        941
+      ],
+      "rendered_after_source": true,
+      "visual_review_pass": true,
+      "visual_observation": "Three 762 bay dimensions, three 635 story dimensions and three W5 x 16 labels are clear. Outer fixed and inner pinned supports match the reference. Section labels 38, 50, 6 and 6 point to full width, full height, flange thickness and web thickness. No visible text overlap or clipping."
+    },
+    {
+      "figure": 3,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\draft\\fig3_generated_editable.svg",
+      "sha256": "fbe327a61e6d9be388c21fb431ae8da4748dcac7b2f7f0658d1ff9be33259392",
+      "object_count": 119,
+      "object_count_scope": "Direct graphical children of figure group; excludes white background, metadata and tspan children",
+      "object_counts": {
+        "path": 68,
+        "text": 33,
+        "ellipse": 18
+      },
+      "text_count": 33,
+      "tspan_count": 48,
+      "image_count": 0,
+      "font_families": [
+        "Times New Roman"
+      ],
+      "text_internal_format_whitespace_nodes": 0,
+      "unique_ids": true,
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\preview\\svg_v2\\fig3_sharp.png",
+      "render_sha256": "4771ddef84fc4935a98ed9326500fc7849d998b9574bb1b103ded5d46d7244b3",
+      "render_pixels": [
+        1122,
+        1402
+      ],
+      "rendered_after_source": true,
+      "visual_review_pass": true,
+      "visual_observation": "Node labels 1 to 16 and coordinates psi1 to psi15 are complete. Psi subscripts stay attached. Right-side translational labels and the blue x/y axes fit within the image. Frame lines and rotation arrows are complete."
+    },
+    {
+      "figure": 4,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\draft\\fig4_generated_editable.svg",
+      "sha256": "fc71320a577734e0e69a256c77be8cc0fde790e22904ce4923696cc1fee60bcb",
+      "object_count": 294,
+      "object_count_scope": "Direct graphical children of figure group; excludes white background, metadata and tspan children",
+      "object_counts": {
+        "rect": 4,
+        "text": 88,
+        "path": 164,
+        "ellipse": 38
+      },
+      "text_count": 88,
+      "tspan_count": 129,
+      "image_count": 0,
+      "font_families": [
+        "Times New Roman"
+      ],
+      "text_internal_format_whitespace_nodes": 0,
+      "unique_ids": true,
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\preview\\svg_v2\\fig4_sharp.png",
+      "render_sha256": "cfb7e43020c1603a46d2735df3d81675c010557cfab2675dcecb86273359b20d",
+      "render_pixels": [
+        1254,
+        1254
+      ],
+      "rendered_after_source": true,
+      "visual_review_pass": true,
+      "visual_observation": "Both divisions and all four substructure panels are complete. Red retained-coordinate labels and black condensed-coordinate labels remain distinguishable. All psi subscripts are attached. Connector/rotation arrows, node labels, headings and footer are legible without visible clipping."
+    }
+  ]
+}

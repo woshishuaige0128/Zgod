@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-08-24T19:27:00.770496+00:00",
+  "project_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "board_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块19_表3-1至表3-3逐单元格计算复现",
+  "file_count": 35,
+  "match_count": 35,
+  "mismatch_count": 0,
+  "manifest_sha256": "AE840C117F089E8D0A39969EABC283C62B0C7A1D022A6413EBDFACD97AF8418E",
+  "status": "PASS"
+}

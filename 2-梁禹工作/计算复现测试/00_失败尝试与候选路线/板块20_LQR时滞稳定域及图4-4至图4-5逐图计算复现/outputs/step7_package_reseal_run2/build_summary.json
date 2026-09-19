@@ -1,0 +1,32 @@
+{
+  "formal_success_directory_count": 0,
+  "package_count": 4,
+  "packages": [
+    {
+      "final_evidence_level": "绘图级复现",
+      "object_id": "F4-4",
+      "package_name": "图4-4_第一类子结构划分稳定域",
+      "status": "FAILURE_EVIDENCE_PACKAGED"
+    },
+    {
+      "final_evidence_level": "绘图级复现",
+      "object_id": "F4-5",
+      "package_name": "图4-5_第二类子结构划分稳定域",
+      "status": "FAILURE_EVIDENCE_PACKAGED"
+    },
+    {
+      "final_evidence_level": "历史值",
+      "object_id": "C05",
+      "package_name": "结论C05_两类划分的稳定裕度下降量",
+      "status": "FAILURE_EVIDENCE_PACKAGED"
+    },
+    {
+      "final_evidence_level": "历史值",
+      "object_id": "C07",
+      "package_name": "结论C07_结论章频率区间、误差幅值与临界时滞总结",
+      "status": "FAILURE_EVIDENCE_PACKAGED"
+    }
+  ],
+  "schema_version": "BOARD20_STEP7_BUILD_SUMMARY_V1",
+  "status": "PASS"
+}

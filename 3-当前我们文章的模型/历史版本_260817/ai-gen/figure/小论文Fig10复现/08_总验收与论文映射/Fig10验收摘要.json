@@ -1,0 +1,16 @@
+{
+  "overall_status": "PASS",
+  "plot_level_reproduction": "PASS",
+  "calculation_level_reproduction": "FAIL",
+  "evidence_level": "PLOT_LEVEL_VECTOR_TRACE_ONLY",
+  "calculation_reproduction": false,
+  "source_pdf_vector_grid_path_point_match_100_percent": true,
+  "curve_count": 6,
+  "point_count": 386,
+  "check_count": 31,
+  "pass_count": 31,
+  "fail_count": 0,
+  "final_pdf_sha256": "EEA26CEFA38B9666AEF48C6E9355B8B23C14365F8D0DFFBD1E8E2E61646B9847",
+  "final_png_sha256": "7E0E6F5A0E18D2E8DD4EFBD369A2FEF33CA7D9DF5132E31ECA161B0683878C80",
+  "scientific_calculation_status": "FAIL_NO_COMPLETE_CALCULATION_REPRODUCTION"
+}

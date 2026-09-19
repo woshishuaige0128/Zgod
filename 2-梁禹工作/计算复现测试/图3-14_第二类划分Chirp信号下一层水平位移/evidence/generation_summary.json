@@ -1,0 +1,39 @@
+{
+  "schema_version": "board18.figure_generation_summary.v1",
+  "status": "PASS",
+  "generated_at_utc": "2026-08-24T18:44:50.747096+00:00",
+  "candidate_root": "outputs/figure_candidates",
+  "input_root": "outputs/adapted_run1/输入数据",
+  "comparison_csv": "outputs/comparisons/response_column_comparisons.csv",
+  "object_count": 11,
+  "figure_pair_count": 12,
+  "pdf_count": 12,
+  "png_count": 12,
+  "manifest_sha256": "B7AE76D77896B7920C722EE0B44CFE86FCDFE77066D8C696604A6D68B7A05B4D",
+  "f3_15_historical_assertion": {
+    "status": "PASS",
+    "assertion": "F3-15 paper_historical_composite zoom_1 and zoom_2 are pointwise identical to F3-10 for every plotted method",
+    "checked_method_windows": 6,
+    "checked_values": 6150,
+    "source_dataset": "division2_elcentro",
+    "floor": "Floor 3"
+  },
+  "source_mat_sha256": {
+    "unit": "9F11ACCED60E88CBBFC026A5E8AEFC6017F5FA2BBD1F182CADD8F3D8D89ADE40",
+    "division1_elcentro": "90F5C7D8C2C46569623E25C5062D039A1C10463C6B35F5F71995D910545CD667",
+    "division2_elcentro": "D162CD319378F9C30B0179CC2C30D37221DB42C41AE84C04461C3D069991F1FF",
+    "division1_chirp": "AABB18EF99D897B9670CFC2F61F2D4F6B805969832111A39F7004BC222AD8473",
+    "division2_chirp": "533076290B45305F91B201009FA57648B4D3CD7092FE2C0B66C342B27932C3AB"
+  },
+  "output_contract": {
+    "artifact_manifest": "artifact_manifest.csv",
+    "objects": "11 directories named <F3-x_中文名>",
+    "figure_pairs": 12,
+    "pdf_files": 12,
+    "png_files": 12,
+    "pdf_pages_each": 1,
+    "pdf_kind": "vector",
+    "png_dpi": 600,
+    "formal_success_directories_created": false
+  }
+}

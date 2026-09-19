@@ -1,0 +1,19 @@
+{
+  "compute_run_count": 4,
+  "compute_success_count": 4,
+  "determinism_check_count": 8,
+  "determinism_pass_count": 8,
+  "final_target_process_count": 0,
+  "finished_at": "2026-08-26T05:56:43.273513+08:00",
+  "formula_4_45_evaluated_conditionally": true,
+  "initial_target_process_count": 0,
+  "instrument_count": 5,
+  "matlab_round_count": 2,
+  "python_round_count": 2,
+  "schema_version": "BOARD21_STEP4_ORCHESTRATION_V1",
+  "scientific_status": "AUTHOR_ROUTE_REPRODUCED_AND_PAPER_LITERAL_CONDITIONAL_TABLE4_1_PENDING",
+  "stage_status": "PASS",
+  "started_at": "2026-08-26T05:54:49.023919+08:00",
+  "status": "PASS",
+  "table4_1_adjudicated": false
+}

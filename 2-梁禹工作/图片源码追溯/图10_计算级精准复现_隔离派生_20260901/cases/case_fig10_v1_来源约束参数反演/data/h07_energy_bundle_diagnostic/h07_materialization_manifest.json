@@ -1,0 +1,74 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4596,
+      "relative_path": "array_hash_inventory.csv",
+      "sha256": "981BA79C8144E4600ED92C6C601FDEB566CA420E9F4F71F28449A214DDEA3791"
+    },
+    {
+      "bytes": 30302,
+      "relative_path": "manifests/H07.json",
+      "sha256": "7EC70D28DBE612B476FF6C4E13DAF4C835182E7AE0B5040D84B1CA58E00A6FD9"
+    },
+    {
+      "bytes": 14101,
+      "relative_path": "numeric_bundles/H07_D1_Craig_Bampton_native.mat",
+      "sha256": "31D570FEB897901E8216E0A38F54CAA91E6C0F736E8FD215F068B95D0E9BF49C"
+    },
+    {
+      "bytes": 7928,
+      "relative_path": "numeric_bundles/H07_D1_Guyan_native.mat",
+      "sha256": "A7F79CA3D5C3BE444BC67D261081375655A28A8C37A523726074DB5A9A4FDBE5"
+    },
+    {
+      "bytes": 8958,
+      "relative_path": "numeric_bundles/H07_D1_Original_native.mat",
+      "sha256": "B93B03BCC66AB5624F9802624C7F5F1A67B4A7B1D40BABC2486E6EF36B0BA9F2"
+    },
+    {
+      "bytes": 14667,
+      "relative_path": "numeric_bundles/H07_D2_Craig_Bampton_native.mat",
+      "sha256": "353547FB1F5F758E931E455A64D2644CE4BB2EB9FFB1E7450B9A82128E878A70"
+    },
+    {
+      "bytes": 8009,
+      "relative_path": "numeric_bundles/H07_D2_Guyan_native.mat",
+      "sha256": "920432FADE5562F59B7DD1F72A442E0F555B9704280F40E4F3DFE1921A42143D"
+    },
+    {
+      "bytes": 8841,
+      "relative_path": "numeric_bundles/H07_D2_Original_native.mat",
+      "sha256": "4C0DAC3AAAD28FF7441588643AB2303E7F370B81AD0723E143428D77DF388E64"
+    },
+    {
+      "bytes": 13084,
+      "relative_path": "source_code_evidence.json",
+      "sha256": "B2BE45A1F4258E97CCC8779990B080C3C961C80B867828FF13F67905F173F5D5"
+    },
+    {
+      "bytes": 5780,
+      "relative_path": "stage0_gate_results.csv",
+      "sha256": "BC3377515B7ADE6F076AFD0FF71D457CD3B9AFFD1EC2EF0218594F787F519B8C"
+    }
+  ],
+  "blind_core_modified": false,
+  "contract_sha256": "D8FB69CE028C41283B5CCF908E26B8A39BE0C5F5AB9D280FCD4A98F95E865981",
+  "counts": {
+    "direct_source_bundle_routes": 0,
+    "formula_valid_code_zero": 6,
+    "grid_points_computed": 0,
+    "low_rank_hybrid_delay_routes": 6,
+    "paper_grid_eligible_code_zero": 6,
+    "roots_computed": 0,
+    "route_count": 6,
+    "source_completion_routes": 6,
+    "stage0_fail": 0,
+    "stage0_pass": 6
+  },
+  "delay_decomposition_status": "BOARD20_LOW_RANK_HYBRID_DIAGNOSTIC",
+  "diagnostic_status": "HISTORICAL_SOURCE_COMPLETION_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+  "h07_blind_manifest_sha256": "7EC70D28DBE612B476FF6C4E13DAF4C835182E7AE0B5040D84B1CA58E00A6FD9",
+  "schema_version": "FIG10_H07_MATERIALIZATION_MANIFEST_V1",
+  "single_factor_ablation_performed": false,
+  "status": "PASS_STAGE0_H07_ENERGY_BUNDLE_DIAGNOSTIC"
+}

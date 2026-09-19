@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "1/Guyan/1",
+      "error": 3.406996906818449e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "1/Guyan/6",
+      "error": 7.814061897537528e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "1/CB/1",
+      "error": 1.0154420707064737e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "1/CB/6",
+      "error": 1.3627553946404802e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "2/Guyan/1",
+      "error": 5.773159728050814e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "2/Guyan/11",
+      "error": 4.3298697960381105e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "2/CB/1",
+      "error": 9.693634783758398e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "2/CB/11",
+      "error": 2.334070436926794e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "max_error": 1.3627553946404802e-14
+}

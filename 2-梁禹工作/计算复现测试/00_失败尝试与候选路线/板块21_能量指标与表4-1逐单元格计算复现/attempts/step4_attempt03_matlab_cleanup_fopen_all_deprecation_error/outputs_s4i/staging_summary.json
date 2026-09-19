@@ -1,0 +1,14 @@
+{
+  "board17_external_candidate_item_count": 5,
+  "case_contract_count": 14,
+  "formula_4_45_evaluated": false,
+  "global_asset_binding": "BOARD17_CALCULATION_LEVEL_EXTERNAL_ASSET_INDIRECTLY_PASSPORT_BOUND_CURRENT_HASH_MATCH",
+  "global_asset_directly_frozen_by_board21_step1": false,
+  "schema_version": "BOARD21_STEP4_INPUT_STAGE_V1",
+  "status": "PASS",
+  "step1_direct_freeze_count": 53,
+  "step3_evidence_item_count": 98,
+  "step3_run_case_count": 14,
+  "table4_1_adjudicated": false,
+  "total_manifest_item_count": 103
+}

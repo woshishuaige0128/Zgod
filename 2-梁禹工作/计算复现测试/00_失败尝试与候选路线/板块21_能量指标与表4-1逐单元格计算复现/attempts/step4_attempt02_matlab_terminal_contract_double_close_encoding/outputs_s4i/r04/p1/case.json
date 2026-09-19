@@ -1,0 +1,61 @@
+{
+  "alias": "r04",
+  "case_id": "r04_p1",
+  "cb_K": "KP_cb",
+  "cb_M": "MP_cb",
+  "cb_T": "TP_cb",
+  "cb_sum_scope": "ALL",
+  "consumer_order": [
+    1,
+    4,
+    2,
+    3,
+    5,
+    6
+  ],
+  "coordinate_status": "PASS_WITH_INPUT_IDENTITY_UNRESOLVED",
+  "d_cb": [
+    1,
+    2
+  ],
+  "d_guyan": [
+    1,
+    2
+  ],
+  "d_orig": [
+    1,
+    2
+  ],
+  "division_identity": "第一类划分局部物理子结构",
+  "energy_normalized": false,
+  "excitation_rule": "MASS_TIMES_ONES",
+  "full_K": "KPrt",
+  "full_M": "MPrt",
+  "guyan_K": "KPren",
+  "guyan_M": "MPren",
+  "guyan_T": "TP",
+  "guyan_sum_scope": "ALL",
+  "historical_denominator": "GUYAN",
+  "historical_target_file": "h.mat",
+  "orig_sum_scope": "ALL",
+  "parameter_family": "rho=785e3.*1.7",
+  "producer_order": [
+    1,
+    4,
+    2,
+    3,
+    5,
+    6
+  ],
+  "replicate": "rep01",
+  "result_boundaries": [
+    "AUTHOR_ROUTE_REPRODUCED",
+    "PAPER_LITERAL_CONDITIONAL",
+    "TABLE4_1_NOT_ADJUDICATED"
+  ],
+  "route_id": "division1_tp17_copy2_formula_invalid",
+  "route_label_cn": "第一类局部物理子结构：TP参数族1.7→Copy_2错误公式",
+  "schema_version": "BOARD21_STEP4_CASE_V1",
+  "staged_relative_dir": "r04/p1",
+  "workspace_file": "u.mat"
+}

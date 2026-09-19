@@ -1,0 +1,79 @@
+{
+  "counts": {
+    "grid_points_computed": 0,
+    "known_reuse_records": 1,
+    "new_skeletons": 3,
+    "numeric_bundles_materialized": 0,
+    "parameter_candidates_run": 0
+  },
+  "generator": "code/build_fig10_candidate_bundles.py",
+  "index_version": "fig10-contract-index-v1",
+  "known_registry_sha256": "7c6ee9ee8f291278be2b940332dd065933c22b3330783c9d86272e7d39d9b93b",
+  "mode": "CONTRACT_LAYER_ONLY_NO_NUMERIC_BUNDLE_NO_GRID_NO_PARAMETER_SEARCH",
+  "record_files": [
+    {
+      "artifact_sha256": "79bd96628f3a0767f3ff08c46b95f2a3e065318da6a800c00745699d7e127095",
+      "contract_id": "B1",
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "record_file": "B1.json",
+      "record_kind": "NEW_SKELETON",
+      "science_contract_sha256": "29ff1a6876172bd811eef4341a55cd9a51c07855d2b31e760ee26e2a6cfb94fe",
+      "search_action": "MATERIALIZE_LATER_NO_SEARCH"
+    },
+    {
+      "artifact_sha256": "21573a57cbd93ea8498b9cac05ee293c50d89555dad80b4ceba0ca4e415f2c55",
+      "contract_id": "B2",
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "record_file": "B2.json",
+      "record_kind": "NEW_SKELETON",
+      "science_contract_sha256": "44f824f2fb6b14408aa61a83aa410c595aa529f2d41424f3570188906fa29bf1",
+      "search_action": "MATERIALIZE_LATER_NO_SEARCH"
+    },
+    {
+      "artifact_sha256": "83b8e99aa63a1427c084e931a367f74856151a728edd3b798e4180bc47b697b3",
+      "contract_id": "B3",
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "record_file": "B3.json",
+      "record_kind": "NEW_SKELETON",
+      "science_contract_sha256": "829a407510a6c0aeaab2058dadb78801f4c5ff418194c96d0229535ea7d41ad1",
+      "search_action": "MATERIALIZE_LATER_NO_SEARCH"
+    },
+    {
+      "artifact_sha256": "82b2c7f2a9dff6e290b6e844a38da8b256fc7bfd1846c96a487ccd73dc44116c",
+      "contract_id": "R03_REUSE",
+      "materialization_status": "EXISTING_BOARD20_BUNDLES_REUSED",
+      "record_file": "R03_REUSE.json",
+      "record_kind": "KNOWN_REUSE",
+      "science_contract_sha256": "20e3d26326c590af155e0db5adc3e6ed2686c3e09136fa76869c53bb776130d0",
+      "search_action": "REUSE_EXISTING_NO_RERUN"
+    }
+  ],
+  "schema_sha256": "eb417492074134a98a845eabff066eaa5a05d22e04d73b13396fbeb385ade64a",
+  "source_dependency_count": 6,
+  "verified_source_fingerprints": [
+    {
+      "sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "source_id": "board20_step8b_frozen_mat"
+    },
+    {
+      "sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+      "source_id": "board20_candidate_chain_contract"
+    },
+    {
+      "sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+      "source_id": "board20_conflict_adjudication"
+    },
+    {
+      "sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+      "source_id": "board20_bundle_index"
+    },
+    {
+      "sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+      "source_id": "board20_fullgrid_route_statistics"
+    },
+    {
+      "sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+      "source_id": "board20_fullgrid_validation"
+    }
+  ]
+}

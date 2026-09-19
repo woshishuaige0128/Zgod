@@ -1,0 +1,1814 @@
+{
+  "summary": {
+    "technical_checks": "PASS",
+    "checks_passed": 350,
+    "manuscript_pages": 38,
+    "numbered_figures": 15,
+    "added_figures": 6,
+    "main_source_diff_hunks": 56,
+    "documented_operations": 64,
+    "changed_table345_cells": 30,
+    "changed_modulus_cells": 2,
+    "protected_files": 94,
+    "original_word_tokens": 9307,
+    "new_word_tokens": 9949,
+    "original_negative_skips_preserved": 42,
+    "independent_compile": "PASS",
+    "known_visual_limitations": [
+      "原有负行距导致部分公式下方文字贴近或相叠，原稿PDF中也存在；按用户明确要求保留42处负行距，不宣称已消除该排版问题。"
+    ],
+    "inherited_compile_warnings": [
+      "Overfull \\hbox (117.0831pt too wide) detected at line 64",
+      "Underfull \\hbox (badness 1540) in paragraph at lines 527--528",
+      "Underfull \\hbox (badness 2608) in paragraph at lines 527--528"
+    ],
+    "scientific_items_still_open": [
+      "双侧部分界面装配的真实计算闭合及两侧中层位移差",
+      "历史稳定域对应的完整闭环矩阵、实际LQR增益及边界内外时程验证"
+    ],
+    "main_sha256": "c1cc160c45f0966fdd4a3f6a09a19965b2ffd298c6d0b67b10e80aa1b658e5c0",
+    "pdf_sha256": "b231d46714dfa8e7b17561e1f60ce662ae73dff884a978c4f6e7e949efb16139"
+  },
+  "checks": [
+    {
+      "check": "forward operation change-001",
+      "passed": true,
+      "details": "摘要：数据联动与有依据的结论"
+    },
+    {
+      "check": "forward operation change-002",
+      "passed": true,
+      "details": "界面力维数：避免直接相加不同局部向量"
+    },
+    {
+      "check": "forward operation change-003",
+      "passed": true,
+      "details": "装配坐标：补充局部至整体的映射"
+    },
+    {
+      "check": "forward operation change-004",
+      "passed": true,
+      "details": "装配平衡：纠正“既无协调也无平衡”的表述"
+    },
+    {
+      "check": "forward operation change-005",
+      "passed": true,
+      "details": "闭环信号：明确调节器使用数值状态"
+    },
+    {
+      "check": "forward operation change-006",
+      "passed": true,
+      "details": "模态与时滞：区分直接延迟和动力耦合"
+    },
+    {
+      "check": "forward operation change-007",
+      "passed": true,
+      "details": "附加反馈力：写明延迟与力的施加位置"
+    },
+    {
+      "check": "forward operation change-008",
+      "passed": true,
+      "details": "基准来源：区分原型截面与实际数值参数"
+    },
+    {
+      "check": "forward operation change-009",
+      "passed": true,
+      "details": "表1：梁弹性模量200改为206 GPa"
+    },
+    {
+      "check": "forward operation change-010",
+      "passed": true,
+      "details": "表1：柱弹性模量200改为206 GPa"
+    },
+    {
+      "check": "forward operation change-011",
+      "passed": true,
+      "details": "模型复现：集中补充边界、截面与质量"
+    },
+    {
+      "check": "forward operation change-012",
+      "passed": true,
+      "details": "固有频率与阻尼：按实际矩阵更新"
+    },
+    {
+      "check": "forward operation change-013",
+      "passed": true,
+      "details": "两种分析：保留通道位置而不混同模型"
+    },
+    {
+      "check": "forward operation change-014",
+      "passed": true,
+      "details": "准确性模型：明确整体缩聚的实际阶数及Guyan实现"
+    },
+    {
+      "check": "forward operation change-015",
+      "passed": true,
+      "details": "准确性仿真：按真实并行状态空间运行说明"
+    },
+    {
+      "check": "forward operation change-016",
+      "passed": true,
+      "details": "激励定义：补充完整输入并删除未验证的屈服判断"
+    },
+    {
+      "check": "forward operation change-017",
+      "passed": true,
+      "details": "新增图：地震与扫频输入"
+    },
+    {
+      "check": "forward operation change-018",
+      "passed": true,
+      "details": "MAC：明确平移与转角的单位"
+    },
+    {
+      "check": "forward operation change-019",
+      "passed": true,
+      "details": "扫频积分：固定频带端点，修正单调增长暗示"
+    },
+    {
+      "check": "forward operation change-020",
+      "passed": true,
+      "details": "模态指标定位：回到公式实际度量"
+    },
+    {
+      "check": "forward operation change-021",
+      "passed": true,
+      "details": "模态扩展：补齐重归一化和权重的计算规则"
+    },
+    {
+      "check": "forward operation change-022",
+      "passed": true,
+      "details": "指标解释：删除“等于进入延迟通道的响应”"
+    },
+    {
+      "check": "forward operation change-023",
+      "passed": true,
+      "details": "局部模型阶数：限定6/12阶的适用对象"
+    },
+    {
+      "check": "forward operation change-024",
+      "passed": true,
+      "details": "结果节导语：明确两套分析的对象"
+    },
+    {
+      "check": "forward operation change-025",
+      "passed": true,
+      "details": "模态精度段：更新频率和最大误差"
+    },
+    {
+      "check": "forward operation change-026",
+      "passed": true,
+      "details": "表3：逐格替换5个错误数值"
+    },
+    {
+      "check": "forward operation change-027",
+      "passed": true,
+      "details": "表4：逐格替换21个错误数值"
+    },
+    {
+      "check": "forward operation change-028",
+      "passed": true,
+      "details": "表5：逐格替换4个错误数值"
+    },
+    {
+      "check": "forward operation change-029",
+      "passed": true,
+      "details": "频率机理：删除不适用的普遍上界推论"
+    },
+    {
+      "check": "forward operation change-030",
+      "passed": true,
+      "details": "新增图：前两阶实际频率与恢复水平振型"
+    },
+    {
+      "check": "forward operation change-031",
+      "passed": true,
+      "details": "MAC解读：保留原判断，补上新振型证据"
+    },
+    {
+      "check": "forward operation change-032",
+      "passed": true,
+      "details": "地震结果：不再以幅值居中为由省略中层"
+    },
+    {
+      "check": "forward operation change-033",
+      "passed": true,
+      "details": "新增图与分析：中间楼层地震重构"
+    },
+    {
+      "check": "forward operation change-034",
+      "passed": true,
+      "details": "扫频时程：修正峰值时刻和末端幅值判断"
+    },
+    {
+      "check": "forward operation change-035",
+      "passed": true,
+      "details": "新增图与分析：中间楼层扫频重构"
+    },
+    {
+      "check": "forward operation change-036",
+      "passed": true,
+      "details": "首层误差分析：更新整段数值与非单调趋势"
+    },
+    {
+      "check": "forward operation change-037",
+      "passed": true,
+      "details": "响应小结：删除精度模型同阶的错误论据"
+    },
+    {
+      "check": "forward operation change-038",
+      "passed": true,
+      "details": "新增图与分析：峰值层间位移角分布"
+    },
+    {
+      "check": "forward operation change-039",
+      "passed": true,
+      "details": "调节器引入句：与明确后的力求和点一致"
+    },
+    {
+      "check": "forward operation change-040",
+      "passed": true,
+      "details": "稳定域：精确单位、参考模型及计算来源"
+    },
+    {
+      "check": "forward operation change-041",
+      "passed": true,
+      "details": "稳定性机理：保留物理解释，修正因果强度"
+    },
+    {
+      "check": "forward operation change-042",
+      "passed": true,
+      "details": "表5结果：重写已失效的稳定域同序关系"
+    },
+    {
+      "check": "forward operation change-043",
+      "passed": true,
+      "details": "模态份额解释：用具体坐标贡献替代能量转移断言"
+    },
+    {
+      "check": "forward operation change-044",
+      "passed": true,
+      "details": "新增图：15个物理坐标份额与两通道贡献"
+    },
+    {
+      "check": "forward operation change-045",
+      "passed": true,
+      "details": "删除0.3阈值及扫描前稳定性排名"
+    },
+    {
+      "check": "forward operation change-046",
+      "passed": true,
+      "details": "方法适用性：保留原段，更新误差与实际阶数"
+    },
+    {
+      "check": "forward operation change-047",
+      "passed": true,
+      "details": "结论第一段：纠正模态方程不含延迟的说法"
+    },
+    {
+      "check": "forward operation change-048",
+      "passed": true,
+      "details": "结论第二段：表格联动并纳入中层验证"
+    },
+    {
+      "check": "forward operation change-049",
+      "passed": true,
+      "details": "结论第三段：更新指标并限制稳定性归因"
+    },
+    {
+      "check": "forward operation change-050",
+      "passed": true,
+      "details": "图1：按式(3.6)重绘附加力反馈路径"
+    },
+    {
+      "check": "forward operation change-051",
+      "passed": true,
+      "details": "图2：英文原型几何与截面图"
+    },
+    {
+      "check": "forward operation change-052",
+      "passed": true,
+      "details": "图3：保留节点及15坐标，修正数值柱脚"
+    },
+    {
+      "check": "forward operation change-053",
+      "passed": true,
+      "details": "图4：保留双侧子结构与坐标信息的英文重绘"
+    },
+    {
+      "check": "forward operation change-054",
+      "passed": true,
+      "details": "重复文献引用：CraigBampton1968合并到Craig1968"
+    },
+    {
+      "check": "forward operation change-056",
+      "passed": true,
+      "details": "重复文献引用：ChenRicles2008b合并到ChenCR2008"
+    },
+    {
+      "check": "forward operation change-058",
+      "passed": true,
+      "details": "浮动图：限定图片在相应正文节内"
+    },
+    {
+      "check": "forward operation change-059",
+      "passed": true,
+      "details": "浮动页：允许较大图片及时单独成页"
+    },
+    {
+      "check": "forward operation change-060",
+      "passed": true,
+      "details": "图4尺寸：增加等比例高度上限"
+    },
+    {
+      "check": "forward operation change-061",
+      "passed": true,
+      "details": "图文相邻：在Response accuracy under earthquake and chirp excitation之前输出前序图片"
+    },
+    {
+      "check": "forward operation change-062",
+      "passed": true,
+      "details": "图文相邻：在Stability domains under multiple actuator delays之前输出前序图片"
+    },
+    {
+      "check": "forward operation change-063",
+      "passed": true,
+      "details": "图文相邻：在Modal redistribution ratio and applicability of the two methods之前输出前序图片"
+    },
+    {
+      "check": "forward operation change-064",
+      "passed": true,
+      "details": "图文相邻：在elsarticle-num-names之前输出前序图片"
+    },
+    {
+      "check": "all operations reconstruct final manuscript",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "reverse operation change-064",
+      "passed": true,
+      "details": "图文相邻：在elsarticle-num-names之前输出前序图片"
+    },
+    {
+      "check": "reverse operation change-063",
+      "passed": true,
+      "details": "图文相邻：在Modal redistribution ratio and applicability of the two methods之前输出前序图片"
+    },
+    {
+      "check": "reverse operation change-062",
+      "passed": true,
+      "details": "图文相邻：在Stability domains under multiple actuator delays之前输出前序图片"
+    },
+    {
+      "check": "reverse operation change-061",
+      "passed": true,
+      "details": "图文相邻：在Response accuracy under earthquake and chirp excitation之前输出前序图片"
+    },
+    {
+      "check": "reverse operation change-060",
+      "passed": true,
+      "details": "图4尺寸：增加等比例高度上限"
+    },
+    {
+      "check": "reverse operation change-059",
+      "passed": true,
+      "details": "浮动页：允许较大图片及时单独成页"
+    },
+    {
+      "check": "reverse operation change-058",
+      "passed": true,
+      "details": "浮动图：限定图片在相应正文节内"
+    },
+    {
+      "check": "reverse operation change-056",
+      "passed": true,
+      "details": "重复文献引用：ChenRicles2008b合并到ChenCR2008"
+    },
+    {
+      "check": "reverse operation change-054",
+      "passed": true,
+      "details": "重复文献引用：CraigBampton1968合并到Craig1968"
+    },
+    {
+      "check": "reverse operation change-053",
+      "passed": true,
+      "details": "图4：保留双侧子结构与坐标信息的英文重绘"
+    },
+    {
+      "check": "reverse operation change-052",
+      "passed": true,
+      "details": "图3：保留节点及15坐标，修正数值柱脚"
+    },
+    {
+      "check": "reverse operation change-051",
+      "passed": true,
+      "details": "图2：英文原型几何与截面图"
+    },
+    {
+      "check": "reverse operation change-050",
+      "passed": true,
+      "details": "图1：按式(3.6)重绘附加力反馈路径"
+    },
+    {
+      "check": "reverse operation change-049",
+      "passed": true,
+      "details": "结论第三段：更新指标并限制稳定性归因"
+    },
+    {
+      "check": "reverse operation change-048",
+      "passed": true,
+      "details": "结论第二段：表格联动并纳入中层验证"
+    },
+    {
+      "check": "reverse operation change-047",
+      "passed": true,
+      "details": "结论第一段：纠正模态方程不含延迟的说法"
+    },
+    {
+      "check": "reverse operation change-046",
+      "passed": true,
+      "details": "方法适用性：保留原段，更新误差与实际阶数"
+    },
+    {
+      "check": "reverse operation change-045",
+      "passed": true,
+      "details": "删除0.3阈值及扫描前稳定性排名"
+    },
+    {
+      "check": "reverse operation change-044",
+      "passed": true,
+      "details": "新增图：15个物理坐标份额与两通道贡献"
+    },
+    {
+      "check": "reverse operation change-043",
+      "passed": true,
+      "details": "模态份额解释：用具体坐标贡献替代能量转移断言"
+    },
+    {
+      "check": "reverse operation change-042",
+      "passed": true,
+      "details": "表5结果：重写已失效的稳定域同序关系"
+    },
+    {
+      "check": "reverse operation change-041",
+      "passed": true,
+      "details": "稳定性机理：保留物理解释，修正因果强度"
+    },
+    {
+      "check": "reverse operation change-040",
+      "passed": true,
+      "details": "稳定域：精确单位、参考模型及计算来源"
+    },
+    {
+      "check": "reverse operation change-039",
+      "passed": true,
+      "details": "调节器引入句：与明确后的力求和点一致"
+    },
+    {
+      "check": "reverse operation change-038",
+      "passed": true,
+      "details": "新增图与分析：峰值层间位移角分布"
+    },
+    {
+      "check": "reverse operation change-037",
+      "passed": true,
+      "details": "响应小结：删除精度模型同阶的错误论据"
+    },
+    {
+      "check": "reverse operation change-036",
+      "passed": true,
+      "details": "首层误差分析：更新整段数值与非单调趋势"
+    },
+    {
+      "check": "reverse operation change-035",
+      "passed": true,
+      "details": "新增图与分析：中间楼层扫频重构"
+    },
+    {
+      "check": "reverse operation change-034",
+      "passed": true,
+      "details": "扫频时程：修正峰值时刻和末端幅值判断"
+    },
+    {
+      "check": "reverse operation change-033",
+      "passed": true,
+      "details": "新增图与分析：中间楼层地震重构"
+    },
+    {
+      "check": "reverse operation change-032",
+      "passed": true,
+      "details": "地震结果：不再以幅值居中为由省略中层"
+    },
+    {
+      "check": "reverse operation change-031",
+      "passed": true,
+      "details": "MAC解读：保留原判断，补上新振型证据"
+    },
+    {
+      "check": "reverse operation change-030",
+      "passed": true,
+      "details": "新增图：前两阶实际频率与恢复水平振型"
+    },
+    {
+      "check": "reverse operation change-029",
+      "passed": true,
+      "details": "频率机理：删除不适用的普遍上界推论"
+    },
+    {
+      "check": "reverse operation change-028",
+      "passed": true,
+      "details": "表5：逐格替换4个错误数值"
+    },
+    {
+      "check": "reverse operation change-027",
+      "passed": true,
+      "details": "表4：逐格替换21个错误数值"
+    },
+    {
+      "check": "reverse operation change-026",
+      "passed": true,
+      "details": "表3：逐格替换5个错误数值"
+    },
+    {
+      "check": "reverse operation change-025",
+      "passed": true,
+      "details": "模态精度段：更新频率和最大误差"
+    },
+    {
+      "check": "reverse operation change-024",
+      "passed": true,
+      "details": "结果节导语：明确两套分析的对象"
+    },
+    {
+      "check": "reverse operation change-023",
+      "passed": true,
+      "details": "局部模型阶数：限定6/12阶的适用对象"
+    },
+    {
+      "check": "reverse operation change-022",
+      "passed": true,
+      "details": "指标解释：删除“等于进入延迟通道的响应”"
+    },
+    {
+      "check": "reverse operation change-021",
+      "passed": true,
+      "details": "模态扩展：补齐重归一化和权重的计算规则"
+    },
+    {
+      "check": "reverse operation change-020",
+      "passed": true,
+      "details": "模态指标定位：回到公式实际度量"
+    },
+    {
+      "check": "reverse operation change-019",
+      "passed": true,
+      "details": "扫频积分：固定频带端点，修正单调增长暗示"
+    },
+    {
+      "check": "reverse operation change-018",
+      "passed": true,
+      "details": "MAC：明确平移与转角的单位"
+    },
+    {
+      "check": "reverse operation change-017",
+      "passed": true,
+      "details": "新增图：地震与扫频输入"
+    },
+    {
+      "check": "reverse operation change-016",
+      "passed": true,
+      "details": "激励定义：补充完整输入并删除未验证的屈服判断"
+    },
+    {
+      "check": "reverse operation change-015",
+      "passed": true,
+      "details": "准确性仿真：按真实并行状态空间运行说明"
+    },
+    {
+      "check": "reverse operation change-014",
+      "passed": true,
+      "details": "准确性模型：明确整体缩聚的实际阶数及Guyan实现"
+    },
+    {
+      "check": "reverse operation change-013",
+      "passed": true,
+      "details": "两种分析：保留通道位置而不混同模型"
+    },
+    {
+      "check": "reverse operation change-012",
+      "passed": true,
+      "details": "固有频率与阻尼：按实际矩阵更新"
+    },
+    {
+      "check": "reverse operation change-011",
+      "passed": true,
+      "details": "模型复现：集中补充边界、截面与质量"
+    },
+    {
+      "check": "reverse operation change-010",
+      "passed": true,
+      "details": "表1：柱弹性模量200改为206 GPa"
+    },
+    {
+      "check": "reverse operation change-009",
+      "passed": true,
+      "details": "表1：梁弹性模量200改为206 GPa"
+    },
+    {
+      "check": "reverse operation change-008",
+      "passed": true,
+      "details": "基准来源：区分原型截面与实际数值参数"
+    },
+    {
+      "check": "reverse operation change-007",
+      "passed": true,
+      "details": "附加反馈力：写明延迟与力的施加位置"
+    },
+    {
+      "check": "reverse operation change-006",
+      "passed": true,
+      "details": "模态与时滞：区分直接延迟和动力耦合"
+    },
+    {
+      "check": "reverse operation change-005",
+      "passed": true,
+      "details": "闭环信号：明确调节器使用数值状态"
+    },
+    {
+      "check": "reverse operation change-004",
+      "passed": true,
+      "details": "装配平衡：纠正“既无协调也无平衡”的表述"
+    },
+    {
+      "check": "reverse operation change-003",
+      "passed": true,
+      "details": "装配坐标：补充局部至整体的映射"
+    },
+    {
+      "check": "reverse operation change-002",
+      "passed": true,
+      "details": "界面力维数：避免直接相加不同局部向量"
+    },
+    {
+      "check": "reverse operation change-001",
+      "passed": true,
+      "details": "摘要：数据联动与有依据的结论"
+    },
+    {
+      "check": "all operations recover original manuscript",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "negative skip commands unchanged and active",
+      "passed": true,
+      "details": "42/42; content and order unchanged"
+    },
+    {
+      "check": "original Introduction preserved verbatim",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no unexpected control characters",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "fifteen numbered figures",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "six additional figures",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "five tables retained",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "44 displayed table values",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "table cell 1",
+      "passed": true,
+      "details": "0.648"
+    },
+    {
+      "check": "table cell 2",
+      "passed": true,
+      "details": "0.003"
+    },
+    {
+      "check": "table cell 3",
+      "passed": true,
+      "details": "1.0000"
+    },
+    {
+      "check": "table cell 4",
+      "passed": true,
+      "details": "1.0000"
+    },
+    {
+      "check": "table cell 5",
+      "passed": true,
+      "details": "5.411"
+    },
+    {
+      "check": "table cell 6",
+      "passed": true,
+      "details": "0.284"
+    },
+    {
+      "check": "table cell 7",
+      "passed": true,
+      "details": "0.9998"
+    },
+    {
+      "check": "table cell 8",
+      "passed": true,
+      "details": "1.0000"
+    },
+    {
+      "check": "table cell 9",
+      "passed": true,
+      "details": "19.040"
+    },
+    {
+      "check": "table cell 10",
+      "passed": true,
+      "details": "0.024"
+    },
+    {
+      "check": "table cell 11",
+      "passed": true,
+      "details": "0.9962"
+    },
+    {
+      "check": "table cell 12",
+      "passed": true,
+      "details": "1.0000"
+    },
+    {
+      "check": "table cell 13",
+      "passed": true,
+      "details": "30.574"
+    },
+    {
+      "check": "table cell 14",
+      "passed": true,
+      "details": "0.108"
+    },
+    {
+      "check": "table cell 15",
+      "passed": true,
+      "details": "0.9255"
+    },
+    {
+      "check": "table cell 16",
+      "passed": true,
+      "details": "1.0000"
+    },
+    {
+      "check": "table cell 17",
+      "passed": true,
+      "details": "0.802"
+    },
+    {
+      "check": "table cell 18",
+      "passed": true,
+      "details": "0.014"
+    },
+    {
+      "check": "table cell 19",
+      "passed": true,
+      "details": "10.911"
+    },
+    {
+      "check": "table cell 20",
+      "passed": true,
+      "details": "0.029"
+    },
+    {
+      "check": "table cell 21",
+      "passed": true,
+      "details": "0.027"
+    },
+    {
+      "check": "table cell 22",
+      "passed": true,
+      "details": "<0.001"
+    },
+    {
+      "check": "table cell 23",
+      "passed": true,
+      "details": "0.719"
+    },
+    {
+      "check": "table cell 24",
+      "passed": true,
+      "details": "0.001"
+    },
+    {
+      "check": "table cell 25",
+      "passed": true,
+      "details": "2.010"
+    },
+    {
+      "check": "table cell 26",
+      "passed": true,
+      "details": "0.008"
+    },
+    {
+      "check": "table cell 27",
+      "passed": true,
+      "details": "26.858"
+    },
+    {
+      "check": "table cell 28",
+      "passed": true,
+      "details": "0.074"
+    },
+    {
+      "check": "table cell 29",
+      "passed": true,
+      "details": "0.631"
+    },
+    {
+      "check": "table cell 30",
+      "passed": true,
+      "details": "0.003"
+    },
+    {
+      "check": "table cell 31",
+      "passed": true,
+      "details": "9.898"
+    },
+    {
+      "check": "table cell 32",
+      "passed": true,
+      "details": "0.023"
+    },
+    {
+      "check": "table cell 33",
+      "passed": true,
+      "details": "0.171"
+    },
+    {
+      "check": "table cell 34",
+      "passed": true,
+      "details": "0.007"
+    },
+    {
+      "check": "table cell 35",
+      "passed": true,
+      "details": "0.129"
+    },
+    {
+      "check": "table cell 36",
+      "passed": true,
+      "details": "0.004"
+    },
+    {
+      "check": "table cell 37",
+      "passed": true,
+      "details": "2.041"
+    },
+    {
+      "check": "table cell 38",
+      "passed": true,
+      "details": "0.138"
+    },
+    {
+      "check": "table cell 39",
+      "passed": true,
+      "details": "3.020"
+    },
+    {
+      "check": "table cell 40",
+      "passed": true,
+      "details": "0.053"
+    },
+    {
+      "check": "table cell 41",
+      "passed": true,
+      "details": "-0.0414"
+    },
+    {
+      "check": "table cell 42",
+      "passed": true,
+      "details": "0.0039"
+    },
+    {
+      "check": "table cell 43",
+      "passed": true,
+      "details": "0.8914"
+    },
+    {
+      "check": "table cell 44",
+      "passed": true,
+      "details": "0.0365"
+    },
+    {
+      "check": "30 corrected table cells explicitly red",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "two modulus cells explicitly red",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "obsolete maximum values absent from prose",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "six new figure metrics crosschecked in MATLAB",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig01_force_feedback.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig01_force_feedback.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig01_force_feedback.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig02_geometry.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig02_geometry.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig02_geometry.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig03_dofs.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig03_dofs.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig03_dofs.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig04_divisions.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig04_divisions.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig04_divisions.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig11_excitation.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig11_excitation.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig11_excitation.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig12_horizontal_modes.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig12_horizontal_modes.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig12_horizontal_modes.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig06_eq_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig06_eq_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig06_eq_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig07_eq_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig07_eq_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig07_eq_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig13_middle_eq.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig13_middle_eq.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig13_middle_eq.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig14_middle_chirp.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig14_middle_chirp.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig14_middle_chirp.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig15_peak_drift.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig15_peak_drift.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig15_peak_drift.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig10_stability_domain.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig10_stability_domain.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig10_stability_domain.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "figure file exists fig16_modal_shares.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "vector figure fig16_modal_shares.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no Type 3 font fig16_modal_shares.pdf",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "final_production: 1 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "final_production: 2 bibtex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "final_production: 3 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "final_production: 4 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "no TeX errors or undefined references/citations",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "independent build folder initially absent",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "independent_copy: 1 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "independent_copy: 2 bibtex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "independent_copy: 3 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "independent_copy: 4 pdflatex",
+      "passed": true,
+      "details": "exit 0"
+    },
+    {
+      "check": "independent manuscript page content identical",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no unresolved question marks in PDF",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "correct total page count in every footer",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no malformed caption reference",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no text outside page media boxes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "one caption for figure 1",
+      "passed": true,
+      "details": [
+        10
+      ]
+    },
+    {
+      "check": "one caption for figure 2",
+      "passed": true,
+      "details": [
+        14
+      ]
+    },
+    {
+      "check": "one caption for figure 3",
+      "passed": true,
+      "details": [
+        16
+      ]
+    },
+    {
+      "check": "one caption for figure 4",
+      "passed": true,
+      "details": [
+        18
+      ]
+    },
+    {
+      "check": "one caption for figure 5",
+      "passed": true,
+      "details": [
+        20
+      ]
+    },
+    {
+      "check": "one caption for figure 6",
+      "passed": true,
+      "details": [
+        24
+      ]
+    },
+    {
+      "check": "one caption for figure 7",
+      "passed": true,
+      "details": [
+        25
+      ]
+    },
+    {
+      "check": "one caption for figure 8",
+      "passed": true,
+      "details": [
+        26
+      ]
+    },
+    {
+      "check": "one caption for figure 9",
+      "passed": true,
+      "details": [
+        27
+      ]
+    },
+    {
+      "check": "one caption for figure 10",
+      "passed": true,
+      "details": [
+        28
+      ]
+    },
+    {
+      "check": "one caption for figure 11",
+      "passed": true,
+      "details": [
+        29
+      ]
+    },
+    {
+      "check": "one caption for figure 12",
+      "passed": true,
+      "details": [
+        30
+      ]
+    },
+    {
+      "check": "one caption for figure 13",
+      "passed": true,
+      "details": [
+        31
+      ]
+    },
+    {
+      "check": "one caption for figure 14",
+      "passed": true,
+      "details": [
+        32
+      ]
+    },
+    {
+      "check": "one caption for figure 15",
+      "passed": true,
+      "details": [
+        34
+      ]
+    },
+    {
+      "check": "protected source cas-common.sty",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-common.sty"
+    },
+    {
+      "check": "protected source cas-email.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-email.jpeg"
+    },
+    {
+      "check": "protected source cas-facebook.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-facebook.jpeg"
+    },
+    {
+      "check": "protected source cas-gplus.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-gplus.jpeg"
+    },
+    {
+      "check": "protected source cas-linkedin.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-linkedin.jpeg"
+    },
+    {
+      "check": "protected source cas-sc.cls",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-sc.cls"
+    },
+    {
+      "check": "protected source cas-twitter.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-twitter.jpeg"
+    },
+    {
+      "check": "protected source cas-url.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\cas-url.jpeg"
+    },
+    {
+      "check": "protected source elsarticle-num-names.bst",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\elsarticle-num-names.bst"
+    },
+    {
+      "check": "protected source main.abs",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.abs"
+    },
+    {
+      "check": "protected source main.aux",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.aux"
+    },
+    {
+      "check": "protected source main.bbl",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.bbl"
+    },
+    {
+      "check": "protected source main.blg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.blg"
+    },
+    {
+      "check": "protected source main.log",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.log"
+    },
+    {
+      "check": "protected source main.out",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.out"
+    },
+    {
+      "check": "protected source main.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.pdf"
+    },
+    {
+      "check": "protected source main.synctex.gz",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.synctex.gz"
+    },
+    {
+      "check": "protected source main.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\main.tex"
+    },
+    {
+      "check": "protected source references.bib",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\references.bib"
+    },
+    {
+      "check": "protected source fig01_rths_loop_optionD.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig01_rths_loop_optionD.png"
+    },
+    {
+      "check": "protected source fig02_pole_mapping_optionB.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig02_pole_mapping_optionB.png"
+    },
+    {
+      "check": "protected source fig03_benchmark_geometry_optionC.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig03_benchmark_geometry_optionC.png"
+    },
+    {
+      "check": "protected source fig04a_dof_assumptions_optionD.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig04a_dof_assumptions_optionD.png"
+    },
+    {
+      "check": "protected source fig04b_dof_idealized_optionD.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig04b_dof_idealized_optionD.png"
+    },
+    {
+      "check": "protected source fig05a_divisionI_concept_optionD.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig05a_divisionI_concept_optionD.png"
+    },
+    {
+      "check": "protected source fig05b_divisionII_concept_optionD.png",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig05b_divisionII_concept_optionD.png"
+    },
+    {
+      "check": "protected source fig06_eq_div1.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig06_eq_div1.pdf"
+    },
+    {
+      "check": "protected source fig07_eq_div2.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig07_eq_div2.pdf"
+    },
+    {
+      "check": "protected source fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig08_chirp_div1.pdf"
+    },
+    {
+      "check": "protected source fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig09_chirp_div2.pdf"
+    },
+    {
+      "check": "protected source fig10_stability_domain.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier\\submit_figure\\fig10_stability_domain.pdf"
+    },
+    {
+      "check": "protected source cas-common.sty",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-common.sty"
+    },
+    {
+      "check": "protected source cas-email.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-email.jpeg"
+    },
+    {
+      "check": "protected source cas-facebook.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-facebook.jpeg"
+    },
+    {
+      "check": "protected source cas-gplus.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-gplus.jpeg"
+    },
+    {
+      "check": "protected source cas-linkedin.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-linkedin.jpeg"
+    },
+    {
+      "check": "protected source cas-sc.cls",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-sc.cls"
+    },
+    {
+      "check": "protected source cas-twitter.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-twitter.jpeg"
+    },
+    {
+      "check": "protected source cas-url.jpeg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\cas-url.jpeg"
+    },
+    {
+      "check": "protected source elsarticle-num-names.bst",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\elsarticle-num-names.bst"
+    },
+    {
+      "check": "protected source main.abs",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.abs"
+    },
+    {
+      "check": "protected source main.aux",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.aux"
+    },
+    {
+      "check": "protected source main.bbl",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.bbl"
+    },
+    {
+      "check": "protected source main.blg",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.blg"
+    },
+    {
+      "check": "protected source main.log",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.log"
+    },
+    {
+      "check": "protected source main.out",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.out"
+    },
+    {
+      "check": "protected source main.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.pdf"
+    },
+    {
+      "check": "protected source main.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\main.tex"
+    },
+    {
+      "check": "protected source references.bib",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\references.bib"
+    },
+    {
+      "check": "protected source 修改说明.md",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\修改说明.md"
+    },
+    {
+      "check": "protected source 全文修改逐项对照与回退决策汇报.html",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\全文修改逐项对照与回退决策汇报.html"
+    },
+    {
+      "check": "protected source additional_metrics.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\additional_metrics.json"
+    },
+    {
+      "check": "protected source change_operations.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\change_operations.json"
+    },
+    {
+      "check": "protected source delivery_hashes.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\delivery_hashes.json"
+    },
+    {
+      "check": "protected source main.diff",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\main.diff"
+    },
+    {
+      "check": "protected source source_hashes.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\source_hashes.json"
+    },
+    {
+      "check": "protected source table345_verified_values.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\table345_verified_values.json"
+    },
+    {
+      "check": "protected source validation.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\validation.json"
+    },
+    {
+      "check": "protected source visual_qa.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\visual_qa.json"
+    },
+    {
+      "check": "protected source fig01_force_feedback.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig01_force_feedback.tex"
+    },
+    {
+      "check": "protected source fig02_geometry.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig02_geometry.tex"
+    },
+    {
+      "check": "protected source fig03_dofs.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig03_dofs.tex"
+    },
+    {
+      "check": "protected source fig04_divisions.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig04_divisions.tex"
+    },
+    {
+      "check": "protected source fig06_eq_div1.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig06_eq_div1.pdf"
+    },
+    {
+      "check": "protected source fig07_eq_div2.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig07_eq_div2.pdf"
+    },
+    {
+      "check": "protected source fig08_chirp_div1.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig08_chirp_div1.pdf"
+    },
+    {
+      "check": "protected source fig09_chirp_div2.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig09_chirp_div2.pdf"
+    },
+    {
+      "check": "protected source fig10_stability_domain.pdf",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\submit_figure\\fig10_stability_domain.pdf"
+    },
+    {
+      "check": "protected source C_full.csv",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\C_full.csv"
+    },
+    {
+      "check": "protected source division_II_matrices.mat",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\division_II_matrices.mat"
+    },
+    {
+      "check": "protected source division_I_matrices.mat",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\division_I_matrices.mat"
+    },
+    {
+      "check": "protected source K_full.csv",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\K_full.csv"
+    },
+    {
+      "check": "protected source M_full.csv",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\M_full.csv"
+    },
+    {
+      "check": "protected source README.txt",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\supplementary_data\\README.txt"
+    },
+    {
+      "check": "protected source finish_assets.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\finish_assets.py"
+    },
+    {
+      "check": "protected source revise.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\revise.py"
+    },
+    {
+      "check": "protected source verify_and_report.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\scripts\\verify_and_report.py"
+    },
+    {
+      "check": "protected source browser_qa.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\browser_qa.json"
+    },
+    {
+      "check": "protected source build_report.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\build_report.py"
+    },
+    {
+      "check": "protected source catalog.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\catalog.py"
+    },
+    {
+      "check": "protected source coverage_check.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\coverage_check.json"
+    },
+    {
+      "check": "protected source finalize_report.py",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\finalize_report.py"
+    },
+    {
+      "check": "protected source final_acceptance.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\final_acceptance.json"
+    },
+    {
+      "check": "protected source hunks.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\hunks.json"
+    },
+    {
+      "check": "protected source main_全部104项.diff",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\main_全部104项.diff"
+    },
+    {
+      "check": "protected source qa_report.cjs",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\qa_report.cjs"
+    },
+    {
+      "check": "protected source references_两处删除.diff",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\references_两处删除.diff"
+    },
+    {
+      "check": "protected source report_files_sha256.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\report_files_sha256.json"
+    },
+    {
+      "check": "protected source static_and_protection_qa.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\static_and_protection_qa.json"
+    },
+    {
+      "check": "protected source turn_start_hashes.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\turn_start_hashes.json"
+    },
+    {
+      "check": "protected source visual_qa.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\visual_qa.json"
+    },
+    {
+      "check": "protected source 全部修改清单.csv",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\全部修改清单.csv"
+    },
+    {
+      "check": "protected source 全部修改清单.json",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_20260906\\revision_evidence\\逐项修改报告\\全部修改清单.json"
+    },
+    {
+      "check": "protected source main_source_readonly.tex",
+      "passed": true,
+      "details": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\表3至表5_按当前出图设置核查_20260906\\evidence\\main_source_readonly.tex"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "通过": true,
+  "初始冻结文件数": 289,
+  "外部事件后补充文本源数": 9,
+  "硬错误数": 0,
+  "警告数": 1,
+  "硬错误": [],
+  "警告": [
+    "来源文件SHA256变化：D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\manuscript\\manuscript.pdf；冻结ac30a8fcdf2a08ab263d6aa800574507f580e5a159e5645ffe0a1d6cf045cf3a；当前83157aa4d9589f7704e5fba6d33f38cebf4845b8c68e05521316103793bad2ef"
+  ]
+}

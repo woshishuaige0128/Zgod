@@ -1,0 +1,67 @@
+
+============================================================
+Fig09：第二类子结构划分，0.1--10 Hz Chirp响应
+计算路线：15自由度原结构 -> Guyan / Craig-Bampton -> 状态空间 -> Simulink -> 物理楼层恢复 -> 绘图
+本图目录：D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig09_第二类划分_Chirp全链计算
+注意：参考CSV尚未读取；它只在最后的末端验收章节使用。
+Fig.9口径：本脚本使用物理一致的Chirp局部窗13--14 s与38--38.3 s；不复刻硕士论文图3-15混入El Centro局部窗的历史错误。
+============================================================
+
+
+fre =
+
+    2.7074
+    9.3284
+   18.4427
+   22.6736
+   24.2277
+   25.9882
+   29.1410
+   31.3416
+   33.1051
+   35.5959
+   37.8499
+   38.1964
+   39.7519
+   43.4709
+   44.1498
+
+[1/9] 原结构矩阵完成：M/C/K = 15×15；前两阶频率 = 2.707426, 9.328409 Hz。
+已创建原始文件 "fig09_division2_repro.slx" 的副本，因为它上次是在早期版本的 Simulink 中保存的。要恢复原始版本，请将文件 "fig09_division2_repro.slx.r2023b" 重命名为 "fig09_division2_repro.slx"。
+
+您可以使用 <a href="matlab:slprivate('showprefs')">Simulink 预设项</a>关闭此功能。如果您不想再次看到此消息，请点击<a href="matlab:Simulink.internal.setPreferenceFlag('SimulinkShowPersistentBackupNotification', false)">此处</a>。
+[2/9] 运行模型副本完成：D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig09_第二类划分_Chirp全链计算\输出\运行模型副本\fig09_division2_repro.slx
+      已在副本补齐第二类划分三层输出：Mux6/2 <- Demux4/3，Mux6/3 <- Demux5/3。
+[3/9] 降阶完成：Original=15，Guyan=5，Craig-Bampton=8 个位移自由度。
+      主自由度：[1 11 4 9 14]
+      从自由度：[6 2 3 5 7 8 10 12 13 15]
+[4/9] 状态空间完成：三套状态维数 = [30 10 16]。
+[5/9] 激励完成：0.1--10 Hz linear Chirp over 40 s；输入样本数=40961。
+[警告: 模块 'fig09_division2_repro/Chirp Signal2' 的'输出端口 1' 未连接。] 
+[> 位置：RUN_FIG09_FULLCHAIN>run_one_simulation (第 456 行)
+位置: RUN_FIG09_FULLCHAIN (第 165 行)
+位置: run (第 112 行)
+位置: RUN_ALL_FOUR (第 17 行)] 
+[警告: 未连接模块 'fig09_division2_repro/Demux2' 的'输入端口 1'。] 
+[> 位置：RUN_FIG09_FULLCHAIN>run_one_simulation (第 456 行)
+位置: RUN_FIG09_FULLCHAIN (第 165 行)
+位置: run (第 112 行)
+位置: RUN_ALL_FOUR (第 17 行)] 
+[警告: 模块 'fig09_division2_repro/Step1' 的'输出端口 1' 未连接。] 
+[> 位置：RUN_FIG09_FULLCHAIN>run_one_simulation (第 456 行)
+位置: RUN_FIG09_FULLCHAIN (第 165 行)
+位置: run (第 112 行)
+位置: RUN_ALL_FOUR (第 17 行)] 
+[6/9] Simulink完成：耗时 4.07 s。
+[7/9] 物理响应恢复完成：response_mm = 40961×3×3；本轮CSV已保存。
+[8/9] 绘图完成：
+      PDF=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig09_第二类划分_Chirp全链计算\输出\本轮计算图\fig09_chirp_div2_fullchain.pdf
+      PNG=D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\code\导师现场MATLAB全链演示_Fig06至Fig09\Fig09_第二类划分_Chirp全链计算\输出\本轮计算图\fig09_chirp_div2_fullchain.png
+[9/9] 末端验收通过：本轮计算与当前结果最大绝对差 = 4.9737991503207013e-14 mm。
+
+STATUS=PASS
+FULL_CHAIN=PASS
+总耗时：23.84 s
+现场建议查看工作区变量：M_full、M_guyan、M_cb、T_guyan、T_cb、excitation_input、response_mm。
+如需打开实际运行模型副本，请在命令窗口输入：open_system(runtime_model_file)
+

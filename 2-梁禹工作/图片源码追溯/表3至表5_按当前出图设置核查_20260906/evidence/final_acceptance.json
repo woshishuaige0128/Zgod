@@ -1,0 +1,27 @@
+{
+  "source_protection": "72/72 PASS",
+  "runtime_input_copies": "24/24 PASS",
+  "original_calculation_sections_and_functions": "4/4 exact match",
+  "html_links": "PASS",
+  "desktop_1440": "PASS",
+  "mobile_390": "PASS",
+  "offline_moved_single_file": "PASS",
+  "visual_check": "PASS; top, Table 4, all six A4 pages; final contrast correction rechecked",
+  "a4_print_pages": 6,
+  "html_sha256": "102808aa1ce3ea8547330aa3c8a9a16cf87c46513ee35c0288cffaee502dc089",
+  "table_agreement": {
+    "3": {
+      "total": 16,
+      "matched": 11
+    },
+    "4": {
+      "total": 24,
+      "matched": 3
+    },
+    "5": {
+      "total": 4,
+      "matched": 0
+    }
+  },
+  "status": "AUDIT_COMPLETE_MANUSCRIPT_NOT_MODIFIED"
+}

@@ -1,0 +1,14 @@
+{
+  "candidate_route_count": 4,
+  "frequency_comparison_rows": 28,
+  "mac_comparison_rows": 56,
+  "second_division_frequency_rounded_matches": 0,
+  "second_division_mac_rounded_matches": 7,
+  "second_division_complete_frequency_routes": [],
+  "second_division_complete_mac_routes": [],
+  "second_division_complete_frequency_route_found": false,
+  "second_division_complete_mac_route_found": false,
+  "maximum_local_frequency_reference_difference_hz": 1.5987211554602254e-13,
+  "search_boundary": "仅源码明确写出的phy、能量三水平、PD2、PD3；未枚举任意自由度组合，未拟合参数",
+  "status": "NO_COMPLETE_DOCUMENTED_ALTERNATIVE_MATCH"
+}

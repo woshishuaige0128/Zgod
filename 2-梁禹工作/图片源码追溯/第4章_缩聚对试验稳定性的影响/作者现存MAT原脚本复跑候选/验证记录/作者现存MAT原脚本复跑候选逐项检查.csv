@@ -1,0 +1,8 @@
+check_item,status,details
+"4-4/Original pointwise boundary",PASS,"actual=72, expected=72, xrange=[2,64], yrange=[2,31]"
+"4-4/Craig-Bampton pointwise boundary",PASS,"actual=65, expected=65, xrange=[2,55], yrange=[2,26]"
+"4-4/Guyan pointwise boundary",PASS,"actual=62, expected=62, xrange=[2,52], yrange=[2,25]"
+"4-5/Original pointwise boundary",PASS,"actual=69, expected=69, xrange=[2,57], yrange=[2,28]"
+"4-5/Craig-Bampton pointwise boundary",PASS,"actual=59, expected=59, xrange=[2,54], yrange=[2,26]"
+"4-5/Guyan pointwise boundary",PASS,"actual=56, expected=56, xrange=[2,51], yrange=[2,25]"
+"4-4/Guyan right edge (52,2)..(52,10)",PASS,"matched=9/9"

@@ -1,0 +1,95 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v2_precheck_failure_attribution_v1",
+  "record_status": "IMMUTABLE_PRECHECK_FAIL_DO_NOT_OVERWRITE_OR_REINTERPRET",
+  "purpose": "Permanently freeze the only validator-V2 precheck exactly as executed. Validator V2, its contract, binding record, audit bundle, and log must not be modified, rerun, or used as a PASS prerequisite.",
+  "execution": {
+    "mode": "precheck",
+    "command": "D:/Software/python/python.exe code/validate_board20_step5_fullq_svd_candidate_v2.py --mode precheck",
+    "exit_code": 1,
+    "overall_status": "FAIL",
+    "total_checks": 32,
+    "passed_checks": 30,
+    "information_checks": 0,
+    "failed_checks": 2,
+    "repeat_run_performed": false,
+    "repeat_run_forbidden_after_failure": true,
+    "trigger_attribution": "The precheck command had already been dispatched when the parent instruction to wait for an independent helper arrived. The messages crossed. The failure remains fully binding and is not excused by that timing.",
+    "candidate_scientific_outputs_parsed": false,
+    "candidate_computation_launched": false,
+    "candidate_outputs_modified": false,
+    "v4_pilot_directory_existed_after": false,
+    "v4_full_directory_existed_after": false
+  },
+  "validator_v2_frozen_identity": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v2.py",
+    "script_sha256": "D6E0111413BD8E51A068AEDDFF509FC8159FC946E51EE1A0DFE53EF9DE2CB4A2",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v2.json",
+    "contract_sha256": "766E8E82CE6B03281F7C1A7EE566D7423B538725032FC7C8B2B521E66F74F61D",
+    "binding_record_relpath": "code/board20_step5_fullq_svd_candidate_validator_v2_v4_binding_record.json",
+    "binding_record_sha256": "84A722AC8E865CA6CC9DFB6AD2F82BDCAF16A5EA179EC81059F282BD1A503728",
+    "verdict": "PRECHECK_FAIL_PERMANENT_IMMUTABLE"
+  },
+  "audit_bundle_frozen_identity": {
+    "primary_json": {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck.json",
+      "sha256": "8243C01B8DE0B2C93F5C757D533B3B91AF34F358896B31DBC24DE375054E8A64"
+    },
+    "checks_csv": {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck_checks.csv",
+      "sha256": "7398A5E4740D496B0F8BC8BB9E7566A74FDCFAF91446FCF9AE718453444BB4D4"
+    },
+    "protected_hashes_csv": {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck_protected_hashes.csv",
+      "sha256": "CC1BACB55B7B6B6E5BB0DC15EC2CD8B0DDA9E30DA3592ED5B162F06026F4C74A"
+    },
+    "report_md": {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck_report.md",
+      "sha256": "9CFC2ECCC5A699864CD26C5DACBC7406EB59CDFF0E130D8E00A64485B591BD1B"
+    },
+    "artifact_manifest_csv": {
+      "relpath": "outputs/step5_fullq_svd_candidate_audit_v2/v4_validator_v2_precheck_artifact_manifest.csv",
+      "sha256": "2231923A3589A3E83ECCECCF2E67466B632699CFB8AB9A24B7B3FC75546FFC62"
+    },
+    "log": {
+      "relpath": "logs/step5_fullq_svd_candidate_validation_v2/v4_validator_v2_precheck.log",
+      "sha256": "92F7341F7F37AAFB9A332CC72F5E407BAF5E1DFAB8FAB577F7920F6C6803AB4C"
+    }
+  },
+  "failed_checks": [
+    {
+      "check_id": "S5FQSV4-V2-PRE-0009",
+      "category": "validator_revision",
+      "failure_type": "VALIDATOR_COMPARISON_REPRESENTATION_ERROR",
+      "cause": "The exact-function AST hash included validator reporting text. Twenty-four of twenty-five registered functions matched exactly; verify_candidate_manifest differed only because V2 changed the human description from a hard-coded 17-artifact phrase to a contract-driven 18-artifact phrase. No scientific calculation or gate differed.",
+      "scientific_gate_effect": "NONE",
+      "v2_verdict_effect": "HARD_FAIL_REMAINS"
+    },
+    {
+      "check_id": "S5FQSV4-V2-PRE-0020",
+      "category": "input_seal",
+      "failure_type": "DISTINCT_HASH_DOMAINS_CONFLATED",
+      "cause": "The V4 static_diff_selftest.json file byte SHA-256 is 95CE2AEAAE81A3C76DC37CE04A2B7790F804B64A69C88EF838EC502838C772BD, while input_seal.static_diff_selftest_sha256 is the preregistered canonical JSON SHA-256 5EBEEDD82C68C26C8251D67A234C72446587CA2A3E6E90003BDBE774AF8544B7. V2 incorrectly used the file-byte hash in both roles.",
+      "scientific_gate_effect": "NONE",
+      "v2_verdict_effect": "HARD_FAIL_REMAINS"
+    }
+  ],
+  "sealed_v4_candidate_unchanged": {
+    "contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "preflight_sha256": "DDF29EB97BFECA61AD3F0A7FE7944C1077383F5408C59E6AE180168A0DA3DD6B",
+    "selftest_sha256": "97EC46E0C59140FDA87B16F323259BDD070BBD4AB7AABC60C86C7395F4EA283C",
+    "protected_hashes_before_equal_after": true
+  },
+  "successor_policy": {
+    "validator_v2_may_be_modified": false,
+    "validator_v2_may_be_rerun": false,
+    "new_isolated_validator_version_required": true,
+    "allowed_successor_fixes": [
+      "Normalize non-scientific AST representation such as function name/binding/reporting text while preserving and comparing strict executable body semantics.",
+      "Use input_seal.static_diff_selftest_sha256 canonical value 5EBE... for seal-field comparison while retaining file-byte SHA 95CE... for file identity."
+    ],
+    "all_other_v2_bindings_and_two_representation_whitelist_rules_frozen": true,
+    "scientific_gate_relaxation_allowed": false
+  }
+}

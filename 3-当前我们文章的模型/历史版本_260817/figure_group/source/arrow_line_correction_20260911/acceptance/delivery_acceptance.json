@@ -1,0 +1,30 @@
+{
+  "pass": true,
+  "date": "2026-09-11",
+  "slides": 19,
+  "changed_slides": [
+    18,
+    19
+  ],
+  "single_native_arrow_count": 58,
+  "rotational_arrows": 42,
+  "actual_move_resize_save_checks_two_formats": 116,
+  "direction_measurements_two_formats": 84,
+  "all_17_other_pages_xml_and_pdf_content_preserved": true,
+  "protected_files_unchanged": 203,
+  "before_sha256": {
+    "figure_rths.ppt": "2ff2b19f8cfc2fb2f067831d1ce37f80a9d068342beac06699787a076238349c",
+    "figure_rths.pptx": "485ee17c67348dd864ea68eb78f33c3173f0904d8b8cedba39cb3e94b5de6801",
+    "fig3_generated_editable.svg": "fbe327a61e6d9be388c21fb431ae8da4748dcac7b2f7f0658d1ff9be33259392",
+    "fig4_generated_editable.svg": "fc71320a577734e0e69a256c77be8cc0fde790e22904ce4923696cc1fee60bcb",
+    "README_使用说明.md": "d50cb282a4d36ca0916d84d39f65d8a1ca6225adb378ae1b1257582641becdba",
+    "文件清单_SHA256.csv": "d0e67896fe1fab8dd7c959a86b33af717c8286ea43322dd5f06b7ac9c5ecd708"
+  },
+  "delivered_sha256": {
+    "figure_rths.pptx": "5a453b3ea96af549e75d404ef1faafce1d6d3042e680b76d2d225e844bcc8c3f",
+    "figure_rths.ppt": "7e6268f75ba2dcd77926c254ac252373374ab089ecac9c050df53bd5fc394fd3",
+    "fig3_generated_editable.svg": "eea65c942e2423bef0212b9161d2e0ec94852ead9d4db3c2c4f73ec0c0abb682",
+    "fig4_generated_editable.svg": "f5aaa53667f6b3799c5837523bcae44c75874a1aecfb6414aaf4134be31a4993"
+  },
+  "backup_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\source\\arrow_line_correction_20260911\\before"
+}

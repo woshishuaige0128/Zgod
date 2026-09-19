@@ -1,0 +1,2 @@
+﻿对象ID,原稿图号,唯一图号,图名,PDF页,印刷页,划分,激励,楼层,源数据,输出变量,方法列,全时窗,局部窗,单位,原稿异常,历史值状态
+F3-12,3-11,3-12,第一类子结构划分-Chirp信号的二层水平位移,47,37,第一类,40 s内0.1 Hz线性升至10 Hz的Chirp,二层,input/plotting_baseline/输入数据/第一类划分_Chirp响应.mat;input/plotting_baseline/输入数据/第一类划分_Chirp响应.csv,"time_s;response_mm[:,三种方法,二层];simout",CSV原结构_二层_mm;Guyan_二层_mm;CraigBampton_二层_mm|MAT:Original;Guyan;Craig-Bampton,0-40 s,13-14 s;38-38.3 s,mm,原稿重复印为图3-11；按正文连续关系唯一编号为图3-12,论文曲线为历史值；现有MAT/CSV为既有计算级旁证；板块18尚待从冻结作者模型独立重跑并逐图裁决

@@ -1,0 +1,30 @@
+source_name,static_role,energy_relation,known_boundary_or_issue
+energy.m,18维模态参与系数试验,不形成式(4-43)至式(4-45),与15维PDmonicanshu矩阵不相容
+EQ.mat,El Centro地震时程与开关/强度,响应旁支,不是模态能量入口
+luxvjie_cb_2.mlx,Craig-Bampton稳定性候选,不生产能量入口,与_3字节相同且遗漏整体自由度2
+luxvjie_cb_3.mlx,Craig-Bampton稳定性候选,不生产能量入口,与_2字节相同，不能区分两类
+luxvjie_cb_LQR2.mlx,第一类Craig-Bampton LQR稳定性,不生产能量入口,保存状态error且索引集合重叠
+luxvjie_cb_LQR3.mlx,第二类Craig-Bampton LQR稳定性,不生产能量入口,仅稳定性旁支
+luxvjie_guyan_2.mlx,Guyan稳定性候选,不生产能量入口,内部主坐标不符合当前两类任一集合
+luxvjie_guyan_LQR2.mlx,第一类Guyan LQR稳定性,不生产能量入口,符号z先使用后声明
+luxvjie_guyan_LQR3.mlx,第二类Guyan LQR稳定性,不生产能量入口,符号z先使用后声明
+luxvjie_ori_LQR2.mlx,第一类原系统LQR稳定性,不生产能量入口,save语句已注释
+luxvjie_ori_LQR3.mlx,第二类原系统LQR稳定性,不生产能量入口,仅稳定性旁支
+lvxvjie_guyan_2.slx,第一类18维响应模型,响应旁支,缺外部地震MAT且无自动准备回调
+lvxvjie_guyan_3.slx,第二类18维响应模型,响应旁支,缺外部地震MAT且无自动准备回调
+monicanshu_2.mlx,第一类18维响应参数准备,不直接生产能量缩聚矩阵,初始化注释维数与实际18维冲突
+monicanshu_2_suoju.mlx,第一类局部TP-family及整体/数值侧缩聚准备,energy_zonghe2与Copy_2_of_energy_zonghe2入口,静态变量名、维数和坐标顺序闭合
+monicanshu_3.mlx,第二类18维响应与稳定性参数准备,不直接生产能量缩聚矩阵,29项依赖中唯一包含未注释save语句的脚本
+monicanshu_3_suoju.mlx,第二类局部TP-family及整体/数值侧缩聚准备,energy_zonghe3与Copy_2_of_energy_zonghe3名义入口,生产者与消费者坐标顺序不一致
+PDmonicanshu.m,15自由度参考结构及3/6维缩聚准备,energy_zonghe.mlx入口,旧水平主坐标体系，不代表表4-1两类整体划分
+PDmonicanshu2.m,第一类6自由度局部结构及2/5维缩聚准备,Copy_of_energy_zonghe2.mlx入口,密度系数与MLX参数族不同
+PDmonicanshu3.m,第二类9自由度局部结构及2/5维缩聚准备,Copy_of_energy_zonghe3.mlx入口,密度系数与MLX参数族不同
+simulink_str_2.mlx,第一类18维状态空间准备,供lvxvjie_guyan_2.slx,不生产表4-1能量量
+simulink_str_3.mlx,第二类18维状态空间准备,供lvxvjie_guyan_3.slx,不生产表4-1能量量
+stab_3.mat,20乘20历史稳定性网格,稳定性旁支,不含质量、模态或缩聚矩阵
+tes.m,任意维全1激励参与质量试验,不是表4-1入口,平动与转动自由度均被激励
+test.slx,临时响应比较模型,响应旁支,不生成表4-1能量量且缺外部地震MAT
+untitled.mlx,当前第二类整体15到5/8维响应缩聚试验,不对应energy_zonghe历史3/6维身份,注释写前5模态而代码r=3
+untitled2.mlx,第一类6到2/5维特征值和能量比试验,旁支试验,保存状态error，Guyan仅2项却索引前5项
+untitled3.mlx,第一类6到2维加权能量差试验,缺失入口,K_r与M_r无生产者
+untitled4.mlx,第二类9到2维加权能量差试验,缺失入口,K_r与M_r无生产者

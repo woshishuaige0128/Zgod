@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "algebra_checks": 134,
+  "max_normalized_residual": 1.7971461500747645e-14,
+  "tolerance": 1e-10,
+  "existing_equal_delay_decompositions": 72,
+  "source_files_unchanged": 29,
+  "previous_delivery_files_unchanged": 450,
+  "new_time_integrations": 0,
+  "report_offline_desktop_mobile_visual": "PASS",
+  "print_visual_pages": 10,
+  "model_unification": "not implemented; differences documented for the next research decision",
+  "external_review": "not performed",
+  "report": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\reports\\原完整框架基准与两套模型一致性核查汇报.html",
+  "report_sha256": "e982c85fa86385ec207662ee4bd5f1c10bf8e6b707aff9850d5b6fea15323797"
+}

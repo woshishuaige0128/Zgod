@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "desktop_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "inspected": "页头、正文模型修改、逐格数值、示意图/中层响应预览；打印代表页及末页；全部打印页文字边界、图像数、64项标题与首段同页检查",
+  "print_reports": [
+    {
+      "mode": "summary",
+      "pages": 49,
+      "all_titles_with_first_explanation": true,
+      "picture_count": 20,
+      "no_empty_or_overflow_page": true
+    },
+    {
+      "mode": "full",
+      "pages": 79,
+      "all_titles_with_first_explanation": true,
+      "picture_count": 20,
+      "no_empty_or_overflow_page": true
+    }
+  ],
+  "report_sha256": "eb9385e406deaf602baf45040c1ce26182b57cecbbb067461ebbba21fc92f017"
+}

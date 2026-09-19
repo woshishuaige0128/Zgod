@@ -1,0 +1,982 @@
+**可以，而且在目前的线性结构、Rayleigh 阻尼、独立常时滞和既定积分算法假定下，可以建立一条完整的理论链条**
+
+$$
+\text{保留自由度与缩聚基底}
+\;\longrightarrow\;
+\text{动力刚度及荷载误差}
+\;\longrightarrow\;
+\text{响应误差与闭环极点偏移}
+\;\longrightarrow\;
+\text{算例验证}
+$$
+
+这样，文章的核心就不再是观察 Guyan 和 Craig–Bampton（CB）哪个结果更好，而是回答**误差来自哪里、为什么划分 II 更敏感、误差有多大，以及这些误差怎样影响时滞稳定性**。
+
+你提出的三项内容中，动力缩聚误差可以得到精确的矩阵表达式。给定地震记录或扫频函数后，响应误差可以得到解析或半解析表达式。时滞稳定性可以得到精确的离散特征方程和局部极点偏移公式，但一般不宜期待一个同时适用于多自由度、双时滞和不同控制器的简单标量临界时滞公式。
+
+下面结合当前稿件，给出具体推导路线。
+
+## 一、首先需要明确，当前算例中混合了两类不同的 Guyan 误差
+
+这是决定后续理论是否成立的关键。
+
+### 1. 理论部分和精度算例采用的质量矩阵不同
+
+第 2 节采用合同投影
+
+$$
+\mathbf M_{\mathrm G}
+=
+\mathbf T_{\mathrm G}^{\mathsf T}
+\mathbf M
+\mathbf T_{\mathrm G}.
+$$
+
+但第 4.2 节说明，精度算例实际上采用保留方程代入
+
+$$
+\widehat{\mathbf M}_{\mathrm G}
+=
+\mathbf M_{\mathrm{rr}}
++
+\mathbf M_{\mathrm{rc}}\boldsymbol\Psi_{\mathrm G},
+$$
+
+阻尼和刚度采用类似处理，而荷载仍然使用 \(\mathbf T_{\mathrm G}^{\mathsf T}\mathbf f\)。这不是同一种矩阵构造。
+
+对于稿件中的对角质量矩阵，二者分别为
+
+$$
+\begin{aligned}
+\mathbf M_{\mathrm G}
+&=
+\mathbf M_{\mathrm{rr}}
++
+\boldsymbol\Psi_{\mathrm G}^{\mathsf T}
+\mathbf M_{\mathrm{cc}}
+\boldsymbol\Psi_{\mathrm G},\\
+\widehat{\mathbf M}_{\mathrm G}
+&=
+\mathbf M_{\mathrm{rr}}.
+\end{aligned}
+$$
+
+因此，现有精度算例还省略了
+
+$$
+\boxed{
+\Delta\mathbf M
+=
+\boldsymbol\Psi_{\mathrm G}^{\mathsf T}
+\mathbf M_{\mathrm{cc}}
+\boldsymbol\Psi_{\mathrm G}
+\succeq \mathbf 0
+}
+\tag{1}
+$$
+
+所代表的惯性贡献。
+
+**经典 Guyan 的静态假定用于构造位移基底，并不等于投影后的模型完全不保留被缩聚自由度的惯性。**其质量矩阵通过同一基底进行投影。[10.2514/3.2874] ([AIAA Journal][1])
+
+所以，当前划分 II 的较大误差至少应分成
+
+$$
+\text{静态基底截断误差}
++
+\text{保留方程实现造成的矩阵误差}.
+$$
+
+保留当前实现并不妨碍理论分析，但需要把第二项显式写出来。否则，文章容易把一种实现方式造成的误差全部解释为 Guyan 基底本身的局限。
+
+### 2. 精度比较与稳定性比较也不是同一组模型
+
+当前精度研究直接缩聚完整十五自由度框架，Guyan/CB 阶数在划分 I 为 \(6/9\)，在划分 II 为 \(5/8\)。稳定性研究则分别缩聚两个子结构，再通过两个保留界面自由度组装，文中给出的阶数为 \(6/12\)。另外，未保留界面的位移协调并未恢复。 
+
+因此，后续应建立两条相互关联但不混用的验证链条。
+
+**完整框架缩聚模型用于验证结构误差理论。子结构闭环模型用于验证时滞稳定性理论。**
+
+不能直接把前者的频率误差或能量偏差代入一个经验关系，就解释后者的稳定边界。
+
+## 二、缩聚造成的具体影响，可以从精确动力缩聚开始推导
+
+### 1. 精确关系中同时存在动力修正和荷载修正
+
+在零初始条件下，结构方程可以写成
+
+$$
+\mathbf D(s)\mathbf u(s)
+=
+\mathbf f(s),
+\qquad
+\mathbf D(s)
+=
+s^2\mathbf M+s\mathbf C+\mathbf K.
+$$
+
+按照保留自由度和被缩聚自由度分块，消去被缩聚位移，得到
+
+$$
+\boxed{
+\mathbf u_{\mathrm c}
+=
+-\mathbf D_{\mathrm{cc}}^{-1}
+\mathbf D_{\mathrm{cr}}
+\mathbf u_{\mathrm r}
++
+\mathbf D_{\mathrm{cc}}^{-1}
+\mathbf f_{\mathrm c}
+}
+\tag{2}
+$$
+
+以及
+
+$$
+\boxed{
+\mathbf S(s)\mathbf u_{\mathrm r}
+=
+\mathbf g(s)
+}
+\tag{3}
+$$
+
+其中
+
+$$
+\begin{aligned}
+\mathbf S(s)
+&=
+\mathbf D_{\mathrm{rr}}
+-
+\mathbf D_{\mathrm{rc}}
+\mathbf D_{\mathrm{cc}}^{-1}
+\mathbf D_{\mathrm{cr}},\\
+\mathbf g(s)
+&=
+\mathbf f_{\mathrm r}
+-
+\mathbf D_{\mathrm{rc}}
+\mathbf D_{\mathrm{cc}}^{-1}
+\mathbf f_{\mathrm c}.
+\end{aligned}
+$$
+
+这些是在相应逆矩阵存在时成立的精确关系，没有引入新的物理假定。
+
+Guyan 使用
+
+$$
+\mathbf u_{\mathrm c}^{\mathrm G}
+=
+\boldsymbol\Psi_{\mathrm G}\mathbf u_{\mathrm r},
+\qquad
+\boldsymbol\Psi_{\mathrm G}
+=
+-\mathbf K_{\mathrm{cc}}^{-1}\mathbf K_{\mathrm{cr}}.
+$$
+
+由式（2）立即可以看出，误差并不只有频率相关的动力修正，还有**作用在被缩聚自由度上的荷载引起的局部响应**。
+
+这一点对划分 II 尤其重要。中间层水平自由度承受地震惯性荷载，所以不能在误差推导中默认 \(\mathbf f_{\mathrm c}=\mathbf 0\)。
+
+即使在静态极限下，也有
+
+$$
+\mathbf u_{\mathrm c}
+=
+\boldsymbol\Psi_{\mathrm G}\mathbf u_{\mathrm r}
++
+\mathbf K_{\mathrm{cc}}^{-1}\mathbf f_{\mathrm c}.
+$$
+
+将荷载投影到保留方程，可以保留它对保留自由度平衡的作用，但**不会自动补上第二项对应的被缩聚位移恢复**。
+
+### 2. 在当前 Rayleigh 阻尼假定下，可以把误差写成遗漏模态的显式求和
+
+CB 在静态约束模态上增加固定界面模态，这为逐项量化提供了直接基础。[10.2514/3.4741] ([AIAA Journal][2])
+
+暂时保留全部固定界面模态，位移可以精确表示为
+
+$$
+\begin{bmatrix}
+\mathbf u_{\mathrm r}\\
+\mathbf u_{\mathrm c}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\mathbf I&\mathbf 0\\
+\boldsymbol\Psi_{\mathrm G}&\boldsymbol\Phi
+\end{bmatrix}
+\begin{bmatrix}
+\mathbf u_{\mathrm r}\\
+\boldsymbol\eta
+\end{bmatrix}.
+$$
+
+其中，\(\boldsymbol\Phi\) 包含全部质量归一化固定界面模态。定义
+
+$$
+\begin{aligned}
+\mathbf b_j
+&=
+\boldsymbol\phi_j^{\mathsf T}
+\left(
+\mathbf M_{\mathrm{cr}}
++
+\mathbf M_{\mathrm{cc}}\boldsymbol\Psi_{\mathrm G}
+\right),\\
+d_j(s)
+&=
+s^2+
+\left(a_0+a_1\Omega_j^2\right)s
++
+\Omega_j^2.
+\end{aligned}
+$$
+
+其中，\(\Omega_j\) 是第 \(j\) 个固定界面圆频率，\(\mathbf b_j\) 表示该模态与保留自由度的惯性耦合，\(a_0\) 和 \(a_1\) 是当前模型的 Rayleigh 阻尼系数。
+
+利用约束模态与固定界面模态之间的刚度正交关系，可以得到
+
+$$
+\boxed{
+\mathbf S(s)
+=
+\mathbf D_{\mathrm G}(s)
+-
+\sum_{j=1}^{n_{\mathrm c}}
+\frac{
+\left(s^2+a_0s\right)^2
+\mathbf b_j^{\mathsf T}\mathbf b_j
+}{
+d_j(s)
+}
+}
+\tag{4}
+$$
+
+其中
+
+$$
+\mathbf D_{\mathrm G}(s)
+=
+s^2\mathbf M_{\mathrm G}
++s\mathbf C_{\mathrm G}
++\mathbf K_{\mathrm G}
+$$
+
+对应合同投影的 Guyan 模型。
+
+保留前 \(d\) 个固定界面模态的 CB 模型具有
+
+$$
+\mathbf S_d(s)
+=
+\mathbf D_{\mathrm G}(s)
+-
+\sum_{j=1}^{d}
+\frac{
+\left(s^2+a_0s\right)^2
+\mathbf b_j^{\mathsf T}\mathbf b_j
+}{
+d_j(s)
+}.
+$$
+
+因此，动力刚度误差可以精确写成
+
+$$
+\boxed{
+\Delta\mathbf S_d(s)
+=
+\mathbf S_d(s)-\mathbf S(s)
+=
+\sum_{j=d+1}^{n_{\mathrm c}}
+\frac{
+\left(s^2+a_0s\right)^2
+\mathbf b_j^{\mathsf T}\mathbf b_j
+}{
+d_j(s)
+}
+}
+\tag{5}
+$$
+
+这里，合同投影的 Guyan 对应 \(d=0\)，当前 CB 对应 \(d=3\)。
+
+**式（5）可以成为新增理论的核心公式。**它把误差明确分成三个因素。
+
+遗漏模态的频率决定分母，模态与保留自由度的耦合决定分子，分析频率通过 \(s\) 决定这些遗漏项实际产生多大影响。
+
+因此，不能仅用被缩聚自由度的数量解释误差，也不能仅用第一个遗漏模态的频率解释误差。一个较低频的遗漏模态，若耦合很弱，其影响仍可很小。
+
+荷载项也有对应的精确表达式
+
+$$
+\mathbf g_d(s)
+=
+\mathbf T_{\mathrm G}^{\mathsf T}\mathbf f(s)
+-
+\sum_{j=1}^{d}
+\frac{
+\left(s^2+a_0s\right)\mathbf b_j^{\mathsf T}
+\boldsymbol\phi_j^{\mathsf T}\mathbf f_{\mathrm c}(s)
+}{
+d_j(s)
+}.
+\tag{6}
+$$
+
+精确荷载取 \(d=n_{\mathrm c}\)。于是，动力刚度误差与荷载误差都能逐模态计算，而不是仅从响应图中判断。
+
+### 3. 从遗漏项进一步得到响应误差预测及上界
+
+精确模型和降阶模型分别满足
+
+$$
+\mathbf S\mathbf u_{\mathrm r}=\mathbf g,
+\qquad
+\mathbf S_d\mathbf u_{\mathrm r,d}=\mathbf g_d.
+$$
+
+两式相减，得到
+
+$$
+\boxed{
+\mathbf e_{\mathrm r}
+=
+\mathbf S^{-1}
+\left[
+\Delta\mathbf S_d\mathbf u_{\mathrm r,d}
++
+\Delta\mathbf g_d
+\right]
+}
+\tag{7}
+$$
+
+其中，\(\mathbf e_{\mathrm r}=\mathbf u_{\mathrm r}-\mathbf u_{\mathrm r,d}\)，
+\(\Delta\mathbf g_d=\mathbf g-\mathbf g_d\)。
+
+这说明响应误差等于**遗漏动力项形成的等效残余荷载，经原系统动力柔度放大后的响应**。
+
+进一步，令
+
+$$
+\beta_d(s)
+=
+\left\|
+\mathbf S_d^{-1}(s)\Delta\mathbf S_d(s)
+\right\|.
+$$
+
+当 \(\beta_d(s)<1\) 时，可以得到
+
+$$
+\boxed{
+\|\mathbf e_{\mathrm r}\|
+\le
+\frac{\|\mathbf S_d^{-1}\|}{1-\beta_d}
+\left(
+\|\Delta\mathbf S_d\|\,\|\mathbf u_{\mathrm r,d}\|
++
+\|\Delta\mathbf g_d\|
+\right)
+}
+\tag{8}
+$$
+
+并得到一阶误差预测
+
+$$
+\widehat{\mathbf e}_{\mathrm r}
+=
+\mathbf S_d^{-1}
+\left[
+\Delta\mathbf S_d\mathbf u_{\mathrm r,d}
++
+\Delta\mathbf g_d
+\right].
+\tag{9}
+$$
+
+式（7）是精确恒等式，式（8）是有适用条件的误差上界，式（9）是便于计算的近似预测。三者的角色应在文中明确区分。
+
+**这样的理论比单纯计算两个响应之差更有价值，因为它能在降阶响应已知时，通过遗漏项预测误差的频率分布和来源。**
+
+## 三、划分 II 中 Guyan 更差，可以给出三层解释
+
+### 1. 当前实现额外省略了中间层运动对应的惯性
+
+对于对角质量矩阵，式（1）可以展开为
+
+$$
+\Delta\mathbf M
+=
+\sum_{j\in\mathcal C}
+m_j\,
+\boldsymbol\psi_j^{\mathsf T}
+\boldsymbol\psi_j,
+$$
+
+其中，\(\boldsymbol\psi_j\) 是 \(\boldsymbol\Psi_{\mathrm G}\) 中对应被缩聚自由度 \(j\) 的行。
+
+划分 II 的这一项明确包含
+
+$$
+m_6\,
+\boldsymbol\psi_6^{\mathsf T}
+\boldsymbol\psi_6,
+$$
+
+即中间层水平运动经静态恢复后应具有的惯性贡献。划分 I 中该自由度被保留，不属于这项遗漏贡献。当前稿件也明确指出，完整框架精度模型在划分 II 中移除了中间层水平自由度。
+
+在同一静态基底内，从合同投影质量矩阵改为当前实现，固有频率的一阶变化为
+
+$$
+\boxed{
+\frac{\delta\omega_i}{\omega_i}
+\approx
+\frac{1}{2}
+\frac{
+\mathbf v_i^{\mathsf T}
+\Delta\mathbf M
+\mathbf v_i
+}{
+\mathbf v_i^{\mathsf T}
+\mathbf M_{\mathrm G}
+\mathbf v_i
+}
+}
+\tag{10}
+$$
+
+其中，\(\mathbf v_i\) 是合同投影 Guyan 模型的对应模态。
+
+右侧是该模态下被额外省略的惯性比例的一半。由于 \(\Delta\mathbf M\succeq0\)，在刚度不变时，省略这部分质量会使对应广义特征值按序不减。
+
+这就把目前的定性表述
+
+> 划分 II 改变了刚度与惯性的平衡，导致频率升高
+
+转化为可以实际计算的模态惯性指标。
+
+对于当前较大的频率偏差，式（10）应作为局部解释，并通过逐步恢复 \(\Delta\mathbf M\) 或直接求解两组特征值验证，而不是把一次一阶展开当成精确结果。
+
+### 2. 即使采用标准 Guyan，划分 II 也施加了更强的运动约束
+
+对于直接缩聚完整框架的两组保留自由度，划分 II 的保留集合是划分 I 的子集。
+
+在相同完整刚度矩阵下，两组 Guyan 试探空间满足
+
+$$
+\mathcal V_{\mathrm G,II}
+\subset
+\mathcal V_{\mathrm G,I}.
+$$
+
+原因是，划分 II 不仅要求原来被缩聚的自由度满足静态关系，还要求中间层水平自由度也满足静态关系。因此，其可表示的运动空间更小。
+
+在质量、刚度对称正定且均采用合同投影时，由 Rayleigh–Ritz 原理可得
+
+$$
+\boxed{
+\omega_{i,\mathrm{full}}^2
+\le
+\omega_{i,\mathrm G,I}^2
+\le
+\omega_{i,\mathrm G,II}^2
+}
+\tag{11}
+$$
+
+其中，\(i\) 取两组降阶模型共同具有的有序模态范围。
+
+**这可以成为一个真正的理论命题。**对于当前这种嵌套保留自由度选择，进一步用静态关系约束中间层自由度，会使标准 Guyan 的有序 Ritz 频率不降低。
+
+但式（11）针对合同投影模型。当前保留方程实现还叠加了式（1）的矩阵差异，不能直接把二者混为一个证明。
+
+### 3. 中间层自由度的释放改变了固定界面谱和地震荷载参与
+
+构造固定界面模态时，划分 I 将中间层水平自由度固定，而划分 II 允许它参与内部运动。
+
+对于同一完整框架的这两组嵌套约束，固定界面最低频率满足
+
+$$
+\Omega_{1,\mathrm{II}}
+\le
+\Omega_{1,\mathrm I}.
+$$
+
+不过，真正决定误差的不是这个不等式本身，而是式（5）中的完整组合
+
+$$
+\frac{
+\left(s^2+a_0s\right)^2
+\mathbf b_j^{\mathsf T}\mathbf b_j
+}{
+d_j(s)
+}
+$$
+
+以及式（6）中的地震荷载参与
+
+$$
+\boldsymbol\phi_j^{\mathsf T}\mathbf f_{\mathrm c}(s).
+$$
+
+因此，算例应检验的是
+
+**划分 II 是否引入了频率更低、与保留层间运动耦合更强、同时受到地震惯性荷载显著激励的遗漏模态。**
+
+如果这些项在划分 II 中显著增大，就形成了完整的定量解释，而不是仅说中间层自由度很重要。
+
+对于当前实现，这些作用还能统一写成
+
+$$
+\boxed{
+\widehat{\mathbf S}_{\mathrm G}(s)-\mathbf S(s)
+=
+\sum_{j=1}^{n_{\mathrm c}}
+\frac{
+\left(s^2+a_0s\right)^2
+\mathbf b_j^{\mathsf T}\mathbf b_j
+}{
+d_j(s)
+}
+-
+\left(s^2+a_0s\right)\Delta\mathbf M
+}
+\tag{12}
+$$
+
+其中，第一项来自静态基底截断，第二项来自矩阵实现。
+
+在无阻尼频率分析中取 \(s=i\omega\)，且分析频率低于所有固定界面频率时，这两项分别表现为
+
+$$
+\omega^4
+\sum_j
+\frac{\mathbf b_j^{\mathsf T}\mathbf b_j}
+{\Omega_j^2-\omega^2},
+\qquad
+\omega^2\Delta\mathbf M.
+$$
+
+**这表明，当前实现额外引入的是一个更低阶的惯性误差项。**这也是为什么必须先区分矩阵实现和缩聚基底。
+
+## 四、地震动和扫频激励的理论误差，确实可以直接求出来
+
+### 1. 首先建立对任意输入成立的误差传递函数
+
+完整结构和降阶结构在同一物理输出处的误差传递函数为
+
+$$
+\boxed{
+\mathcal E(s)
+=
+\mathbf L
+\left[
+\mathbf D^{-1}(s)\mathbf b
+-
+\mathbf T
+\mathbf D_{\mathrm{red}}^{-1}(s)
+\mathbf b_{\mathrm{red}}
+\right]
+}
+\tag{13}
+$$
+
+其中，\(\mathbf b=-\mathbf M\boldsymbol\Gamma\)，
+\(\mathbf b_{\mathrm{red}}\) 是实际采用的投影荷载向量，\(\mathbf L\) 选取第一层、第二层或第三层水平位移。降阶动力刚度必须采用生成现有算例的实际矩阵。
+
+响应误差满足
+
+$$
+E(s)=\mathcal E(s)A_{\mathrm g}(s),
+$$
+
+对应时域表达式
+
+$$
+\boxed{
+e(t)
+=
+\int_0^t h_e(t-\xi)a_{\mathrm g}(\xi)\,\mathrm d\xi
+}
+\tag{14}
+$$
+
+其中，\(h_e\) 是 \(\mathcal E(s)\) 的脉冲响应。
+
+这是给定输入下的精确误差表达式，不是误差上界，也不是拟合关系。
+
+式（13）适合建立独立的解析基准。式（5）至式（9）则进一步解释这个误差传递函数为什么变大，并提供可简化的预测形式。
+
+### 2. 地震记录可以得到分段解析解
+
+当前稿件使用间隔 \(0.02\,\mathrm s\) 的 El Centro 记录，并在积分中进行线性插值。因此，数值模型中的输入本来就是一个已知的分段线性函数。
+
+将误差传递函数实现为状态空间形式
+
+$$
+\dot{\mathbf z}_e
+=
+\mathbf A_e\mathbf z_e+\mathbf B_e a_{\mathrm g},
+\qquad
+e=\mathbf C_e\mathbf z_e.
+$$
+
+在某一输入采样区间内，输入为
+
+$$
+a_{\mathrm g}(t_k+\xi)
+=
+a_k+\dot a_k\xi,
+\qquad
+0\le\xi\le h.
+$$
+
+则该区间的精确状态更新为
+
+$$
+\boxed{
+\mathbf z_e(t_k+h)
+=
+e^{\mathbf A_eh}\mathbf z_e(t_k)
++
+h\varphi_1(\mathbf A_eh)\mathbf B_ea_k
++
+h^2\varphi_2(\mathbf A_eh)\mathbf B_e\dot a_k
+}
+\tag{15}
+$$
+
+其中
+
+$$
+\varphi_1(\mathbf Z)
+=
+\sum_{m=0}^{\infty}
+\frac{\mathbf Z^m}{(m+1)!},
+\qquad
+\varphi_2(\mathbf Z)
+=
+\sum_{m=0}^{\infty}
+\frac{\mathbf Z^m}{(m+2)!}.
+$$
+
+**因此，当前地震输入不需要拟合成正弦波，也不需要改成随机过程，就能得到与原输入插值方式一致的分段解析响应误差。**
+
+式（15）不含 RK4 的时间离散误差，可直接与现有 Simulink 结果在相同输出采样点进行比较。这里的精确性是针对稿件采用的分段线性输入，而不是声称离散地震记录完全描述了实际地面运动。
+
+### 3. 线性扫频可以得到含复误差函数的解析解
+
+当前扫频输入为
+
+$$
+a_{\mathrm g}(t)
+=
+A\sin\left(2\pi f_0t+\pi\kappa t^2\right),
+$$
+
+其中，\(A=1\,\mathrm{m/s^2}\)，\(f_0=0.1\,\mathrm{Hz}\)，
+\(\kappa=0.2475\,\mathrm{Hz/s}\)。
+
+将误差传递函数展开为简单极点形式
+
+$$
+\mathcal E(s)
+=
+\sum_k\frac{r_k}{s-p_k}.
+$$
+
+则扫频误差为
+
+$$
+\boxed{
+e(t)
+=
+A\,\operatorname{Im}
+\left[
+\sum_k r_ke^{p_kt}J(p_k,t)
+\right]
+}
+\tag{16}
+$$
+
+其中
+
+$$
+J(p,t)
+=
+\int_0^t
+\exp\left[
+i\pi\kappa\xi^2+
+(i2\pi f_0-p)\xi
+\right]\mathrm d\xi.
+$$
+
+这个积分可以进一步写成
+
+$$
+\boxed{
+J(p,t)
+=
+\frac{\sqrt\pi}{2\gamma}
+\exp\left(\frac{b_p^2}{4\gamma^2}\right)
+\left[
+\operatorname{erf}
+\left(\gamma t-\frac{b_p}{2\gamma}\right)
+-
+\operatorname{erf}
+\left(-\frac{b_p}{2\gamma}\right)
+\right]
+}
+\tag{17}
+$$
+
+其中，\(\gamma=\sqrt{-i\pi\kappa}\)，
+\(b_p=i2\pi f_0-p\)。
+
+这是可以直接计算的扫频误差解析表达式。它保留了共振经过时的累积、相位变化和自由衰减，不需要假定每个时刻都已经达到稳态。
+
+因此，不建议用
+
+$$
+e(t)\approx
+\mathcal E\!\left(i2\pi f(t)\right)a_{\mathrm g}(t)
+$$
+
+作为全文的主要验证公式。这个瞬时稳态近似不能完整描述共振附近的瞬态过程，而你当前的主要误差恰好集中在那里。
+
+### 4. 仅凭当前频率结果，已经能提出一个具体的可检验预测
+
+扫频经过某一固有频率的时刻为
+
+$$
+t_i=\frac{f_i-f_0}{\kappa}.
+\tag{18}
+$$
+
+根据图 6 中给出的频率，计算得到
+
+| 模型            |             第一阶频率经过时刻 |             第二阶频率经过时刻 |
+| ------------- | --------------------: | --------------------: |
+| 完整模型          | \(10.535\,\mathrm s\) | \(37.286\,\mathrm s\) |
+| 划分 I 的 Guyan  | \(10.606\,\mathrm s\) | \(39.326\,\mathrm s\) |
+| 划分 II 的 Guyan | \(12.618\,\mathrm s\) | \(48.810\,\mathrm s\) |
+
+这里使用的完整模型频率为 \(2.7074\) 和 \(9.3284\,\mathrm{Hz}\)，划分 I 的 Guyan 为 \(2.7250\) 和 \(9.8332\,\mathrm{Hz}\)，划分 II 的 Guyan 为 \(3.2229\) 和 \(12.1805\,\mathrm{Hz}\)。
+
+由此可以直接预测两个现象。
+
+**划分 II 的第一阶固有频率经过时刻比完整模型推迟约 \(2.083\,\mathrm s\)。它的第二阶固有频率超过扫频上限，因此在 \(40\,\mathrm s\) 内不会被扫过。**
+
+这已经比共振附近误差较大更具体。不过，频率经过时刻不等于响应包络峰值时刻，后者应由式（16）计算。
+
+### 5. NRMSE 也能由理论误差计算，但不能只由频率误差决定
+
+保持当前稿件的归一化定义，在任意时间区间内有
+
+$$
+\boxed{
+\mathrm{NRMSE}_{[t_a,t_b]}
+=
+\frac{100}{R_{\mathrm{full}}}
+\sqrt{
+\frac{1}{t_b-t_a}
+\int_{t_a}^{t_b}e^2(t)\,\mathrm dt
+}
+}
+\tag{19}
+$$
+
+其中，\(R_{\mathrm{full}}\) 是完整模型在整个记录内的峰峰值。当前稿件的扫频分段均使用这一全记录分母。
+
+将式（15）或式（16）的理论误差代入，即可与表 4 逐项比较。
+
+这里应区分两个层次。
+
+**误差时程具有解析表达式。NRMSE 是该时程的平方积分和归一化结果，其求值仍可采用数值积分。**这不影响它作为理论预测与独立时域仿真的对照。比较时需要保持相同的采样、区间和归一化方式。
+
+## 五、稳定性也可以量化，但应围绕闭环特征矩阵建立理论
+
+### 1. 保留现有 CR 算法和整数时滞模型
+
+当前式（16）可以整理成
+
+$$
+\mathbf Z(z,\mathbf n)
+=
+\mathbf Z_0(z)
++
+\sum_{\ell=1}^{n_{\mathrm a}}
+z^{-n_\ell}\mathbf W_\ell(z),
+\tag{20}
+$$
+
+其中，\(\mathbf Z_0\) 包含无时滞部分和 CR 积分项，\(\mathbf W_\ell\) 包含第 \(\ell\) 个通道的物理反馈及对应 LQR 反馈。当前模型明确规定惯性由数值部分推进，不经过作动器时滞。 
+
+新增理论应直接分析缩聚如何改变
+
+$$
+\mathbf Z_0(z),
+\qquad
+\mathbf W_\ell(z),
+$$
+
+而不是另起一个与现有离散算法不一致的连续时间模型。
+
+### 2. 不同阶数的模型应先映射到相同自由度集合
+
+Guyan 和 CB 阶数不同，不能直接计算两个特征矩阵之差。
+
+可以在共同的作动自由度上建立精确动态 Schur 补
+
+$$
+\boxed{
+\mathbf Z_{\mathrm a}(z)
+=
+\mathbf Z_{\mathrm{aa}}
+-
+\mathbf Z_{\mathrm{ab}}
+\mathbf Z_{\mathrm{bb}}^{-1}
+\mathbf Z_{\mathrm{ba}}
+}
+\tag{21}
+$$
+
+其中，下标 \(\mathrm a\) 表示共同的作动自由度，下标 \(\mathrm b\) 表示其余自由度。
+
+这样，两个模型就能在相同物理自由度上比较。该处理用于目标极点附近时，需要确认被消去块在那里可逆，完整稳定性判断仍要检查全部内部极点。
+
+### 3. 可以解析预测缩聚造成的闭环极点偏移
+
+对于简单闭环极点 \(z_*\)，其一阶偏移满足
+
+$$
+\boxed{
+\delta z_*
+=
+-
+\frac{
+\mathbf w^*
+\Delta\mathbf Z_{\mathrm a}(z_*)
+\mathbf v
+}{
+\mathbf w^*
+\dfrac{\partial\mathbf Z_{\mathrm a}}{\partial z}(z_*)
+\mathbf v
+}
+}
+\tag{22}
+$$
+
+其中，\(\mathbf v\) 和 \(\mathbf w\) 是该极点对应的右、左零空间向量。这是非线性特征值问题的标准局部扰动关系。[10.1017/S0962492917000034] 
+
+极点模长的变化为
+
+$$
+\delta|z_*|
+=
+\frac{
+\operatorname{Re}
+\left(\overline{z_*}\,\delta z_*\right)
+}{
+|z_*|
+}.
+\tag{23}
+$$
+
+由此可以量化回答
+
+**某个遗漏模态或某项质量误差，究竟使主导极点向单位圆内移动还是向外移动，移动多少。**
+
+如果将特征矩阵误差分为基底截断、矩阵实现和控制器变化三部分，式（22）的分子也可以相应分解。这比用一个能量偏差指标间接解释稳定性更直接。
+
+### 4. 整数时滞应采用离散增量，而不是直接对时滞步数求导
+
+当前 \(n_\ell\) 是整数。某个通道增加一个采样步时，特征矩阵的精确变化为
+
+$$
+\boxed{
+\Delta_\ell\mathbf Z(z)
+=
+z^{-n_\ell}
+\left(z^{-1}-1\right)
+\mathbf W_\ell(z)
+}
+\tag{24}
+$$
+
+这个增量可以用于极点移动预测，再与相邻整数时滞点的实际求根结果比较。矩阵增量是精确的，而代入式（22）得到的极点变化仍是一阶近似。
+
+对于任意固定的整数时滞组合，清除负幂后可以得到有限阶多项式特征方程。因此，在当前假定下，稳定性具有精确的代数表述，但高阶根通常仍需数值求解。
+
+**这里最合适的成果是离散稳定判据、极点偏移公式和边界变化预测，而不是强求一个简单的双时滞闭式边界。**
+
+### 5. 不能把 CB 的稳定域一定更大写成一般定理
+
+由式（22）可以看出，稳定性还取决于误差与左右特征向量之间的方向关系、反馈相位以及控制器增益。
+
+因此，结构响应误差更小，不自动意味着时滞稳定域必然更大。
+
+当前稿件的 LQR 针对每个模型分别设计，所以已有边界反映的是模型与控制器的联合变化。
+
+最清晰的验证方式是在同一个算例内，先固定相同物理作动自由度上的反馈增益，量化结构模型变化的作用，再保留各模型分别设计的 LQR，量化控制器重设计的附加影响。
+
+另外，子结构间被省略的位移协调条件应保持一致，或单独计算其影响。增加全部局部 CB 模态并不会自动恢复一个没有施加的界面协调条件。
+
+## 六、现有算例怎样改成理论验证，而不增加新的结构案例
+
+建议保留当前框架、两种划分和两种输入，只增加有明确理论目标的计算。
+
+| 理论问题                 | 新增计算                                 | 与现有结果的对应关系        |
+| -------------------- | ------------------------------------ | ----------------- |
+| 当前 Guyan 实现额外省略了多少惯性 | 计算 \(\Delta\mathbf M\) 和式（10）的模态惯性比例 | 解释表 3 的频率偏差       |
+| 划分 II 遗漏了哪些重要动力项     | 比较固定界面频率、\(\mathbf b_j\) 和荷载参与项      | 解释两种划分的差异         |
+| 遗漏项能否预测响应误差          | 比较式（7）、式（9）与直接仿真误差                   | 将趋势解释转为定量验证       |
+| 地震和扫频误差是否满足解析表达式     | 使用分段矩阵指数解和扫频解析解                      | 对照第一层及恢复中间层误差、表 4 |
+| 缩聚怎样移动稳定边界           | 比较式（22）的极点预测与离散求根                    | 对照时滞稳定域           |
+
+其中，最有说服力的一项是增加**同一静态基底下的合同投影 Guyan 对照**。它不改变物理假定，也不是增加新的结构算例，而是把当前混在一起的两个误差来源分开。
+
+这样，文章可以清楚回答
+
+**划分 II 的误差究竟有多少来自静态基底本身，又有多少来自当前质量矩阵的构造。**
+
+稳定性部分则还需要补齐数据闭环。当前第 5.3 节已经说明，图 14 保留自原始边界数据，而现有完整框架精度矩阵不足以确定这些边界背后的闭环矩阵和控制增益。因此，要用式（22）验证图 14，需要取得生成这些曲线的矩阵、控制增益和求根程序，或按照当前第 3 节重新生成一致的边界。
+
+## 七、文章的贡献应落在哪里
+
+单独证明 Guyan 和 CB 存在缩聚误差，或者给出固有频率误差估计，并不足以构成新的贡献。这两个方向已经有专门研究。Guyan 的特征值误差估计和 CB 的相对特征值误差估计均已有明确方法。[10.1016/j.cma.2014.05.002][10.1016/j.compstruc.2014.04.008] ([ScienceDirect][3]) CB 误差估计还已有面向误差控制的简化形式。[10.1016/j.compstruc.2015.11.003] ([KAIST][4])
+
+**你的文章更有价值的增强方向，是把这些缩聚误差与作动通道受限的混合模拟联系起来。**
+
+具体而言，主线可以收敛为
+
+$$
+\boxed{
+\begin{gathered}
+\text{作动通道约束下的自由度选择}\\
+\Downarrow\\
+\text{遗漏模态、恢复惯性与荷载误差}\\
+\Downarrow\\
+\text{地震及扫频响应误差的解析预测}\\
+\Downarrow\\
+\text{多通道时滞闭环极点的偏移}
+\end{gathered}
+}
+$$
+
+这里，式（5）和式（12）解释误差来源，式（15）至式（19）提供输入相关的验证基准，式（22）解释误差怎样影响闭环稳定性。
+
+**最终判断是，三个目标都能在当前假定下推进。**其中，响应误差和划分差异的理论最适合先完成，稳定性理论随后接入实际闭环模型。现阶段已经能够给出上述可计算的推导和扫频经过时刻预测，但尚未取得可运行的原始矩阵、地震序列及图 14 的闭环数据，因而这里没有把现有 NRMSE 或稳定边界数值声称为已经重新验证的理论结果。
+
+[1]: https://arc.aiaa.org/?utm_source=chatgpt.com "Reduction of stiffness and mass matrices | AIAA Journal"
+[2]: https://arc.aiaa.org/doi/10.2514/3.4741?utm_source=chatgpt.com "Coupling of substructures for dynamic analyses. | AIAA Journal"
+[3]: https://www.sciencedirect.com/science/article/abs/pii/S0045782514001479?utm_source=chatgpt.com "An accurate error estimator for Guyan reduction - ScienceDirect"
+[4]: https://pure.kaist.ac.kr/en/publications/a-simplified-error-estimator-for-the-cb-method-and-its-applicatio/ "A simplified error estimator for the CB method and its application to error control - Korea Advanced Institute of Science and Technology"

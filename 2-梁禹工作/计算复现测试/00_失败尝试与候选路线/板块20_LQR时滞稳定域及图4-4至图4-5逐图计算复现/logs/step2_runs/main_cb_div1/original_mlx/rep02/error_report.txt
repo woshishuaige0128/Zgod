@@ -1,0 +1,14 @@
+函数或变量 'MRren' 无法识别。
+
+出错 luxvjie_cb_LQR2 (第 61 行)
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+        ^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_one_board20_candidate>run_in_base (第 328 行)
+evalin('base', sprintf("run('%s');", escaped));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_one_board20_candidate (第 135 行)
+    run_in_base(cfg.candidate_mlx);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

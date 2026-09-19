@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-08-24T17:47:39.187550+00:00",
+  "candidate_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线",
+  "manifest_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\input\\input_manifest.csv",
+  "manifest_sha256_rechecked": "FEE6A49FA0D90913DC312DF0275D71A1426A807C061C85E0C7ED9968D63F6B8A",
+  "manifest_hash_matches_freeze_summary": true,
+  "expected_source_count": 32,
+  "source_count": 32,
+  "source_count_ok": true,
+  "rehashed_file_count": 64,
+  "schema_ok": true,
+  "all_rows_match": true,
+  "key_hashes_ok": true,
+  "key_checks": [
+    {
+      "filename": "reference_model_matlab.mat",
+      "expected_role": "U01_完整模型矩阵",
+      "match_count": 1,
+      "role_matches": true,
+      "hash_matches": true,
+      "expected_sha256": "7F9C7C6ACEEDA106304B943F280CCFFF06CBA9137059857A4D89CB06D5B0DAB3",
+      "pass": true
+    },
+    {
+      "filename": "regenerate_chapter3_data.m",
+      "expected_role": "第三章_当前确定性生成器",
+      "match_count": 1,
+      "role_matches": true,
+      "hash_matches": true,
+      "expected_sha256": "CBD7D4BE3927DEC5C18D5C16FBE164528AE6DC022F0B81DB28BD93416F4E7CEE",
+      "pass": true
+    },
+    {
+      "filename": "manuscript_0824.tex",
+      "expected_role": "小论文公式源",
+      "match_count": 1,
+      "role_matches": true,
+      "hash_matches": true,
+      "expected_sha256": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76",
+      "pass": true
+    },
+    {
+      "filename": "梁禹手稿.pdf",
+      "expected_role": "硕士论文PDF",
+      "match_count": 1,
+      "role_matches": true,
+      "hash_matches": true,
+      "expected_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+      "pass": true
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "preliminary_audit_attempts": [
+    {
+      "attempt": 1,
+      "result": "审计器失败，不能评价冻结结果",
+      "cause": "临时 PowerShell 检查器错误假定 copied_relative_path 列名为 copy_path，且错误假定论文 PDF 文件名。"
+    },
+    {
+      "attempt": 2,
+      "result": "64 次哈希重算未发现不一致，但关键角色名检查器失败，不能作为最终验收",
+      "cause": "临时 PowerShell 检查器对当前响应生成器和小论文使用了不存在的角色别名。"
+    }
+  ],
+  "pass": true
+}

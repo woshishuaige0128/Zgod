@@ -1,0 +1,2803 @@
+{
+  "after_clear": [],
+  "after_upstream": [
+    {
+      "name": "Ab",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ac",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Art",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Brt",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Cmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Cmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "D",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "I",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ib",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ic",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ksmn",
+      "class": "double",
+      "size": [
+        13,
+        5
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ksn",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kss",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Lb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Lc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M1",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M2",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M3",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M4",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M5",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M6",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mss",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "T",
+      "class": "double",
+      "size": [
+        18,
+        5
+      ],
+      "bytes": 720,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TN",
+      "class": "double",
+      "size": [
+        9,
+        3
+      ],
+      "bytes": 216,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TN_cb",
+      "class": "double",
+      "size": [
+        9,
+        6
+      ],
+      "bytes": 432,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TP",
+      "class": "double",
+      "size": [
+        9,
+        2
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TP_cb",
+      "class": "double",
+      "size": [
+        9,
+        5
+      ],
+      "bytes": 360,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "T_cb",
+      "class": "double",
+      "size": [
+        18,
+        8
+      ],
+      "bytes": 1152,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Tb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Tc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "V",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "alphas",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "damping",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "dt",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "fre",
+      "class": "double",
+      "size": [
+        18,
+        1
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "idx",
+      "class": "double",
+      "size": [
+        18,
+        1
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "idx_all",
+      "class": "double",
+      "size": [
+        1,
+        18
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index1",
+      "class": "double",
+      "size": [
+        1,
+        2
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index2",
+      "class": "double",
+      "size": [
+        1,
+        7
+      ],
+      "bytes": 56,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index3",
+      "class": "double",
+      "size": [
+        1,
+        3
+      ],
+      "bytes": 24,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index4",
+      "class": "double",
+      "size": [
+        1,
+        6
+      ],
+      "bytes": 48,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index5",
+      "class": "double",
+      "size": [
+        1,
+        5
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index6",
+      "class": "double",
+      "size": [
+        1,
+        13
+      ],
+      "bytes": 104,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "kb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "kc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "locate1",
+      "class": "double",
+      "size": [
+        1,
+        9
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "locate2",
+      "class": "double",
+      "size": [
+        1,
+        9
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "mass_b",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "mass_c",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "n_mn",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "omega",
+      "class": "double",
+      "size": [
+        13,
+        1
+      ],
+      "bytes": 104,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "order",
+      "class": "double",
+      "size": [
+        1,
+        18
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "phi_s",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "phi_s_r",
+      "class": "double",
+      "size": [
+        13,
+        3
+      ],
+      "bytes": 312,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "r",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "rho",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "theta_b",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "theta_c",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "w1",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "w2",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    }
+  ],
+  "after_candidate_or_failure": [
+    {
+      "name": "Ab",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ac",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Art",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Brt",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "CRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Cmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Cmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "D",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E_total",
+      "class": "double",
+      "size": [
+        9,
+        1
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E_total_cb",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E_total_guyan",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "E_total_guyan_scalar",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Gamma",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "GammaSq",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "I",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ib",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ic",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "K",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "KRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ksmn",
+      "class": "double",
+      "size": [
+        13,
+        5
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Ksn",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Kss",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Lb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Lc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M1",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M2",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M3",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M4",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M5",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "M6",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MN_cb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNren",
+      "class": "double",
+      "size": [
+        3,
+        3
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MNrt_2",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MP_cb",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPren",
+      "class": "double",
+      "size": [
+        2,
+        2
+      ],
+      "bytes": 32,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPrt",
+      "class": "double",
+      "size": [
+        9,
+        9
+      ],
+      "bytes": 648,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MPrt_1",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MR_cb",
+      "class": "double",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 512,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MRren",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "MRrt",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mmn",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mmsn",
+      "class": "double",
+      "size": [
+        5,
+        13
+      ],
+      "bytes": 520,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Mss",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "T",
+      "class": "double",
+      "size": [
+        18,
+        5
+      ],
+      "bytes": 720,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TN",
+      "class": "double",
+      "size": [
+        9,
+        3
+      ],
+      "bytes": 216,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TN_cb",
+      "class": "double",
+      "size": [
+        9,
+        6
+      ],
+      "bytes": 432,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TP",
+      "class": "double",
+      "size": [
+        9,
+        2
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "TP_cb",
+      "class": "double",
+      "size": [
+        9,
+        5
+      ],
+      "bytes": 360,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "T_cb",
+      "class": "double",
+      "size": [
+        18,
+        8
+      ],
+      "bytes": 1152,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Tb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "Tc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "V",
+      "class": "double",
+      "size": [
+        18,
+        18
+      ],
+      "bytes": 2592,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "alphas",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "d",
+      "class": "double",
+      "size": [
+        1,
+        2
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "d2",
+      "class": "double",
+      "size": [
+        1,
+        2
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "damping",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "dt",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "energy_sum_cb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "energy_sum_guyan",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "energy_sum_orig",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "fre",
+      "class": "double",
+      "size": [
+        18,
+        1
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "i",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "idx",
+      "class": "double",
+      "size": [
+        18,
+        1
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "idx_all",
+      "class": "double",
+      "size": [
+        1,
+        18
+      ],
+      "bytes": 144,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "increase_rate",
+      "class": "double",
+      "size": [
+        2,
+        1
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index1",
+      "class": "double",
+      "size": [
+        1,
+        2
+      ],
+      "bytes": 16,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index2",
+      "class": "double",
+      "size": [
+        1,
+        7
+      ],
+      "bytes": 56,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index3",
+      "class": "double",
+      "size": [
+        1,
+        3
+      ],
+      "bytes": 24,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index4",
+      "class": "double",
+      "size": [
+        1,
+        6
+      ],
+      "bytes": 48,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index5",
+      "class": "double",
+      "size": [
+        1,
+        5
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "index6",
+      "class": "double",
+      "size": [
+        1,
+        13
+      ],
+      "bytes": 104,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "j",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "k",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "kb",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "kc",
+      "class": "double",
+      "size": [
+        6,
+        6
+      ],
+      "bytes": 288,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "locate1",
+      "class": "double",
+      "size": [
+        1,
+        9
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "locate2",
+      "class": "double",
+      "size": [
+        1,
+        9
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "m",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "mass_b",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "mass_c",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "n",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "n_dof",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "n_mn",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "n_modes",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "omega",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "omega2",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "order",
+      "class": "double",
+      "size": [
+        1,
+        9
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "participation_ratio",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "phi",
+      "class": "double",
+      "size": [
+        5,
+        5
+      ],
+      "bytes": 200,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "phi_s",
+      "class": "double",
+      "size": [
+        13,
+        13
+      ],
+      "bytes": 1352,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "phi_s_r",
+      "class": "double",
+      "size": [
+        13,
+        3
+      ],
+      "bytes": 312,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "r",
+      "class": "double",
+      "size": [
+        5,
+        1
+      ],
+      "bytes": 40,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "r0",
+      "class": "double",
+      "size": [
+        9,
+        1
+      ],
+      "bytes": 72,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "rho",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "theta_b",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "theta_c",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "total_increase_cb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "total_increase_guyan",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "w1",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    },
+    {
+      "name": "w2",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "bytes": 8,
+      "is_sparse": false,
+      "is_complex": false,
+      "is_global": false
+    }
+  ]
+}

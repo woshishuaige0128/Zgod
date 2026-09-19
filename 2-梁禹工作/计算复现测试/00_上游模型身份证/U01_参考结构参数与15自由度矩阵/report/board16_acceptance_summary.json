@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-25T01:12:23+08:00",
+  "overall": "PASS",
+  "passed": 32,
+  "total": 32,
+  "errors": [],
+  "protected_sources": 326,
+  "artifact_files": 166,
+  "object_decisions": {
+    "U01": "计算级复现（现存响应代码路线）",
+    "U02": "计算级复现（已闭合代码/MLX部分）；论文频率为历史值/待决定",
+    "C01": "历史值＋计算级旁证；整体不晋级"
+  }
+}

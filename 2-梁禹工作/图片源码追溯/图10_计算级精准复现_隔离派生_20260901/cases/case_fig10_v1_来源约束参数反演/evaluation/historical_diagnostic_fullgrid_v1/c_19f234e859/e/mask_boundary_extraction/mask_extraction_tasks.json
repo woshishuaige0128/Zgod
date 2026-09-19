@@ -1,0 +1,59 @@
+{
+  "schema_version": "FIG10_MASK_EXTRACTION_TASKS_V1",
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D1_Original\\full-grid\\stable_mask.csv",
+      "source_sha256": "C33B617027E17FC7E1B8E22BD50FF1B82E51A474A259B5978ED4451C631E4D1A",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_original.meta.json"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D1_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "source_sha256": "A3411554F3EFB88F3C17A0385529E5A9DCD115506AB430878725344D61F56ADF",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D1_Guyan\\full-grid\\stable_mask.csv",
+      "source_sha256": "1A4F130D65158E146E0987E1C5C06E100287540A2E4C73C7CCB9955803FA6707",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division1_guyan.meta.json"
+    },
+    {
+      "curve_id": "division2_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D2_Original\\full-grid\\stable_mask.csv",
+      "source_sha256": "F02528A58720DF63CD8120D3A847C00B346B01922418ED7A3AE80C4599B0B166",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_original.meta.json"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D2_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "source_sha256": "BD2DE7F28AF0637E91FE29716911F53C36ED49CC1CABB355C00A4BB22928B466",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\historical_diagnostic_fullgrid\\H05\\routes\\H05_D2_Guyan\\full-grid\\stable_mask.csv",
+      "source_sha256": "7FD8C3C0BFF5F123F391A19B13F1EAEE9CBD9F6B841EDDAA56367C2E8D9B6BD4",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\historical_diagnostic_fullgrid_v1\\c_19f234e859\\e\\mask_boundary_extraction\\division2_guyan.meta.json"
+    }
+  ]
+}

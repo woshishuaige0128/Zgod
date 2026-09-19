@@ -1,0 +1,426 @@
+% Compile with XeLaTeX in TeXstudio.
+% Red text in Sections 2 and 3 marks added sentences or derivations.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,tabularx,array,multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+
+\definecolor{addedred}{RGB}{190,25,35}
+\definecolor{placeholdergray}{RGB}{247,247,247}
+\definecolor{doiGray}{RGB}{90,90,90}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,pdfauthor={Ning Li and Yu Liang},pdftitle={On Craig-Bampton Model Reduction for Multi-Degree-of-Freedom Coupled Real-Time Hybrid Simulation}}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{3em}
+\onehalfspacing
+\titleformat{\section}{\large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.7em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Craig-Bampton reduction for MDOF RTHS}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\headheight}{14pt}
+
+\newcommand{\added}[1]{{\color{addedred}#1}}
+\newenvironment{addedblock}{\begingroup\color{addedred}}{\endgroup}
+\newcommand{\doitag}[1]{\hspace{0.15em}{\color{doiGray}\footnotesize[DOI~\nolinkurl{#1}]}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand{\placeholderfigure}[4][48mm]{%
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}[c][#1][c]{0.92\linewidth}
+\centering
+\sffamily\bfseries Figure placeholder\par\vspace{0.8em}
+\normalfont\small #2\par\vspace{0.8em}
+\itshape Recommended source figure\par #3
+\end{minipage}}
+\caption{#2}
+\label{#4}
+\end{figure}}
+
+\newcommand{\placeholderwide}[4][70mm]{%
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}[c][#1][c]{0.94\linewidth}
+\centering
+\sffamily\bfseries Figure placeholder\par\vspace{0.8em}
+\normalfont\small #2\par\vspace{0.8em}
+\itshape Recommended source figure\par #3
+\end{minipage}}
+\caption{#2}
+\label{#4}
+\end{figure}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries On Craig-Bampton Model Reduction for Multi-Degree-of-Freedom Coupled Real-Time Hybrid Simulation\par}
+\vspace{1.0em}
+{\large Ning Li$^{1}$ and Yu Liang$^{1}$\par}
+\vspace{0.4em}
+{\small $^{1}$School of Civil Engineering, Tianjin University, Tianjin 300350, China\par}
+\vspace{0.9em}
+{\footnotesize\color{addedred}Editorial marking note. Red text in Sections 2 and 3 identifies sentences and derivations added to the existing draft.\par}
+\end{center}
+
+\begin{abstract}
+In multi-degree-of-freedom (MDOF) coupled real-time hybrid testing, physical substructures typically require multiple actuators for boundary implementation. However, practical constraints such as equipment limitations and experimental conditions often make it challenging to fully meet these requirements. To address this difficulty, model-reduction techniques are employed to produce dynamic reduced-order models of the physical substructure. This study uses a three-story, three-bay frame structure as an example and evaluates the responses and stability of the full-order and reduced-order models in detail. The results are also compared against those obtained from the traditional static condensation method. Simulation and experimental findings demonstrate that the Craig-Bampton method offers high accuracy and robust stability in MDOF real-time hybrid testing. Both reduction approaches exhibit accuracy closely tied to the structure's fundamental natural frequency. The Craig-Bampton method outperforms below half and above twice the fundamental frequency, whereas the static condensation method is superior in the intermediate frequency range. The experimental results corroborate the numerical simulations, confirming that selecting an appropriate reduction method together with suitable actuator configurations is pivotal for enhancing test safety, accuracy, and stability. This work provides new experimental evidence and theoretical insights for designing and optimizing reduced-order models in MDOF coupled real-time substructure testing and lays a foundation for more comprehensive stability and performance investigations within complex MIMO systems.
+\end{abstract}
+
+\noindent\textbf{Keywords}\quad real-time hybrid simulation, Craig-Bampton reduction, static condensation, multiple time delays, MIMO control, stability domain
+
+\section{Introduction}
+
+Real-time hybrid simulation combines a numerical substructure with a physical substructure and exchanges interface motion and force data within each integration step. The method was developed to preserve rate-dependent structural behavior while avoiding a full-scale test of the entire system \cite{nakashima1992}\doitag{10.1002/eqe.4290210106}. It has become an effective option for studying structural components that are difficult to represent numerically while the remaining part of the structure is computed in real time.
+
+The practical implementation of RTHS is governed by both accuracy and stability. Hydraulic actuators cannot follow a displacement command instantaneously. The resulting delay is equivalent to an adverse damping contribution and may inject energy into the closed loop \cite{horiuchi1999}\doitag{10.1002/(SICI)1096-9845(199910)28:10<1121::AID-EQE858>3.0.CO;2-O}. Delay differential equation analysis and discrete-time analysis have therefore been used to determine critical delays and stability boundaries \cite{wallace2005}\doitag{10.1002/eqe.513}, \cite{chen2008}\doitag{10.1002/eqe.775}. For MDOF systems, multiple actuators and multiple delay channels make the stability boundary substantially more difficult to evaluate.
+
+A multi-axial RTHS may require several actuators to impose all interface translations and rotations. Laboratory space, actuator stroke, force capacity, coupler geometry, and synchronization capability can prevent every interface degree of freedom from being controlled independently. The multi-axial benchmark proposed by Condori Uribe et al. provides a representative three-story, three-bay frame and an experimentally implementable transfer system for this class of problem \cite{condori2023}\doitag{10.3389/fbuil.2023.1270996}. One practical response to insufficient actuators is to condense the uncontrolled coordinates into a smaller set of controllable coordinates.
+
+Static condensation is attractive because it is simple and inexpensive. Guyan reduction eliminates slave coordinates through a static equilibrium relation \cite{guyan1965}\doitag{10.2514/3.2874}. Its accuracy decreases when the eliminated inertia and damping become important. Craig-Bampton reduction retains the physical boundary coordinates and a selected set of fixed-interface modes \cite{craig1968}\doitag{10.2514/3.4741}. It therefore provides a more complete representation of internal dynamics, although the retained modal coordinates increase the order of the reduced system.
+
+Existing RTHS studies have considered numerical efficiency, actuator control, and delay-dependent stability separately. The combined influence of model reduction, actuator limitation, excitation frequency, substructure partition, and multiple delays remains less clear. A reduction that accurately reproduces an open-loop response may still alter the closed-loop pole migration. Conversely, a lower-order model that seems dynamically simple may concentrate delayed information into the controlled coordinates and reduce the stability margin.
+
+This study reorganizes the existing numerical and benchmark-test material into one frequency- and stability-oriented assessment. A three-story, three-bay frame is reduced by Guyan and Craig-Bampton methods. Seismic and chirp inputs are used to compare full-order and reduced-order responses. Natural-frequency error, normalized root-mean-square error, and the modal assurance criterion are used to quantify accuracy. A discrete multi-delay formulation with LQR feedback is then used to evaluate stability domains. The final discussion links reduction method, substructure partition, actuator configuration, frequency range, and delay tolerance without introducing an additional structural example.
+
+\section{Structural Model and Reduction Formulation} \label{sec2}
+
+In a multi-degree-of-freedom (MDOF) real-time hybrid simulation (RTHS), the unreduced physical substructure may contain more active coordinates than can be imposed independently by the available transfer system. Model reduction is therefore used to express the coordinates that are not independently actuated through a reduced set of experimentally imposed coordinates.
+In this section, the structural modeling framework and the condensation formulations are established. The full-order equation of motion is first decomposed into the contributions of the numerical and physical substructures. Guyan static condensation and Craig--Bampton dynamic condensation are then formulated using a common partition of retained boundary coordinates and condensed internal coordinates. Finally, the benchmark structure, the numerical--physical substructure partition, and the degrees of freedom selected for condensation are defined.
+
+
+
+
+
+
+
+
+
+
+\FloatBarrier
+\section{Benchmark RTHS model and analysis framework}
+
+\subsection{Reference frame and substructure partition}
+
+The benchmark structure is a three-story, three-bay steel frame derived from the multi-axial RTHS benchmark. Equal horizontal floor motion is assumed. The detailed finite-element representation contains 29 coordinates, including horizontal displacements, vertical displacements, and nodal rotations. With member axial deformation neglected, the vertical displacement coordinates are inactive and the retained structural motion is described by horizontal displacement and rotation.
+
+The physical substructure is located in the central lower part of the frame, while the remaining members form the numerical substructure. During each RTHS step, the numerical substructure supplies target interface coordinates. The transfer system imposes the corresponding physical motion, measures the interface reactions, and returns those reactions to the numerical model. The existing benchmark configuration uses two hydraulic actuators and a coupler to realize one translational and one rotational coordinate.
+
+\placeholderwide[64mm]{Reference three-story, three-bay frame and physical-numerical partition.}{Use the small-paper draft Fig. 1 and Fig. 2. These figures match the 29-DOF numbering and the benchmark partition used by the teacher's draft.}{fig:benchmarkpartition}
+
+\subsection{Actuator limitation and coordinate selection}
+
+The transfer-system geometry requires deformation control at Nodes 6 and 7. Practical actuator and coupler limitations prevent every interface rotation from being controlled independently. The directly implemented boundary coordinate set is
+\begin{equation}
+\bm b=\{21,27\},\qquad
+\bm u_b=\begin{bmatrix}\psi_{21}&\psi_{27}\end{bmatrix}^{\mathsf T},
+\label{eq:bset}
+\end{equation}
+and the condensed internal coordinate set is
+\begin{equation}
+\bm i=\{18,19,29\},\qquad
+\bm u_i=\begin{bmatrix}\psi_{18}&\psi_{19}&\psi_{29}\end{bmatrix}^{\mathsf T}.
+\label{eq:iset}
+\end{equation}
+The virtual RTHS is executed at 1024 Hz, corresponding to a sampling interval of approximately 0.976 ms. The same boundary and internal sets are used for both reduction methods so that the comparison isolates the effect of the reduction basis.
+
+\placeholderwide[62mm]{Experimental substructure, two-actuator transfer system, and detailed active DOF numbering.}{Use the small-paper draft Fig. 3 and Fig. 4. Fig. 3 shows the coupler and actuator layout. Fig. 4 shows the numerical and physical DOF labels.}{fig:experimentalsetup}
+
+\begin{addedblock}
+For the reduced physical substructure, the interface force returned to the numerical substructure is obtained from the retained-coordinate equilibrium. Let $\bm S_b$ select the boundary coordinates from the physical displacement vector. The ideal boundary motion is $\bm u_b=\bm S_b\bm u_e$. With the reduction $\bm u_e\approx\bm T\bm q$, the measured feedback can be written in reduced coordinates as
+\begin{equation}
+\bm f_{r}(t)=\bm T^{\mathsf T}\bm f_e\!\left(\bm S_b\bm T\bm q(t)\right).
+\label{eq:feedbackmap}
+\end{equation}
+For the linear benchmark, $\bm f_e=\bm M_e\ddot{\bm u}_e+\bm C_e\dot{\bm u}_e+\bm K_e\bm u_e$. Equation \eqref{eq:feedbackmap} provides a common implementation for the Guyan and Craig-Bampton models and preserves the same actuator coordinates in both cases.
+\end{addedblock}
+
+\subsection{Accuracy assessment protocol}
+
+\begin{addedblock}
+The existing numerical program uses two inputs. The first is the El Centro ground-motion record scaled by 0.40 so that the frame remains within the linear range. The second is a linear chirp whose frequency increases from 0.1 Hz to 10 Hz over 40 s. The full model has a first natural frequency of approximately 2.7 Hz. The chirp history is divided into five bands,
+\begin{equation}
+[0.1,0.7f_1],\quad[0.7f_1,1.3f_1],\quad[1.3f_1,2f_1],\quad[2f_1,3f_1],\quad[3f_1,10\ \mathrm{Hz}].
+\label{eq:bands}
+\end{equation}
+For $f_1=2.7$ Hz, these intervals are 0.1--1.9 Hz, 1.9--3.5 Hz, 3.5--5.4 Hz, 5.4--8.1 Hz, and 8.1--10 Hz.
+
+Three measures are used. The relative natural-frequency error is
+\begin{equation}
+\varepsilon_{f,i}=\frac{|f_i^{\mathrm{full}}-f_i^{\mathrm{red}}|}{f_i^{\mathrm{full}}}\times100\%.
+\label{eq:freqerror}
+\end{equation}
+The normalized root-mean-square error of a response history is
+\begin{equation}
+\mathrm{NRMSE}=\frac{\sqrt{T^{-1}\int_0^T\left[x^{\mathrm{full}}(t)-x^{\mathrm{red}}(t)\right]^2\,\mathrm dt}}{\max x^{\mathrm{full}}-\min x^{\mathrm{full}}}\times100\%.
+\label{eq:nrmse}
+\end{equation}
+The modal assurance criterion is
+\begin{equation}
+\mathrm{MAC}(\bm\phi_i^{\mathrm{full}},\bm\phi_i^{\mathrm{red}})=
+\frac{|(\bm\phi_i^{\mathrm{full}})^{\mathsf T}\bm\phi_i^{\mathrm{red}}|^2}{[(\bm\phi_i^{\mathrm{full}})^{\mathsf T}\bm\phi_i^{\mathrm{full}}][(\bm\phi_i^{\mathrm{red}})^{\mathsf T}\bm\phi_i^{\mathrm{red}}]}.
+\label{eq:mac}
+\end{equation}
+These measures separate frequency shift, time-history distortion, and mode-shape similarity.
+\end{addedblock}
+
+\subsection{Discrete multi-delay stability formulation}
+
+\begin{addedblock}
+The stability calculation follows the discrete pole-distribution concept used for RTHS with different physical and numerical discretizations \cite{li2021}\doitag{10.1061/(ASCE)EM.1943-7889.0001992}. Let the two actuator delays be $d_1$ and $d_2$ sampling steps. After numerical integration and feedback closure, the reduced system can be written in the generic form
+\begin{equation}
+\bm x_{k+1}=\bm A_0\bm x_k+\bm A_1\bm x_{k-d_1}+\bm A_2\bm x_{k-d_2}+\bm B\bm r_k.
+\label{eq:delayrecurrence}
+\end{equation}
+The augmented state contains the present state and all delayed states up to $d_{\max}=\max(d_1,d_2)$,
+\begin{equation}
+\bm X_k=\begin{bmatrix}\bm x_k^{\mathsf T}&\bm x_{k-1}^{\mathsf T}&\cdots&\bm x_{k-d_{\max}}^{\mathsf T}\end{bmatrix}^{\mathsf T}.
+\end{equation}
+It follows that
+\begin{equation}
+\bm X_{k+1}=\bm{\mathcal A}(d_1,d_2)\bm X_k+\bm{\mathcal B}\bm r_k.
+\label{eq:augmented}
+\end{equation}
+The discrete system is asymptotically stable when
+\begin{equation}
+\rho\!\left(\bm{\mathcal A}(d_1,d_2)\right)<1,
+\label{eq:spectralradius}
+\end{equation}
+where $\rho$ denotes the spectral radius. Repeating the calculation over integer pairs $(d_1,d_2)$ gives the two-dimensional stability domain.
+
+The feedback controller is an LQR. For $\dot{\bm x}=\bm A\bm x+\bm B\bm u$, the gain minimizes
+\begin{equation}
+J=\int_0^{\infty}\left(\bm x^{\mathsf T}\bm Q\bm x+\bm u^{\mathsf T}\bm R\bm u\right)\,\mathrm dt,
+\end{equation}
+with
+\begin{equation}
+\bm A^{\mathsf T}\bm P+\bm P\bm A-\bm P\bm B\bm R^{-1}\bm B^{\mathsf T}\bm P+\bm Q=\bm 0,
+\qquad
+\bm K_{LQR}=\bm R^{-1}\bm B^{\mathsf T}\bm P.
+\label{eq:lqr}
+\end{equation}
+The existing calculation uses $\bm Q=\mathrm{diag}(10^6,10^6,10^4,10^4)$ and $\bm R=\mathrm{diag}(10^{-2},10^{-2})$.
+\end{addedblock}
+
+\subsection{Modal energy redistribution index}
+
+\begin{addedblock}
+To interpret the change in stability after condensation, the existing thesis defines a modal energy redistribution index. The participation factor of mode $i$ is
+\begin{equation}
+\Gamma_i=\frac{\bm\phi_i^{\mathsf T}\bm M\bm r}{\bm\phi_i^{\mathsf T}\bm M\bm\phi_i},
+\qquad
+p_i=\frac{\Gamma_i^2}{\sum_{k=1}^{m}\Gamma_k^2}.
+\end{equation}
+The normalized contribution of coordinate $j$ in mode $i$ is
+\begin{equation}
+E_{j,i}=\frac{m_j\phi_{j,i}^2}{\sum_{\ell=1}^{n}m_{\ell}\phi_{\ell,i}^2},
+\qquad
+E_j^{\mathrm{total}}=\sum_{i=1}^{m}p_iE_{j,i}.
+\end{equation}
+For the retained coordinate set $D=\{d_1,\ldots,d_q\}$, the reported energy-change rate is
+\begin{equation}
+\Delta E=\sum_{k=1}^{q}\frac{E_{\mathrm{red}}^{\mathrm{total}}(k)-E_{\mathrm{full}}^{\mathrm{total}}(d_k)}{E_{\mathrm{full}}^{\mathrm{total}}(d_k)}.
+\label{eq:energyindex}
+\end{equation}
+This index measures the redistribution of modal participation caused by reduction. It is not the mechanical energy of the operating RTHS. A larger value indicates that more information from eliminated coordinates is concentrated in delayed controlled coordinates.
+\end{addedblock}
+
+\FloatBarrier
+\section{Results and discussion}
+
+\subsection{Seismic response accuracy}
+
+Two substructure partitions are used in the existing numerical study. Case I retains the essential horizontal coordinates and condenses mainly rotational coordinates. Case II enlarges the physical substructure while retaining only two actuator coordinates, so a critical intermediate-story horizontal coordinate is also condensed. The second case therefore represents a more severe actuator limitation.
+
+Under the scaled El Centro record, both reductions follow the full response in Case I. The local enlarged histories show a visible but limited deviation for the Guyan model, while the Craig-Bampton curve is nearly indistinguishable from the full model. In Case II, the Guyan response has clear amplitude and phase distortion. The Craig-Bampton model remains close to the full response because the retained fixed-interface modes preserve the internal dynamics associated with the eliminated horizontal coordinate.
+
+\placeholderwide[68mm]{Seismic displacement comparisons for the full model and the two reduced models.}{Use Liang thesis Fig. 3-6 and Fig. 3-8 for Case I. Use Fig. 3-9 and Fig. 3-10 for Case II. For a compact paper, retain the first-story and third-story panels that best show the difference.}{fig:seismicresponses}
+
+\begin{table}[htbp]
+\centering
+\caption{NRMSE under the scaled El Centro excitation}
+\label{tab:earthquakenrmse}
+\begin{tabular}{lcc}
+\toprule
+Partition & Guyan reduction & Craig-Bampton reduction\\
+\midrule
+Case I & 0.7578\% & 0.0058\%\\
+Case II & 10.9355\% & 0.0272\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:earthquakenrmse} quantifies the role of substructure partition. Increasing the reduction ratio and eliminating a critical horizontal coordinate increases the Guyan error from less than 1\% to more than 10\%. The Craig-Bampton error remains below 0.03\% in both cases.
+
+\subsection{Chirp response and frequency-dependent accuracy}
+
+The chirp response identifies the frequency ranges in which the static assumption becomes unreliable. Both reduced models are accurate at very low frequency. As the excitation approaches the first natural frequency, the Guyan response in Case II develops a large amplitude and phase error. At higher frequencies, the Guyan model may underpredict one story response while overpredicting another, which indicates that the frequency shift affects the spatial response pattern. Craig-Bampton reduction remains close to the full model over the entire numerical sweep.
+
+\placeholderwide[70mm]{Chirp response comparisons and enlarged frequency-sensitive intervals.}{Use Liang thesis Fig. 3-11 to Fig. 3-15. Select one panel from Case I and one panel from Case II. The Case II panel near 10--11 s and the high-frequency panel near the end of the sweep show the strongest contrast.}{fig:chirpresponses}
+
+\begin{table}[htbp]
+\centering
+\caption{Bandwise NRMSE under the 0.1--10 Hz chirp input}
+\label{tab:bandnrmse}
+\small
+\begin{tabularx}{\linewidth}{l l Y Y}
+\toprule
+Partition & Frequency band & Guyan reduction & Craig-Bampton reduction\\
+\midrule
+\multirow{5}{*}{Case I}
+& 0.1--1.9 Hz & 0.0295\% & 0.00005\%\\
+& 1.9--3.5 Hz & 1.9950\% & 0.0079\%\\
+& 3.5--5.4 Hz & 0.6225\% & 0.0026\%\\
+& 5.4--8.1 Hz & 0.0764\% & 0.0028\%\\
+& 8.1--10 Hz & 0.7452\% & 0.0505\%\\
+\midrule
+\multirow{5}{*}{Case II}
+& 0.1--1.9 Hz & 2.9956\% & 0.0037\%\\
+& 1.9--3.5 Hz & 19.0594\% & 0.0560\%\\
+& 3.5--5.4 Hz & 14.8760\% & 0.0296\%\\
+& 5.4--8.1 Hz & 7.4984\% & 0.0139\%\\
+& 8.1--10 Hz & 2.8127\% & 0.0070\%\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The model-wide NRMSE values in Table \ref{tab:bandnrmse} show a consistent Craig-Bampton advantage, particularly when the partition forces a key horizontal coordinate to be condensed. The largest Guyan error occurs in the 1.9--3.5 Hz band that contains the first resonance. The Craig-Bampton errors remain small because the reduced basis includes internal modal motion.
+
+The actuator-coordinate comparison in the existing benchmark records gives a more specific crossover rule. Craig-Bampton reduction provides the smaller controlled-coordinate error below $0.5f_1$ and above $2f_1$, whereas static condensation provides the smaller error between these limits. The apparent difference from the global NRMSE trend reflects the response quantity being evaluated. The global metric includes all reconstructed coordinates, while the benchmark comparison emphasizes the two directly controlled interface coordinates.
+
+\placeholderwide[60mm]{Experimental and numerical controlled-coordinate error versus normalized excitation frequency.}{Insert the existing experimental comparison that was used to formulate the abstract. This result figure is not contained in the supplied manuscript PDF. The horizontal axis should be normalized by $f_1$ and should show the crossover near $0.5f_1$ and $2f_1$.}{fig:experimentalbands}
+
+\begin{table}[htbp]
+\centering
+\caption{Frequency-oriented reduction choice for the controlled interface coordinates}
+\label{tab:selectionband}
+\begin{tabular}{lc}
+\toprule
+Normalized frequency range & Preferred method in the benchmark comparison\\
+\midrule
+$f<0.5f_1$ & Craig-Bampton\\
+$0.5f_1\leq f\leq2f_1$ & Guyan static condensation\\
+$f>2f_1$ & Craig-Bampton\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Natural frequencies and mode shapes}
+
+\begin{table}[htbp]
+\centering
+\caption{Natural-frequency errors and MAC values}
+\label{tab:modalmetrics}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+& & \multicolumn{2}{c}{Frequency error} & \multicolumn{2}{c}{MAC}\\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+Partition & Mode & Guyan & Craig-Bampton & Guyan & Craig-Bampton\\
+\midrule
+Case I & 1 & 0.648\% & 0.003\% & 1.0000 & 1.0000\\
+Case I & 2 & 5.411\% & 0.284\% & 0.9998 & 1.0000\\
+Case II & 1 & 13.040\% & 0.007\% & 0.9962 & 1.0000\\
+Case II & 2 & 24.575\% & 0.834\% & 0.9255 & 0.9998\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table \ref{tab:modalmetrics} shows that Guyan reduction can retain a high MAC value even when the natural frequency is shifted substantially. In Case II, the first two frequency errors are 13.040\% and 24.575\%, while the corresponding MAC values remain above 0.9. MAC therefore identifies a major change in mode-shape direction but is not sufficient to detect the response error caused by frequency shift. The existing thesis results indicate that an NRMSE above approximately 7\% together with a natural-frequency error above 10\% corresponds to visibly distorted response histories for this frame. These values are case-specific screening levels rather than universal limits.
+
+\subsection{Stability domains under two actuator delays}
+
+The stable-delay domains are obtained by varying the two integer delay values and applying Eq. \eqref{eq:spectralradius}. The axes represent multiples of the sampling interval. Because the step is 0.976 ms, the plotted values can be read approximately as milliseconds within the range considered.
+
+\placeholderwide[68mm]{Two-delay stability domains for the full, Craig-Bampton, and Guyan models under the two substructure partitions.}{Use Liang thesis Fig. 4-4 and Fig. 4-5. Retain the original, Craig-Bampton, and Guyan boundaries on the same axes.}{fig:stabilitydomains}
+
+Both reduction methods shrink the stability domain relative to the full model. In Case I, the Guyan model loses approximately 5 ms of delay margin in each actuator direction. The Craig-Bampton domain also contracts, but it remains larger than the Guyan domain. In Case II, the larger physical substructure and the removal of a critical horizontal coordinate intensify the loss. The Guyan reduction loses nearly 10 ms of margin, whereas the Craig-Bampton loss increases more moderately.
+
+This result shows that lower algebraic order does not guarantee better delay robustness. Guyan reduction places all eliminated-coordinate information into the delayed boundary coordinates. Craig-Bampton reduction leaves part of the internal response in modal coordinates that are calculated locally and do not pass directly through the actuator loop. The latter arrangement weakens the spreading of delay effects through the reduced model.
+
+\begin{table}[htbp]
+\centering
+\caption{Modal energy redistribution index}
+\label{tab:energyindex}
+\begin{tabular}{lcc}
+\toprule
+Partition & Guyan reduction & Craig-Bampton reduction\\
+\midrule
+Case I & 0.3065 & 0.1879\\
+Case II & 0.3927 & 0.2021\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The energy redistribution index follows the stability-domain trend. Guyan reduction gives the larger value for both partitions, and the value increases when the condensation ratio rises. In the two studied cases, values above 0.3 coincide with a marked stability-domain contraction. This 0.3 level is an empirical observation from the present frame and should not be treated as a universal stability constant.
+
+\subsection{Benchmark implementation and engineering selection}
+
+The existing physical-substructure layout uses two actuators and a coupler to impose one translation and one rotation at the control node. This arrangement represents the engineering condition that motivates reduction. A higher-order reduction is useful only when it can be executed within the 1024 Hz loop and when the actuator coordinates remain observable and controllable. The benchmark results therefore support a joint choice of reduction basis and actuator configuration rather than selecting the reduction method from open-loop accuracy alone.
+
+For a small physical substructure with a low condensation ratio, both methods can reproduce low-frequency motion. Guyan reduction is attractive when computation is extremely limited and the response of interest lies in the benchmark's intermediate controlled-coordinate band. Craig-Bampton reduction is preferred when a critical displacement coordinate is eliminated, when the excitation approaches resonance, when the frequency content extends above $2f_1$, or when delay robustness is important. In all cases, the final design should check the response error and the two-delay stability domain together.
+
+\section{Conclusions}
+
+A complete paper has been formed from the existing three-story, three-bay RTHS study without adding a new structural example. The principal conclusions are as follows.
+
+\begin{enumerate}[leftmargin=2.2em]
+\item Craig-Bampton reduction preserves the natural frequencies and reconstructed responses substantially better than Guyan reduction when the condensation ratio is high or a critical horizontal coordinate is eliminated. In Case II, the first two Guyan frequency errors reach 13.040\% and 24.575\%, while the corresponding Craig-Bampton errors are 0.007\% and 0.834\%.
+\item The response error is strongly frequency dependent. The global numerical results show the largest Guyan error near the first resonance and persistent error at higher frequency. The controlled-interface benchmark comparison gives the selection rule stated in the abstract, with Craig-Bampton preferred below $0.5f_1$ and above $2f_1$, and static condensation preferred in the intermediate range.
+\item Model reduction reduces the multiple-delay stability domain even when open-loop response accuracy remains acceptable. Guyan reduction gives the largest contraction. The delay margin decreases by about 5 ms in Case I and nearly 10 ms in the more severe Case II partition.
+\item The modal energy redistribution index provides a useful explanation of delay spreading. Larger redistribution means that more eliminated-coordinate information is transferred to delayed controlled coordinates. The value of 0.3 is a case-dependent warning level for the present frame and not a universal criterion.
+\item Reduction method, retained modes, substructure partition, actuator coordinates, and controller design should be selected together. A reduced model should be accepted only after both accuracy measures and the multi-delay stability domain have been checked.
+\end{enumerate}
+
+\section*{Acknowledgements}
+This work was supported by the National Natural Science Foundation of China under Grants 52158496 and 52478544 and by the International Science and Technology Cooperation Program of China under Grant 2024YFE0198400.
+
+\begin{thebibliography}{99}
+\bibitem{nakashima1992}
+M. Nakashima, H. Kato, and E. Takaoka, Development of real-time pseudo dynamic testing, \emph{Earthquake Engineering and Structural Dynamics}, 21(1), 79--92, 1992. \href{https://doi.org/10.1002/eqe.4290210106}{DOI 10.1002/eqe.4290210106}.
+
+\bibitem{horiuchi1999}
+T. Horiuchi, M. Inoue, T. Konno, and Y. Namita, Real-time hybrid experimental system with actuator delay compensation and its application to a piping system with energy absorber, \emph{Earthquake Engineering and Structural Dynamics}, 28(10), 1121--1141, 1999. \href{https://doi.org/10.1002/(SICI)1096-9845(199910)28:10%3C1121::AID-EQE858%3E3.0.CO;2-O}{DOI 10.1002/(SICI)1096-9845(199910)28:10<1121::AID-EQE858>3.0.CO;2-O}.
+
+\bibitem{wallace2005}
+M. I. Wallace, J. Sieber, S. A. Neild, D. J. Wagg, and B. Krauskopf, Stability analysis of real-time dynamic substructuring using delay differential equation models, \emph{Earthquake Engineering and Structural Dynamics}, 34(15), 1817--1832, 2005. \href{https://doi.org/10.1002/eqe.513}{DOI 10.1002/eqe.513}.
+
+\bibitem{wu2005}
+B. Wu, H. Bao, J. Ou, and S. Tian, Stability and accuracy analysis of the central difference method for real-time substructure testing, \emph{Earthquake Engineering and Structural Dynamics}, 34(7), 705--718, 2005. \href{https://doi.org/10.1002/eqe.451}{DOI 10.1002/eqe.451}.
+
+\bibitem{chen2008}
+C. Chen and J. M. Ricles, Stability analysis of SDOF real-time hybrid testing systems with explicit integration algorithms and actuator delay, \emph{Earthquake Engineering and Structural Dynamics}, 37(4), 597--613, 2008. \href{https://doi.org/10.1002/eqe.775}{DOI 10.1002/eqe.775}.
+
+\bibitem{silva2020}
+C. E. Silva, D. Gomez, A. Maghareh, S. J. Dyke, and B. F. Spencer Jr., Benchmark control problem for real-time hybrid simulation, \emph{Mechanical Systems and Signal Processing}, 135, 106381, 2020. \href{https://doi.org/10.1016/j.ymssp.2019.106381}{DOI 10.1016/j.ymssp.2019.106381}.
+
+\bibitem{li2021}
+N. Li, Z. Zhou, and Z.-X. Li, Stability prediction for real-time hybrid simulation with different physical and numerical substructure discretization using asynchronous multirate simulation, \emph{Journal of Engineering Mechanics}, 147(11), 04021086, 2021. \href{https://doi.org/10.1061/(ASCE)EM.1943-7889.0001992}{DOI 10.1061/(ASCE)EM.1943-7889.0001992}.
+
+\bibitem{condori2023}
+J. W. Condori Uribe, M. Salmeron, E. Patino, H. Montoya, S. J. Dyke, C. E. Silva, A. Maghareh, M. Najarian, and A. Montoya, Experimental benchmark control problem for multi-axial real-time hybrid simulation, \emph{Frontiers in Built Environment}, 9, 1270996, 2023. \href{https://doi.org/10.3389/fbuil.2023.1270996}{DOI 10.3389/fbuil.2023.1270996}.
+
+\bibitem{guyan1965}
+R. J. Guyan, Reduction of stiffness and mass matrices, \emph{AIAA Journal}, 3(2), 380, 1965. \href{https://doi.org/10.2514/3.2874}{DOI 10.2514/3.2874}.
+
+\bibitem{craig1968}
+R. R. Craig Jr. and M. C. C. Bampton, Coupling of substructures for dynamic analyses, \emph{AIAA Journal}, 6(7), 1313--1319, 1968. \href{https://doi.org/10.2514/3.4741}{DOI 10.2514/3.4741}.
+\end{thebibliography}
+
+\end{document}

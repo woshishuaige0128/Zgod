@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "protected_previous_files": 86,
+  "changed_figure_pdfs": [
+    "fig12_horizontal_modes.pdf",
+    "fig16_modal_shares.pdf"
+  ],
+  "unchanged_left_modal_shares": 90,
+  "independent_bar_values_verified": 8,
+  "manuscript_checks": 41,
+  "browser_checks": 13,
+  "report_print_pages": [
+    {
+      "page": 1,
+      "text_length": 203,
+      "outside_text": 0
+    },
+    {
+      "page": 2,
+      "text_length": 252,
+      "outside_text": 0
+    },
+    {
+      "page": 3,
+      "text_length": 586,
+      "outside_text": 0
+    },
+    {
+      "page": 4,
+      "text_length": 556,
+      "outside_text": 0
+    },
+    {
+      "page": 5,
+      "text_length": 554,
+      "outside_text": 0
+    }
+  ],
+  "visual_review": "Figures 6/15 and all 19 changed manuscript pages inspected; inherited spacing retained. Report desktop/mobile and print inspected.",
+  "main_tex_sha256": "fde581fe058e832d85b7abff1786d6bc9b81b654495a86b9b58012c400e9cad4",
+  "main_pdf_sha256": "46465918b7660042b6bb4f3e84c96ebf3683d4227c2ec79276c88e0e48fb7f58",
+  "report_sha256": "70abf51a4bf6db823c296c3e09ff025c3d6e625f1265a94d4c6ac35d63e3996b"
+}

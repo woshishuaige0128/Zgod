@@ -1,0 +1,61 @@
+PASS  required non-empty files: 7/7
+PASS  TeX SHA-256: actual='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995', expected='EEF99EFC6DE547453715B00763A3112DD08D30A89261CE6E79F658B5DC67C995'
+PASS  BibTeX SHA-256: actual='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A', expected='7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A'
+INFO  PDF bytes: 1431589
+INFO  PDF SHA-256: 11E649BD0C471AFA831441AA2BB01CDF5B809383BEF4BAB31B65103A82323101
+PASS  forbidden source token \\rev: actual=0, expected=0
+PASS  forbidden source token \\citedoi: actual=0, expected=0
+PASS  forbidden source token \\newcitedoi: actual=0, expected=0
+PASS  forbidden source token \\newcommand: actual=0, expected=0
+PASS  forbidden source token \\nolinkurl: actual=0, expected=0
+PASS  forbidden source token literal DOI: actual=0, expected=0
+PASS  forbidden source token red text command: actual=0, expected=0
+PASS  forbidden source token \\safeincludegraphics: actual=0, expected=0
+PASS  sections: actual=6, expected=6
+PASS  subsections: actual=12, expected=12
+PASS  equation environments: actual=22, expected=22
+PASS  subequations environments: actual=2, expected=2
+PASS  align environments: actual=2, expected=2
+PASS  table environments: actual=5, expected=5
+PASS  figure environments: actual=9, expected=9
+PASS  included graphics: actual=10, expected=10
+PASS  all included graphics exist: 10/10
+PASS  all included graphics loaded by pdfLaTeX: 10/10
+PASS  citation occurrences: actual=60, expected=60
+PASS  unique cited keys: actual=50, expected=50
+PASS  bibcite records: actual=50, expected=50
+PASS  bibitems: actual=50, expected=50
+PASS  newlabel records: actual=59, expected=59
+PASS  LaTeX errors: actual=0, expected=0
+PASS  undefined citations: actual=0, expected=0
+PASS  undefined references: actual=0, expected=0
+PASS  rerun requests: actual=0, expected=0
+PASS  overfull boxes: actual=0, expected=0
+PASS  underfull boxes: actual=0, expected=0
+PASS  missing characters: actual=0, expected=0
+PASS  missing files: actual=0, expected=0
+PASS  BibTeX warnings: actual=0, expected=0
+PASS  BibTeX errors: actual=0, expected=0
+PASS  BibTeX completed: 50 entries
+PASS  PDF pages: actual=28, expected=28
+PASS  PDF is not encrypted
+PASS  double question marks: actual=0, expected=0
+PASS  citation placeholders: actual=0, expected=0
+PASS  visible DOI: actual=0, expected=0
+PASS  visible nolinkurl: actual=0, expected=0
+PASS  draft subtitle: actual=0, expected=0
+PASS  missing-figure notice: actual=0, expected=0
+PASS  visible revision command: actual=0, expected=0
+PASS  title present
+PASS  abstract present
+PASS  references present
+PASS  font records: actual=28, expected=28
+PASS  all fonts embedded: 28/28
+PASS  pdfplumber pages: actual=28, expected=28
+PASS  uniform page dimensions: actual=1, expected=1
+INFO  page dimensions: [(544.25, 742.68)]
+PASS  all pages contain extractable text
+PASS  out-of-bounds text characters: actual=0, expected=0
+PASS  red PDF text characters: actual=0, expected=0
+INFO  PDF text colors: {'(0.0,)': 45770, '(0.5,)': 6}
+STATUS: PASS

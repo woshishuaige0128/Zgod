@@ -1,0 +1,26 @@
+{
+  "c05_final_evidence_level": "历史值",
+  "c07_final_evidence_level": "历史值",
+  "c07_frequency_bands": "NOT_EVALUATED",
+  "c07_response_amplitude_errors": "NOT_EVALUATED",
+  "check_summary": {
+    "fail": 0,
+    "pass": 116,
+    "total": 116
+  },
+  "f4_4_final_evidence_level": "绘图级复现",
+  "f4_5_final_evidence_level": "绘图级复现",
+  "failure_package_count": 4,
+  "formal_success_directory_count": 0,
+  "index_live_sha256": "E1BCE04ADB90E03EC74BE25647D643EE7578D92AE8E34EFAB2C507608897A839",
+  "index_pre_snapshot_sha256": "737F7D47A5FE641430E45FA508D0885D120FDE6FB00EF9E3CACAFE39A9136418",
+  "next_board_started": false,
+  "overall_status": "PASS",
+  "publication_contract_sha256": "449D6B4E6AFBE58B0E39BC6F51D573615F0D186C18FBC423BEACAEC0417B7E79",
+  "schema_version": "BOARD20_STEP7_INDEPENDENT_VALIDATION_V1",
+  "scientific_object_gate": "FAIL_RETAIN_PLOTTING_LEVEL",
+  "step6_run1_manifest_sha256": "2F6F8BBD7CCB12E2A0896EE62193F89CDE9A7B4A27345EF4550F009C627DC37B",
+  "step6_run2_manifest_sha256": "2F6F8BBD7CCB12E2A0896EE62193F89CDE9A7B4A27345EF4550F009C627DC37B",
+  "step6_validation_manifest_sha256": "10BAB8E166571C40547F6FE6FF3C8B985F3D88D1EEE37DEED57E43DC71E60CCF",
+  "validator_sha256": "434E1CCD54661F5E6ED6C843FD90CE2A3031976F6D35AC46B7A5F367E816A66D"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_full_gate_revision_contract_v1",
+  "recorded_date": "2026-08-25",
+  "status": "SEALED_REVISION_SCOPE_POSTCHECK_PASS_AWAITING_ROOT_AUTHORIZATION",
+  "purpose": "Advance the preregistered WAITING gate to a separate formal V2 gate only after independent validator V4 pilot postcheck PASS and two-run deterministic evidence were sealed. This revision does not authorize or run full/resume.",
+  "source_waiting_gate": {
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_waiting_contract.json",
+    "contract_sha256": "8047E2336FBFECC147861B08A480C269A0A0AD96E5E81A459CF58D136E698DCC",
+    "launcher_relpath": "code/launch_board20_step5_fullq_svd_candidate_v4_full.py",
+    "launcher_sha256": "202504A9A387E0103913746ADC4BB4C789BF73E501B7FE4FA25F60038592CE43",
+    "files_modified": false
+  },
+  "formal_v2_files_before_binding": {
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_contract.json",
+    "contract_sha256": "83F2DBFF885C9E9BCDF92E1BA6ED20EAC64CA82F25AE798559A07B9E496E58EC",
+    "launcher_relpath": "code/launch_board20_step5_fullq_svd_candidate_v4_full_v2.py",
+    "launcher_sha256": "6E4512997E12C733570B1B91B669315FE924745C20E08AE0C91DA81C1ADE155C",
+    "binding_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_binding_record.json"
+  },
+  "sealed_validator_v4_identity": {
+    "script_sha256": "8BB46EEC8A4F6592AFC3F4F5EEAC137F9BD6666C808F6AAB7293A982BCF6E5C1",
+    "contract_sha256": "2C7C7EB737F1DAB1B88A0AEAF9FCA9324E0B48E0789BB070696141DF30B1FE8D",
+    "revision_sha256": "A484E2A066D4071C2A6705AA288F7D6E9C04651A94A35053BF009125D1C21A9F",
+    "binding_sha256": "A94978BDF49F45D4F61EAB92BA541ADA4D1CA9A4A3AA9EEAC64B1B3444FB5582",
+    "precheck_repeatability_sha256": "7994C7107EAB4E37A300DD4E49CF48FD37EFE0DCB0CF5D736F6215F645ECEB95"
+  },
+  "sealed_pilot_postcheck": {
+    "main_sha256": "AED1459414C9D010FB8145DF433C76CE2E14974E7E25150CF4CE8CC66D592CB6",
+    "checks_sha256": "7F8F543367ED7A4BDBC2236BABF06EA7952B9545A3100D8127025414DD450C30",
+    "protected_hashes_sha256": "0AAAC7E8BCB211949CDB74690D11D82931C702D1D069E7989FA561184F118962",
+    "report_sha256": "1C665AF28209B72805911B00361DAA60E3959487A514E584DF106061A0F874A9",
+    "artifact_manifest_sha256": "1B8D7FECEE3B05A9A8301353DFF6F2EDAD9CFDC6009465E607A418FEF5840632",
+    "log_sha256": "4C42511A6220B6FB7941CE91E75E6F02F83AF9938EDCA9491E4C58D29D9F13C4",
+    "route_summary_sha256": "1B32EC52D86A1BD5F8FD9FF132401BBE2ADA76C22C0605D9842D1272BC269756",
+    "point_comparison_sha256": "98A7C746458A800C9C13370BF3DE5D6FE5E7246A529AC8A63143D04122790FF4",
+    "previous_conditioning_points_sha256": "2804683282E6569FF421056481BD6AE41418E7DB5EF2C5E49FCA6B290AF9BA23",
+    "run1_baseline_sha256": "E2C05F3211E03B0D37F707760D3C37A7C81AAF76FDEC6156F5823F71BB94F4E8",
+    "repeatability_sha256": "337E79B7120A033A45C23E9E57C254C9DC43FCB7D7C5A711288C57FEAFE791C5",
+    "overall_status": "PASS",
+    "run_count": 2,
+    "artifact_mismatch_count": 0,
+    "hard_gate_failure_count": 0
+  },
+  "unchanged_candidate_identity": {
+    "candidate_contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "candidate_script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "pilot_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+    "pilot_repeatability_sha256": "A574B00F434D7AD471134F52288D6B474503D53F02C824A35FD3677EEAE2A560",
+    "pilot_run_status_sha256": "445FAB2E3EF6F980B6B795B04768F7CA8CCD08C9C9F9C306F677A394347D1F14"
+  },
+  "allowed_changes": [
+    "Create a separate formal gate contract, separate V2 launcher, this revision contract, and a final binding record.",
+    "Replace only the formal gate's WAITING validator/postcheck placeholders with the already sealed validator V4 and two-run postcheck hashes.",
+    "Require a future root-created full_authorization.json to bind all four formal gate file hashes and the user's original-goal attestation."
+  ],
+  "prohibited_changes": [
+    "Any modification of the WAITING contract or WAITING launcher.",
+    "Any modification of the candidate, validator, pilot, postcheck, or predecessor evidence.",
+    "Any candidate import, candidate computation, full/resume execution, or full directory creation.",
+    "Any creation of full_authorization.json during formal gate construction or review.",
+    "Any shell command construction or use of overwrite for candidate launch.",
+    "Any relaxation of candidate, checkpoint, postcheck, determinism, or resume gates."
+  ],
+  "authorization_state": {
+    "formal_contract_status": "SEALED_AWAITING_ROOT_AUTHORIZATION",
+    "effective_full_authorization": false,
+    "full_authorization_file_exists": false,
+    "full_directory_exists": false,
+    "this_revision_authorizes_full": false
+  }
+}

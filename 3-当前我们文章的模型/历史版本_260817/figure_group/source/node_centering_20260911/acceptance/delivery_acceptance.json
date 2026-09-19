@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "date": "2026-09-11",
+  "slides": 19,
+  "changed_slides": [
+    18,
+    19
+  ],
+  "native_centered_node_circles": 54,
+  "actual_center_property_reads_two_formats": 108,
+  "representative_digit_change_move_resize_save_tests": 8,
+  "protected_files_unchanged": 247,
+  "delivered_sha256": {
+    "figure_rths_centered_nodes.pptx": "b84fc5471e09601fe20bac487ef00a7cecef893eb2fa414f22a40a4acd020596",
+    "figure_rths_centered_nodes.ppt": "5ee6e69d30af2152e0ffcd5b4afd564fa2c66a2ee5f56eaf913aadace5f9b7eb",
+    "fig3_generated_editable_centered_nodes.svg": "d8add953eeb05c8f607500b28cf335661b631fbf924b162284a5d755d43db229",
+    "fig4_generated_editable_centered_nodes.svg": "f16e4551aa63f95fb3bf80426ba6955839bed2a6eecc127fa704ba70319edef0"
+  },
+  "backup_directory": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group\\source\\node_centering_20260911\\before",
+  "original_source_files_unchanged": true
+}

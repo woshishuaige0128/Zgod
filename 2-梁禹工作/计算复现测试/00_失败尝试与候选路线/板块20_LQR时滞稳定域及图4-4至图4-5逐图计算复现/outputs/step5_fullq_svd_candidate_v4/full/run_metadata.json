@@ -1,0 +1,9 @@
+{
+  "artifact_manifest_sha256": "F35365D414E722ABCE201750B5D7F6DC3B315348414CD057C7A51FB817E135B9",
+  "completed_at": "2026-08-25T13:56:46+08:00",
+  "elapsed_seconds": 1473.9549997999566,
+  "mode": "full",
+  "repeatability": null,
+  "requested_mode": "full",
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_run_metadata_v4"
+}

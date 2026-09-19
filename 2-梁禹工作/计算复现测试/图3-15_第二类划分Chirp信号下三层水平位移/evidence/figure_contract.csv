@@ -1,0 +1,2 @@
+﻿对象ID,原稿图号,唯一图号,图名,PDF页,印刷页,划分,激励,楼层,源数据,输出变量,方法列,全时窗,局部窗,单位,原稿异常,历史值状态
+F3-15,3-13,3-15,第二类子结构划分-Chirp信号的三层水平位移,49,39,第二类,40 s内0.1 Hz线性升至10 Hz的Chirp,三层,input/plotting_baseline/输入数据/第二类划分_Chirp响应.mat;input/plotting_baseline/输入数据/第二类划分_Chirp响应.csv,"time_s;response_mm[:,三种方法,三层];simout1",CSV原结构_三层_mm;Guyan_三层_mm;CraigBampton_三层_mm|MAT:Original;Guyan;Craig-Bampton,0-40 s,13-14 s;38-38.3 s,mm,原稿重复印为图3-13；全时域为Chirp，但两个局部图误贴地震10-11 s与21.5-22.5 s，不能作为Chirp计算基准,论文曲线为历史值；现有MAT/CSV为既有计算级旁证；板块18尚待从冻结作者模型独立重跑并逐图裁决

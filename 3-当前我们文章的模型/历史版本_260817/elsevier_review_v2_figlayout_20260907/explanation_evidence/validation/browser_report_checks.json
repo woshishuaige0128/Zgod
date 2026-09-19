@@ -1,0 +1,579 @@
+{
+  "status": "PASS",
+  "checks_passed": 142,
+  "checks": [
+    {
+      "name": "three embedded figure images",
+      "passed": true
+    },
+    {
+      "name": "two explanatory vector diagrams",
+      "passed": true
+    },
+    {
+      "name": "desktop no page overflow",
+      "passed": true
+    },
+    {
+      "name": "UTF-8",
+      "passed": true
+    },
+    {
+      "name": "eight explanation sections",
+      "passed": true
+    },
+    {
+      "name": "navigation reaches figure15",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Full/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Full/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Full/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/CB/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/CB/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/eq/CB/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Full/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Full/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Full/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/CB/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/CB/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 1/chirp/CB/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Full/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Full/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Full/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/CB/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/CB/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/eq/CB/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Full/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Full/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Full/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/CB/1",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/CB/2",
+      "passed": true
+    },
+    {
+      "name": "drift selector 2/chirp/CB/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Full/15",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/Guyan/15",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 1/CB/15",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Full/15",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/Guyan/15",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/1",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/2",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/3",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/4",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/5",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/6",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/7",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/8",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/9",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/10",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/11",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/12",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/13",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/14",
+      "passed": true
+    },
+    {
+      "name": "modal selector 2/CB/15",
+      "passed": true
+    },
+    {
+      "name": "reset selects divisionII Guyan first floor",
+      "passed": true
+    },
+    {
+      "name": "five mode calculation rows",
+      "passed": true
+    },
+    {
+      "name": "raw modal detail opens",
+      "passed": true
+    },
+    {
+      "name": "all 90 share values available",
+      "passed": true
+    },
+    {
+      "name": "mobile no page overflow",
+      "passed": true
+    },
+    {
+      "name": "wide tables scroll only in own containers",
+      "passed": true,
+      "count": 11
+    },
+    {
+      "name": "no external network requests",
+      "passed": true,
+      "requests": []
+    },
+    {
+      "name": "no script errors",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "moved single file offline read",
+      "passed": true
+    },
+    {
+      "name": "moved offline interaction",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external_requests": []
+}

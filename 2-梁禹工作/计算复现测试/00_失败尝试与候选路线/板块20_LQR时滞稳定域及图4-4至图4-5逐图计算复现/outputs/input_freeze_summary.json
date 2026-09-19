@@ -1,0 +1,135 @@
+{
+  "schema": "board20_input_freeze_v1",
+  "created_at": "2026-08-25T04:30:31.535803+08:00",
+  "project_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "board_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "manifest": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\input_manifest.csv",
+  "source_count": 185,
+  "match_count": 185,
+  "total_bytes": 36249467,
+  "category_counts": {
+    "alternative_lqr_route": 9,
+    "historical_plotting": 12,
+    "historical_stability_route": 28,
+    "historical_upstream": 6,
+    "legacy_stability_candidate": 43,
+    "plotting_baseline": 59,
+    "project_contract": 5,
+    "theory": 3,
+    "upstream_board17": 16,
+    "upstream_protection": 4
+  },
+  "duplicate_sha256_group_count": 12,
+  "duplicate_sha256_groups": [
+    {
+      "sha256": "0415F863B5D1257B8F817AF4D0984EF3FB41A0440BF1C5987913622D4C543426",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/New_Ns3.m",
+        "project/liangyustability-master/新结构稳定/稳定域/New_Ns3_2.m"
+      ]
+    },
+    {
+      "sha256": "15245A1073A47A87C7E166C20DEBD2B19F9DAABEB78B45A13ECC58230F1FA16B",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/monicanshu_2_cb.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/monicanshu_2_guyan.mlx"
+      ]
+    },
+    {
+      "sha256": "1F7ECDBDE5003486A6E742EEA63AB72F17D349978550BE419B327E763F276C49",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/New_Ps3.m",
+        "project/liangyustability-master/新结构稳定/稳定域/New_Ps3_2.m"
+      ]
+    },
+    {
+      "sha256": "2606758B347C01574B812A4CD79BB2C353DCD6680C1DBF07B9AF485C5C03569D",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_ori_LQR3.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_ori_LQR3.mlx"
+      ]
+    },
+    {
+      "sha256": "2FA0817CCA2A50DB630DDC4743EA9DC7F7EA1AD1703CAD85D7C1E821066A48AB",
+      "count": 4,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/绘图/origin_lqr_3.mat",
+        "project/liangyustability-master/新结构稳定/绘图/guyan_lqr_3.mat",
+        "project/liangyustability-master/新结构稳定/绘图/CB_lqr_2.mat",
+        "project/liangyustability-master/新结构稳定/绘图/CB_lqr_3.mat"
+      ]
+    },
+    {
+      "sha256": "39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B",
+      "count": 6,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_cb_2.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_cb_3.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_cb_LQR2.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_cb_LQR3.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_cb_LQR2.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_cb_LQR3.mlx"
+      ]
+    },
+    {
+      "sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "count": 3,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_guyan_2.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_guyan_LQR2.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_guyan_LQR2.mlx"
+      ]
+    },
+    {
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/绘图/lqr_3.mat",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat"
+      ]
+    },
+    {
+      "sha256": "85CB7D5300F3F820AFA80926B76F0430718709BD55722F45486F2F8B9848D1BC",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/绘图/huitu_2.m",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/原始绘图脚本_huitu_2.m"
+      ]
+    },
+    {
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/绘图/lqr_2.mat",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat"
+      ]
+    },
+    {
+      "sha256": "B8D80F17C8EC1112D14188BF2C01666B339D9A400E8FEBAE6C38656AB68558CD",
+      "count": 2,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_ori_LQR2.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_ori_LQR2.mlx"
+      ]
+    },
+    {
+      "sha256": "C9A843A87F4B45D02DDB80F8780AB8E549E70BF6D2BE61A0C4B621E746CC2451",
+      "count": 3,
+      "paths": [
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_guyan_3.mlx",
+        "project/liangyustability-master/新结构稳定/稳定域/luxvjie_guyan_LQR3.mlx",
+        "project/figure/第4章_缩聚对试验稳定性的影响/原始来源副本/luxvjie_guyan_LQR3.mlx"
+      ]
+    }
+  ],
+  "authorized_evolution_preserved_count": 1,
+  "thesis_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+  "manuscript_sha256": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76",
+  "source_inside_board_count": 0,
+  "frozen_destination_unique_count": 185,
+  "status": "PASS"
+}

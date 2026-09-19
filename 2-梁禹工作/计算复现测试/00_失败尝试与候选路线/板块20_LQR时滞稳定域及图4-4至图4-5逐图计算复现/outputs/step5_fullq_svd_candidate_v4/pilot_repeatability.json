@@ -1,0 +1,8 @@
+{
+  "baseline_artifact_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+  "mode": "pilot",
+  "repeat_artifact_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_repeatability_v4",
+  "scientific_artifacts_match": true,
+  "status": "PASS"
+}

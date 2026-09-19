@@ -1,0 +1,25 @@
+{
+  "command": [
+    "D:\\Software\\python\\python.exe",
+    "-B",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\stage_board21_step4_inputs.py"
+  ],
+  "cwd": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "duration_seconds": 0.21618840005248785,
+  "finished_at": "2026-08-26T05:32:58.767333+08:00",
+  "name": "stage",
+  "returncode": 1,
+  "started_at": "2026-08-26T05:32:58.536703+08:00",
+  "stderr_sha256": "CB33812E22C92155214F374DE0213B7C8E6633F1497845B345B89CAF802280CF",
+  "stderr_size_bytes": 1467,
+  "stdout_sha256": "191D24B676675934E21454F1D041B249B6BD6CBAD40927268417641DD4E4517D",
+  "stdout_size_bytes": 275,
+  "terminal_json": {
+    "error": "RuntimeError: not a plain absolute file: D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_stage\\staging_summary.json",
+    "status": "FAIL"
+  },
+  "terminal_json_error": "",
+  "timed_out": false,
+  "timeout_error": "",
+  "timeout_seconds": 300
+}

@@ -1,0 +1,133 @@
+{
+  "all_six_targets_completely_reproduced": false,
+  "candidate_group_count": 24,
+  "candidate_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04"
+  ],
+  "candidate_names": {
+    "R01": "论文CARE_alpha025_广义力",
+    "R02": "论文CARE_alpha025_加速度",
+    "R03": "论文CARE_矩阵al_广义力",
+    "R04": "论文CARE_矩阵al_加速度"
+  },
+  "candidate_point_count": 49848,
+  "complete_reproduction_exact_candidate_count": 0,
+  "coordinate_mapping": {
+    "index": "x=j+1, y=l+1",
+    "physical_ms": "tau1=(x-1)*1000/1024, tau2=(y-1)*1000/1024"
+  },
+  "evidence_level": "CALCULATION_CANDIDATE_ADJUDICATION",
+  "full_mask_adjudication": {
+    "Craig-Bampton": "NOT_EVALUABLE_MISSING_SOURCE_MASK",
+    "Guyan": "NOT_EVALUABLE_MISSING_SOURCE_MASK",
+    "Original": "EVALUABLE_FROM_AUTHOR_HISTORY_MASK_BECAUSE_PATH_MATCHES_PDF"
+  },
+  "global_six_curve_adjudication_file": "outputs/step8f_计算候选与论文目标裁决/裁决证据/4行同候选六曲线全局裁决.csv",
+  "global_six_curve_adjudication_row_count": 4,
+  "globally_complete_candidate_ids": [],
+  "grid_shape": [
+    31,
+    67
+  ],
+  "history_reduced_masks": "DIAGNOSTIC_ONLY_BECAUSE_THEIR_BOUNDARIES_CONFLICT_WITH_PDF",
+  "history_target_consistency": {
+    "图4-4_CB": {
+      "history_rightmost_x": 55,
+      "history_rightmost_y": "2;3;4;5;6;7",
+      "paper_rightmost_x": 59,
+      "paper_rightmost_y": "2;3;4;5",
+      "rightmost_all_y_exact": false,
+      "rightmost_x_exact": false,
+      "sequence_exact_allow_whole_reverse": false,
+      "sequence_exact_original_order": false,
+      "sequence_exact_reversed_order": false
+    },
+    "图4-4_Guyan": {
+      "history_rightmost_x": 52,
+      "history_rightmost_y": "2;3;4;5;6;7;8;9;10",
+      "paper_rightmost_x": 58,
+      "paper_rightmost_y": "2;3",
+      "rightmost_all_y_exact": false,
+      "rightmost_x_exact": false,
+      "sequence_exact_allow_whole_reverse": false,
+      "sequence_exact_original_order": false,
+      "sequence_exact_reversed_order": false
+    },
+    "图4-4_Original": {
+      "history_rightmost_x": 64,
+      "history_rightmost_y": "2",
+      "paper_rightmost_x": 64,
+      "paper_rightmost_y": "2",
+      "rightmost_all_y_exact": true,
+      "rightmost_x_exact": true,
+      "sequence_exact_allow_whole_reverse": true,
+      "sequence_exact_original_order": true,
+      "sequence_exact_reversed_order": false
+    },
+    "图4-5_CB": {
+      "history_rightmost_x": 54,
+      "history_rightmost_y": "2;3;4;5",
+      "paper_rightmost_x": 51,
+      "paper_rightmost_y": "2;3",
+      "rightmost_all_y_exact": false,
+      "rightmost_x_exact": false,
+      "sequence_exact_allow_whole_reverse": false,
+      "sequence_exact_original_order": false,
+      "sequence_exact_reversed_order": false
+    },
+    "图4-5_Guyan": {
+      "history_rightmost_x": 51,
+      "history_rightmost_y": "2;3",
+      "paper_rightmost_x": 48,
+      "paper_rightmost_y": "2;3",
+      "rightmost_all_y_exact": true,
+      "rightmost_x_exact": false,
+      "sequence_exact_allow_whole_reverse": false,
+      "sequence_exact_original_order": false,
+      "sequence_exact_reversed_order": false
+    },
+    "图4-5_Original": {
+      "history_rightmost_x": 57,
+      "history_rightmost_y": "2;3;4",
+      "paper_rightmost_x": 57,
+      "paper_rightmost_y": "2;3;4",
+      "rightmost_all_y_exact": true,
+      "rightmost_x_exact": true,
+      "sequence_exact_allow_whole_reverse": true,
+      "sequence_exact_original_order": true,
+      "sequence_exact_reversed_order": false
+    }
+  },
+  "matlab_boundary_contract": "bwboundaries(M,8,'noholes'); B{1}; x=column; y=row; remove x<=1 or y<=1",
+  "methods": [
+    "Original",
+    "CB",
+    "Guyan"
+  ],
+  "metrics_file": "outputs/step8f_计算候选与论文目标裁决/裁决证据/24候选与六条论文目标逐项裁决.csv",
+  "nearest_candidate_semantics": "DIAGNOSTIC_ONLY_NOT_REPRODUCTION",
+  "nearest_diagnostic_file": "outputs/step8f_计算候选与论文目标裁决/裁决证据/六条目标最近诊断候选.csv",
+  "overall_gate": "FAIL_NO_COMPLETE_CALCULATION_REPRODUCTION",
+  "pdf_target_limit": "The visible open PDF boundary cannot uniquely recover a complete 31x67 source mask.",
+  "planned_render_outputs": [
+    "图4-4_第一类划分_四候选与论文目标_索引坐标.pdf",
+    "图4-5_第二类划分_四候选与论文目标_索引坐标.pdf",
+    "图4-4_第一类划分_四候选与论文目标_物理毫秒.pdf",
+    "图4-5_第二类划分_四候选与论文目标_物理毫秒.pdf"
+  ],
+  "source_provenance_file": "outputs/step8f_计算候选与论文目标裁决/裁决证据/输入与代码来源哈希.csv",
+  "step": "8F",
+  "structural_gate": {
+    "expected": "all 30 candidate/history masks have one 8-connected component, zero hole pixels, one returned boundary",
+    "failure_count": 1,
+    "failures": [
+      "C_D2_Original_R03: components=2, holes=0, boundaries=2"
+    ],
+    "passed": false
+  },
+  "whole_figure_adjudication_file": "outputs/step8f_计算候选与论文目标裁决/裁决证据/8行同候选整图级裁决.csv",
+  "whole_figure_adjudication_row_count": 8
+}

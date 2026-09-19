@@ -1,0 +1,8 @@
+{
+  "returncode": 0,
+  "command": [
+    "D:\\Downlad\\Matlab\\bin\\matlab.exe",
+    "-batch",
+    "addpath('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code'); fig10_extract_mask_boundaries('D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v2\\r03\\e\\mask_boundary_extraction\\mask_extraction_tasks.json');"
+  ]
+}

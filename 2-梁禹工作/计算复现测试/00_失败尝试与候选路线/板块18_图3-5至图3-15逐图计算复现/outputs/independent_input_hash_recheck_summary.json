@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-08-24T18:24:21.763650+00:00",
+  "manifest": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\input_manifest.csv",
+  "manifest_sha256": "C3622F98E9CBCD5C1CC8B45C7225027F29F8BB6556FDFF0ACD199AD0F82185BB",
+  "row_count": 80,
+  "pass_count": 80,
+  "fail_count": 0,
+  "generator_frozen_count": 1,
+  "generator_status": "PASS",
+  "overall_status": "PASS",
+  "simulation_run": false,
+  "source_assets_modified": false
+}

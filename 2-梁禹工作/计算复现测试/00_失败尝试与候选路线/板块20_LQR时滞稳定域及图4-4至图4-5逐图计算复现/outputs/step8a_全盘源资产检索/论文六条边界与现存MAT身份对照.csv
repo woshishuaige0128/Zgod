@@ -1,0 +1,7 @@
+﻿论文图片,方法,论文矢量边界最右列_1基,现存历史MAT,变量名,现存形状,现存共同31x67最右列_1基,现存共同31x67稳定点数,数组SHA256,是否与论文最右列一致,证据标签
+图4-4,原结构,64,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_2.mat,stab_o,31x67,64,1454,A92FF87A50C79F80C3BF0504BB89D16F577EE6D83E012CE9FF40405295136E0D,是,历史值与论文边界一致
+图4-4,Craig-Bampton,59,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_2.mat,stab_C,31x67,55,1175,5065F2A5C6FCF493A327129256FF9BA29A5EF99A853CD4F38641C9A31E31D04C,否,现存历史值不是论文出图版
+图4-4,Guyan,58,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_2.mat,stab_g,31x67,52,1044,C3841D07F328A262EA05129506DF8D9CAE0EAA40F6C6E0558EC1FF2925D0D879,否,现存历史值不是论文出图版
+图4-5,原结构,57,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_3.mat,stab_o,31x67,57,1247,69B4E0EBCFDFDFE23645AF22E181015E328933D7D5614F9092A38FA53BB980A0,是,历史值与论文边界一致
+图4-5,Craig-Bampton,51,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_3.mat,stab_C,45x95,54,1072,BBD2D20CC93AB57E6A26A1AB7D0504C574ABD401230465A073D8F765E010602C,否,现存历史值不是论文出图版
+图4-5,Guyan,48,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_3.mat,stab_g,41x95,51,929,B306E3789A2ED5284B842B9C4977DDB5E7E10CFBBCA101313E861AD4C0B5DCEF,否,现存历史值不是论文出图版

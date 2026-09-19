@@ -1,0 +1,3 @@
+model_label,start_time,stop_time,solver_type,solver,fixed_step
+第一类原始模型,0.0,40,Fixed-step,ode4,dt
+第二类原始模型,0.0,40,Fixed-step,ode4,dt

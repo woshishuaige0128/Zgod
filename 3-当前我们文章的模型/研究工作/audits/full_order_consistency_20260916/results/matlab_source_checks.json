@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "divisions": [
+    {
+      "division": 1,
+      "M_join_residual": 0,
+      "C_join_residual": 0,
+      "K_join_residual": 0,
+      "source_mass_difference": 0,
+      "source_stiffness_difference": 0,
+      "source_damping_difference": 0.2674389705560014,
+      "stiffness_delta": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "division": 2,
+      "M_join_residual": 0,
+      "C_join_residual": 0,
+      "K_join_residual": 0,
+      "source_mass_difference": 0,
+      "source_stiffness_difference": 0.005221592773559563,
+      "source_damping_difference": 0.4982053018917429,
+      "stiffness_delta": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          276000.10864384007,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          276000.10864384007,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "delay_operator_crosscheck": [
+    {
+      "delay_steps": 0,
+      "C_delay_projection_difference": 0,
+      "K_delay_projection_difference": 0
+    },
+    {
+      "delay_steps": 4,
+      "C_delay_projection_difference": 0.029637635755289264,
+      "K_delay_projection_difference": 0.01563503473269246
+    }
+  ],
+  "new_time_integrations": 0
+}

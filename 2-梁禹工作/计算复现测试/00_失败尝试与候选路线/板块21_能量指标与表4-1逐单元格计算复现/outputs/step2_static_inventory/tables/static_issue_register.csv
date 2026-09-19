@@ -1,0 +1,15 @@
+issue_id,scientific_severity,scope,finding,consequence,disposition
+S01,CRITICAL,all seven energy routes,最终标量均未实现论文式(4-45),表4-1不存在统一公式入口,RETAIN_AND_TEST_IN_LATER_STEPS
+S02,CRITICAL,Copy_2_of_energy_zonghe3.mlx,唯一命中第二类两值的路线关闭式(4-43)归一化且CB错用Guyan分母,数值命中不能作为公式复现,RETAIN_AND_TEST_IN_LATER_STEPS
+S03,CRITICAL,Table 4-1 first division,0.3065和0.1879在七份保存标量中均无匹配,第一类两值仍无入口,RETAIN_AND_TEST_IN_LATER_STEPS
+S04,HIGH,all seven energy routes,脚本无load/run/sim/cd，依赖污染工作区,历史调用顺序未被原工程记录,RETAIN_AND_TEST_IN_LATER_STEPS
+S05,CRITICAL,monicanshu_3_suoju -> zonghe3 TP-family,生产者与消费者自由度顺序不一致,维数通过但物理坐标语义失败,RETAIN_AND_TEST_IN_LATER_STEPS
+S06,HIGH,PDmonicanshu family versus monicanshu MLX family,密度系数分别为785e3*1.9与785e3*1.7,同名义划分存在不同参数族,RETAIN_AND_TEST_IN_LATER_STEPS
+S07,CRITICAL,two whole-structure divisions,当前15->6/9与15->5/8整体划分没有对应七份能量汇总入口,不能把局部6/9维结果静默当成整体表值,RETAIN_AND_TEST_IN_LATER_STEPS
+S08,HIGH,equation 4-41,激励方向或广义荷载身份未闭合，部分路线可能重复乘质量矩阵,参与因子含义待原样运行和独立公式审计,RETAIN_AND_TEST_IN_LATER_STEPS
+S09,HIGH,equation 4-45,d/d2默认坐标一一对应但没有映射断言,坐标重排可静默改变结果,RETAIN_AND_TEST_IN_LATER_STEPS
+S10,HIGH,untitled3.mlx|untitled4.mlx,K_r与M_r无生产者,历史旁支不可原样重算,RETAIN_AND_TEST_IN_LATER_STEPS
+S11,HIGH,luxvjie_cb_2.mlx|luxvjie_cb_3.mlx,两个文件字节相同且遗漏自由度2,不能作为两类独立证据,RETAIN_AND_TEST_IN_LATER_STEPS
+S12,MEDIUM,three SLX models,引用三个冻结目录中不存在的地震MAT文件,响应旁支不能补足能量公式入口,RETAIN_AND_TEST_IN_LATER_STEPS
+S13,MEDIUM,Copy_2 energy routes,注释宣称能量已归一化但执行行被注释,注释与执行身份冲突,RETAIN_AND_TEST_IN_LATER_STEPS
+S14,MEDIUM,saved MLX outputs,manual/ready或error均为编辑器缓存,不得称为本轮计算结果,RETAIN_AND_TEST_IN_LATER_STEPS

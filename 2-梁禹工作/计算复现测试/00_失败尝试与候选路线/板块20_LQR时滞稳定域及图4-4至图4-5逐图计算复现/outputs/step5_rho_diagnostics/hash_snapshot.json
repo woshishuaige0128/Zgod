@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "code/diagnose_board20_step5_div2_rho.py": "F0462CB1FD72CB058D7F8F898BF473D0FF2A39FC595E31398E6F47FEA8AAFA9C",
+    "outputs/step5_rho_diagnostics/artifact_manifest.csv": "21015B9B90BE3506F6D6DFD80D5208B4A7E6120858B4F16F9A7A9CC5537F0E34",
+    "outputs/step5_rho_diagnostics/audit.json": "12613AFC682D9412DB6CF4F56D87B0EB7E49D3C3A5A8E1845F89FB0DF6819E56",
+    "outputs/step5_rho_diagnostics/checks.csv": "BAAC636FA5B6C112C41D4D1264CDC52CF2900E7579533205E2F5A31FCEEB382F",
+    "outputs/step5_rho_diagnostics/high_precision_refinement.csv": "DC93A945913FF6BE58EDAF33BB8108540D9F7E7B78F1D9F513CD528E138A036D",
+    "outputs/step5_rho_diagnostics/input_manifest.csv": "6CCFFFED9EC5C6B04A99905433B6AE65893DEEDBA662A09C7CDB5E9397F918A7",
+    "outputs/step5_rho_diagnostics/root_source_diagnostics.csv": "7359042BC9694BCA95548B819B3584A20AB0ADAC0438A417BF901B590DF0BFD1",
+    "outputs/step5_rho_diagnostics/route_point_diagnostics.csv": "87DB8C487627065411615373DA85CD06C10353E0077CCF47FC91AAD8D72D3EA4",
+    "outputs/step5_rho_diagnostics/unique_point_diagnostics.csv": "3F0607D69672F046A74F593E92970B63B1ECFEB64B4342E4A2BD5118A8FB22A6",
+    "outputs/step5_rho_diagnostics/步骤5_第二分区4个谱半径超差点严格诊断.md": "C970ED53E9049F52DB59B72EB66F9CDF4E8B49B4CAFB7A6C44DC64ED11619181"
+  },
+  "schema_version": "board20_step5_rho_repeat_snapshot_v1"
+}

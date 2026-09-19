@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "changed_zip_parts": [
+    "ppt/slides/slide18.xml",
+    "ppt/slides/slide19.xml"
+  ],
+  "native_labeled_circles": 54,
+  "other_17_pages_preserved": true,
+  "all_non_node_objects_including_curved_arrows_unchanged": true,
+  "target_pages_identical_between_formats": true,
+  "protected_files_unchanged": 247,
+  "sha256": {
+    "pptx": "b84fc5471e09601fe20bac487ef00a7cecef893eb2fa414f22a40a4acd020596",
+    "ppt": "5ee6e69d30af2152e0ffcd5b4afd564fa2c66a2ee5f56eaf913aadace5f9b7eb"
+  }
+}

@@ -1,0 +1,69 @@
+﻿division,check,actual,criterion,result
+1,主从自由度为1:15无重复分割,15,unique=15 and sorted=1:15,PASS
+1,Guyan变换维数,15x6,15x6,PASS
+1,Guyan变换满列秩,6,rank=6,PASS
+1,Craig-Bampton变换维数,15x9,15x9,PASS
+1,静力约束残差,1.507626977896377e-16,<=5e-12,PASS
+1,三层Guyan自然/重排恢复一致,0.0,<=5e-12,PASS
+1,三层CB自然/重排恢复一致,0.0,<=5e-12,PASS
+1,Guyan载荷投影维数,6,=6,PASS
+1,CB载荷投影维数,9,=9,PASS
+1,冻结板块14交叉验证_Mo,0.0,<=5e-12,PASS
+1,冻结板块14交叉验证_Co,0.0,<=5e-12,PASS
+1,冻结板块14交叉验证_Ko,0.0,<=5e-12,PASS
+1,冻结板块14交叉验证_T,1.181940843677321e-16,<=5e-12,PASS
+1,冻结板块14交叉验证_M_historical,0.0,<=5e-12,PASS
+1,冻结板块14交叉验证_C_historical,2.565428830882846e-17,<=5e-12,PASS
+1,冻结板块14交叉验证_K_historical,1.3579893280426738e-16,<=5e-12,PASS
+1,冻结板块14交叉验证_M_projected,5.120074203250748e-18,<=5e-12,PASS
+1,冻结板块14交叉验证_C_projected,1.51576339836343e-16,<=5e-12,PASS
+1,冻结板块14交叉验证_K_projected,1.8621098785190808e-17,<=5e-12,PASS
+1,冻结板块14交叉验证_Mf,0.0,<=5e-12,PASS
+1,冻结板块14交叉验证_T_cb_fixed_interface_subspace_max_angle_rad,9.719897978548043e-16,<=5e-08,PASS
+1,冻结板块14交叉验证_CB_frequency_max_abs_hz,9.947598300641403e-14,<=5e-10,PASS
+1,冻结板块14数值回归_static_residual,5.5189903285373594e-17,abs_error<=5e-12,PASS
+1,冻结板块14数值回归_relative_M,4.163336342344337e-17,abs_error<=5e-12,PASS
+1,冻结板块14数值回归_relative_C,9.71445146547012e-17,abs_error<=5e-12,PASS
+1,冻结板块14数值回归_relative_K,6.359513761818845e-17,abs_error<=5e-12,PASS
+1,冻结板块14频率回归_Original_route_invariant_mode1,1.7763568394002505e-15,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Original_route_invariant_mode2,2.6645352591003757e-14,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Guyan_historical_single_sided_mode1,1.7763568394002505e-15,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Guyan_historical_single_sided_mode2,3.552713678800501e-15,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Guyan_projected_congruence_mode1,1.0658141036401503e-14,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Guyan_projected_congruence_mode2,0.0,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Craig-Bampton_route_invariant_mode1,0.0,<=5e-10 Hz,PASS
+1,冻结板块14频率回归_Craig-Bampton_route_invariant_mode2,0.0,<=5e-10 Hz,PASS
+2,主从自由度为1:15无重复分割,15,unique=15 and sorted=1:15,PASS
+2,Guyan变换维数,15x5,15x5,PASS
+2,Guyan变换满列秩,5,rank=5,PASS
+2,Craig-Bampton变换维数,15x8,15x8,PASS
+2,静力约束残差,2.8759745924128205e-16,<=5e-12,PASS
+2,三层Guyan自然/重排恢复一致,0.0,<=5e-12,PASS
+2,三层CB自然/重排恢复一致,0.0,<=5e-12,PASS
+2,Guyan载荷投影维数,5,=5,PASS
+2,CB载荷投影维数,8,=8,PASS
+2,冻结板块14交叉验证_Mo,0.0,<=5e-12,PASS
+2,冻结板块14交叉验证_Co,0.0,<=5e-12,PASS
+2,冻结板块14交叉验证_Ko,0.0,<=5e-12,PASS
+2,冻结板块14交叉验证_T,2.0650230441676593e-16,<=5e-12,PASS
+2,冻结板块14交叉验证_M_historical,0.0,<=5e-12,PASS
+2,冻结板块14交叉验证_C_historical,1.4801660492235566e-16,<=5e-12,PASS
+2,冻结板块14交叉验证_K_historical,3.360233275318385e-16,<=5e-12,PASS
+2,冻结板块14交叉验证_M_projected,3.7479304720839736e-17,<=5e-12,PASS
+2,冻结板块14交叉验证_C_projected,4.0307109361503853e-16,<=5e-12,PASS
+2,冻结板块14交叉验证_K_projected,1.4599233512056867e-16,<=5e-12,PASS
+2,冻结板块14交叉验证_Mf,0.0,<=5e-12,PASS
+2,冻结板块14交叉验证_T_cb_fixed_interface_subspace_max_angle_rad,7.722379680984194e-15,<=5e-08,PASS
+2,冻结板块14交叉验证_CB_frequency_max_abs_hz,1.7763568394002505e-14,<=5e-10,PASS
+2,冻结板块14数值回归_static_residual,1.0095830663185305e-16,abs_error<=5e-12,PASS
+2,冻结板块14数值回归_relative_M,3.885780586188048e-16,abs_error<=5e-12,PASS
+2,冻结板块14数值回归_relative_C,2.220446049250313e-16,abs_error<=5e-12,PASS
+2,冻结板块14数值回归_relative_K,8.040242045892249e-17,abs_error<=5e-12,PASS
+2,冻结板块14频率回归_Original_route_invariant_mode1,1.7763568394002505e-15,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Original_route_invariant_mode2,2.6645352591003757e-14,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Guyan_historical_single_sided_mode1,2.6645352591003757e-15,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Guyan_historical_single_sided_mode2,3.019806626980426e-14,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Guyan_projected_congruence_mode1,1.7763568394002505e-15,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Guyan_projected_congruence_mode2,3.907985046680551e-14,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Craig-Bampton_route_invariant_mode1,7.549516567451064e-15,<=5e-10 Hz,PASS
+2,冻结板块14频率回归_Craig-Bampton_route_invariant_mode2,7.105427357601002e-15,<=5e-10 Hz,PASS

@@ -1,0 +1,53 @@
+﻿素材名称,正文图号,子图内容,矢量SVG,矢量PDF,原图文件
+fig1a,1,反馈控制框图,fig1a.svg,fig1a.pdf,fig01_force_feedback.pdf
+fig2a,2,参考框架尺寸与支承,fig2a.svg,fig2a.pdf,fig02_geometry.pdf
+fig2b,2,梁I形截面尺寸,fig2b.svg,fig2b.pdf,fig02_geometry.pdf
+fig3a,3,自由度与节点编号,fig3a.svg,fig3a.pdf,fig03_dofs.pdf
+fig4a,4,第一类划分：数值子结构与物理子结构,fig4a.svg,fig4a.pdf,fig04_divisions.pdf
+fig4b,4,第二类划分：数值子结构与物理子结构,fig4b.svg,fig4b.pdf,fig04_divisions.pdf
+fig5a,5,缩放后的El Centro输入,fig5a.svg,fig5a.pdf,fig11_excitation.pdf
+fig5b,5,线性扫频输入,fig5b.svg,fig5b.pdf,fig11_excitation.pdf
+fig6a,6,第一类划分，第1阶水平振型,fig6a.svg,fig6a.pdf,fig12_horizontal_modes.pdf
+fig6b,6,第一类划分，第2阶水平振型,fig6b.svg,fig6b.pdf,fig12_horizontal_modes.pdf
+fig6c,6,第二类划分，第1阶水平振型,fig6c.svg,fig6c.pdf,fig12_horizontal_modes.pdf
+fig6d,6,第二类划分，第2阶水平振型,fig6d.svg,fig6d.pdf,fig12_horizontal_modes.pdf
+fig7a,7,第一类划分，El Centro，首层位移，0–40 s,fig7a.svg,fig7a.pdf,fig06_eq_div1.pdf
+fig7b,7,第一类划分，El Centro，首层位移，10–11 s,fig7b.svg,fig7b.pdf,fig06_eq_div1.pdf
+fig7c,7,第一类划分，El Centro，首层位移，21.5–22.5 s,fig7c.svg,fig7c.pdf,fig06_eq_div1.pdf
+fig7d,7,第一类划分，El Centro，顶层位移，0–40 s,fig7d.svg,fig7d.pdf,fig06_eq_div1.pdf
+fig7e,7,第一类划分，El Centro，顶层位移，10–11 s,fig7e.svg,fig7e.pdf,fig06_eq_div1.pdf
+fig7f,7,第一类划分，El Centro，顶层位移，21.5–22.5 s,fig7f.svg,fig7f.pdf,fig06_eq_div1.pdf
+fig8a,8,第二类划分，El Centro，首层位移，0–40 s,fig8a.svg,fig8a.pdf,fig07_eq_div2.pdf
+fig8b,8,第二类划分，El Centro，首层位移，10–11 s,fig8b.svg,fig8b.pdf,fig07_eq_div2.pdf
+fig8c,8,第二类划分，El Centro，首层位移，21.5–22.5 s,fig8c.svg,fig8c.pdf,fig07_eq_div2.pdf
+fig8d,8,第二类划分，El Centro，顶层位移，0–40 s,fig8d.svg,fig8d.pdf,fig07_eq_div2.pdf
+fig8e,8,第二类划分，El Centro，顶层位移，10–11 s,fig8e.svg,fig8e.pdf,fig07_eq_div2.pdf
+fig8f,8,第二类划分，El Centro，顶层位移，21.5–22.5 s,fig8f.svg,fig8f.pdf,fig07_eq_div2.pdf
+fig9a,9,第二类划分，中层El Centro位移对比,fig9a.svg,fig9a.pdf,fig13_middle_eq.pdf
+fig9b,9,第二类划分，中层El Centro的Guyan误差,fig9b.svg,fig9b.pdf,fig13_middle_eq.pdf
+fig9c,9,第二类划分，中层El Centro的Craig–Bampton误差,fig9c.svg,fig9c.pdf,fig13_middle_eq.pdf
+fig10a,10,第一类划分，扫频，首层位移，0–40 s,fig10a.svg,fig10a.pdf,fig08_chirp_div1.pdf
+fig10b,10,第一类划分，扫频，首层位移，13–14 s,fig10b.svg,fig10b.pdf,fig08_chirp_div1.pdf
+fig10c,10,第一类划分，扫频，首层位移，38–38.3 s,fig10c.svg,fig10c.pdf,fig08_chirp_div1.pdf
+fig10d,10,第一类划分，扫频，顶层位移，0–40 s,fig10d.svg,fig10d.pdf,fig08_chirp_div1.pdf
+fig10e,10,第一类划分，扫频，顶层位移，13–14 s,fig10e.svg,fig10e.pdf,fig08_chirp_div1.pdf
+fig10f,10,第一类划分，扫频，顶层位移，38–38.3 s,fig10f.svg,fig10f.pdf,fig08_chirp_div1.pdf
+fig11a,11,第二类划分，扫频，首层位移，0–40 s,fig11a.svg,fig11a.pdf,fig09_chirp_div2.pdf
+fig11b,11,第二类划分，扫频，首层位移，13–14 s,fig11b.svg,fig11b.pdf,fig09_chirp_div2.pdf
+fig11c,11,第二类划分，扫频，首层位移，38–38.3 s,fig11c.svg,fig11c.pdf,fig09_chirp_div2.pdf
+fig11d,11,第二类划分，扫频，顶层位移，0–40 s,fig11d.svg,fig11d.pdf,fig09_chirp_div2.pdf
+fig11e,11,第二类划分，扫频，顶层位移，13–14 s,fig11e.svg,fig11e.pdf,fig09_chirp_div2.pdf
+fig11f,11,第二类划分，扫频，顶层位移，38–38.3 s,fig11f.svg,fig11f.pdf,fig09_chirp_div2.pdf
+fig12a,12,第二类划分，中层扫频位移对比,fig12a.svg,fig12a.pdf,fig14_middle_chirp.pdf
+fig12b,12,第二类划分，中层扫频的Guyan误差,fig12b.svg,fig12b.pdf,fig14_middle_chirp.pdf
+fig12c,12,第二类划分，中层扫频的Craig–Bampton误差,fig12c.svg,fig12c.pdf,fig14_middle_chirp.pdf
+fig13a,13,第一类划分，El Centro峰值层间位移角,fig13a.svg,fig13a.pdf,fig15_peak_drift.pdf
+fig13b,13,第二类划分，El Centro峰值层间位移角,fig13b.svg,fig13b.pdf,fig15_peak_drift.pdf
+fig13c,13,第一类划分，扫频峰值层间位移角,fig13c.svg,fig13c.pdf,fig15_peak_drift.pdf
+fig13d,13,第二类划分，扫频峰值层间位移角,fig13d.svg,fig13d.pdf,fig15_peak_drift.pdf
+fig14a,14,第一类划分，双时滞稳定域,fig14a.svg,fig14a.pdf,fig10_stability_domain.pdf
+fig14b,14,第二类划分，双时滞稳定域,fig14b.svg,fig14b.pdf,fig10_stability_domain.pdf
+fig15a,15,第一类划分，15坐标模态份额,fig15a.svg,fig15a.pdf,fig16_modal_shares.pdf
+fig15b,15,第一类划分，作动坐标相对份额偏离幅度,fig15b.svg,fig15b.pdf,fig16_modal_shares.pdf
+fig15c,15,第二类划分，15坐标模态份额,fig15c.svg,fig15c.pdf,fig16_modal_shares.pdf
+fig15d,15,第二类划分，作动坐标相对份额偏离幅度,fig15d.svg,fig15d.pdf,fig16_modal_shares.pdf

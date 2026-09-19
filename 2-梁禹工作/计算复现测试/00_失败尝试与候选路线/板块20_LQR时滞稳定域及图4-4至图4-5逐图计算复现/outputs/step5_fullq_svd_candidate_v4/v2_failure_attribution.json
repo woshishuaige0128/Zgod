@@ -1,0 +1,39 @@
+{
+  "not_gate_relaxation_statement": "V4 changes no scientific algorithm, root, input, tolerance, pairing, rho, classification, residual, or threshold. V3 remains permanently validator-FAIL because every route_status schema_version was overwritten by checkpoint identity. V4 preregisters only that metadata merge-order repair plus necessary V4 paths, schemas, seals, and immutable-evidence checks before any V4 preflight/selftest/pilot.",
+  "protected_v2_file_sha256": {
+    "code/board20_step5_fullq_candidate_contract.json": "3D777C7DFCC1C480177EA0D0F8AE29892A15F6E2A5C1A2EBC73D7851422BC318",
+    "code/board20_step5_fullq_candidate_contract_revision_record.json": "9FA27BAA60A334B6FCB06AE1A2B562A296D885CD83B5DA6AFDC4600190BD8BB7",
+    "code/board20_step5_fullq_candidate_contract_v1_preseal_draft.json": "6530332BD67C5A4083BF2188E1E4BE7AE91D11EA6FE6FDD18EF54A00CCFBDA7B",
+    "code/compute_board20_step5_fullq_candidate.py": "1A0FA34740F8B33AFA55C245C6FBE56777DDA318903D1FA2CBAA846D7AAA7FE6",
+    "outputs/step5_fullq_candidate/contracts_status.json": "99BF31CE432958EC03D94D4ACAB3E29AF5FE6A19F6274653DEF43C0EF8A1EC10",
+    "outputs/step5_fullq_candidate/input_seal.json": "A38F16625FE8597FDF91F62BC50C0BC25CB485234694CDCF3C94D35EAD3F203F",
+    "outputs/step5_fullq_candidate/preflight.json": "DA7BC36BF8BE601F00A7ED67F0341A61987D50481A1E6594674C9607870DFA4C",
+    "outputs/step5_fullq_candidate/selftest.json": "F6C33F22D781F61FD3467C03A73E44DB8B727693C9B5A3ABF644A5E9C07F63D7"
+  },
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_v2_attribution_v4",
+  "v2_failure_attribution": {
+    "candidate_contract_relpath": "code/board20_step5_fullq_candidate_contract.json",
+    "candidate_script_relpath": "code/compute_board20_step5_fullq_candidate.py",
+    "cause": "For small nonzero roots of the ordinary full-q history companion, the leading physical q block of an otherwise correctly paired companion eigenvector can lose scale. Reusing that block in the original polynomial/Laurent equation produced false large vector residuals even though the root itself was accurate.",
+    "diagnostic_examples": [
+      {
+        "case": "n5_GUYAN_DIV1_H_LEFT",
+        "direct_svd_residual_approx": 7.1e-16,
+        "full_compact_root_distance_approx": 8.98e-15,
+        "root_abs_approx": 0.00018857996919173,
+        "v2_vector_laurent_residual_approx": 1.736e-08
+      },
+      {
+        "case": "n5_DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "direct_svd_residual_approx": 1.117e-15,
+        "full_compact_root_distance_approx": 5.01e-14,
+        "root_abs_approx": 5.1912941717121e-05,
+        "v2_vector_laurent_residual_approx": 3.934e-06
+      }
+    ],
+    "failed_mode": "selftest",
+    "full_started": false,
+    "pilot_started": false,
+    "status": "PERMANENT_FAIL_IMMUTABLE"
+  }
+}

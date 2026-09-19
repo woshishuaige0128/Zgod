@@ -1,0 +1,59 @@
+{
+  "schema_version": "FIG10_MASK_EXTRACTION_TASKS_V1",
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D1_Original\\full-grid\\stable_mask.csv",
+      "source_sha256": "168E6F2055320377C9E1CD18B406D62A77C8CEC488D3D60CBD0D8B59CA3F8A06",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_original.meta.json"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D1_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "source_sha256": "A64F2770F1DA55144A0D78BFC63556A06C37A878A69A67085582251CFDA493D3",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D1_Guyan\\full-grid\\stable_mask.csv",
+      "source_sha256": "80CF8D8275908AEEE0487A261361E6E8EFBE376DD8B64761B35BBC107C02156D",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division1_guyan.meta.json"
+    },
+    {
+      "curve_id": "division2_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D2_Original\\full-grid\\stable_mask.csv",
+      "source_sha256": "D3EF0B51DEDC50A8E2BE530CC0B2A22BCC967836193358EA4B3D4A13E35E1D86",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_original.meta.json"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D2_Craig_Bampton\\full-grid\\stable_mask.csv",
+      "source_sha256": "022230035BC5389EE98152DAE25B6F35FFFA5DEAE0CD73EBA36895DA7D160807",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\coarse_gain_sweep\\gain_scale_0p125\\B1\\routes\\B1_D2_Guyan\\full-grid\\stable_mask.csv",
+      "source_sha256": "45F9F7CE1BC3C3E85585C64BA7B8B6371B33DDD19176BB7574A89E6A1EBCC68D",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_7a3c94e2c9\\e\\mask_boundary_extraction\\division2_guyan.meta.json"
+    }
+  ]
+}

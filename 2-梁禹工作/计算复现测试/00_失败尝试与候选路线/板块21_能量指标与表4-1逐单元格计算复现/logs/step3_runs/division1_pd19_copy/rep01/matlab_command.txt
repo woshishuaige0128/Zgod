@@ -1,0 +1,1 @@
+D:\Downlad\Matlab\bin\matlab.exe -batch "addpath('D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块21_能量指标与表4-1逐单元格计算复现\code'); run_one_board21_energy_route('D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块21_能量指标与表4-1逐单元格计算复现\outputs\step3_runs\division1_pd19_copy\rep01\metadata\run_config.json');"

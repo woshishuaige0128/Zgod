@@ -1,0 +1,640 @@
+{
+  "archive_entries": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "matlab/document.xml",
+    "matlab/output.xml",
+    "metadata/coreProperties.xml",
+    "metadata/mwcoreProperties.xml",
+    "metadata/mwcorePropertiesExtension.xml",
+    "metadata/mwcorePropertiesReleaseInfo.xml"
+  ],
+  "assignments": [
+    "E",
+    "E_total",
+    "E_total_cb",
+    "E_total_guyan",
+    "Gamma",
+    "GammaSq",
+    "K",
+    "M",
+    "d",
+    "d2",
+    "energy_sum_cb",
+    "energy_sum_guyan",
+    "energy_sum_orig",
+    "increase_rate",
+    "index1",
+    "index2",
+    "m",
+    "n",
+    "n_dof",
+    "n_modes",
+    "omega",
+    "omega2",
+    "order",
+    "participation_ratio",
+    "phi",
+    "r",
+    "r0",
+    "total_increase_cb",
+    "total_increase_guyan"
+  ],
+  "code_cells": [
+    "% 假设 M, K, r 已定义，r 是激励方向向量\nr0=[1,1,1,0,0,0,0,0,0]';\nr = r0;\nindex1 = [1,7];\nindex2 = [4,2,3,5,6,8,9];\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\norder = [index1,index2];\nK = KPrt(order,order);\nM = MPrt(order,order);\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\n\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    %E(:,i) = E(:,i) / sum(E(:,i));\n    % 对每个模态归一化\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\n\nE_total = E * participation_ratio;  % n_dof x 1，综合能量指标\n% 可视化\nbar(E_total)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')",
+    "% 假设 M, K, r 已定义，r 是激励方向向量\nr=TP' *r0;\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\nK = KPren;\nM = MPren;\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\n\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    % 对每个模态归一化\n    %E(:,i) = E(:,i) / sum(E(:,i));\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\n\nE_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标\n\n% 可视化\nbar(E_total_guyan)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')\n\nd = [1,2];  % 缩聚前对应自由度索引\nincrease_rate = (E_total_guyan - E_total(d))./ E_total(d) * 100 ;\n\n% 显示结果\nfor k = 1:length(d)\n    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\\n', d(k), k, increase_rate(k));\nend",
+    "% 假设 M, K, r 已定义，r 是激励方向向量\nr=TP_cb' *r0;\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\nK = KP_cb;\nM = MP_cb;\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    % 对每个模态归一化\n    %E(:,i) = E(:,i) / sum(E(:,i));\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\nd2 = d;\n\nE_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标\nincrease_rate = (E_total_cb(d2) - E_total(d))./ E_total(d) * 100 ;\n\n% 可视化\nbar(E_total_cb)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')\n\n% 显示结果\nfor k = 1:length(d)\n    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\\n', d(k), k, increase_rate(k));\nend",
+    "energy_sum_guyan = sum(E_total_guyan);\nenergy_sum_orig = sum(E_total(d));\ntotal_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100\n\nenergy_sum_cb = sum(E_total_cb(d2));\nenergy_sum_orig = sum(E_total(d));\ntotal_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100\n"
+  ],
+  "document_xml_sha256": "0334ADC32E6ADA8E41BC08A4CFFE3CF2D7E162F968657354C51B613D279CCBEF",
+  "function_calls": [
+    "E",
+    "E_total",
+    "E_total_cb",
+    "Gamma",
+    "KPrt",
+    "MPrt",
+    "bar",
+    "d",
+    "diag",
+    "eig",
+    "fprintf",
+    "increase_rate",
+    "length",
+    "m",
+    "omega",
+    "phi",
+    "size",
+    "sqrt",
+    "sum",
+    "title",
+    "xlabel",
+    "ylabel",
+    "zeros"
+  ],
+  "identifiers": [
+    "E",
+    "E_total",
+    "E_total_cb",
+    "E_total_guyan",
+    "Gamma",
+    "GammaSq",
+    "K",
+    "KP_cb",
+    "KPren",
+    "KPrt",
+    "M",
+    "MP_cb",
+    "MPren",
+    "MPrt",
+    "TP",
+    "TP_cb",
+    "bar",
+    "d",
+    "d2",
+    "diag",
+    "eig",
+    "energy_sum_cb",
+    "energy_sum_guyan",
+    "energy_sum_orig",
+    "f",
+    "fprintf",
+    "i",
+    "increase_rate",
+    "index1",
+    "index2",
+    "j",
+    "k",
+    "length",
+    "m",
+    "n",
+    "n_dof",
+    "n_modes",
+    "omega",
+    "omega2",
+    "order",
+    "participation_ratio",
+    "phi",
+    "r",
+    "r0",
+    "size",
+    "sqrt",
+    "sum",
+    "title",
+    "total_increase_cb",
+    "total_increase_guyan",
+    "xlabel",
+    "ylabel",
+    "zeros"
+  ],
+  "output_metadata": {
+    "error_element_count": 0,
+    "error_messages": "",
+    "evaluation_state": "manual",
+    "output_status": "ready"
+  },
+  "output_xml_sha256": "831052E49EA90B1219042D8068826066484C8E61402796DFA97B528A568D4BAF",
+  "outputs": [
+    {
+      "columns": "1",
+      "element_sha256": "0222C25003C36BF5B98F8BFF04B7DD9469A815216BA351DB4EA53CEC91059D37",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"198.4629\"}",
+        "header": "",
+        "name": "omega",
+        "rows": "9",
+        "subtype": "double",
+        "type": "double",
+        "value": "  198.4629\n  218.5039\n  232.4736\n  250.4716\n  255.8917\n  283.2209\n  325.8673\n  336.6420\n  367.9272\n",
+        "varSize": "9×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "11"
+      ],
+      "name": "omega",
+      "output_index": 1,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[1]",
+      "rows": "9",
+      "value": "  198.4629\n  218.5039\n  232.4736\n  250.4716\n  255.8917\n  283.2209\n  325.8673\n  336.6420\n  367.9272\n",
+      "var_size": "9×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "1",
+      "element_sha256": "8BE5B52FC55DCAA67230E4CDA4E1D50EF0F21FC86DBEFC101231E9D7838CD1B2",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"0.0002\"}",
+        "header": "",
+        "name": "participation_ratio",
+        "rows": "9",
+        "subtype": "double",
+        "type": "double",
+        "value": "    0.0002\n    0.0014\n    0.0902\n    0.0072\n    0.5055\n    0.3948\n    0.0007\n    0.0000\n    0.0001\n",
+        "varSize": "9×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "23"
+      ],
+      "name": "participation_ratio",
+      "output_index": 2,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[2]",
+      "rows": "9",
+      "value": "    0.0002\n    0.0014\n    0.0902\n    0.0072\n    0.5055\n    0.3948\n    0.0007\n    0.0000\n    0.0001\n",
+      "var_size": "9×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "",
+      "element_sha256": "BBA8B18270DFF3F5538BE97112A924CB7174CED75DD67A0AEBCFCAA215D9ACA0",
+      "large_fields": {
+        "figureUri": {
+          "length": 14798,
+          "sha256": "44D802AEDE113FABE6B1921E8C3A0227B89B0ACC9BBA36F3F95B429459C10C8B"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "d3da9abd-d0c7-4600-bab2-20972686ad72",
+        "originalRegionNumber": "14"
+      },
+      "line_numbers": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "name": "",
+      "output_index": 3,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[3]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "DA86DD4EE6C1AE80290B8E28A9EE58B5EF15890B70C35CE1499CBCEFF5E67CAC",
+      "large_fields": {
+        "figureUri": {
+          "length": 17342,
+          "sha256": "A4F860247BE0A467EB29FA04C7E166CB7DB4F284E58840D321AA18995C98F79C"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "05a7ec0e-293d-4b2d-bc61-bb068e39264e",
+        "originalRegionNumber": "25"
+      },
+      "line_numbers": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "name": "",
+      "output_index": 4,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[4]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "1",
+      "element_sha256": "88803E3B244CB363F117E17161A761E7A90B0D2A65752919CDC301E56727AA40",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"283.7430\"}",
+        "header": "",
+        "name": "omega",
+        "rows": "2",
+        "subtype": "double",
+        "type": "double",
+        "value": "  283.7430\n  264.0007\n",
+        "varSize": "2×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "67"
+      ],
+      "name": "omega",
+      "output_index": 5,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[5]",
+      "rows": "2",
+      "value": "  283.7430\n  264.0007\n",
+      "var_size": "2×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "1",
+      "element_sha256": "34466284D76F8DA240F8A48467ABF08CB78A4256F94055C4923430F9A66D8C45",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"0.3771\"}",
+        "header": "",
+        "name": "participation_ratio",
+        "rows": "2",
+        "subtype": "double",
+        "type": "double",
+        "value": "    0.3771\n    0.6229\n",
+        "varSize": "2×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "79"
+      ],
+      "name": "participation_ratio",
+      "output_index": 6,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[6]",
+      "rows": "2",
+      "value": "    0.3771\n    0.6229\n",
+      "var_size": "2×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "",
+      "element_sha256": "3B498C19393B1A16C8AFE2EB7E84950BD172DA0789CC02C7031DBB96D581F6B0",
+      "large_fields": {
+        "figureUri": {
+          "length": 14898,
+          "sha256": "B86263D5085456AD1A8F02B5138107FD592401073D21AA69D1EFC2B4EDA6F491"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "c7463e24-455b-4fdb-862c-7cc9e7a5b8ef",
+        "originalRegionNumber": "39"
+      },
+      "line_numbers": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "name": "",
+      "output_index": 7,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[7]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "94EE1D76D7DAC22BCB5939CE12623A96C125F2C94A72A4E4B2EA86125769DE42",
+      "large_fields": {
+        "figureUri": {
+          "length": 15482,
+          "sha256": "A9B3F97E57B003EE053E713F378200E6A90C72D886A64F9F53AF27F9D090C419"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "ff64af12-1a40-41d6-a086-f96291b4561a",
+        "originalRegionNumber": "50"
+      },
+      "line_numbers": [
+        "114",
+        "115",
+        "116",
+        "117"
+      ],
+      "name": "",
+      "output_index": 8,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[8]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "6B0EF1A87D5C89101087D97A74E40CCC89456657DA65456C20AEBF1F8C2F6A73",
+      "large_fields": {},
+      "leaf_fields": {
+        "text": "自由度 1 -> 缩聚后自由度 1, 能量占比增加率: 39.28%\n自由度 2 -> 缩聚后自由度 2, 能量占比增加率: 89.07%\n",
+        "wasTruncatedAtLineBreak": "false",
+        "wasTruncatedMidLine": "false"
+      },
+      "line_numbers": [
+        "124"
+      ],
+      "name": "",
+      "output_index": 9,
+      "output_type": "text",
+      "output_xpath": "/embeddedOutputs/outputArray/element[9]",
+      "rows": "",
+      "value": "自由度 1 -> 缩聚后自由度 1, 能量占比增加率: 39.28%\n自由度 2 -> 缩聚后自由度 2, 能量占比增加率: 89.07%\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "1",
+      "element_sha256": "C6FD892A4E1C681D10174EB2A2852C62638EA4CCA4CF68F6625D0E668A0878B4",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"287.7062\"}",
+        "header": "",
+        "name": "omega",
+        "rows": "5",
+        "subtype": "double",
+        "type": "double",
+        "value": "  287.7062\n  262.6866\n  198.4881\n  233.0205\n  218.7136\n",
+        "varSize": "5×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "132"
+      ],
+      "name": "omega",
+      "output_index": 10,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[10]",
+      "rows": "5",
+      "value": "  287.7062\n  262.6866\n  198.4881\n  233.0205\n  218.7136\n",
+      "var_size": "5×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "1",
+      "element_sha256": "C8AFD4954662D77FCA882FB37242C08ECC21387979F52EA58576BAAE66340900",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "element": "{\"value\":\"0.3220\"}",
+        "header": "",
+        "name": "participation_ratio",
+        "rows": "5",
+        "subtype": "double",
+        "type": "double",
+        "value": "    0.3220\n    0.5393\n    0.0399\n    0.0126\n    0.0862\n",
+        "varSize": "5×1",
+        "varType": "double"
+      },
+      "line_numbers": [
+        "143"
+      ],
+      "name": "participation_ratio",
+      "output_index": 11,
+      "output_type": "matrix",
+      "output_xpath": "/embeddedOutputs/outputArray/element[11]",
+      "rows": "5",
+      "value": "    0.3220\n    0.5393\n    0.0399\n    0.0126\n    0.0862\n",
+      "var_size": "5×1",
+      "var_type": "double"
+    },
+    {
+      "columns": "",
+      "element_sha256": "9EC4F3810317DCDE9EDE0A2AAF497ED9A00A65280A537F0AE3D66A71B5E68998",
+      "large_fields": {
+        "figureUri": {
+          "length": 14630,
+          "sha256": "3945E519F45314FF111C2E061E2F8D46E8537A075A3D3F238B935F31A385E1FE"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "ee722bb8-d585-4fcd-8feb-7afd68ce2318",
+        "originalRegionNumber": "67"
+      },
+      "line_numbers": [
+        "144",
+        "145",
+        "146",
+        "147"
+      ],
+      "name": "",
+      "output_index": 12,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[12]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "B758A66A73C0E9530F65A8669E5000F066BEC1C2B64019A2ED346C1C6E17ECF0",
+      "large_fields": {
+        "figureUri": {
+          "length": 15362,
+          "sha256": "3189E60AED9D95277285380BBFABBA1F52F31171B45CFAD4F84F56CAFC714468"
+        }
+      },
+      "leaf_fields": {
+        "element": "395",
+        "figureId": "7eec10c3-1c66-411d-906a-e222306b1c52",
+        "originalRegionNumber": "80"
+      },
+      "line_numbers": [
+        "180",
+        "181",
+        "182",
+        "183"
+      ],
+      "name": "",
+      "output_index": 13,
+      "output_type": "figure",
+      "output_xpath": "/embeddedOutputs/outputArray/element[13]",
+      "rows": "",
+      "value": "",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "",
+      "element_sha256": "720430053B58E16C7BFE5297D91B6957D3EFE9D26D652A5351B83B187DB297F8",
+      "large_fields": {},
+      "leaf_fields": {
+        "text": "自由度 1 -> 缩聚后自由度 1, 能量占比增加率: 13.11%\n自由度 2 -> 缩聚后自由度 2, 能量占比增加率: 52.68%\n",
+        "wasTruncatedAtLineBreak": "false",
+        "wasTruncatedMidLine": "false"
+      },
+      "line_numbers": [
+        "187"
+      ],
+      "name": "",
+      "output_index": 14,
+      "output_type": "text",
+      "output_xpath": "/embeddedOutputs/outputArray/element[14]",
+      "rows": "",
+      "value": "自由度 1 -> 缩聚后自由度 1, 能量占比增加率: 13.11%\n自由度 2 -> 缩聚后自由度 2, 能量占比增加率: 52.68%\n",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "1",
+      "element_sha256": "2E9819FF7190617F3CC04156A9B06D297FE6C4BC2B286867B896C37CC0CBA1C0",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "name": "total_increase_guyan",
+        "rows": "1",
+        "value": "39.2658"
+      },
+      "line_numbers": [
+        "191"
+      ],
+      "name": "total_increase_guyan",
+      "output_index": 15,
+      "output_type": "variable",
+      "output_xpath": "/embeddedOutputs/outputArray/element[15]",
+      "rows": "1",
+      "value": "39.2658",
+      "var_size": "",
+      "var_type": ""
+    },
+    {
+      "columns": "1",
+      "element_sha256": "005DA33A2E5A51C692D94ECEC15105A5950403D9068789E5EAC53323118DA59C",
+      "large_fields": {},
+      "leaf_fields": {
+        "columns": "1",
+        "name": "total_increase_cb",
+        "rows": "1",
+        "value": "20.2060"
+      },
+      "line_numbers": [
+        "195"
+      ],
+      "name": "total_increase_cb",
+      "output_index": 16,
+      "output_type": "variable",
+      "output_xpath": "/embeddedOutputs/outputArray/element[16]",
+      "rows": "1",
+      "value": "20.2060",
+      "var_size": "",
+      "var_type": ""
+    }
+  ],
+  "paragraphs": [
+    {
+      "cell_index": 1,
+      "kind": "code",
+      "paragraph_index": 1,
+      "style": "code",
+      "text": "% 假设 M, K, r 已定义，r 是激励方向向量\nr0=[1,1,1,0,0,0,0,0,0]';\nr = r0;\nindex1 = [1,7];\nindex2 = [4,2,3,5,6,8,9];\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\norder = [index1,index2];\nK = KPrt(order,order);\nM = MPrt(order,order);\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\n\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    %E(:,i) = E(:,i) / sum(E(:,i));\n    % 对每个模态归一化\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\n\nE_total = E * participation_ratio;  % n_dof x 1，综合能量指标\n% 可视化\nbar(E_total)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')",
+      "text_sha256": "87BF6023E70FC6AE39A606A359F17F10F1E3F079EFFAAA7EEF2856BCF48ABC8F",
+      "xml_xpath": "/w:document/w:body/w:p[1]"
+    },
+    {
+      "cell_index": 1,
+      "kind": "text",
+      "paragraph_index": 2,
+      "style": "text",
+      "text": "guyan能量",
+      "text_sha256": "B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575",
+      "xml_xpath": "/w:document/w:body/w:p[2]"
+    },
+    {
+      "cell_index": 2,
+      "kind": "code",
+      "paragraph_index": 3,
+      "style": "code",
+      "text": "% 假设 M, K, r 已定义，r 是激励方向向量\nr=TP' *r0;\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\nK = KPren;\nM = MPren;\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\n\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    % 对每个模态归一化\n    %E(:,i) = E(:,i) / sum(E(:,i));\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\n\nE_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标\n\n% 可视化\nbar(E_total_guyan)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')\n\nd = [1,2];  % 缩聚前对应自由度索引\nincrease_rate = (E_total_guyan - E_total(d))./ E_total(d) * 100 ;\n\n% 显示结果\nfor k = 1:length(d)\n    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\\n', d(k), k, increase_rate(k));\nend",
+      "text_sha256": "B0EC066DC22F717BF0E2F4DDF538AA070C99F8B3BF26649507AE1B9B28FCD5A3",
+      "xml_xpath": "/w:document/w:body/w:p[3]"
+    },
+    {
+      "cell_index": 2,
+      "kind": "text",
+      "paragraph_index": 4,
+      "style": "text",
+      "text": "cb能量",
+      "text_sha256": "B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827",
+      "xml_xpath": "/w:document/w:body/w:p[4]"
+    },
+    {
+      "cell_index": 3,
+      "kind": "code",
+      "paragraph_index": 5,
+      "style": "code",
+      "text": "% 假设 M, K, r 已定义，r 是激励方向向量\nr=TP_cb' *r0;\n%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';\nK = KP_cb;\nM = MP_cb;\n[phi, omega2] = eig(K, M);   % 计算模态\nomega = sqrt(diag(omega2))\nn = size(phi, 2);\nGamma = zeros(n, 1);\n\nfor i = 1:n\n    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化\n    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子\nend\n\n% 可视化参与因子或其平方\nGammaSq = Gamma.^2;\nparticipation_ratio = GammaSq / sum(GammaSq)\nbar(participation_ratio);\nxlabel('模态编号');\nylabel('参与比');\ntitle('模态参与比估计（归一化的 Γ^2）');\n\n% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵\nm = diag(M); % 取对角元素作为等效质量\n\nn_dof = length(m);\nn_modes = size(phi, 2);\n\n% 计算角频率 omega_i\nomega = sqrt(diag(omega2));  % omega2为广义特征值矩阵\n\n% 初始化自由度-模态能量矩阵\nE = zeros(n_dof, n_modes);\n\nfor i = 1:n_modes\n    for j = 1:n_dof\n        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;\n    end\n    % 对每个模态归一化\n    %E(:,i) = E(:,i) / sum(E(:,i));\nend\n\n% E(:,i) 就是模态 i 下各自由度的能量分布比例\n\n% 假设:\n% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）\n% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1\nd2 = d;\n\nE_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标\nincrease_rate = (E_total_cb(d2) - E_total(d))./ E_total(d) * 100 ;\n\n% 可视化\nbar(E_total_cb)\nxlabel('自由度编号')\nylabel('综合能量占比')\ntitle('自由度综合能量指标（加权模态能量）')\n\n% 显示结果\nfor k = 1:length(d)\n    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\\n', d(k), k, increase_rate(k));\nend",
+      "text_sha256": "FF6324B69613061FC0D16025BCF9933776EFCC193BCE84996F7E239D5183D70C",
+      "xml_xpath": "/w:document/w:body/w:p[5]"
+    },
+    {
+      "cell_index": 3,
+      "kind": "text",
+      "paragraph_index": 6,
+      "style": "text",
+      "text": "总能量",
+      "text_sha256": "DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF",
+      "xml_xpath": "/w:document/w:body/w:p[6]"
+    },
+    {
+      "cell_index": 4,
+      "kind": "code",
+      "paragraph_index": 7,
+      "style": "code",
+      "text": "energy_sum_guyan = sum(E_total_guyan);\nenergy_sum_orig = sum(E_total(d));\ntotal_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100\n\nenergy_sum_cb = sum(E_total_cb(d2));\nenergy_sum_orig = sum(E_total(d));\ntotal_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100\n",
+      "text_sha256": "954F2A68BE41E4EBFFAF676F2C13719E806B1E742BD6FBF8F8D7C63A2768BD11",
+      "xml_xpath": "/w:document/w:body/w:p[7]"
+    }
+  ],
+  "source_name": "Copy_2_of_energy_zonghe3.mlx",
+  "source_sha256": "446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D",
+  "source_size_bytes": 71469,
+  "text_cells": [
+    "guyan能量",
+    "cb能量",
+    "总能量"
+  ]
+}

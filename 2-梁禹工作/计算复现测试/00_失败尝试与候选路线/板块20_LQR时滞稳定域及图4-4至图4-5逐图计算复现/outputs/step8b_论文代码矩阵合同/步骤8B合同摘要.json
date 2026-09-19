@@ -1,0 +1,35 @@
+{
+  "author_six_script_chain_complete": false,
+  "check_count": 31,
+  "dimensions": {
+    "division1": {
+      "Craig-Bampton": 9,
+      "Guyan": 6,
+      "Original": 15
+    },
+    "division2": {
+      "Craig-Bampton": 8,
+      "Guyan": 5,
+      "Original": 15
+    },
+    "local_division1": {
+      "full": 6,
+      "two_channel": 2
+    },
+    "local_division2": {
+      "full": 9,
+      "two_channel": 2
+    }
+  },
+  "fail_count": 0,
+  "formula_coherent_candidate_count": 4,
+  "gate_status": "PASS_CONTRACTS_SEPARATED",
+  "hard_boundary": "PDF曲线只用于步骤8F逐点验收，禁止作为矩阵、控制器、alpha或候选选择输入。",
+  "historical_diagnostic_candidate_count": 2,
+  "model_identity": "图4-4绑定后缀2；图4-5绑定后缀3。后缀2与板块17逐元素相同，后缀3必须在自身模型上重建第二类缩聚。",
+  "pass_count": 31,
+  "schema": "board20.step8b.contract.v2",
+  "scientific_conclusion": "论文原义合同和作者逐文件合同均不足以直接生成六条目标曲线；已建立4条公式自洽来源补全候选及2条历史诊断，均不使用论文曲线调参。",
+  "source_completed_candidate_count": 6,
+  "thesis_literal_executable": false
+}

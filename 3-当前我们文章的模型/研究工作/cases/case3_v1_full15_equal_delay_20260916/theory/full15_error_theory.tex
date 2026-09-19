@@ -1,0 +1,194 @@
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs,tabularx,enumitem,hyperref,fancyhdr}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\newcommand{\bM}[1]{\bm{#1}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{完整框架等时滞缩聚：误差与离散闭环}
+\fancyfoot[C]{\thepage}\setlength{\headheight}{15pt}
+\title{完整框架等时滞缩聚的误差理论\\\large 正式案例所用模型、推导与可检验命题}
+\author{Doctor Bego研究材料；Codex整理与本地核验}
+\date{2026年9月16日}
+\begin{document}\maketitle
+
+\section{研究对象及适用范围}
+研究将原15自由度线性框架作为最终精度基准。两通道采用同一常时滞，结构阻尼为$C=\alpha M+\beta K$。先在完整物理坐标定义反馈，再用固定基底做合同投影。Guyan保留静力约束运动；CB在其后增加固定界面内部模态，这一基底结构继承经典约束模态与固定界面模态方法\cite{craig1968}。
+
+本文采用完整框架直接缩聚。未作动的物理内部坐标及未作动界面采用当前数值运动补充协调；两个作动坐标采用延迟运动。该假定构成明确的虚拟反馈模型。旧两坐标子结构拼接留下18/19自由度，其全部局部模态极限不同，不能作为本模型的全阶极限。
+
+主案例附加控制增益为零，保留物理子结构弹性和阻尼反馈。固定增益作为补充。矩阵$M,K$对称正定，保留基底满列秩；输出只取位移及其线性组合。本文件的精确误差恒等式与局部灵敏度近似分别标明，不将近似当作全局保证。
+
+\section{完整反馈模型和一致投影}
+物理反馈采用的运动为
+\begin{equation}\label{eq:xp}
+x_P(t)=(I-BS)x(t)+BSx(t-\tau),\qquad B=S^T.
+\end{equation}
+其中，$x\in\mathbb R^{15}$为完整数值坐标，$S\in\mathbb R^{2\times15}$抽取作动坐标，$\tau$为两通道共同延迟。$C_P,K_P$为嵌入原坐标的物理子结构贡献，$C_N=C-C_P$、$K_N=K-K_P$。惯性$M\ddot x$全部在数值侧推进。附加反馈为$B[G_dSx(t-\tau)+G_vS\dot x(t-\tau)]$，放在平衡方程左侧。整理得到
+\begin{align}
+ M\ddot x+C_0\dot x+K_0x+U_cS\dot x(t-\tau)+U_kSx(t-\tau)&=f a_g(t),\label{eq:eom}\\
+ C_0=C-C_PBS,\quad K_0=K-K_PBS,&\quad
+ U_c=C_PB+BG_v,\quad U_k=K_PB+BG_d.\label{eq:coeff}
+\end{align}
+其中$f=M\gamma$；$\gamma$按原地震记录约定在三个楼层水平坐标为1，记录符号不改动。零增益、零时滞时恢复$M\ddot x+C\dot x+Kx=f a_g$。
+
+令$x\simeq Tq$，左乘$T^T$得到缩聚模型。应同时投影
+\begin{equation}\label{eq:projection}
+ A_r=T^TAT\ (A=M,C,K,C_0,K_0),\quad U_{c,r}=T^TU_c,\quad
+ U_{k,r}=T^TU_k,\quad S_r=ST,\quad f_r=T^Tf.
+\end{equation}
+先缩聚$K_P$再按缩聚坐标挑列一般不等于$T^TK_PB$；投影和延迟选列不可任意交换。
+
+数值楼层输出和物理恢复输出分别为
+\begin{equation}\label{eq:output}
+ y_N=Lx,\qquad y_P=L(I-BS)x+LB Sx(t-\tau).
+\end{equation}
+其中$L$选取三个楼层水平位移。缩聚后仅将$x$替换为$Tq$。层间角是相邻楼层位移差除以层高，与输出误差保持相同线性关系。
+
+\section{Guyan、CB和划分的作用}
+按保留/内部坐标排列，约束基底和CB基底为
+\begin{equation}\label{eq:basis}
+ T_G=\begin{bmatrix}I\\-K_{cc}^{-1}K_{cr}\end{bmatrix},\qquad
+ T_m=\begin{bmatrix}I&0\\-K_{cc}^{-1}K_{cr}&\Phi_m\end{bmatrix},\qquad
+ K_{cc}\Phi=M_{cc}\Phi\Omega^2,\quad\Phi^TM_{cc}\Phi=I.
+\end{equation}
+其中$c$表示内部坐标，$r$表示保留坐标，$m$为保留内部模态数。$m=0$与标准Guyan相同；$m$取全部内部模态时$T_m$方阵可逆，恢复同一个完整反馈模型。
+
+在被动结构的嵌套Ritz空间内，按从小到大排序的频率满足
+\begin{equation}\label{eq:ritz}
+ \omega_{F,j}^2\leq\omega_{m+1,j}^2\leq\omega_{m,j}^2\leq\omega_{G,j}^2,
+\end{equation}
+只比较各空间均存在的阶次。该结论来自对称正定广义特征值的极小极大原理。对欠阻尼Rayleigh模态，连续自由衰减率$d_j=(\alpha+\beta\omega_j^2)/2$；因此$d_{r,j}-d_{F,j}=\beta(\omega_{r,j}^2-\omega_{F,j}^2)/2$。过阻尼时不能把这一共同实部直接当作两实根各自的衰减率。阻尼比$\zeta_j=\alpha/(2\omega_j)+\beta\omega_j/2$不必单调。上述性质不保证点输出、延迟稳定边界或地震NRMSE逐项改善。
+
+静力内部平衡给出
+\begin{equation}\label{eq:staticload}
+ x_c=-K_{cc}^{-1}K_{cr}x_r+K_{cc}^{-1}f_c a_g.
+\end{equation}
+标准Guyan虽采用正确等效荷载$T_G^Tf$，其纯基底输出恢复仍缺少第二项。恰当的误差分析必须包含内部受载与输出恢复。是否$ f_c=0$取决于保留集合；不能把这个条件默认用于两种划分。
+
+\section{连续频域的精确误差和遗漏模态}
+连续特征算子与物理输出算子为
+\begin{equation}\label{eq:continuous}
+ Z(s,\tau)=s^2M+sC_0+K_0+e^{-s\tau}(sU_c+U_k)S,\qquad
+ Y(s,\tau)=L(I-BS)+e^{-s\tau}LBS.
+\end{equation}
+由于一致投影，$Z_r=T^TZT$。对单位输入，$q_r=Z_r^{-1}f_r$，残余力$\mathcal R=f-ZTq_r$，输出误差满足
+\begin{equation}\label{eq:residual}
+ e=y_r-y_F=-YZ^{-1}\mathcal R.
+\end{equation}
+该恒等式要求所用算子可逆；稳态频响的解释另外要求闭环渐近稳定。它把基底留下的残余力与完整闭环对该残余力的动态放大分开。范数上界$\|e\|\leq\|YZ^{-1}\|\|\mathcal R\|$依赖单位和坐标尺度，平移/转角混合时须先明确尺度，不能直接比较未经定标的条件数。
+
+把全内部模态基底写为$W=[T,Q]$，分块后完整方程为
+\begin{equation}\label{eq:blocks}
+ \begin{bmatrix}Z_{rr}&Z_{ro}\\Z_{or}&Z_{oo}\end{bmatrix}
+ \begin{bmatrix}q_F\\p_F\end{bmatrix}=
+ \begin{bmatrix}f_r\\f_o\end{bmatrix}a_g,
+ \qquad f_o=Q^Tf.
+\end{equation}
+若$Z_{oo}$可逆，消元得到下列前两式。输出误差的逆矩阵表达还要求$Z_{rr}$可逆，且完整系统在所用频域点具有唯一响应：
+\begin{align}
+ (Z_{rr}-Z_{ro}Z_{oo}^{-1}Z_{or})q_F
+   &=(f_r-Z_{ro}Z_{oo}^{-1}f_o)a_g,\label{eq:schur}\\
+ p_F&=Z_{oo}^{-1}(f_oa_g-Z_{or}q_F),\label{eq:omitted}\\
+ e&=(Y_rZ_{rr}^{-1}Z_{ro}-Y_o)p_F,\quad Y_r=YT,\ Y_o=YQ.\label{eq:omittederror}
+\end{align}
+式\eqref{eq:omittederror}同时包含保留坐标的动力修正与遗漏模态对输出的直接贡献。只看Schur刚度修正会漏掉后一部分。
+
+对固定界面遗漏模态，$SQ=0$且$Q^TMQ=I$。约束模态与固定界面模态在刚度下正交，保留/遗漏内部模态也在质量与刚度下正交。因此
+\begin{align}
+ Z_{oo}&=s^2I+s(\alpha I+\beta\Omega_o^2)+\Omega_o^2,\label{eq:zoo}\\
+ Z_{ro}&=(s^2+\alpha s)T^TMQ,\label{eq:zro}\\
+ Z_{or}&=(s^2+\alpha s)Q^TMT
+ +(e^{-s\tau}-1)Q^T(sC_P+K_P)BS T.\label{eq:zor}
+\end{align}
+附加作动力位于保留端口，$Q^TB=0$，所以不进入最后一式的遗漏行。时滞不直接进入$Z_{oo}$，但改变耦合和完整闭环的放大作用。$Z_{oo}$的孤立奇异点不自动等于完整系统极点。零频时$Z_{ro}=0$，有$e(0)=-Y_o\Omega_o^{-2}f_o a_g$，这是内部受载的静力输出偏差。
+
+\section{既定CR递推与历史状态}
+算法采用相邻位移差定义速度，令
+\begin{align}
+ \widehat M&=M+\tfrac h2 C+\tfrac{h^2}{4}K,\label{eq:mhat}\\
+ r_k&=f a_{g,k}-C_0v_k-K_0q_k-U_cSv_{k-n}-U_kSq_{k-n},\label{eq:resforce}\\
+ \widetilde a_k&=\widehat M^{-1}r_k,\qquad
+ v_{k+1}=v_k+h\widetilde a_k,\qquad q_{k+1}=q_k+h v_{k+1}.\label{eq:cr}
+\end{align}
+其中$h$为步长、$\tau=nh$且$n$为非负整数。平衡加速度为$a_k=M^{-1}r_k$，算法加速度为$\widetilde a_k=\widehat M^{-1}Ma_k$。式\eqref{eq:mhat}仅使用结构阻尼和刚度，不能把额外控制刚度再次并入其中。
+
+取$q_k=z^kq$得到离散特征矩阵
+\begin{equation}\label{eq:discrete}
+ Z_h(z,n)=\frac{z-2+z^{-1}}{h^2}\widehat M
+ +\frac{1-z^{-1}}h C_0+K_0
+ +z^{-n}\left(\frac{1-z^{-1}}h U_c+U_k\right)S.
+\end{equation}
+这一定义适用于$z\ne0$。令$Y_h=L(I-BS)+z^{-n}LBS$，则$H_h=Y_h Z_h^{-1}f$。缩聚后保持$Z_{h,r}=T^TZ_hT$，式\eqref{eq:residual}、\eqref{eq:schur}、\eqref{eq:omittederror}可逐项替换为离散算子。
+
+采用通道历史状态
+\begin{equation}\label{eq:state}
+ \eta_k=[q_k^T,q_{k-1}^T,(Sq_{k-2})^T,\ldots,(Sq_{k-n-1})^T]^T,
+ \quad\eta_{k+1}=A_n\eta_k+b_n a_{g,k},\quad y_k=O_n\eta_k.
+\end{equation}
+其维数为$2r+2n$；$n=0$仅有前两个块。这是节省存储的通道历史实现，不声称控制理论最小实现。对方阵全模态变换$W$，$P=\operatorname{diag}(W,W,I_{2n})$满足
+\begin{equation}\label{eq:similarity}
+ A_FP=PA_r,\qquad b_F=Pb_r,\qquad O_FP=O_r.
+\end{equation}
+因此不只是固有频率，输入、输出及完整历史传播也一致。
+
+另用每个时刻全坐标历史构造$A_H$，维数$r(n+2)$。映射$J=\operatorname{diag}(I_{2r},S,\ldots,S)$满足$A_nJ=JA_H$。当$\operatorname{rank}S=2$时，$J$满行秩，冗余历史经有限次移位消失。行列式关系为
+\begin{align}
+ \det(zI-A_n)&=\frac{h^{2r}}{\det\widehat M}
+ z^{r+2n}\det Z_h(z,n),\quad z\ne0,\label{eq:det}\\
+ \det(zI-A_H)&=z^{(r-2)n}\det(zI-A_n).\label{eq:zeroroot}
+\end{align}
+不能仅因某个极点接近零就将它删掉；式\eqref{eq:zeroroot}只解释两种历史表示间的额外零根。渐近稳定的判据是$\rho(A_n)<1$，单位圆上的重根/Jordan块需另判。
+
+零时滞、零附加控制时，CR与连续被动算子满足
+\begin{equation}\label{eq:bilinear}
+ Z_h(z,0)=\frac{(z+1)^2}{4z}
+ [s_b^2M+s_bC+K],\qquad s_b=\frac2h\frac{z-1}{z+1}.
+\end{equation}
+式\eqref{eq:bilinear}的变量代换要求$z\ne0,-1$；$z=-1$处直接由式\eqref{eq:discrete}得$Z_h(-1,0)=-4M/h^2$。离散被动根$z=(1+hs/2)/(1-hs/2)$，并非精确的$e^{sh}$。有时滞或额外控制时不能直接套用这个退化关系。非零离散极点的有效衰减率、频率为$-\log|z|/h$及$\arg(z)/(2\pi h)$，取主值$\arg(z)\in(-\pi,\pi]$，对应采样频率范围$(-1/(2h),1/(2h)]$。
+
+\section{解析形式、稳定灵敏度与可验证量}
+对任意给定离散地震或扫频序列，零初始历史下输出差的有限解析形式为
+\begin{equation}\label{eq:convolution}
+ e_k=\sum_{j=0}^{k-1}
+ (O_r A_r^{k-1-j}b_r-O_F A_F^{k-1-j}b_F)a_{g,j}.
+\end{equation}
+非零历史时另加$O_rA_r^k\eta_{r,0}-O_FA_F^k\eta_{F,0}$。这对给定积分算法是精确有限矩阵和；无需把任意地震记录拟成一个初等函数。它在有限时刻也适用于失稳系统，失稳时不能据此宣称存在稳态频响。对正弦输入，稳定系统可用$H_h(e^{i\omega h})$给出稳态幅值和相位；扫频是随时间变化的输入，只有通过扫速检查才能作准稳态解释。
+
+连续时滞系统一般有无穷多特征根。对简单根及非零分母，局部灵敏度为
+\begin{align}
+ \frac{ds}{d\tau}&=-\frac{w^*Z_\tau v}{w^*Z_sv},\label{eq:delayderivative}\\
+ Z_\tau&=-s e^{-s\tau}(sU_c+U_k)S,\\
+ Z_s&=2sM+C_0+e^{-s\tau}[U_c-\tau(sU_c+U_k)]S.
+\end{align}
+其中$v,w$为右、左零向量。沿$Z_{rr}-\varepsilon\Sigma$，$\Sigma=Z_{ro}Z_{oo}^{-1}Z_{or}$，有
+\begin{equation}\label{eq:truncderivative}
+ \left.\frac{ds_\varepsilon}{d\varepsilon}\right|_0=
+ \frac{w_r^*\Sigma(s_r,\tau)v_r}{w_r^*Z_{rr,s}(s_r,\tau)v_r},\qquad
+ Z_{rr}(s_r,\tau)v_r=0,\quad w_r^*Z_{rr}(s_r,\tau)=0.
+\end{equation}
+其中$\tau$固定，$s_r$是截断算子的简单根，分母非零，$Z_{oo}$在该根邻域可逆。它描述从$\varepsilon=0$出发的首阶偏移，不是到$\varepsilon=1$的精确偏移。正式边界计算直接使用式\eqref{eq:state}全部离散根；整数$n$不能直接求导当作连续时滞参数。当前已核验的是算子导数；连续根灵敏度在用于定量预测前还需沿根分支核验，不作为本轮离散边界数值依据。
+
+同一离散步长下，两层误差参照满足
+\begin{equation}\label{eq:decompose}
+ y_r^{\tau,G}-y_F^{0,0}
+ =(y_r^{\tau,G}-y_F^{\tau,G})
+ +(y_F^{\tau,G}-y_F^{0,G})
+ +(y_F^{0,G}-y_F^{0,0}).
+\end{equation}
+若最终参照使用原RK4结果，再加$y_{F,CR}^{0,0}-y_{F,RK4}^{0,0}$。各项是同单位响应差；NRMSE百分比不能直接相加。
+
+\section{案例映射和本地核验状态}
+划分一保留原坐标1、6、11、4、9、14，作动1、6；划分二保留1、11、4、9、14，作动1、11。对应Guyan6/5阶、CB保留3内部模态9/8阶，全内部模态均15阶。划分二内部包含受载的中间层水平坐标6；这使$f_c\ne0$，需与内部模态参与、端口参与及目标输出共同解释，不能单凭保留数就宣称划分二所有误差都更大。
+
+已实际完成Python核心1285项检查，最大残差$6.371\times10^{-12}$，包含独立块矩阵Guyan、全部保留数Ritz关系、全空间状态/输入/输出、历史行列式、静力内部受载、Schur输出误差、64步非零历史直接递推与有限卷积。另有224项遗漏耦合、离散Schur/残余力误差和连续算子导数检查，最大残差$2.374\times10^{-12}$。MATLAB独立力平衡及全历史系数完成96项检查，最大残差$8.328\times10^{-14}$。矩阵恒等阈值$10^{-10}$，有限记录独立推进阈值$10^{-9}$，共1605项通过。64步记录是实现验证，不是正式案例结果。
+
+首轮测试中零频$T^TKQ=0$的检查错误地按1个SI数值单位归一，约$3.1\times10^{-10}$的绝对舍入残差未通过；现按预先约定的乘积算子尺度$\|T\|\|K\|\|Q\|$报告零目标后向残差。$10^{-10}$阈值、模型和输入未改变，失败原记录保留于temp。
+
+后续工况先依据Full15极点和频响确定，再比较缩聚误差；理论预测用独立计算验证。地震记录保持，定频撤载保留历史，慢扫频检查扫速，临界时滞报告实际离散网格区间。单独配置误差图，让真实但较小的精度收益可读，不以视觉分离程度反选模型或激励。
+
+\begin{thebibliography}{9}
+\bibitem{craig1968} R. R. Craig Jr. and M. C. C. Bampton.
+Coupling of Substructures for Dynamic Analyses. AIAA Journal, 6(7), 1313--1319, 1968.
+\href{https://doi.org/10.2514/3.4741}{doi:10.2514/3.4741}.
+\end{thebibliography}
+\end{document}

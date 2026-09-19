@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "native_centered_circle_reads": 108,
+  "edited_and_saved_examples": 8,
+  "results": [
+    {
+      "format": "pptx",
+      "all_54_circles_centered_in_actual_application": true,
+      "modified_saved_examples": [
+        {
+          "slide": 18,
+          "name": "fig3_node_9_labeled_circle",
+          "old": "9",
+          "new": "16",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 18,
+          "name": "fig3_node_16_labeled_circle",
+          "old": "16",
+          "new": "9",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 19,
+          "name": "fig4_I_num_node16_labeled_circle",
+          "old": "16",
+          "new": "9",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 19,
+          "name": "fig4_I_num_node9_labeled_circle",
+          "old": "9",
+          "new": "16",
+          "moved_and_resized": true
+        }
+      ]
+    },
+    {
+      "format": "ppt",
+      "all_54_circles_centered_in_actual_application": true,
+      "modified_saved_examples": [
+        {
+          "slide": 18,
+          "name": "fig3_node_9_labeled_circle",
+          "old": "9",
+          "new": "16",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 18,
+          "name": "fig3_node_16_labeled_circle",
+          "old": "16",
+          "new": "9",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 19,
+          "name": "fig4_I_num_node16_labeled_circle",
+          "old": "16",
+          "new": "9",
+          "moved_and_resized": true
+        },
+        {
+          "slide": 19,
+          "name": "fig4_I_num_node9_labeled_circle",
+          "old": "9",
+          "new": "16",
+          "moved_and_resized": true
+        }
+      ]
+    }
+  ]
+}

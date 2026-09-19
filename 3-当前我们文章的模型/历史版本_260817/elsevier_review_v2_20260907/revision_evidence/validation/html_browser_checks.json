@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "checks_passed": 26,
+  "checks": [
+    {
+      "check": "UTF-8 encoding",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "64 change cards",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "94 unique decision positions",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "20 embedded images",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "format changes last",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all internal navigation targets exist",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "desktop no document horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "text search works",
+      "passed": true,
+      "details": 5
+    },
+    {
+      "check": "format filter works",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all 64 source comparisons expand",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "expanded desktop no horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all source comparisons collapse",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "decision and note persist after reload",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "export includes version hash and 94 positions",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "export preserves chosen state",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "import decisions works",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "wrong-version import is rejected",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "fresh report defaults to pending",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "navigation reaches figures",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "all embedded images decode",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "mobile no document horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "expanded mobile no document horizontal overflow",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "no browser script errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "no external resource requests",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "relocated offline report loads fully",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "both A4 print modes generated",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "screenshots": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\revision_v2_20260907\\report_qa",
+  "report_sha256": "eb9385e406deaf602baf45040c1ce26182b57cecbbb067461ebbba21fc92f017"
+}

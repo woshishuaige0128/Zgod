@@ -1,0 +1,1144 @@
+{
+  "schema": "board20_step2_unified_audit_v2",
+  "board_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "runs_root": "outputs/step2_runs",
+  "script": {
+    "path": "code/analyze_board20_step2_results.py",
+    "sha256": "73459DB1C28B2BA0F5A101FA0930E93CEF318E76A303483393C2A5493D786F5E"
+  },
+  "fixed_rules": {
+    "raw_stable_rule": "finite and rho < 1 within the fixed valid domain",
+    "raw_positive_stable_rule_for_confusion_matrix": "finite and 0 < rho < 1 within the fixed valid domain",
+    "historical_stable_rule": "finite and 0 < historical_value < 1",
+    "valid_shape": [
+      26,
+      67
+    ],
+    "valid_point_count": 1517,
+    "valid_segments_matlab_1_based_inclusive": [
+      {
+        "rows": "1:21",
+        "columns": "1:21",
+        "point_count": 441
+      },
+      {
+        "rows": "1:26",
+        "columns": "22:41",
+        "point_count": 520
+      },
+      {
+        "rows": "1:26",
+        "columns": "42:61",
+        "point_count": 520
+      },
+      {
+        "rows": "1:6",
+        "columns": "62:67",
+        "point_count": 36
+      }
+    ],
+    "historical_mapping": {
+      "main_ori_div2": {
+        "historical_variable": "stab_o",
+        "method_label": "原结构"
+      },
+      "main_guyan_div2": {
+        "historical_variable": "stab_g",
+        "method_label": "Guyan"
+      }
+    },
+    "alternative_candidate": {
+      "counted_in_primary_route_statistics": false,
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "comparison_shape": [
+        21,
+        21
+      ],
+      "comparison_point_count": 441,
+      "historical_file": "lqr_2.mat",
+      "historical_variable_and_slice": "stab_g(1:21,1:21)"
+    },
+    "pending_rule": "highest-numbered replicate having run_status.json is PENDING unless both a terminal final_status and process_exit.json exist"
+  },
+  "historical_reference": {
+    "path": "input/historical_plotting/作者绘图目录/lqr_3.mat",
+    "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+    "manifest_expected_sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+    "manifest_hash_match": true,
+    "manifest_item_id": "B20-0044",
+    "stable_rule": "finite and 0 < historical_value < 1",
+    "variables": {
+      "stab_o": {
+        "shape": [
+          31,
+          67
+        ],
+        "loader": "scipy.io.loadmat (MATLAB v5)"
+      },
+      "stab_g": {
+        "shape": [
+          41,
+          95
+        ],
+        "loader": "scipy.io.loadmat (MATLAB v5)"
+      }
+    }
+  },
+  "first_division_historical_reference": {
+    "path": "input/historical_plotting/作者绘图目录/lqr_2.mat",
+    "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4",
+    "manifest_expected_sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4",
+    "manifest_hash_match": true,
+    "manifest_item_id": "B20-0043",
+    "variable": "stab_g",
+    "full_shape": [
+      31,
+      67
+    ],
+    "comparison_slice_matlab_1_based_inclusive": "rows 1:21, columns 1:21",
+    "comparison_shape": [
+      21,
+      21
+    ],
+    "comparison_point_count": 441,
+    "stable_rule": "finite and 0 < historical_value < 1",
+    "loader": "scipy.io.loadmat (MATLAB v5)"
+  },
+  "routes": [
+    {
+      "route_id": "energy_guyan_div1",
+      "route_name": "Guyan 能量候选路线——第一类子结构划分",
+      "selected_replicate": "rep02",
+      "audit_state": "TERMINAL",
+      "final_status": "EXECUTION_FAIL",
+      "execution_status": "EXECUTION_FAIL",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 1,
+      "timed_out": false,
+      "actual_scan_point_count": "NOT_MEASURED_PROFILE_DISABLED",
+      "actual_stab_shape": "",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "2/2 MATCH",
+      "input_hashes_after": "2/2 MATCH",
+      "config_seal_status": "NOT_RECORDED",
+      "code_seal_status": "NOT_RECORDED",
+      "process_status_consistency": "PASS",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "函数或变量 'KPren' 无法识别。",
+      "status_sha256": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+      "process_exit_sha256": "11A7A4EA5FAEAFFEB0ED2EFD5AD09353D7A68F63A828703E3DB26519E64FE924",
+      "raw_stab_sha256": null,
+      "configured_replicates_without_status": "rep03",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/process_exit.json",
+        "raw_stab": null
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 2,
+          "total_count": 2,
+          "summary": "2/2 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 2,
+          "total_count": 2,
+          "summary": "2/2 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "NOT_RECORDED",
+        "config_expected_sha256": null,
+        "config_captured_actual_sha256": null,
+        "config_independent_actual_sha256": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+        "config_hash_file_sha256": null,
+        "config_independent_match": null,
+        "code_seal_status": "NOT_RECORDED",
+        "code_seal_match_count": 0,
+        "code_seal_total_count": 0,
+        "code_seal_summary": "NOT_RECORDED",
+        "captured_code_files": []
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v1",
+        "started_at": "2026-08-25T04:49:36+08:00",
+        "finished_at": "2026-08-25T04:49:46+08:00",
+        "declared_method": "Guyan（能量目录冲突Q/R）",
+        "declared_division": "第一类子结构划分",
+        "actual_code_identity": "能量目录Guyan-LQR2；单轴16点；上游变量合同不闭合",
+        "expected_scan_point_count": 16,
+        "expected_stab_shape": [
+          20,
+          20
+        ],
+        "scan_evidence": null
+      }
+    },
+    {
+      "route_id": "energy_guyan_div2",
+      "route_name": "Guyan 能量候选路线——第二类子结构划分",
+      "selected_replicate": "rep02",
+      "audit_state": "TERMINAL",
+      "final_status": "EXECUTION_FAIL",
+      "execution_status": "EXECUTION_FAIL",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 1,
+      "timed_out": false,
+      "actual_scan_point_count": "NOT_MEASURED_PROFILE_DISABLED",
+      "actual_stab_shape": "",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "2/2 MATCH",
+      "input_hashes_after": "2/2 MATCH",
+      "config_seal_status": "NOT_RECORDED",
+      "code_seal_status": "NOT_RECORDED",
+      "process_status_consistency": "PASS",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "函数或变量 'KPren' 无法识别。",
+      "status_sha256": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+      "process_exit_sha256": "2DA82A8C17197E8EB23AA29C0CDBB3F8057E6EFD44290115158B88B29310727C",
+      "raw_stab_sha256": null,
+      "configured_replicates_without_status": "rep01;rep03",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/process_exit.json",
+        "raw_stab": null
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 2,
+          "total_count": 2,
+          "summary": "2/2 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 2,
+          "total_count": 2,
+          "summary": "2/2 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "NOT_RECORDED",
+        "config_expected_sha256": null,
+        "config_captured_actual_sha256": null,
+        "config_independent_actual_sha256": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+        "config_hash_file_sha256": null,
+        "config_independent_match": null,
+        "code_seal_status": "NOT_RECORDED",
+        "code_seal_match_count": 0,
+        "code_seal_total_count": 0,
+        "code_seal_summary": "NOT_RECORDED",
+        "captured_code_files": []
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v1",
+        "started_at": "2026-08-25T04:50:47+08:00",
+        "finished_at": "2026-08-25T04:50:57+08:00",
+        "declared_method": "Guyan（能量目录冲突Q/R）",
+        "declared_division": "第二类子结构划分",
+        "actual_code_identity": "能量目录Guyan-LQR3；单轴16点；LQR项未进入最终G",
+        "expected_scan_point_count": 16,
+        "expected_stab_shape": [
+          20,
+          20
+        ],
+        "scan_evidence": null
+      }
+    },
+    {
+      "route_id": "main_cb_div1",
+      "route_name": "Craig–Bampton 主路线——第一类子结构划分",
+      "selected_replicate": "rep02",
+      "audit_state": "TERMINAL",
+      "final_status": "EXECUTION_FAIL",
+      "execution_status": "EXECUTION_FAIL",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 1,
+      "timed_out": false,
+      "actual_scan_point_count": "NOT_MEASURED_PROFILE_DISABLED",
+      "actual_stab_shape": "",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "NOT_RECORDED",
+      "code_seal_status": "NOT_RECORDED",
+      "process_status_consistency": "PASS",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "函数或变量 'MRren' 无法识别。",
+      "status_sha256": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+      "process_exit_sha256": "AAD735B5C3EFBCAA13F007B8E13BF38C467E273FE148DE0E9FFC56A9E5C54D22",
+      "raw_stab_sha256": null,
+      "configured_replicates_without_status": "rep01;rep03",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/process_exit.json",
+        "raw_stab": null
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "NOT_RECORDED",
+        "config_expected_sha256": null,
+        "config_captured_actual_sha256": null,
+        "config_independent_actual_sha256": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+        "config_hash_file_sha256": null,
+        "config_independent_match": null,
+        "code_seal_status": "NOT_RECORDED",
+        "code_seal_match_count": 0,
+        "code_seal_total_count": 0,
+        "code_seal_summary": "NOT_RECORDED",
+        "captured_code_files": []
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v1",
+        "started_at": "2026-08-25T04:51:36+08:00",
+        "finished_at": "2026-08-25T04:51:46+08:00",
+        "declared_method": "Craig--Bampton",
+        "declared_division": "第一类子结构划分",
+        "actual_code_identity": "CB-LQR2命名脚本；无LQR；与CB-LQR3字节相同",
+        "expected_scan_point_count": 441,
+        "expected_stab_shape": [
+          21,
+          21
+        ],
+        "scan_evidence": null
+      }
+    },
+    {
+      "route_id": "main_cb_div2",
+      "route_name": "Craig–Bampton 主路线——第二类子结构划分",
+      "selected_replicate": "rep02",
+      "audit_state": "TERMINAL",
+      "final_status": "EXECUTION_FAIL",
+      "execution_status": "EXECUTION_FAIL",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 1,
+      "timed_out": false,
+      "actual_scan_point_count": "NOT_MEASURED_PROFILE_DISABLED",
+      "actual_stab_shape": "",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "NOT_RECORDED",
+      "code_seal_status": "NOT_RECORDED",
+      "process_status_consistency": "PASS",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "函数或变量 'MRren' 无法识别。",
+      "status_sha256": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+      "process_exit_sha256": "88E290AA65757AAEDF45834AF7B03C732622F99AD4BDC2665F0C1AC25C6556ED",
+      "raw_stab_sha256": null,
+      "configured_replicates_without_status": "rep01;rep03",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/process_exit.json",
+        "raw_stab": null
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "NOT_RECORDED",
+        "config_expected_sha256": null,
+        "config_captured_actual_sha256": null,
+        "config_independent_actual_sha256": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+        "config_hash_file_sha256": null,
+        "config_independent_match": null,
+        "code_seal_status": "NOT_RECORDED",
+        "code_seal_match_count": 0,
+        "code_seal_total_count": 0,
+        "code_seal_summary": "NOT_RECORDED",
+        "captured_code_files": []
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v1",
+        "started_at": "2026-08-25T04:52:20+08:00",
+        "finished_at": "2026-08-25T04:52:31+08:00",
+        "declared_method": "Craig--Bampton",
+        "declared_division": "第二类子结构划分",
+        "actual_code_identity": "CB-LQR3命名脚本；与CB-LQR2字节相同",
+        "expected_scan_point_count": 441,
+        "expected_stab_shape": [
+          21,
+          21
+        ],
+        "scan_evidence": null
+      }
+    },
+    {
+      "route_id": "main_ori_div1",
+      "route_name": "原结构命名主路线——第一类子结构划分",
+      "selected_replicate": "rep03",
+      "audit_state": "TERMINAL",
+      "final_status": "SUCCESS",
+      "execution_status": "EXECUTION_SUCCESS",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 0,
+      "timed_out": false,
+      "actual_scan_point_count": 1,
+      "actual_stab_shape": "20x20",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "PASS",
+      "code_seal_status": "3/3 MATCH",
+      "process_status_consistency": "PASS",
+      "error_identifier": "",
+      "error_message": "",
+      "status_sha256": "D0DC8000FD222B7A64BF7DEE9A4BA63B34755F0E25127D9205CE29CA117BE4CC",
+      "process_exit_sha256": "F613BB910BF4549FAA5E9515AC0571DAB569620393F9A01AEA984CFA1F3372C4",
+      "raw_stab_sha256": "FC47A86F4ECE4F5C84323C2135520C76055C76D1EFD9692F7D21A5FFC8A026BA",
+      "configured_replicates_without_status": "rep01",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/process_exit.json",
+        "raw_stab": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/scientific/raw_stab.mat"
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "PASS",
+        "config_expected_sha256": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+        "config_captured_actual_sha256": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+        "config_independent_actual_sha256": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+        "config_hash_file_sha256": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+        "config_independent_match": true,
+        "code_seal_status": "PASS",
+        "code_seal_match_count": 3,
+        "code_seal_total_count": 3,
+        "code_seal_summary": "3/3 MATCH",
+        "captured_code_files": [
+          {
+            "name": "stager",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+            "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "match": true
+          },
+          {
+            "name": "matlab_runner",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+            "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "match": true
+          },
+          {
+            "name": "outer_executor",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+            "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "match": true
+          }
+        ]
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v2",
+        "started_at": "2026-08-25T04:58:53+08:00",
+        "finished_at": "2026-08-25T04:59:15+08:00",
+        "declared_method": "Original",
+        "declared_division": "第一类子结构划分",
+        "actual_code_identity": "原结构LQR2命名脚本；无LQR；零时滞单点",
+        "expected_scan_point_count": 1,
+        "expected_stab_shape": [
+          20,
+          20
+        ],
+        "scan_evidence": {
+          "actual_shape": [
+            20,
+            20
+          ],
+          "expected_region_point_count": 1,
+          "actual_finite_point_count": 1,
+          "actual_finite_positive_point_count": 1,
+          "actual_nonpositive_point_count": 0,
+          "outside_region_nonzero_count": 0,
+          "minimum_region_value": 0.9991697741274308,
+          "maximum_region_value": 0.9991697741274308
+        }
+      }
+    },
+    {
+      "route_id": "main_guyan_div1",
+      "route_name": "Guyan 主路线——第一类子结构划分",
+      "selected_replicate": "rep03",
+      "audit_state": "TERMINAL",
+      "final_status": "SUCCESS",
+      "execution_status": "EXECUTION_SUCCESS",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 0,
+      "timed_out": false,
+      "actual_scan_point_count": 441,
+      "actual_stab_shape": "21x21",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "PASS",
+      "code_seal_status": "3/3 MATCH",
+      "process_status_consistency": "PASS",
+      "error_identifier": "",
+      "error_message": "",
+      "status_sha256": "BD86753392039D45F5444621F370A50BB83B891861BEF351D49DAA752E3E1DF3",
+      "process_exit_sha256": "F76C084A4D9646ACE785E2814744C74F11B57A90C44ACA60BBD1DEA060F25A85",
+      "raw_stab_sha256": "FEA2C539A79EE9A2E20AA05E2C02B5E559DD8D2ADCDDA646BA227FB3EA515237",
+      "configured_replicates_without_status": "rep01;rep02",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/process_exit.json",
+        "raw_stab": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/scientific/raw_stab.mat"
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "PASS",
+        "config_expected_sha256": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+        "config_captured_actual_sha256": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+        "config_independent_actual_sha256": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+        "config_hash_file_sha256": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+        "config_independent_match": true,
+        "code_seal_status": "PASS",
+        "code_seal_match_count": 3,
+        "code_seal_total_count": 3,
+        "code_seal_summary": "3/3 MATCH",
+        "captured_code_files": [
+          {
+            "name": "stager",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+            "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "match": true
+          },
+          {
+            "name": "matlab_runner",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+            "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "match": true
+          },
+          {
+            "name": "outer_executor",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+            "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "match": true
+          }
+        ]
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v2",
+        "started_at": "2026-08-25T04:59:54+08:00",
+        "finished_at": "2026-08-25T05:08:03+08:00",
+        "declared_method": "Guyan",
+        "declared_division": "第一类子结构划分",
+        "actual_code_identity": "Guyan-LQR2命名脚本；无LQR；21x21双时滞扫描",
+        "expected_scan_point_count": 441,
+        "expected_stab_shape": [
+          21,
+          21
+        ],
+        "scan_evidence": {
+          "actual_shape": [
+            21,
+            21
+          ],
+          "expected_region_point_count": 441,
+          "actual_finite_point_count": 441,
+          "actual_finite_positive_point_count": 441,
+          "actual_nonpositive_point_count": 0,
+          "outside_region_nonzero_count": 0,
+          "minimum_region_value": 0.9991641004386277,
+          "maximum_region_value": 1.0077518679015636
+        }
+      }
+    },
+    {
+      "route_id": "main_ori_div2",
+      "route_name": "原结构命名主路线——第二类子结构划分",
+      "selected_replicate": "rep03",
+      "audit_state": "TERMINAL",
+      "final_status": "SUCCESS",
+      "execution_status": "EXECUTION_SUCCESS",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 0,
+      "timed_out": false,
+      "actual_scan_point_count": 1517,
+      "actual_stab_shape": "26x67",
+      "runtime_dlqr_reached": true,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "PASS",
+      "code_seal_status": "3/3 MATCH",
+      "process_status_consistency": "PASS",
+      "error_identifier": "",
+      "error_message": "",
+      "status_sha256": "658ABA74288920BA5E2DF999FF211E2D5C049F6B419216024EF5CDBD3652D5B3",
+      "process_exit_sha256": "D70B838F84B4BB45226DC431B7DAFF5167A59943BDD768EC95692127D17802F9",
+      "raw_stab_sha256": "C4EA3005174054829456C24C74770F57ADF422DFD075A39E347CBA6876899E85",
+      "configured_replicates_without_status": "rep01;rep02",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/process_exit.json",
+        "raw_stab": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/scientific/raw_stab.mat"
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "PASS",
+        "config_expected_sha256": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+        "config_captured_actual_sha256": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+        "config_independent_actual_sha256": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+        "config_hash_file_sha256": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+        "config_independent_match": true,
+        "code_seal_status": "PASS",
+        "code_seal_match_count": 3,
+        "code_seal_total_count": 3,
+        "code_seal_summary": "3/3 MATCH",
+        "captured_code_files": [
+          {
+            "name": "stager",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+            "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "match": true
+          },
+          {
+            "name": "matlab_runner",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+            "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "match": true
+          },
+          {
+            "name": "outer_executor",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+            "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "match": true
+          }
+        ]
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v2",
+        "started_at": "2026-08-25T05:11:02+08:00",
+        "finished_at": "2026-08-25T06:40:10+08:00",
+        "declared_method": "Original",
+        "declared_division": "第二类子结构划分",
+        "actual_code_identity": "原结构LQR3命名脚本；实际为5维Guyan式路线",
+        "expected_scan_point_count": 1517,
+        "expected_stab_shape": [
+          26,
+          67
+        ],
+        "scan_evidence": {
+          "actual_shape": [
+            26,
+            67
+          ],
+          "expected_region_point_count": 1517,
+          "actual_finite_point_count": 1517,
+          "actual_finite_positive_point_count": 1517,
+          "actual_nonpositive_point_count": 0,
+          "outside_region_nonzero_count": 0,
+          "minimum_region_value": 0.98669228749006,
+          "maximum_region_value": 1.0344992410845009
+        }
+      }
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "route_name": "Guyan 主路线——第二类子结构划分",
+      "selected_replicate": "rep03",
+      "audit_state": "TERMINAL",
+      "final_status": "SUCCESS",
+      "execution_status": "EXECUTION_SUCCESS",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 0,
+      "timed_out": false,
+      "actual_scan_point_count": 1517,
+      "actual_stab_shape": "26x67",
+      "runtime_dlqr_reached": true,
+      "input_hashes_before": "5/5 MATCH",
+      "input_hashes_after": "5/5 MATCH",
+      "config_seal_status": "PASS",
+      "code_seal_status": "3/3 MATCH",
+      "process_status_consistency": "PASS",
+      "error_identifier": "",
+      "error_message": "",
+      "status_sha256": "790ADB62FB1EA25B82DD73495A197327B002EDF4B9FF07AF3D20545433444AD9",
+      "process_exit_sha256": "4645B6046F1B97DF0DCC74F01E49FBD88B76B9DBB8446370B6B447DEF3A6D13B",
+      "raw_stab_sha256": "798BF53D873943F3CE17EFDE69F10D7CD94FF055539CE80B5FC317499664433D",
+      "configured_replicates_without_status": "rep01;rep02",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/process_exit.json",
+        "raw_stab": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/scientific/raw_stab.mat"
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 5,
+          "total_count": 5,
+          "summary": "5/5 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "PASS",
+        "config_expected_sha256": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+        "config_captured_actual_sha256": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+        "config_independent_actual_sha256": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+        "config_hash_file_sha256": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+        "config_independent_match": true,
+        "code_seal_status": "PASS",
+        "code_seal_match_count": 3,
+        "code_seal_total_count": 3,
+        "code_seal_summary": "3/3 MATCH",
+        "captured_code_files": [
+          {
+            "name": "stager",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+            "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "match": true
+          },
+          {
+            "name": "matlab_runner",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+            "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "match": true
+          },
+          {
+            "name": "outer_executor",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+            "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "match": true
+          }
+        ]
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v2",
+        "started_at": "2026-08-25T06:46:07+08:00",
+        "finished_at": "2026-08-25T08:13:25+08:00",
+        "declared_method": "Guyan",
+        "declared_division": "第二类子结构划分",
+        "actual_code_identity": "Guyan-LQR3命名脚本；5维Guyan式路线",
+        "expected_scan_point_count": 1517,
+        "expected_stab_shape": [
+          26,
+          67
+        ],
+        "scan_evidence": {
+          "actual_shape": [
+            26,
+            67
+          ],
+          "expected_region_point_count": 1517,
+          "actual_finite_point_count": 1517,
+          "actual_finite_positive_point_count": 1517,
+          "actual_nonpositive_point_count": 0,
+          "outside_region_nonzero_count": 0,
+          "minimum_region_value": 0.98669228749006,
+          "maximum_region_value": 1.0344992410845009
+        }
+      }
+    }
+  ],
+  "alternative_candidate": {
+    "counted_in_primary_route_statistics": false,
+    "route": {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "route_name": "Guyan 第一类划分备用候选——稳定目录 New_Full.m + New_Ps3.m",
+      "selected_replicate": "rep01",
+      "audit_state": "TERMINAL",
+      "final_status": "SUCCESS",
+      "execution_status": "EXECUTION_SUCCESS",
+      "evidence_status": "PASS",
+      "actual_matlab_returncode": 0,
+      "timed_out": false,
+      "actual_scan_point_count": 441,
+      "actual_stab_shape": "21x21",
+      "runtime_dlqr_reached": false,
+      "input_hashes_before": "4/4 MATCH",
+      "input_hashes_after": "4/4 MATCH",
+      "config_seal_status": "PASS",
+      "code_seal_status": "3/3 MATCH",
+      "process_status_consistency": "PASS",
+      "error_identifier": "",
+      "error_message": "",
+      "status_sha256": "F2C5A93034D93273939784C5B8BCE29D7E0390CEC96DAFBAD1F15CC13D0C8A71",
+      "process_exit_sha256": "238863C6F1595C1C3243E7BCB1F060C8EB6BE339016B7B46D74C514423E3742E",
+      "raw_stab_sha256": "D70FF3F74B8771794AB91D821EA1BA5BC66532C6972191E9AFA0A6135EC98BCA",
+      "configured_replicates_without_status": "",
+      "evidence_paths": {
+        "status": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_status.json",
+        "process_exit": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/process_exit.json",
+        "raw_stab": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/scientific/raw_stab.mat"
+      },
+      "input_hash_details": {
+        "before": {
+          "status": "PASS",
+          "match_count": 4,
+          "total_count": 4,
+          "summary": "4/4 MATCH"
+        },
+        "after": {
+          "status": "PASS",
+          "match_count": 4,
+          "total_count": 4,
+          "summary": "4/4 MATCH"
+        }
+      },
+      "instrumentation_details": {
+        "config_seal_status": "PASS",
+        "config_expected_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "config_captured_actual_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "config_independent_actual_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "config_hash_file_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "config_independent_match": true,
+        "code_seal_status": "PASS",
+        "code_seal_match_count": 3,
+        "code_seal_total_count": 3,
+        "code_seal_summary": "3/3 MATCH",
+        "captured_code_files": [
+          {
+            "name": "stager",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+            "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+            "match": true
+          },
+          {
+            "name": "matlab_runner",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+            "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+            "match": true
+          },
+          {
+            "name": "outer_executor",
+            "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+            "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+            "match": true
+          }
+        ]
+      },
+      "status_snapshot": {
+        "schema": "board20_original_mlx_run_status_v2",
+        "started_at": "2026-08-25T08:26:01+08:00",
+        "finished_at": "2026-08-25T08:34:13+08:00",
+        "declared_method": "Guyan",
+        "declared_division": "第一类子结构划分（稳定域同目录Ps3替代候选）",
+        "actual_code_identity": "Guyan-LQR2命名脚本；无LQR；21x21双时滞扫描；New_Ps3原生物理矩阵为9x9，候选脚本仅取前6维缩聚",
+        "expected_scan_point_count": 441,
+        "expected_stab_shape": [
+          21,
+          21
+        ],
+        "scan_evidence": {
+          "actual_shape": [
+            21,
+            21
+          ],
+          "expected_region_point_count": 441,
+          "actual_finite_point_count": 441,
+          "actual_finite_positive_point_count": 441,
+          "actual_nonpositive_point_count": 0,
+          "outside_region_nonzero_count": 0,
+          "minimum_region_value": 0.998411971042383,
+          "maximum_region_value": 1.028198634820887
+        }
+      }
+    },
+    "historical_mask_comparison": {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "route_name": "Guyan 第一类划分备用候选——稳定目录 New_Full.m + New_Ps3.m",
+      "method_label": "Guyan 第一类划分备用候选",
+      "selected_replicate": "rep01",
+      "comparison_status": "READY",
+      "historical_file": "input/historical_plotting/作者绘图目录/lqr_2.mat",
+      "historical_variable": "stab_g[1:21,1:21]",
+      "historical_shape": "31x67",
+      "raw_shape": "21x21",
+      "valid_point_count": 441,
+      "raw_finite_count": 441,
+      "raw_positive_count": 441,
+      "rho_lt_1_count": 7,
+      "rho_positive_lt_1_count": 7,
+      "raw_minimum": 0.998411971042383,
+      "raw_maximum": 1.028198634820887,
+      "TP": 7,
+      "FP": 0,
+      "FN": 434,
+      "TN": 0,
+      "mismatch_count": 434,
+      "accuracy": 0.015873015873015872,
+      "historical_stable_total": 1044,
+      "historical_stable_inside_valid_domain": 441,
+      "historical_stable_outside_valid_domain": 603,
+      "raw_stab_sha256": "D70FF3F74B8771794AB91D821EA1BA5BC66532C6972191E9AFA0A6135EC98BCA",
+      "historical_sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4",
+      "mat_loader": "raw=h5py (MATLAB 7.3; reversed storage axes); historical=scipy.io.loadmat (MATLAB v5)",
+      "reason": null
+    },
+    "difference_from_main_guyan_div1": {
+      "comparison_status": "READY",
+      "left_route_id": "alt_guyan_div1_stable_full_ps3",
+      "right_route_id": "main_guyan_div1",
+      "valid_point_count": 441,
+      "finite_pair_count": 441,
+      "exact_equal_count": 0,
+      "nonzero_difference_count": 441,
+      "absolute_difference_gt_1e_12_count": 441,
+      "maximum_absolute_difference": 0.02254349312243842,
+      "mean_absolute_difference": 0.015409199366519893,
+      "rms_difference": 0.016353492748391745,
+      "allclose_rtol_0_atol_1e_12": false,
+      "stable_mask_disagreement_count": 86,
+      "reason": null
+    }
+  },
+  "mask_comparisons": [
+    {
+      "route_id": "main_ori_div2",
+      "route_name": "原结构命名主路线——第二类子结构划分",
+      "method_label": "原结构",
+      "selected_replicate": "rep03",
+      "comparison_status": "READY",
+      "historical_file": "input/historical_plotting/作者绘图目录/lqr_3.mat",
+      "historical_variable": "stab_o",
+      "historical_shape": "31x67",
+      "raw_shape": "26x67",
+      "valid_point_count": 1517,
+      "raw_finite_count": 1517,
+      "raw_positive_count": 1517,
+      "rho_lt_1_count": 34,
+      "rho_positive_lt_1_count": 34,
+      "raw_minimum": 0.98669228749006,
+      "raw_maximum": 1.0344992410845009,
+      "TP": 34,
+      "FP": 0,
+      "FN": 1095,
+      "TN": 388,
+      "mismatch_count": 1095,
+      "accuracy": 0.2781806196440343,
+      "historical_stable_total": 1247,
+      "historical_stable_inside_valid_domain": 1129,
+      "historical_stable_outside_valid_domain": 118,
+      "raw_stab_sha256": "C4EA3005174054829456C24C74770F57ADF422DFD075A39E347CBA6876899E85",
+      "historical_sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+      "mat_loader": "raw=h5py (MATLAB 7.3; reversed storage axes); historical=scipy.io.loadmat (MATLAB v5)",
+      "reason": null
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "route_name": "Guyan 主路线——第二类子结构划分",
+      "method_label": "Guyan",
+      "selected_replicate": "rep03",
+      "comparison_status": "READY",
+      "historical_file": "input/historical_plotting/作者绘图目录/lqr_3.mat",
+      "historical_variable": "stab_g",
+      "historical_shape": "41x95",
+      "raw_shape": "26x67",
+      "valid_point_count": 1517,
+      "raw_finite_count": 1517,
+      "raw_positive_count": 1517,
+      "rho_lt_1_count": 34,
+      "rho_positive_lt_1_count": 34,
+      "raw_minimum": 0.98669228749006,
+      "raw_maximum": 1.0344992410845009,
+      "TP": 34,
+      "FP": 0,
+      "FN": 856,
+      "TN": 627,
+      "mismatch_count": 856,
+      "accuracy": 0.4357284113381674,
+      "historical_stable_total": 929,
+      "historical_stable_inside_valid_domain": 890,
+      "historical_stable_outside_valid_domain": 39,
+      "raw_stab_sha256": "798BF53D873943F3CE17EFDE69F10D7CD94FF055539CE80B5FC317499664433D",
+      "historical_sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+      "mat_loader": "raw=h5py (MATLAB 7.3; reversed storage axes); historical=scipy.io.loadmat (MATLAB v5)",
+      "reason": null
+    }
+  ],
+  "raw_ori_guyan_difference": {
+    "comparison_status": "READY",
+    "left_route_id": "main_ori_div2",
+    "right_route_id": "main_guyan_div2",
+    "valid_point_count": 1517,
+    "finite_pair_count": 1517,
+    "exact_equal_count": 1517,
+    "nonzero_difference_count": 0,
+    "absolute_difference_gt_1e_12_count": 0,
+    "maximum_absolute_difference": 0.0,
+    "mean_absolute_difference": 0.0,
+    "rms_difference": 0.0,
+    "allclose_rtol_0_atol_1e_12": true,
+    "stable_mask_disagreement_count": 0,
+    "reason": null
+  },
+  "validation": {
+    "status": "PASS",
+    "route_count": 8,
+    "alternative_candidate_count": 1,
+    "terminal_route_count": 8,
+    "pending_route_count": 0,
+    "mask_comparison_count": 2,
+    "ready_mask_comparison_count": 2,
+    "checks": [
+      {
+        "name": "exactly_eight_routes",
+        "status": "PASS",
+        "detail": "count=8"
+      },
+      {
+        "name": "unique_route_ids",
+        "status": "PASS",
+        "detail": "route_id 必须唯一"
+      },
+      {
+        "name": "alternative_not_counted_as_primary_route",
+        "status": "PASS",
+        "detail": "primary=8; alternative=alt_guyan_div1_stable_full_ps3"
+      },
+      {
+        "name": "alternative_terminal_success",
+        "status": "PASS",
+        "detail": "audit=TERMINAL; final=SUCCESS"
+      },
+      {
+        "name": "alternative_process_exit",
+        "status": "PASS",
+        "detail": "returncode=0; timed_out=False; consistency=PASS"
+      },
+      {
+        "name": "alternative_grid_complete",
+        "status": "PASS",
+        "detail": "points=441; shape=21x21"
+      },
+      {
+        "name": "alternative_input_hashes",
+        "status": "PASS",
+        "detail": "before=4/4 MATCH; after=4/4 MATCH"
+      },
+      {
+        "name": "alternative_seals",
+        "status": "PASS",
+        "detail": "config=PASS; code=3/3 MATCH"
+      },
+      {
+        "name": "exactly_two_mask_mappings",
+        "status": "PASS",
+        "detail": "count=2"
+      },
+      {
+        "name": "main_ori_div2_confusion_total",
+        "status": "PASS",
+        "detail": "total=1517"
+      },
+      {
+        "name": "main_ori_div2_valid_points",
+        "status": "PASS",
+        "detail": "valid=1517"
+      },
+      {
+        "name": "main_guyan_div2_confusion_total",
+        "status": "PASS",
+        "detail": "total=1517"
+      },
+      {
+        "name": "main_guyan_div2_valid_points",
+        "status": "PASS",
+        "detail": "valid=1517"
+      },
+      {
+        "name": "raw_difference_point_count",
+        "status": "PASS",
+        "detail": "finite_pair_count=1517"
+      },
+      {
+        "name": "alternative_mask_confusion_total",
+        "status": "PASS",
+        "detail": "total=441"
+      },
+      {
+        "name": "alternative_mask_raw_complete",
+        "status": "PASS",
+        "detail": "finite=441; positive=441"
+      },
+      {
+        "name": "alternative_difference_ready",
+        "status": "PASS",
+        "detail": "status=READY; finite=441"
+      }
+    ]
+  }
+}

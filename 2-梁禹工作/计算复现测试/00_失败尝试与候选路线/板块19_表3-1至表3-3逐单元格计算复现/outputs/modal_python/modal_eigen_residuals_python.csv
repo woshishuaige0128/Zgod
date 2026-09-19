@@ -1,0 +1,9 @@
+﻿division,method,route,relative_eigen_residual,pass
+1,Guyan,historical_single_sided,3.60444150519532e-15,True
+1,Guyan,projected_congruence,1.6826845792292442e-15,True
+1,Craig-Bampton,sorted_cb,1.4058446682354102e-14,True
+1,Craig-Bampton,raw_cb,1.4058446682354102e-14,True
+2,Guyan,historical_single_sided,1.7953871324748293e-15,True
+2,Guyan,projected_congruence,1.995047330191325e-15,True
+2,Craig-Bampton,sorted_cb,1.832482989285017e-14,True
+2,Craig-Bampton,raw_cb,1.832482989285017e-14,True

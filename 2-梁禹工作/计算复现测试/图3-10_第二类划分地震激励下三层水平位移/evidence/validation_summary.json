@@ -1,0 +1,34 @@
+{
+  "schema_version": "board18.figure-validation.v1",
+  "status": "PASS",
+  "generated_at_utc": "2026-08-24T18:51:34.876788+00:00",
+  "candidate_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\figure_candidates",
+  "validation_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\figure_validation",
+  "detail_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\figure_validation\\validation_detail.csv",
+  "detail_csv_sha256": "E59DD4061DE639608B658C247F7117047C29243AD359ACCE1F809E54EC91EAE8",
+  "check_count": 867,
+  "pass_count": 867,
+  "failure_count": 0,
+  "object_count_expected": 11,
+  "object_count_observed": 11,
+  "figure_pair_count_expected": 12,
+  "figure_pair_count_observed": 12,
+  "pdf_count_expected": 12,
+  "pdf_count_observed": 12,
+  "png_count_expected": 12,
+  "png_count_observed": 12,
+  "manifest_row_count_expected": 24,
+  "manifest_row_count_observed": 24,
+  "f3_15_historical_pointwise_equal": true,
+  "f3_15_corrected_from_division2_chirp": true,
+  "subjective_visual_review": "NOT_PERFORMED_BY_DESIGN",
+  "dependencies": {
+    "executables": {
+      "pdfinfo": "D:\\Downlad\\texlive\\2026\\bin\\windows\\pdfinfo.EXE",
+      "pdffonts": "D:\\Downlad\\texlive\\2026\\bin\\windows\\pdffonts.EXE",
+      "pdfimages": "D:\\Downlad\\texlive\\2026\\bin\\windows\\pdfimages.EXE"
+    },
+    "python_import_errors": {}
+  },
+  "failure_check_ids": []
+}

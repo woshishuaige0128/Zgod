@@ -1,0 +1,30 @@
+{
+  "check_count": 19,
+  "error": "",
+  "failure_count": 0,
+  "formula_4_45_evaluated_conditionally": true,
+  "input_manifest_item_count": 103,
+  "metrics": {
+    "case_result_count": 1096,
+    "cross_value_count": 305382,
+    "final_target_process_count": 0,
+    "historical_intermediate_count": 666,
+    "max_case_result_error": 5.775291356258094e-11,
+    "max_cross_absolute_error": 3.4332275390625e-05,
+    "max_cross_scaled_error": 0.46531172066248816,
+    "max_historical_intermediate_error": 2.473825588822365e-10,
+    "max_one_minus_mac": 6.661338147750939e-16,
+    "max_third_recompute_error": 3.190052666468546e-10,
+    "max_utf16_path_units": 136,
+    "modal_mac_count": 3282,
+    "third_recompute_count": 1096
+  },
+  "mutation_count": 8,
+  "pass_count": 19,
+  "schema_version": "BOARD21_STEP4_VALIDATION_V1",
+  "scientific_status": "AUTHOR_ROUTE_REPRODUCED_AND_PAPER_LITERAL_CONDITIONAL_TABLE4_1_PENDING",
+  "status": "PASS",
+  "step3_case_count": 14,
+  "table4_1_adjudicated": false,
+  "whole_model_candidate_count": 2
+}

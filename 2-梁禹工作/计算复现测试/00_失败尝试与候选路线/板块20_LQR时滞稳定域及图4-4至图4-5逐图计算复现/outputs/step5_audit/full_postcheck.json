@@ -1,0 +1,2159 @@
+{
+  "checks": [
+    {
+      "actual": [],
+      "category": "files",
+      "check_id": "S5-POST-0001",
+      "description": "步骤5合同与脚本存在",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": "board20_step5_validation_contract_v1",
+      "category": "contract",
+      "check_id": "S5-POST-0002",
+      "description": "验收合同版本",
+      "evidence": "",
+      "expected": "board20_step5_validation_contract_v1",
+      "status": "PASS"
+    },
+    {
+      "actual": "board20_step5_independent_compute_contract_v1",
+      "category": "contract",
+      "check_id": "S5-POST-0003",
+      "description": "独立计算合同版本",
+      "evidence": "",
+      "expected": "board20_step5_independent_compute_contract_v1",
+      "status": "PASS"
+    },
+    {
+      "actual": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "category": "contract",
+      "check_id": "S5-POST-0004",
+      "description": "独立计算脚本最终SHA-256封签",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "status": "PASS"
+    },
+    {
+      "actual": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "category": "contract",
+      "check_id": "S5-POST-0005",
+      "description": "独立计算合同最终SHA-256封签",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "status": "PASS"
+    },
+    {
+      "actual": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "category": "contract",
+      "check_id": "S5-POST-0006",
+      "description": "计算合同锁定步骤4路线清单哈希",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json",
+      "expected": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-POST-0007",
+      "description": "validation恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-POST-0008",
+      "description": "compute恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-POST-0009",
+      "description": "step4_manifest恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          6
+        ],
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-POST-0010",
+      "description": "main_ori_div1公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          6
+        ],
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "category": "route_identity",
+      "check_id": "S5-POST-0011",
+      "description": "main_ori_div1封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0012",
+      "description": "main_ori_div1矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-POST-0013",
+      "description": "main_guyan_div1公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "category": "route_identity",
+      "check_id": "S5-POST-0014",
+      "description": "main_guyan_div1封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0015",
+      "description": "main_guyan_div1矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "workspace": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-POST-0016",
+      "description": "alt_guyan_div1_stable_full_ps3公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "workspace": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "category": "route_identity",
+      "check_id": "S5-POST-0017",
+      "description": "alt_guyan_div1_stable_full_ps3封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_complete.mat",
+      "expected": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0018",
+      "description": "alt_guyan_div1_stable_full_ps3矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-POST-0019",
+      "description": "main_ori_div2公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "category": "route_identity",
+      "check_id": "S5-POST-0020",
+      "description": "main_ori_div2封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0021",
+      "description": "main_ori_div2矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-POST-0022",
+      "description": "main_guyan_div2公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "category": "route_identity",
+      "check_id": "S5-POST-0023",
+      "description": "main_guyan_div2封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0024",
+      "description": "main_guyan_div2矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "points_per_route": 2077,
+        "shape": [
+          31,
+          67
+        ],
+        "total_points": 10385
+      },
+      "category": "grid_contract",
+      "check_id": "S5-POST-0025",
+      "description": "全网格为五路线各31×67共10385点",
+      "evidence": "",
+      "expected": {
+        "points_per_route": 2077,
+        "shape": [
+          31,
+          67
+        ],
+        "total_points": 10385
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "alt_guyan_div1_stable_full_ps3": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ],
+        "main_ori_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_ori_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ]
+      },
+      "category": "grid_contract",
+      "check_id": "S5-POST-0026",
+      "description": "41个预登记真实试点逐路线一致",
+      "evidence": "",
+      "expected": {
+        "alt_guyan_div1_stable_full_ps3": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ],
+        "main_ori_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_ori_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0027",
+      "description": "独立计算脚本没有把步骤4网格写成I/O字面量",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0028",
+      "description": "独立计算合同没有活动步骤4网格输入路径",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-POST-0029",
+      "description": "独立计算脚本不调用MATLAB求解器",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "compact": "2*n+l+j",
+        "full_q": "n*(max(l,j)+2)"
+      },
+      "category": "algorithm_contract",
+      "check_id": "S5-POST-0030",
+      "description": "紧凑标量增广和全q伴随阶数分开登记",
+      "evidence": "",
+      "expected": {
+        "compact": "2*n+l+j",
+        "full_q": "n*(max(l,j)+2)"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "formula": 1e-12,
+        "laurent_residual": 1e-08,
+        "near_threshold": 0.9,
+        "near_unit": 1e-08,
+        "poly_residual": 1e-08,
+        "rho": 1e-08
+      },
+      "category": "numeric_contract",
+      "check_id": "S5-POST-0031",
+      "description": "公式身份1e-12、rho/近单位根与残差1e-8门槛固定",
+      "evidence": "",
+      "expected": {
+        "formula": 1e-12,
+        "laurent_residual": 1e-08,
+        "near_threshold": 0.9,
+        "near_unit": 1e-08,
+        "poly_residual": 1e-08,
+        "rho": 1e-08
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "CONTRACT_NOT_CLOSED",
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "category": "paper_contract",
+      "check_id": "S5-POST-0032",
+      "description": "硕士论文和小论文公式路线均保持合同未闭合",
+      "evidence": "",
+      "expected": [
+        "CONTRACT_NOT_CLOSED",
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0033",
+      "description": "独立计算合同显式登记四条上游失败路线DO_NOT_CREATE",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0034",
+      "description": "四失败路线和两论文未闭合路线均无科学网格目录",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": "A5D5ED0977547438365C1967EE8A0C63FF5259006CB4979050871F1957069E94",
+      "category": "protected_source",
+      "check_id": "S5-POST-0035",
+      "description": "板块20输入冻结清单SHA-256不变",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\input_manifest.csv",
+      "expected": "A5D5ED0977547438365C1967EE8A0C63FF5259006CB4979050871F1957069E94",
+      "status": "PASS"
+    },
+    {
+      "actual": 185,
+      "category": "protected_source",
+      "check_id": "S5-POST-0036",
+      "description": "输入冻结清单行数",
+      "evidence": "item_id,category,role,source_absolute_path,source_relative_label,frozen_relative_path,source_size_bytes,source_mtime_iso,source_sha256,frozen_size_bytes,frozen_sha256,live_change_policy,status",
+      "expected": 185,
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "checked": 185,
+        "failures": []
+      },
+      "category": "protected_source",
+      "check_id": "S5-POST-0037",
+      "description": "185份冻结输入逐文件SHA-256复核",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "checked": 181,
+        "failures": []
+      },
+      "category": "protected_source",
+      "check_id": "S5-POST-0038",
+      "description": "immutable实时源逐文件SHA-256复核",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\input_manifest.csv",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "mode",
+      "check_id": "S5-POST-0039",
+      "description": "full计算目录存在",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "category": "mode",
+      "check_id": "S5-POST-0040",
+      "description": "full/run_status.json存在",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\run_status.json",
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "CONTRACT_NOT_CLOSED",
+        "CONTRACT_NOT_CLOSED",
+        "CALCULABLE"
+      ],
+      "category": "mode",
+      "check_id": "S5-POST-0041",
+      "description": "full独立计算已终态成功",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\run_status.json",
+      "expected": "PASS/COMPLETE_PASS/SUCCESS/COMPLETE",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "category": "paper_contract",
+      "check_id": "S5-POST-0042",
+      "description": "masters_thesis_formula保持CONTRACT_NOT_CLOSED且无rho网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "category": "paper_contract",
+      "check_id": "S5-POST-0043",
+      "description": "manuscript_0824_formula保持CONTRACT_NOT_CLOSED且无rho网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "EXECUTION_FAIL",
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0044",
+      "description": "main_cb_div1在步骤5保持失败且禁建网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": [
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE",
+        "EXECUTION_FAIL"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "EXECUTION_FAIL",
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0045",
+      "description": "main_cb_div2在步骤5保持失败且禁建网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": [
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE",
+        "EXECUTION_FAIL"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "EXECUTION_FAIL",
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0046",
+      "description": "energy_guyan_div1在步骤5保持失败且禁建网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": [
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE",
+        "EXECUTION_FAIL"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "EXECUTION_FAIL",
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0047",
+      "description": "energy_guyan_div2在步骤5保持失败且禁建网格",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\contracts_status.json",
+      "expected": [
+        "CONTRACT_NOT_EXECUTABLE",
+        "DO_NOT_CREATE",
+        "EXECUTION_FAIL"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "rows": 16
+      },
+      "category": "artifact_manifest",
+      "check_id": "S5-POST-0048",
+      "description": "计算工件清单逐文件SHA-256一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\artifact_manifest.csv",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "route_files",
+      "check_id": "S5-POST-0049",
+      "description": "main_ori_div1计算输出文件齐全",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div1",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "point_schema",
+      "check_id": "S5-POST-0050",
+      "description": "main_ori_div1 point_summary.csv字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div1\\point_summary.csv",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "coordinates": 2077,
+        "extra": [],
+        "missing": [],
+        "rows": 2077
+      },
+      "category": "point_grid",
+      "check_id": "S5-POST-0051",
+      "description": "main_ori_div1具有预期且唯一的31×67坐标",
+      "evidence": "",
+      "expected": {
+        "coordinates": 2077,
+        "rows": 2077
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "numeric_failures": [],
+        "parse_failures": []
+      },
+      "category": "point_numeric",
+      "check_id": "S5-POST-0052",
+      "description": "main_ori_div1 rho、稳定分类、残差和两种增广阶数逐点通过",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div1\\point_summary.csv",
+      "expected": {
+        "numeric_failures": 0,
+        "parse_failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0053",
+      "description": "main_ori_div1 roots.h5字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div1\\roots.h5",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0054",
+      "description": "main_ori_div1 roots.h5与point_summary.csv逐行一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div1",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "boundary": 37,
+        "fixed": 7,
+        "random": 16,
+        "union": 59
+      },
+      "category": "sampling",
+      "check_id": "S5-POST-0055",
+      "description": "main_ori_div1固定、随机和全部边界审核点集合",
+      "evidence": "",
+      "expected": {
+        "all_boundary_included": true,
+        "fixed_min": 7,
+        "random": 16
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failure_count": 0,
+        "failure_points": [],
+        "max_abs_diff": 1.1679546219056647e-13,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0056",
+      "description": "main_ori_div1 MATLAB/Python rho逐点绝对差不超过1e-8",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "max_abs_diff": "<=1e-8"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "mismatch": 0,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0057",
+      "description": "main_ori_div1 MATLAB/Python严格稳定分类逐点一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "mismatch": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 59
+      },
+      "category": "formula_identity",
+      "check_id": "S5-POST-0058",
+      "description": "main_ori_div1审核点高层公式与Laurent系数展开误差不超过1e-12",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 59
+      },
+      "category": "direct_residual",
+      "check_id": "S5-POST-0059",
+      "description": "main_ori_div1审核点全部保留根直接Laurent残差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 59
+      },
+      "category": "root_equivalence",
+      "check_id": "S5-POST-0060",
+      "description": "main_ori_div1审核点Python/MATLAB主导及模不小于0.9的近单位根差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "examples": [],
+        "selected_points": 59,
+        "status": "STRICT_ROOT_SET_PASS",
+        "strict_failure_count": 0,
+        "zero_tolerance_was_not_relaxed": true
+      },
+      "category": "root_set_diagnostic",
+      "check_id": "S5-POST-0061",
+      "description": "main_ori_div1完整根集严格匹配诊断（原点多重根裂分不降低核心rho裁决）",
+      "evidence": "",
+      "expected": "DIAGNOSTIC_ONLY",
+      "status": "INFO"
+    },
+    {
+      "actual": [],
+      "category": "route_files",
+      "check_id": "S5-POST-0062",
+      "description": "main_guyan_div1计算输出文件齐全",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div1",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "point_schema",
+      "check_id": "S5-POST-0063",
+      "description": "main_guyan_div1 point_summary.csv字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div1\\point_summary.csv",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "coordinates": 2077,
+        "extra": [],
+        "missing": [],
+        "rows": 2077
+      },
+      "category": "point_grid",
+      "check_id": "S5-POST-0064",
+      "description": "main_guyan_div1具有预期且唯一的31×67坐标",
+      "evidence": "",
+      "expected": {
+        "coordinates": 2077,
+        "rows": 2077
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "numeric_failures": [],
+        "parse_failures": []
+      },
+      "category": "point_numeric",
+      "check_id": "S5-POST-0065",
+      "description": "main_guyan_div1 rho、稳定分类、残差和两种增广阶数逐点通过",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div1\\point_summary.csv",
+      "expected": {
+        "numeric_failures": 0,
+        "parse_failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0066",
+      "description": "main_guyan_div1 roots.h5字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div1\\roots.h5",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0067",
+      "description": "main_guyan_div1 roots.h5与point_summary.csv逐行一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div1",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "boundary": 45,
+        "fixed": 7,
+        "random": 16,
+        "union": 67
+      },
+      "category": "sampling",
+      "check_id": "S5-POST-0068",
+      "description": "main_guyan_div1固定、随机和全部边界审核点集合",
+      "evidence": "",
+      "expected": {
+        "all_boundary_included": true,
+        "fixed_min": 7,
+        "random": 16
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failure_count": 0,
+        "failure_points": [],
+        "max_abs_diff": 2.343931715387271e-10,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0069",
+      "description": "main_guyan_div1 MATLAB/Python rho逐点绝对差不超过1e-8",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "max_abs_diff": "<=1e-8"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "mismatch": 0,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0070",
+      "description": "main_guyan_div1 MATLAB/Python严格稳定分类逐点一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "mismatch": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 67
+      },
+      "category": "formula_identity",
+      "check_id": "S5-POST-0071",
+      "description": "main_guyan_div1审核点高层公式与Laurent系数展开误差不超过1e-12",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 67
+      },
+      "category": "direct_residual",
+      "check_id": "S5-POST-0072",
+      "description": "main_guyan_div1审核点全部保留根直接Laurent残差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 67
+      },
+      "category": "root_equivalence",
+      "check_id": "S5-POST-0073",
+      "description": "main_guyan_div1审核点Python/MATLAB主导及模不小于0.9的近单位根差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "examples": [
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 18):py=28,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 19):py=29,mat=48,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 31):py=41,mat=72,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 18):py=29,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 19):py=30,mat=48,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 5):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 18):py=30,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 19):py=31,mat=48,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 10):py=23,mat=30,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 11):py=24,mat=32,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 12):py=25,mat=34,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 13):py=26,mat=36,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 14):py=27,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 15):py=28,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 16):py=29,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 17):py=30,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 18):py=31,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 19):py=32,mat=48,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 6):py=20,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 7):py=21,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 8):py=22,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 9):py=23,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 10):py=24,mat=30,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 11):py=25,mat=32,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 12):py=26,mat=34,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 13):py=27,mat=36,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 14):py=28,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 15):py=29,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 16):py=30,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 17):py=31,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 18):py=32,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 0):py=15,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 1):py=16,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 2):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 7):py=22,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 8):py=23,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 9):py=24,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 18):py=33,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 0):py=16,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 1):py=17,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 2):py=18,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 3):py=19,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 4):py=20,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 51):py=67,mat=112,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 3):py=20,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 46):py=63,mat=102,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(8, 50):py=68,mat=110,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(8, 62):py=80,mat=134,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(10, 22):py=42,mat=54,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(10, 27):py=47,mat=64,diff=inf"
+        ],
+        "selected_points": 67,
+        "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+        "strict_failure_count": 59,
+        "zero_tolerance_was_not_relaxed": true
+      },
+      "category": "root_set_diagnostic",
+      "check_id": "S5-POST-0074",
+      "description": "main_guyan_div1完整根集严格匹配诊断（原点多重根裂分不降低核心rho裁决）",
+      "evidence": "",
+      "expected": "DIAGNOSTIC_ONLY",
+      "status": "INFO"
+    },
+    {
+      "actual": [],
+      "category": "route_files",
+      "check_id": "S5-POST-0075",
+      "description": "alt_guyan_div1_stable_full_ps3计算输出文件齐全",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\alt_guyan_div1_stable_full_ps3",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "point_schema",
+      "check_id": "S5-POST-0076",
+      "description": "alt_guyan_div1_stable_full_ps3 point_summary.csv字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\alt_guyan_div1_stable_full_ps3\\point_summary.csv",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "coordinates": 2077,
+        "extra": [],
+        "missing": [],
+        "rows": 2077
+      },
+      "category": "point_grid",
+      "check_id": "S5-POST-0077",
+      "description": "alt_guyan_div1_stable_full_ps3具有预期且唯一的31×67坐标",
+      "evidence": "",
+      "expected": {
+        "coordinates": 2077,
+        "rows": 2077
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "numeric_failures": [],
+        "parse_failures": []
+      },
+      "category": "point_numeric",
+      "check_id": "S5-POST-0078",
+      "description": "alt_guyan_div1_stable_full_ps3 rho、稳定分类、残差和两种增广阶数逐点通过",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\alt_guyan_div1_stable_full_ps3\\point_summary.csv",
+      "expected": {
+        "numeric_failures": 0,
+        "parse_failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0079",
+      "description": "alt_guyan_div1_stable_full_ps3 roots.h5字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\alt_guyan_div1_stable_full_ps3\\roots.h5",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0080",
+      "description": "alt_guyan_div1_stable_full_ps3 roots.h5与point_summary.csv逐行一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\alt_guyan_div1_stable_full_ps3",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "boundary": 9,
+        "fixed": 7,
+        "random": 16,
+        "union": 31
+      },
+      "category": "sampling",
+      "check_id": "S5-POST-0081",
+      "description": "alt_guyan_div1_stable_full_ps3固定、随机和全部边界审核点集合",
+      "evidence": "",
+      "expected": {
+        "all_boundary_included": true,
+        "fixed_min": 7,
+        "random": 16
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failure_count": 0,
+        "failure_points": [],
+        "max_abs_diff": 8.505457893548396e-09,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0082",
+      "description": "alt_guyan_div1_stable_full_ps3 MATLAB/Python rho逐点绝对差不超过1e-8",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "max_abs_diff": "<=1e-8"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "mismatch": 0,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0083",
+      "description": "alt_guyan_div1_stable_full_ps3 MATLAB/Python严格稳定分类逐点一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "mismatch": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 31
+      },
+      "category": "formula_identity",
+      "check_id": "S5-POST-0084",
+      "description": "alt_guyan_div1_stable_full_ps3审核点高层公式与Laurent系数展开误差不超过1e-12",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 31
+      },
+      "category": "direct_residual",
+      "check_id": "S5-POST-0085",
+      "description": "alt_guyan_div1_stable_full_ps3审核点全部保留根直接Laurent残差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 31
+      },
+      "category": "root_equivalence",
+      "check_id": "S5-POST-0086",
+      "description": "alt_guyan_div1_stable_full_ps3审核点Python/MATLAB主导及模不小于0.9的近单位根差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "examples": [
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 2):py=12,mat=14,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 53):py=63,mat=116,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 64):py=74,mat=138,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 34):py=45,mat=78,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 5):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 0):py=13,mat=16,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 1):py=14,mat=16,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 0):py=14,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 46):py=60,mat=102,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 2):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(8, 42):py=60,mat=94,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(11, 25):py=46,mat=60,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(11, 49):py=70,mat=108,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(13, 54):py=77,mat=118,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 21):py=45,mat=52,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 44):py=68,mat=98,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 10):py=45,mat=60,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(26, 58):py=94,mat=126,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(27, 24):py=61,mat=64,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(27, 36):py=73,mat=82,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(30, 25):py=65,mat=70,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(30, 26):py=66,mat=70,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(30, 66):py=106,mat=142,diff=inf"
+        ],
+        "selected_points": 31,
+        "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+        "strict_failure_count": 23,
+        "zero_tolerance_was_not_relaxed": true
+      },
+      "category": "root_set_diagnostic",
+      "check_id": "S5-POST-0087",
+      "description": "alt_guyan_div1_stable_full_ps3完整根集严格匹配诊断（原点多重根裂分不降低核心rho裁决）",
+      "evidence": "",
+      "expected": "DIAGNOSTIC_ONLY",
+      "status": "INFO"
+    },
+    {
+      "actual": [],
+      "category": "route_files",
+      "check_id": "S5-POST-0088",
+      "description": "main_ori_div2计算输出文件齐全",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div2",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "point_schema",
+      "check_id": "S5-POST-0089",
+      "description": "main_ori_div2 point_summary.csv字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div2\\point_summary.csv",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "coordinates": 2077,
+        "extra": [],
+        "missing": [],
+        "rows": 2077
+      },
+      "category": "point_grid",
+      "check_id": "S5-POST-0090",
+      "description": "main_ori_div2具有预期且唯一的31×67坐标",
+      "evidence": "",
+      "expected": {
+        "coordinates": 2077,
+        "rows": 2077
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "numeric_failures": [],
+        "parse_failures": []
+      },
+      "category": "point_numeric",
+      "check_id": "S5-POST-0091",
+      "description": "main_ori_div2 rho、稳定分类、残差和两种增广阶数逐点通过",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div2\\point_summary.csv",
+      "expected": {
+        "numeric_failures": 0,
+        "parse_failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0092",
+      "description": "main_ori_div2 roots.h5字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div2\\roots.h5",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0093",
+      "description": "main_ori_div2 roots.h5与point_summary.csv逐行一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_ori_div2",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "boundary": 35,
+        "fixed": 10,
+        "random": 16,
+        "union": 60
+      },
+      "category": "sampling",
+      "check_id": "S5-POST-0094",
+      "description": "main_ori_div2固定、随机和全部边界审核点集合",
+      "evidence": "",
+      "expected": {
+        "all_boundary_included": true,
+        "fixed_min": 7,
+        "random": 16
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failure_count": 4,
+        "failure_points": [
+          {
+            "abs_diff": 3.398668324550158e-08,
+            "j": 39,
+            "l": 11,
+            "rho_matlab": 1.0163977217624076,
+            "rho_python": 1.0163977557490909
+          },
+          {
+            "abs_diff": 1.4479864196559333e-08,
+            "j": 40,
+            "l": 15,
+            "rho_matlab": 1.0181382838457822,
+            "rho_python": 1.0181382983256464
+          },
+          {
+            "abs_diff": 2.114230190919386e-08,
+            "j": 41,
+            "l": 23,
+            "rho_matlab": 1.0167482880062317,
+            "rho_python": 1.0167483091485336
+          },
+          {
+            "abs_diff": 1.2270835236805056e-08,
+            "j": 43,
+            "l": 28,
+            "rho_matlab": 1.0200476120122581,
+            "rho_python": 1.0200476242830934
+          }
+        ],
+        "max_abs_diff": 3.398668324550158e-08,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0095",
+      "description": "main_ori_div2 MATLAB/Python rho逐点绝对差不超过1e-8",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "max_abs_diff": "<=1e-8"
+      },
+      "status": "FAIL"
+    },
+    {
+      "actual": {
+        "mismatch": 0,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0096",
+      "description": "main_ori_div2 MATLAB/Python严格稳定分类逐点一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "mismatch": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "formula_identity",
+      "check_id": "S5-POST-0097",
+      "description": "main_ori_div2审核点高层公式与Laurent系数展开误差不超过1e-12",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "direct_residual",
+      "check_id": "S5-POST-0098",
+      "description": "main_ori_div2审核点全部保留根直接Laurent残差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "root_equivalence",
+      "check_id": "S5-POST-0099",
+      "description": "main_ori_div2审核点Python/MATLAB主导及模不小于0.9的近单位根差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "examples": [
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 6):py=16,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 7):py=17,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 8):py=18,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 9):py=19,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 10):py=20,mat=30,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 18):py=28,mat=46,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 5):py=16,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 6):py=17,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 7):py=18,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 8):py=19,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 9):py=20,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 4):py=16,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 5):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 7):py=19,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 49):py=62,mat=108,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 55):py=68,mat=120,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 1):py=15,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 2):py=16,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 0):py=15,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 1):py=16,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 2):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 66):py=81,mat=142,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 0):py=16,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 1):py=17,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 0):py=17,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 17):py=34,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 33):py=50,mat=76,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(9, 39):py=58,mat=88,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(11, 55):py=76,mat=120,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(13, 0):py=23,mat=36,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 0):py=24,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 1):py=25,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(15, 1):py=26,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(15, 2):py=27,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 0):py=26,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 1):py=27,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 2):py=28,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 3):py=29,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 0):py=27,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 1):py=28,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 2):py=29,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(18, 51):py=79,mat=112,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(19, 44):py=73,mat=98,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(23, 26):py=59,mat=62,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(24, 51):py=85,mat=112,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 14):py=49,mat=60,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 40):py=75,mat=90,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 60):py=95,mat=130,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(28, 19):py=57,mat=66,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(28, 23):py=61,mat=66,diff=inf"
+        ],
+        "selected_points": 60,
+        "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+        "strict_failure_count": 51,
+        "zero_tolerance_was_not_relaxed": true
+      },
+      "category": "root_set_diagnostic",
+      "check_id": "S5-POST-0100",
+      "description": "main_ori_div2完整根集严格匹配诊断（原点多重根裂分不降低核心rho裁决）",
+      "evidence": "",
+      "expected": "DIAGNOSTIC_ONLY",
+      "status": "INFO"
+    },
+    {
+      "actual": [],
+      "category": "route_files",
+      "check_id": "S5-POST-0101",
+      "description": "main_guyan_div2计算输出文件齐全",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div2",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "point_schema",
+      "check_id": "S5-POST-0102",
+      "description": "main_guyan_div2 point_summary.csv字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div2\\point_summary.csv",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "coordinates": 2077,
+        "extra": [],
+        "missing": [],
+        "rows": 2077
+      },
+      "category": "point_grid",
+      "check_id": "S5-POST-0103",
+      "description": "main_guyan_div2具有预期且唯一的31×67坐标",
+      "evidence": "",
+      "expected": {
+        "coordinates": 2077,
+        "rows": 2077
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "numeric_failures": [],
+        "parse_failures": []
+      },
+      "category": "point_numeric",
+      "check_id": "S5-POST-0104",
+      "description": "main_guyan_div2 rho、稳定分类、残差和两种增广阶数逐点通过",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div2\\point_summary.csv",
+      "expected": {
+        "numeric_failures": 0,
+        "parse_failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0105",
+      "description": "main_guyan_div2 roots.h5字段合同",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div2\\roots.h5",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "root_schema",
+      "check_id": "S5-POST-0106",
+      "description": "main_guyan_div2 roots.h5与point_summary.csv逐行一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full\\main_guyan_div2",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "boundary": 35,
+        "fixed": 10,
+        "random": 16,
+        "union": 60
+      },
+      "category": "sampling",
+      "check_id": "S5-POST-0107",
+      "description": "main_guyan_div2固定、随机和全部边界审核点集合",
+      "evidence": "",
+      "expected": {
+        "all_boundary_included": true,
+        "fixed_min": 7,
+        "random": 16
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failure_count": 4,
+        "failure_points": [
+          {
+            "abs_diff": 3.398668324550158e-08,
+            "j": 39,
+            "l": 11,
+            "rho_matlab": 1.0163977217624076,
+            "rho_python": 1.0163977557490909
+          },
+          {
+            "abs_diff": 1.4479864196559333e-08,
+            "j": 40,
+            "l": 15,
+            "rho_matlab": 1.0181382838457822,
+            "rho_python": 1.0181382983256464
+          },
+          {
+            "abs_diff": 2.114230190919386e-08,
+            "j": 41,
+            "l": 23,
+            "rho_matlab": 1.0167482880062317,
+            "rho_python": 1.0167483091485336
+          },
+          {
+            "abs_diff": 1.2270835236805056e-08,
+            "j": 43,
+            "l": 28,
+            "rho_matlab": 1.0200476120122581,
+            "rho_python": 1.0200476242830934
+          }
+        ],
+        "max_abs_diff": 3.398668324550158e-08,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0108",
+      "description": "main_guyan_div2 MATLAB/Python rho逐点绝对差不超过1e-8",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "max_abs_diff": "<=1e-8"
+      },
+      "status": "FAIL"
+    },
+    {
+      "actual": {
+        "mismatch": 0,
+        "points": 2077
+      },
+      "category": "matlab_python",
+      "check_id": "S5-POST-0109",
+      "description": "main_guyan_div2 MATLAB/Python严格稳定分类逐点一致",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat",
+      "expected": {
+        "mismatch": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "formula_identity",
+      "check_id": "S5-POST-0110",
+      "description": "main_guyan_div2审核点高层公式与Laurent系数展开误差不超过1e-12",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "direct_residual",
+      "check_id": "S5-POST-0111",
+      "description": "main_guyan_div2审核点全部保留根直接Laurent残差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "failures": [],
+        "selected_points": 60
+      },
+      "category": "root_equivalence",
+      "check_id": "S5-POST-0112",
+      "description": "main_guyan_div2审核点Python/MATLAB主导及模不小于0.9的近单位根差不超过1e-8",
+      "evidence": "",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "examples": [
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 6):py=16,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 7):py=17,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 8):py=18,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 9):py=19,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(0, 10):py=20,mat=30,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 5):py=16,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 6):py=17,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 7):py=18,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 8):py=19,mat=26,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(1, 9):py=20,mat=28,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 4):py=16,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(2, 5):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(3, 39):py=52,mat=88,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 1):py=15,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(4, 2):py=16,mat=18,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 0):py=15,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 1):py=16,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 2):py=17,mat=20,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(5, 66):py=81,mat=142,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 0):py=16,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(6, 1):py=17,mat=22,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(7, 0):py=17,mat=24,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(10, 49):py=69,mat=108,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(11, 38):py=59,mat=86,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(11, 63):py=84,mat=136,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(13, 0):py=23,mat=36,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 0):py=24,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(14, 1):py=25,mat=38,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(15, 1):py=26,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(15, 2):py=27,mat=40,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(15, 27):py=52,mat=64,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 0):py=26,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 1):py=27,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 2):py=28,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(16, 3):py=29,mat=42,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 0):py=27,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 1):py=28,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 2):py=29,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 5):py=32,mat=44,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(17, 36):py=63,mat=82,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(18, 45):py=73,mat=100,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(19, 16):py=45,mat=48,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(21, 63):py=94,mat=136,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 2):py=37,mat=60,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 40):py=75,mat=90,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(25, 60):py=95,mat=130,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(26, 14):py=50,mat=62,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(26, 43):py=79,mat=96,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(26, 46):py=82,mat=102,diff=inf",
+          "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING:(30, 4):py=44,mat=70,diff=inf"
+        ],
+        "selected_points": 60,
+        "status": "STRICT_ROOT_SET_FAIL_ORIGIN_MULTIPLICITY_SPLITTING",
+        "strict_failure_count": 52,
+        "zero_tolerance_was_not_relaxed": true
+      },
+      "category": "root_set_diagnostic",
+      "check_id": "S5-POST-0113",
+      "description": "main_guyan_div2完整根集严格匹配诊断（原点多重根裂分不降低核心rho裁决）",
+      "evidence": "",
+      "expected": "DIAGNOSTIC_ONLY",
+      "status": "INFO"
+    },
+    {
+      "actual": [],
+      "category": "failed_routes",
+      "check_id": "S5-POST-0114",
+      "description": "full没有四失败路线或两论文未闭合路线网格目录",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "changed_files": [],
+        "files_after": 33,
+        "files_before": 33
+      },
+      "category": "immutability",
+      "check_id": "S5-POST-0115",
+      "description": "事后比较前后独立计算工件SHA-256完全不变",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute\\full",
+      "expected": {
+        "changed_files": []
+      },
+      "status": "PASS"
+    }
+  ],
+  "paths": {
+    "audit_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_audit",
+    "compute_contract": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+    "compute_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute",
+    "compute_script": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+    "log_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step5_validation",
+    "step4_manifest": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json",
+    "validation_contract": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_validation_contract.json"
+  },
+  "schema_version": "board20_step5_validation_result_v1",
+  "summary": {
+    "failed_checks": 2,
+    "information_checks": 5,
+    "mode": "full-postcheck",
+    "overall_status": "FAIL",
+    "passed_checks": 108,
+    "total_checks": 115
+  },
+  "validator": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\validate_board20_step5.py",
+    "sha256": "8F81638259AD120ED4D271F00779C7B84D42F041E606BE425CE74E0283B091F5"
+  }
+}

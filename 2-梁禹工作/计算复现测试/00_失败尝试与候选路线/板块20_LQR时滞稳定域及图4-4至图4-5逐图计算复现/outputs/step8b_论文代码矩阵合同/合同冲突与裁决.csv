@@ -1,0 +1,15 @@
+﻿conflict_id,subject,thesis_or_theory,author_or_other,adjudication,status
+C01,LQR求解器,论文CARE,作者主LQR3为c2d+dlqr,分开计算；禁止互相改名,CONFLICT_RECORDED
+C02,LQR权重,"论文Q=[1e6,1e6,1e4,1e4],R=[1e-2,1e-2]","作者Q=[1e6,1,1e5,1],R=[1e-1,1e-2]",整套保留，不逐项拼接,CONFLICT_RECORDED
+C03,CR参数,论文标量alpha缺失,上游Newmark依赖给alpha=0.25；稳定域活动式另用矩阵al,alpha=0.25与矩阵al分别建立来源补全路线，均不得倒写为论文已明确,CONFLICT_RECORDED
+C04,H乘法方向,论文H左乘,第一类Original脚本右乘H,论文合同用左乘；右乘作为历史冲突候选,CONFLICT_RECORDED
+C05,LQR与H位置,论文公式反馈在H外,主LQR3反馈在H外；小论文在H内,硕士论文复现只采用H外,CONFLICT_RECORDED
+C06,第一类LQR,论文要求LQR闭环,三份第一类源没有活动LQR,作者逐文件路线无法形成图4-4完整链,CONFLICT_RECORDED
+C07,第二类Original身份,目标应为15维完整模型,ori_LQR3实际为5维Guyan,不能按文件名认领Original,CONFLICT_RECORDED
+C08,第二类延迟自由度,论文延迟psi1/psi6，psi11无时滞,板块17第二类psi6为从坐标；小论文延迟psi1/psi11,用恢复矩阵构造psi1/psi6选择行；不改成psi1/psi11,CONFLICT_RECORDED
+C09,Guyan公式,通用理论为T'AT,作者历史为单边消元,标准与历史各成完整候选，不混用M/C/K,CONFLICT_RECORDED
+C10,CB脚本身份,两类应为独立9维/8维链,两份CB MLX字节相同且均含未定义MRren,作者CB链判为缺失；板块17矩阵只可作透明重建,CONFLICT_RECORDED
+C11,网格与轴,PDF不给31×67与j/i轴映射,"MAT为31×67；绘图x=列,y=行；计算写stab(l+1,j+1)",计算保存原矩阵；验收同时检查原向与转置，不以命中选参数,CONFLICT_RECORDED
+C12,零时滞,论文n属于正整数,作者循环从0开始且MAT含首行首列,历史网格保留0步；报告与论文理论差异,CONFLICT_RECORDED
+C13,图4-4/图4-5全模型身份,两图对应两类划分,后缀2与板块17相同；后缀3质量/阻尼显著不同,图4-4绑定后缀2；图4-5绑定后缀3，并各自在自身全模型上重建缩聚,CONFLICT_RECORDED
+C14,第二类局部物理坐标,论文延迟psi1/psi6,"pd3作者主坐标[1,7]实际为psi1/psi11",论文路线用完整9维局部矩阵和J=[e1;e4]投影；pd3.MRren不得冒充psi1/psi6,CONFLICT_RECORDED

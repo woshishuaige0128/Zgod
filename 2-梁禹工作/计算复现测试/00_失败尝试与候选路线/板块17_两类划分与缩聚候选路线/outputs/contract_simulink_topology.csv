@@ -1,0 +1,21 @@
+﻿model_file,block_name,block_sid,parameter,value,evidence,status
+lvxvjie_guyan_2.slx,Demux3,4469,Outputs,3,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4469'][@Name=""Demux3""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan_2.slx,Demux4,4470,Outputs,3,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4470'][@Name=""Demux4""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan_2.slx,Demux5,4471,Outputs,3,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4471'][@Name=""Demux5""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan_2.slx,Mux6,4475,Inputs,3,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4475'][@Name=""Mux6""]/P[@Name='Inputs']",OBSERVED
+lvxvjie_guyan_2.slx,Selector3,4383,Indices,[1 6 11],"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4383'][@Name=""Selector3""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan_2.slx,Selector3,4383,InputPortWidth,15,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4383'][@Name=""Selector3""]/P[@Name='InputPortWidth']",OBSERVED
+lvxvjie_guyan_2.slx,Selector5,4495,Indices,[1 2 3],"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4495'][@Name=""Selector5""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan_2.slx,Selector5,4495,InputPortWidth,6,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4495'][@Name=""Selector5""]/P[@Name='InputPortWidth']",OBSERVED
+lvxvjie_guyan_2.slx,Selector9,4427,Indices,[1 2 3],"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4427'][@Name=""Selector9""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan_2.slx,Selector9,4427,InputPortWidth,9,"input/response_chain/lvxvjie_guyan_2.slx!simulink/systems/system_root.xml:/System/Block[@SID='4427'][@Name=""Selector9""]/P[@Name='InputPortWidth']",OBSERVED
+lvxvjie_guyan.slx,Demux3,4469,Outputs,3,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4469'][@Name=""Demux3""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan.slx,Demux4,4470,Outputs,2,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4470'][@Name=""Demux4""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan.slx,Demux5,4471,Outputs,2,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4471'][@Name=""Demux5""]/P[@Name='Outputs']",OBSERVED
+lvxvjie_guyan.slx,Mux6,4475,Inputs,3,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4475'][@Name=""Mux6""]/P[@Name='Inputs']",OBSERVED
+lvxvjie_guyan.slx,Selector3,4383,Indices,[1 11 6],"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4383'][@Name=""Selector3""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan.slx,Selector3,4383,InputPortWidth,15,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4383'][@Name=""Selector3""]/P[@Name='InputPortWidth']",OBSERVED
+lvxvjie_guyan.slx,Selector5,4495,Indices,[1 2],"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4495'][@Name=""Selector5""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan.slx,Selector5,4495,InputPortWidth,5,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4495'][@Name=""Selector5""]/P[@Name='InputPortWidth']",OBSERVED
+lvxvjie_guyan.slx,Selector9,4427,Indices,[1 2],"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4427'][@Name=""Selector9""]/P[@Name='Indices']",OBSERVED
+lvxvjie_guyan.slx,Selector9,4427,InputPortWidth,8,"input/response_chain/lvxvjie_guyan.slx!simulink/systems/system_root.xml:/System/Block[@SID='4427'][@Name=""Selector9""]/P[@Name='InputPortWidth']",OBSERVED

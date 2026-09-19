@@ -1,0 +1,14 @@
+[
+  {
+    "figure": 6,
+    "old": "the corresponding natural frequency is given in the legend.",
+    "new": "the corresponding natural frequencies (Hz) are listed beneath each panel.",
+    "reason": "横向四子图使用共享方法图例，频率数值移至各子图下方，完整保留12项频率。"
+  },
+  {
+    "figure": 13,
+    "old": "The left and right columns correspond to divisions I and II, respectively.",
+    "new": "Panels (a,c) correspond to division I, and panels (b,d) to division II.",
+    "reason": "四子图排成一行后，原左右两列描述不再适用；子图顺序和数据未变。"
+  }
+]

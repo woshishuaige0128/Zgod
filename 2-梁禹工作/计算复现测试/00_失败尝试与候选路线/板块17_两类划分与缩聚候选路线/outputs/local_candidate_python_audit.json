@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "audited_at": "2026-08-25T01:47:39+08:00",
+  "python_executable_required": "D:\\Software\\python\\python.exe",
+  "formula_tolerance": 1e-12,
+  "formula_errors": {
+    "PDmonicanshu2.m": {
+      "T_author_formula_rel": 7.872468610470589e-17,
+      "K_guyan_author_formula_rel": 0.0,
+      "M_guyan_author_formula_rel": 0.0,
+      "C_guyan_author_formula_rel": 5.548042059279182e-17,
+      "M_cb_projection_rel": 0.0,
+      "C_cb_projection_rel": 0.0,
+      "K_cb_projection_rel": 0.0,
+      "max": 7.872468610470589e-17
+    },
+    "PDmonicanshu3.m": {
+      "T_author_formula_rel": 2.102811933524109e-16,
+      "K_guyan_author_formula_rel": 2.3509985869073085e-16,
+      "M_guyan_author_formula_rel": 0.0,
+      "C_guyan_author_formula_rel": 1.4695128369676502e-16,
+      "M_cb_projection_rel": 8.61899924100772e-19,
+      "C_cb_projection_rel": 2.1295930711233934e-17,
+      "K_cb_projection_rel": 6.337683977505997e-18,
+      "max": 2.3509985869073085e-16
+    }
+  },
+  "matrix_csv_rows_checked": 630,
+  "attempt_evidence": {
+    "attempt_count": 12,
+    "literal_error_count": 4,
+    "context_missing_coeff_error_count": 4,
+    "dimension_probe_success_count": 4,
+    "ns2_matrix_vector_rows": [
+      11,
+      15
+    ],
+    "ps3_matrix_vector_rows": [
+      9,
+      6
+    ],
+    "ns3_matrix_vector_locate_rows": [
+      15,
+      15,
+      14
+    ]
+  },
+  "damping_comment_audit": "PASS",
+  "assembled_12d_status": "FAIL_PENDING_DECISION",
+  "assembled_12d_matrix_created": false
+}

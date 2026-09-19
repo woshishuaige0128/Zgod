@@ -1,0 +1,12 @@
+{
+  "schema_version": "board20-step8g-final-v1",
+  "package_seal_status": "PASS",
+  "scientific_reproduction_status": "FAIL_NO_COMPLETE_CALCULATION_REPRODUCTION",
+  "plot_level_reproduction_status": "PASS",
+  "scientific_failure_is_not_packaging_failure": true,
+  "check_count": 28,
+  "pass_count": 28,
+  "fail_count": 0,
+  "canonical": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包",
+  "figure_mirror": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\第4章_缩聚对试验稳定性的影响\\图4-4与图4-5_完整数值复现审计_未通过"
+}

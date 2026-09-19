@@ -1,0 +1,1528 @@
+[
+  {
+    "name": "01_frequency_convergence",
+    "caption": "左：划分一；右：划分二。上：前三阶被动频率误差；下：2.9296875ms共同稳定响应点下0.1–10Hz三楼层复频响整体相对误差。横坐标0对应Guyan，3对应正文CB；仅稳定模型作稳态解释。新增收敛图，对应旧稿频率表。",
+    "old_figure": null,
+    "pdf": "01_frequency_convergence.pdf",
+    "png": "01_frequency_convergence.png",
+    "axes": [
+      {
+        "xlim": [
+          -0.45,
+          9.45
+        ],
+        "ylim": [
+          -1.1496518040275594,
+          24.142687884577768
+        ],
+        "xlabel": "Retained internal modes",
+        "ylabel": "Frequency error (\\%)"
+      },
+      {
+        "xlim": [
+          -0.5,
+          10.5
+        ],
+        "ylim": [
+          -1.1496518040275594,
+          24.142687884577768
+        ],
+        "xlabel": "Retained internal modes",
+        "ylabel": "Frequency error (\\%)"
+      },
+      {
+        "xlim": [
+          -0.45,
+          9.45
+        ],
+        "ylim": [
+          -0.7512977541665705,
+          15.777252837560392
+        ],
+        "xlabel": "Retained internal modes",
+        "ylabel": "FRF norm error (\\%)"
+      },
+      {
+        "xlim": [
+          -0.5,
+          10.5
+        ],
+        "ylim": [
+          -0.7512977541665705,
+          15.777252837560392
+        ],
+        "xlabel": "Retained internal modes",
+        "ylabel": "FRF norm error (\\%)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "02_mode_shapes",
+    "caption": "两种划分的三楼层恢复振型：上排第一阶，下排第二阶；各振型按最大水平位移归一并与完整模型对齐符号。左划分一、右划分二。",
+    "old_figure": 6,
+    "pdf": "02_mode_shapes.pdf",
+    "png": "02_mode_shapes.png",
+    "axes": [
+      {
+        "xlim": [
+          -1.1,
+          1.1
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Normalized horizontal displacement",
+        "ylabel": "Floor"
+      },
+      {
+        "xlim": [
+          -1.1,
+          1.1
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Normalized horizontal displacement",
+        "ylabel": "Floor"
+      },
+      {
+        "xlim": [
+          -1.1,
+          1.1
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Normalized horizontal displacement",
+        "ylabel": "Floor"
+      },
+      {
+        "xlim": [
+          -1.1,
+          1.1
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Normalized horizontal displacement",
+        "ylabel": "Floor"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "03_static_internal_load",
+    "caption": "单位静力等效地震输入下的楼层位移。左划分一、右划分二；划分二中间层的直接受载变形属于被遗漏内部空间。新增机理图，无一一对应旧图。",
+    "old_figure": null,
+    "pdf": "03_static_internal_load.pdf",
+    "png": "03_static_internal_load.png",
+    "axes": [
+      {
+        "xlim": [
+          -0.21139668884260493,
+          4.439330465694703
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Static displacement / input (mm s$^2$/m)",
+        "ylabel": "Floor"
+      },
+      {
+        "xlim": [
+          -0.21139668884260493,
+          4.439330465694703
+        ],
+        "ylim": [
+          -0.15000000000000002,
+          3.15
+        ],
+        "xlabel": "Static displacement / input (mm s$^2$/m)",
+        "ylabel": "Floor"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR6",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "04_frf_normal",
+    "caption": "中间层物理恢复频响，左划分一τ=1.953125ms、右划分二τ=2.929688ms。上幅值、中相位、下相对于同τ Full15的复频响绝对误差。此处为三者共同稳定响应点，完整模型临界前候选点另列。新增频域图。",
+    "old_figure": null,
+    "pdf": "04_frf_normal.pdf",
+    "png": "04_frf_normal.png",
+    "axes": [
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -1.831292409149486,
+          38.942806822896735
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -1.831292409149486,
+          38.942806822896735
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -188.34630885319942,
+          8.79995120252715
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Phase (deg)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -188.34630885319942,
+          8.79995120252715
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Phase (deg)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -0.26805819538327874,
+          5.638700795848978
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -0.26805819538327874,
+          5.638700795848978
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR6",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "04_frf_near",
+    "caption": "中间层物理恢复频响，左划分一τ=2.929688ms、右划分二τ=2.929688ms。上幅值、中相位、下相对于同τ Full15的复频响绝对误差。此处为三者共同稳定响应点，完整模型临界前候选点另列。新增频域图。",
+    "old_figure": null,
+    "pdf": "04_frf_near.pdf",
+    "png": "04_frf_near.png",
+    "axes": [
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -1.831292409149486,
+          38.942806822896735
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -1.831292409149486,
+          38.942806822896735
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -189.42918498436333,
+          8.79995120252715
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Phase (deg)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -189.42918498436333,
+          8.79995120252715
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Phase (deg)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -0.26805819538327874,
+          5.638700795848978
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          0.1,
+          10.0
+        ],
+        "ylim": [
+          -0.26805819538327874,
+          5.638700795848978
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR6",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "05_equal_delay_poles",
+    "caption": "两通道等时滞，步长h/4。上排由全部增广根最大模换算的最小衰减率，过零表示失去渐近稳定；下排对应主导根频率，换支时可跳变。左划分一、右划分二。旧图14为其他实现的双时滞稳定域，仅作历史主题对照。",
+    "old_figure": 14,
+    "pdf": "05_equal_delay_poles.pdf",
+    "png": "05_equal_delay_poles.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          7.8125
+        ],
+        "ylim": [
+          -6.728842197598572,
+          1.2114945343123815
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Minimum decay rate (s$^{-1}$)"
+      },
+      {
+        "xlim": [
+          0.0,
+          7.8125
+        ],
+        "ylim": [
+          -6.728842197598572,
+          1.2114945343123815
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Minimum decay rate (s$^{-1}$)"
+      },
+      {
+        "xlim": [
+          0.0,
+          7.8125
+        ],
+        "ylim": [
+          1.8909992880203812,
+          19.777795821675014
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Dominant frequency (Hz)"
+      },
+      {
+        "xlim": [
+          0.0,
+          7.8125
+        ],
+        "ylim": [
+          1.8909992880203812,
+          19.777795821675014
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Dominant frequency (Hz)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR6",
+      "CMR9",
+      "CMSY6",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "06_delay_boundary_refinement",
+    "caption": "首次失稳的相邻整数网格区间，误差棒是网格区间半宽；标记位于区间中点以便显示，不表示额外精度的临界值。左划分一、右划分二。",
+    "old_figure": 14,
+    "pdf": "06_delay_boundary_refinement.pdf",
+    "png": "06_delay_boundary_refinement.png",
+    "axes": [
+      {
+        "xlim": [
+          0.85,
+          4.15
+        ],
+        "ylim": [
+          2.783203125,
+          6.005859375
+        ],
+        "xlabel": "Step refinement factor",
+        "ylabel": "First crossing bracket (ms)"
+      },
+      {
+        "xlim": [
+          0.85,
+          4.15
+        ],
+        "ylim": [
+          2.783203125,
+          6.005859375
+        ],
+        "xlabel": "Step refinement factor",
+        "ylabel": "First crossing bracket (ms)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "07_earthquake_division1",
+    "caption": "划分1，共同稳定响应点等时滞2.929688ms。三行依次首层、中间层、顶层，左为真实响应，右为同τ缩聚误差；原40s地震记录保持。两划分响应及误差分别使用相同纵轴。",
+    "old_figure": 7,
+    "pdf": "07_earthquake_division1.pdf",
+    "png": "07_earthquake_division1.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "08_tone_division1_3",
+    "caption": "划分1，等时滞2.929688ms，Full15选定频率2.703818Hz。左中间层、右顶层；0s撤去激励并延续时滞历史。显示撤载前5周期与自由响应局部，完整记录另存。新增定频图，无一一对应旧图。",
+    "old_figure": null,
+    "pdf": "08_tone_division1_3.pdf",
+    "png": "08_tone_division1_3.png",
+    "axes": [
+      {
+        "xlim": [
+          -2.379345703125,
+          9.296337890625
+        ],
+        "ylim": [
+          -59.00585622246915,
+          59.00479240300374
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -2.379345703125,
+          9.296337890625
+        ],
+        "ylim": [
+          -59.00585622246915,
+          59.00479240300374
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -2.379345703125,
+          9.296337890625
+        ],
+        "ylim": [
+          -0.21939445845301186,
+          0.21938387460696923
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          -2.379345703125,
+          9.296337890625
+        ],
+        "ylim": [
+          -0.21939445845301186,
+          0.21938387460696923
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "08_tone_division1_4",
+    "caption": "划分1，等时滞2.929688ms，Full15选定频率9.322226Hz。左中间层、右顶层；0s撤去激励并延续时滞历史。显示撤载前5周期与自由响应局部，完整记录另存。新增定频图，无一一对应旧图。",
+    "old_figure": null,
+    "pdf": "08_tone_division1_4.pdf",
+    "png": "08_tone_division1_4.png",
+    "axes": [
+      {
+        "xlim": [
+          -1.001220703125,
+          9.230712890625
+        ],
+        "ylim": [
+          -1.9116216639635015,
+          1.6336072207797399
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -1.001220703125,
+          9.230712890625
+        ],
+        "ylim": [
+          -1.9116216639635015,
+          1.6336072207797399
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -1.001220703125,
+          9.230712890625
+        ],
+        "ylim": [
+          -0.18298423441253073,
+          0.18345712947095805
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          -1.001220703125,
+          9.230712890625
+        ],
+        "ylim": [
+          -0.18298423441253073,
+          0.18345712947095805
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "07_earthquake_division2",
+    "caption": "划分2，共同稳定响应点等时滞2.929688ms。三行依次首层、中间层、顶层，左为真实响应，右为同τ缩聚误差；原40s地震记录保持。两划分响应及误差分别使用相同纵轴。",
+    "old_figure": [
+      8,
+      9
+    ],
+    "pdf": "07_earthquake_division2.pdf",
+    "png": "07_earthquake_division2.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -13.940576621194264,
+          13.940576621194264
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -1.2338190087499137,
+          1.2338190087499137
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "08_tone_division2_1",
+    "caption": "划分2，等时滞2.929688ms，Full15选定频率2.704439Hz。左中间层、右顶层；0s撤去激励并延续时滞历史。显示撤载前5周期与自由响应局部，完整记录另存。新增定频图，无一一对应旧图。",
+    "old_figure": null,
+    "pdf": "08_tone_division2_1.pdf",
+    "png": "08_tone_division2_1.png",
+    "axes": [
+      {
+        "xlim": [
+          -2.486767578125,
+          11.552197265625
+        ],
+        "ylim": [
+          -62.06127124266913,
+          62.060462386021996
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -2.486767578125,
+          11.552197265625
+        ],
+        "ylim": [
+          -62.06127124266913,
+          62.060462386021996
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -2.486767578125,
+          11.552197265625
+        ],
+        "ylim": [
+          -8.617845616868197,
+          8.628825476368878
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          -2.486767578125,
+          11.552197265625
+        ],
+        "ylim": [
+          -8.617845616868197,
+          8.628825476368878
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "08_tone_division2_2",
+    "caption": "划分2，等时滞2.929688ms，Full15选定频率9.329600Hz。左中间层、右顶层；0s撤去激励并延续时滞历史。显示撤载前5周期与自由响应局部，完整记录另存。新增定频图，无一一对应旧图。",
+    "old_figure": null,
+    "pdf": "08_tone_division2_2.pdf",
+    "png": "08_tone_division2_2.png",
+    "axes": [
+      {
+        "xlim": [
+          -1.1076171875,
+          11.4865234375
+        ],
+        "ylim": [
+          -3.014202846821576,
+          2.424702768493453
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -1.1076171875,
+          11.4865234375
+        ],
+        "ylim": [
+          -3.014202846821576,
+          2.424702768493453
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -1.1076171875,
+          11.4865234375
+        ],
+        "ylim": [
+          -2.0777989418132377,
+          2.0778125072622093
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          -1.1076171875,
+          11.4865234375
+        ],
+        "ylim": [
+          -2.0777989418132377,
+          2.0778125072622093
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "09_earthquake_errors",
+    "caption": "中间层地震全记录NRMSE。上排参照同τ Full15，隔离缩聚误差；下排参照原无时滞无控制RK4完整框架，衡量总偏差。两行分母分别取各自完整参照峰峰值，百分比不相加。左划分一、右划分二。新增误差汇总，对应旧稿NRMSE表。",
+    "old_figure": null,
+    "pdf": "09_earthquake_errors.pdf",
+    "png": "09_earthquake_errors.png",
+    "axes": [
+      {
+        "xlim": [
+          -0.146484375,
+          3.076171875
+        ],
+        "ylim": [
+          -0.016794971902620227,
+          1.0318852899326472
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "NRMSE (\\%)"
+      },
+      {
+        "xlim": [
+          -0.146484375,
+          3.076171875
+        ],
+        "ylim": [
+          -0.016794971902620227,
+          1.0318852899326472
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "NRMSE (\\%)"
+      },
+      {
+        "xlim": [
+          -0.146484375,
+          3.076171875
+        ],
+        "ylim": [
+          -0.06268849469481191,
+          1.7842792309273596
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "NRMSE (\\%)"
+      },
+      {
+        "xlim": [
+          -0.146484375,
+          3.076171875
+        ],
+        "ylim": [
+          -0.06268849469481191,
+          1.7842792309273596
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "NRMSE (\\%)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "10_slow_chirp",
+    "caption": "正常非零等时滞下，覆盖Full15第二共振附近的慢扫频同步解调结果。上幅值，下相对于同τ Full15的复幅值误差；扫速减半结果及准稳态检查见表。左划分一、右划分二。旧图为0.1–10Hz/40s快扫，激励不同，属于主题对照。",
+    "old_figure": [
+      10,
+      11,
+      12
+    ],
+    "pdf": "10_slow_chirp.pdf",
+    "png": "10_slow_chirp.png",
+    "axes": [
+      {
+        "xlim": [
+          8.087425625344979,
+          10.54719563121027
+        ],
+        "ylim": [
+          -0.19420586247537486,
+          4.56805034962347
+        ],
+        "xlabel": "Instantaneous frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          8.098092498400744,
+          10.561106806670095
+        ],
+        "ylim": [
+          -0.19420586247537486,
+          4.56805034962347
+        ],
+        "xlabel": "Instantaneous frequency (Hz)",
+        "ylabel": "Amplitude (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          8.087425625344979,
+          10.54719563121027
+        ],
+        "ylim": [
+          -0.20756160728882406,
+          4.448310794752171
+        ],
+        "xlabel": "Instantaneous frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          8.098092498400744,
+          10.561106806670095
+        ],
+        "ylim": [
+          -0.20756160728882406,
+          4.448310794752171
+        ],
+        "xlabel": "Instantaneous frequency (Hz)",
+        "ylabel": "Complex error (mm s$^2$/m)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR6",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "11_fast_chirp_division1",
+    "caption": "划分1，等时滞2.929688ms，原0.1–10Hz/40s快速扫频。三行依次三个楼层；左真实响应，右同τ误差。保留原输入用于区分时滞影响与扫速变化。",
+    "old_figure": 10,
+    "pdf": "11_fast_chirp_division1.pdf",
+    "png": "11_fast_chirp_division1.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -43.5596208783343,
+          43.397817792952
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -0.18408630864033898,
+          0.18407808364318937
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -43.5596208783343,
+          43.397817792952
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -0.18408630864033898,
+          0.18407808364318937
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -43.5596208783343,
+          43.397817792952
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -0.18408630864033898,
+          0.18407808364318937
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "11_fast_chirp_division2",
+    "caption": "划分2，等时滞2.929688ms，原0.1–10Hz/40s快速扫频。三行依次三个楼层；左真实响应，右同τ误差。保留原输入用于区分时滞影响与扫速变化。",
+    "old_figure": [
+      11,
+      12
+    ],
+    "pdf": "11_fast_chirp_division2.pdf",
+    "png": "11_fast_chirp_division2.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -44.90319484264837,
+          45.191809869259195
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -4.588342691342644,
+          4.640207291395134
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -44.90319484264837,
+          45.191809869259195
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -4.588342691342644,
+          4.640207291395134
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -44.90319484264837,
+          45.191809869259195
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          0.0,
+          40.0
+        ],
+        "ylim": [
+          -4.588342691342644,
+          4.640207291395134
+        ],
+        "xlabel": "Time (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR9",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "12_peak_story_drift",
+    "caption": "2.9296875ms等时滞下峰值层间位移角；上地震、下原快速扫频，左划分一、右划分二。层高0.635m；图中mrad=1000×层间位移/层高。",
+    "old_figure": 13,
+    "pdf": "12_peak_story_drift.pdf",
+    "png": "12_peak_story_drift.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0,
+          8.70101138674547
+        ],
+        "ylim": [
+          0.9,
+          3.1
+        ],
+        "xlabel": "Peak absolute drift (mrad)",
+        "ylabel": "Storey"
+      },
+      {
+        "xlim": [
+          0.0,
+          8.70101138674547
+        ],
+        "ylim": [
+          0.9,
+          3.1
+        ],
+        "xlabel": "Peak absolute drift (mrad)",
+        "ylabel": "Storey"
+      },
+      {
+        "xlim": [
+          0.0,
+          26.50129709198481
+        ],
+        "ylim": [
+          0.9,
+          3.1
+        ],
+        "xlabel": "Peak absolute drift (mrad)",
+        "ylabel": "Storey"
+      },
+      {
+        "xlim": [
+          0.0,
+          26.50129709198481
+        ],
+        "ylim": [
+          0.9,
+          3.1
+        ],
+        "xlabel": "Peak absolute drift (mrad)",
+        "ylabel": "Storey"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR9"
+    ]
+  },
+  {
+    "name": "13_prediction_identification",
+    "caption": "等时滞2.9296875ms，撤载自由响应的输出识别与全部增广极点预测。上频率，下衰减率；每方法两个点对应完整模型选择的两个激励频段。灰线为完全一致。左划分一、右划分二。新增理论验证图。",
+    "old_figure": null,
+    "pdf": "13_prediction_identification.pdf",
+    "png": "13_prediction_identification.png",
+    "axes": [
+      {
+        "xlim": [
+          2.3730197174889955,
+          9.699345649861966
+        ],
+        "ylim": [
+          2.3730197174889955,
+          9.699345649861966
+        ],
+        "xlabel": "Predicted (Hz)",
+        "ylabel": "Identified (Hz)"
+      },
+      {
+        "xlim": [
+          2.340408654355209,
+          10.400417989178605
+        ],
+        "ylim": [
+          2.340408654355209,
+          10.400417989178605
+        ],
+        "xlabel": "Predicted (Hz)",
+        "ylabel": "Identified (Hz)"
+      },
+      {
+        "xlim": [
+          0.616435165909284,
+          2.1139122773798142
+        ],
+        "ylim": [
+          0.616435165909284,
+          2.1139122773798142
+        ],
+        "xlabel": "Predicted (s$^{-1}$)",
+        "ylabel": "Identified (s$^{-1}$)"
+      },
+      {
+        "xlim": [
+          0.5015623436691009,
+          1.5618907821848325
+        ],
+        "ylim": [
+          0.5015623436691009,
+          1.5618907821848325
+        ],
+        "xlabel": "Predicted (s$^{-1}$)",
+        "ylabel": "Identified (s$^{-1}$)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR6",
+      "CMR9",
+      "CMSY6"
+    ]
+  },
+  {
+    "name": "14_fixed_gain_supplement",
+    "caption": "历史固定2×4增益的补充结果，原步长。所有方法使用同一增益，不重新设计控制器。左划分一、右划分二；主结果仍为零附加增益、保留物理反馈。",
+    "old_figure": 14,
+    "pdf": "14_fixed_gain_supplement.pdf",
+    "png": "14_fixed_gain_supplement.png",
+    "axes": [
+      {
+        "xlim": [
+          -0.390625,
+          8.203125
+        ],
+        "ylim": [
+          -11.085632081175788,
+          1.420336154434053
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Minimum decay rate (s$^{-1}$)"
+      },
+      {
+        "xlim": [
+          -0.390625,
+          8.203125
+        ],
+        "ylim": [
+          -11.085632081175788,
+          1.420336154434053
+        ],
+        "xlabel": "Equal delay (ms)",
+        "ylabel": "Minimum decay rate (s$^{-1}$)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMR6",
+      "CMR9",
+      "CMSY6",
+      "CMSY9"
+    ]
+  },
+  {
+    "name": "15_critical_frequency",
+    "caption": "2.9296875ms共同稳定响应点，首次失稳Full15极点频率的0.8–1.2倍频窗。频窗由完整模型决定；三楼层物理频响二范数及误差。约18Hz的临界运动不在原0.1–10Hz扫频内。左划分一、右划分二。新增稳定性机理图。",
+    "old_figure": null,
+    "pdf": "15_critical_frequency.pdf",
+    "png": "15_critical_frequency.png",
+    "axes": [
+      {
+        "xlim": [
+          14.293449445145237,
+          22.356420927022032
+        ],
+        "ylim": [
+          0.06167982379866947,
+          1.09551701907418
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "FRF norm (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          14.190861200920468,
+          22.195962391183294
+        ],
+        "ylim": [
+          0.06167982379866947,
+          1.09551701907418
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "FRF norm (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          14.293449445145237,
+          22.356420927022032
+        ],
+        "ylim": [
+          -0.04155285300630789,
+          0.9172886825604267
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Error norm (mm s$^2$/m)"
+      },
+      {
+        "xlim": [
+          14.190861200920468,
+          22.195962391183294
+        ],
+        "ylim": [
+          -0.04155285300630789,
+          0.9172886825604267
+        ],
+        "xlabel": "Frequency (Hz)",
+        "ylabel": "Error norm (mm s$^2$/m)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR6",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "16_sweep_speed_check",
+    "caption": "慢扫频复幅值相对于同方法准稳态频响的误差；灰线1%。另以相邻两次扫速减半差不超过1%作为共同终止条件。左划分一、右划分二。该图检验扫频速度，不是缩聚精度排名。",
+    "old_figure": null,
+    "pdf": "16_sweep_speed_check.pdf",
+    "png": "16_sweep_speed_check.png",
+    "axes": [
+      {
+        "xlim": [
+          0.0032992995735758182,
+          0.00711954118508466
+        ],
+        "ylim": [
+          -0.056673856490120966,
+          3.968167246212629
+        ],
+        "xlabel": "Sweep rate (Hz/s)",
+        "ylabel": "Quasi-steady error (\\%)"
+      },
+      {
+        "xlim": [
+          0.0006166594089307136,
+          0.003010748878897013
+        ],
+        "ylim": [
+          -0.056673856490120966,
+          3.968167246212629
+        ],
+        "xlabel": "Sweep rate (Hz/s)",
+        "ylabel": "Quasi-steady error (\\%)"
+      }
+    ],
+    "pdf_vector": true,
+    "dpi": 600,
+    "fonts": [
+      "CMMI9",
+      "CMR9"
+    ]
+  },
+  {
+    "name": "17_steady_free_detail",
+    "caption": "划分二、中间层，等时滞2.9296875ms，激励9.32959965Hz。左为撤载前最后3周期，右为撤载后的3个完整模型相关模态衰减时间常数；完整记录另存。上为位移，下为同τ误差，两列各行同纵轴。新增定频局部图。",
+    "old_figure": null,
+    "pdf": "17_steady_free_detail.pdf",
+    "png": "17_steady_free_detail.png",
+    "pdf_vector": true,
+    "dpi": 600,
+    "axes": [
+      {
+        "xlim": [
+          -0.3373046875,
+          0.015039062500000002
+        ],
+        "ylim": [
+          -2.863507711455508,
+          2.863507711455508
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -0.099072265625,
+          2.080517578125
+        ],
+        "ylim": [
+          -2.863507711455508,
+          2.863507711455508
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Displacement (mm)"
+      },
+      {
+        "xlim": [
+          -0.3373046875,
+          0.015039062500000002
+        ],
+        "ylim": [
+          -2.0774803222779896,
+          2.0774803222779896
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      },
+      {
+        "xlim": [
+          -0.099072265625,
+          2.080517578125
+        ],
+        "ylim": [
+          -2.0774803222779896,
+          2.0774803222779896
+        ],
+        "xlabel": "Time from unloading (s)",
+        "ylabel": "Error (mm)"
+      }
+    ],
+    "fonts": [
+      "CMMI9",
+      "CMR9",
+      "CMSY9"
+    ]
+  }
+]

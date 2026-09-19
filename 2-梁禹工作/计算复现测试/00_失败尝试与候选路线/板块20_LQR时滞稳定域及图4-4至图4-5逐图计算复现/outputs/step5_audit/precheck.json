@@ -1,0 +1,894 @@
+{
+  "checks": [
+    {
+      "actual": [],
+      "category": "files",
+      "check_id": "S5-PRE-0001",
+      "description": "步骤5合同与脚本存在",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": "board20_step5_validation_contract_v1",
+      "category": "contract",
+      "check_id": "S5-PRE-0002",
+      "description": "验收合同版本",
+      "evidence": "",
+      "expected": "board20_step5_validation_contract_v1",
+      "status": "PASS"
+    },
+    {
+      "actual": "board20_step5_independent_compute_contract_v1",
+      "category": "contract",
+      "check_id": "S5-PRE-0003",
+      "description": "独立计算合同版本",
+      "evidence": "",
+      "expected": "board20_step5_independent_compute_contract_v1",
+      "status": "PASS"
+    },
+    {
+      "actual": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "category": "contract",
+      "check_id": "S5-PRE-0004",
+      "description": "独立计算脚本最终SHA-256封签",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "status": "PASS"
+    },
+    {
+      "actual": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "category": "contract",
+      "check_id": "S5-PRE-0005",
+      "description": "独立计算合同最终SHA-256封签",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "status": "PASS"
+    },
+    {
+      "actual": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "category": "contract",
+      "check_id": "S5-PRE-0006",
+      "description": "计算合同锁定步骤4路线清单哈希",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json",
+      "expected": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-PRE-0007",
+      "description": "validation恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-PRE-0008",
+      "description": "compute恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "category": "route_identity",
+      "check_id": "S5-PRE-0009",
+      "description": "step4_manifest恰含五条封签路线",
+      "evidence": "",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          6
+        ],
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-PRE-0010",
+      "description": "main_ori_div1公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          6
+        ],
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "category": "route_identity",
+      "check_id": "S5-PRE-0011",
+      "description": "main_ori_div1封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0012",
+      "description": "main_ori_div1矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-PRE-0013",
+      "description": "main_guyan_div1公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "category": "route_identity",
+      "check_id": "S5-PRE-0014",
+      "description": "main_guyan_div1封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0015",
+      "description": "main_guyan_div1矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "workspace": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-PRE-0016",
+      "description": "alt_guyan_div1_stable_full_ps3公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "workspace": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "category": "route_identity",
+      "check_id": "S5-PRE-0017",
+      "description": "alt_guyan_div1_stable_full_ps3封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_complete.mat",
+      "expected": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0018",
+      "description": "alt_guyan_div1_stable_full_ps3矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-PRE-0019",
+      "description": "main_ori_div2公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "category": "route_identity",
+      "check_id": "S5-PRE-0020",
+      "description": "main_ori_div2封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0021",
+      "description": "main_ori_div2矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "category": "route_identity",
+      "check_id": "S5-PRE-0022",
+      "description": "main_guyan_div2公式、角色、延迟自由度和工作区身份",
+      "evidence": "",
+      "expected": {
+        "delay_dofs": [
+          1,
+          2
+        ],
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "workspace": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "category": "route_identity",
+      "check_id": "S5-PRE-0023",
+      "description": "main_guyan_div2封签工作区SHA-256",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat",
+      "expected": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0024",
+      "description": "main_guyan_div2矩阵输入变量不含MATLAB科学答案",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "points_per_route": 2077,
+        "shape": [
+          31,
+          67
+        ],
+        "total_points": 10385
+      },
+      "category": "grid_contract",
+      "check_id": "S5-PRE-0025",
+      "description": "全网格为五路线各31×67共10385点",
+      "evidence": "",
+      "expected": {
+        "points_per_route": 2077,
+        "shape": [
+          31,
+          67
+        ],
+        "total_points": 10385
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "alt_guyan_div1_stable_full_ps3": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ],
+        "main_ori_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_ori_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ]
+      },
+      "category": "grid_contract",
+      "check_id": "S5-PRE-0026",
+      "description": "41个预登记真实试点逐路线一致",
+      "evidence": "",
+      "expected": {
+        "alt_guyan_div1_stable_full_ps3": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_guyan_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ],
+        "main_ori_div1": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ]
+        ],
+        "main_ori_div2": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            66
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            25,
+            60
+          ],
+          [
+            5,
+            66
+          ]
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0027",
+      "description": "独立计算脚本没有把步骤4网格写成I/O字面量",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0028",
+      "description": "独立计算合同没有活动步骤4网格输入路径",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "separation",
+      "check_id": "S5-PRE-0029",
+      "description": "独立计算脚本不调用MATLAB求解器",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "compact": "2*n+l+j",
+        "full_q": "n*(max(l,j)+2)"
+      },
+      "category": "algorithm_contract",
+      "check_id": "S5-PRE-0030",
+      "description": "紧凑标量增广和全q伴随阶数分开登记",
+      "evidence": "",
+      "expected": {
+        "compact": "2*n+l+j",
+        "full_q": "n*(max(l,j)+2)"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "formula": 1e-12,
+        "laurent_residual": 1e-08,
+        "near_threshold": 0.9,
+        "near_unit": 1e-08,
+        "poly_residual": 1e-08,
+        "rho": 1e-08
+      },
+      "category": "numeric_contract",
+      "check_id": "S5-PRE-0031",
+      "description": "公式身份1e-12、rho/近单位根与残差1e-8门槛固定",
+      "evidence": "",
+      "expected": {
+        "formula": 1e-12,
+        "laurent_residual": 1e-08,
+        "near_threshold": 0.9,
+        "near_unit": 1e-08,
+        "poly_residual": 1e-08,
+        "rho": 1e-08
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "CONTRACT_NOT_CLOSED",
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "category": "paper_contract",
+      "check_id": "S5-PRE-0032",
+      "description": "硕士论文和小论文公式路线均保持合同未闭合",
+      "evidence": "",
+      "expected": [
+        "CONTRACT_NOT_CLOSED",
+        "CONTRACT_NOT_CLOSED"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "category": "failed_routes",
+      "check_id": "S5-PRE-0033",
+      "description": "独立计算合同显式登记四条上游失败路线DO_NOT_CREATE",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+      "expected": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual": [],
+      "category": "failed_routes",
+      "check_id": "S5-PRE-0034",
+      "description": "四失败路线和两论文未闭合路线均无科学网格目录",
+      "evidence": "",
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "actual": "A5D5ED0977547438365C1967EE8A0C63FF5259006CB4979050871F1957069E94",
+      "category": "protected_source",
+      "check_id": "S5-PRE-0035",
+      "description": "板块20输入冻结清单SHA-256不变",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\input_manifest.csv",
+      "expected": "A5D5ED0977547438365C1967EE8A0C63FF5259006CB4979050871F1957069E94",
+      "status": "PASS"
+    },
+    {
+      "actual": 185,
+      "category": "protected_source",
+      "check_id": "S5-PRE-0036",
+      "description": "输入冻结清单行数",
+      "evidence": "item_id,category,role,source_absolute_path,source_relative_label,frozen_relative_path,source_size_bytes,source_mtime_iso,source_sha256,frozen_size_bytes,frozen_sha256,live_change_policy,status",
+      "expected": 185,
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "checked": 185,
+        "failures": []
+      },
+      "category": "protected_source",
+      "check_id": "S5-PRE-0037",
+      "description": "185份冻结输入逐文件SHA-256复核",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "checked": 181,
+        "failures": []
+      },
+      "category": "protected_source",
+      "check_id": "S5-PRE-0038",
+      "description": "immutable实时源逐文件SHA-256复核",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\input\\input_manifest.csv",
+      "expected": {
+        "failures": 0
+      },
+      "status": "PASS"
+    }
+  ],
+  "paths": {
+    "audit_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_audit",
+    "compute_contract": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_compute_contract.json",
+    "compute_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step5_independent_compute",
+    "compute_script": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\compute_board20_step5_independent.py",
+    "log_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step5_validation",
+    "step4_manifest": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json",
+    "validation_contract": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step5_validation_contract.json"
+  },
+  "schema_version": "board20_step5_validation_result_v1",
+  "summary": {
+    "failed_checks": 0,
+    "information_checks": 0,
+    "mode": "precheck",
+    "overall_status": "PASS",
+    "passed_checks": 38,
+    "total_checks": 38
+  },
+  "validator": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\validate_board20_step5.py",
+    "sha256": "8F81638259AD120ED4D271F00779C7B84D42F041E606BE425CE74E0283B091F5"
+  }
+}

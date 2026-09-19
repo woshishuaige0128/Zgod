@@ -1,0 +1,64 @@
+{
+  "schema_version": "FIG10_STRICT_EVALUATOR_SELFTEST_V1",
+  "status": "PASS",
+  "checks": {
+    "exact_dynamic_copy_passes": true,
+    "one_point_perturbation_fails": true,
+    "perturbed_ordered_exact_false": true,
+    "perturbed_set_exact_false": true,
+    "perturbed_hausdorff_one_step": true,
+    "perturbed_edit_distance_one": true,
+    "uint8_target_conversion_was_promoted_safely": true
+  },
+  "exact_overall_status": "PASS",
+  "perturbed_overall_status": "FAIL",
+  "perturbed_curve_metrics": {
+    "curve_id": "division1_original",
+    "figure_id": "4-4",
+    "division": 1,
+    "method": "Original",
+    "input_type": "boundary_csv",
+    "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division1_original.csv",
+    "candidate_source_sha256": "CE8F9812986580232158A48FBF2E88E4356963334165F9B4DDE2F495C1CB18D0",
+    "target_point_count": 72,
+    "candidate_point_count": 72,
+    "expected_point_count": 72,
+    "point_count_exact": true,
+    "candidate_unique_point_count": 72,
+    "candidate_duplicate_point_count": 0,
+    "target_unique_point_count": 72,
+    "ordered_exact_original": false,
+    "ordered_exact_reversed_diagnostic": false,
+    "set_exact": false,
+    "start_endpoint_exact": false,
+    "end_endpoint_exact": true,
+    "candidate_start_endpoint": [
+      65,
+      2
+    ],
+    "candidate_end_endpoint": [
+      2,
+      31
+    ],
+    "target_start_endpoint": [
+      64,
+      2
+    ],
+    "target_end_endpoint": [
+      2,
+      31
+    ],
+    "endpoint_l1_error_steps_original": 1,
+    "symmetric_hausdorff_steps": 1.0,
+    "symmetric_hausdorff_ms": 0.9765625,
+    "point_levenshtein_original": 1,
+    "point_levenshtein_reversed_diagnostic": 72,
+    "candidate_declared_ms_present": true,
+    "candidate_declared_step_to_ms_max_abs_error": 0.0,
+    "ordered_candidate_to_target_ms_max_abs_error": 0.9765625,
+    "ms_tolerance": 1e-12,
+    "strict_curve_status": "FAIL",
+    "mask_metadata": null
+  },
+  "evaluator_sha256": "B3407620429F9EA2578E80450F59D88F2BDB5A0F6687193ED3C012AA93A35382"
+}

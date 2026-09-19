@@ -1,0 +1,877 @@
+{
+  "pass": true,
+  "checked_at_local": "2026-09-11T16:30:14",
+  "scope": "Read-only SVG native-object, text-preservation, endpoint-arrow and actual-render visual QA",
+  "renderer": "Bundled Node sharp via presentations/container_tools/rasterize_svg.mjs",
+  "font_substitution_needed": false,
+  "total_arrows": 58,
+  "total_directions": {
+    "translation_right": 14,
+    "rotation_up": 42,
+    "axis_up": 1,
+    "axis_right": 1
+  },
+  "figures": [
+    {
+      "figure": 3,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\draft\\fig3_generated_editable.svg",
+      "sha256": "eea65c942e2423bef0212b9161d2e0ec94852ead9d4db3c2c4f73ec0c0abb682",
+      "baseline": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\backup\\fig3_generated_editable.svg",
+      "baseline_sha256": "fbe327a61e6d9be388c21fb431ae8da4748dcac7b2f7f0658d1ff9be33259392",
+      "counts": {
+        "objects": 102,
+        "objects_by_kind": {
+          "path": 51,
+          "text": 33,
+          "ellipse": 18
+        },
+        "text": 33,
+        "tspan": 48,
+        "image": 0,
+        "marker_definitions": 17,
+        "marker_end_paths": 17,
+        "separate_head_objects": 0,
+        "arrow_directions": {
+          "translation_right": 3,
+          "rotation_up": 12,
+          "axis_up": 1,
+          "axis_right": 1
+        }
+      },
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\preview\\svg\\fig3_sharp.png",
+      "render_sha256": "a3ff80fddc70b73c138f4cd656e9db58bfeaca16a7ec2eb74909bc3868af2182",
+      "render_pixels": [
+        1122,
+        1402
+      ],
+      "checks": {
+        "expected_marker_count": true,
+        "one_attached_marker_per_arrow": true,
+        "directions_correct": true,
+        "no_separate_head_objects": true,
+        "only_original_head_objects_removed": true,
+        "all_text_content_format_and_position_preserved": true,
+        "no_image_or_foreign_object": true,
+        "expected_native_object_count": true,
+        "no_text_format_whitespace": true,
+        "ids_unique": true,
+        "times_new_roman_preserved": true,
+        "render_dimensions_correct": true,
+        "render_after_source": true,
+        "actual_render_visually_inspected": true,
+        "no_visible_overlap_or_clipping": true
+      },
+      "arrows": [
+        {
+          "id": "fig3_floor_1_translation",
+          "marker_id": "fig3_floor_1_translation_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            921.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_1_1",
+          "marker_id": "fig3_rotation_1_1_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_1_2",
+          "marker_id": "fig3_rotation_1_2_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_1_3",
+          "marker_id": "fig3_rotation_1_3_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_1_4",
+          "marker_id": "fig3_rotation_1_4_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_floor_2_translation",
+          "marker_id": "fig3_floor_2_translation_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            921.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_2_1",
+          "marker_id": "fig3_rotation_2_1_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_2_2",
+          "marker_id": "fig3_rotation_2_2_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_2_3",
+          "marker_id": "fig3_rotation_2_3_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_2_4",
+          "marker_id": "fig3_rotation_2_4_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.659999999999968
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_floor_3_translation",
+          "marker_id": "fig3_floor_3_translation_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            921.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_3_1",
+          "marker_id": "fig3_rotation_3_1_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.660000000000025
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_3_2",
+          "marker_id": "fig3_rotation_3_2_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.660000000000025
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_3_3",
+          "marker_id": "fig3_rotation_3_3_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.660000000000025
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_rotation_3_4",
+          "marker_id": "fig3_rotation_3_4_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -16.660000000000025
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_axis_y",
+          "marker_id": "fig3_axis_y_end_marker",
+          "curved": false,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -131.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig3_axis_x",
+          "marker_id": "fig3_axis_x_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            124.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        }
+      ],
+      "visual_observation": "Figure 3: all 12 smooth rotation curves terminate in attached upward arrowheads; 3 translation arrows point right; blue axes point up/right. Node and coordinate labels are complete."
+    },
+    {
+      "figure": 4,
+      "pass": true,
+      "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\draft\\fig4_generated_editable.svg",
+      "sha256": "f5aaa53667f6b3799c5837523bcae44c75874a1aecfb6414aaf4134be31a4993",
+      "baseline": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\backup\\fig4_generated_editable.svg",
+      "baseline_sha256": "fc71320a577734e0e69a256c77be8cc0fde790e22904ce4923696cc1fee60bcb",
+      "counts": {
+        "objects": 253,
+        "objects_by_kind": {
+          "rect": 4,
+          "text": 88,
+          "path": 123,
+          "ellipse": 38
+        },
+        "text": 88,
+        "tspan": 129,
+        "image": 0,
+        "marker_definitions": 41,
+        "marker_end_paths": 41,
+        "separate_head_objects": 0,
+        "arrow_directions": {
+          "rotation_up": 30,
+          "translation_right": 11
+        }
+      },
+      "render": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_arrow_fix_20260911\\preview\\svg\\fig4_sharp.png",
+      "render_sha256": "1fe534401533abcc2a65b28b7041aa38a9ddcb7e9eb130c4cb2bc3b40c008018",
+      "render_pixels": [
+        1254,
+        1254
+      ],
+      "checks": {
+        "expected_marker_count": true,
+        "one_attached_marker_per_arrow": true,
+        "directions_correct": true,
+        "no_separate_head_objects": true,
+        "only_original_head_objects_removed": true,
+        "all_text_content_format_and_position_preserved": true,
+        "no_image_or_foreign_object": true,
+        "expected_native_object_count": true,
+        "no_text_format_whitespace": true,
+        "ids_unique": true,
+        "times_new_roman_preserved": true,
+        "render_dimensions_correct": true,
+        "render_after_source": true,
+        "actual_render_visually_inspected": true,
+        "no_visible_overlap_or_clipping": true
+      },
+      "arrows": [
+        {
+          "id": "fig4_I_num_psi12_arrow",
+          "marker_id": "fig4_I_num_psi12_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi13_arrow",
+          "marker_id": "fig4_I_num_psi13_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi14_arrow",
+          "marker_id": "fig4_I_num_psi14_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi15_arrow",
+          "marker_id": "fig4_I_num_psi15_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi7_arrow",
+          "marker_id": "fig4_I_num_psi7_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi8_arrow",
+          "marker_id": "fig4_I_num_psi8_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi9_arrow",
+          "marker_id": "fig4_I_num_psi9_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi10_arrow",
+          "marker_id": "fig4_I_num_psi10_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi3_arrow",
+          "marker_id": "fig4_I_num_psi3_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi4_arrow",
+          "marker_id": "fig4_I_num_psi4_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi5_arrow",
+          "marker_id": "fig4_I_num_psi5_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi11_arrow",
+          "marker_id": "fig4_I_num_psi11_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi6_arrow",
+          "marker_id": "fig4_I_num_psi6_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_num_psi1_arrow",
+          "marker_id": "fig4_I_num_psi1_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi7_arrow",
+          "marker_id": "fig4_I_phys_psi7_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.554999999999978
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi8_arrow",
+          "marker_id": "fig4_I_phys_psi8_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.554999999999978
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi2_arrow",
+          "marker_id": "fig4_I_phys_psi2_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi3_arrow",
+          "marker_id": "fig4_I_phys_psi3_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.555000000000007
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi6_arrow",
+          "marker_id": "fig4_I_phys_psi6_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            58.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_I_phys_psi1_arrow",
+          "marker_id": "fig4_I_phys_psi1_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            58.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi13_arrow",
+          "marker_id": "fig4_II_num_psi13_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi14_arrow",
+          "marker_id": "fig4_II_num_psi14_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi15_arrow",
+          "marker_id": "fig4_II_num_psi15_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi8_arrow",
+          "marker_id": "fig4_II_num_psi8_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi9_arrow",
+          "marker_id": "fig4_II_num_psi9_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi10_arrow",
+          "marker_id": "fig4_II_num_psi10_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi3_arrow",
+          "marker_id": "fig4_II_num_psi3_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi4_arrow",
+          "marker_id": "fig4_II_num_psi4_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi5_arrow",
+          "marker_id": "fig4_II_num_psi5_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi11_arrow",
+          "marker_id": "fig4_II_num_psi11_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi6_arrow",
+          "marker_id": "fig4_II_num_psi6_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_num_psi1_arrow",
+          "marker_id": "fig4_II_num_psi1_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            52.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi12_arrow",
+          "marker_id": "fig4_II_phys_psi12_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi13_arrow",
+          "marker_id": "fig4_II_phys_psi13_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi7_arrow",
+          "marker_id": "fig4_II_phys_psi7_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi8_arrow",
+          "marker_id": "fig4_II_phys_psi8_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi2_arrow",
+          "marker_id": "fig4_II_phys_psi2_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi3_arrow",
+          "marker_id": "fig4_II_phys_psi3_arrow_end_marker",
+          "curved": true,
+          "direction": "up",
+          "terminal_vector": [
+            0.0,
+            -9.55499999999995
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi11_arrow",
+          "marker_id": "fig4_II_phys_psi11_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            58.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi6_arrow",
+          "marker_id": "fig4_II_phys_psi6_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            58.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        },
+        {
+          "id": "fig4_II_phys_psi1_arrow",
+          "marker_id": "fig4_II_phys_psi1_arrow_end_marker",
+          "curved": false,
+          "direction": "right",
+          "terminal_vector": [
+            58.0,
+            0.0
+          ],
+          "marker_orient": "auto",
+          "marker_color_matches_shaft": true,
+          "pass": true
+        }
+      ],
+      "visual_observation": "Figure 4: all 30 smooth rotation curves terminate in attached upward arrowheads and 11 translation arrows point right. Retained coordinates remain red, other coordinate labels remain black. Both division headings and footer remain clear."
+    }
+  ]
+}

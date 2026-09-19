@@ -1,0 +1,29 @@
+{
+  "bundle": {
+    "contract_id": "B2",
+    "dimension": 8,
+    "dt": 0.0009765625,
+    "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0p875_target_guided_inferred\\new_route_bundles\\B2_D2_Craig_Bampton.mat",
+    "register_scales": [
+      41709977.81257844,
+      5480187.743465239
+    ],
+    "route_id": "B2_D2_Craig_Bampton",
+    "schema_version": "FIG10_BLIND_CORE_V1",
+    "sha256": "64CB52459816CE5C098037267F1F6E359401DE7D90FA5706F3A4571449219B99",
+    "shared_left_factor_relative_error": 0.0
+  },
+  "contract_hash": "E9700CC1501D3424945F47A65E724F40F39E99482E0145F3D02654411AF21385",
+  "contract_id": "B2",
+  "critical_point_count": 0,
+  "maximum_rho": 1.0119783551988388,
+  "maximum_state_eigenpair_residual": 9.95937812003856e-16,
+  "minimum_rho": 0.9954281054608671,
+  "mode": "full-grid",
+  "point_count": 2077,
+  "route_id": "B2_D2_Craig_Bampton",
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "stable_point_count": 589,
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "object_id": "T3-2",
+  "paper_name": "表3-2 两类划分前两阶模态保证准则（MAC）",
+  "target_cells": 8,
+  "rounded_matches": 7,
+  "all_cells_closed": false,
+  "formal_success_directory_exists": false,
+  "evidence_state": "部分计算级复现；其余历史值/待决定",
+  "central_workbook_relative_path": "../板块19_表3-1至表3-3逐单元格计算复现/outputs/板块19_表3-1至表3-3逐单元格计算复现审计.xlsx",
+  "status": "FAILURE_EVIDENCE_PACKAGED"
+}

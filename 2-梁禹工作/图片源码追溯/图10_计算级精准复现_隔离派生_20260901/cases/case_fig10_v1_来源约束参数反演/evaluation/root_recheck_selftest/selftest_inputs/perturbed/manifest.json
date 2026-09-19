@@ -1,0 +1,79 @@
+{
+  "schema_version": "FIG10_CANDIDATE_MANIFEST_V1",
+  "candidate_id": "SELFTEST_ONE_POINT_PERTURBATION",
+  "evidence_label": "评估器自测，不是计算复现",
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division1_original.csv"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division1_craig_bampton.csv"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division1_guyan.csv"
+    },
+    {
+      "curve_id": "division2_original",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division2_original.csv"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division2_craig_bampton.csv"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "input_type": "boundary_csv",
+      "columns": {
+        "point_order": "point_order",
+        "tau1_step": "tau1_step",
+        "tau2_step": "tau2_step",
+        "tau1_ms": "tau1_ms",
+        "tau2_ms": "tau2_ms"
+      },
+      "path": "division2_guyan.csv"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "command": [
+    "D:\\Software\\python\\python.exe",
+    "-B",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\code\\stage_board21_step4_inputs.py"
+  ],
+  "cwd": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "duration_seconds": 1.8825843000086024,
+  "finished_at": "2026-08-26T05:34:12.515231+08:00",
+  "name": "stage",
+  "returncode": 0,
+  "started_at": "2026-08-26T05:34:10.632609+08:00",
+  "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "stderr_size_bytes": 0,
+  "stdout_sha256": "C8A93F6EB8ACE916E2F449BF6F1567856442CC810F59FF57BC38408E59AA458E",
+  "stdout_size_bytes": 502,
+  "terminal_json": {
+    "board17_external_candidate_item_count": 5,
+    "case_contract_count": 14,
+    "formula_4_45_evaluated": false,
+    "global_asset_binding": "BOARD17_CALCULATION_LEVEL_EXTERNAL_ASSET_INDIRECTLY_PASSPORT_BOUND_CURRENT_HASH_MATCH",
+    "global_asset_directly_frozen_by_board21_step1": false,
+    "schema_version": "BOARD21_STEP4_INPUT_STAGE_V1",
+    "status": "PASS",
+    "step1_direct_freeze_count": 53,
+    "step3_evidence_item_count": 98,
+    "step3_run_case_count": 14,
+    "table4_1_adjudicated": false,
+    "total_manifest_item_count": 103
+  },
+  "terminal_json_error": "",
+  "timed_out": false,
+  "timeout_error": "",
+  "timeout_seconds": 300
+}

@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "checks_passed": 41,
+  "checks": [
+    {
+      "name": "compile command 1",
+      "passed": true
+    },
+    {
+      "name": "compile command 2",
+      "passed": true
+    },
+    {
+      "name": "compile command 3",
+      "passed": true
+    },
+    {
+      "name": "compile command 4",
+      "passed": true
+    },
+    {
+      "name": "no undefined references or compilation errors",
+      "passed": true
+    },
+    {
+      "name": "16 documented changes exactly reconstruct manuscript",
+      "passed": true
+    },
+    {
+      "name": "42 negative spacing commands unchanged",
+      "passed": true
+    },
+    {
+      "name": "absolute value applied inside coordinate sum",
+      "passed": true
+    },
+    {
+      "name": "table5 division1 computed values",
+      "passed": true
+    },
+    {
+      "name": "table5 division2 computed values",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: 0.8914",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: 0.0365",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: -0.0414",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: Signed relative",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: retain their signs",
+      "passed": true
+    },
+    {
+      "name": "no stale manuscript value or wording: modal redistribution ratio",
+      "passed": true
+    },
+    {
+      "name": "figure6 12 curves and frequencies unchanged",
+      "passed": true
+    },
+    {
+      "name": "8pt frequency placement panel1",
+      "passed": true
+    },
+    {
+      "name": "8pt frequency placement panel2",
+      "passed": true
+    },
+    {
+      "name": "8pt frequency placement panel3",
+      "passed": true
+    },
+    {
+      "name": "8pt frequency placement panel4",
+      "passed": true
+    },
+    {
+      "name": "figure15 and table5 1/Guyan",
+      "passed": true
+    },
+    {
+      "name": "figure15 and table5 1/CB",
+      "passed": true
+    },
+    {
+      "name": "figure15 and table5 2/Guyan",
+      "passed": true
+    },
+    {
+      "name": "figure15 and table5 2/CB",
+      "passed": true
+    },
+    {
+      "name": "no question-mark references",
+      "passed": true
+    },
+    {
+      "name": "unique figure 1",
+      "passed": true
+    },
+    {
+      "name": "unique figure 2",
+      "passed": true
+    },
+    {
+      "name": "unique figure 3",
+      "passed": true
+    },
+    {
+      "name": "unique figure 4",
+      "passed": true
+    },
+    {
+      "name": "unique figure 5",
+      "passed": true
+    },
+    {
+      "name": "unique figure 6",
+      "passed": true
+    },
+    {
+      "name": "unique figure 7",
+      "passed": true
+    },
+    {
+      "name": "unique figure 8",
+      "passed": true
+    },
+    {
+      "name": "unique figure 9",
+      "passed": true
+    },
+    {
+      "name": "unique figure 10",
+      "passed": true
+    },
+    {
+      "name": "unique figure 11",
+      "passed": true
+    },
+    {
+      "name": "unique figure 12",
+      "passed": true
+    },
+    {
+      "name": "unique figure 13",
+      "passed": true
+    },
+    {
+      "name": "unique figure 14",
+      "passed": true
+    },
+    {
+      "name": "unique figure 15",
+      "passed": true
+    }
+  ],
+  "pages": 38,
+  "figure_mapping": [
+    {
+      "number": 1,
+      "page": 10
+    },
+    {
+      "number": 2,
+      "page": 14
+    },
+    {
+      "number": 3,
+      "page": 16
+    },
+    {
+      "number": 4,
+      "page": 18
+    },
+    {
+      "number": 5,
+      "page": 20
+    },
+    {
+      "number": 6,
+      "page": 24
+    },
+    {
+      "number": 7,
+      "page": 25
+    },
+    {
+      "number": 8,
+      "page": 26
+    },
+    {
+      "number": 9,
+      "page": 27
+    },
+    {
+      "number": 10,
+      "page": 28
+    },
+    {
+      "number": 11,
+      "page": 28
+    },
+    {
+      "number": 12,
+      "page": 29
+    },
+    {
+      "number": 13,
+      "page": 31
+    },
+    {
+      "number": 14,
+      "page": 32
+    },
+    {
+      "number": 15,
+      "page": 33
+    }
+  ],
+  "main_sha256": "fde581fe058e832d85b7abff1786d6bc9b81b654495a86b9b58012c400e9cad4",
+  "pdf_sha256": "46465918b7660042b6bb4f3e84c96ebf3683d4227c2ec79276c88e0e48fb7f58",
+  "warnings": [
+    "Overfull \\hbox (117.0831pt too wide) detected at line 64",
+    "Underfull \\hbox (badness 1540) in paragraph at lines 527--528",
+    "Underfull \\hbox (badness 2608) in paragraph at lines 527--528"
+  ]
+}

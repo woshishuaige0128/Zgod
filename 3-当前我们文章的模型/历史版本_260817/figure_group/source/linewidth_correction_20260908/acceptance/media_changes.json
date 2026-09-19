@@ -1,0 +1,97 @@
+{
+  "source": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\backup\\disk_current.pptx",
+  "output": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\draft\\explicit_candidate.pptx",
+  "all_slide_xml_byte_identical": true,
+  "all_non_target_parts_byte_identical": true,
+  "changed_parts": [
+    "ppt/media/image10.emf",
+    "ppt/media/image11.emf",
+    "ppt/media/image2.emf",
+    "ppt/media/image3.emf",
+    "ppt/media/image4.emf",
+    "ppt/media/image5.emf",
+    "ppt/media/image6.emf",
+    "ppt/media/image7.emf",
+    "ppt/media/image8.emf",
+    "ppt/media/image9.emf"
+  ],
+  "media_replacements": [
+    {
+      "figure": 5,
+      "media": "ppt/media/image1.emf",
+      "old_sha256": "39442c8388b23ca3d06629c44e6d5d0161b8914078c244880acfb14623fe3cf9",
+      "new_sha256": "39442c8388b23ca3d06629c44e6d5d0161b8914078c244880acfb14623fe3cf9",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig5_explicit.emf"
+    },
+    {
+      "figure": 6,
+      "media": "ppt/media/image2.emf",
+      "old_sha256": "87f14619461bd09f26f2c552ba6337e35d2a4fed113327870dc8dd0323bba36f",
+      "new_sha256": "31127798b695c0e83c558f18320d8dd170f977867632237b53aeff0127a61a8a",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig6_explicit.emf"
+    },
+    {
+      "figure": 7,
+      "media": "ppt/media/image3.emf",
+      "old_sha256": "52a2c065f044920d7788b232691aad0882727cc1795910cfedc4850523ccd40d",
+      "new_sha256": "75ed2071be155c9097d57357ebc9bbba9ce94befd771900bc1ef0e4a300f326c",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig7_explicit.emf"
+    },
+    {
+      "figure": 8,
+      "media": "ppt/media/image4.emf",
+      "old_sha256": "9aca7c6f6868c5871077c8211354ad5ec01433f805196bb4084d8789fa574045",
+      "new_sha256": "c38dec67a10b015372e5f04e139e255832c62ac410c965ec6ada7b414edf63e6",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig8_explicit.emf"
+    },
+    {
+      "figure": 9,
+      "media": "ppt/media/image5.emf",
+      "old_sha256": "e773173ccbcd2e156eab5ef100e618508c3997c765842c125dfefe00cd58ea80",
+      "new_sha256": "8add378f7dd18388ad05383ccaa799089e5caf607725a44d6165e135bd92d32c",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig9_explicit.emf"
+    },
+    {
+      "figure": 10,
+      "media": "ppt/media/image6.emf",
+      "old_sha256": "05dcbeb43db17f0b21ddf1e3b2a07fc512d0b9903fcf72e8b0fc57409d5bbcc3",
+      "new_sha256": "42d9495ab1fecc302e6f12818d752d0746e17b92c1d80e8e30fd8d0611288d45",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig10_explicit.emf"
+    },
+    {
+      "figure": 11,
+      "media": "ppt/media/image7.emf",
+      "old_sha256": "ad7963475ee237e3d2dcf8e0100448f1277a95f2d26eb79062b92c1dc9fdcd5d",
+      "new_sha256": "5d9307b3b077c7343dfebb2184a2d7f400ab44a3e666cb87820bdb1a548b3bfc",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig11_explicit.emf"
+    },
+    {
+      "figure": 12,
+      "media": "ppt/media/image8.emf",
+      "old_sha256": "0848190df291a41a282fd859983bdf15c98399a8940e51b243b5e94e24c62449",
+      "new_sha256": "61959981735a42962b8297cb32a925e598f919f14ddd2fe974eafca04ebc9a1f",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig12_explicit.emf"
+    },
+    {
+      "figure": 13,
+      "media": "ppt/media/image9.emf",
+      "old_sha256": "03a1249663bb9cfea145d73983e85e4dba7be99c8f5a82767cc667954f15b9e0",
+      "new_sha256": "2072127243dc62bd6f284729d7763f0193a5d88f578367b0ef6edfeb978909f5",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig13_explicit.emf"
+    },
+    {
+      "figure": 14,
+      "media": "ppt/media/image10.emf",
+      "old_sha256": "d2208330293057cc109a6540411694e9bb8ca53abc7ce1fab158e5b8a6988599",
+      "new_sha256": "a88d4d1ed975acc816e14f61c05421b6ae3230d13d2f2b01087a6d0ce7eb7f2c",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig14_explicit.emf"
+    },
+    {
+      "figure": 15,
+      "media": "ppt/media/image11.emf",
+      "old_sha256": "f871d6ffbbf61a73df9ba1d819050d8adc794654e4a422ae2e19d79fb9d69191",
+      "new_sha256": "fc33cabf7a5adb6bcb8fabd7ac40e7d1a141fa1755b8a3c5e695bad935c5e8ef",
+      "source": "tmp\\figure_linewidth_fix_20260908\\engine\\dash_fix\\vectors\\fig15_explicit.emf"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-08-24T17:47:47.134752+00:00",
+  "matlab_mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\outputs\\global_routes_matlab.mat",
+  "matlab_mat_sha256": "A58A830134259585ECD091BA37B3A69640E79D3AA10B5094E106F2EC01ED56ED",
+  "python_mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块17_两类划分与缩聚候选路线\\outputs\\independent_global_routes_python.mat",
+  "python_mat_sha256": "0C764800CB0451460208E2A9648F0A516C6DAC636FCCD46F7368CA62789B86F1",
+  "matlab_summary_sha256": "833FFCB4D0986292F53F2EACD699FF99918020A8CBFD134AB06B930D5FBAB579",
+  "matrix_tolerance": 5e-12,
+  "frequency_tolerance_hz": 5e-10,
+  "subspace_angle_tolerance_rad": 5e-08,
+  "check_count": 82,
+  "pass_count": 82,
+  "failure_count": 0,
+  "maximum_direct_matrix_relative_error": 4.030710936150385e-16,
+  "maximum_cb_aligned_matrix_relative_error": 4.028913283864715e-16,
+  "maximum_cb_subspace_angle_rad": 7.70384137618203e-15,
+  "maximum_modal_frequency_absolute_error_hz": 9.947598300641403e-14,
+  "hash_table_row_count": 13,
+  "preliminary_run_attempts": [
+    {
+      "attempt": 1,
+      "result": "78/82通过，未通过最终验收",
+      "cause": "SciPy将MATLAB string对象读取为MCOS元数据，4个原脚本状态文本不可解析；矩阵、子空间、频率和布尔/哈希字段均未失败。改从同步输出的纯文本CSV读取状态。"
+    }
+  ],
+  "failures": [],
+  "pass": true
+}

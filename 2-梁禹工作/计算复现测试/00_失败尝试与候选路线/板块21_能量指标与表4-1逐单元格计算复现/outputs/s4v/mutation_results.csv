@@ -1,0 +1,9 @@
+mutation_order,mutation_id,expected_rejection_field,numeric_delta,numeric_changed,contract_rejected,positive_contract_after,status
+1,M01_FORMULA_441,formula.eq4_41.numerator,154005.86773736042,TRUE,TRUE,TRUE,PASS
+2,M02_COORDINATE_MAP,route.coordinate_mapping,1.3629868711927076,TRUE,TRUE,TRUE,PASS
+3,M03_DENOMINATOR,formula.denominator,0.86144953334967411,TRUE,TRUE,TRUE,PASS
+4,M04_SUM_SCOPE,formula.sum_scope,0.088606947782383427,TRUE,TRUE,TRUE,PASS
+5,M05_NORMALIZATION,formula.energy_normalization,1138.2074823738242,TRUE,TRUE,TRUE,PASS
+6,M06_PERCENT_SCALE,formula.percent_scale,29.852116905376988,TRUE,TRUE,TRUE,PASS
+7,M07_MODE_SET,formula.mode_set,0.21728358310970614,TRUE,TRUE,TRUE,PASS
+8,M08_EXCITATION_IDENTITY,formula.excitation_identity,154005.86773736042,TRUE,TRUE,TRUE,PASS

@@ -1,0 +1,19 @@
+{
+  "author_energy_file_count": 36,
+  "category_counts": {
+    "author_energy_tree": 36,
+    "central_baseline": 3,
+    "manuscript": 1,
+    "prior_audit": 2,
+    "stability_evidence": 2,
+    "theory": 1,
+    "upstream_candidate": 1,
+    "upstream_passport": 7
+  },
+  "input_count": 53,
+  "schema_version": "BOARD21_INPUT_FREEZE_V1",
+  "source_frozen_match_count": 53,
+  "source_inside_board_root_count": 0,
+  "status": "PASS",
+  "total_source_bytes": 5412568
+}

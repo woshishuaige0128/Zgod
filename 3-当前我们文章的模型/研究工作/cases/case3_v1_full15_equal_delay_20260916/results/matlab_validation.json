@@ -1,0 +1,583 @@
+{
+  "status": "PASS",
+  "count": 96,
+  "maximum_residual": 8.3275814403263974E-14,
+  "checks": [
+    {
+      "name": "d1_g0_n0_Full_independent_MATLAB_response",
+      "residual": 3.7447520770944775E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n0_Full_MATLAB_history_matrix",
+      "residual": 1.886837523003753E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n0_Guyan_independent_MATLAB_response",
+      "residual": 1.8991147832582569E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n0_Guyan_MATLAB_history_matrix",
+      "residual": 1.0914417883297457E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n0_CB3_independent_MATLAB_response",
+      "residual": 5.59757151610491E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n0_CB3_MATLAB_history_matrix",
+      "residual": 1.4962064590469446E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_Full_independent_MATLAB_response",
+      "residual": 8.1031703624735768E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_Full_MATLAB_history_matrix",
+      "residual": 2.0442379684352056E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_Guyan_independent_MATLAB_response",
+      "residual": 2.1899661522850941E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_Guyan_MATLAB_history_matrix",
+      "residual": 1.1640731375341364E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_CB3_independent_MATLAB_response",
+      "residual": 2.7132707825041457E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n1_CB3_MATLAB_history_matrix",
+      "residual": 1.5740848813902538E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_Full_independent_MATLAB_response",
+      "residual": 2.0112176203841092E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_Full_MATLAB_history_matrix",
+      "residual": 1.9810123999064138E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_Guyan_independent_MATLAB_response",
+      "residual": 5.3878108405850855E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_Guyan_MATLAB_history_matrix",
+      "residual": 1.026418183646057E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_CB3_independent_MATLAB_response",
+      "residual": 2.8602948373184578E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n4_CB3_MATLAB_history_matrix",
+      "residual": 1.5164101179078739E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_Full_independent_MATLAB_response",
+      "residual": 7.9441957245498586E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_Full_MATLAB_history_matrix",
+      "residual": 1.959873841262645E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_Guyan_independent_MATLAB_response",
+      "residual": 2.6858642475088467E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_Guyan_MATLAB_history_matrix",
+      "residual": 1.0031052106352015E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_CB3_independent_MATLAB_response",
+      "residual": 1.3443598548769782E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g0_n5_CB3_MATLAB_history_matrix",
+      "residual": 1.4923095512764902E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_Full_independent_MATLAB_response",
+      "residual": 5.1139203197458645E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_Full_MATLAB_history_matrix",
+      "residual": 1.8989956580298762E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_Guyan_independent_MATLAB_response",
+      "residual": 9.1222023896910515E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_Guyan_MATLAB_history_matrix",
+      "residual": 1.3139419846568278E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_CB3_independent_MATLAB_response",
+      "residual": 4.9508080328676057E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n0_CB3_MATLAB_history_matrix",
+      "residual": 1.3900226085779181E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_Full_independent_MATLAB_response",
+      "residual": 3.3522290503291159E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_Full_MATLAB_history_matrix",
+      "residual": 2.0339000972894289E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_Guyan_independent_MATLAB_response",
+      "residual": 1.70116346377444E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_Guyan_MATLAB_history_matrix",
+      "residual": 1.0900034022591497E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_CB3_independent_MATLAB_response",
+      "residual": 2.2087785239449727E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n1_CB3_MATLAB_history_matrix",
+      "residual": 1.5115876258817164E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_Full_independent_MATLAB_response",
+      "residual": 3.7663875836513415E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_Full_MATLAB_history_matrix",
+      "residual": 1.9814046165864244E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_Guyan_independent_MATLAB_response",
+      "residual": 2.3982291945204289E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_Guyan_MATLAB_history_matrix",
+      "residual": 1.0264187475984206E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_CB3_independent_MATLAB_response",
+      "residual": 1.0502181006757857E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n4_CB3_MATLAB_history_matrix",
+      "residual": 1.5164948634505626E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_Full_independent_MATLAB_response",
+      "residual": 3.300913900104384E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_Full_MATLAB_history_matrix",
+      "residual": 1.9602618727397823E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_Guyan_independent_MATLAB_response",
+      "residual": 1.6035208233969665E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_Guyan_MATLAB_history_matrix",
+      "residual": 1.0031057618437055E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_CB3_independent_MATLAB_response",
+      "residual": 4.2677842283427876E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d1_g1_n5_CB3_MATLAB_history_matrix",
+      "residual": 1.4923929833237493E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_Full_independent_MATLAB_response",
+      "residual": 5.9460736794190386E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_Full_MATLAB_history_matrix",
+      "residual": 1.9243445005430106E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_Guyan_independent_MATLAB_response",
+      "residual": 1.6396962892801429E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_Guyan_MATLAB_history_matrix",
+      "residual": 4.3268592479535526E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_CB3_independent_MATLAB_response",
+      "residual": 7.6261910861917924E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n0_CB3_MATLAB_history_matrix",
+      "residual": 3.344182047320928E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_Full_independent_MATLAB_response",
+      "residual": 2.011346942379412E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_Full_MATLAB_history_matrix",
+      "residual": 2.0557285456505263E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_Guyan_independent_MATLAB_response",
+      "residual": 4.9417077487457183E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_Guyan_MATLAB_history_matrix",
+      "residual": 2.8256629049131879E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_CB3_independent_MATLAB_response",
+      "residual": 8.3275814403263974E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n1_CB3_MATLAB_history_matrix",
+      "residual": 3.7626003786466815E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_Full_independent_MATLAB_response",
+      "residual": 3.9209749880759135E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_Full_MATLAB_history_matrix",
+      "residual": 1.9815428479396473E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_Guyan_independent_MATLAB_response",
+      "residual": 9.56032752122994E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_Guyan_MATLAB_history_matrix",
+      "residual": 2.4091730203139603E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_CB3_independent_MATLAB_response",
+      "residual": 5.0381183050911515E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n4_CB3_MATLAB_history_matrix",
+      "residual": 2.6258360570918619E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_Full_independent_MATLAB_response",
+      "residual": 4.7694543705309093E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_Full_MATLAB_history_matrix",
+      "residual": 1.9603824151559911E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_Guyan_independent_MATLAB_response",
+      "residual": 2.7910259041085243E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_Guyan_MATLAB_history_matrix",
+      "residual": 2.3461805941316505E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_CB3_independent_MATLAB_response",
+      "residual": 9.1938429451438833E-15,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g0_n5_CB3_MATLAB_history_matrix",
+      "residual": 2.5811708055002604E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_Full_independent_MATLAB_response",
+      "residual": 1.2048142179885077E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_Full_MATLAB_history_matrix",
+      "residual": 2.1283962781466172E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_Guyan_independent_MATLAB_response",
+      "residual": 2.6096433153342565E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_Guyan_MATLAB_history_matrix",
+      "residual": 3.3393924195580534E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_CB3_independent_MATLAB_response",
+      "residual": 4.9317569302660213E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n0_CB3_MATLAB_history_matrix",
+      "residual": 1.3243829270864644E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_Full_independent_MATLAB_response",
+      "residual": 2.548894323273883E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_Full_MATLAB_history_matrix",
+      "residual": 2.0702439229940658E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_Guyan_independent_MATLAB_response",
+      "residual": 4.0450542079232657E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_Guyan_MATLAB_history_matrix",
+      "residual": 3.008034820932495E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_CB3_independent_MATLAB_response",
+      "residual": 2.5461638999822602E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n1_CB3_MATLAB_history_matrix",
+      "residual": 3.1540814754986748E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_Full_independent_MATLAB_response",
+      "residual": 4.7408991641997612E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_Full_MATLAB_history_matrix",
+      "residual": 1.9813049489247423E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_Guyan_independent_MATLAB_response",
+      "residual": 2.9409382693991737E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_Guyan_MATLAB_history_matrix",
+      "residual": 2.4092051647753759E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_CB3_independent_MATLAB_response",
+      "residual": 2.3409440346365272E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n4_CB3_MATLAB_history_matrix",
+      "residual": 2.6247100742602922E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_Full_independent_MATLAB_response",
+      "residual": 2.6926043601588044E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_Full_MATLAB_history_matrix",
+      "residual": 1.9601470565800532E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_Guyan_independent_MATLAB_response",
+      "residual": 1.9232123500005797E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_Guyan_MATLAB_history_matrix",
+      "residual": 2.3462119018733828E-16,
+      "tolerance": 1E-10,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_CB3_independent_MATLAB_response",
+      "residual": 1.2121999821084465E-14,
+      "tolerance": 1E-9,
+      "passed": true
+    },
+    {
+      "name": "d2_g1_n5_CB3_MATLAB_history_matrix",
+      "residual": 2.5800646029053884E-15,
+      "tolerance": 1E-10,
+      "passed": true
+    }
+  ]
+}

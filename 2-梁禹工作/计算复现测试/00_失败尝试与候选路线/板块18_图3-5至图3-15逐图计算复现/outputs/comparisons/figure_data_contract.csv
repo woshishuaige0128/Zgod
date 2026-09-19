@@ -1,0 +1,12 @@
+﻿object_id,unique_figure_id,dataset_id,floor_scope,window_contract,author_historical_timeseries
+F3-5,3-5,unit,all_original_floors,none,NOT_AVAILABLE_PENDING_DECISION
+F3-6,3-6,division1_elcentro,Floor 1,10-11;21.5-22.5,NOT_AVAILABLE_PENDING_DECISION
+F3-7,3-7,division1_elcentro,Floor 2,10-11;21.5-22.5,NOT_AVAILABLE_PENDING_DECISION
+F3-8,3-8,division1_elcentro,Floor 3,10-11;21.5-22.5,NOT_AVAILABLE_PENDING_DECISION
+F3-9,3-9,division2_elcentro,Floor 1,10-11;21.5-22.5,NOT_AVAILABLE_PENDING_DECISION
+F3-10,3-10,division2_elcentro,Floor 3,10-11;21.5-22.5,NOT_AVAILABLE_PENDING_DECISION
+F3-11,3-11,division1_chirp,Floor 1,13-14;38-38.3,NOT_AVAILABLE_PENDING_DECISION
+F3-12,3-12,division1_chirp,Floor 2,13-14;38-38.3,NOT_AVAILABLE_PENDING_DECISION
+F3-13,3-13,division1_chirp,Floor 3,13-14;38-38.3,NOT_AVAILABLE_PENDING_DECISION
+F3-14,3-14,division2_chirp,Floor 1,13-14;38-38.3,NOT_AVAILABLE_PENDING_DECISION
+F3-15,3-15,division2_chirp,Floor 3,historical_local_panels=division2_elcentro/Floor 3/10-11;21.5-22.5;corrected_local_panels=division2_chirp/Floor 3/13-14;38-38.3,NOT_AVAILABLE_PENDING_DECISION

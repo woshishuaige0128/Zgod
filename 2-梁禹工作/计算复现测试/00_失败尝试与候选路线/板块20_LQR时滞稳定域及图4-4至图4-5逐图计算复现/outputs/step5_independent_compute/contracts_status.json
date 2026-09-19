@@ -1,0 +1,86 @@
+{
+  "noncomputable_failed_routes": [
+    {
+      "failure_reason": "MATLAB:UndefinedFunction: MRren was undefined in the original MLX execution.",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "output_directory_must_not_exist": true,
+      "route_id": "main_cb_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "failure_reason": "MATLAB:UndefinedFunction: MRren was undefined in the original MLX execution.",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "output_directory_must_not_exist": true,
+      "route_id": "main_cb_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "failure_reason": "MATLAB:UndefinedFunction: KPren was undefined in the original MLX execution.",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "output_directory_must_not_exist": true,
+      "route_id": "energy_guyan_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "failure_reason": "MATLAB:UndefinedFunction: KPren was undefined in the original MLX execution.",
+      "manifest_execution_status": "EXECUTION_FAIL",
+      "output_directory_must_not_exist": true,
+      "route_id": "energy_guyan_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    }
+  ],
+  "schema_version": "board20_step5_contracts_status_v1",
+  "scientific_contracts": {
+    "manuscript_0824_route": {
+      "borrowing_policy": "Do not substitute any historical outside-H feedback matrix or author-workspace al.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique Ba and actuator-input unit",
+        "complete psi1/psi11 actuator and psi6 reconstruction coordinate map",
+        "executable scalar alpha value tied to the manuscript route",
+        "unambiguous full-state ordering and division matrix entry"
+      ],
+      "required_interface": [
+        "M",
+        "C",
+        "K",
+        "alpha_scalar",
+        "dt",
+        "Ba",
+        "Kx",
+        "Kv",
+        "Sa",
+        "physical_delay_matrices",
+        "channel_coordinate_map",
+        "input_unit",
+        "state_order",
+        "division_coordinate_map"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "master_thesis_route": {
+      "borrowing_policy": "Do not substitute the author program's discrete K_lqr, matrix al, or five-DOF workspace.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique input unit convention",
+        "unique control-input matrix B",
+        "second-division three-master-DOF matrix entry",
+        "executable scalar alpha value tied to the thesis route"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "sealed_author_file_identity_routes": {
+      "evidence_label": "计算级复现候选",
+      "route_count": 5,
+      "status": "CALCULABLE"
+    }
+  }
+}

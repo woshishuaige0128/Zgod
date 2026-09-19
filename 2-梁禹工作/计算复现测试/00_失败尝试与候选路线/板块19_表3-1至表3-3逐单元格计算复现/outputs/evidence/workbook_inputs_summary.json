@@ -1,0 +1,15 @@
+{
+  "table3_1_cells": 8,
+  "table3_1_rounded_matches": 4,
+  "table3_2_cells": 8,
+  "table3_2_rounded_matches": 7,
+  "table3_3_cells": 24,
+  "table3_3_rounded_matches": 13,
+  "all_cells": 40,
+  "all_cross_language_pass": true,
+  "mac_vector_rows": 44,
+  "nrmse_aggregate_rows": 24,
+  "provenance_rows": 35,
+  "provenance_live_matches": 35,
+  "status": "PASS"
+}

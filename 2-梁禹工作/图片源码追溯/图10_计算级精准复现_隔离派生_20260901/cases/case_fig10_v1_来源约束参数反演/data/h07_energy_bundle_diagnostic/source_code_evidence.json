@@ -1,0 +1,422 @@
+{
+  "mlx_contract_sha256": "8F873AD0DEEE9F6425819DF669F5F412164DF9D4CE5C7BE3F2751FF0AAF22C88",
+  "schema_version": "FIG10_H07_SOURCE_CODE_EVIDENCE_V1",
+  "source_scripts": [
+    {
+      "code_file": "luxvjie_ori_LQR2.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_ori_LQR2.m",
+      "code_sha256": "1A4F0F8FAD5846542EF4B1961BD41FF4C5ECDBFE8BF6987564A2F975F33A9EAB",
+      "line_assertions": [
+        {
+          "exact_text": "K2 = KRrt-KNrt_1-KPrt_1;",
+          "line": 3
+        },
+        {
+          "exact_text": "C2 = CRrt-CNrt_1-CPrt_1;",
+          "line": 4
+        },
+        {
+          "exact_text": "K1 = KRrt-K2;",
+          "line": 5
+        },
+        {
+          "exact_text": "C1 = CRrt-C2;",
+          "line": 6
+        },
+        {
+          "exact_text": "al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\\MRrt*4;",
+          "line": 8
+        },
+        {
+          "exact_text": "row_map = [1 7];",
+          "line": 14
+        },
+        {
+          "exact_text": "H = sym(eye(18));",
+          "line": 27
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;",
+          "line": 33
+        }
+      ],
+      "line_count": 42,
+      "mlx_file": "luxvjie_ori_LQR2.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_ori_LQR2.mlx",
+      "mlx_sha256": "8ECA148D813F0C7652F412F5896D2DB8EF5B1279CA0DCBBF10A1FFB45FEA5509"
+    },
+    {
+      "code_file": "luxvjie_ori_LQR3.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_ori_LQR3.m",
+      "code_sha256": "F1502FCBB2E8689BD2A5558852CACD067C0248F8F50F107FBB30DC2415A53D3C",
+      "line_assertions": [
+        {
+          "exact_text": "K2 = KRrt-KNrt_1-KPrt_1;",
+          "line": 3
+        },
+        {
+          "exact_text": "C2 = CRrt-CNrt_1-CPrt_1;",
+          "line": 4
+        },
+        {
+          "exact_text": "K1 = KRrt-K2;",
+          "line": 5
+        },
+        {
+          "exact_text": "C1 = CRrt-C2;",
+          "line": 6
+        },
+        {
+          "exact_text": "al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\\MRrt*4;",
+          "line": 8
+        },
+        {
+          "exact_text": "row_map = [1 13];",
+          "line": 14
+        },
+        {
+          "exact_text": "H = sym(eye(18));",
+          "line": 27
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H;",
+          "line": 33
+        },
+        {
+          "exact_text": "%+S'*DeltaG*S",
+          "line": 34
+        }
+      ],
+      "line_count": 43,
+      "mlx_file": "luxvjie_ori_LQR3.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_ori_LQR3.mlx",
+      "mlx_sha256": "149E9FDD7F98CFD0A5B581D7BD2B27521908BC89FFB2DEF1F891D4402E4B89D5"
+    },
+    {
+      "code_file": "luxvjie_guyan_LQR2.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_guyan_LQR2.m",
+      "code_sha256": "4B919405367AB4C3BF51921A4CDB662B54942A0E7E604A47A11F049ED4D706B3",
+      "line_assertions": [
+        {
+          "exact_text": "index1 = [1,2];",
+          "line": 1
+        },
+        {
+          "exact_text": "index2 = [3,4,5,6,7,8];",
+          "line": 2
+        },
+        {
+          "exact_text": "K2 = KRren;",
+          "line": 3
+        },
+        {
+          "exact_text": "K2(index1,index1) = KRren(index1,index1)-KPren;",
+          "line": 4
+        },
+        {
+          "exact_text": "K2(index2,index2) = KRren(index2,index2)-KNren;",
+          "line": 5
+        },
+        {
+          "exact_text": "C2 = CRren;",
+          "line": 6
+        },
+        {
+          "exact_text": "C2(index1,index1) = CRren(index1,index1)-CPren;",
+          "line": 7
+        },
+        {
+          "exact_text": "C2(index2,index2) = CRren(index2,index2)-CNren;",
+          "line": 8
+        },
+        {
+          "exact_text": "C1 = CRren-C2;",
+          "line": 9
+        },
+        {
+          "exact_text": "K1 = KRren-K2;",
+          "line": 10
+        },
+        {
+          "exact_text": "al = (4*MRren+2*dt*CRren+dt^2*KRren)\\MRren*4;",
+          "line": 13
+        },
+        {
+          "exact_text": "al = diag(diag(al));",
+          "line": 14
+        },
+        {
+          "exact_text": "sys_d = c2d(sys_c, dt);",
+          "line": 38
+        },
+        {
+          "exact_text": "Q = diag([4e8, 1e4, 1e2, 1e1]);",
+          "line": 42
+        },
+        {
+          "exact_text": "R = diag([3e-3,1e-2]);",
+          "line": 43
+        },
+        {
+          "exact_text": "[K_lqr, ~, ~] = dlqr(Ad, Bd, Q, R);",
+          "line": 44
+        },
+        {
+          "exact_text": "DeltaK = diag(diag(MPren*K_lqr(:, 1:n)))",
+          "line": 49
+        },
+        {
+          "exact_text": "DeltaC = diag(diag(MPren*K_lqr(:, n+1:end)));",
+          "line": 50
+        },
+        {
+          "exact_text": "H = sym(eye(6,6));",
+          "line": 68
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;",
+          "line": 74
+        }
+      ],
+      "line_count": 82,
+      "mlx_file": "luxvjie_guyan_LQR2.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_guyan_LQR2.mlx",
+      "mlx_sha256": "85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102"
+    },
+    {
+      "code_file": "luxvjie_guyan_LQR3.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_guyan_LQR3.m",
+      "code_sha256": "F809DECE535C681D45AEFB0156FCBED3D2EAC85C64C671B9495310F2875E3ACB",
+      "line_assertions": [
+        {
+          "exact_text": "index1 = [1,2];",
+          "line": 1
+        },
+        {
+          "exact_text": "index2 = [3,4,5];",
+          "line": 2
+        },
+        {
+          "exact_text": "K2 = KRren;",
+          "line": 3
+        },
+        {
+          "exact_text": "K2(index1,index1) = KRren(index1,index1)-KPren;",
+          "line": 4
+        },
+        {
+          "exact_text": "K2(index2,index2) = KRren(index2,index2)-KNren;",
+          "line": 5
+        },
+        {
+          "exact_text": "C2 = CRren;",
+          "line": 6
+        },
+        {
+          "exact_text": "C2(index1,index1) = CRren(index1,index1)-CPren;",
+          "line": 7
+        },
+        {
+          "exact_text": "C2(index2,index2) = CRren(index2,index2)-CNren;",
+          "line": 8
+        },
+        {
+          "exact_text": "C1 = CRren-C2;",
+          "line": 9
+        },
+        {
+          "exact_text": "K1 = KRren-K2;",
+          "line": 10
+        },
+        {
+          "exact_text": "al = (4*MRren+2*dt*CRren+dt^2*KRren)\\MRren*4;",
+          "line": 13
+        },
+        {
+          "exact_text": "al = diag(diag(al));",
+          "line": 14
+        },
+        {
+          "exact_text": "sys_d = c2d(sys_c, dt);",
+          "line": 38
+        },
+        {
+          "exact_text": "Q = diag([4e8, 1e4, 1e2, 1e1]);",
+          "line": 42
+        },
+        {
+          "exact_text": "R = diag([3e-3,1e-2]);",
+          "line": 43
+        },
+        {
+          "exact_text": "[K_lqr, ~, ~] = dlqr(Ad, Bd, Q, R);",
+          "line": 44
+        },
+        {
+          "exact_text": "DeltaK = diag(diag(MPren*K_lqr(:, 1:n)))",
+          "line": 49
+        },
+        {
+          "exact_text": "DeltaC = diag(diag(MPren*K_lqr(:, n+1:end)));",
+          "line": 50
+        },
+        {
+          "exact_text": "H = sym(eye(5));",
+          "line": 68
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H;",
+          "line": 74
+        },
+        {
+          "exact_text": "%+S'*DeltaG*S",
+          "line": 75
+        }
+      ],
+      "line_count": 83,
+      "mlx_file": "luxvjie_guyan_LQR3.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_guyan_LQR3.mlx",
+      "mlx_sha256": "3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05"
+    },
+    {
+      "code_file": "luxvjie_cb_LQR2.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_cb_LQR2.m",
+      "code_sha256": "BD94C9048D52DFA1AEC22C2B851A56881A06CB246E0635A4ED2DEC12D5224FE4",
+      "line_assertions": [
+        {
+          "exact_text": "index1 = [1,2,7,8,9];",
+          "line": 1
+        },
+        {
+          "exact_text": "index2 = [3,4,5,6,7,8,9];",
+          "line": 2
+        },
+        {
+          "exact_text": "K2 = KR_cb;",
+          "line": 3
+        },
+        {
+          "exact_text": "K2(index1,index1) = KR_cb(index1,index1)-KP_cb;",
+          "line": 4
+        },
+        {
+          "exact_text": "K2(index2,index2) = KR_cb(index2,index2)-KN_cb;",
+          "line": 5
+        },
+        {
+          "exact_text": "C2 = CR_cb;",
+          "line": 6
+        },
+        {
+          "exact_text": "C2(index1,index1) = CR_cb(index1,index1)-CP_cb;",
+          "line": 7
+        },
+        {
+          "exact_text": "C2(index2,index2) = CR_cb(index2,index2)-CN_cb;",
+          "line": 8
+        },
+        {
+          "exact_text": "C1 = CR_cb-C2;",
+          "line": 9
+        },
+        {
+          "exact_text": "K1 = KR_cb-K2;",
+          "line": 10
+        },
+        {
+          "exact_text": "al = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\\MR_cb*4;",
+          "line": 13
+        },
+        {
+          "exact_text": "al = diag(diag(al));",
+          "line": 14
+        },
+        {
+          "exact_text": "H = sym(eye(9,9));",
+          "line": 40
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;",
+          "line": 46
+        }
+      ],
+      "line_count": 54,
+      "mlx_file": "luxvjie_cb_LQR2.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_cb_LQR2.mlx",
+      "mlx_sha256": "803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD"
+    },
+    {
+      "code_file": "luxvjie_cb_LQR3.m",
+      "code_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/mlx_code/alternative_lqr_route/能量指标/luxvjie_cb_LQR3.m",
+      "code_sha256": "5FE405DEA5D1A6DF1485F69447BF677FFB33545080FDC9297A876931F4329EAF",
+      "line_assertions": [
+        {
+          "exact_text": "index1 = [1,2,6,7,8];",
+          "line": 1
+        },
+        {
+          "exact_text": "index2 = [3,4,5,6,7,8];",
+          "line": 2
+        },
+        {
+          "exact_text": "K2 = KR_cb;",
+          "line": 3
+        },
+        {
+          "exact_text": "K2(index1,index1) = KR_cb(index1,index1)-KP_cb;",
+          "line": 4
+        },
+        {
+          "exact_text": "K2(index2,index2) = KR_cb(index2,index2)-KN_cb;",
+          "line": 5
+        },
+        {
+          "exact_text": "C2 = CR_cb;",
+          "line": 6
+        },
+        {
+          "exact_text": "C2(index1,index1) = CR_cb(index1,index1)-CP_cb;",
+          "line": 7
+        },
+        {
+          "exact_text": "C2(index2,index2) = CR_cb(index2,index2)-CN_cb;",
+          "line": 8
+        },
+        {
+          "exact_text": "C1 = CR_cb-C2;",
+          "line": 9
+        },
+        {
+          "exact_text": "K1 = KR_cb-K2;",
+          "line": 10
+        },
+        {
+          "exact_text": "al = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\\MR_cb*4;",
+          "line": 13
+        },
+        {
+          "exact_text": "al = diag(diag(al));",
+          "line": 14
+        },
+        {
+          "exact_text": "H = sym(eye(8));",
+          "line": 40
+        },
+        {
+          "exact_text": "((z-1)/z/dt*C2+K2)*H;",
+          "line": 46
+        },
+        {
+          "exact_text": "%+S'*DeltaG*S",
+          "line": 47
+        }
+      ],
+      "line_count": 55,
+      "mlx_file": "luxvjie_cb_LQR3.mlx",
+      "mlx_repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/input/alternative_lqr_route/能量指标/luxvjie_cb_LQR3.mlx",
+      "mlx_sha256": "4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689"
+    }
+  ],
+  "status": "PASS",
+  "step8b_sha256": "261852003EEA79A6C7C609C472E82B8782BB7619191C2CFA3759AC39EFCC80FF"
+}

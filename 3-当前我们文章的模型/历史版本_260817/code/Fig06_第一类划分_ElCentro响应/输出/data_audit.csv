@@ -1,0 +1,9 @@
+metric,value,requirement,status
+row_count,40961,40961,PASS
+column_count,10,10,PASS
+time_start_s,0,0,PASS
+time_end_s,40,40,PASS
+expected_step_s,0.0009765625,0.0009765625,PASS
+maximum_step_error_s,0,<=1e-12,PASS
+all_values_finite,1,1,PASS
+plot_font,Times New Roman,recorded,PASS

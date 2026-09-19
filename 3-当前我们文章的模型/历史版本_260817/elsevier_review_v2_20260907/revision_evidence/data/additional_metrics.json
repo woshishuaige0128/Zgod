@@ -1,0 +1,14 @@
+{
+  "Fig07_middle_NRMSE": [
+    10.79766109152466,
+    0.030870408362879638
+  ],
+  "reference_first_storey_abs_peak_time": 11.693359375,
+  "Fig09_middle_NRMSE": [
+    11.749260679748414,
+    0.03381787746965617
+  ],
+  "late_first_storey_Guyan_to_reference_ptp": 0.46056678257092154,
+  "late_third_storey_Guyan_to_reference_ptp": 0.805075870366973,
+  "fundamental_crossing_s": 10.535053502686868
+}

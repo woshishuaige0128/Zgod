@@ -1,0 +1,2 @@
+﻿figure_pair_id,object_id,version,png_relative_path,montage_relative_path,no_cutoff_garble_overlap,style_and_linework,legend_and_labels,time_window_semantics,status,reviewer,review_date,notes
+F3-10:standard,F3-10,standard,F3-10_第二类子结构划分-地震激励下的三层水平位移/figures/F3-10_第二类子结构划分-地震激励下的三层水平位移.png,outputs/visual_review_tmp/board18_visual_montage_1.png,PASS,PASS,PASS,PASS,PASS,main-agent,2026-08-25,整段与10--11 s、21.5--22.5 s局部窗均清晰且标注正确

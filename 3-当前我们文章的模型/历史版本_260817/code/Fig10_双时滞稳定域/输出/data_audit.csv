@@ -1,0 +1,7 @@
+figure_id,method,source_file,point_count,order_first,order_last,tau1_step_first,tau2_step_first,tau1_step_last,tau2_step_last,tau1_ms_first,tau2_ms_first,tau1_ms_last,tau2_ms_last
+4-4,Original,图4-4_Original_论文矢量边界.csv,72,1,72,64,2,2,31,61.5234375,0.9765625,0.9765625,29.296875
+4-4,Craig-Bampton,图4-4_CB_论文矢量边界.csv,69,1,69,59,2,2,26,56.640625,0.9765625,0.9765625,24.4140625
+4-4,Guyan,图4-4_Guyan_论文矢量边界.csv,67,1,67,58,2,2,24,55.6640625,0.9765625,0.9765625,22.4609375
+4-5,Original,图4-5_Original_论文矢量边界.csv,69,1,69,57,2,2,28,54.6875,0.9765625,0.9765625,26.3671875
+4-5,Craig-Bampton,图4-5_CB_论文矢量边界.csv,56,1,56,51,2,2,24,48.828125,0.9765625,0.9765625,22.4609375
+4-5,Guyan,图4-5_Guyan_论文矢量边界.csv,53,1,53,48,2,2,23,45.8984375,0.9765625,0.9765625,21.484375

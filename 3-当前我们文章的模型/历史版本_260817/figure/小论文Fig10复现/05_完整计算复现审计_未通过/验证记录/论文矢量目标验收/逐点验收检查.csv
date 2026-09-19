@@ -1,0 +1,18 @@
+﻿check_item,status,actual,expected
+源论文SHA-256,PASS,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1
+图4-4_Original_PDF矢量路径逐点一致,PASS,points=72; exact=True,points=72; exact=True
+图4-4_Original_最右列完整,PASS,tau1=64; tau2=[2],tau1=64; tau2=[2]
+图4-4_CB_PDF矢量路径逐点一致,PASS,points=69; exact=True,points=69; exact=True
+图4-4_CB_最右列完整,PASS,"tau1=59; tau2=[2, 3, 4, 5]","tau1=59; tau2=[2, 3, 4, 5]"
+图4-4_Guyan_PDF矢量路径逐点一致,PASS,points=67; exact=True,points=67; exact=True
+图4-4_Guyan_最右列完整,PASS,"tau1=58; tau2=[2, 3]","tau1=58; tau2=[2, 3]"
+图4-5_Original_PDF矢量路径逐点一致,PASS,points=69; exact=True,points=69; exact=True
+图4-5_Original_最右列完整,PASS,"tau1=57; tau2=[2, 3, 4]","tau1=57; tau2=[2, 3, 4]"
+图4-5_CB_PDF矢量路径逐点一致,PASS,points=56; exact=True,points=56; exact=True
+图4-5_CB_最右列完整,PASS,"tau1=51; tau2=[2, 3]","tau1=51; tau2=[2, 3]"
+图4-5_Guyan_PDF矢量路径逐点一致,PASS,points=53; exact=True,points=53; exact=True
+图4-5_Guyan_最右列完整,PASS,"tau1=48; tau2=[2, 3]","tau1=48; tau2=[2, 3]"
+图4-4_PDF为纯矢量且无Type3字体,PASS,images=0; drawings=248; type3_fonts=0,images=0; drawings>0; type3_fonts=0
+图4-4_PNG为600dpi,PASS,"pixels=3330x2250; dpi=(599.9988, 599.9988)",dpi>=599; pixels>=3000x2000
+图4-5_PDF为纯矢量且无Type3字体,PASS,images=0; drawings=226; type3_fonts=0,images=0; drawings>0; type3_fonts=0
+图4-5_PNG为600dpi,PASS,"pixels=3330x2250; dpi=(599.9988, 599.9988)",dpi>=599; pixels>=3000x2000

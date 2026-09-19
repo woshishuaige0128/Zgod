@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "scope": "Fig.6--Fig.9, Fig.10 excluded",
+  "case_count": 4,
+  "all_full_chain_matlab_runs_pass": true,
+  "standalone_copy_run": "PASS; C:/Windows/Temp/liangyu_live_demo_board27_20260901_01",
+  "evidence_level": "计算级复现（现存代码/必要适配路线）",
+  "author_historical_point_values": "待决定",
+  "html": {
+    "status": "PASS",
+    "sha256": "9D136889ACB5EE2D62E2A68B534F32C86731725F48CDA3CCC39828278DE50CD7",
+    "embedded_png": 4,
+    "external_resources": 0,
+    "desktop_document_overflow": 0,
+    "narrow_document_overflow": 0,
+    "a4_pages": 15
+  },
+  "cases": [
+    {
+      "figure": "Fig06",
+      "entry": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig06_第一类划分_ElCentro全链计算\\RUN_FIG06_FULLCHAIN.m",
+      "manifest_files": 9,
+      "computed_shape": [
+        40961,
+        10
+      ],
+      "response_shape": [
+        40961,
+        3,
+        3
+      ],
+      "time_step_error_s": 0.0,
+      "max_abs_difference_to_current_mm": 0.0,
+      "simulation_seconds": 34.861592,
+      "dof_original_guyan_cb": [
+        15,
+        6,
+        9
+      ],
+      "pdf": {
+        "pages": 1,
+        "image_objects": 0,
+        "type3_fonts": 0
+      },
+      "png_pixels": [
+        3624,
+        2116
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "status": "PASS"
+    },
+    {
+      "figure": "Fig07",
+      "entry": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig07_第二类划分_ElCentro全链计算\\RUN_FIG07_FULLCHAIN.m",
+      "manifest_files": 9,
+      "computed_shape": [
+        40961,
+        10
+      ],
+      "response_shape": [
+        40961,
+        3,
+        3
+      ],
+      "time_step_error_s": 0.0,
+      "max_abs_difference_to_current_mm": 0.0,
+      "simulation_seconds": 5.292458,
+      "dof_original_guyan_cb": [
+        15,
+        5,
+        8
+      ],
+      "pdf": {
+        "pages": 1,
+        "image_objects": 0,
+        "type3_fonts": 0
+      },
+      "png_pixels": [
+        3624,
+        2117
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "status": "PASS"
+    },
+    {
+      "figure": "Fig08",
+      "entry": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig08_第一类划分_Chirp全链计算\\RUN_FIG08_FULLCHAIN.m",
+      "manifest_files": 9,
+      "computed_shape": [
+        40961,
+        10
+      ],
+      "response_shape": [
+        40961,
+        3,
+        3
+      ],
+      "time_step_error_s": 0.0,
+      "max_abs_difference_to_current_mm": 0.0,
+      "simulation_seconds": 4.442442,
+      "dof_original_guyan_cb": [
+        15,
+        6,
+        9
+      ],
+      "pdf": {
+        "pages": 1,
+        "image_objects": 0,
+        "type3_fonts": 0
+      },
+      "png_pixels": [
+        3624,
+        2117
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "status": "PASS"
+    },
+    {
+      "figure": "Fig09",
+      "entry": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\导师现场MATLAB全链演示_Fig06至Fig09\\Fig09_第二类划分_Chirp全链计算\\RUN_FIG09_FULLCHAIN.m",
+      "manifest_files": 9,
+      "computed_shape": [
+        40961,
+        10
+      ],
+      "response_shape": [
+        40961,
+        3,
+        3
+      ],
+      "time_step_error_s": 0.0,
+      "max_abs_difference_to_current_mm": 0.0,
+      "simulation_seconds": 4.073415,
+      "dof_original_guyan_cb": [
+        15,
+        5,
+        8
+      ],
+      "pdf": {
+        "pages": 1,
+        "image_objects": 0,
+        "type3_fonts": 0
+      },
+      "png_pixels": [
+        3624,
+        2117
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "status": "PASS"
+    }
+  ]
+}

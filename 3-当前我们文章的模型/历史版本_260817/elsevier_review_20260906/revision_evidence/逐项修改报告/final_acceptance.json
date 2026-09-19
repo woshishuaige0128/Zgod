@@ -1,0 +1,1011 @@
+{
+  "protected_existing_files": 76,
+  "protected_files_unchanged": 76,
+  "all_html_raw_pairs_equal_catalog": 112,
+  "unique_decision_ids": 198,
+  "table345_changed_cell_ids": 30,
+  "utf8": true,
+  "external_resources": 0,
+  "external_navigation": 0,
+  "browser_checks_pass": 34,
+  "print_checks": [
+    {
+      "filename": "report_print_A4.pdf",
+      "pages": 76,
+      "sha256": "ff29cb390ee4bd60c1dfc41f3ab3fe324ce415b91db7ed8d6aabe71f78bb2ca6",
+      "off_page_text_spans": 0,
+      "blank_pages": 0,
+      "heading_with_first_comparison": [
+        {
+          "id": "修改001",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "修改002",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "修改003",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "修改004",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "修改005",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "修改006",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "修改015",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "修改018",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            10
+          ]
+        },
+        {
+          "id": "修改023",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            11
+          ]
+        },
+        {
+          "id": "修改032",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            14
+          ]
+        },
+        {
+          "id": "修改033",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            14
+          ]
+        },
+        {
+          "id": "修改036",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "修改039",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "修改042",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            18
+          ]
+        },
+        {
+          "id": "修改045",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "修改050",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "修改051",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            22
+          ]
+        },
+        {
+          "id": "修改052",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "修改053",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            25
+          ]
+        },
+        {
+          "id": "修改054",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "修改055",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            28
+          ]
+        },
+        {
+          "id": "修改056",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "修改057",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "修改058",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            31
+          ]
+        },
+        {
+          "id": "修改059",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            31
+          ]
+        },
+        {
+          "id": "修改060",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "修改061",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "修改062",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            35
+          ]
+        },
+        {
+          "id": "修改063",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            36
+          ]
+        },
+        {
+          "id": "修改064",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "修改065",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "修改066",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            39
+          ]
+        },
+        {
+          "id": "修改069",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            41
+          ]
+        },
+        {
+          "id": "修改072",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            42
+          ]
+        },
+        {
+          "id": "修改073",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            43
+          ]
+        },
+        {
+          "id": "修改076",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            44
+          ]
+        },
+        {
+          "id": "修改079",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            45
+          ]
+        },
+        {
+          "id": "修改080",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            45
+          ]
+        },
+        {
+          "id": "修改081",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            46
+          ]
+        },
+        {
+          "id": "修改082",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            46
+          ]
+        },
+        {
+          "id": "修改083",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            47
+          ]
+        },
+        {
+          "id": "修改084",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            48
+          ]
+        },
+        {
+          "id": "修改085",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            49
+          ]
+        },
+        {
+          "id": "修改086",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            49
+          ]
+        },
+        {
+          "id": "修改087",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            50
+          ]
+        },
+        {
+          "id": "修改088",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            51
+          ]
+        },
+        {
+          "id": "修改089",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            52
+          ]
+        },
+        {
+          "id": "修改090",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            52
+          ]
+        },
+        {
+          "id": "修改091",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            54
+          ]
+        },
+        {
+          "id": "修改092",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            59
+          ]
+        },
+        {
+          "id": "修改093",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            59
+          ]
+        },
+        {
+          "id": "修改094",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            60
+          ]
+        },
+        {
+          "id": "修改095",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            61
+          ]
+        },
+        {
+          "id": "修改096",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            61
+          ]
+        },
+        {
+          "id": "修改097",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            62
+          ]
+        },
+        {
+          "id": "修改098",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            62
+          ]
+        },
+        {
+          "id": "修改099",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            63
+          ]
+        },
+        {
+          "id": "修改100",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            64
+          ]
+        },
+        {
+          "id": "修改101",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            65
+          ]
+        },
+        {
+          "id": "修改102",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            66
+          ]
+        },
+        {
+          "id": "修改103",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            66
+          ]
+        },
+        {
+          "id": "修改104",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            67
+          ]
+        },
+        {
+          "id": "文献01",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            68
+          ]
+        },
+        {
+          "id": "文献02",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            68
+          ]
+        },
+        {
+          "id": "附件01",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            69
+          ]
+        },
+        {
+          "id": "附件02",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            69
+          ]
+        },
+        {
+          "id": "附件03",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            70
+          ]
+        },
+        {
+          "id": "附件04",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            70
+          ]
+        },
+        {
+          "id": "附件05",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            71
+          ]
+        },
+        {
+          "id": "附件06",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            71
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "report_print_A4_with_source.pdf",
+      "pages": 118,
+      "sha256": "3fb034c4a5bc0a7675acbb27740b284abd9528cee474f4a5b2dc0e284bd375e9",
+      "off_page_text_spans": 0,
+      "blank_pages": 0,
+      "heading_with_first_comparison": [
+        {
+          "id": "修改001",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "修改002",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "修改003",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "修改004",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "修改005",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "修改006",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "修改015",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            13
+          ]
+        },
+        {
+          "id": "修改018",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            15
+          ]
+        },
+        {
+          "id": "修改023",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            18
+          ]
+        },
+        {
+          "id": "修改032",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "修改033",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            24
+          ]
+        },
+        {
+          "id": "修改036",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            27
+          ]
+        },
+        {
+          "id": "修改039",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "修改042",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            31
+          ]
+        },
+        {
+          "id": "修改045",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            33
+          ]
+        },
+        {
+          "id": "修改050",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "修改051",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "修改052",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            39
+          ]
+        },
+        {
+          "id": "修改053",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            43
+          ]
+        },
+        {
+          "id": "修改054",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            44
+          ]
+        },
+        {
+          "id": "修改055",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            47
+          ]
+        },
+        {
+          "id": "修改056",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            50
+          ]
+        },
+        {
+          "id": "修改057",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            50
+          ]
+        },
+        {
+          "id": "修改058",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            51
+          ]
+        },
+        {
+          "id": "修改059",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            52
+          ]
+        },
+        {
+          "id": "修改060",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            53
+          ]
+        },
+        {
+          "id": "修改061",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            54
+          ]
+        },
+        {
+          "id": "修改062",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            57
+          ]
+        },
+        {
+          "id": "修改063",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            59
+          ]
+        },
+        {
+          "id": "修改064",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            61
+          ]
+        },
+        {
+          "id": "修改065",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            63
+          ]
+        },
+        {
+          "id": "修改066",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            64
+          ]
+        },
+        {
+          "id": "修改069",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            67
+          ]
+        },
+        {
+          "id": "修改072",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            69
+          ]
+        },
+        {
+          "id": "修改073",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            70
+          ]
+        },
+        {
+          "id": "修改076",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            72
+          ]
+        },
+        {
+          "id": "修改079",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            74
+          ]
+        },
+        {
+          "id": "修改080",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            75
+          ]
+        },
+        {
+          "id": "修改081",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            75
+          ]
+        },
+        {
+          "id": "修改082",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            76
+          ]
+        },
+        {
+          "id": "修改083",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            77
+          ]
+        },
+        {
+          "id": "修改084",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            79
+          ]
+        },
+        {
+          "id": "修改085",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            80
+          ]
+        },
+        {
+          "id": "修改086",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            81
+          ]
+        },
+        {
+          "id": "修改087",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            82
+          ]
+        },
+        {
+          "id": "修改088",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            83
+          ]
+        },
+        {
+          "id": "修改089",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            85
+          ]
+        },
+        {
+          "id": "修改090",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            86
+          ]
+        },
+        {
+          "id": "修改091",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            87
+          ]
+        },
+        {
+          "id": "修改092",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            93
+          ]
+        },
+        {
+          "id": "修改093",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            93
+          ]
+        },
+        {
+          "id": "修改094",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            95
+          ]
+        },
+        {
+          "id": "修改095",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            96
+          ]
+        },
+        {
+          "id": "修改096",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            97
+          ]
+        },
+        {
+          "id": "修改097",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            97
+          ]
+        },
+        {
+          "id": "修改098",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            98
+          ]
+        },
+        {
+          "id": "修改099",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            99
+          ]
+        },
+        {
+          "id": "修改100",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            101
+          ]
+        },
+        {
+          "id": "修改101",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            102
+          ]
+        },
+        {
+          "id": "修改102",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            103
+          ]
+        },
+        {
+          "id": "修改103",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            104
+          ]
+        },
+        {
+          "id": "修改104",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            105
+          ]
+        },
+        {
+          "id": "文献01",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            107
+          ]
+        },
+        {
+          "id": "文献02",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            108
+          ]
+        },
+        {
+          "id": "附件01",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            109
+          ]
+        },
+        {
+          "id": "附件02",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            110
+          ]
+        },
+        {
+          "id": "附件03",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            111
+          ]
+        },
+        {
+          "id": "附件04",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            111
+          ]
+        },
+        {
+          "id": "附件05",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            112
+          ]
+        },
+        {
+          "id": "附件06",
+          "same_page_title_and_old_meaning": true,
+          "pages": [
+            113
+          ]
+        }
+      ]
+    }
+  ]
+}

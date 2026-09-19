@@ -1,0 +1,1096 @@
+     On Craig–Bampton Model Reduction for
+     Multi-Degree-of-Freedom Coupled Real-Time Hybrid
+     Simulation
+     Draft with Sections 2 to 5
+
+     Ning Li, Yu Liang
+
+
+                                         ABSTRACT
+
+
+
+
+1    1. Introduction
+
+ 2   2. Structural modeling and condensation formulations
+
+ 3      In a multi-degree-of-freedom (MDOF) real-time hybrid simulation (RTHS), the physical
+ 4   substructure often contains more interface coordinates than the transfer system can impose inde-
+ 5   pendently. Model reduction is adopted to express the coordinates without independent actuation
+ 6   through a reduced set of experimentally imposed coordinates. In this section, the structural
+ 7   modeling framework and the condensation formulations are established. The full-order equation of
+ 8   motion is decomposed into the contributions of the numerical and physical substructures. Guyan
+ 9   static condensation and Craig–Bampton dynamic condensation are then formulated on a common
+10   partition of retained and condensed coordinates, and the two methods differ only in the construction
+11   of the transformation matrix.
+
+12   2.1. Equations of motion and substructure partitioning
+
+13      The equation of motion of the full-order structure under a ground acceleration is expressed as
+
+                 ̇ + 𝐊𝒙(𝑡) = −𝐌𝚪𝑎g (𝑡),
+            ̈ + 𝐂𝒙(𝑡)
+           𝐌𝒙(𝑡)                                                                                    (2.1)
+
+
+14
+
+
+         ORCID (s):
+
+
+
+
+     N. Li and Y. Liang: Preprint submitted to Elsevier                                     Page 1 of 26
+                                              Short Title of the Article
+
+
+
+15   where 𝐌, 𝐂, and 𝐊 are the mass, damping, and stiffness matrices of the full-order structure,
+16   respectively, 𝒙(𝑡) is the generalized displacement vector of the full-order structural DOFs measured
+17   relative to the ground, 𝚪 is the influence vector, and 𝑎g (𝑡) is the ground acceleration.
+18      After the structure is divided into numerical and physical substructures, the corresponding
+19   equations are written as
+
+           𝐌n 𝒙̈ n + 𝐂n 𝒙̇ n + 𝐊n 𝒙n = 𝒇n + 𝝀n ,                                                       (2.2a)
+
+            𝐌e 𝒙̈ e + 𝐂e 𝒙̇ e + 𝐊e 𝒙e = 𝒇e + 𝝀e ,                                                      (2.2b)
+
+21   where 𝒙n and 𝒙e are the DOFs of the numerical and physical substructures, respectively, 𝒇n and
+20
+22   𝒇e are the external load vectors carrying the share of the seismic inertia load of Eq. (2.1) taken by
+23   each substructure, and 𝝀n and 𝝀e are the interface force vectors acting on the two substructures.
+24   The interface coordinates are shared by the two substructures and the interface forces balance,
+25   𝝀n + 𝝀e = 𝟎. The partition assigns one part of the structure to numerical solution and the other to
+26   physical implementation, and it does not dynamically decouple the two substructures.
+27      For a condensation operation, the DOFs of a substructure are arranged into a retained set 𝒖r and
+28   a condensed set 𝒖c , and the equation of motion takes the form
+           ⎡𝐌 𝐌 ⎤ ⎡𝒖̈ ⎤ ⎡𝐂 𝐂 ⎤ ⎡𝒖̇ ⎤ ⎡𝐊 𝐊 ⎤ ⎡𝒖 ⎤ ⎡𝒇 ⎤
+           ⎢ rr     rc
+                       ⎥ ⎢ r ⎥ + ⎢ rr   rc
+                                           ⎥ ⎢ r ⎥ + ⎢ rr   rc
+                                                               ⎥ ⎢ r⎥ = ⎢ r⎥ ,                     (2.3)
+           ⎢𝐌 𝐌 ⎥ ⎢𝒖̈ ⎥ ⎢𝐂 𝐂 ⎥ ⎢𝒖̇ ⎥ ⎢𝐊 𝐊 ⎥ ⎢𝒖 ⎥ ⎢𝒇 ⎥
+           ⎣ cr     cc ⎦ ⎣ c ⎦   ⎣ cr   cc ⎦ ⎣ c ⎦   ⎣ cr   cc ⎦ ⎣ c ⎦  ⎣ c⎦
+30   where 𝒇r and 𝒇c are the generalized forces acting on the retained and condensed coordinates, which
+29
+31   collect the seismic load carried by the substructure together with the interface force.
+32      The condensed coordinates are expressed through the retained coordinates by a transformation
+33   matrix, and the substructure matrices are projected onto the reduced subspace by a congruent
+34   transformation,
+                                        𝒖(𝑡) = 𝐓𝒒(𝑡),
+                                                                                                        (2.4)
+                       𝖳                  𝖳                 𝖳               𝖳
+          𝐌red = 𝐓 𝐌𝐓, 𝐂red = 𝐓 𝐂𝐓, 𝐊red = 𝐓 𝐊𝐓, 𝒇red = 𝐓 𝒇 ,
+36   where 𝒒(𝑡) is the reduced generalized-coordinate vector and 𝐓 is the transformation matrix. Guyan
+35
+37   and Craig–Bampton condensation share Eq. (2.4) and differ only in the construction of 𝐓.
+
+
+
+
+     N. Li and Y. Liang: Preprint submitted to Elsevier                                          Page 2 of 26
+                                            Short Title of the Article
+
+38      The two substructures are condensed separately and are coupled at the interface coordinates
+39   retained by both reduced models, where the interface forces cancel. The assembled reduced model
+40   is governed by
+
+                             ̇ + 𝐊red 𝒒(𝑡) = 𝒇red (𝑡),
+                   ̈ + 𝐂red 𝒒(𝑡)
+              𝐌red 𝒒(𝑡)                                                                             (2.5)
+
+42   where 𝒒(𝑡) collects the generalized coordinates of the two reduced substructures, with the shared
+41
+43   interface coordinates counted once. Only the interface coordinates retained by both reduced
+44   models are matched, since these are the coordinates that the transfer system can impose. A
+45   geometric interface coordinate outside the coupling set carries neither the compatibility condition
+46   nor the equilibrium condition of Eq. (2.2), and each reduced substructure recovers it from its
+47   own transformation. The same restriction applies to the test itself. Once the interface carries more
+48   coordinates than there are actuation channels, the specimen responds on the unactuated interface
+49   coordinates according to its own dynamics, and no loading system can enforce the numerical model
+50   there.
+
+51   2.2. Guyan static condensation
+
+52      Guyan condensation derives the condensed coordinates from static equilibrium [1] [DOI 10.2
+53   514/3.2874]. The reduction basis is built from the static response of the condensed coordinates.
+54   Their inertia, their damping and the load acting on them are therefore dropped from the lower block
+55   of Eq. (2.3), which leaves 𝐊cr 𝒖r + 𝐊cc 𝒖c = 𝟎. The condensed coordinates are approximated by
+
+              𝒖c = 𝚿G 𝒖r ,    𝚿G = −𝐊−1
+                                     cc
+                                        𝐊cr ,                                                       (2.6)
+
+57   where 𝚿G is the static condensation matrix, which requires 𝐊cc to be non-singular. The Guyan
+56
+58   transformation is
+                               ⎡ 𝐈 ⎤
+          𝒖 = 𝐓G 𝒒G ,     𝐓G = ⎢ ⎥ ,       𝒒G = 𝒖r ,                                          (2.7)
+                               ⎢𝚿 ⎥
+                               ⎣ G⎦
+60   where 𝒒G is the reduced coordinate vector, which contains the retained coordinates alone. The
+59
+61   reduced matrices follow from Eq. (2.4) with 𝐓 = 𝐓G , and the response of the condensed coordinates
+62   is recovered from Eq. (2.6).
+
+
+
+
+     N. Li and Y. Liang: Preprint submitted to Elsevier                                     Page 3 of 26
+                                            Short Title of the Article
+
+63      The loads on the condensed coordinates, including their share of the seismic inertia load and
+64   the interface force, are projected through 𝐓𝖳G 𝒇 , and they no longer act on independent coordinates.
+65   Guyan condensation is accordingly most accurate when the condensed coordinates follow the
+66   retained coordinates through quasi-static deformation, and it loses accuracy once the inertia of
+67   the condensed coordinates contributes to the response.
+
+68   2.3. Craig–Bampton dynamic condensation
+
+69      Craig–Bampton condensation keeps the retained coordinates explicit and represents the con-
+70   densed coordinates through constraint modes and selected fixed-interface modes [2] [DOI 10.2
+71   514/3.4741]. The experimentally imposed coordinates form the retained set of the physical sub-
+72   structure, and internal master coordinates are additionally retained in the numerical substructure.
+73   An interface coordinate driven by no actuator is therefore condensed, whereas the classical partition
+74   keeps every interface coordinate explicit [3] [DOI 10.1016/j.ymssp.2018.05.031].
+75      The dynamic modes are obtained with the retained coordinates constrained, and satisfy
+
+           𝐊cc 𝚽 = 𝐌cc 𝚽𝛀2 ,         𝚽𝖳 𝐌cc 𝚽 = 𝐈,                                                   (2.8)
+
+77   where the columns of 𝚽 are the fixed-interface modes of the partition and 𝛀2 is the diagonal matrix
+76
+78   of the corresponding eigenvalues.
+79      The constraint modes describe the static deformation of the condensed coordinates produced
+80   by unit displacements of the retained coordinates, which is the relation 𝚿G of Eq. (2.6). The Craig–
+81   Bampton transformation is therefore
+          ⎡𝒖 ⎤ ⎡ 𝐈       𝟎 ⎤ ⎡𝒖r ⎤
+          ⎢ r⎥ = ⎢          ⎥ ⎢ ⎥ = 𝐓CB 𝒒CB ,                                                   (2.9)
+          ⎢𝒖 ⎥ ⎢𝚿 𝚽 ⎥ ⎢ 𝜼 ⎥
+          ⎣ c⎦ ⎣ G        𝑑⎦ ⎣ ⎦
+83   where 𝚽𝑑 collects the 𝑑 fixed-interface modes of lowest frequency, which are the modes retained
+82
+84   in the reduced model, and 𝜼 contains the corresponding modal coordinates. The reduced matrices
+85   follow from Eq. (2.4) with 𝐓 = 𝐓CB .
+86      The response of the condensed coordinates is approximated as
+
+           𝒖c (𝑡) = 𝚿G 𝒖r (𝑡) + 𝚽𝑑 𝜼(𝑡).                                                           (2.10)
+
+
+
+
+     N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 4 of 26
+88
+                                            Short Title
+         The first term is the static contribution      of the Article
+                                                   of Guyan    condensation, and the second term retains
+87
+89    selected internal vibration patterns, which is the only difference between the two transformations.
+
+
+90    3. Delay-dependent stability formulation
+
+91       In an MDOF RTHS, each actuated coordinate of the physical substructure is driven by a
+92    separate actuator, and each actuator introduces its own response delay. Condensation expresses
+93    the condensed coordinates through the retained coordinates, and the delays acting on the retained
+94    coordinates are therefore carried by the reconstructed response of the condensed coordinates. In this
+95    section, the delay-dependent stability formulation of the condensed RTHS system is established.
+96    The actuator delays are represented as integer multiples of the integration time step, and their
+97    transmission through the Guyan and Craig–Bampton transformations is identified. The condensed
+98    substructures are then assembled into a discrete-time closed-loop model with an LQR controller,
+99    and the stability is assessed from the modulus of the dominant pole of the closed loop.
+
+100   3.1. Multiple-delay representation and delay propagation through condensation
+
+101      The delay of an RTHS system originates from the numerical integration, the data exchange
+102   between the numerical and physical substructures, the conversion between digital and analogue
+103   signals, and the response of the servo-hydraulic actuator [4]. The actuator response delay is retained
+104   in the present formulation and the other three sources are excluded, which isolates the interaction
+105   between the delay and the model reduction.
+106      The actuator delay is taken as an integer multiple of the integration time step [5] [DOI
+107   10.1002/eqe.2467]. The delay then becomes a power of 𝑧 after the 𝑧 transform, which avoids
+108   the transcendental term produced by a continuous-time delay and admits several delay channels at
+109   the same time. The delay of the 𝓁th actuator and the displacement that this actuator imposes on the
+110   specimen are
+
+            𝜏𝓁 = 𝑛𝓁 Δ𝑡,      𝑢̂ r,𝓁 (𝑡) = 𝑢r,𝓁 (𝑡 − 𝜏𝓁 ),   𝓁 = 1, … , 𝑛a ,                           (3.1)
+
+112   where Δ𝑡 is the integration time step, 𝑛𝓁 is a non-negative integer, with 𝑛𝓁 = 0 denoting a delay-free
+111
+113   channel, 𝑛a is the number of actuators, 𝑢r,𝓁 is the retained coordinate driven by the 𝓁th actuator,
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                       Page 5 of 26
+                                                Short Title of the Article
+
+114   and 𝑢̂ r,𝓁 is the displacement imposed on the specimen. Each actuator is assigned its own value of
+115   𝑛𝓁 , which represents channels of different equivalent pure delay. A pure delay reproduces the phase
+116   lag of a channel rather than its bandwidth or its amplitude attenuation. The closed loop carrying
+117   these delays is shown in Fig. 1. The numerical substructure supplies the target displacement of each
+118   actuated coordinate, the transfer system imposes it on the physical substructure with the delay of Eq.
+119   (3.1), and the measured displacement and restoring force are returned to the numerical substructure
+120   and to the regulator acting on the actuated coordinates.
+
+
+
+
+                           Figure 1: Closed loop of an MDOF RTHS with multiple actuators.
+
+
+121      The retained coordinates of the physical substructure are the only coordinates that the transfer
+122   system imposes, and each of them is driven by one actuator. The condensed coordinates are neither
+123   commanded nor measured, and their response is reconstructed from the recovery relation of the
+124   condensation. The two condensation methods reconstruct this response in different ways.
+125      The reconstructed response follows from Eqs. (2.6) and (2.10) as
+
+            𝒖rec
+             c
+                 (𝑡) = 𝚿G 𝒖̂ r (𝑡),                                                                  (3.2a)
+
+            𝒖rec
+             c
+                 (𝑡) = 𝚿G 𝒖̂ r (𝑡) + 𝚽𝑑 𝜼(𝑡),                                                        (3.2b)
+
+127      for Guyan and Craig–Bampton condensation, respectively. Every entry of 𝒖̂ r is a delayed
+126
+128   quantity. The Guyan reconstruction is therefore built from delayed quantities alone, and 𝚿G
+129   redistributes the delayed channels over all condensed coordinates. The fixed-interface modal
+130   coordinates 𝜼 are solved within the reduced model and do not pass through the transfer system. The
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                       Page 6 of 26
+                                             Short Title of the Article
+
+131   second term of Eq. (3.2b) accordingly carries no explicit delay operator, and it reaches the delayed
+132   motion of the retained coordinates only through the coupling of the reduced equations. For the same
+133   actuated coordinates and the same actuator delays, the delayed channels reach the reconstructed
+134   response through the constraint-mode term alone under Craig–Bampton condensation, and through
+135   every term under Guyan condensation.
+136      The formulation is developed for a virtual RTHS, in which 𝜼 of the physical substructure is a
+137   state of the simulated specimen model.
+
+138   3.2. Discrete-time closed-loop pole criterion with LQR control
+
+139      The assembled reduced model of Eq. (2.5) is taken as the starting point. The actuator delay
+140   affects only the terms acting on the coordinates imposed by the transfer system, and each channel
+141   carries its own delay. The assembled damping and stiffness matrices are therefore split channel by
+142   channel, and the equation of motion of the assembled reduced system is
+                                          ∑𝑛a
+                                              [                             ]
+                          ̇ + 𝐊0 𝒒(𝑡) +
+                 ̈ + 𝐂0 𝒒(𝑡)
+           𝐌red 𝒒(𝑡)                                ̇ − 𝜏𝓁 ) + 𝐊𝓁 𝒒(𝑡 − 𝜏𝓁 ) = 𝒇red (𝑡),
+                                                𝐂𝓁 𝒒(𝑡                                                (3.3)
+                                             𝓁=1
+144   where 𝒒(𝑡) collects the 𝑛𝑞 generalized coordinates of the assembled reduced model, 𝐂𝓁 and 𝐊𝓁 are
+143
+145   of the same size as 𝐂red and 𝐊red and retain only the columns of the reduced physical substructure
+146   that act on the coordinate driven by the 𝓁th actuator, the remaining columns being zero, and
+                     ∑                        ∑
+147   𝐂0 = 𝐂red − 𝓁 𝐂𝓁 and 𝐊0 = 𝐊red − 𝓁 𝐊𝓁 contain the remaining terms. This split makes
+148   the difference described in Section 3.1 explicit. The reduced physical substructure of the Guyan
+149   model retains the actuated coordinates alone, and every one of its columns is therefore delayed.
+150   The Craig–Bampton model also carries fixed-interface modal coordinates driven by no actuator,
+151   and the columns associated with them remain in 𝐂0 and 𝐊0 without delay.
+152      The force returned to the loop by the physical substructure is its elastic and damping reaction to
+153   the motion imposed by the transfer system. Each actuated channel therefore enters Eq. (3.3) with
+154   its own delay as a scalar factor, and the delays remain independent of each other. The inertia of the
+155   physical substructure is advanced numerically within the assembled state, and the assembled mass
+
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 7 of 26
+                                               Short Title of the Article
+
+156                                             ̈ − 𝜏𝓁 ) would be added to Eq. (3.3) once the returned
+      matrix carries no delay factor. A term 𝐌𝓁 𝒒(𝑡
+157   force contained the inertia produced by the delayed motion.
+158       The assembled system of Eq. (3.3) is advanced with the CR integration algorithm [6] [DOI
+159   10.1061/(ASCE)0733-9399(2008)134:8(676)], and the sampling period equals the integration
+160   time step. A quantity written with the argument 𝑧 denotes the 𝑧 transform of the corresponding
+161   time-domain quantity in the following. The displacement and velocity recursions of the algorithm
+162   share one matrix coefficient. Eliminating the acceleration between them and taking the 𝑧 transform
+163   relates the velocity and the acceleration to the displacement by
+                                         𝑧−1
+                                 𝒒(𝑧)
+                                  ̇    =        𝒒(𝑧),
+                                          𝑧Δ𝑡                                                       (3.4)
+                          (                             ) (𝑧 − 1)2
+                                    1           1  2
+                  ̈ = 𝐌red + Δ𝑡 𝐂red + Δ𝑡 𝐊red
+             𝐌red 𝒒(𝑧)                                          2
+                                                                   𝒒(𝑧),
+165   where the bracket is the mass2 term of the4 CR algorithm,
+                                                             𝑧Δ𝑡formed from the assembled matrices before
+164
+166   the channel split of Eq. (3.3), since that split describes the signal path of the interface restoring force
+167   rather than the time integration. A delay of 𝑛𝓁 steps becomes the scalar factor 𝑧−𝑛𝓁 . The delayed
+168   terms are taken from the stored response history, and the recursion therefore remains explicit in
+169   them.
+170       A linear quadratic regulator acts on the actuated coordinates and supplies a generalized force
+171   that reaches the specimen through the actuator channels. Its design model is the assembled reduced
+172   model statically condensed onto the actuated coordinates through Eqs. (2.6) and (2.7), with the
+173   regulator force as its input. Minimizing a quadratic cost of the design-model states and of the
+174   control input, weighted by 𝐐 and 𝐑, gives the control law
+
+              𝒇L (𝑡) = −𝐊𝑥 𝐒a 𝒒(𝑡) − 𝐊𝑣 𝐒a 𝒒(𝑡),
+                                            ̇                                                              (3.5)
+
+176   where 𝐒a is the Boolean matrix of size 𝑛a × 𝑛𝑞 that extracts the actuated coordinates from 𝒒, and
+175
+177   𝐊𝑥 and 𝐊𝑣 are the 𝑛a × 𝑛a displacement and velocity parts of the gain.
+178       The regulator output is a generalized force. Equation (3.5) therefore acts on the assembled
+179   equation as an equivalent feedback stiffness 𝐊𝑥 and an equivalent feedback damping 𝐊𝑣 on the
+180   actuated coordinates, and this action reaches the specimen through the actuator channels of Fig.
+181   1 with the same channel delays as the imposed displacement. The design model has 2𝑛a states
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                           Page 8 of 26
+                                             Short Title of the Article
+
+182   against 2𝑛𝑞 of the assembled model, and Eq. (3.5) is accordingly an output feedback on the actuated
+183   coordinates rather than a full-state regulator of the assembled model. Each model supplies its own
+184   design model, and equal 𝐐 and 𝐑 therefore give different gains. A stability domain computed in
+185   this way carries the regulator produced by the model itself. Substituting Eqs. (3.4) and (3.5) into
+186   Eq. (3.3) gives the closed-loop system in the 𝑧 domain as 𝐙(𝑧)𝒒(𝑧) = 𝒇red (𝑧), with
+                    (𝑧 − 1)2 (           1           1    2
+                                                                )
+                                                                   𝑧−1
+            𝐙(𝑧) =               𝐌 red +   Δ𝑡 𝐂red +   Δ𝑡   𝐊red +     𝐂 + 𝐊0
+                       𝑧Δ𝑡  2            2           4             𝑧Δ𝑡 0
+                        ∑𝑛a      [                 ]             [           ]                      (3.6)
+                              −𝑛𝓁 𝑧 − 1                 𝖳            𝑧−1
+                     +       𝑧           𝐂 + 𝐊𝓁 + 𝐒a 𝐇a (𝑧) 𝐊𝑥 +          𝐊 𝐒,
+                        𝓁=1
+                                    𝑧Δ𝑡 𝓁                             𝑧Δ𝑡 𝑣 −𝑛a
+188   where 𝐇a (𝑧) is the diagonal matrix whose 𝓁th entry is the delay factor 𝑧 𝓁 of the 𝓁th channel. The
+187
+189   poles of the closed-loop system are the roots of
+
+            det 𝐙(𝑧) = 0.                                                                            (3.7)
+
+191      The negative powers of 𝑧 in Eq. (3.6) are cleared by multiplying Eq. (3.7) by a sufficient power
+190
+192   of 𝑧, and the roots introduced at the origin by this operation are discarded.
+193      The continuous and the discrete planes are related by 𝑧 = e𝑠Δ𝑡 , and the left half of the 𝑠 plane
+194   therefore maps onto the interior of the unit circle of the 𝑧 plane. The largest modulus among the
+195   roots of Eq. (3.7) is written as 𝜌cl . The system is stable when 𝜌cl < 1, unstable when 𝜌cl > 1, and
+196   on the stability boundary when 𝜌cl = 1.
+197      For a given condensed model, 𝜌cl depends on the delay of each actuator through the factors
+198   𝑧−𝑛𝓁 . The stability domain is obtained by evaluating 𝜌cl over combinations of the integer delays 𝑛𝓁
+199   and by locating the contour on which 𝜌cl equals unity. The delays are expressed in multiples of the
+200   sampling period, and the resulting domain gives the combinations of actuator delays for which the
+201   RTHS system remains stable.
+
+
+202   4. Benchmark structure and analysis setup
+
+203      The formulations of Sections 2 and 3 are applied to a benchmark frame whose physical substruc-
+204   ture contains more interface coordinates than the transfer system can impose independently. The
+205   study is a virtual RTHS, in which both substructures are simulated and the two-channel actuation
+206   limit is imposed as a modelling constraint. The accuracy and the stability of a condensed model
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                     Page 9 of 26
+                                              Short Title of the Article
+
+207   depend on the extent of the physical substructure and on the choice of the actuated coordinates,
+208   and two substructure divisions with different condensation ratios are therefore examined. In this
+209   section, the benchmark structure and its finite element idealization are described first. The two
+210   substructure divisions are then defined together with the retained and condensed coordinates of
+211   each substructure. The excitations, the controller and delay settings, and the indices adopted for the
+212   modelling accuracy and the stability are given last.
+
+213   4.1. Benchmark structure and finite element idealization
+
+214      The reference structure is a simplified planar model built from the geometry and the material
+215   data of the multi-axial RTHS benchmark frame of Condori Uribe et al. [7] [DOI 10.3389/fbui
+216   l.2023.1270996]. The three bays are 762 mm wide and the three storeys are 635 mm high. The
+217   columns are W5×16 sections of A992 Gr.50 steel and the beams are a custom I section of A36
+218   steel. The geometry and the section dimensions are shown in Fig. 2, and the material properties are
+219   listed in Table 1.
+
+
+
+
+                           Figure 2: Geometry and member sections of the benchmark frame.
+
+
+
+220      In the finite element idealization, each node of the frame carries two in-plane translations and
+221   one rotation about the out-of-plane axis. The frame responds mainly in the horizontal direction
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 10 of 26
+                                               Short Title of the Article
+
+      Table 1
+      Material properties of the benchmark frame.
+                    Steel grade                𝑓y (MPa)    𝑓u (MPa)    𝐸 (GPa)    𝜈      𝜌 (kg/m3 )
+                    A36 (beams)                   250      400–550          200   0.3      7850
+                    A992 Gr.50 (columns)          345      450–550          200   0.3      7850
+
+
+222   under a base excitation. The axial deformation of the members is therefore neglected, the vertical
+223   displacement is taken as zero, and the horizontal displacement is assumed identical for all nodes
+224   of a storey. The idealized model of Fig. 3 has fifteen DOFs, which are one horizontal displacement
+225   per storey and one rotation at each of the four nodes of each storey. Among them, 𝜓1 , 𝜓6 and 𝜓11
+226   are the horizontal displacements of the first, second and third storey, and the remaining coordinates
+227   are the nodal rotations of the corresponding storey.
+
+
+
+
+                                  Figure 3: Degrees of freedom of the idealized model.
+
+
+228      The full-order equation of motion is Eq. (2.1). The damping matrix is proportional to the mass
+229   and stiffness matrices, 𝐂 = 𝑎0 𝐌 + 𝑎1 𝐊, and the coefficients 𝑎0 and 𝑎1 are obtained from a damping
+230   ratio of 5% at the first two modes. The first five natural frequencies of the idealized model are 2.7
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                              Page 11 of 26
+                                             Short Title of the Article
+
+231   Hz, 9.1 Hz, 18.0 Hz, 22.1 Hz and 23.6 Hz. The first five modes account for more than 90% of the
+232   effective modal mass and therefore characterize the dominant seismic response of the structure.
+
+233   4.2. Substructure division and selection of retained DOFs
+
+234      The position of the boundary between the physical and the numerical substructures affects both
+235   the dynamic response and the accuracy of the condensation. Two divisions are compared and both
+236   are shown in Fig. 4. In each of them the outer bay of the frame is implemented as the physical
+237   substructure and the remaining part forms the numerical substructure. The outer bay is selected
+238   because a division at an inner bay would split the numerical substructure into two separate parts.
+239      In division I the physical substructure covers the first two storeys of the outer bay together with
+240   the connected beams and columns. The lower storeys carry the largest storey shear of the first two
+241   modes, and the interface is close to the actuator locations, which shortens the loading path. The
+242   physical substructure holds about 40% of the DOFs of the whole structure.
+243      In division II the physical substructure covers all three storeys of the outer bay. More DOFs are
+244   kept at the interface, which represents the modal coupling between the storeys more completely,
+245   and the physical substructure holds about 60% of the DOFs of the whole structure.
+246      Three requirements govern the selection of the retained coordinates. The coordinates carrying
+247   the dominant response remain explicit, the condensed response is recoverable through the relations
+248   of Section 2, and the reduction is large enough to be of practical use. The horizontal storey
+249   displacements govern the global response of a frame under a base excitation and carry most of
+250   the energy of the low-order modes. The nodal rotations mainly represent local bending and are
+251   coupled to the horizontal displacements through the off-diagonal terms of the stiffness matrix, and
+252   they are condensed accordingly. Condensing all rotations would shift the higher modes, and several
+253   rotations of the numerical substructure are therefore kept.
+254      Both divisions are limited to two independent actuation channels. Division I directly actuates
+255   both horizontal coordinates of its physical substructure. Division II has three horizontal coordinates
+256   under the same two-channel constraint, and the middle-storey coordinate 𝜓6 is therefore condensed
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 12 of 26
+                                              Short Title of the Article
+
+257   and reconstructed from the retained coordinates. Division II is the more demanding case, since a
+258   coordinate carrying a substantial share of the storey response is no longer imposed directly. The
+259   retained horizontal coordinates of the physical substructure are the coordinates imposed by the
+260   two actuators in both divisions. The retained set and the actuated set thus coincide, and the same
+261   assignment is adopted in the accuracy analysis and in the stability analysis.
+262      Three rotations of the numerical substructure are retained as internal master coordinates, which
+263   limits the shift of its higher modes. They leave the interface coordinates condensed by the physical
+264   substructure outside the coupling set, where the compatibility is not restored. The retained and
+265   condensed coordinates of both substructures are listed in Table 2 with the coordinate indices of
+266   Fig. 3, and a coordinate lying on the interface appears in both substructures.
+
+      Table 2
+      Retained and condensed coordinates of the two substructure divisions.
+                Division   Substructure    Retained coordinates            Condensed coordinates
+                I          Numerical       𝜓1 , 𝜓4 , 𝜓6 , 𝜓9 , 𝜓11 , 𝜓14   𝜓3 , 𝜓5 , 𝜓7 , 𝜓8 , 𝜓10 , 𝜓12 , 𝜓13 , 𝜓15
+                I          Physical        𝜓1 , 𝜓6                         𝜓2 , 𝜓3 , 𝜓7 , 𝜓8
+                II         Numerical       𝜓1 , 𝜓4 , 𝜓6 , 𝜓9 , 𝜓11 , 𝜓14   𝜓3 , 𝜓5 , 𝜓8 , 𝜓10 , 𝜓13 , 𝜓15
+                II         Physical        𝜓1 , 𝜓11                        𝜓2 , 𝜓3 , 𝜓6 , 𝜓7 , 𝜓8 , 𝜓12 , 𝜓13
+
+
+267      The three fixed-interface modes of lowest frequency are retained for each substructure in the
+268   Craig–Bampton models, which gives the two divisions the same Craig–Bampton order. Assembly
+269   through the two interface coordinates of Table 2 gives a Guyan model with 6 generalized
+270   coordinates and a Craig–Bampton model with 12 in both divisions. The two divisions are therefore
+271   compared at the same reduced model size, and the differences between them do not come from the
+272   order of the reduced model.
+
+273   4.3. Simulation setup and evaluation indices
+
+274      The full-order model, the Guyan condensed model and the Craig–Bampton condensed model
+275   are implemented in Simulink. The coupling is idealized in the accuracy study, where the controller
+276   dynamics, the measurement noise and the delay are absent and the displacement computed
+277   by the numerical substructure reaches the physical substructure without error. Any difference
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                        Page 13 of 26
+                                               Short Title of the Article
+
+
+
+
+       Figure 4: Substructure divisions and selection of the retained coordinates. (a) Division I. (b) Division II.
+
+
+278   between the full-order and the condensed response then comes from the reduction and from the
+279   reduced-interface coupling. The ground acceleration is multiplied by the mass matrix to give the
+280   equivalent seismic force. The displacement of the numerical substructure is passed to the physical
+281   substructure, which returns the restoring force at the interface. The full-order model is coupled at
+282   the complete set of interface coordinates, whereas the two condensed models are coupled only at
+283   the interface coordinates retained by both.
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                             Page 14 of 26
+                                                Short Title of the Article
+
+284       Two excitations are adopted. The first is the El Centro record scaled by a factor of 0.40, which
+285   keeps the interstorey drift moderate and the member forces below yield, and the linear model of Eq.
+286   (2.1) therefore represents the frame. The second is a chirp signal whose frequency increases linearly
+287   from 0.1 Hz to 10 Hz over 40 s. The sweep covers the first two natural frequencies of the benchmark
+288   and follows the accuracy of the condensed model as the excitation frequency approaches and then
+289   exceeds the fundamental frequency.
+290       The stability analysis adopts the closed loop of Section 3. The sampling period is Δ𝑡 = 1∕1024
+291   s and equals the integration time step. Two actuators drive the retained horizontal coordinates of
+292   the physical substructure. Actuator 1 drives 𝜓1 with a delay 𝜏1 in both divisions, while actuator 2
+293   drives 𝜓6 in division I and 𝜓11 in division II, both with a delay 𝜏2 . The two delays are treated as
+294   independent, which represents channels of different equivalent pure delay. The weighting matrices
+295   of the regulator are 𝐐 = diag(106 , 106 , 104 , 104 ) and 𝐑 = diag(10−2 , 10−2 ), where the first two
+296   entries of 𝐐 weight the displacements of the two actuated coordinates and the last two weight their
+297   velocities.
+298       Three indices are adopted for the accuracy of the condensed models. The first is the relative
+299   error of the natural frequencies, 𝑒𝑓 ,𝑖 = |𝑓𝑖f ull − 𝑓𝑖red |∕𝑓𝑖f ull × 100%, where 𝑓𝑖f ull and 𝑓𝑖red are the 𝑖th
+300   natural frequency of the full-order and of the condensed model. The second is the modal assurance
+      criterion,
+                        [(             ]2
+301
+                                 )𝖳
+                          𝝋f𝑖 ull 𝝋red
+                                    𝑖
+             MAC𝑖 =                      ,                                                    (4.1)
+                     ‖𝝋f ull ‖2 ‖𝝋red ‖2
+                     ‖ 𝑖 ‖ ‖ 𝑖 ‖
+303   where 𝝋red
+             𝑖
+                 is the 𝑖th mode shape of the condensed model and 𝝋f𝑖 ull is the 𝑖th mode shape of
+302
+304   the full-order model restricted to the retained coordinates, which places the two vectors on the
+305   same coordinate set. The retained-coordinate part of the reduced mode shape is taken for the
+306   Craig–Bampton models. A value close to unity indicates preserved mode shape components on
+307   the retained coordinates.
+                        √       The third is the normalized root mean square error of the time histories,
+                            1
+                                 𝑇d
+                                    [                     ]2
+                                     𝑥f ull (𝑡) − 𝑥red (𝑡) d𝑡
+                           𝑇d ∫0
+             NRMSE =             (    )           (       )   × 100%,                               (4.2)
+                            max 𝑥f ull − min 𝑥f ull
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                              Page 15 of 26
+309   where 𝑥f ull and 𝑥red are the horizontalShort Title
+                                               storey     of the Articleof the full-order and of the condensed
+                                                      displacements
+308
+310   model, and 𝑇d is the duration of the response. For a frequency band, the numerator is evaluated over
+311   the corresponding time interval and divided by the duration of that interval, which places bands of
+312   different length on the same root mean square basis. The denominator is the peak-to-peak value of
+313   the full-order response over the whole record and is common to every band, and a band of small
+314   response amplitude therefore returns a small NRMSE.
+315      For the chirp excitation, the NRMSE is evaluated separately over five frequency bands, which
+316   are 0.1 Hz to 0.7𝑓1 , 0.7𝑓1 to 1.3𝑓1 , 1.3𝑓1 to 2𝑓1 , 2𝑓1 to 3𝑓1 , and 3𝑓1 to 10 Hz, where 𝑓1 is the
+317   fundamental frequency of the structure. With 𝑓1 = 2.7 Hz these bands correspond to 0.1 to 1.9
+318   Hz, 1.9 to 3.5 Hz, 3.5 to 5.4 Hz, 5.4 to 8.1 Hz and 8.1 to 10 Hz. The instantaneous frequency
+319   of the sweep is 𝑓 (𝑡) = 0.1 + 0.2475𝑡. The band containing the fundamental frequency therefore
+320   spans the interval from about 7.3 s to 13.7 s, and the sweep crosses 𝑓1 at about 10.5 s. The bands
+321   are centred on the fundamental frequency, where the condensation error is most sensitive to the
+322   excitation frequency. The response within a band carries the decay of the preceding band, and the
+323   band values accordingly trace the growth of the error with the excitation frequency.
+324      The effect of condensation on the stability is quantified through a modal redistribution ratio,
+325   which measures the low-order modal content moved onto the retained coordinates. With the mode
+326   shapes of the full-order model normalized with respect to the mass matrix, the modal share of
+327   coordinate 𝑗 is expressed as
+                 𝝋𝖳𝑖 𝐌𝚪              𝛾𝑖2
+            𝛾𝑖 = 𝖳       ,     𝑝𝑖 = 𝑚      ,
+                 𝝋𝑖 𝐌𝝋𝑖            ∑
+                                         2
+                                        𝛾𝑘
+                                               𝑘=1
+                                                                                                          (4.3)
+                        ∑
+                        𝑚           𝑚𝑗 𝜑2𝑗,𝑖
+                 𝐸𝑗 =         𝑝𝑖                ,
+                        𝑖=1
+                                   ∑
+                                   𝑛
+                                 𝑚𝑙 𝜑2𝑙,𝑖
+                             𝑙=1
+329   where 𝛾𝑖 is the modal participation factor of the 𝑖th mode, 𝑝𝑖 is the corresponding modal weight, 𝐸𝑗
+328
+330   is the modal share of coordinate 𝑗, 𝝋𝑖 is the 𝑖th mode shape and 𝜑𝑗,𝑖 is its 𝑗th entry, 𝚪 is the influence
+331   vector of Eq. (2.1), 𝑚𝑗 is the diagonal entry of the mass matrix associated with coordinate 𝑗, 𝑛 is
+332   the number of DOFs of the full-order model, and 𝑚 is the number of modes considered, taken as
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                         Page 16 of 26
+                                             Short Title of the Article
+
+333   𝑚 = 5 for the frame of Section 4.1. The mode shapes of a condensed model are expanded to the full
+334   coordinate set through its own transformation matrix before Eq. (4.3) is applied, which evaluates
+335   the two shares on the same coordinates. The modal redistribution ratio is then obtained as
+                   ∑𝑛a
+                       𝐸 red (𝑑𝑘 ) − 𝐸 f ull (𝑑𝑘 )
+            Δ𝐸 =                 f ull (𝑑 )
+                                                   .                                                (4.4)
+                   𝑘=1
+                              𝐸          𝑘
+337   where 𝑑𝑘 is the 𝑘th actuated coordinate of the physical substructure, and 𝐸 f ull and 𝐸 red are the
+336
+338   modal shares before and after condensation. Equation (4.4) sums the relative change of the modal
+339   share of each actuated coordinate. A larger Δ𝐸 therefore corresponds to a larger part of the modal
+340   content of the condensed coordinates carried by the coordinates that the actuators drive, and Δ𝐸
+341   measures the response exposed to the actuator delay through the propagation of Section 3.1. The
+342   index is built from the diagonal entries of the mass matrix and is applied to comparisons on the
+343   same physical coordinate set.
+
+344   5. Results and discussion
+
+345      The two condensed models of each division are compared with the full-order reference model of
+346   Section 4.1, following the order in which condensation acts on an RTHS. The modal properties of
+347   the reduced models are examined first, since a shift of the natural frequencies changes the response
+348   at every excitation level. The response accuracy under the two excitations is evaluated next with
+349   the idealized coupling, where condensation is the only source of error. The stability domains of
+350   the closed loop are then computed for pairs of actuator delays. The modal redistribution ratio
+351   finally relates the two sets of results to the modal content moved onto the actuated coordinates
+352   by condensation.
+
+353   5.1. Modal accuracy
+
+354      The relative errors of the first two natural frequencies and the corresponding MAC values are
+355   listed in Table 3. The chirp excitation reaches 10 Hz, and the first two modes at 2.7 Hz and 9.1 Hz
+356   are therefore the modes within the excitation band, to which the comparison is restricted. Craig–
+357   Bampton condensation reproduces the natural frequencies of the full-order model in both divisions,
+358   with a largest error of 0.834%. Guyan condensation is accurate for the first mode of division I, where
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 17 of 26
+                                             Short Title of the Article
+
+359   the error is 0.648%, while the error of the second mode reaches 5.411%. Both modes are affected
+360   in division II, with errors of 13.040% and 24.575%.
+
+      Table 3
+      Relative error of the natural frequencies and MAC values of the condensed models.
+                                            Frequency error (%)               MAC
+                      Division   Mode    Guyan    Craig–Bampton      Guyan    Craig–Bampton
+                      I          1        0.648        0.003         1.0000       1.0000
+                      I          2        5.411        0.284         0.9998       1.0000
+                      II         1       13.040        0.007         0.9962       1.0000
+                      II         2       24.575        0.834         0.9255       0.9998
+
+
+361      The two divisions differ in that division II condenses a horizontal storey coordinate inside a
+362   larger physical substructure. Once a horizontal storey coordinate leaves the retained set, the reduced
+363   stiffness of the physical substructure is built from a static relation between the bottom and the top
+364   storey alone, and the inertia associated with the middle storey is redistributed over the two retained
+365   coordinates through Eq. (2.7). The natural frequencies of the assembled model shift accordingly.
+366   Both condensations restrict the model to a subspace of the full-order one, and the condensed
+367   frequencies therefore lie above the full-order frequencies. Craig–Bampton condensation escapes
+368   the same shift, since the fixed-interface modes retain part of the internal inertia of the physical
+369   substructure.
+370      The MAC values behave differently. All four models keep the MAC above 0.92, and the lowest
+371   value of 0.9255 belongs to the Guyan model of division II, whose second natural frequency is in
+372   error by 24.575%. The mode shape components on the retained coordinates are therefore preserved
+373   where the frequencies are not. The Guyan transformation builds the condensed coordinates from a
+374   static deformation pattern that resembles the low-order mode shapes and carries no information
+375   on the inertia setting the frequencies. A MAC evaluated on the retained coordinates alone is
+376   accordingly insufficient to accept a condensed model, and the frequency error is the modal quantity
+377   to be monitored alongside it.
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                      Page 18 of 26
+                                                               Short Title of the Article
+
+378   5.2. Response accuracy under earthquake and chirp excitation
+
+379                        Figs. 5 and 6 compare the horizontal storey displacements of the two condensed models
+380   with those of the full-order model under the El Centro record. The first and the third storey are
+381   shown. The first storey is actuated in both divisions and allows the same coordinate to be followed
+382   throughout, and the third storey carries the largest lateral response of the low-order modes. The
+383   response of the second storey lies between the two and is omitted. In division I both condensed
+384   models follow the reference over the whole record, and the deviation of the Guyan model appears
+385   only in the enlarged window between 10 s and 11 s. In division II the Guyan response departs from
+386   the reference over the same window in both amplitude and shape, whereas the Craig–Bampton
+387   response stays close to it. The window between 21.5 s and 22.5 s carries a weaker excitation and
+388   is reproduced by both models in both divisions, and the error of the Guyan model is therefore not
+389   uniform in time.
+
+                                                    Original         Craig-Bampton              Guyan
+       Displacement (mm)
+
+
+
+
+                                    (a)
+                                                                              0.5
+                            2
+                                                                                                            0.0
+                                                                              0.0
+                            0
+                                                                             −0.5                          −0.4
+                           −2
+                                                                             −1.0                          −0.8
+                                0         8   16     24        32       40      10.0     10.5       11.0      21.5     22.0     22.5
+       Displacement (mm)
+
+
+
+
+                                    (b)
+                            8                                                   2
+                                                                                                            0.0
+                            0                                                   0
+                                                                                                           −1.5
+                                                                              −2
+                           −8
+                                                                              −4                           −3.0
+                                0         8   16      24       32       40     10.0      10.5       11.0      21.5     22.0     22.5
+                                               Time (s)                                Time (s)                      Time (s)
+      Figure 5: Horizontal storey displacement of division I under the El Centro record. (a) First storey. (b) Third
+      storey.
+
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                               Page 19 of 26
+                                                                Short Title of the Article
+
+                                                     Original         Craig-Bampton              Guyan
+
+                                                                                                             0.4
+       Displacement (mm)
+
+
+
+                                     (a)
+                             2                                                 1.5
+                                                                                                             0.0
+                             0
+                                                                               0.0
+                                                                                                            −0.4
+                           −2
+                                                                              −1.5                          −0.8
+                                 0         8   16     24        32       40      10.0     10.5       11.0      21.5     22.0     22.5
+
+
+                                                                                                             1.5
+       Displacement (mm)
+
+
+
+
+                                     (b)
+                             8                                                   5
+                                                                                                             0.0
+                             0
+                                                                                 0
+                                                                                                            −1.5
+                           −8
+                                                                               −5
+                                                                                                            −3.0
+                                 0         8   16      24       32       40      10.0     10.5       11.0      21.5     22.0     22.5
+                                                Time (s)                                Time (s)                      Time (s)
+      Figure 6: Horizontal storey displacement of division II under the El Centro record. (a) First storey. (b) Third
+      storey.
+
+
+390                        Figs. 7 and 8 show the response under the chirp excitation, in which the instantaneous frequency
+391   rises linearly from 0.1 Hz to 10 Hz over the 40 s of the record. The sweep crosses the fundamental
+392   frequency at about 10.5 s and reaches three times the fundamental frequency at about 32 s. In the
+393   low-frequency part of the sweep both condensed models reproduce the reference in both divisions.
+394                        In division I the Guyan response deviates from the reference around the first resonance peak
+395   near 13 s, and the deviation remains small. The resonant response builds up over several cycles, and
+396   this peak therefore lags the crossing of the fundamental frequency at about 10.5 s. The deviation
+397   grows again towards the end of the sweep near 38 s, where the instantaneous frequency is about 9.5
+398   Hz and the excitation passes the second mode of the structure. The second natural frequency of this
+399   model is in error by 5.411%, which places the second resonance at the wrong frequency and turns
+400   the deviation into an amplitude and phase error over that window. In division II the Guyan response
+401   is inaccurate over the whole resonance band, and its peaks are shifted in time against those of the
+402   reference, which is the time-domain signature of the frequency shift of Section 5.1. Near the end of
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                                Page 20 of 26
+                                                                       Short Title of the Article
+
+403   the sweep, the Guyan response of division II falls to less than half of the reference at the first storey
+404   and rises to nearly twice the reference at the third storey. The Craig–Bampton response follows the
+405   reference over the whole sweep in both divisions.
+
+                                                            Original         Craig-Bampton             Guyan
+               Displacement (mm)
+
+
+
+
+                                            (a)                                        2
+                                    6                                                                              0.6
+
+                                    0                                                  0                           0.0
+
+                                   −6                                                                             −0.6
+                                                                                     −2
+
+                                        0         8   16     24        32       40     13.0     13.5       14.0     38.00    38.15     38.30
+       Displacement (mm)
+
+
+
+
+                                            (b)
+                                   25                                                  8
+                                                                                                                   0.6
+
+                                    0                                                  0                           0.0
+
+
+                              −25                                                                                 −0.6
+                                                                                     −8
+
+                                        0         8   16      24       32       40     13.0     13.5       14.0     38.00    38.15     38.30
+                                                       Time (s)                               Time (s)                      Time (s)
+      Figure 7: Horizontal storey displacement of division I under the chirp excitation. (a) First storey. (b) Third
+      storey.
+
+
+406                        Table 4 gives the NRMSE of the first-storey horizontal displacement. Under the El Centro
+407   record the Guyan error is 0.758% in division I and 10.936% in division II, whereas the Craig–
+408   Bampton error stays below 0.03% in both. The band decomposition of the chirp response locates the
+409   origin of the Guyan error. Below the fundamental frequency the Guyan error is 0.030% in division
+410   I and 2.996% in division II. It rises to 1.995% and 19.059% in the band containing the fundamental
+411   frequency, the latter being the largest value of the table. Above the fundamental frequency the
+412   division I error falls back to 0.076% in the band from 5.4 Hz to 8.1 Hz and rises again to 0.745%
+413   in the highest band, whose small absolute response places the corresponding NRMSE below the
+414   relative deviation of Fig. 7 near 38 s. In division II the error stays above 2.8% in every band. The
+415   Craig–Bampton error remains below 0.06% in every band of both divisions.
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                                      Page 21 of 26
+                                                                           Short Title of the Article
+
+                                                                Original          Craig-Bampton               Guyan
+               Displacement (mm)
+
+
+                                            (a)
+                                    6                                                         6                           0.6
+
+                                    0                                                         0                           0.0
+
+                                   −6                                                        −6                          −0.6
+
+
+                                        0         8       16     24        32        40       13.0     13.5       14.0     38.00    38.15     38.30
+       Displacement (mm)
+
+
+
+
+                                            (b)
+                                   25                                                        25                           0.5
+
+                                    0                                                         0                           0.0
+
+                              −25                                                         −25                            −0.5
+
+
+                                        0         8       16      24       32        40       13.0     13.5       14.0     38.00    38.15     38.30
+                                                           Time (s)                                  Time (s)                      Time (s)
+      Figure 8: Horizontal storey displacement of division II under the chirp excitation. (a) First storey. (b) Third
+      storey.
+
+
+      Table 4
+      NRMSE of the first-storey horizontal displacement (%).
+                                                                                Division I                      Division II
+                                                  Excitation           Guyan     Craig–Bampton        Guyan       Craig–Bampton
+                                                  El Centro            0.758          0.006           10.936             0.027
+                                                  Chirp, 0.1–1.9 Hz    0.030          <0.001          2.996              0.004
+                                                  Chirp, 1.9–3.5 Hz    1.995          0.008           19.059             0.056
+                                                  Chirp, 3.5–5.4 Hz    0.623          0.003           14.876             0.030
+                                                  Chirp, 5.4–8.1 Hz    0.076          0.003            7.498             0.014
+                                                  Chirp, 8.1–10 Hz     0.745          0.051            2.813             0.007
+
+
+416                        Two observations follow. The accuracy of a condensed model depends on the excitation
+417   frequency, and the band around the fundamental frequency is where the two methods differ most.
+418   The two divisions produce assembled models of the same size and differ by more than an order
+419   of magnitude in the Guyan error, and the order of the reduced model therefore does not explain
+
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                                             Page 22 of 26
+                                                              Short Title of the Article
+
+420   the accuracy by itself. Division II enlarges the physical substructure and condenses the middle-
+421   storey horizontal coordinate at the same time, and the combination of the two makes it the more
+422   demanding case.
+
+423   5.3. Stability domains under multiple actuator delays
+
+424                    The stability domains obtained from the pole criterion of Eq. (3.7) are shown in Fig. 9. The two
+425   axes are the integer delays of the two channels expressed in multiples of the sampling period. One
+426   step corresponds to about 0.98 ms with Δ𝑡 = 1∕1024 s, and the axes therefore read approximately as
+427   milliseconds over the range plotted. The delays are scanned over integer pairs, and each boundary is
+428   the largest stable 𝑛2 obtained for each 𝑛1 . Every pair between a boundary and the origin is stable in
+429   the scan. The Original boundary belongs to the unreduced fifteen-DOF model, with the two delays
+430   applied to the same two coordinates and the remaining interface coordinates coupled without delay.
+431   It is an upper bound obtained with an ideal interface rather than a model under the same two-channel
+432   constraint as the condensed ones.
+
+                                                  Original          Craig-Bampton          Guyan
+                                (a)                                             (b)
+                       32
+
+
+                       24
+       Delay τ2 (ms)
+
+
+
+
+                       16
+
+
+                        8
+
+
+                        0
+                            0         15      30         45         60           0         15          30          45
+                                           Delay τ1 (ms)                                         Delay τ1 (ms)
+
+                       Figure 9: Stability domains in the plane of the two actuator delays. (a) Division I. (b) Division II.
+
+
+
+433                    Both condensations reduce the stability domain relative to the unreduced model, and in both
+434   divisions the ordering of the three boundaries is the same. The unreduced model has the largest
+
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                         Page 23 of 26
+                                              Short Title of the Article
+
+435   domain, the Craig–Bampton model comes next, and the Guyan model has the smallest. The
+436   contraction is larger in division II than in division I for both methods.
+437       The recovery relations of Section 3.1 account for the ordering. The reconstructed response
+438   of the condensed coordinates is built from delayed quantities alone under Guyan condensation,
+439   which exposes the whole internal response of each substructure to the actuator delay. Under Craig–
+440   Bampton condensation the fixed-interface modal coordinates carry no explicit delay operator and
+441   reach the delayed channels only through their coupling to the retained coordinates, and the delay
+442   therefore enters a smaller part of the model. The two models differ in basis and in order, at twelve
+443   generalized coordinates against six, and the separation of the two effects rests on the number of
+444   retained fixed-interface modes.
+445       The stability domain of the unreduced model is itself smaller in division II than in division
+446   I. The two divisions differ in the extent of the physical substructure and in the position of the
+447   second actuator, and the combined change lowers the delay margin before any condensation is
+448   applied. Condensation adds to this loss, and the spacing between the boundaries within one panel
+449   is produced by the condensation together with the regulator supplied by each condensed model.
+
+450   5.4. Modal redistribution ratio and applicability of the two methods
+
+451       The modal redistribution ratio of Eq. (4.4) is listed in Table 5. Within each division the three
+452   boundaries of Fig. 9 are nested, and the two condensed models of that division are therefore ordered
+453   by set inclusion. The Craig–Bampton value is the smaller of the two in both divisions and the
+454   Craig–Bampton domain is the larger. One method compared across the two divisions gives the
+455   same correspondence, since both the modal redistribution ratio and the contraction of the domain
+456   are larger in division II.
+
+      Table 5
+      Modal redistribution ratio of the four condensed models.
+                                        Division   Guyan     Craig–Bampton
+                                        I          0.3065         0.1879
+                                        II         0.3927         0.2021
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                    Page 24 of 26
+                                             Short Title of the Article
+
+457      Table 5 is the quantitative counterpart of the mechanism of Section 3.1. A large modal
+458   redistribution ratio corresponds to a large share of the modal energy originally distributed over
+459   the condensed coordinates moved onto the retained coordinates. The retained coordinates of the
+460   physical substructure are the coordinates driven by the actuators, and the same quantity therefore
+461   measures the response of the reduced model carried by delayed channels. The ratio is obtained
+462   from the modal solutions of the full-order and of the condensed model, and it is available as soon
+463   as the condensed model is built, ahead of any closed-loop delay scan.
+464      The two models with a modal redistribution ratio above 0.3 are the two models whose stability
+465   domain contracts most, and both are Guyan models. The ratio ranks candidate condensed models
+466   ahead of the delay scan, and the four models of Table 5 support a ranking rather than a general
+467   threshold.
+468      The accuracy and the stability results together indicate the range of application of each method.
+469   Craig–Bampton condensation keeps the frequency error below 1% and the NRMSE below 0.06%
+470   in every case examined, and its stability boundary is the closer of the two to that of the unreduced
+471   model. It is therefore the method for a condensed principal coordinate and for an excitation carrying
+472   energy near or above the fundamental frequency. Guyan condensation produces the smallest
+473   reduced model, at six generalized coordinates against twelve for Craig–Bampton. In division I
+474   its second natural frequency is in error by 5.411% and its NRMSE reaches 1.995% in the band
+475   around the fundamental frequency, which sets the tolerance required of the application. In division
+476   II its frequency error reaches 24.575% and its NRMSE reaches 19.059%, more than an order of
+477   magnitude above the Craig–Bampton values, and it also gives the smallest stability domain.
+478      The three indices do not carry equal weight in this judgement. The frequency error and the
+479   NRMSE of the Guyan model of division II are the largest values of Tables 3 and 4, whereas the
+480   MAC of the same model remains above 0.92. A modal correlation index evaluated on the retained
+481   coordinates alone is therefore insufficient to accept a condensed model for RTHS, and it is applied
+482   together with a frequency error and a time-domain error.
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                     Page 25 of 26
+                                                              Short Title of the Article
+
+483   6. Conclusions
+
+484   References
+485   [1] R. J. Guyan, Reduction of stiffness and mass matrices, AIAA Journal 3 (1965) 380. doi:10.2514/3.2874.
+
+486   [2] R. R. Craig, M. C. C. Bampton, Coupling of substructures for dynamic analyses, AIAA Journal 6 (1968) 1313–1319. doi:10.2514/3.4741.
+
+487   [3] D. Krattiger, L. Wu, M. Zacharczuk, M. Buck, R. J. Kuether, M. S. Allen, P. Tiso, M. R. W. Brake, Interface reduction for Hurty/Craig–Bampton
+
+488       substructured models, review and improvements, Mechanical Systems and Signal Processing 114 (2019) 579–603. doi:10.1016/j.ymssp.
+
+489       2018.05.031.
+
+490   [4] J. E. Carrion, B. F. Spencer, Model-based strategies for real-time hybrid testing, NSEL Report No. NSEL-006, University of Illinois at Urbana-
+
+491       Champaign, 2007.
+
+492   [5] F. Zhu, J. T. Wang, F. Jin, F. D. Chi, Y. Gui, Stability analysis of MDOF real-time dynamic hybrid testing systems using the discrete-time root
+
+493       locus technique, Earthquake Engineering and Structural Dynamics 44 (2015) 221–241. doi:10.1002/eqe.2467.
+
+494   [6] C. Chen, J. M. Ricles, Development of direct integration algorithms for structural dynamics using discrete control theory, Journal of Engineering
+
+495       Mechanics 134 (2008) 676–683. doi:10.1061/(ASCE)0733-9399(2008)134:8(676).
+
+496   [7] J. W. Condori Uribe, M. Salmeron, E. Patino, H. Montoya, S. J. Dyke, C. E. Silva, A. Maghareh, M. Najarian, A. Montoya, Experimental
+
+497       benchmark control problem for multi-axial real-time hybrid simulation, Frontiers in Built Environment 9 (2023) 1270996. doi:10.3389/fb
+
+498       uil.2023.1270996.
+
+499   [8] C. Chen, J. M. Ricles, Stability analysis of SDOF real-time hybrid testing systems with explicit integration algorithms and actuator delay,
+
+500       Earthquake Engineering and Structural Dynamics 37 (2008) 597–613. doi:10.1002/eqe.775.
+
+501   [9] N. Li, X. J. Lu, Z. H. Zhou, et al., Stability of real-time substructure testing considering numerical integration algorithms, Engineering
+
+502       Mechanics 38 (2021) 12–22. [in Chinese].
+
+
+
+
+      N. Li and Y. Liang: Preprint submitted to Elsevier                                                                              Page 26 of 26
+

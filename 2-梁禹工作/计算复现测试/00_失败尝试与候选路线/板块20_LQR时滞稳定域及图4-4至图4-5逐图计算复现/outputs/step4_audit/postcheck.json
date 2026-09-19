@@ -1,0 +1,3984 @@
+{
+  "schema": "board20_step4_independent_validation_v1",
+  "mode": "POSTCHECK",
+  "created_at": "2026-08-25T10:06:27+08:00",
+  "board_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现",
+  "validator": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\validate_board20_step4.py",
+    "sha256": "814478DC7CAB86E0959085AB9EAA4378BDECD2B7C9A6585B08FF9F04D7C018F8"
+  },
+  "validation_contract": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_validation_contract.json",
+    "sha256": "6B54ED59C080DA635D888B6BA14D56934166D23DECCF7383CA6D7D136F55C1D1"
+  },
+  "manifest": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json",
+    "sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E"
+  },
+  "tolerances": {
+    "rho_active_abs": 1e-08,
+    "pass_residual_max": 1e-08,
+    "critical_abs_rho_minus_one": 1e-08
+  },
+  "summary": {
+    "status": "PASS",
+    "total": 234,
+    "passed": 234,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "check_id": "S4-POST-0001",
+      "name": "上游复核：步骤4验证合同存在",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_validation_contract.json"
+    },
+    {
+      "check_id": "S4-POST-0002",
+      "name": "上游复核：步骤4路线清单schema版本",
+      "expected": "board20_step4_route_manifest_v1",
+      "actual": "board20_step4_route_manifest_v1",
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json"
+    },
+    {
+      "check_id": "S4-POST-0003",
+      "name": "上游复核：单点求解器接口合同",
+      "expected": {
+        "function": "solve_board20_author_poles",
+        "required_result_fields": [
+          "poles",
+          "rho",
+          "poly_degree",
+          "clearing_power",
+          "removed_zero_root_count",
+          "max_relative_residual",
+          "point_status",
+          "stable"
+        ],
+        "additional_result_fields": [
+          "raw_roots",
+          "retained_root_count",
+          "critical",
+          "diagnostic"
+        ]
+      },
+      "actual": {
+        "function": "solve_board20_author_poles",
+        "required_result_fields": [
+          "poles",
+          "rho",
+          "poly_degree",
+          "clearing_power",
+          "removed_zero_root_count",
+          "max_relative_residual",
+          "point_status",
+          "stable"
+        ],
+        "additional_result_fields": [
+          "raw_roots",
+          "retained_root_count",
+          "critical",
+          "diagnostic"
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json"
+    },
+    {
+      "check_id": "S4-POST-0004",
+      "name": "上游复核：步骤4求解器与编排器文件存在并记录实时哈希",
+      "expected": {
+        "solver_exists": true,
+        "runner_exists": true
+      },
+      "actual": {
+        "solver_exists": true,
+        "solver_sha256": "659F0785A07539EE3AD28F1E953643BB201D25D23C5CFEBA31DB24F2338488DE",
+        "runner_exists": true,
+        "runner_sha256": "0D502FE821FA40ABBF090A1D9F9E2A694981E90F559FFB5F34331D90B6DC860F"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code"
+    },
+    {
+      "check_id": "S4-POST-0005",
+      "name": "上游复核：五条可执行候选路线唯一且完整",
+      "expected": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "actual": [
+        "alt_guyan_div1_stable_full_ps3",
+        "main_guyan_div1",
+        "main_guyan_div2",
+        "main_ori_div1",
+        "main_ori_div2"
+      ],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json"
+    },
+    {
+      "check_id": "S4-POST-0006",
+      "name": "上游复核：四条失败路线唯一且完整",
+      "expected": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "actual": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\board20_step4_route_manifest.json"
+    },
+    {
+      "check_id": "S4-POST-0007",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3身份、公式与主/备用角色",
+      "expected": {
+        "division": "div1",
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01"
+      },
+      "actual": {
+        "division": "div1",
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "ALTERNATIVE_NOT_PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01"
+      },
+      "status": "PASS",
+      "evidence": "route manifest"
+    },
+    {
+      "check_id": "S4-POST-0008",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤4清单文件合同实时SHA-256",
+      "expected": {
+        "minimum_contracts": 4,
+        "required_paths_covered": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "required_paths_covered": 4,
+        "missing_coverage": [],
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0009",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2证据路径唯一",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "route workspace/config/status/raw paths"
+    },
+    {
+      "check_id": "S4-POST-0010",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2配置、状态、工作区和原始谱半径密封",
+      "expected": {
+        "run_config": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "run_status": "F2C5A93034D93273939784C5B8BCE29D7E0390CEC96DAFBAD1F15CC13D0C8A71",
+        "workspace": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+        "raw_stab": "D70FF3F74B8771794AB91D821EA1BA5BC66532C6972191E9AFA0A6135EC98BCA"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+          "run_status": "F2C5A93034D93273939784C5B8BCE29D7E0390CEC96DAFBAD1F15CC13D0C8A71",
+          "workspace": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+          "raw_stab": "D70FF3F74B8771794AB91D821EA1BA5BC66532C6972191E9AFA0A6135EC98BCA"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01"
+    },
+    {
+      "check_id": "S4-POST-0011",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 4,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0012",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 4,
+        "before_all_match": true,
+        "after_count": 4,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0013",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2运行基础设施代码密封",
+      "expected": {
+        "count": 3,
+        "failures": []
+      },
+      "actual": {
+        "count": 3,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0014",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤4矩阵变量映射",
+      "expected": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "actual": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "status": "PASS",
+      "evidence": "route.matrix_variable_map"
+    },
+    {
+      "check_id": "S4-POST-0015",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2候选MLX身份",
+      "expected": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "actual": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "status": "PASS",
+      "evidence": "route.candidate_mlx_sha256 + step2 run_config"
+    },
+    {
+      "check_id": "S4-POST-0016",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2成功终态",
+      "expected": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "actual": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0017",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3求解器工作区矩阵字段与维数",
+      "expected": {
+        "MRren": [
+          5,
+          5
+        ],
+        "C1": [
+          5,
+          5
+        ],
+        "K1": [
+          5,
+          5
+        ],
+        "C2": [
+          5,
+          5
+        ],
+        "K2": [
+          5,
+          5
+        ],
+        "al": [
+          5,
+          5
+        ],
+        "dt": [
+          1,
+          1
+        ]
+      },
+      "actual": {
+        "failures": {},
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_complete.mat"
+    },
+    {
+      "check_id": "S4-POST-0018",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤2 raw_stab 维数与载入方式",
+      "expected": {
+        "variable": "stab",
+        "shape": [
+          21,
+          21
+        ]
+      },
+      "actual": {
+        "shape": [
+          21,
+          21
+        ],
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\scientific\\raw_stab.mat"
+    },
+    {
+      "check_id": "S4-POST-0019",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3原样活动区域与步骤2 raw_stab 一致",
+      "expected": {
+        "active_count": 441,
+        "raw_active_count": 441,
+        "set_difference": 0
+      },
+      "actual": {
+        "active_count": 441,
+        "raw_active_count": 441,
+        "symmetric_difference": 0,
+        "errors": []
+      },
+      "status": "PASS",
+      "evidence": "route.active_regions + step2 raw_stab finite positive coordinates"
+    },
+    {
+      "check_id": "S4-POST-0020",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3注释循环意图区域",
+      "expected": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_bounds": 0
+      },
+      "actual": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_author": 0,
+        "out_of_common": 0,
+        "errors": [],
+        "metadata_failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.commented_author_intent_regions"
+    },
+    {
+      "check_id": "S4-POST-0021",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3作者网格与31×67共同网格点数",
+      "expected": {
+        "active_points": 441,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "actual": {
+        "active_points": 441,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "route author_code_grid/common_grid"
+    },
+    {
+      "check_id": "S4-POST-0022",
+      "name": "上游复核：alt_guyan_div1_stable_full_ps3步骤4输出位于隔离目录",
+      "expected": {
+        "paths": 2,
+        "outside": []
+      },
+      "actual": {
+        "paths": 2,
+        "outside": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids"
+    },
+    {
+      "check_id": "S4-POST-0023",
+      "name": "上游复核：main_guyan_div1身份、公式与主/备用角色",
+      "expected": {
+        "division": "div1",
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03"
+      },
+      "actual": {
+        "division": "div1",
+        "formula": "GUYAN_DIV1_H_LEFT",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03"
+      },
+      "status": "PASS",
+      "evidence": "route manifest"
+    },
+    {
+      "check_id": "S4-POST-0024",
+      "name": "上游复核：main_guyan_div1步骤4清单文件合同实时SHA-256",
+      "expected": {
+        "minimum_contracts": 4,
+        "required_paths_covered": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "required_paths_covered": 4,
+        "missing_coverage": [],
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0025",
+      "name": "上游复核：main_guyan_div1步骤2证据路径唯一",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "route workspace/config/status/raw paths"
+    },
+    {
+      "check_id": "S4-POST-0026",
+      "name": "上游复核：main_guyan_div1步骤2配置、状态、工作区和原始谱半径密封",
+      "expected": {
+        "run_config": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+        "run_status": "BD86753392039D45F5444621F370A50BB83B891861BEF351D49DAA752E3E1DF3",
+        "workspace": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+        "raw_stab": "FEA2C539A79EE9A2E20AA05E2C02B5E559DD8D2ADCDDA646BA227FB3EA515237"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6",
+          "run_status": "BD86753392039D45F5444621F370A50BB83B891861BEF351D49DAA752E3E1DF3",
+          "workspace": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+          "raw_stab": "FEA2C539A79EE9A2E20AA05E2C02B5E559DD8D2ADCDDA646BA227FB3EA515237"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03"
+    },
+    {
+      "check_id": "S4-POST-0027",
+      "name": "上游复核：main_guyan_div1步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0028",
+      "name": "上游复核：main_guyan_div1步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0029",
+      "name": "上游复核：main_guyan_div1步骤2运行基础设施代码密封",
+      "expected": {
+        "count": 3,
+        "failures": []
+      },
+      "actual": {
+        "count": 3,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0030",
+      "name": "上游复核：main_guyan_div1步骤4矩阵变量映射",
+      "expected": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "actual": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "status": "PASS",
+      "evidence": "route.matrix_variable_map"
+    },
+    {
+      "check_id": "S4-POST-0031",
+      "name": "上游复核：main_guyan_div1步骤2候选MLX身份",
+      "expected": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "actual": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "status": "PASS",
+      "evidence": "route.candidate_mlx_sha256 + step2 run_config"
+    },
+    {
+      "check_id": "S4-POST-0032",
+      "name": "上游复核：main_guyan_div1步骤2成功终态",
+      "expected": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "actual": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0033",
+      "name": "上游复核：main_guyan_div1求解器工作区矩阵字段与维数",
+      "expected": {
+        "MRren": [
+          5,
+          5
+        ],
+        "C1": [
+          5,
+          5
+        ],
+        "K1": [
+          5,
+          5
+        ],
+        "C2": [
+          5,
+          5
+        ],
+        "K2": [
+          5,
+          5
+        ],
+        "al": [
+          5,
+          5
+        ],
+        "dt": [
+          1,
+          1
+        ]
+      },
+      "actual": {
+        "failures": {},
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "check_id": "S4-POST-0034",
+      "name": "上游复核：main_guyan_div1步骤2 raw_stab 维数与载入方式",
+      "expected": {
+        "variable": "stab",
+        "shape": [
+          21,
+          21
+        ]
+      },
+      "actual": {
+        "shape": [
+          21,
+          21
+        ],
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div1\\original_mlx\\rep03\\scientific\\raw_stab.mat"
+    },
+    {
+      "check_id": "S4-POST-0035",
+      "name": "上游复核：main_guyan_div1原样活动区域与步骤2 raw_stab 一致",
+      "expected": {
+        "active_count": 441,
+        "raw_active_count": 441,
+        "set_difference": 0
+      },
+      "actual": {
+        "active_count": 441,
+        "raw_active_count": 441,
+        "symmetric_difference": 0,
+        "errors": []
+      },
+      "status": "PASS",
+      "evidence": "route.active_regions + step2 raw_stab finite positive coordinates"
+    },
+    {
+      "check_id": "S4-POST-0036",
+      "name": "上游复核：main_guyan_div1注释循环意图区域",
+      "expected": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_bounds": 0
+      },
+      "actual": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_author": 0,
+        "out_of_common": 0,
+        "errors": [],
+        "metadata_failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.commented_author_intent_regions"
+    },
+    {
+      "check_id": "S4-POST-0037",
+      "name": "上游复核：main_guyan_div1作者网格与31×67共同网格点数",
+      "expected": {
+        "active_points": 441,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "actual": {
+        "active_points": 441,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "route author_code_grid/common_grid"
+    },
+    {
+      "check_id": "S4-POST-0038",
+      "name": "上游复核：main_guyan_div1步骤4输出位于隔离目录",
+      "expected": {
+        "paths": 2,
+        "outside": []
+      },
+      "actual": {
+        "paths": 2,
+        "outside": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids"
+    },
+    {
+      "check_id": "S4-POST-0039",
+      "name": "上游复核：main_guyan_div2身份、公式与主/备用角色",
+      "expected": {
+        "division": "div2",
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03"
+      },
+      "actual": {
+        "division": "div2",
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03"
+      },
+      "status": "PASS",
+      "evidence": "route manifest"
+    },
+    {
+      "check_id": "S4-POST-0040",
+      "name": "上游复核：main_guyan_div2步骤4清单文件合同实时SHA-256",
+      "expected": {
+        "minimum_contracts": 4,
+        "required_paths_covered": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "required_paths_covered": 4,
+        "missing_coverage": [],
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0041",
+      "name": "上游复核：main_guyan_div2步骤2证据路径唯一",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "route workspace/config/status/raw paths"
+    },
+    {
+      "check_id": "S4-POST-0042",
+      "name": "上游复核：main_guyan_div2步骤2配置、状态、工作区和原始谱半径密封",
+      "expected": {
+        "run_config": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+        "run_status": "790ADB62FB1EA25B82DD73495A197327B002EDF4B9FF07AF3D20545433444AD9",
+        "workspace": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+        "raw_stab": "798BF53D873943F3CE17EFDE69F10D7CD94FF055539CE80B5FC317499664433D"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4",
+          "run_status": "790ADB62FB1EA25B82DD73495A197327B002EDF4B9FF07AF3D20545433444AD9",
+          "workspace": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+          "raw_stab": "798BF53D873943F3CE17EFDE69F10D7CD94FF055539CE80B5FC317499664433D"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03"
+    },
+    {
+      "check_id": "S4-POST-0043",
+      "name": "上游复核：main_guyan_div2步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0044",
+      "name": "上游复核：main_guyan_div2步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0045",
+      "name": "上游复核：main_guyan_div2步骤2运行基础设施代码密封",
+      "expected": {
+        "count": 3,
+        "failures": []
+      },
+      "actual": {
+        "count": 3,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0046",
+      "name": "上游复核：main_guyan_div2步骤4矩阵变量映射",
+      "expected": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab",
+        "S": "S",
+        "DeltaC": "DeltaC",
+        "DeltaK": "DeltaK"
+      },
+      "actual": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "S": "S",
+        "DeltaC": "DeltaC",
+        "DeltaK": "DeltaK",
+        "step2_rho_reference": "stab"
+      },
+      "status": "PASS",
+      "evidence": "route.matrix_variable_map"
+    },
+    {
+      "check_id": "S4-POST-0047",
+      "name": "上游复核：main_guyan_div2步骤2候选MLX身份",
+      "expected": "C9A843A87F4B45D02DDB80F8780AB8E549E70BF6D2BE61A0C4B621E746CC2451",
+      "actual": "C9A843A87F4B45D02DDB80F8780AB8E549E70BF6D2BE61A0C4B621E746CC2451",
+      "status": "PASS",
+      "evidence": "route.candidate_mlx_sha256 + step2 run_config"
+    },
+    {
+      "check_id": "S4-POST-0048",
+      "name": "上游复核：main_guyan_div2步骤2成功终态",
+      "expected": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "actual": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0049",
+      "name": "上游复核：main_guyan_div2求解器工作区矩阵字段与维数",
+      "expected": {
+        "MRren": [
+          5,
+          5
+        ],
+        "C1": [
+          5,
+          5
+        ],
+        "K1": [
+          5,
+          5
+        ],
+        "C2": [
+          5,
+          5
+        ],
+        "K2": [
+          5,
+          5
+        ],
+        "al": [
+          5,
+          5
+        ],
+        "dt": [
+          1,
+          1
+        ],
+        "S": [
+          2,
+          5
+        ],
+        "DeltaC": [
+          2,
+          2
+        ],
+        "DeltaK": [
+          2,
+          2
+        ]
+      },
+      "actual": {
+        "failures": {},
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "check_id": "S4-POST-0050",
+      "name": "上游复核：main_guyan_div2步骤2 raw_stab 维数与载入方式",
+      "expected": {
+        "variable": "stab",
+        "shape": [
+          26,
+          67
+        ]
+      },
+      "actual": {
+        "shape": [
+          26,
+          67
+        ],
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_guyan_div2\\original_mlx\\rep03\\scientific\\raw_stab.mat"
+    },
+    {
+      "check_id": "S4-POST-0051",
+      "name": "上游复核：main_guyan_div2原样活动区域与步骤2 raw_stab 一致",
+      "expected": {
+        "active_count": 1517,
+        "raw_active_count": 1517,
+        "set_difference": 0
+      },
+      "actual": {
+        "active_count": 1517,
+        "raw_active_count": 1517,
+        "symmetric_difference": 0,
+        "errors": []
+      },
+      "status": "PASS",
+      "evidence": "route.active_regions + step2 raw_stab finite positive coordinates"
+    },
+    {
+      "check_id": "S4-POST-0052",
+      "name": "上游复核：main_guyan_div2注释循环意图区域",
+      "expected": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_bounds": 0
+      },
+      "actual": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_author": 0,
+        "out_of_common": 0,
+        "errors": [],
+        "metadata_failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.commented_author_intent_regions"
+    },
+    {
+      "check_id": "S4-POST-0053",
+      "name": "上游复核：main_guyan_div2作者网格与31×67共同网格点数",
+      "expected": {
+        "active_points": 1517,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 560,
+        "author_grid_points": 1517,
+        "common_grid_points": 2077,
+        "author_shape": [
+          26,
+          67
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "actual": {
+        "active_points": 1517,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 560,
+        "author_grid_points": 1517,
+        "common_grid_points": 2077,
+        "author_shape": [
+          26,
+          67
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "route author_code_grid/common_grid"
+    },
+    {
+      "check_id": "S4-POST-0054",
+      "name": "上游复核：main_guyan_div2步骤4输出位于隔离目录",
+      "expected": {
+        "paths": 2,
+        "outside": []
+      },
+      "actual": {
+        "paths": 2,
+        "outside": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids"
+    },
+    {
+      "check_id": "S4-POST-0055",
+      "name": "上游复核：main_ori_div1身份、公式与主/备用角色",
+      "expected": {
+        "division": "div1",
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03"
+      },
+      "actual": {
+        "division": "div1",
+        "formula": "ORI_DIV1_H_RIGHT",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03"
+      },
+      "status": "PASS",
+      "evidence": "route manifest"
+    },
+    {
+      "check_id": "S4-POST-0056",
+      "name": "上游复核：main_ori_div1步骤4清单文件合同实时SHA-256",
+      "expected": {
+        "minimum_contracts": 4,
+        "required_paths_covered": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "required_paths_covered": 4,
+        "missing_coverage": [],
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0057",
+      "name": "上游复核：main_ori_div1步骤2证据路径唯一",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "route workspace/config/status/raw paths"
+    },
+    {
+      "check_id": "S4-POST-0058",
+      "name": "上游复核：main_ori_div1步骤2配置、状态、工作区和原始谱半径密封",
+      "expected": {
+        "run_config": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+        "run_status": "D0DC8000FD222B7A64BF7DEE9A4BA63B34755F0E25127D9205CE29CA117BE4CC",
+        "workspace": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+        "raw_stab": "FC47A86F4ECE4F5C84323C2135520C76055C76D1EFD9692F7D21A5FFC8A026BA"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4",
+          "run_status": "D0DC8000FD222B7A64BF7DEE9A4BA63B34755F0E25127D9205CE29CA117BE4CC",
+          "workspace": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+          "raw_stab": "FC47A86F4ECE4F5C84323C2135520C76055C76D1EFD9692F7D21A5FFC8A026BA"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03"
+    },
+    {
+      "check_id": "S4-POST-0059",
+      "name": "上游复核：main_ori_div1步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0060",
+      "name": "上游复核：main_ori_div1步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0061",
+      "name": "上游复核：main_ori_div1步骤2运行基础设施代码密封",
+      "expected": {
+        "count": 3,
+        "failures": []
+      },
+      "actual": {
+        "count": 3,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0062",
+      "name": "上游复核：main_ori_div1步骤4矩阵变量映射",
+      "expected": {
+        "M": "MRrt",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "actual": {
+        "M": "MRrt",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "status": "PASS",
+      "evidence": "route.matrix_variable_map"
+    },
+    {
+      "check_id": "S4-POST-0063",
+      "name": "上游复核：main_ori_div1步骤2候选MLX身份",
+      "expected": "B8D80F17C8EC1112D14188BF2C01666B339D9A400E8FEBAE6C38656AB68558CD",
+      "actual": "B8D80F17C8EC1112D14188BF2C01666B339D9A400E8FEBAE6C38656AB68558CD",
+      "status": "PASS",
+      "evidence": "route.candidate_mlx_sha256 + step2 run_config"
+    },
+    {
+      "check_id": "S4-POST-0064",
+      "name": "上游复核：main_ori_div1步骤2成功终态",
+      "expected": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "actual": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0065",
+      "name": "上游复核：main_ori_div1求解器工作区矩阵字段与维数",
+      "expected": {
+        "MRrt": [
+          15,
+          15
+        ],
+        "C1": [
+          15,
+          15
+        ],
+        "K1": [
+          15,
+          15
+        ],
+        "C2": [
+          15,
+          15
+        ],
+        "K2": [
+          15,
+          15
+        ],
+        "al": [
+          15,
+          15
+        ],
+        "dt": [
+          1,
+          1
+        ]
+      },
+      "actual": {
+        "failures": {},
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "check_id": "S4-POST-0066",
+      "name": "上游复核：main_ori_div1步骤2 raw_stab 维数与载入方式",
+      "expected": {
+        "variable": "stab",
+        "shape": [
+          20,
+          20
+        ]
+      },
+      "actual": {
+        "shape": [
+          20,
+          20
+        ],
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\scientific\\raw_stab.mat"
+    },
+    {
+      "check_id": "S4-POST-0067",
+      "name": "上游复核：main_ori_div1原样活动区域与步骤2 raw_stab 一致",
+      "expected": {
+        "active_count": 1,
+        "raw_active_count": 1,
+        "set_difference": 0
+      },
+      "actual": {
+        "active_count": 1,
+        "raw_active_count": 1,
+        "symmetric_difference": 0,
+        "errors": []
+      },
+      "status": "PASS",
+      "evidence": "route.active_regions + step2 raw_stab finite positive coordinates"
+    },
+    {
+      "check_id": "S4-POST-0068",
+      "name": "上游复核：main_ori_div1注释循环意图区域",
+      "expected": {
+        "commented_count": 440,
+        "overlap": 0,
+        "out_of_bounds": 0
+      },
+      "actual": {
+        "commented_count": 440,
+        "overlap": 0,
+        "out_of_author": 0,
+        "out_of_common": 0,
+        "errors": [],
+        "metadata_failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.commented_author_intent_regions"
+    },
+    {
+      "check_id": "S4-POST-0069",
+      "name": "上游复核：main_ori_div1作者网格与31×67共同网格点数",
+      "expected": {
+        "active_points": 1,
+        "commented_author_intent_points": 440,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "actual": {
+        "active_points": 1,
+        "commented_author_intent_points": 440,
+        "supplemental_points": 1636,
+        "author_grid_points": 441,
+        "common_grid_points": 2077,
+        "author_shape": [
+          21,
+          21
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "route author_code_grid/common_grid"
+    },
+    {
+      "check_id": "S4-POST-0070",
+      "name": "上游复核：main_ori_div1步骤4输出位于隔离目录",
+      "expected": {
+        "paths": 2,
+        "outside": []
+      },
+      "actual": {
+        "paths": 2,
+        "outside": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids"
+    },
+    {
+      "check_id": "S4-POST-0071",
+      "name": "上游复核：main_ori_div2身份、公式与主/备用角色",
+      "expected": {
+        "division": "div2",
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03"
+      },
+      "actual": {
+        "division": "div2",
+        "formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+        "role": "PRIMARY",
+        "source_step2_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03"
+      },
+      "status": "PASS",
+      "evidence": "route manifest"
+    },
+    {
+      "check_id": "S4-POST-0072",
+      "name": "上游复核：main_ori_div2步骤4清单文件合同实时SHA-256",
+      "expected": {
+        "minimum_contracts": 4,
+        "required_paths_covered": 4,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "required_paths_covered": 4,
+        "missing_coverage": [],
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0073",
+      "name": "上游复核：main_ori_div2步骤2证据路径唯一",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "route workspace/config/status/raw paths"
+    },
+    {
+      "check_id": "S4-POST-0074",
+      "name": "上游复核：main_ori_div2步骤2配置、状态、工作区和原始谱半径密封",
+      "expected": {
+        "run_config": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+        "run_status": "658ABA74288920BA5E2DF999FF211E2D5C049F6B419216024EF5CDBD3652D5B3",
+        "workspace": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+        "raw_stab": "C4EA3005174054829456C24C74770F57ADF422DFD075A39E347CBA6876899E85"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A",
+          "run_status": "658ABA74288920BA5E2DF999FF211E2D5C049F6B419216024EF5CDBD3652D5B3",
+          "workspace": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+          "raw_stab": "C4EA3005174054829456C24C74770F57ADF422DFD075A39E347CBA6876899E85"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03"
+    },
+    {
+      "check_id": "S4-POST-0075",
+      "name": "上游复核：main_ori_div2步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0076",
+      "name": "上游复核：main_ori_div2步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0077",
+      "name": "上游复核：main_ori_div2步骤2运行基础设施代码密封",
+      "expected": {
+        "count": 3,
+        "failures": []
+      },
+      "actual": {
+        "count": 3,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0078",
+      "name": "上游复核：main_ori_div2步骤4矩阵变量映射",
+      "expected": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab",
+        "S": "S",
+        "DeltaC": "DeltaC",
+        "DeltaK": "DeltaK"
+      },
+      "actual": {
+        "M": "MRren",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "S": "S",
+        "DeltaC": "DeltaC",
+        "DeltaK": "DeltaK",
+        "step2_rho_reference": "stab"
+      },
+      "status": "PASS",
+      "evidence": "route.matrix_variable_map"
+    },
+    {
+      "check_id": "S4-POST-0079",
+      "name": "上游复核：main_ori_div2步骤2候选MLX身份",
+      "expected": "2606758B347C01574B812A4CD79BB2C353DCD6680C1DBF07B9AF485C5C03569D",
+      "actual": "2606758B347C01574B812A4CD79BB2C353DCD6680C1DBF07B9AF485C5C03569D",
+      "status": "PASS",
+      "evidence": "route.candidate_mlx_sha256 + step2 run_config"
+    },
+    {
+      "check_id": "S4-POST-0080",
+      "name": "上游复核：main_ori_div2步骤2成功终态",
+      "expected": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "actual": {
+        "final_status": "SUCCESS",
+        "execution_status": "EXECUTION_SUCCESS",
+        "evidence_status": "PASS",
+        "capture_errors": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0081",
+      "name": "上游复核：main_ori_div2求解器工作区矩阵字段与维数",
+      "expected": {
+        "MRren": [
+          5,
+          5
+        ],
+        "C1": [
+          5,
+          5
+        ],
+        "K1": [
+          5,
+          5
+        ],
+        "C2": [
+          5,
+          5
+        ],
+        "K2": [
+          5,
+          5
+        ],
+        "al": [
+          5,
+          5
+        ],
+        "dt": [
+          1,
+          1
+        ],
+        "S": [
+          2,
+          5
+        ],
+        "DeltaC": [
+          2,
+          2
+        ],
+        "DeltaK": [
+          2,
+          2
+        ]
+      },
+      "actual": {
+        "failures": {},
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "check_id": "S4-POST-0082",
+      "name": "上游复核：main_ori_div2步骤2 raw_stab 维数与载入方式",
+      "expected": {
+        "variable": "stab",
+        "shape": [
+          26,
+          67
+        ]
+      },
+      "actual": {
+        "shape": [
+          26,
+          67
+        ],
+        "loader": "h5py MATLAB-v7.3"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\scientific\\raw_stab.mat"
+    },
+    {
+      "check_id": "S4-POST-0083",
+      "name": "上游复核：main_ori_div2原样活动区域与步骤2 raw_stab 一致",
+      "expected": {
+        "active_count": 1517,
+        "raw_active_count": 1517,
+        "set_difference": 0
+      },
+      "actual": {
+        "active_count": 1517,
+        "raw_active_count": 1517,
+        "symmetric_difference": 0,
+        "errors": []
+      },
+      "status": "PASS",
+      "evidence": "route.active_regions + step2 raw_stab finite positive coordinates"
+    },
+    {
+      "check_id": "S4-POST-0084",
+      "name": "上游复核：main_ori_div2注释循环意图区域",
+      "expected": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_bounds": 0
+      },
+      "actual": {
+        "commented_count": 0,
+        "overlap": 0,
+        "out_of_author": 0,
+        "out_of_common": 0,
+        "errors": [],
+        "metadata_failures": []
+      },
+      "status": "PASS",
+      "evidence": "route.commented_author_intent_regions"
+    },
+    {
+      "check_id": "S4-POST-0085",
+      "name": "上游复核：main_ori_div2作者网格与31×67共同网格点数",
+      "expected": {
+        "active_points": 1517,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 560,
+        "author_grid_points": 1517,
+        "common_grid_points": 2077,
+        "author_shape": [
+          26,
+          67
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "actual": {
+        "active_points": 1517,
+        "commented_author_intent_points": 0,
+        "supplemental_points": 560,
+        "author_grid_points": 1517,
+        "common_grid_points": 2077,
+        "author_shape": [
+          26,
+          67
+        ],
+        "common_shape": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "route author_code_grid/common_grid"
+    },
+    {
+      "check_id": "S4-POST-0086",
+      "name": "上游复核：main_ori_div2步骤4输出位于隔离目录",
+      "expected": {
+        "paths": 2,
+        "outside": []
+      },
+      "actual": {
+        "paths": 2,
+        "outside": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids"
+    },
+    {
+      "check_id": "S4-POST-0087",
+      "name": "上游复核：energy_guyan_div1步骤2失败证据密封",
+      "expected": {
+        "run_config": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+        "run_status": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+        "workspace": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+          "run_status": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+          "workspace": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02"
+    },
+    {
+      "check_id": "S4-POST-0088",
+      "name": "上游复核：energy_guyan_div1步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 2,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 2,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0089",
+      "name": "上游复核：energy_guyan_div1步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 2,
+        "before_all_match": true,
+        "after_count": 2,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0090",
+      "name": "上游复核：energy_guyan_div1步骤2运行基础设施代码密封",
+      "expected": {
+        "historical_state": "NOT_RECORDED_ALLOWED_FOR_EXECUTION_FAIL_REP02",
+        "count": 0,
+        "failures": []
+      },
+      "actual": {
+        "count": 0,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0091",
+      "name": "上游复核：energy_guyan_div1保持原样执行失败",
+      "expected": {
+        "final_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "missing_symbol": "KPren"
+      },
+      "actual": {
+        "final_status": "EXECUTION_FAIL",
+        "execution_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "message": "函数或变量 'KPren' 无法识别。"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0092",
+      "name": "上游复核：energy_guyan_div1失败路线没有rho网格",
+      "expected": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "actual": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\energy_guyan_div1"
+    },
+    {
+      "check_id": "S4-POST-0093",
+      "name": "上游复核：energy_guyan_div1失败路线清单声明",
+      "expected": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+        "status_sha256": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848",
+        "reason_contains": "KPren",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "actual": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+        "status_sha256": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div1\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848",
+        "reason": "Function or variable KPren is not recognized.",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "status": "PASS",
+      "evidence": "manifest.failed_routes"
+    },
+    {
+      "check_id": "S4-POST-0094",
+      "name": "上游复核：energy_guyan_div2步骤2失败证据密封",
+      "expected": {
+        "run_config": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+        "run_status": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+        "workspace": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+          "run_status": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+          "workspace": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02"
+    },
+    {
+      "check_id": "S4-POST-0095",
+      "name": "上游复核：energy_guyan_div2步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 2,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 2,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0096",
+      "name": "上游复核：energy_guyan_div2步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 2,
+        "before_all_match": true,
+        "after_count": 2,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0097",
+      "name": "上游复核：energy_guyan_div2步骤2运行基础设施代码密封",
+      "expected": {
+        "historical_state": "NOT_RECORDED_ALLOWED_FOR_EXECUTION_FAIL_REP02",
+        "count": 0,
+        "failures": []
+      },
+      "actual": {
+        "count": 0,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0098",
+      "name": "上游复核：energy_guyan_div2保持原样执行失败",
+      "expected": {
+        "final_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "missing_symbol": "KPren"
+      },
+      "actual": {
+        "final_status": "EXECUTION_FAIL",
+        "execution_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "message": "函数或变量 'KPren' 无法识别。"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0099",
+      "name": "上游复核：energy_guyan_div2失败路线没有rho网格",
+      "expected": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "actual": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\energy_guyan_div2"
+    },
+    {
+      "check_id": "S4-POST-0100",
+      "name": "上游复核：energy_guyan_div2失败路线清单声明",
+      "expected": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+        "status_sha256": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801",
+        "reason_contains": "KPren",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "actual": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+        "status_sha256": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\energy_guyan_div2\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801",
+        "reason": "Function or variable KPren is not recognized.",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "status": "PASS",
+      "evidence": "manifest.failed_routes"
+    },
+    {
+      "check_id": "S4-POST-0101",
+      "name": "上游复核：main_cb_div1步骤2失败证据密封",
+      "expected": {
+        "run_config": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+        "run_status": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+        "workspace": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+          "run_status": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+          "workspace": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02"
+    },
+    {
+      "check_id": "S4-POST-0102",
+      "name": "上游复核：main_cb_div1步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0103",
+      "name": "上游复核：main_cb_div1步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0104",
+      "name": "上游复核：main_cb_div1步骤2运行基础设施代码密封",
+      "expected": {
+        "historical_state": "NOT_RECORDED_ALLOWED_FOR_EXECUTION_FAIL_REP02",
+        "count": 0,
+        "failures": []
+      },
+      "actual": {
+        "count": 0,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0105",
+      "name": "上游复核：main_cb_div1保持原样执行失败",
+      "expected": {
+        "final_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "missing_symbol": "MRren"
+      },
+      "actual": {
+        "final_status": "EXECUTION_FAIL",
+        "execution_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "message": "函数或变量 'MRren' 无法识别。"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0106",
+      "name": "上游复核：main_cb_div1失败路线没有rho网格",
+      "expected": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "actual": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_cb_div1"
+    },
+    {
+      "check_id": "S4-POST-0107",
+      "name": "上游复核：main_cb_div1失败路线清单声明",
+      "expected": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+        "status_sha256": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516",
+        "reason_contains": "MRren",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "actual": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+        "status_sha256": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div1\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516",
+        "reason": "Function or variable MRren is not recognized.",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "status": "PASS",
+      "evidence": "manifest.failed_routes"
+    },
+    {
+      "check_id": "S4-POST-0108",
+      "name": "上游复核：main_cb_div2步骤2失败证据密封",
+      "expected": {
+        "run_config": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+        "run_status": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+        "workspace": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10"
+      },
+      "actual": {
+        "hashes": {
+          "run_config": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+          "run_status": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+          "workspace": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02"
+    },
+    {
+      "check_id": "S4-POST-0109",
+      "name": "上游复核：main_cb_div2步骤2输入代码实时哈希",
+      "expected": {
+        "contracts": 5,
+        "failures": []
+      },
+      "actual": {
+        "contracts": 5,
+        "failures": []
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.file_contracts"
+    },
+    {
+      "check_id": "S4-POST-0110",
+      "name": "上游复核：main_cb_div2步骤2输入运行前后未改变",
+      "expected": {
+        "before_all_match": true,
+        "after_all_match": true
+      },
+      "actual": {
+        "before_count": 5,
+        "before_all_match": true,
+        "after_count": 5,
+        "after_all_match": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_status.input_hashes_before/after"
+    },
+    {
+      "check_id": "S4-POST-0111",
+      "name": "上游复核：main_cb_div2步骤2运行基础设施代码密封",
+      "expected": {
+        "historical_state": "NOT_RECORDED_ALLOWED_FOR_EXECUTION_FAIL_REP02",
+        "count": 0,
+        "failures": []
+      },
+      "actual": {
+        "count": 0,
+        "failures": [],
+        "input_code_contract_already_checked": true
+      },
+      "status": "PASS",
+      "evidence": "step2 run_config.instrumentation"
+    },
+    {
+      "check_id": "S4-POST-0112",
+      "name": "上游复核：main_cb_div2保持原样执行失败",
+      "expected": {
+        "final_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "missing_symbol": "MRren"
+      },
+      "actual": {
+        "final_status": "EXECUTION_FAIL",
+        "execution_status": "EXECUTION_FAIL",
+        "evidence_status": "PASS",
+        "message": "函数或变量 'MRren' 无法识别。"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\metadata\\run_status.json"
+    },
+    {
+      "check_id": "S4-POST-0113",
+      "name": "上游复核：main_cb_div2失败路线没有rho网格",
+      "expected": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "actual": {
+        "step2_raw_stab_exists": false,
+        "step4_mat_files": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_cb_div2"
+    },
+    {
+      "check_id": "S4-POST-0114",
+      "name": "上游复核：main_cb_div2失败路线清单声明",
+      "expected": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+        "status_sha256": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10",
+        "reason_contains": "MRren",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "actual": {
+        "config_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\metadata\\run_config.json",
+        "status_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\metadata\\run_status.json",
+        "config_sha256": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+        "status_sha256": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+        "workspace_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_cb_div2\\original_mlx\\rep02\\workspace\\workspace_failure.mat",
+        "workspace_sha256": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10",
+        "reason": "Function or variable MRren is not recognized.",
+        "rho_grid_policy": "DO_NOT_CREATE"
+      },
+      "status": "PASS",
+      "evidence": "manifest.failed_routes"
+    },
+    {
+      "check_id": "S4-POST-0115",
+      "name": "上游复核：步骤4输出根目录隔离",
+      "expected": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids",
+      "actual": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids",
+      "status": "PASS",
+      "evidence": "manifest.output_root_relpath"
+    },
+    {
+      "check_id": "S4-POST-0116",
+      "name": "alt_guyan_div1_stable_full_ps3步骤4路线终态",
+      "expected": {
+        "route_id": "alt_guyan_div1_stable_full_ps3",
+        "terminal": [
+          "COMPLETE",
+          "COMPLETED",
+          "COMPLETED_WITH_POINT_FAILURES",
+          "COMPLETE_PASS",
+          "COMPLETE_WITH_FAIL",
+          "PASS",
+          "SUCCESS"
+        ]
+      },
+      "actual": {
+        "route_id": "alt_guyan_div1_stable_full_ps3",
+        "final": "COMPLETE_PASS"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\status.json"
+    },
+    {
+      "check_id": "S4-POST-0117",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0118",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid全部网格变量维数",
+      "expected": [
+        21,
+        21
+      ],
+      "actual": {
+        "all": [
+          21,
+          21
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0119",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 441,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 441,
+        "pass": 441,
+        "fail": 0,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0120",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0121",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0122",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0123",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 1.6663869929433385e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0124",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0125",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 441,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 441,
+        "max_abs_difference": 1.4432899320127035e-14,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0126",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0127",
+      "name": "alt_guyan_div1_stable_full_ps3/author_code_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0128",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0129",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid全部网格变量维数",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": {
+        "all": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0130",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 2077,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 2077,
+        "pass": 2077,
+        "fail": 0,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0131",
+      "name": "alt_guyan_div1_stable_full_ps3/common_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0132",
+      "name": "alt_guyan_div1_stable_full_ps3/common_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0133",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0134",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 3.7137311070636824e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0135",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0136",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 441,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 441,
+        "max_abs_difference": 1.4432899320127035e-14,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0137",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0138",
+      "name": "alt_guyan_div1_stable_full_ps3/common_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\alt_guyan_div1_stable_full_ps3\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0139",
+      "name": "main_guyan_div1步骤4路线终态",
+      "expected": {
+        "route_id": "main_guyan_div1",
+        "terminal": [
+          "COMPLETE",
+          "COMPLETED",
+          "COMPLETED_WITH_POINT_FAILURES",
+          "COMPLETE_PASS",
+          "COMPLETE_WITH_FAIL",
+          "PASS",
+          "SUCCESS"
+        ]
+      },
+      "actual": {
+        "route_id": "main_guyan_div1",
+        "final": "COMPLETE_PASS"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\status.json"
+    },
+    {
+      "check_id": "S4-POST-0140",
+      "name": "main_guyan_div1/author_code_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0141",
+      "name": "main_guyan_div1/author_code_grid全部网格变量维数",
+      "expected": [
+        21,
+        21
+      ],
+      "actual": {
+        "all": [
+          21,
+          21
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0142",
+      "name": "main_guyan_div1/author_code_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 441,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 441,
+        "pass": 441,
+        "fail": 0,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0143",
+      "name": "main_guyan_div1/author_code_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0144",
+      "name": "main_guyan_div1/author_code_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0145",
+      "name": "main_guyan_div1/author_code_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0146",
+      "name": "main_guyan_div1/author_code_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 7.287703691302545e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0147",
+      "name": "main_guyan_div1/author_code_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0148",
+      "name": "main_guyan_div1/author_code_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 441,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 441,
+        "max_abs_difference": 1.7985612998927536e-14,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0149",
+      "name": "main_guyan_div1/author_code_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0150",
+      "name": "main_guyan_div1/author_code_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0151",
+      "name": "main_guyan_div1/common_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0152",
+      "name": "main_guyan_div1/common_grid全部网格变量维数",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": {
+        "all": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0153",
+      "name": "main_guyan_div1/common_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 2077,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 2077,
+        "pass": 2077,
+        "fail": 0,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0154",
+      "name": "main_guyan_div1/common_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0155",
+      "name": "main_guyan_div1/common_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0156",
+      "name": "main_guyan_div1/common_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0157",
+      "name": "main_guyan_div1/common_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 9.356002757204637e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0158",
+      "name": "main_guyan_div1/common_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0159",
+      "name": "main_guyan_div1/common_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 441,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 441,
+        "max_abs_difference": 1.7985612998927536e-14,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0160",
+      "name": "main_guyan_div1/common_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0161",
+      "name": "main_guyan_div1/common_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0162",
+      "name": "main_guyan_div2步骤4路线终态",
+      "expected": {
+        "route_id": "main_guyan_div2",
+        "terminal": [
+          "COMPLETE",
+          "COMPLETED",
+          "COMPLETED_WITH_POINT_FAILURES",
+          "COMPLETE_PASS",
+          "COMPLETE_WITH_FAIL",
+          "PASS",
+          "SUCCESS"
+        ]
+      },
+      "actual": {
+        "route_id": "main_guyan_div2",
+        "final": "COMPLETE_PASS"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\status.json"
+    },
+    {
+      "check_id": "S4-POST-0163",
+      "name": "main_guyan_div2/author_code_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0164",
+      "name": "main_guyan_div2/author_code_grid全部网格变量维数",
+      "expected": [
+        26,
+        67
+      ],
+      "actual": {
+        "all": [
+          26,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0165",
+      "name": "main_guyan_div2/author_code_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 1517,
+        "explicit": 1517,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 1517,
+        "pass": 1517,
+        "fail": 0,
+        "explicit": 1517,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0166",
+      "name": "main_guyan_div2/author_code_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0167",
+      "name": "main_guyan_div2/author_code_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0168",
+      "name": "main_guyan_div2/author_code_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0169",
+      "name": "main_guyan_div2/author_code_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 3.892089528889672e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0170",
+      "name": "main_guyan_div2/author_code_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0171",
+      "name": "main_guyan_div2/author_code_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1517,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1517,
+        "max_abs_difference": 7.402967128200544e-13,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0172",
+      "name": "main_guyan_div2/author_code_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0173",
+      "name": "main_guyan_div2/author_code_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0174",
+      "name": "main_guyan_div2/common_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0175",
+      "name": "main_guyan_div2/common_grid全部网格变量维数",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": {
+        "all": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0176",
+      "name": "main_guyan_div2/common_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 2077,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 2077,
+        "pass": 2077,
+        "fail": 0,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0177",
+      "name": "main_guyan_div2/common_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0178",
+      "name": "main_guyan_div2/common_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0179",
+      "name": "main_guyan_div2/common_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0180",
+      "name": "main_guyan_div2/common_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 4.310257155249738e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0181",
+      "name": "main_guyan_div2/common_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0182",
+      "name": "main_guyan_div2/common_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1517,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1517,
+        "max_abs_difference": 7.402967128200544e-13,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0183",
+      "name": "main_guyan_div2/common_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0184",
+      "name": "main_guyan_div2/common_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_guyan_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0185",
+      "name": "main_ori_div1步骤4路线终态",
+      "expected": {
+        "route_id": "main_ori_div1",
+        "terminal": [
+          "COMPLETE",
+          "COMPLETED",
+          "COMPLETED_WITH_POINT_FAILURES",
+          "COMPLETE_PASS",
+          "COMPLETE_WITH_FAIL",
+          "PASS",
+          "SUCCESS"
+        ]
+      },
+      "actual": {
+        "route_id": "main_ori_div1",
+        "final": "COMPLETE_PASS"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\status.json"
+    },
+    {
+      "check_id": "S4-POST-0186",
+      "name": "main_ori_div1/author_code_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0187",
+      "name": "main_ori_div1/author_code_grid全部网格变量维数",
+      "expected": [
+        21,
+        21
+      ],
+      "actual": {
+        "all": [
+          21,
+          21
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0188",
+      "name": "main_ori_div1/author_code_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 441,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 441,
+        "pass": 441,
+        "fail": 0,
+        "explicit": 441,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0189",
+      "name": "main_ori_div1/author_code_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0190",
+      "name": "main_ori_div1/author_code_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0191",
+      "name": "main_ori_div1/author_code_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0192",
+      "name": "main_ori_div1/author_code_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 9.377705781620989e-15,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0193",
+      "name": "main_ori_div1/author_code_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0194",
+      "name": "main_ori_div1/author_code_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1,
+        "max_abs_difference": 1.887379141862766e-15,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0195",
+      "name": "main_ori_div1/author_code_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0196",
+      "name": "main_ori_div1/author_code_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0197",
+      "name": "main_ori_div1/common_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0198",
+      "name": "main_ori_div1/common_grid全部网格变量维数",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": {
+        "all": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0199",
+      "name": "main_ori_div1/common_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 2077,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 2077,
+        "pass": 2077,
+        "fail": 0,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0200",
+      "name": "main_ori_div1/common_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0201",
+      "name": "main_ori_div1/common_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0202",
+      "name": "main_ori_div1/common_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0203",
+      "name": "main_ori_div1/common_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 1.355458535064085e-14,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0204",
+      "name": "main_ori_div1/common_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0205",
+      "name": "main_ori_div1/common_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1,
+        "max_abs_difference": 1.887379141862766e-15,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0206",
+      "name": "main_ori_div1/common_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0207",
+      "name": "main_ori_div1/common_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div1\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0208",
+      "name": "main_ori_div2步骤4路线终态",
+      "expected": {
+        "route_id": "main_ori_div2",
+        "terminal": [
+          "COMPLETE",
+          "COMPLETED",
+          "COMPLETED_WITH_POINT_FAILURES",
+          "COMPLETE_PASS",
+          "COMPLETE_WITH_FAIL",
+          "PASS",
+          "SUCCESS"
+        ]
+      },
+      "actual": {
+        "route_id": "main_ori_div2",
+        "final": "COMPLETE_PASS"
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\status.json"
+    },
+    {
+      "check_id": "S4-POST-0209",
+      "name": "main_ori_div2/author_code_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0210",
+      "name": "main_ori_div2/author_code_grid全部网格变量维数",
+      "expected": [
+        26,
+        67
+      ],
+      "actual": {
+        "all": [
+          26,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0211",
+      "name": "main_ori_div2/author_code_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 1517,
+        "explicit": 1517,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 1517,
+        "pass": 1517,
+        "fail": 0,
+        "explicit": 1517,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0212",
+      "name": "main_ori_div2/author_code_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0213",
+      "name": "main_ori_div2/author_code_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0214",
+      "name": "main_ori_div2/author_code_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0215",
+      "name": "main_ori_div2/author_code_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 3.892089528889672e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0216",
+      "name": "main_ori_div2/author_code_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0217",
+      "name": "main_ori_div2/author_code_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1517,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1517,
+        "max_abs_difference": 7.402967128200544e-13,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0218",
+      "name": "main_ori_div2/author_code_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0219",
+      "name": "main_ori_div2/author_code_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\author_code_grid.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0220",
+      "name": "main_ori_div2/common_grid核心MAT变量完整",
+      "expected": [
+        "critical",
+        "diagnostic",
+        "point_status_code",
+        "provenance_code",
+        "residual",
+        "rho",
+        "stable"
+      ],
+      "actual": {
+        "resolved": {
+          "rho": "rho",
+          "stable": "stable",
+          "critical": "critical",
+          "residual": "residual",
+          "point_status_code": "status",
+          "diagnostic": "diagnostic",
+          "provenance_code": "provenance_code"
+        },
+        "missing": []
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0221",
+      "name": "main_ori_div2/common_grid全部网格变量维数",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": {
+        "all": [
+          31,
+          67
+        ]
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0222",
+      "name": "main_ori_div2/common_grid每个请求点均为PASS或明确FAIL",
+      "expected": {
+        "requested": 2077,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "actual": {
+        "requested": 2077,
+        "pass": 2077,
+        "fail": 0,
+        "explicit": 2077,
+        "unexpected_codes": [],
+        "nonpoint_status_nonzero": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0223",
+      "name": "main_ori_div2/common_gridrho只在PASS点为有限正值",
+      "expected": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "actual": {
+        "pass_invalid": 0,
+        "fail_invalid": 0,
+        "nonpoint_non_nan": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0224",
+      "name": "main_ori_div2/common_gridstable严格由finite且0<rho<1生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0225",
+      "name": "main_ori_div2/common_grid临界点严格按|rho-1|<=1e-8生成",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0226",
+      "name": "main_ori_div2/common_grid根残差与失败诊断",
+      "expected": {
+        "pass_residual_over_1e-8": 0,
+        "failed_diagnostic_missing": 0
+      },
+      "actual": {
+        "pass_residual_over_1e-8": 0,
+        "maximum_pass_residual": 4.310257155249738e-13,
+        "failed_diagnostic_missing": 0
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0227",
+      "name": "main_ori_div2/common_grid原样/注释意图/同公式补算标签不越界",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0228",
+      "name": "main_ori_div2/common_grid原样活动点复现步骤2 raw_stab",
+      "expected": {
+        "points": 1517,
+        "max_abs_difference": "<= 1e-08",
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "actual": {
+        "points": 1517,
+        "max_abs_difference": 7.402967128200544e-13,
+        "classification_mismatch": 0,
+        "all_active_points_pass": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0229",
+      "name": "main_ori_div2/common_grid未混入历史0/0.999掩膜或1至28索引",
+      "expected": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "actual": {
+        "zero_pass": 0,
+        "exact_0.999": 0,
+        "ordered_1_to_28": false
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0230",
+      "name": "main_ori_div2/common_grid步骤2匹配镜像字段",
+      "expected": true,
+      "actual": {
+        "shapes_ok": true,
+        "values_ok": true
+      },
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_ori_div2\\common_31x67_same_formula_candidate.mat; loader=h5py MATLAB-v7.3"
+    },
+    {
+      "check_id": "S4-POST-0231",
+      "name": "energy_guyan_div1POSTCHECK仍无rho网格",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\energy_guyan_div1"
+    },
+    {
+      "check_id": "S4-POST-0232",
+      "name": "energy_guyan_div2POSTCHECK仍无rho网格",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\energy_guyan_div2"
+    },
+    {
+      "check_id": "S4-POST-0233",
+      "name": "main_cb_div1POSTCHECK仍无rho网格",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_cb_div1"
+    },
+    {
+      "check_id": "S4-POST-0234",
+      "name": "main_cb_div2POSTCHECK仍无rho网格",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "evidence": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step4_rho_grids\\main_cb_div2"
+    }
+  ]
+}

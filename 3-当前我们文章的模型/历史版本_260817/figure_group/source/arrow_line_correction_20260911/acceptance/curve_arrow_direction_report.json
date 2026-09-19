@@ -1,0 +1,2115 @@
+{
+  "summary": {
+    "pass_all": true,
+    "measured_count": 42,
+    "angle_acceptance_deg_lte": 1.0,
+    "tip_error_acceptance_pt_lt": 0.02,
+    "worst_abs_angle_deg": 0.18621779943249353,
+    "worst_tip_error_pt": 0.0007167855203743876,
+    "terminal_line_shorter_than_head_count": 30,
+    "minimum_terminal_line_minus_head_length_pt": -0.16023389049200798,
+    "worst_angle_arrow": "fig4_I_phys_psi8_arrow",
+    "worst_tip_error_arrow": "fig4_II_num_psi8_arrow",
+    "by_slide": {
+      "18": {
+        "count": 12,
+        "worst_abs_angle_deg": 0.0,
+        "worst_tip_error_pt": 0.0004351481620120534,
+        "min_terminal_line_length_pt": 5.9890047514324465,
+        "max_head_axis_length_pt": 4.0,
+        "terminal_line_shorter_than_head_count": 0
+      },
+      "19": {
+        "count": 30,
+        "worst_abs_angle_deg": 0.18621779943249353,
+        "worst_tip_error_pt": 0.0007167855203743876,
+        "min_terminal_line_length_pt": 3.840290773419042,
+        "max_head_axis_length_pt": 4.00052466391105,
+        "terminal_line_shorter_than_head_count": 30
+      }
+    }
+  },
+  "method": "Match each XML endpoint to a distinct PDF native triangular-head contour; measure its tip, base midpoint, axis and vertical angle in PDF points.",
+  "input_sha256": {
+    "draft\\terminal_line.pptx": "4abf49008d259f84521ef1a21a373b8155cc7c5b0cdcb48ed404a58666f1a056",
+    "preview\\selected\\render.pdf": "cc518c0b804431670c010a045797cc8bd88d85032af4e92e3c0c45ec85f870d4",
+    "preview\\pptx\\opened.pptx": "b68f834056e86b03d90ac4a5085b3d8582b69c5b4859fbbbc137603b5cc7d82f",
+    "preview\\pptx\\render.pdf": "8001df5051870e8e78ee52dcbd845b3d7e332ca8a5f88aecb9eaf1de317ad655"
+  },
+  "records": [
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_1",
+      "source_endpoint_pt": [
+        207.21818897637795,
+        347.6490551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432503,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          194.99566929133857,
+          356.2048031496063
+        ],
+        [
+          201.7459648087296,
+          356.2048031496063
+        ],
+        [
+          207.21818897637795,
+          356.2048031496063
+        ],
+        [
+          207.21818897637795,
+          353.6380598695427
+        ]
+      ],
+      "pdf_drawing_index": 6,
+      "pdf_seqno": 8,
+      "pdf_tip_pt": [
+        207.21800231933594,
+        347.64898681640625
+      ],
+      "pdf_base_center_pt": [
+        207.21800231933594,
+        351.64898681640625
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00019876109803791661,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514325033,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_2",
+      "source_endpoint_pt": [
+        299.60622047244095,
+        347.6490551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432503,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          287.38370078740155,
+          356.2048031496063
+        ],
+        [
+          294.1339963047926,
+          356.2048031496063
+        ],
+        [
+          299.60622047244095,
+          356.2048031496063
+        ],
+        [
+          299.60622047244095,
+          353.6380598695427
+        ]
+      ],
+      "pdf_drawing_index": 7,
+      "pdf_seqno": 11,
+      "pdf_tip_pt": [
+        299.6059875488281,
+        347.64898681640625
+      ],
+      "pdf_base_center_pt": [
+        299.6059875488281,
+        351.64898681640625
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0002427313992354814,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514325033,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_3",
+      "source_endpoint_pt": [
+        391.99425196850393,
+        347.6490551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432503,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          379.77173228346453,
+          356.2048031496063
+        ],
+        [
+          386.52202780085554,
+          356.2048031496063
+        ],
+        [
+          391.99425196850393,
+          356.2048031496063
+        ],
+        [
+          391.99425196850393,
+          353.6380598695427
+        ]
+      ],
+      "pdf_drawing_index": 8,
+      "pdf_seqno": 14,
+      "pdf_tip_pt": [
+        391.9939880371094,
+        347.64898681640625
+      ],
+      "pdf_base_center_pt": [
+        391.9939880371094,
+        351.64898681640625
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0002726259411624395,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514325033,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_4",
+      "source_endpoint_pt": [
+        484.0227559055118,
+        347.6490551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432503,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          471.8002362204724,
+          356.2048031496063
+        ],
+        [
+          478.5505317378634,
+          356.2048031496063
+        ],
+        [
+          484.0227559055118,
+          356.2048031496063
+        ],
+        [
+          484.0227559055118,
+          353.6380598695427
+        ]
+      ],
+      "pdf_drawing_index": 9,
+      "pdf_seqno": 17,
+      "pdf_tip_pt": [
+        484.02301025390625,
+        347.64898681640625
+      ],
+      "pdf_base_center_pt": [
+        484.02301025390625,
+        351.64898681640625
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00026335950431655397,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514325033,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_1",
+      "source_endpoint_pt": [
+        207.21818897637795,
+        226.86165354330709
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.9890047514324465,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          194.99566929133857,
+          235.41740157480314
+        ],
+        [
+          201.7459648087296,
+          235.41740157480314
+        ],
+        [
+          207.21818897637795,
+          235.41740157480314
+        ],
+        [
+          207.21818897637795,
+          232.85065829473953
+        ]
+      ],
+      "pdf_drawing_index": 11,
+      "pdf_seqno": 23,
+      "pdf_tip_pt": [
+        207.21800231933594,
+        226.86199951171875
+      ],
+      "pdf_base_center_pt": [
+        207.21800231933594,
+        230.86199951171875
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0003931093908837598,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324465,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_2",
+      "source_endpoint_pt": [
+        299.60622047244095,
+        226.86165354330709
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.9890047514324465,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          287.38370078740155,
+          235.41740157480314
+        ],
+        [
+          294.1339963047926,
+          235.41740157480314
+        ],
+        [
+          299.60622047244095,
+          235.41740157480314
+        ],
+        [
+          299.60622047244095,
+          232.85065829473953
+        ]
+      ],
+      "pdf_drawing_index": 12,
+      "pdf_seqno": 26,
+      "pdf_tip_pt": [
+        299.6059875488281,
+        226.86199951171875
+      ],
+      "pdf_base_center_pt": [
+        299.6059875488281,
+        230.86199951171875
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0004170701994659616,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324465,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_3",
+      "source_endpoint_pt": [
+        391.99425196850393,
+        226.86165354330709
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.9890047514324465,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          379.77173228346453,
+          235.41740157480314
+        ],
+        [
+          386.52202780085554,
+          235.41740157480314
+        ],
+        [
+          391.99425196850393,
+          235.41740157480314
+        ],
+        [
+          391.99425196850393,
+          232.85065829473953
+        ]
+      ],
+      "pdf_drawing_index": 13,
+      "pdf_seqno": 29,
+      "pdf_tip_pt": [
+        391.9939880371094,
+        226.86199951171875
+      ],
+      "pdf_base_center_pt": [
+        391.9939880371094,
+        230.86199951171875
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0004351481620120534,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324465,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_4",
+      "source_endpoint_pt": [
+        484.0227559055118,
+        226.86165354330709
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.9890047514324465,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          471.8002362204724,
+          235.41740157480314
+        ],
+        [
+          478.5505317378634,
+          235.41740157480314
+        ],
+        [
+          484.0227559055118,
+          235.41740157480314
+        ],
+        [
+          484.0227559055118,
+          232.85065829473953
+        ]
+      ],
+      "pdf_drawing_index": 14,
+      "pdf_seqno": 32,
+      "pdf_tip_pt": [
+        484.02301025390625,
+        226.86199951171875
+      ],
+      "pdf_base_center_pt": [
+        484.02301025390625,
+        230.86199951171875
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00042940336237810644,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324465,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_1",
+      "source_endpoint_pt": [
+        207.21818897637795,
+        107.15267716535432
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432489,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          194.99566929133857,
+          115.70842519685038
+        ],
+        [
+          201.7459648087296,
+          115.70842519685038
+        ],
+        [
+          207.21818897637795,
+          115.70842519685038
+        ],
+        [
+          207.21818897637795,
+          113.14168191678681
+        ]
+      ],
+      "pdf_drawing_index": 16,
+      "pdf_seqno": 38,
+      "pdf_tip_pt": [
+        207.21800231933594,
+        107.15299987792969
+      ],
+      "pdf_base_center_pt": [
+        207.21800231933594,
+        111.15299987792969
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00037280592488833143,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324891,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_2",
+      "source_endpoint_pt": [
+        299.60622047244095,
+        107.15267716535432
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432489,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          287.38370078740155,
+          115.70842519685038
+        ],
+        [
+          294.1339963047926,
+          115.70842519685038
+        ],
+        [
+          299.60622047244095,
+          115.70842519685038
+        ],
+        [
+          299.60622047244095,
+          113.14168191678681
+        ]
+      ],
+      "pdf_drawing_index": 17,
+      "pdf_seqno": 41,
+      "pdf_tip_pt": [
+        299.6059875488281,
+        107.15299987792969
+      ],
+      "pdf_base_center_pt": [
+        299.6059875488281,
+        111.15299987792969
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.0003979909744120092,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324891,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_3",
+      "source_endpoint_pt": [
+        391.99425196850393,
+        107.15267716535432
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432489,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          379.77173228346453,
+          115.70842519685038
+        ],
+        [
+          386.52202780085554,
+          115.70842519685038
+        ],
+        [
+          391.99425196850393,
+          115.70842519685038
+        ],
+        [
+          391.99425196850393,
+          113.14168191678681
+        ]
+      ],
+      "pdf_drawing_index": 18,
+      "pdf_seqno": 44,
+      "pdf_tip_pt": [
+        391.9939880371094,
+        107.15299987792969
+      ],
+      "pdf_base_center_pt": [
+        391.9939880371094,
+        111.15299987792969
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00041689709441696985,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324891,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_4",
+      "source_endpoint_pt": [
+        484.0227559055118,
+        107.15267716535432
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 5.989004751432489,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          471.8002362204724,
+          115.70842519685038
+        ],
+        [
+          478.5505317378634,
+          115.70842519685038
+        ],
+        [
+          484.0227559055118,
+          115.70842519685038
+        ],
+        [
+          484.0227559055118,
+          113.14168191678681
+        ]
+      ],
+      "pdf_drawing_index": 19,
+      "pdf_seqno": 47,
+      "pdf_tip_pt": [
+        484.02301025390625,
+        107.15299987792969
+      ],
+      "pdf_base_center_pt": [
+        484.02301025390625,
+        111.15299987792969
+      ],
+      "pdf_head_axis_length_pt": 4.0,
+      "pdf_head_width_pt": 6.0,
+      "signed_angle_from_up_deg": 0.0,
+      "tip_attachment_error_pt": 0.00041089720375352633,
+      "abs_angle_from_up_deg": 0.0,
+      "terminal_line_minus_head_length_pt": 1.9890047514324891,
+      "terminal_line_contains_full_head": true,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi12_arrow",
+      "source_endpoint_pt": [
+        175.72251968503937,
+        76.27748031496063
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          167.885217948241,
+          81.76362204724408
+        ],
+        [
+          172.21361010951767,
+          81.76362204724408
+        ],
+        [
+          175.72251968503937,
+          81.76362204724408
+        ],
+        [
+          175.72251968503937,
+          80.11777108837967
+        ]
+      ],
+      "pdf_drawing_index": 53,
+      "pdf_seqno": 74,
+      "pdf_tip_pt": [
+        175.72300720214844,
+        76.2770004272461
+      ],
+      "pdf_base_center_pt": [
+        175.7100067138672,
+        80.27750015258789
+      ],
+      "pdf_head_axis_length_pt": 4.0005208492339275,
+      "pdf_head_width_pt": 6.000030098528739,
+      "signed_angle_from_up_deg": 0.18619436049630203,
+      "tip_attachment_error_pt": 0.0006840797834980327,
+      "abs_angle_from_up_deg": 0.18619436049630203,
+      "terminal_line_minus_head_length_pt": -0.16023007581488535,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi13_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        76.27748031496063
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          81.76362204724408
+        ],
+        [
+          232.90258648747042,
+          81.76362204724408
+        ],
+        [
+          236.41149606299211,
+          81.76362204724408
+        ],
+        [
+          236.41149606299211,
+          80.11777108837967
+        ]
+      ],
+      "pdf_drawing_index": 54,
+      "pdf_seqno": 77,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        76.2770004272461
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        80.27750015258789
+      ],
+      "pdf_head_axis_length_pt": 4.000517703285428,
+      "pdf_head_width_pt": 6.000030098528739,
+      "signed_angle_from_up_deg": 0.1717709437494531,
+      "tip_attachment_error_pt": 0.0006934494561001773,
+      "abs_angle_from_up_deg": 0.1717709437494531,
+      "terminal_line_minus_head_length_pt": -0.16022692986638631,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi14_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        76.27748031496063
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          81.76362204724408
+        ],
+        [
+          293.59156286542316,
+          81.76362204724408
+        ],
+        [
+          297.1004724409449,
+          81.76362204724408
+        ],
+        [
+          297.1004724409449,
+          80.11777108837967
+        ]
+      ],
+      "pdf_drawing_index": 55,
+      "pdf_seqno": 80,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        76.2770004272461
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        80.27750015258789
+      ],
+      "pdf_head_axis_length_pt": 4.000517703285428,
+      "pdf_head_width_pt": 6.000030098528739,
+      "signed_angle_from_up_deg": 0.1717709437494531,
+      "tip_attachment_error_pt": 0.0006691508174454929,
+      "abs_angle_from_up_deg": 0.1717709437494531,
+      "terminal_line_minus_head_length_pt": -0.16022692986638631,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi15_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        76.27748031496063
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          81.76362204724408
+        ],
+        [
+          355.88825577880897,
+          81.76362204724408
+        ],
+        [
+          359.3971653543307,
+          81.76362204724408
+        ],
+        [
+          359.3971653543307,
+          80.11777108837967
+        ]
+      ],
+      "pdf_drawing_index": 56,
+      "pdf_seqno": 83,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        76.2770004272461
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        80.27750015258789
+      ],
+      "pdf_head_axis_length_pt": 4.000517703285428,
+      "pdf_head_width_pt": 6.000030098528739,
+      "signed_angle_from_up_deg": 0.1717709437494531,
+      "tip_attachment_error_pt": 0.0005065518077887979,
+      "abs_angle_from_up_deg": 0.1717709437494531,
+      "terminal_line_minus_head_length_pt": -0.16022692986638631,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi7_arrow",
+      "source_endpoint_pt": [
+        175.72251968503937,
+        130.53590551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          167.885217948241,
+          136.0220472440945
+        ],
+        [
+          172.21361010951767,
+          136.0220472440945
+        ],
+        [
+          175.72251968503937,
+          136.0220472440945
+        ],
+        [
+          175.72251968503937,
+          134.37619628523007
+        ]
+      ],
+      "pdf_drawing_index": 57,
+      "pdf_seqno": 86,
+      "pdf_tip_pt": [
+        175.72300720214844,
+        130.53599548339844
+      ],
+      "pdf_base_center_pt": [
+        175.7100067138672,
+        134.53599548339844
+      ],
+      "pdf_head_axis_length_pt": 4.000021126531153,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1862176218426116,
+      "tip_attachment_error_pt": 0.0004957497535778502,
+      "abs_angle_from_up_deg": 0.1862176218426116,
+      "terminal_line_minus_head_length_pt": -0.1597303531121108,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi8_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        130.53590551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          136.0220472440945
+        ],
+        [
+          232.90258648747042,
+          136.0220472440945
+        ],
+        [
+          236.41149606299211,
+          136.0220472440945
+        ],
+        [
+          236.41149606299211,
+          134.37619628523007
+        ]
+      ],
+      "pdf_drawing_index": 58,
+      "pdf_seqno": 89,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        130.53599548339844
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        134.53599548339844
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0005086008416699836,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi9_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        130.53590551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          136.0220472440945
+        ],
+        [
+          293.59156286542316,
+          136.0220472440945
+        ],
+        [
+          297.1004724409449,
+          136.0220472440945
+        ],
+        [
+          297.1004724409449,
+          134.37619628523007
+        ]
+      ],
+      "pdf_drawing_index": 59,
+      "pdf_seqno": 92,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        130.53599548339844
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        134.53599548339844
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.00047493734794155245,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi10_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        130.53590551181102
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          136.0220472440945
+        ],
+        [
+          355.88825577880897,
+          136.0220472440945
+        ],
+        [
+          359.3971653543307,
+          136.0220472440945
+        ],
+        [
+          359.3971653543307,
+          134.37619628523007
+        ]
+      ],
+      "pdf_drawing_index": 60,
+      "pdf_seqno": 95,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        130.53599548339844
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        134.53599548339844
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0001854653659201176,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi3_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        182.7847244094488
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          188.27086614173228
+        ],
+        [
+          232.90258648747042,
+          188.27086614173228
+        ],
+        [
+          236.41149606299211,
+          188.27086614173228
+        ],
+        [
+          236.41149606299211,
+          186.62501518286786
+        ]
+      ],
+      "pdf_drawing_index": 61,
+      "pdf_seqno": 98,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        182.78500366210938
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        186.7845001220703
+      ],
+      "pdf_head_axis_length_pt": 3.9995144424142786,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17181403187568317,
+      "tip_attachment_error_pt": 0.0005732032606644932,
+      "abs_angle_from_up_deg": 0.17181403187568317,
+      "terminal_line_minus_head_length_pt": -0.15922366899523643,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi4_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        182.7847244094488
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          188.27086614173228
+        ],
+        [
+          293.59156286542316,
+          188.27086614173228
+        ],
+        [
+          297.1004724409449,
+          188.27086614173228
+        ],
+        [
+          297.1004724409449,
+          186.62501518286786
+        ]
+      ],
+      "pdf_drawing_index": 62,
+      "pdf_seqno": 101,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        182.78500366210938
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        186.7845001220703
+      ],
+      "pdf_head_axis_length_pt": 3.9995144424142786,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17181403187568317,
+      "tip_attachment_error_pt": 0.000543555559587745,
+      "abs_angle_from_up_deg": 0.17181403187568317,
+      "terminal_line_minus_head_length_pt": -0.15922366899523643,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi5_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        182.7847244094488
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          188.27086614173228
+        ],
+        [
+          355.88825577880897,
+          188.27086614173228
+        ],
+        [
+          359.3971653543307,
+          188.27086614173228
+        ],
+        [
+          359.3971653543307,
+          186.62501518286786
+        ]
+      ],
+      "pdf_drawing_index": 63,
+      "pdf_seqno": 104,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        182.78500366210938
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        186.7845001220703
+      ],
+      "pdf_head_axis_length_pt": 3.9995144424142786,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17181403187568317,
+      "tip_attachment_error_pt": 0.000322931206056142,
+      "abs_angle_from_up_deg": 0.17181403187568317,
+      "terminal_line_minus_head_length_pt": -0.15922366899523643,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi7_arrow",
+      "source_endpoint_pt": [
+        485.1961417322834,
+        116.06700787401574
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          477.35883999548514,
+          121.5531496062992
+        ],
+        [
+          481.68723215676175,
+          121.5531496062992
+        ],
+        [
+          485.1961417322834,
+          121.5531496062992
+        ],
+        [
+          485.1961417322834,
+          119.90729864743479
+        ]
+      ],
+      "pdf_drawing_index": 98,
+      "pdf_seqno": 153,
+      "pdf_tip_pt": [
+        485.1960144042969,
+        116.06700134277344
+      ],
+      "pdf_base_center_pt": [
+        485.1839904785156,
+        120.06699752807617
+      ],
+      "pdf_head_axis_length_pt": 4.000014257128044,
+      "pdf_head_width_pt": 6.000026993164804,
+      "signed_angle_from_up_deg": 0.17222969561132814,
+      "tip_attachment_error_pt": 0.00012749538534486603,
+      "abs_angle_from_up_deg": 0.17222969561132814,
+      "terminal_line_minus_head_length_pt": -0.15972348370900225,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi8_arrow",
+      "source_endpoint_pt": [
+        543.8755905511811,
+        116.06700787401574
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          536.0382888143828,
+          121.5531496062992
+        ],
+        [
+          540.3666809756594,
+          121.5531496062992
+        ],
+        [
+          543.8755905511811,
+          121.5531496062992
+        ],
+        [
+          543.8755905511811,
+          119.90729864743479
+        ]
+      ],
+      "pdf_drawing_index": 99,
+      "pdf_seqno": 156,
+      "pdf_tip_pt": [
+        543.8759765625,
+        116.06700134277344
+      ],
+      "pdf_base_center_pt": [
+        543.8629760742188,
+        120.06699752807617
+      ],
+      "pdf_head_axis_length_pt": 4.000017311854035,
+      "pdf_head_width_pt": 6.000026993164804,
+      "signed_angle_from_up_deg": 0.18621779943249353,
+      "tip_attachment_error_pt": 0.00038606656870801114,
+      "abs_angle_from_up_deg": 0.18621779943249353,
+      "terminal_line_minus_head_length_pt": -0.15972653843499263,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi2_arrow",
+      "source_endpoint_pt": [
+        485.1961417322834,
+        169.52149606299213
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          477.35883999548514,
+          175.00763779527557
+        ],
+        [
+          481.68723215676175,
+          175.00763779527557
+        ],
+        [
+          485.1961417322834,
+          175.00763779527557
+        ],
+        [
+          485.1961417322834,
+          173.36178683641117
+        ]
+      ],
+      "pdf_drawing_index": 100,
+      "pdf_seqno": 159,
+      "pdf_tip_pt": [
+        485.1960144042969,
+        169.52099609375
+      ],
+      "pdf_base_center_pt": [
+        485.1839904785156,
+        173.52149963378906
+      ],
+      "pdf_head_axis_length_pt": 4.0005216095724645,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17220785310459086,
+      "tip_attachment_error_pt": 0.0005159279593432977,
+      "abs_angle_from_up_deg": 0.17220785310459086,
+      "terminal_line_minus_head_length_pt": -0.16023083615342237,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi3_arrow",
+      "source_endpoint_pt": [
+        543.8755905511811,
+        169.52149606299213
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          536.0382888143828,
+          175.00763779527557
+        ],
+        [
+          540.3666809756594,
+          175.00763779527557
+        ],
+        [
+          543.8755905511811,
+          175.00763779527557
+        ],
+        [
+          543.8755905511811,
+          173.36178683641117
+        ]
+      ],
+      "pdf_drawing_index": 101,
+      "pdf_seqno": 162,
+      "pdf_tip_pt": [
+        543.8759765625,
+        169.52099609375
+      ],
+      "pdf_base_center_pt": [
+        543.8629760742188,
+        173.52149963378906
+      ],
+      "pdf_head_axis_length_pt": 4.00052466391105,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.186194182951123,
+      "tip_attachment_error_pt": 0.0006316438723061288,
+      "abs_angle_from_up_deg": 0.186194182951123,
+      "terminal_line_minus_head_length_pt": -0.16023389049200798,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi13_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        311.79905511811023
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          317.2851968503937
+        ],
+        [
+          232.90258648747042,
+          317.2851968503937
+        ],
+        [
+          236.41149606299211,
+          317.2851968503937
+        ],
+        [
+          236.41149606299211,
+          315.6393458915293
+        ]
+      ],
+      "pdf_drawing_index": 147,
+      "pdf_seqno": 225,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        311.79901123046875
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        315.79901123046875
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0005024998056521498,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi14_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        311.79905511811023
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          317.2851968503937
+        ],
+        [
+          293.59156286542316,
+          317.2851968503937
+        ],
+        [
+          297.1004724409449,
+          317.2851968503937
+        ],
+        [
+          297.1004724409449,
+          315.6393458915293
+        ]
+      ],
+      "pdf_drawing_index": 148,
+      "pdf_seqno": 228,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        311.79901123046875
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        315.79901123046875
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.00046839803906804293,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi15_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        311.79905511811023
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          317.2851968503937
+        ],
+        [
+          355.88825577880897,
+          317.2851968503937
+        ],
+        [
+          359.3971653543307,
+          317.2851968503937
+        ],
+        [
+          359.3971653543307,
+          315.6393458915293
+        ]
+      ],
+      "pdf_drawing_index": 149,
+      "pdf_seqno": 231,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        311.79901123046875
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        315.79901123046875
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.00016801381041127458,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi8_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        365.6555118110236
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          371.1416535433071
+        ],
+        [
+          232.90258648747042,
+          371.1416535433071
+        ],
+        [
+          236.41149606299211,
+          371.1416535433071
+        ],
+        [
+          236.41149606299211,
+          369.49580258444263
+        ]
+      ],
+      "pdf_drawing_index": 150,
+      "pdf_seqno": 234,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        365.6549987792969
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        369.65550231933594
+      ],
+      "pdf_head_axis_length_pt": 4.000521517965551,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17177077995751625,
+      "tip_attachment_error_pt": 0.0007167855203743876,
+      "abs_angle_from_up_deg": 0.17177077995751625,
+      "terminal_line_minus_head_length_pt": -0.1602307445465092,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi9_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        365.6555118110236
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          371.1416535433071
+        ],
+        [
+          293.59156286542316,
+          371.1416535433071
+        ],
+        [
+          297.1004724409449,
+          371.1416535433071
+        ],
+        [
+          297.1004724409449,
+          369.49580258444263
+        ]
+      ],
+      "pdf_drawing_index": 151,
+      "pdf_seqno": 237,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        365.6549987792969
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        369.65550231933594
+      ],
+      "pdf_head_axis_length_pt": 4.000521517965551,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17177077995751625,
+      "tip_attachment_error_pt": 0.0006933052361988341,
+      "abs_angle_from_up_deg": 0.17177077995751625,
+      "terminal_line_minus_head_length_pt": -0.1602307445465092,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi10_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        365.6555118110236
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          371.1416535433071
+        ],
+        [
+          355.88825577880897,
+          371.1416535433071
+        ],
+        [
+          359.3971653543307,
+          371.1416535433071
+        ],
+        [
+          359.3971653543307,
+          369.49580258444263
+        ]
+      ],
+      "pdf_drawing_index": 152,
+      "pdf_seqno": 240,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        365.6549987792969
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        369.65550231933594
+      ],
+      "pdf_head_axis_length_pt": 4.000521517965551,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17177077995751625,
+      "tip_attachment_error_pt": 0.0005380558224077211,
+      "abs_angle_from_up_deg": 0.17177077995751625,
+      "terminal_line_minus_head_length_pt": -0.1602307445465092,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi3_arrow",
+      "source_endpoint_pt": [
+        236.41149606299211,
+        418.30622047244094
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          228.57419432619378,
+          423.7923622047244
+        ],
+        [
+          232.90258648747042,
+          423.7923622047244
+        ],
+        [
+          236.41149606299211,
+          423.7923622047244
+        ],
+        [
+          236.41149606299211,
+          422.14651124586
+        ]
+      ],
+      "pdf_drawing_index": 153,
+      "pdf_seqno": 243,
+      "pdf_tip_pt": [
+        236.41099548339844,
+        418.3059997558594
+      ],
+      "pdf_base_center_pt": [
+        236.3990020751953,
+        422.3059997558594
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0005470792803459768,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi4_arrow",
+      "source_endpoint_pt": [
+        297.1004724409449,
+        418.30622047244094
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          289.26317070414655,
+          423.7923622047244
+        ],
+        [
+          293.59156286542316,
+          423.7923622047244
+        ],
+        [
+          297.1004724409449,
+          423.7923622047244
+        ],
+        [
+          297.1004724409449,
+          422.14651124586
+        ]
+      ],
+      "pdf_drawing_index": 154,
+      "pdf_seqno": 246,
+      "pdf_tip_pt": [
+        297.1000061035156,
+        418.3059997558594
+      ],
+      "pdf_base_center_pt": [
+        297.0880126953125,
+        422.3059997558594
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0005159325608121777,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi5_arrow",
+      "source_endpoint_pt": [
+        359.3971653543307,
+        418.30622047244094
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          351.55986361753236,
+          423.7923622047244
+        ],
+        [
+          355.88825577880897,
+          423.7923622047244
+        ],
+        [
+          359.3971653543307,
+          423.7923622047244
+        ],
+        [
+          359.3971653543307,
+          422.14651124586
+        ]
+      ],
+      "pdf_drawing_index": 155,
+      "pdf_seqno": 249,
+      "pdf_tip_pt": [
+        359.3970031738281,
+        418.3059997558594
+      ],
+      "pdf_base_center_pt": [
+        359.385009765625,
+        422.3059997558594
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.00027389473304965044,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi12_arrow",
+      "source_endpoint_pt": [
+        483.99047244094487,
+        311.79905511811023
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          476.15317070414653,
+          317.2851968503937
+        ],
+        [
+          480.48156286542314,
+          317.2851968503937
+        ],
+        [
+          483.99047244094487,
+          317.2851968503937
+        ],
+        [
+          483.99047244094487,
+          315.6393458915293
+        ]
+      ],
+      "pdf_drawing_index": 195,
+      "pdf_seqno": 305,
+      "pdf_tip_pt": [
+        483.989990234375,
+        311.79901123046875
+      ],
+      "pdf_base_center_pt": [
+        483.9779968261719,
+        315.79901123046875
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.00048419965004224534,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi13_arrow",
+      "source_endpoint_pt": [
+        543.4737007874015,
+        311.79905511811023
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          535.6363990506032,
+          317.2851968503937
+        ],
+        [
+          539.9647912118799,
+          317.2851968503937
+        ],
+        [
+          543.4737007874015,
+          317.2851968503937
+        ],
+        [
+          543.4737007874015,
+          315.6393458915293
+        ]
+      ],
+      "pdf_drawing_index": 196,
+      "pdf_seqno": 308,
+      "pdf_tip_pt": [
+        543.4739990234375,
+        311.79901123046875
+      ],
+      "pdf_base_center_pt": [
+        543.4609985351562,
+        315.79901123046875
+      ],
+      "pdf_head_axis_length_pt": 4.000021126531153,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1862176218426116,
+      "tip_attachment_error_pt": 0.00030144793618169054,
+      "abs_angle_from_up_deg": 0.1862176218426116,
+      "terminal_line_minus_head_length_pt": -0.1597303531121108,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi7_arrow",
+      "source_endpoint_pt": [
+        483.99047244094487,
+        365.6555118110236
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          476.15317070414653,
+          371.1416535433071
+        ],
+        [
+          480.48156286542314,
+          371.1416535433071
+        ],
+        [
+          483.99047244094487,
+          371.1416535433071
+        ],
+        [
+          483.99047244094487,
+          369.49580258444263
+        ]
+      ],
+      "pdf_drawing_index": 197,
+      "pdf_seqno": 311,
+      "pdf_tip_pt": [
+        483.989990234375,
+        365.6549987792969
+      ],
+      "pdf_base_center_pt": [
+        483.9779968261719,
+        369.65550231933594
+      ],
+      "pdf_head_axis_length_pt": 4.000521517965551,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.17177077995751625,
+      "tip_attachment_error_pt": 0.0007040772178099261,
+      "abs_angle_from_up_deg": 0.17177077995751625,
+      "terminal_line_minus_head_length_pt": -0.1602307445465092,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi8_arrow",
+      "source_endpoint_pt": [
+        543.4737007874015,
+        365.6555118110236
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          535.6363990506032,
+          371.1416535433071
+        ],
+        [
+          539.9647912118799,
+          371.1416535433071
+        ],
+        [
+          543.4737007874015,
+          371.1416535433071
+        ],
+        [
+          543.4737007874015,
+          369.49580258444263
+        ]
+      ],
+      "pdf_drawing_index": 198,
+      "pdf_seqno": 314,
+      "pdf_tip_pt": [
+        543.4739990234375,
+        365.6549987792969
+      ],
+      "pdf_base_center_pt": [
+        543.4609985351562,
+        369.65550231933594
+      ],
+      "pdf_head_axis_length_pt": 4.00052466391105,
+      "pdf_head_width_pt": 6.000030122699349,
+      "signed_angle_from_up_deg": 0.186194182951123,
+      "tip_attachment_error_pt": 0.000593419148466018,
+      "abs_angle_from_up_deg": 0.186194182951123,
+      "terminal_line_minus_head_length_pt": -0.16023389049200798,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi2_arrow",
+      "source_endpoint_pt": [
+        483.99047244094487,
+        418.30622047244094
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          476.15317070414653,
+          423.7923622047244
+        ],
+        [
+          480.48156286542314,
+          423.7923622047244
+        ],
+        [
+          483.99047244094487,
+          423.7923622047244
+        ],
+        [
+          483.99047244094487,
+          422.14651124586
+        ]
+      ],
+      "pdf_drawing_index": 199,
+      "pdf_seqno": 317,
+      "pdf_tip_pt": [
+        483.989990234375,
+        418.3059997558594
+      ],
+      "pdf_base_center_pt": [
+        483.9779968261719,
+        422.3059997558594
+      ],
+      "pdf_head_axis_length_pt": 4.00001798018963,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1717924031942401,
+      "tip_attachment_error_pt": 0.0005303197011279671,
+      "abs_angle_from_up_deg": 0.1717924031942401,
+      "terminal_line_minus_head_length_pt": -0.1597272067705875,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi3_arrow",
+      "source_endpoint_pt": [
+        543.4737007874015,
+        418.30622047244094
+      ],
+      "source_tangent_angle_deg": 0.0,
+      "has_terminal_line": true,
+      "terminal_line_length_pt": 3.840290773419042,
+      "native_head_length_setting": "sm",
+      "final_cubic": [
+        [
+          535.6363990506032,
+          423.7923622047244
+        ],
+        [
+          539.9647912118799,
+          423.7923622047244
+        ],
+        [
+          543.4737007874015,
+          423.7923622047244
+        ],
+        [
+          543.4737007874015,
+          422.14651124586
+        ]
+      ],
+      "pdf_drawing_index": 200,
+      "pdf_seqno": 320,
+      "pdf_tip_pt": [
+        543.4739990234375,
+        418.3059997558594
+      ],
+      "pdf_base_center_pt": [
+        543.4609985351562,
+        422.3059997558594
+      ],
+      "pdf_head_axis_length_pt": 4.000021126531153,
+      "pdf_head_width_pt": 6.000027016054863,
+      "signed_angle_from_up_deg": 0.1862176218426116,
+      "tip_attachment_error_pt": 0.0003710263367088974,
+      "abs_angle_from_up_deg": 0.1862176218426116,
+      "terminal_line_minus_head_length_pt": -0.1597303531121108,
+      "terminal_line_contains_full_head": false,
+      "pass": true
+    }
+  ],
+  "previous_large_head_counterexample": {
+    "slide": 18,
+    "name": "fig3_rotation_3_1",
+    "source_endpoint_pt": [
+      207.21818897637795,
+      107.15267716535432
+    ],
+    "source_tangent_angle_deg": 0.0,
+    "has_terminal_line": false,
+    "terminal_line_length_pt": 0.0,
+    "native_head_length_setting": "lg",
+    "final_cubic": [
+      [
+        194.99566929133857,
+        115.70842519685038
+      ],
+      [
+        201.7459648087296,
+        115.70842519685038
+      ],
+      [
+        207.21818897637795,
+        111.8778791042736
+      ],
+      [
+        207.21818897637795,
+        107.15267716535432
+      ]
+    ],
+    "pdf_drawing_index": 16,
+    "pdf_seqno": 38,
+    "pdf_tip_pt": [
+      207.21800231933594,
+      107.15299987792969
+    ],
+    "pdf_base_center_pt": [
+      200.68649291992188,
+      114.7244987487793
+    ],
+    "pdf_head_axis_length_pt": 9.99941049191957,
+    "pdf_head_width_pt": 5.999782770980327,
+    "signed_angle_from_up_deg": 40.78250631486578,
+    "tip_attachment_error_pt": 0.00037280592488833143,
+    "abs_angle_from_up_deg": 40.78250631486578,
+    "terminal_line_minus_head_length_pt": -9.99941049191957,
+    "terminal_line_contains_full_head": false,
+    "pass": false,
+    "chord_fit": {
+      "cubic_parameter": 0.3045180284341309,
+      "chord_base_pt": [
+        200.68844207827735,
+        114.7256960899746
+      ],
+      "predicted_angle_deg": 40.769170282968815,
+      "angle_error_deg": 0.013336031896962197,
+      "base_error_pt": 0.0022875410887434515
+    }
+  }
+}

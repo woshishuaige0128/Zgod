@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "code\\audit_models.py",
+      "bytes": 12483,
+      "sha256": "154a3fdfecb0d192bed29e08a9e8a8151d3d7e93f28c7f6ca91867621d343728"
+    },
+    {
+      "path": "code\\build_report.py",
+      "bytes": 24611,
+      "sha256": "0b2ddc9fdcbf670c03ddb4060a444c3a6835df9e7b0a5fa8354337f4e22d901e"
+    },
+    {
+      "path": "code\\finalize_delivery.py",
+      "bytes": 3573,
+      "sha256": "39d91d4ae22302fb8bd8fbb46b7824e80499dbc7f2a853398f9437a8147c16e2"
+    },
+    {
+      "path": "code\\VERIFY_ALGEBRA.m",
+      "bytes": 2048,
+      "sha256": "accf727340b22c47d8973409dbb7727276e5f0091933f71b7ea205cb13d3d39f"
+    },
+    {
+      "path": "evidence_map.json",
+      "bytes": 1996,
+      "sha256": "396b29e6627b1e2dec5e0543559a7c2068edb329194a1784b7ee4e8d6d6b4710"
+    },
+    {
+      "path": "MODEL_AUDIT.md",
+      "bytes": 4205,
+      "sha256": "323c3929ca4d9081bb8317062243e6d7e9ea7f2d2b66c453241a17f0bee72a38"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2417,
+      "sha256": "fd12d594c28d949f880b066a027c5a0589b46df307ff1f9f99d06192c95b3004"
+    },
+    {
+      "path": "results\\algebra_checks.json",
+      "bytes": 19922,
+      "sha256": "27a9245d3e24570e4a91549db49d4ff496c3b2c3a96ca8c15a585e54cdc14500"
+    },
+    {
+      "path": "results\\audit_matrices.mat",
+      "bytes": 6371,
+      "sha256": "6d4ef2686258bfb8adb1009dfb8f8a2f9c44ce6b001203fce43e087120713e1b"
+    },
+    {
+      "path": "results\\delivery_checks.json",
+      "bytes": 733,
+      "sha256": "ac10c91c5439c1999d231d11a746d8dbca7454801d8ed2993815ab68b0eb9224"
+    },
+    {
+      "path": "results\\error_decomposition.csv",
+      "bytes": 13246,
+      "sha256": "10b2e1875abbd365288320e7d98822add927709a57f8e9581cfbcb75e8eec28f"
+    },
+    {
+      "path": "results\\findings.json",
+      "bytes": 3698,
+      "sha256": "d5fee685bbd341d4441f3254e693463d00351a012bcbd5409de8dbb3caae5a37"
+    },
+    {
+      "path": "results\\matlab_algebra.mat",
+      "bytes": 532,
+      "sha256": "074b4a954c222bef630f8787b5928bda1f6ca89d127b1cc338f3b8bef9cc83a9"
+    },
+    {
+      "path": "results\\matlab_source_checks.json",
+      "bytes": 3169,
+      "sha256": "c882723708e12ef4634b885f02d9b6de12d1eac8f31370870d1f9beb2f26323e"
+    },
+    {
+      "path": "results\\print_qa.json",
+      "bytes": 706,
+      "sha256": "085c278375c4993fc217cacc9dbf3abcf7ae58f8e964d369ca56110f85ba1d28"
+    },
+    {
+      "path": "results\\report_qa.json",
+      "bytes": 742,
+      "sha256": "418898ab43165c81d0a326f0f028e96de58b6f4aa1d6b3bb77a62dcb6db88c55"
+    },
+    {
+      "path": "results\\source_protection_after.json",
+      "bytes": 278,
+      "sha256": "1496ddb95a7bc94f7f90d55d8cd6f20a22ec94d77366a03c0e8e2832ed0b4da4"
+    },
+    {
+      "path": "results\\source_protection_before.json",
+      "bytes": 180,
+      "sha256": "2f31b13690ad8799f58d1847b7f3b5df74b5a1c6a18e03edc0bc52a0ae2377c8"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 8433,
+      "sha256": "bc22e5cf1739bb965758d99c64ff2252fe133caa5ff5401eabd7adbcea222133"
+    },
+    {
+      "path": "sources\\delayed\\check_responses.py",
+      "bytes": 4987,
+      "sha256": "52c9c4690e20f289ea8a76758b6832bd09741b6775e50d9baa35a55f0aef531f"
+    },
+    {
+      "path": "sources\\delayed\\delay_model.py",
+      "bytes": 9024,
+      "sha256": "cdfa736d793e40acab9a47e68165cd45eb4deceeffe2fbc5f3b57063d790a96a"
+    },
+    {
+      "path": "sources\\delayed\\model_and_cases.mat",
+      "bytes": 877015,
+      "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8"
+    },
+    {
+      "path": "sources\\delayed\\prepare_delays.py",
+      "bytes": 5443,
+      "sha256": "059c029f32b2ff619e05424eb3d7eb803992ebecf095976e9caa458d04740d17"
+    },
+    {
+      "path": "sources\\delayed\\RUN_DELAY_RESPONSES.m",
+      "bytes": 2152,
+      "sha256": "401bd5e8bfe0d8ec21dd8d1a48a7f6f3d836ccfbfeca370f0176694d46c05dff"
+    },
+    {
+      "path": "sources\\full_frame\\calculation.mat",
+      "bytes": 11674973,
+      "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+    },
+    {
+      "path": "sources\\full_frame\\frame_model.m",
+      "bytes": 6221,
+      "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0"
+    },
+    {
+      "path": "sources\\full_frame\\rths_inputs.m",
+      "bytes": 851,
+      "sha256": "3d28583cc0cc72316612d66e2f7054681a38658871fad5b8eba5950b154290cd"
+    },
+    {
+      "path": "sources\\full_frame\\rths_make_simulink.m",
+      "bytes": 2118,
+      "sha256": "3a9dc80a689edf3f7f2a1911ac9db2408585251711e52631c2450315355177bc"
+    },
+    {
+      "path": "sources\\full_frame\\rths_reduce.m",
+      "bytes": 2901,
+      "sha256": "b55b77493ce53fd1185e3d478f3872fe8191378ae9d26248d115be7dc165b9db"
+    },
+    {
+      "path": "sources\\full_frame\\rths_simulate.m",
+      "bytes": 3370,
+      "sha256": "a5b550f3eaac376463959bca0e2cf0c8866047fd783a7d7c7ded29921674b389"
+    },
+    {
+      "path": "sources\\historical\\New_Ns2.m",
+      "bytes": 2157,
+      "sha256": "e4735e9f55f25ee9ed0eb55d585c1d2a97ac84537bf4fc178ff742e3259db18a"
+    },
+    {
+      "path": "sources\\historical\\New_Ns3.m",
+      "bytes": 761,
+      "sha256": "0415f863b5d1257b8f817af4d0984ef3fb41a0440bf1c5987913622d4c543426"
+    },
+    {
+      "path": "sources\\historical\\New_Ps2.m",
+      "bytes": 1519,
+      "sha256": "d96be694e8a07f0a6701f12f017d6952e1d53d05419bea280017c5f84d4b85db"
+    },
+    {
+      "path": "sources\\historical\\PDmonicanshu2.m",
+      "bytes": 5191,
+      "sha256": "adf1c89a4c9443168dcbbbbc5f9aaa1c68ce275c4f49e449c1cbabdef86ff110"
+    },
+    {
+      "path": "sources\\historical\\PDmonicanshu3.m",
+      "bytes": 5492,
+      "sha256": "c35c7bfb19c3a5e98626ff1a07c14481f53973947e2c382eb81bd9642d9cf40e"
+    },
+    {
+      "path": "sources\\legacy\\calculation.mat",
+      "bytes": 11676592,
+      "sha256": "bc11cf0d50870bd11393490f3536986d67366d540f4c4e1e7415aabe0e17f742"
+    },
+    {
+      "path": "sources\\manuscript.tex",
+      "bytes": 78066,
+      "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+    }
+  ],
+  "delivered_files": 37,
+  "report": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\reports\\原完整框架基准与两套模型一致性核查汇报.html",
+    "sha256": "e982c85fa86385ec207662ee4bd5f1c10bf8e6b707aff9850d5b6fea15323797"
+  }
+}

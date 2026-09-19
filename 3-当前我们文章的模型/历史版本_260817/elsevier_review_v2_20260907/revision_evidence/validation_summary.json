@@ -1,0 +1,30 @@
+{
+  "technical_checks": "PASS",
+  "checks_passed": 350,
+  "manuscript_pages": 38,
+  "numbered_figures": 15,
+  "added_figures": 6,
+  "main_source_diff_hunks": 56,
+  "documented_operations": 64,
+  "changed_table345_cells": 30,
+  "changed_modulus_cells": 2,
+  "protected_files": 94,
+  "original_word_tokens": 9307,
+  "new_word_tokens": 9949,
+  "original_negative_skips_preserved": 42,
+  "independent_compile": "PASS",
+  "known_visual_limitations": [
+    "原有负行距导致部分公式下方文字贴近或相叠，原稿PDF中也存在；按用户明确要求保留42处负行距，不宣称已消除该排版问题。"
+  ],
+  "inherited_compile_warnings": [
+    "Overfull \\hbox (117.0831pt too wide) detected at line 64",
+    "Underfull \\hbox (badness 1540) in paragraph at lines 527--528",
+    "Underfull \\hbox (badness 2608) in paragraph at lines 527--528"
+  ],
+  "scientific_items_still_open": [
+    "双侧部分界面装配的真实计算闭合及两侧中层位移差",
+    "历史稳定域对应的完整闭环矩阵、实际LQR增益及边界内外时程验证"
+  ],
+  "main_sha256": "c1cc160c45f0966fdd4a3f6a09a19965b2ffd298c6d0b67b10e80aa1b658e5c0",
+  "pdf_sha256": "b231d46714dfa8e7b17561e1f60ce662ae73dff884a978c4f6e7e949efb16139"
+}

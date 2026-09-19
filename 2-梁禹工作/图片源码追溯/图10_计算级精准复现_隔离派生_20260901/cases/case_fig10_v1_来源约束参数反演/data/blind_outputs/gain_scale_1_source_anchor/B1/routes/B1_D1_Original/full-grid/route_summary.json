@@ -1,0 +1,29 @@
+{
+  "bundle": {
+    "contract_id": "B1",
+    "dimension": 15,
+    "dt": 0.0009765625,
+    "operator_layout": "BOARD20_STEP8C_LEGACY_V1",
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8c_六链模型生成\\python\\候选数值包\\第1类_原结构15维__R03_论文CARE_矩阵al_广义力.mat",
+    "register_scales": [
+      133344418.79554696,
+      87594328.59414715
+    ],
+    "route_id": "B1_D1_Original",
+    "schema_version": "FIG10_BLIND_CORE_V1",
+    "sha256": "D5E81B75E16F038F14C8CF0D9E4DA4550C875BF3CC17F513F31352DDF512DF2B",
+    "shared_left_factor_relative_error": 0.0
+  },
+  "contract_hash": "DFBF9904AC19AC0BCC1A249EF7722F0E49A51393B0032E645E480B50F9267B50",
+  "contract_id": "B1",
+  "critical_point_count": 0,
+  "maximum_rho": 1.017044980744422,
+  "maximum_state_eigenpair_residual": 7.343384750467053e-16,
+  "minimum_rho": 0.9991686925639454,
+  "mode": "full-grid",
+  "point_count": 2077,
+  "route_id": "B1_D1_Original",
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "stable_point_count": 65,
+  "status": "PASS"
+}

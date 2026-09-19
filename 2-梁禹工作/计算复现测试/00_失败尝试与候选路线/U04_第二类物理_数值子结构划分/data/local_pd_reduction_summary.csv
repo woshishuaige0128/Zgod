@@ -1,0 +1,3 @@
+Script,RunStatus,FullDOF,MasterDOF,SlaveDOF,GuyanDOF,CBModes,CBDOF,DampingNumeric,DampingCommentClaim,DampingCommentConsistency,MatrixFinite
+PDmonicanshu2.m,success,6,2,4,2,3,5,0.1,0.05,0,1
+PDmonicanshu3.m,success,9,2,7,2,3,5,0.1,0.05,0,1

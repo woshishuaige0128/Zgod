@@ -1,0 +1,3452 @@
+{
+  "schema_version": 1,
+  "source_bib": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\rths_references_verified_expanded.bib",
+  "record_count": 50,
+  "records": [
+    {
+      "key": "Takanashi1987",
+      "doi": "10.1061/(ASCE)0733-9399(1987)113:7(1014)",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Japanese Activities on On‐Line Testing"
+        ],
+        "author": [
+          {
+            "given": "Koichi",
+            "family": "Takanashi",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Prof., Inst. of Industrial Sci., Univ. of Tokyo, 7‐22‐1, Roppongi, Minoto‐ku, Tokyo 106, Japan"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Masayoshi",
+            "family": "Nakashima",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Research Engr., Building Research Inst., Ministry of Construction, Tatehara, Oho‐machi, Tsukuba‐gun, Ibaraki 305, Japan"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Engineering Mechanics"
+        ],
+        "year": 1987,
+        "volume": "113",
+        "issue": "7",
+        "page": "1014-1032",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Mahin1989",
+      "doi": "10.1061/(ASCE)0733-9445(1989)115:8(2113)",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Pseudodynamic Test Method—Current Status and Future Directions"
+        ],
+        "author": [
+          {
+            "given": "Stephen A.",
+            "family": "Mahin",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Prof. of Civ. Engrg., Univ. of California, Berkeley, CA 94720"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Pui‐Shum B.",
+            "family": "Shing",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Asst. Prof. of Civ. Engrg., Univ. of Colorado, Boulder, CO 80309"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Christopher R.",
+            "family": "Thewalt",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Asst. Prof. of Civ. Engrg., Carnegie‐Mellon Univ., Pittsburgh, PA 15213"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Robert D.",
+            "family": "Hanson",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Prof. of Civ. Engrg., Univ. of Michigan, Ann Arbor, MI 48109"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Structural Engineering"
+        ],
+        "year": 1989,
+        "volume": "115",
+        "issue": "8",
+        "page": "2113-2128",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Nakashima1992",
+      "doi": "10.1002/eqe.4290210106",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Development of real‐time pseudo dynamic testing"
+        ],
+        "author": [
+          {
+            "given": "Masayoshi",
+            "family": "Nakashima",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hiroto",
+            "family": "Kato",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Eiji",
+            "family": "Takaoka",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 1992,
+        "volume": "21",
+        "issue": "1",
+        "page": "79-92",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "NakashimaMasaoka1999",
+      "doi": "10.1002/(SICI)1096-9845(199904)28:4<393::AID-EQE823>3.0.CO;2-C",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Real-time on-line test for MDOF systems"
+        ],
+        "author": [
+          {
+            "given": "Masayoshi",
+            "family": "Nakashima",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nobuaki",
+            "family": "Masaoka",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 1999,
+        "volume": "28",
+        "issue": "4",
+        "page": "393-420",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Horiuchi1999",
+      "doi": "10.1002/(SICI)1096-9845(199910)28:10<1121::AID-EQE858>3.0.CO;2-O",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Real-time hybrid experimental system with actuator delay compensation and its application to a piping system with energy absorber"
+        ],
+        "author": [
+          {
+            "given": "T.",
+            "family": "Horiuchi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "M.",
+            "family": "Inoue",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "T.",
+            "family": "Konno",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Y.",
+            "family": "Namita",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 1999,
+        "volume": "28",
+        "issue": "10",
+        "page": "1121-1141",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Pan2005",
+      "doi": "10.1002/eqe.457",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Online test using displacement-force mixed control"
+        ],
+        "author": [
+          {
+            "given": "Peng",
+            "family": "Pan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Masayoshi",
+            "family": "Nakashima",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hiroshi",
+            "family": "Tomofuji",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2005,
+        "volume": "34",
+        "issue": "8",
+        "page": "869-888",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Shao2011",
+      "doi": "10.1061/(ASCE)ST.1943-541X.0000314",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Real-Time Hybrid Simulation Using Shake Tables and Dynamic Actuators"
+        ],
+        "author": [
+          {
+            "given": "Xiaoyun",
+            "family": "Shao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Assistant Professor, Dept. of Civil and Construction Engineering, Western Michigan Univ., Kalamazoo, MI 49008-5316 (corresponding author)."
+              },
+              {
+                "name": "Clifford C. Furnas Professor of Structural Engineering, Dept. of Civil and Environmental Engineering, State Univ. of New York, Buffalo, NY 14260-4300."
+              },
+              {
+                "name": "Assistant Professor, Dept. of Civil, Architectural and Environmental Engineering, Univ. of Colorado, Boulder, CO 80309."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrei M.",
+            "family": "Reinhorn",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Assistant Professor, Dept. of Civil and Construction Engineering, Western Michigan Univ., Kalamazoo, MI 49008-5316 (corresponding author)."
+              },
+              {
+                "name": "Clifford C. Furnas Professor of Structural Engineering, Dept. of Civil and Environmental Engineering, State Univ. of New York, Buffalo, NY 14260-4300."
+              },
+              {
+                "name": "Assistant Professor, Dept. of Civil, Architectural and Environmental Engineering, Univ. of Colorado, Boulder, CO 80309."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mettupalayam V.",
+            "family": "Sivaselvan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Assistant Professor, Dept. of Civil and Construction Engineering, Western Michigan Univ., Kalamazoo, MI 49008-5316 (corresponding author)."
+              },
+              {
+                "name": "Clifford C. Furnas Professor of Structural Engineering, Dept. of Civil and Environmental Engineering, State Univ. of New York, Buffalo, NY 14260-4300."
+              },
+              {
+                "name": "Assistant Professor, Dept. of Civil, Architectural and Environmental Engineering, Univ. of Colorado, Boulder, CO 80309."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Structural Engineering"
+        ],
+        "year": 2011,
+        "volume": "137",
+        "issue": "7",
+        "page": "748-760",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Gao2013",
+      "doi": "10.1002/eqe.2246",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Real time hybrid simulation: from dynamic system, motion control to experimental error"
+        ],
+        "author": [
+          {
+            "given": "Xiuyu",
+            "family": "Gao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Schools of Civil Engineering and Mechanical Engineering Purdue University  West Lafayette IN 47907 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Nestor",
+            "family": "Castaneda",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Schools of Civil Engineering and Mechanical Engineering Purdue University  West Lafayette IN 47907 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Schools of Civil Engineering and Mechanical Engineering Purdue University  West Lafayette IN 47907 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2013,
+        "volume": "42",
+        "issue": "6",
+        "page": "815-832",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Phillips2013",
+      "doi": "10.1061/(ASCE)EM.1943-7889.0000493",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Model-Based Multiactuator Control for Real-Time Hybrid Simulation"
+        ],
+        "author": [
+          {
+            "given": "Brian M.",
+            "family": "Phillips",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Ph.D. Candidate, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nathan M. and Anne M. Newmark Endowed Chair of Civil Engineering, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801 (corresponding author)."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Engineering Mechanics"
+        ],
+        "year": 2013,
+        "volume": "139",
+        "issue": "2",
+        "page": "219-228",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Phillips2013Feedforward",
+      "doi": "10.1061/(ASCE)ST.1943-541X.0000606",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Model-Based Feedforward-Feedback Actuator Control for Real-Time Hybrid Simulation"
+        ],
+        "author": [
+          {
+            "given": "Brian M.",
+            "family": "Phillips",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Doctoral Candidate, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Nathan M. and Anne M. Newmark Endowed Chair of Civil Engineering, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801 (corresponding author)."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Structural Engineering"
+        ],
+        "year": 2013,
+        "volume": "139",
+        "issue": "7",
+        "page": "1205-1214",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Fermandois2017",
+      "doi": "10.1007/s11803-017-0407-8",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Model-based framework for multi-axial real-time hybrid simulation testing"
+        ],
+        "author": [
+          {
+            "given": "Gaston A.",
+            "family": "Fermandois",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering and Engineering Vibration"
+        ],
+        "year": 2017,
+        "volume": "16",
+        "issue": "4",
+        "page": "671-691",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Najafi2020",
+      "doi": "10.1016/j.engstruct.2020.110868",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Decoupled model-based real-time hybrid simulation with multi-axial load and boundary condition boxes"
+        ],
+        "author": [
+          {
+            "given": "Amirali",
+            "family": "Najafi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gaston A.",
+            "family": "Fermandois",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Engineering Structures"
+        ],
+        "year": 2020,
+        "volume": "219",
+        "issue": null,
+        "page": "110868",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "NajafiSpencer2021",
+      "doi": "10.1061/(ASCE)ST.1943-541X.0003138",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Multiaxial Real-Time Hybrid Simulation for Substructuring with Multiple Boundary Points"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7845-0859",
+            "authenticated-orcid": true,
+            "given": "Amirali",
+            "family": "Najafi",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Doctoral Candidate, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801 (corresponding author). ORCID: ."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Professor, Dept. of Civil and Environmental Engineering, Univ. of Illinois at Urbana-Champaign, Urbana, IL 61801."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Structural Engineering"
+        ],
+        "year": 2021,
+        "volume": "147",
+        "issue": "11",
+        "page": "05021007",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Najafi2023",
+      "doi": "10.1016/j.engstruct.2022.115284",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Hybrid simulation with multiple actuators: A state-of-the-art review"
+        ],
+        "author": [
+          {
+            "given": "Amirali",
+            "family": "Najafi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7320-7991",
+            "authenticated-orcid": false,
+            "given": "Gaston A.",
+            "family": "Fermandois",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Engineering Structures"
+        ],
+        "year": 2023,
+        "volume": "276",
+        "issue": null,
+        "page": "115284",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Condori2023",
+      "doi": "10.3389/fbuil.2023.1270996",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Experimental benchmark control problem for multi-axial real-time hybrid simulation"
+        ],
+        "author": [
+          {
+            "given": "Johnny W.",
+            "family": "Condori Uribe",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Manuel",
+            "family": "Salmeron",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Edwin",
+            "family": "Patino",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Herta",
+            "family": "Montoya",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Christian E.",
+            "family": "Silva",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Amin",
+            "family": "Maghareh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mehdi",
+            "family": "Najarian",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Arturo",
+            "family": "Montoya",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Frontiers in Built Environment"
+        ],
+        "year": 2023,
+        "volume": "9",
+        "issue": null,
+        "page": "1270996",
+        "publisher": "Frontiers Media SA",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Quiroz2024",
+      "doi": "10.3389/fbuil.2024.1394952",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Robust decentralized adaptive compensation for the multi-axial real-time hybrid simulation benchmark"
+        ],
+        "author": [
+          {
+            "given": "María",
+            "family": "Quiroz",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cristóbal",
+            "family": "Gálmez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gastón A.",
+            "family": "Fermandois",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Frontiers in Built Environment"
+        ],
+        "year": 2024,
+        "volume": "10",
+        "issue": null,
+        "page": "1394952",
+        "publisher": "Frontiers Media SA",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "RuizSong2024",
+      "doi": "10.3389/fbuil.2024.1477804",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Adaptive compensation for multi-axial real-time hybrid simulation via nonlinear parameter estimation"
+        ],
+        "author": [
+          {
+            "given": "Santiago",
+            "family": "Ruiz",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wei",
+            "family": "Song",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Frontiers in Built Environment"
+        ],
+        "year": 2024,
+        "volume": "10",
+        "issue": null,
+        "page": "1477804",
+        "publisher": "Frontiers Media SA",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Xu2024",
+      "doi": "10.3389/fbuil.2024.1374819",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Evaluation of data-driven NARX model based compensation for multi-axial real-time hybrid simulation benchmark study"
+        ],
+        "author": [
+          {
+            "given": "Weijie",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xiangjin",
+            "family": "Meng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tong",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Changle",
+            "family": "Peng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Frontiers in Built Environment"
+        ],
+        "year": 2024,
+        "volume": "10",
+        "issue": null,
+        "page": "1374819",
+        "publisher": "Frontiers Media SA",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Shangguan2024",
+      "doi": "10.3389/fbuil.2024.1393710",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Adaptive sliding-mode delay compensation for real-time hybrid simulations with multiple actuators"
+        ],
+        "author": [
+          {
+            "given": "Yuekun",
+            "family": "Shangguan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhen",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yu",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yucai",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yunhai",
+            "family": "Zeng",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Huimeng",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Frontiers in Built Environment"
+        ],
+        "year": 2024,
+        "volume": "10",
+        "issue": null,
+        "page": "1393710",
+        "publisher": "Frontiers Media SA",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Silva2020",
+      "doi": "10.1016/j.ymssp.2019.106381",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Benchmark control problem for real-time hybrid simulation"
+        ],
+        "author": [
+          {
+            "given": "Christian E.",
+            "family": "Silva",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Daniel",
+            "family": "Gomez",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Amin",
+            "family": "Maghareh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "suffix": "Jr.",
+            "given": "Billie F.",
+            "family": "Spencer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Mechanical Systems and Signal Processing"
+        ],
+        "year": 2020,
+        "volume": "135",
+        "issue": null,
+        "page": "106381",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "PalacioBetancur2023",
+      "doi": "10.1007/s11831-022-09848-y",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Recent Advances in Computational Methodologies for Real-Time Hybrid Simulation of Engineering Structures"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3189-3406",
+            "authenticated-orcid": false,
+            "given": "Alejandro",
+            "family": "Palacio-Betancur",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1609-5801",
+            "authenticated-orcid": false,
+            "given": "Mariantonieta",
+            "family": "Gutierrez Soto",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Archives of Computational Methods in Engineering"
+        ],
+        "year": 2023,
+        "volume": "30",
+        "issue": "3",
+        "page": "1637-1662",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Guyan1965",
+      "doi": "10.2514/3.2874",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Reduction of stiffness and mass matrices"
+        ],
+        "author": [
+          {
+            "given": "ROBERT J.",
+            "family": "GUYAN",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "North American Aviation, Inc., Downey,  Calif."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "AIAA Journal"
+        ],
+        "year": 1965,
+        "volume": "3",
+        "issue": "2",
+        "page": "380-380",
+        "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Hurty1965",
+      "doi": "10.2514/3.2947",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Dynamic analysis of structural systems using component modes"
+        ],
+        "author": [
+          {
+            "given": "WALTER C.",
+            "family": "HURTY",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Jet Propulsion Laboratory, California Institute of Technology, Los Angeles, Calif."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "AIAA Journal"
+        ],
+        "year": 1965,
+        "volume": "3",
+        "issue": "4",
+        "page": "678-685",
+        "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "CraigBampton1968",
+      "doi": "10.2514/3.4741",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Coupling of substructures for dynamic analyses."
+        ],
+        "author": [
+          {
+            "suffix": "JR.",
+            "given": "ROY R.",
+            "family": "CRAIG",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "The University of Texas at Austin, Austin, Texas"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "MERVYN C. C.",
+            "family": "BAMPTON",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "The Boeing Company, Seattle, Wash."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "AIAA Journal"
+        ],
+        "year": 1968,
+        "volume": "6",
+        "issue": "7",
+        "page": "1313-1319",
+        "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "MacNeal1971",
+      "doi": "10.1016/0045-7949(71)90031-9",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "A hybrid method of component mode synthesis"
+        ],
+        "author": [
+          {
+            "given": "Richard H.",
+            "family": "MacNeal",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Computers &amp; Structures"
+        ],
+        "year": 1971,
+        "volume": "1",
+        "issue": "4",
+        "page": "581-601",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Rubin1975",
+      "doi": "10.2514/3.60497",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Improved Component-Mode Representation for Structural Dynamic Analysis"
+        ],
+        "author": [
+          {
+            "given": "S.",
+            "family": "Rubin",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "The Aerospace Corporation, El Segundo,  Calif."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "AIAA Journal"
+        ],
+        "year": 1975,
+        "volume": "13",
+        "issue": "8",
+        "page": "995-1006",
+        "publisher": "American Institute of Aeronautics and Astronautics (AIAA)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Besselink2013",
+      "doi": "10.1016/j.jsv.2013.03.025",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "A comparison of model reduction techniques from structural dynamics, numerical mathematics and systems and control"
+        ],
+        "author": [
+          {
+            "given": "B.",
+            "family": "Besselink",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "U.",
+            "family": "Tabak",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "A.",
+            "family": "Lutowska",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "N.",
+            "family": "van de Wouw",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "H.",
+            "family": "Nijmeijer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "D.J.",
+            "family": "Rixen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "M.E.",
+            "family": "Hochstenbach",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "W.H.A.",
+            "family": "Schilders",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Sound and Vibration"
+        ],
+        "year": 2013,
+        "volume": "332",
+        "issue": "19",
+        "page": "4403-4422",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Benner2015",
+      "doi": "10.1137/130932715",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "A Survey of Projection-Based Model Reduction Methods for Parametric Dynamical Systems"
+        ],
+        "author": [
+          {
+            "given": "Peter",
+            "family": "Benner",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Serkan",
+            "family": "Gugercin",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Karen",
+            "family": "Willcox",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "SIAM Review"
+        ],
+        "year": 2015,
+        "volume": "57",
+        "issue": "4",
+        "page": "483-531",
+        "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Krattiger2019",
+      "doi": "10.1016/j.ymssp.2018.05.031",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Interface reduction for Hurty/Craig-Bampton substructured models: Review and improvements"
+        ],
+        "author": [
+          {
+            "given": "Dimitri",
+            "family": "Krattiger",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Long",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Martin",
+            "family": "Zacharczuk",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Martin",
+            "family": "Buck",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Robert J.",
+            "family": "Kuether",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Matthew S.",
+            "family": "Allen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Paolo",
+            "family": "Tiso",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Matthew R.W.",
+            "family": "Brake",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Mechanical Systems and Signal Processing"
+        ],
+        "year": 2019,
+        "volume": "114",
+        "issue": null,
+        "page": "579-603",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Miraglia2020",
+      "doi": "10.1002/eqe.3262",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "A model‐order reduction framework for hybrid simulation based on component‐mode synthesis"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3611-0215",
+            "authenticated-orcid": false,
+            "given": "Gaetano",
+            "family": "Miraglia",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Structural, Geotechnical and Building Engineering Politecnico di Torino  Turin Italy"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Milos",
+            "family": "Petrovic",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Structural Engineering ETH Zürich  Zürich Switzerland"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5048-8505",
+            "authenticated-orcid": false,
+            "given": "Giuseppe",
+            "family": "Abbiati",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Engineering University of Aarhus  Aarhus Denmark"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Nebojsa",
+            "family": "Mojsilovic",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Structural Engineering ETH Zürich  Zürich Switzerland"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Bozidar",
+            "family": "Stojadinovic",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Structural Engineering ETH Zürich  Zürich Switzerland"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2020,
+        "volume": "49",
+        "issue": "8",
+        "page": "737-753",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Tsokanas2022",
+      "doi": "10.1016/j.mechmachtheory.2022.105072",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Model order reduction for real-time hybrid simulation: Comparing polynomial chaos expansion and neural network methods"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9388-0593",
+            "authenticated-orcid": false,
+            "given": "N.",
+            "family": "Tsokanas",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "T.",
+            "family": "Simpson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7188-9789",
+            "authenticated-orcid": false,
+            "given": "R.",
+            "family": "Pastorino",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6870-240X",
+            "authenticated-orcid": false,
+            "given": "E.",
+            "family": "Chatzi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1713-1977",
+            "authenticated-orcid": false,
+            "given": "B.",
+            "family": "Stojadinović",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Mechanism and Machine Theory"
+        ],
+        "year": 2022,
+        "volume": "178",
+        "issue": null,
+        "page": "105072",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Mucha2023",
+      "doi": "10.1007/s11012-023-01675-0",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Application of dynamic condensation for model order reduction in real-time hybrid simulations"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9724-1817",
+            "authenticated-orcid": false,
+            "given": "Waldemar",
+            "family": "Mucha",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Meccanica"
+        ],
+        "year": 2023,
+        "volume": "58",
+        "issue": "7",
+        "page": "1409-1425",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Zhang2024",
+      "doi": "10.1002/eqe.4221",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Solving large numerical substructures in real‐time hybrid simulations using proper orthogonal decomposition"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3808-3414",
+            "authenticated-orcid": false,
+            "given": "Jian",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Hydraulic Engineering Tsinghua University Beijing China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7058-3561",
+            "authenticated-orcid": false,
+            "given": "Hao",
+            "family": "Ding",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Hydraulic Engineering Tsinghua University Beijing China"
+              },
+              {
+                "name": "Department of Civil and Environmental Engineering The Hong Kong Polytechnic University Hong Kong China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7777-1896",
+            "authenticated-orcid": false,
+            "given": "Jin‐Ting",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Hydraulic Engineering Tsinghua University Beijing China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8518-8011",
+            "authenticated-orcid": false,
+            "given": "Okyay",
+            "family": "Altay",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Civil Engineering RWTH Aachen University Aachen Germany"
+              },
+              {
+                "name": "Department of Civil Engineering University of Siegen  Siegen Germany"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2024,
+        "volume": null,
+        "issue": null,
+        "page": "eqe.4221",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Darby2002",
+      "doi": "10.1061/(ASCE)0733-9399(2002)128:12(1276)",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability and Delay Compensation for Real-Time Substructure Testing"
+        ],
+        "author": [
+          {
+            "given": "A. P.",
+            "family": "Darby",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Lecturer, Dept. of Architecture and Civil Engineering, Univ. of Bath, Claverton Down, Bath BA2 7AY, U.K."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "M. S.",
+            "family": "Williams",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Lecturer, Dept. of Engineering Science, Univ. of Oxford, Parks Rd., Oxford OX1 3PJ, U.K."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "A.",
+            "family": "Blakeborough",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Lecturer, Dept. of Engineering Science, Univ. of Oxford, Parks Rd., Oxford OX1 3PJ, U.K."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Engineering Mechanics"
+        ],
+        "year": 2002,
+        "volume": "128",
+        "issue": "12",
+        "page": "1276-1284",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Wu2005",
+      "doi": "10.1002/eqe.451",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability and accuracy analysis of the central difference method for real‐time substructure testing"
+        ],
+        "author": [
+          {
+            "given": "B.",
+            "family": "Wu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "H.",
+            "family": "Bao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Ou",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "S.",
+            "family": "Tian",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2005,
+        "volume": "34",
+        "issue": "7",
+        "page": "705-718",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Wallace2005",
+      "doi": "10.1002/eqe.513",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability analysis of real‐time dynamic substructuring using delay differential equation models"
+        ],
+        "author": [
+          {
+            "given": "M. I.",
+            "family": "Wallace",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Sieber",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "S. A.",
+            "family": "Neild",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "D. J.",
+            "family": "Wagg",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "B.",
+            "family": "Krauskopf",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2005,
+        "volume": "34",
+        "issue": "15",
+        "page": "1817-1832",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "MercanRicles2007",
+      "doi": "10.1002/eqe.701",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability and accuracy analysis of outer loop dynamics in real‐time pseudodynamic testing of SDOF systems"
+        ],
+        "author": [
+          {
+            "given": "Oya",
+            "family": "Mercan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2007,
+        "volume": "36",
+        "issue": "11",
+        "page": "1523-1543",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Mercan2008",
+      "doi": "10.1002/eqe.814",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability analysis for real‐time pseudodynamic and hybrid pseudodynamic testing with multiple sources of delay"
+        ],
+        "author": [
+          {
+            "given": "Oya",
+            "family": "Mercan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2008,
+        "volume": "37",
+        "issue": "10",
+        "page": "1269-1293",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "ChenRicles2008",
+      "doi": "10.1002/eqe.775",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability analysis of SDOF real‐time hybrid testing systems with explicit integration algorithms and actuator delay"
+        ],
+        "author": [
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2008,
+        "volume": "37",
+        "issue": "4",
+        "page": "597-613",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "ChenRiclesMarullo2009",
+      "doi": "10.1002/eqe.838",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Real‐time hybrid testing using the unconditionally stable explicit CR integration algorithm"
+        ],
+        "author": [
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Thomas M.",
+            "family": "Marullo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Oya",
+            "family": "Mercan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2009,
+        "volume": "38",
+        "issue": "1",
+        "page": "23-44",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "ChenRicles2009Delay",
+      "doi": "10.1016/j.engstruct.2009.06.012",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Analysis of actuator delay compensation methods for real-time testing"
+        ],
+        "author": [
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Engineering Structures"
+        ],
+        "year": 2009,
+        "volume": "31",
+        "issue": "11",
+        "page": "2643-2655",
+        "publisher": "Elsevier BV",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "ChenRicles2012",
+      "doi": "10.1002/eqe.1144",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Large‐scale real‐time hybrid simulation involving multiple experimental substructures and adaptive actuator delay compensation"
+        ],
+        "author": [
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Engineering San Francisco State University  San Francisco CA 94132 U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "ATLSS Engineering Research Center  Bethlehem PA 18015 U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2012,
+        "volume": "41",
+        "issue": "3",
+        "page": "549-569",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Chae2013",
+      "doi": "10.1002/eqe.2294",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Adaptive time series compensator for delay compensation of servo‐hydraulic actuator systems for real‐time hybrid simulation"
+        ],
+        "author": [
+          {
+            "given": "Yunbyeong",
+            "family": "Chae",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "ATLSS Engineering Research Center, Department of Civil and Environmental Engineering Lehigh University  Bethlehem PA 18015 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Karim",
+            "family": "Kazemibidokhti",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "ATLSS Engineering Research Center, Department of Civil and Environmental Engineering Lehigh University  Bethlehem PA 18015 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "James M.",
+            "family": "Ricles",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "ATLSS Engineering Research Center, Department of Civil and Environmental Engineering Lehigh University  Bethlehem PA 18015 USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2013,
+        "volume": "42",
+        "issue": "11",
+        "page": "1697-1715",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Maghareh2014",
+      "doi": "10.12989/sss.2014.14.6.1221",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Establishing a stability switch criterion for effective implementation of real-time hybrid simulation"
+        ],
+        "author": [
+          {
+            "given": "Amin",
+            "family": "Maghareh",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Arun",
+            "family": "Prakash",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jeffrey F.",
+            "family": "Rhoads",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Smart Structures and Systems"
+        ],
+        "year": 2014,
+        "volume": "14",
+        "issue": "6",
+        "page": "1221-1245",
+        "publisher": "Techno-Press",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Ou2015",
+      "doi": "10.1002/eqe.2479",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Robust integrated actuator control: experimental verification and real‐time hybrid‐simulation implementation"
+        ],
+        "author": [
+          {
+            "given": "Ge",
+            "family": "Ou",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering Purdue University  West Lafayette IN 47906 U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ali Irmak",
+            "family": "Ozdagli",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering Purdue University  West Lafayette IN 47906 U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shirley J.",
+            "family": "Dyke",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering Purdue University  West Lafayette IN 47906 U.S.A."
+              },
+              {
+                "name": "School of Mechanical Engineering Purdue University  West Lafayette IN 47906 U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Bin",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering Harbin Institute of Technology  Harbin 150090 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2015,
+        "volume": "44",
+        "issue": "3",
+        "page": "441-460",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Zhu2015",
+      "doi": "10.1002/eqe.2467",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability analysis of MDOF real‐time dynamic hybrid testing systems using the discrete‐time root locus technique"
+        ],
+        "author": [
+          {
+            "given": "Fei",
+            "family": "Zhu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "State Key Laboratory of Hydroscience and Engineering Tsinghua University  Beijing 100084 China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jin‐Ting",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State Key Laboratory of Hydroscience and Engineering Tsinghua University  Beijing 100084 China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Feng",
+            "family": "Jin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State Key Laboratory of Hydroscience and Engineering Tsinghua University  Beijing 100084 China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Fu‐Dong",
+            "family": "Chi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Yunnan Huaneng Lancang River Hydropower Co., Ltd.  Kunming 650011 China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Yao",
+            "family": "Gui",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State Key Laboratory of Hydroscience and Engineering Tsinghua University  Beijing 100084 China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2015,
+        "volume": "44",
+        "issue": "2",
+        "page": "221-241",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "Huang2020",
+      "doi": "10.1061/(ASCE)EM.1943-7889.0001835",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability Analysis of Real-Time Hybrid Simulation with Time-Varying Delay through a Delay Decomposition Approach"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3921-3671",
+            "authenticated-orcid": true,
+            "given": "Liang",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Ph.D. Lecturer, College of Civil Engineering, Hefei Univ. of Technology, Hefei 230009, China; Anhui Key Laboratory of Civil Engineering Structures and Materials, Hefei Univ. of Technology, Hefei 230009, China (corresponding author). ORCID: ."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Ph.D. Associate Professor, School of Engineering, San Francisco State Univ., San Francisco, CA 94132."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Tong",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Ph.D. Professor, School of Civil Engineering, Southeast Univ., Nanjing 211189, China."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xiaoshu",
+            "family": "Gao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Master Candidate, School of Civil Engineering, Shandong Univ., Jinan 250061, China."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Engineering Mechanics"
+        ],
+        "year": 2020,
+        "volume": "146",
+        "issue": "10",
+        "page": "04020109",
+        "publisher": "American Society of Civil Engineers (ASCE)",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "HuangEffect2022",
+      "doi": "10.1080/13632469.2019.1688735",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Effect of Time-Varying Delay on Stability of Real-Time Hybrid Simulation with Multiple Experimental Substructures"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3921-3671",
+            "authenticated-orcid": false,
+            "given": "Liang",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering, Southeast University, Nanjing, China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Engineering, San Francisco State University, San Francisco, California, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Menghui",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering, Southeast University, Nanjing, China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Tong",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Key Laboratory of Concrete and Prestressed Concrete Structures of the Ministry of Education, Southeast University, Nanjing, China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Earthquake Engineering"
+        ],
+        "year": 2022,
+        "volume": "26",
+        "issue": "1",
+        "page": "357-382",
+        "publisher": "Informa UK Limited",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "HuangJVC2022",
+      "doi": "10.1177/10775463211001618",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability of real-time hybrid simulation involving time-varying delay and direct integration algorithms"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3921-3671",
+            "authenticated-orcid": false,
+            "given": "Liang",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering, Hefei University of Technology, China"
+              },
+              {
+                "name": "Anhui Key Laboratory of Civil Engineering Structures and Materials, Hefei University of Technology, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Engineering, San Francisco State University, San Francisco, CA, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shenjiang",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering, Hefei University of Technology, China"
+              },
+              {
+                "name": "Anhui Key Laboratory of Civil Engineering Structures and Materials, Hefei University of Technology, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jingfeng",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering, Hefei University of Technology, China"
+              },
+              {
+                "name": "Anhui Key Laboratory of Civil Engineering Structures and Materials, Hefei University of Technology, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Vibration and Control"
+        ],
+        "year": 2022,
+        "volume": "28",
+        "issue": "13-14",
+        "page": "1818-1834",
+        "publisher": "SAGE Publications",
+        "type": "journal-article"
+      }
+    },
+    {
+      "key": "HuangEESD2022",
+      "doi": "10.1002/eqe.3667",
+      "status": "ok",
+      "crossref": {
+        "title": [
+          "Stability analysis of real time hybrid simulation under coupled actuator delay and nonlinear behavior"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-3921-3671",
+            "authenticated-orcid": false,
+            "given": "Liang",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering Hefei Univ. of Tech. Hefei China"
+              },
+              {
+                "name": "Anhui Key Laboratory of Civil Engineering Structures and Materials Hefei Univ. of Tech Hefei China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9481-7809",
+            "authenticated-orcid": false,
+            "given": "Cheng",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Engineering San Francisco State Univ. San Francisco California USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yifan",
+            "family": "Pu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering Hefei Univ. of Tech. Hefei China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4471-4991",
+            "authenticated-orcid": false,
+            "given": "Jingfeng",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Civil Engineering Hefei Univ. of Tech. Hefei China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1406-2494",
+            "authenticated-orcid": false,
+            "given": "Tong",
+            "family": "Guo",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Civil Engineering Southeast Univ. Nanjing China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Earthquake Engineering &amp; Structural Dynamics"
+        ],
+        "year": 2022,
+        "volume": "51",
+        "issue": "10",
+        "page": "2357-2377",
+        "publisher": "Wiley",
+        "type": "journal-article"
+      }
+    }
+  ]
+}

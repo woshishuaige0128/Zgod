@@ -1,0 +1,1249 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "d1 n2 f2.7029021152733153 Full15 amplitude",
+      "value": 0.008962386842370496,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Full15 phase",
+      "value": 0.0011426939544137548,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Full15 free frequency",
+      "value": 1.2605472221594027e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Full15 free decay",
+      "value": 5.643596701077058e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Guyan amplitude",
+      "value": 0.009126604616271905,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Guyan phase",
+      "value": 0.0011996565698124222,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Guyan free frequency",
+      "value": 3.0264679651281767e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 Guyan free decay",
+      "value": 3.0410118867507663e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 CB3 amplitude",
+      "value": 0.009135966662321415,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 CB3 phase",
+      "value": 0.0011974163502384758,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 CB3 free frequency",
+      "value": 1.0249578963339445e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f2.7029021152733153 CB3 free decay",
+      "value": 3.7453373735729656e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Full15 amplitude",
+      "value": 0.00020424933202534135,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Full15 phase",
+      "value": 0.00025231979573368075,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Full15 free frequency",
+      "value": 4.1201486666864184e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Full15 free decay",
+      "value": 2.9142066537701794e-08,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Guyan amplitude",
+      "value": 0.00023206478116932772,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Guyan phase",
+      "value": 0.00023533284276950532,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Guyan free frequency",
+      "value": 4.568567746332519e-11,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 Guyan free decay",
+      "value": 4.4653170050423796e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 CB3 amplitude",
+      "value": 0.0002225909507602708,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 CB3 phase",
+      "value": 0.00024019079786859638,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 CB3 free frequency",
+      "value": 1.078515055041862e-09,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n2 f9.317310628277625 CB3 free decay",
+      "value": 2.5693125405013006e-08,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Full15 amplitude",
+      "value": 0.017578671574713933,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Full15 phase",
+      "value": 0.0019444614950529086,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Full15 free frequency",
+      "value": 3.482325539039266e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Full15 free decay",
+      "value": 7.023159831476278e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Guyan amplitude",
+      "value": 0.018081288021098985,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Guyan phase",
+      "value": 0.0020706482724567286,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Guyan free frequency",
+      "value": 6.719291789636372e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 Guyan free decay",
+      "value": 3.821831739969639e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 CB3 amplitude",
+      "value": 0.01810782588520521,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 CB3 phase",
+      "value": 0.0020666552544795595,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 CB3 free frequency",
+      "value": 1.6644463585180347e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f2.703818391578906 CB3 free decay",
+      "value": 2.8238522631340857e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Full15 amplitude",
+      "value": 0.00010263379029984421,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Full15 phase",
+      "value": 7.872657135435602e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Full15 free frequency",
+      "value": 8.024358955083244e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Full15 free decay",
+      "value": 1.4546253090941264e-08,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Guyan amplitude",
+      "value": 9.376079155298811e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Guyan phase",
+      "value": 8.113498393604631e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Guyan free frequency",
+      "value": 2.803646204085908e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 Guyan free decay",
+      "value": 6.6679661792079514e-09,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 CB3 amplitude",
+      "value": 9.36509031435051e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 CB3 phase",
+      "value": 7.98396901086506e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 CB3 free frequency",
+      "value": 2.3195889653493396e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d1 n3 f9.322226326300436 CB3 free decay",
+      "value": 3.608979781688504e-09,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d1 Full15 slow FRF",
+      "value": 0.2553298173276672,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d1 Full15 slow speed convergence",
+      "value": 0.25532752403809145,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d1 Guyan slow FRF",
+      "value": 0.2615794825497899,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d1 Guyan slow speed convergence",
+      "value": 0.2615779523789712,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d1 CB3 slow FRF",
+      "value": 0.26371388257822137,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d1 CB3 slow speed convergence",
+      "value": 0.2637122460191729,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Full15 amplitude",
+      "value": 0.014100912002712462,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Full15 phase",
+      "value": 0.001639406992819443,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Full15 free frequency",
+      "value": 3.305800078123866e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Full15 free decay",
+      "value": 2.7368107780034734e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Guyan amplitude",
+      "value": 0.011265811883298671,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Guyan phase",
+      "value": 0.015520439799200005,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Guyan free frequency",
+      "value": 6.7346128673762e-11,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 Guyan free decay",
+      "value": 4.978684131629052e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 CB3 amplitude",
+      "value": 0.017251449577204703,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 CB3 phase",
+      "value": 0.0025703129108827364,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 CB3 free frequency",
+      "value": 6.692424392440444e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f2.7044390758398036 CB3 free decay",
+      "value": 4.34139391103372e-09,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Full15 amplitude",
+      "value": 4.445373114059237e-06,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Full15 phase",
+      "value": 2.1554002948996615e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Full15 free frequency",
+      "value": 1.9182433419473455e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Full15 free decay",
+      "value": 4.781131046627252e-09,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Guyan amplitude",
+      "value": 0.012039711759670446,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Guyan phase",
+      "value": 0.013957772171118134,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Guyan free frequency",
+      "value": 9.768852393676752e-11,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 Guyan free decay",
+      "value": 1.2612844102477538e-08,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 CB3 amplitude",
+      "value": 4.805133890783964e-06,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 CB3 phase",
+      "value": 2.414621567842333e-05,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 CB3 free frequency",
+      "value": 1.9977353105105067e-10,
+      "tolerance": 0.5,
+      "passed": true
+    },
+    {
+      "name": "d2 n3 f9.32959965253542 CB3 free decay",
+      "value": 1.8133272661202682e-10,
+      "tolerance": 2.0,
+      "passed": true
+    },
+    {
+      "name": "d2 Full15 slow FRF",
+      "value": 0.12627346636000406,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 Full15 slow speed convergence",
+      "value": 0.1262738895880636,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 Guyan slow FRF",
+      "value": 0.9498587872052868,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 Guyan slow speed convergence",
+      "value": 0.9498454376502777,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 CB3 slow FRF",
+      "value": 0.14770589423833266,
+      "tolerance": 1.0,
+      "passed": true
+    },
+    {
+      "name": "d2 CB3 slow speed convergence",
+      "value": 0.1477084868223694,
+      "tolerance": 1.0,
+      "passed": true
+    }
+  ],
+  "step_refinement": {
+    "1": {
+      "Full15": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.003275463873681329,
+              0.002761654582928908,
+              0.002661694413820626
+            ],
+            "relative_l2_pct": [
+              0.032841634448528806,
+              0.028308232682368806,
+              0.028030965983510868
+            ],
+            "peak_bias_pct": [
+              -0.002288074493807747,
+              -0.0004928912647785772,
+              0.0075108358653902365
+            ],
+            "max_abs_error": [
+              1.3365154229394113e-06,
+              2.4442148718563025e-06,
+              3.489280283527907e-06
+            ],
+            "rms_abs_error": [
+              2.085029832338612e-07,
+              4.655504778514548e-07,
+              6.799160386020888e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.004123748153040828,
+              0.0034737589579589704,
+              0.003349050702180992
+            ],
+            "relative_l2_pct": [
+              0.041347568173766426,
+              0.03560831928930626,
+              0.03526992365091881
+            ],
+            "peak_bias_pct": [
+              -0.001844993473292657,
+              -0.0004604439715868137,
+              0.009717549037172792
+            ],
+            "max_abs_error": [
+              1.6897851635067247e-06,
+              3.071542816205936e-06,
+              4.394493527366122e-06
+            ],
+            "rms_abs_error": [
+              2.624984582142593e-07,
+              5.855916176658688e-07,
+              8.55482288411604e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.0008534319469515521,
+            0.0007156024137138113,
+            0.0006905713115069206
+          ],
+          "relative_l2_pct": [
+            0.008557102494784708,
+            0.007335396479752121,
+            0.007272627260167312
+          ],
+          "peak_bias_pct": [
+            0.00044309115877087823,
+            3.244745312242558e-05,
+            0.0022065474416259217
+          ],
+          "max_abs_error": [
+            3.5542850538165566e-07,
+            6.293964180358047e-07,
+            9.080458520261542e-07
+          ],
+          "rms_abs_error": [
+            5.4325473319795615e-08,
+            1.2063323337163472e-07,
+            1.7639969603763145e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.004123748153040828,
+            0.0034737589579589704,
+            0.003349050702180992
+          ],
+          "relative_l2_pct": [
+            0.041347568173766426,
+            0.03560831928930626,
+            0.03526992365091881
+          ],
+          "peak_bias_pct": [
+            -0.001844993473292657,
+            -0.0004604439715868137,
+            0.009717549037172792
+          ],
+          "max_abs_error": [
+            1.6897851635067247e-06,
+            3.071542816205936e-06,
+            4.394493527366122e-06
+          ],
+          "rms_abs_error": [
+            2.624984582142593e-07,
+            5.855916176658688e-07,
+            8.55482288411604e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      },
+      "Guyan": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.004401061643682926,
+              0.002878285670723606,
+              0.002680656047990764
+            ],
+            "relative_l2_pct": [
+              0.04416372869072776,
+              0.02948474879565827,
+              0.028208108326945782
+            ],
+            "peak_bias_pct": [
+              0.009640002289756084,
+              -0.00444583893477215,
+              0.008467752110997843
+            ],
+            "max_abs_error": [
+              1.6966514144610336e-06,
+              2.60418688646704e-06,
+              3.5843191938684377e-06
+            ],
+            "rms_abs_error": [
+              2.8078172778419313e-07,
+              4.855838715516564e-07,
+              6.851755066601204e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.0055972430368103334,
+              0.0036266954275945154,
+              0.003373451696768205
+            ],
+            "relative_l2_pct": [
+              0.056165481803840296,
+              0.03715239319938458,
+              0.035498440161829244
+            ],
+            "peak_bias_pct": [
+              0.012841645035523293,
+              -0.005426261938095758,
+              0.010952197775182995
+            ],
+            "max_abs_error": [
+              2.1540775467117617e-06,
+              3.2914820976203893e-06,
+              4.514900637333542e-06
+            ],
+            "rms_abs_error": [
+              3.570768857618756e-07,
+              6.118471132045272e-07,
+              8.622364263354454e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.0012214841763562984,
+            0.0007543168496545927,
+            0.0006961660919975628
+          ],
+          "relative_l2_pct": [
+            0.012256971303485542,
+            0.007727331052411111,
+            0.007325674881648691
+          ],
+          "peak_bias_pct": [
+            0.003201334137083092,
+            -0.0009804665932891545,
+            0.002484235305297646
+          ],
+          "max_abs_error": [
+            4.6566848049345647e-07,
+            6.958649707592898e-07,
+            9.34626761267196e-07
+          ],
+          "rms_abs_error": [
+            7.792475024441151e-08,
+            1.272581599742478e-07,
+            1.779363741520133e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.0055972430368103334,
+            0.0036266954275945154,
+            0.003373451696768205
+          ],
+          "relative_l2_pct": [
+            0.056165481803840296,
+            0.03715239319938458,
+            0.035498440161829244
+          ],
+          "peak_bias_pct": [
+            0.012841645035523293,
+            -0.005426261938095758,
+            0.010952197775182995
+          ],
+          "max_abs_error": [
+            2.1540775467117617e-06,
+            3.2914820976203893e-06,
+            4.514900637333542e-06
+          ],
+          "rms_abs_error": [
+            3.570768857618756e-07,
+            6.118471132045272e-07,
+            8.622364263354454e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      },
+      "CB3": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.0033365031595219805,
+              0.0027815558980394976,
+              0.002677266667971318
+            ],
+            "relative_l2_pct": [
+              0.03347332233511928,
+              0.028497597462527693,
+              0.02817116881890769
+            ],
+            "peak_bias_pct": [
+              -0.0015339759708963875,
+              -0.0006320703445645946,
+              0.007634155975695104
+            ],
+            "max_abs_error": [
+              1.3769728809271678e-06,
+              2.4872951325223894e-06,
+              3.502115169732971e-06
+            ],
+            "rms_abs_error": [
+              2.1282470306784817e-07,
+              4.693507309784952e-07,
+              6.84319626035126e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.00420212655010693,
+              0.0034992433616917117,
+              0.00336894033007093
+            ],
+            "relative_l2_pct": [
+              0.04215831220708796,
+              0.03585116649102365,
+              0.03544943620051528
+            ],
+            "peak_bias_pct": [
+              -0.0008304419148117899,
+              -0.000634425797247898,
+              0.009872964540404688
+            ],
+            "max_abs_error": [
+              1.7412387517169465e-06,
+              3.1262945795204958e-06,
+              4.411836465957435e-06
+            ],
+            "rms_abs_error": [
+              2.680375477904578e-07,
+              5.904482532999101e-07,
+              8.610982141652342e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.0008711342162758662,
+            0.0007212806296898377,
+            0.0006949503547996635
+          ],
+          "relative_l2_pct": [
+            0.008739753033639672,
+            0.007389812387686953,
+            0.0073125659261757976
+          ],
+          "peak_bias_pct": [
+            0.0007035448482935148,
+            -2.355467571515393e-06,
+            0.002238637663618613
+          ],
+          "max_abs_error": [
+            3.6710921587788307e-07,
+            6.416832563356338e-07,
+            9.127281843813312e-07
+          ],
+          "rms_abs_error": [
+            5.556631299478684e-08,
+            1.2170599295886998e-07,
+            1.7762870541517928e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.00420212655010693,
+            0.0034992433616917117,
+            0.00336894033007093
+          ],
+          "relative_l2_pct": [
+            0.04215831220708796,
+            0.03585116649102365,
+            0.03544943620051528
+          ],
+          "peak_bias_pct": [
+            -0.0008304419148117899,
+            -0.000634425797247898,
+            0.009872964540404688
+          ],
+          "max_abs_error": [
+            1.7412387517169465e-06,
+            3.1262945795204958e-06,
+            4.411836465957435e-06
+          ],
+          "rms_abs_error": [
+            2.680375477904578e-07,
+            5.904482532999101e-07,
+            8.610982141652342e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      }
+    },
+    "2": {
+      "Full15": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.003754462491723423,
+              0.0028407080303380493,
+              0.002655222932483732
+            ],
+            "relative_l2_pct": [
+              0.03771613278239957,
+              0.029290806839393477,
+              0.028132109404448494
+            ],
+            "peak_bias_pct": [
+              -0.0027732814320926497,
+              0.00016589908860776235,
+              0.008874226434890045
+            ],
+            "max_abs_error": [
+              1.4115683963231086e-06,
+              2.477861916050112e-06,
+              3.4666244219539594e-06
+            ],
+            "rms_abs_error": [
+              2.3711780641092332e-07,
+              4.7668858821369607e-07,
+              6.755379582224407e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.004738684285978804,
+              0.003594719001443372,
+              0.003357729623074565
+            ],
+            "relative_l2_pct": [
+              0.04760413915485672,
+              0.037066310469787256,
+              0.035575459143951146
+            ],
+            "peak_bias_pct": [
+              -0.0021307741308961565,
+              0.0007281201618973709,
+              0.01154751223217002
+            ],
+            "max_abs_error": [
+              1.7862590192843056e-06,
+              3.1159606186706955e-06,
+              4.3883221753898e-06
+            ],
+            "rms_abs_error": [
+              2.992737535659217e-07,
+              6.0321201766472e-07,
+              8.542501474918588e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.0009944866783988854,
+            0.0007613010592798929,
+            0.00070951499337235
+          ],
+          "relative_l2_pct": [
+            0.009990469794797284,
+            0.007850021493450786,
+            0.0075173776605711755
+          ],
+          "peak_bias_pct": [
+            0.0006425251202263488,
+            0.0005622201405715194,
+            0.0026730485848958383
+          ],
+          "max_abs_error": [
+            3.769055394634664e-07,
+            6.419055567745413e-07,
+            9.281331000178528e-07
+          ],
+          "rms_abs_error": [
+            6.280725685743041e-08,
+            1.277501656830817e-07,
+            1.805098551029329e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.004738684285978804,
+            0.003594719001443372,
+            0.003357729623074565
+          ],
+          "relative_l2_pct": [
+            0.04760413915485672,
+            0.037066310469787256,
+            0.035575459143951146
+          ],
+          "peak_bias_pct": [
+            -0.0021307741308961565,
+            0.0007281201618973709,
+            0.01154751223217002
+          ],
+          "max_abs_error": [
+            1.7862590192843056e-06,
+            3.1159606186706955e-06,
+            4.3883221753898e-06
+          ],
+          "rms_abs_error": [
+            2.992737535659217e-07,
+            6.0321201766472e-07,
+            8.542501474918588e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      },
+      "Guyan": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.019405362536616413,
+              0.005566255277581206,
+              0.004294684938973427
+            ],
+            "relative_l2_pct": [
+              0.20126632241319595,
+              0.05727210827102955,
+              0.04456832783866744
+            ],
+            "peak_bias_pct": [
+              0.022065664115148185,
+              0.00962402962753505,
+              0.0020374762610508553
+            ],
+            "max_abs_error": [
+              5.389562186248155e-06,
+              4.455617975923903e-06,
+              5.546166302565839e-06
+            ],
+            "rms_abs_error": [
+              1.305741883384997e-06,
+              9.287759950927111e-07,
+              1.1045580419840362e-06
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.024686487953894304,
+              0.0070748509324840645,
+              0.0054551089786464444
+            ],
+            "relative_l2_pct": [
+              0.2560324749388445,
+              0.07279527180201963,
+              0.05661188701386901
+            ],
+            "peak_bias_pct": [
+              0.02780723907377519,
+              0.012494300354118713,
+              0.0030892457239651266
+            ],
+            "max_abs_error": [
+              6.85934784633554e-06,
+              5.656729020954432e-06,
+              7.0577175887605315e-06
+            ],
+            "rms_abs_error": [
+              1.6609503170534064e-06,
+              1.1804734771318259e-06,
+              1.402992344025663e-06
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.005386781347759135,
+            0.0015356456345084102,
+            0.001179372661341952
+          ],
+          "relative_l2_pct": [
+            0.05586825323217383,
+            0.01580072038583216,
+            0.012239262700798162
+          ],
+          "peak_bias_pct": [
+            0.005740308321473615,
+            0.0028699945174609953,
+            0.0010517480337977568
+          ],
+          "max_abs_error": [
+            1.5031267143393546e-06,
+            1.21665199405473e-06,
+            1.527435016945508e-06
+          ],
+          "rms_abs_error": [
+            3.6243212093061176e-07,
+            2.562299840816519e-07,
+            3.033213123867769e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.024686487953894304,
+            0.0070748509324840645,
+            0.0054551089786464444
+          ],
+          "relative_l2_pct": [
+            0.2560324749388445,
+            0.07279527180201963,
+            0.05661188701386901
+          ],
+          "peak_bias_pct": [
+            0.02780723907377519,
+            0.012494300354118713,
+            0.0030892457239651266
+          ],
+          "max_abs_error": [
+            6.85934784633554e-06,
+            5.656729020954432e-06,
+            7.0577175887605315e-06
+          ],
+          "rms_abs_error": [
+            1.6609503170534064e-06,
+            1.1804734771318259e-06,
+            1.402992344025663e-06
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      },
+      "CB3": {
+        "2": {
+          "h": 0.00048828125,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.00405036426102301,
+              0.002961991398291079,
+              0.0027552018185421938
+            ],
+            "relative_l2_pct": [
+              0.04067438964472819,
+              0.030394229106776832,
+              0.02905007005704452
+            ],
+            "peak_bias_pct": [
+              -3.818299788787487e-05,
+              -0.0003649217180537586,
+              0.008964551736132769
+            ],
+            "max_abs_error": [
+              1.55291229394586e-06,
+              2.6051378417368647e-06,
+              3.5760870498377506e-06
+            ],
+            "rms_abs_error": [
+              2.581497312454023e-07,
+              4.987581714063582e-07,
+              7.043807318485258e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "4": {
+          "h": 0.000244140625,
+          "tau_s": 0.0029296875,
+          "to_original_step": {
+            "nrmse_range_pct": [
+              0.005118897755968768,
+              0.0037500846170394893,
+              0.003486422505185548
+            ],
+            "relative_l2_pct": [
+              0.05140566334958975,
+              0.038482105570555196,
+              0.036760171101525796
+            ],
+            "peak_bias_pct": [
+              0.0016110153631676734,
+              3.660594207532398e-05,
+              0.011686407953629453
+            ],
+            "max_abs_error": [
+              1.9690654163146933e-06,
+              3.2779683117782968e-06,
+              4.533057112241293e-06
+            ],
+            "rms_abs_error": [
+              3.262480993200797e-07,
+              6.314580278086223e-07,
+              8.913011512713352e-07
+            ],
+            "undefined_relative_metrics": "null when the reference denominator is zero"
+          }
+        },
+        "half_to_quarter": {
+          "nrmse_range_pct": [
+            0.0010806374314096625,
+            0.0007961549110535957,
+            0.0007388372746821417
+          ],
+          "relative_l2_pct": [
+            0.010852118297779385,
+            0.008169873607243415,
+            0.007790158706555014
+          ],
+          "peak_bias_pct": [
+            0.0016491989907691641,
+            0.00040152912539606546,
+            0.0027216122371596266
+          ],
+          "max_abs_error": [
+            4.193646976357625e-07,
+            6.76817762817767e-07,
+            9.636726140162255e-07
+          ],
+          "rms_abs_error": [
+            6.88734029978321e-08,
+            1.3406055097523115e-07,
+            1.8888316391570614e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        },
+        "base_to_quarter": {
+          "nrmse_range_pct": [
+            0.005118897755968768,
+            0.0037500846170394893,
+            0.003486422505185548
+          ],
+          "relative_l2_pct": [
+            0.05140566334958975,
+            0.038482105570555196,
+            0.036760171101525796
+          ],
+          "peak_bias_pct": [
+            0.0016110153631676734,
+            3.660594207532398e-05,
+            0.011686407953629453
+          ],
+          "max_abs_error": [
+            1.9690654163146933e-06,
+            3.2779683117782968e-06,
+            4.533057112241293e-06
+          ],
+          "rms_abs_error": [
+            3.262480993200797e-07,
+            6.314580278086223e-07,
+            8.913011512713352e-07
+          ],
+          "undefined_relative_metrics": "null when the reference denominator is zero"
+        }
+      }
+    }
+  },
+  "matlab": "PASS",
+  "matlab_maximum_residual": 3.6171756807316218e-12
+}

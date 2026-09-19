@@ -1,0 +1,25 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{amsmath,bm,xcolor}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[>=Stealth, every node/.style={font=\fontsize{9}{11}\selectfont}, draw=red, text=red,
+block/.style={draw=red,rectangle,align=center,minimum height=12mm,inner sep=3mm}]
+\node[draw=red,circle,inner sep=1mm] (sum) at (-4,0) {$\Sigma$};
+\node[block,minimum width=40mm] (cr) at (0,0) {CR update\\Numerical inertia, $\mathbf C_0$, $\mathbf K_0$};
+\node (state) at (4.8,0) {$\bm q,\dot{\bm q}$};
+\draw[->,red] (-5.3,0) node[above] {$\bm f_{\mathrm{red}}$} -- (sum);
+\draw[->,red] (sum) -- (cr);
+\draw[->,red] (cr) -- (state);
+\node[block,minimum width=34mm] (lqr) at (1.9,2.1) {LQR force\\$-\mathbf K_x\mathbf S_a\bm q-\mathbf K_v\mathbf S_a\dot{\bm q}$};
+\node[block] (ldelay) at (-2.1,2.1) {Channel delays $\mathbf H_a(z)$\\Force placement $\mathbf S_a^{\mathsf T}$};
+\draw[->,red] (4.1,0) |- (lqr.east);
+\draw[->,red] (lqr) -- (ldelay);
+\draw[->,red] (ldelay.west) -| node[pos=.9,left] {$+$} (sum.north);
+\node[block,minimum width=34mm] (reaction) at (1.9,-2.1) {Physical reaction terms\\$\mathbf K_\ell\bm q+\mathbf C_\ell\dot{\bm q}$};
+\node[block] (rdelay) at (-2.1,-2.1) {Channel delays $z^{-n_\ell}$\\Sum over $\ell$};
+\draw[->,red] (4.1,0) |- (reaction.east);
+\draw[->,red] (reaction) -- (rdelay);
+\draw[->,red] (rdelay.west) -| node[pos=.9,left] {$-$} (sum.south);
+\end{tikzpicture}
+
+\end{document}

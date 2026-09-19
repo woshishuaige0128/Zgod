@@ -1,0 +1,25 @@
+﻿figure,division,candidate,method,calculated_point_count,target_point_count,ordered_path_exact_match
+图4-4,Division I,R01,Original,16,72,0
+图4-4,Division I,R01,Craig-Bampton,15,69,0
+图4-4,Division I,R01,Guyan,11,67,0
+图4-4,Division I,R02,Original,95,72,0
+图4-4,Division I,R02,Craig-Bampton,95,69,0
+图4-4,Division I,R02,Guyan,95,67,0
+图4-4,Division I,R03,Original,16,72,0
+图4-4,Division I,R03,Craig-Bampton,16,69,0
+图4-4,Division I,R03,Guyan,12,67,0
+图4-4,Division I,R04,Original,95,72,0
+图4-4,Division I,R04,Craig-Bampton,95,69,0
+图4-4,Division I,R04,Guyan,95,67,0
+图4-5,Division II,R01,Original,22,69,0
+图4-5,Division II,R01,Craig-Bampton,22,56,0
+图4-5,Division II,R01,Guyan,73,53,0
+图4-5,Division II,R02,Original,95,69,0
+图4-5,Division II,R02,Craig-Bampton,95,56,0
+图4-5,Division II,R02,Guyan,95,53,0
+图4-5,Division II,R03,Original,30,69,0
+图4-5,Division II,R03,Craig-Bampton,100,56,0
+图4-5,Division II,R03,Guyan,74,53,0
+图4-5,Division II,R04,Original,95,69,0
+图4-5,Division II,R04,Craig-Bampton,95,56,0
+图4-5,Division II,R04,Guyan,95,53,0

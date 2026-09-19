@@ -1,0 +1,29 @@
+{
+  "bundle": {
+    "contract_id": "B1",
+    "dimension": 6,
+    "dt": 0.0009765625,
+    "operator_layout": "MINIMAL_AUGMENTED_CORE_V1",
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\numeric_bundles\\gain_scale_0p625_target_guided_inferred\\new_route_bundles\\B1_D1_Guyan.mat",
+    "register_scales": [
+      114636483.24955635,
+      61819479.55570566
+    ],
+    "route_id": "B1_D1_Guyan",
+    "schema_version": "FIG10_BLIND_CORE_V1",
+    "sha256": "23EFBB8F69B6147E2888961CB66AB74543043A22478F271B9E187119FF1DFAD1",
+    "shared_left_factor_relative_error": 0.0
+  },
+  "contract_hash": "93166DFE1FDD30465A920ACB52E2AD4A5A78ACF81D3B81E5F463223B94FC71F1",
+  "contract_id": "B1",
+  "critical_point_count": 0,
+  "maximum_rho": 1.0181526650711559,
+  "maximum_state_eigenpair_residual": 7.839828865550668e-16,
+  "minimum_rho": 0.9991690874185613,
+  "mode": "full-grid",
+  "point_count": 2077,
+  "route_id": "B1_D1_Guyan",
+  "schema_version": "FIG10_BLIND_SEARCH_RUN_V1",
+  "stable_point_count": 45,
+  "status": "PASS"
+}

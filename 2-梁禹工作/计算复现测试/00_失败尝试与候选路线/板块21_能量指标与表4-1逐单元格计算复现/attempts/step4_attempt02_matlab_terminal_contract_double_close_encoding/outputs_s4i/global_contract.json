@@ -1,0 +1,69 @@
+{
+  "asset_status": "BOARD17_CALCULATION_LEVEL_EXTERNAL_ASSET_INDIRECTLY_PASSPORT_BOUND_CURRENT_HASH_MATCH",
+  "schema_version": "BOARD21_STEP4_GLOBAL_INPUT_V1",
+  "scientific_boundaries": [
+    "WHOLE_MODEL_EXISTING_CANDIDATE",
+    "LOCAL_NUMERICAL_SUBSTRUCTURE_12D_PENDING",
+    "TABLE4_1_NOT_ADJUDICATED"
+  ],
+  "whole_model_candidates": [
+    {
+      "cb_dimensions": [
+        15,
+        9
+      ],
+      "division": 1,
+      "guyan_dimensions": [
+        15,
+        6
+      ],
+      "n_cb_fixed_interface_modes": 3,
+      "order": [
+        1,
+        6,
+        11,
+        4,
+        9,
+        14,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15
+      ]
+    },
+    {
+      "cb_dimensions": [
+        15,
+        8
+      ],
+      "division": 2,
+      "guyan_dimensions": [
+        15,
+        5
+      ],
+      "n_cb_fixed_interface_modes": 3,
+      "order": [
+        1,
+        11,
+        4,
+        9,
+        14,
+        6,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15
+      ]
+    }
+  ]
+}

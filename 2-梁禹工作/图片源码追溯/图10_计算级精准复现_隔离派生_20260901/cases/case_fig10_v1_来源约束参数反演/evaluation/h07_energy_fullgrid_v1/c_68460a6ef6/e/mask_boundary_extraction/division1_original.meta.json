@@ -1,0 +1,15 @@
+{
+  "schema_version": "FIG10_MASK_BOUNDARY_METADATA_V1",
+  "curve_id": "division1_original",
+  "source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\data\\blind_outputs\\h07_energy_diagnostic\\fullgrid\\H07\\routes\\H07_D1_Original\\full-grid\\stable_mask.csv",
+  "source_sha256": "351B3E8E0CD59F822CF466D9D1B4F56C79E27B8A873A81DD478C92F910DAECE1",
+  "mask_rows": 31,
+  "mask_columns": 67,
+  "stable_point_count": 2077,
+  "component_count_8_connected": 1,
+  "hole_pixel_count": 0,
+  "returned_boundary_count": 1,
+  "selected_full_boundary_point_count": 193,
+  "selected_visible_open_boundary_point_count": 95,
+  "boundary_contract": "bwboundaries(M,8,noholes); B{1}; x=column; y=row; keep x>1 and y>1"
+}

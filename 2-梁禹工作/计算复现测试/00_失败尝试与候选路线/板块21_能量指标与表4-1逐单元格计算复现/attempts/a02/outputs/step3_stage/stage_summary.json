@@ -1,0 +1,22 @@
+{
+  "board22_started": false,
+  "formal_success_directory_created": false,
+  "input_freeze_summary_sha256": "ADE5A15A91BE7802AF92A8A7CD7A9600EA86CE6FE85148A8057F9944AA88C84F",
+  "input_manifest_sha256": "8808274780EFB5CF4E3BF26C6466FC92F2AB91206A5D7EFBC004A177A6EFBFD2",
+  "instrument_sha256": {
+    "execute_board21_step3_route.py": "CEB805DF2F4E83DF4C2B93350AF257B0058923C372D5735A5730FE4694C47DD6",
+    "run_board21_step3_all.py": "FFD6D9A5E25C2CE17DB43A2A633D2549A6A9540A040C135CB144D20C7B73E273",
+    "run_one_board21_energy_route.m": "692B749833FD5A30526AE3CA6F2CEE55630F0A908BE0A75BC8E9B4F294E08D00",
+    "stage_board21_step3_runs.py": "9DEE64A057A82343227C2F49B23BEECB5A5AF076877CB2A54B478FCFAE769AA1",
+    "validate_board21_step3_runs.py": "AA6343FF2F0694BCF4E7ED3E3B7E842538FB33650026B062086095DBF0E703F5"
+  },
+  "matlab_executed": false,
+  "protected_input_count": 53,
+  "replicate_count": 2,
+  "route_count": 7,
+  "run_count": 14,
+  "schema_version": "BOARD21_STEP3_STAGE_SUMMARY_V1",
+  "staged_input_row_count": 28,
+  "status": "STAGED_NOT_RUN",
+  "unique_source_count": 12
+}

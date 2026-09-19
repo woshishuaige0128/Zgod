@@ -1,0 +1,390 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+%\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+%In case you encounter the following error:
+%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
+%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
+%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
+%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{mathptmx} % assumes new font selection scheme installed
+\usepackage{times} % assumes new font selection scheme installed
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+On Craig-Bampton Model Reduction for Multi-Degree-of-Freedom Coupled Real-Time Hybrid Simulation*
+}
+
+
+\author{Ning Li$^{1}$ and Yu Liang$^{2}$% <-this % stops a space
+\thanks{*This work was supported by National Natural Science Foundation of China (52158496 and 52478544) and International Science \& Technology Cooperation Program of China (2024YFE0198400)}% <-this % stops a space
+\thanks{$^{1}$Ning Li is with Faculty of School of Civil Engineering,
+        Tianjin University, 135 Yaguan Rd., Tianjin, The People's Republic of China, 300350.
+        {\tt\small neallee@tju.edu.cn}}%
+\thanks{$^{2}$Yu Liang with the School of Civil Engineering,
+        Tianjin University, 135 Yaguan Rd., Tianjin, The People's Republic of China, 300350.
+        {\tt\small liangyu2022205052@tju.edu.cn}}%
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+In multi-degree-of-freedom (MDOF) coupled real-time hybrid testing, physical substructures typically require multiple actuators for boundary implementation. However, practical constraints —- such as equipment limitations and experimental conditions —- often make it challenging to fully meet these requirements. To address this difficulty, model-reduction techniques is employed to produce dynamic reduced-order models of the physical substructure. This study uses a three-story, three-bay frame structure as an example to illustrate and evaluates the responses and stability of the full-order and reduced-order models in detail. The results are also compared against those obtained from the traditional static condensation method. Simulation and experimental findings demonstrate that the Craig-Bampton method offers high accuracy and robust stability in MDOF real-time hybrid testing. Both reduction approaches exhibit accuracy closely tied to the structure’s fundamental natural frequency: the Craig-Bampton method outperforms below half and above twice the fundamental frequency, whereas the static condensation method is superior in the intermediate frequency range. The experimental results corroborate the numerical simulations, confirming that the selecting an appropriate reduction method, together with suitable actuator configurations, is pivotal for enhancing test safety, accuracy, and stability. This work provides new experimental evidence and theoretical insights for designing and optimizing reduced-order models in MDOF coupled real-time substructure testing and lays a foundation for more comprehensive stability and performance investigations within complex MIMO systems.
+
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION} \label{sec1}
+
+With the rapid advancement of engineering technologies, real-time hybrid simulation (RTHS) \cite{Nakashima1992, Horiuchi1999} has emerged as an indispensable experimental technique in fields such as structural, mechanical, and aerospace engineering. The core principle of RTHS is to divide the overall structural system into two substructures: a physical substructure representing those structural characteristics that are challenging to capture through purely numerical methods, and a numerical substructure for the remainder. By integrating these two substructures, complex dynamic responses can be replicated in a controlled laboratory environment, offering an efficient and cost-effective experimental platform for engineers and researchers. This approach not only enables the investigation of nonlinear structural behavior but also facilitates the prediction of structural performance under extreme conditions, thereby providing critical insights for engineering design and safety assessments.
+
+Beyond affecting the accuracy of experimental data, stability issues can lead to test failure or even damage to experimental equipment. RTHS stability has been a prominent research focus and a major challenge in the field. Horiuchi \cite{Horiuchi1999} revealed that time delay in RTHS is equivalent to introducing negative damping, which injects additional energy into the system and undermines stability. Carrion and Spencer \cite{Carrion2007} identified multiple sources of time delay—computational delay, digital-to-analog/analog-to-digital conversion delay, data transmission delay, and hydraulic actuator response delay—with the latter being the dominant factor. Wallace \cite{Wallace2005} derived a time-delay differential equation for a single mass-spring-damper system and obtained the critical time-delay expression for single-DOF systems. Kyrychko et al. \cite{Kyrychko2006} extended this approach to multi-DOF systems through bifurcation theory. Using the Euler transform, Gao \cite{Gao2012} and Maghareh \cite{Maghareh2017} simplified the time-delay differential equation and explored the effects of various mass ratios, stiffness ratios, and damping partitions on structural stability. Chen et al. \cite{Chen2008} employed a discrete transfer function to model actuator time delay, obtained the RTHS system’s closed-loop transfer function, and determined the stability boundary by analyzing the pole distribution. Wang et al. \cite{Wang2007} investigated, via the spectral radius method, how structural parameters influence RTHS stability when using the operator-split integration algorithm. Zhu et al. \cite{Zhu2015} utilized the discrete root locus approach to study how time delay affects multi-DOF RTHS stability under different numerical integration algorithms. Tang et al. \cite{Tang2018} combined mode superposition with the concept of gain margins to develop a multi-DOF stability analysis method, suggesting that time-delay compensation might adversely affect RTHS stability. Hao et al. \cite{Ding2025} investigated the influence of interface force measurement errors between physical and numerical substructures, highlighting how different measurement techniques (e.g., sensors or strain gauges) affect RTHS experiments. Condori Uribe et al. \cite{CondoriUribe2023} presented a multi-axis hybrid simulation benchmark control problem, setting up a virtual platform for multi-axis RTHS (maRTHS), along with experimental data, reference structures, finite element models of both numerical and physical substructures, and controlled object models with uncertainties. Quiroz et al. \cite{Quiroz2024} proposed an adaptive compensation strategy to address multi-actuator synchronization, employing a recursive least-squares adaptive algorithm for real-time compensator parameter updates. Aguila \cite{Aguila2024} introduced two adaptive control approaches for maRTHS that enhance coupling, boundary handling, complexity, and noise attenuation: one integrates a proportional-integral-derivative (PID) controller with a conditional adaptive time series (CATS) compensator and an inverse decoupler, while the other adopts a coupled model predictive control (MPC) scheme with CATS compensation. Zhang eta al. \cite{Zhang2024} applied the proper orthogonal decomposition (POD) method to mitigate the real-time computational burden of large numerical substructures. Lastly, Li et al \cite{Li2021} proposed a discrete stability analysis method based on pole distribution to investigate how different numerical integration algorithms affect RTHS stability.
+
+Although some scholars have explored multi-axis real-time hybrid simulation (RTHS), including Condori Uribe \cite{CondoriUribe2023}, Quiroz \cite{Quiroz2024}, and Aguila \cite{Aguila2024}, the factors influencing stability under multi-axis coupled actuators remain unclear. This study builds on Condori Uribe's benchmark model \cite{CondoriUribe2023} and employs the stability analysis method proposed by Li et al. \cite{Li2021} and SMI method by Maghareh et al. \cite{Maghareh2017} to investigate the system's stability. Specifically, the study analyzes two mathematical models—transfer functions and state-space equations—under both continuous and discrete algorithms to evaluate their respective impacts on system stability.
+
+
+\section{INTRODUCTION TO SYSTEM REDUCTION TECHNOLOGIES} \label{sec2}
+
+\subsection{Guyan Reduction Method} \label{sec21}
+
+Guyan Reduction, also known as static condensation, is a classical model reduction technique proposed by Guyan in 1965. This method employs static approximation to partition the degrees of freedom of a high-dimensional system into master DOFs and slave DOFs, and reduces the system to a lower-dimensional subspace by leveraging static relationships. The approach significantly reduces computational complexity while retaining the key characteristics of the original system. The steps are as follows:
+
+\begin{itemize}
+    \item Partitioning Degrees of Freedom:
+           The DOFs of the structure are divided into: 
+           - 1) Master DOFs: Selected as critical or controllable nodes of the structure, typically corresponding to areas of interest or excitation;
+           - 2) Slave DOFs: Represent the less significant or difficult-to-control nodes.
+    \item Static Approximation:
+           Assuming that the inertia and dynamic effects of the slave DOFs are negligible compared to the master DOFs, the equilibrium equations for the system can be expressed as:
+           \begin{equation}
+                \begin{bmatrix} M_{mm} & M_{ms} \\ M_{sm} & M_{ss} \end{bmatrix} 
+                \left\{ \begin{matrix} \ddot{u}_m \\ \ddot{u}_s \end{matrix} \right\}
+                + \begin{bmatrix} K_{mm} & K_{ms} \\ K_{sm} & K_{ss} \end{bmatrix}
+                \left\{ \begin{matrix} u_m \\ u_s \end{matrix} \right\}
+                = \left\{ \begin{matrix} F_m \\0 \end{matrix} \right\}
+           \end{equation}
+            where $u_m$ and $u_s$ are the displacements of the master and slave DOFs, respectively.
+    \item Condensation of Slave DOFs:
+            From the static equilibrium assumption ($M_{ss}\ddot{u}_{s} = 0$), the displacement of the slave DOFs ($u_s$) is approximated as:
+            \begin{equation}
+                u_s = k_{ss}^{-1} K_{sm} u_m
+            \end{equation}
+            Substituting this into the equations of motion for the master DOFs reduces the system to a condensed form that involves only the master DOFs.
+    \item Reduced System:
+            The resulting reduced system has significantly fewer DOFs, which makes it computationally efficient while preserving the static characteristics of the original system.
+\end{itemize}
+
+Guyan reduction is widely used in structural dynamics, particularly in scenarios where the response of interest is concentrated in a few critical DOFs (e.g., modal analysis, substructuring). The method assumes that the contribution of the slave DOFs to the system's dynamic behavior is negligible, which can lead to inaccuracies in cases with significant inertia or coupling effects. For systems with complex dynamics, more advanced reduction methods (e.g., Craig-Bampton) may be required.
+
+\subsection{Craig-Bamphon Reduction Method} \label{sec22}
+
+The Craig-Bampton method is a classic modal synthesis technique introduced by Craig and Bampton in 1968 \cite{Craig1968}, primarily aimed at model reduction in structural dynamics analysis. It efficiently reduces the computational cost of analyzing high-dimensional systems by projecting the original system into a reduced modal space while retaining dynamic characteristics and ensuring computational accuracy. This makes the method particularly suitable for dynamic analysis of structures.
+
+The key concept of the Craig-Bampton method is that, it focuses on reducing the DOFs of a system by partitioning them into boundary DOFs and internal DOFs. Boundary DOFs are typically selected as critical points or connection nodes, while internal DOFs represent other points within the structure. The system's dynamic properties are retained by constructing a modal basis, allowing the original high-dimensional system to be represented by a lower-dimensional system.
+
+The Craig-Bampton method is the model reduction technique that constructs a modal basis to project the original high-dimensional system into a reduced low-dimensional subspace. The procedure involves the following key steps:
+\begin{itemize}
+    \item Partitioning Degrees of Freedom: The DOFs of the system are divided into boundary DOFs and internal DOFs:
+        Boundary DOFs: Typically correspond to critical nodes or connection points in the structure where dynamic interactions occur.
+        Internal DOFs: Represent the remaining DOFs that describe the structural behavior within the interior region.
+    \item Fixed-Boundary Modal Analysis: Modal analysis is performed on the internal DOFs, with all boundary DOFs constrained.
+        This yields the fixed-boundary modes, which encapsulate the dynamic characteristics of the internal DOFs under fixed boundary conditions.
+        These modes are intrinsic to the internal substructure and are independent of the boundary DOFs.
+    \item Constraint Modal Analysis: A series of constrained modal analyzes are conducted by sequentially releasing each boundary DOF to determine its influence on the internal DOFs.
+        The resulting constraint modes capture the static response of the internal DOFs to unit displacements or forces applied at the boundary DOFs.
+    \item Construction of the Craig-Bampton Modal Basis: The fixed-boundary modes and constraint modes are combined to construct the Craig-Bampton modal basis, which defines a transformation matrix $T$.
+        The resulting constraint modes capture the static response of the internal DOFs to unit displacements or forces applied at the boundary DOFs.
+        This transformation matrix maps the high-dimensional equations of motion to a reduced-order representation in the modal space.
+    \item Reduced-Order System: The reduced system retains the essential dynamic characteristics of the original system, particularly in the regions of interest, while significantly reducing computational complexity. By preserving the critical modal properties, the Craig-Bampton method is particularly well-suited for structural dynamic analysis, substructuring techniques, and finite element model reduction in large-scale systems.
+\end{itemize}
+
+This methodology has been extensively employed in applications that requiring efficient computational modeling of complex structures, such as vibration analysis, hybrid simulations, and dynamic substructuring.
+So, the Craig-Bampton method has versatility, computational efficiency, and robustness in dynamic and multi-component applications making it an indispensable tool in structural dynamics and engineering analysis. Its superiority over traditional methods further highlights its significance in modern engineering practices.
+
+\section{Model Implementation of RTHS} \label{sec3}
+
+\subsection{Substructure modeling} 
+
+This study builds upon the model proposed by Condori Uribe et al. \cite{CondoriUribe2023}, with certain modifications. The modified model, as shown in Figure \ref{fig:1}, adopts the structural configuration of a three-story, three-bay frame. It assumes identical horizontal displacements on each floor, resulting in a total of 29 DOFs, including horizontal displacements, vertical displacements, and nodal rotations. However, under the assumption that there is no change in the lengths of structural members, vertical displacements are considered ineffective, leaving only horizontal displacements and nodal rotations as the active degrees of freedom.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=7cm]{fig1.png}
+    \caption{Reference frame structure for nonlinear RTHS benchmark problem.}
+    \label{fig:1}
+\end{figure}
+
+In the nonlinear benchmark RTHS problem \cite{CondoriUribe2023}, the first story and the second bay of the structure are selected as the physical substructure, while the remaining portions are designated as the numerical substructure, as illustrated in Figure \ref{fig:2}. In the RTHS process, the displacements of the numerical substructure are inputted into the actuators. The actuators then apply these displacements to the physical substructure and measure the resulting nodal reaction forces, which are subsequently fed back into the numerical substructure. This completes the computation for one time step in the RTHS experiment.
+\begin{figure}
+    \centering
+    \includegraphics[width=7cm]{fig2.pdf}
+    \caption{Partitioned physical substructure.}
+    \label{fig:2}
+\end{figure}
+
+The central frame of the structure (one-story, one-bay, simply supported) acts as the experimental substructure (see Figure \ref{fig:3}), and the remaining structure is the numerical substructure. Displacement and rotational DOFs are used as target signals at the numerical substructure-physical substructure interface (control node). These DOFs are referred to as “frame coordinates”, and are represented in Figure \ref{fig:3} as 
+\begin{figure}
+    \centering
+    \includegraphics[width=7cm]{fig3.jpg}
+    \caption{Experimental substructure. Adapted from \cite{CondoriUribe2023}}
+    \label{fig:3}
+\end{figure}
+
+\subsection{Actuator configuration and limitation consideration} \label{sec32}
+
+The numerical substructure - physical substructure connection is accomplished through a transfer system that consists of two hydraulic actuators and a steel coupler (see Figure \ref{fig:3}). The coupler transfers the linear displacement of the two actuators to produce the desired frame coordinates. The desired and measured actuator linear displacement vectors are referred to as “actuator coordinates”. Thus, a coordinate transformation is performed during the simulation to transition between these two coordinate systems. The virtual RTHS is run with a fixed sampling frequency of 1024 Hz (sampling period $\Delta t=0.976$ ms).
+
+In the RTHS process, the displacements of the numerical substructure are inputted into the actuators. The actuators then apply these displacements to the physical substructure and measure the resulting nodal reaction forces, which are subsequently fed back into the numerical substructure. This completes the computation for one time step in the RTHS experiment.
+
+\subsection{Model reduction consideration} \label{sec33}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=12cm]{fig4.pdf}
+    \caption{The DOF numbering for physical and numerical substructures.}
+    \label{fig:4}
+\end{figure*}
+
+\subsubsection{Craig-Bampton method} \label{sec332}
+
+%针对物理子结构的模型，假设柱无长度变化，即，竖直方向位移$\psi_{20}$ and $\psi_{28}$为0。在试验中，需要控制6号节点和7号节点（分别有不少于1个自由度需要施加），但受到实际控制器控制能力和几何约束的限制，只能控制7号节点。此时，考虑将无法控制的6号节点转角$\psi_{21}$和地面2号、3号节点的转角$\psi_{19}$和$\psi_{18}$(共计3个自由度）定为内部自由度，将直接受控的7号节点转角$\psi_{21}$和一层位移$\psi_{27}$定为边界自由度，得到系统的刚度、质量和阻尼矩阵如下：
+For the physical substructure, it is assumed that there is no change in the length of columns, which means that the vertical displacements $\psi_{20}$ and $\psi_{28}$ are set to zero. In the experiment, deformation control is required on Nodes 6 and 7, each having at least one degree of freedom needs to be actuated. However, due to limitations in the actuation facility's capacity and geometric constraints, only Node 7 can be directly controlled. 
+
+Consequently, the degrees of freedom of uncontrolled rotation at Node 6, $\psi_{21}$, along with the ground-level rotations at Nodes 2 and 3, $\psi_{19}$ and $\psi_{18}$ (a total of three degrees of freedom), are designated as internal degrees of freedom. The directly controlled rotation at Node 7, $\psi_{21}$, and the first-story displacement, $\psi_{27}$, are designated as boundary degrees of freedom. 
+
+Based on this partitioning, the stiffness, mass, and damping matrices of the above system are obtained as follows:
+\begin{equation}
+    K^s_{es} = \left[\begin{aligned} & K^s_{bb} & K^s_{bi} \\ & K^s_{ib} & K^s_{ii}\end{aligned} \right]; M^s_{es} = \left[\begin{aligned} & M^s_{bb} & M^s_{bi} \\ & M^s_{ib} & M^s_{ii}\end{aligned} \right]; D^s_{es} = \left[\begin{aligned} & D^s_{bb} & D^s_{bi} \\ & D^s_{ib} & D^s_{ii}\end{aligned} \right]
+\end{equation}
+
+%此时对物理子结构进行实测，则只针对该物理子结构进行缩聚。所以s=1，i=[18,19,29]，表示内部自由度；b=[21,27]，表示边界自由度。定义相应的自由度矩阵：
+At this stage, experimental measurements are conducted on the physical substructure, and the DOF condensation is applied only to this physical substructure. Therefore, we set $s = 1$, with the internal degrees of freedom defined as $i = \left[18, 19, 29\right]$ and the boundary degrees of freedom as $b = \left[21, 27\right]$. The corresponding degree of freedom matrices are defined as follows:
+\begin{equation}
+    \mathbf{u}_{es} = \left[\mathbf{u}_b ~~ \mathbf{u}_i\right]^T
+\end{equation}
+\begin{equation}
+    \mathbf{u}_{b} = \left[\psi_{21} ~~ \psi_{27} \right]^T
+\end{equation}
+\begin{equation}
+    \mathbf{u}_{i} = \left[\psi_{18} ~~ \psi_{19} ~~ \psi_{29}\right]^T
+\end{equation}
+
+%计算两种模态：固定界面模态和约束界面模态。
+Then, computation of two types of modal: fixed-interface mode and constraint-interface mode 
+
+%首先是固定界面模态，由于s=1，所以角标s省略，得到（固定边界的）模态特征方程
+For the fixed-interface modes, since $s = 1$, the subscript $s$ is omitted, leading to the (fixed-boundary) modal characteristic equation:
+\begin{equation}
+    M_{ii} \Phi_{ii} = K_{ii} \Phi_{ii} \Lambda_{i}
+\end{equation}
+%其中，$\Phi_{ii}$是包含有全部3阶固定界面模态的集合，$\Lambda_{i}$是特征值对应的对角矩阵，且该模态数组可以对质量进行归一化。定义$\Phi_{id}$，表示$\Phi_{ii}$中的前$d$阶模态向量组成的矩阵。
+where $\Phi_{ii} $ is the set of all third-order fixed-interface mode shapes, and $ \Lambda_{i}$ is the corresponding diagonal matrix of eigenvalues. The modal matrix can be normalized with respect to the mass matrix. We define $\Phi_{id}$ as the matrix composed of the first $d$ mode vectors in $\Phi_{ii}$.
+
+%其次，计算约束界面模态，同样,由于s=1，将角标s省略，有
+Next, the constraint-interface modes are computed. Similarly, since $s$ is omitted, resulting in:
+\begin{equation}
+    \Psi_{ib} = -K^{-1}_{ii}K_{ib}
+\end{equation}
+
+%通过约束模态得到内部自由度的静态响应
+Through the constraint modes, the static response of the internal degrees of freedom can be obtained as:
+\begin{equation}
+    u_{static} = \Psi_{ib} u_b
+\end{equation}
+
+%再通过固定界面模态得到动态响应
+The dynamic response is then obtained using the fixed-interface modes:
+\begin{equation}
+    u_{dynamic} = \Phi^T_{id}M_{ii}u_{static}
+\end{equation} 
+
+%综合两种位移，最终得到被缩聚的内部自由度位移：
+By combining both displacement components, the final reduced internal displacement is expressed as:
+\begin{equation}
+    u_i = u_{satic} + u_{dynamic}
+\end{equation}
+
+\subsubsection{Guyan method} \label{sec331}
+
+Similar to the Craig-Bampton method, the additional three degrees of freedom are condensed into the two controllable degrees of freedom. The sets \( i \) and \( b \) remain the same as in the previous section. The corresponding stiffness and mass matrices are given as follows:
+
+\begin{equation}
+    \begin{bmatrix}
+        K_{bb} & K_{bi} \\
+        K_{ib} & K_{ii}
+    \end{bmatrix}
+    \begin{bmatrix}
+        u_b \\
+        u_i
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        F_b \\
+        0
+    \end{bmatrix}
+\end{equation}
+
+\begin{equation}
+    \begin{bmatrix}
+        M_{bb} & M_{bi} \\
+        M_{ib} & M_{ii}
+    \end{bmatrix}
+    \begin{bmatrix}
+        \ddot{u}_b \\
+        \ddot{u}_i
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
+        K_{bb} & K_{bi} \\
+        K_{ib} & K_{ii}
+    \end{bmatrix}
+    \begin{bmatrix}
+        u_b \\
+        u_i
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        F_b \\
+        0
+    \end{bmatrix}
+\end{equation}
+where:
+- \( K_{bb} \) and \( M_{bb} \) represent the stiffness and mass matrices associated with the boundary degrees of freedom.
+- \( K_{ii} \) and \( M_{ii} \) correspond to the internal degrees of freedom.
+- \( K_{bi} \) and \( M_{bi} \) represent the coupling terms between the boundary and internal DOFs.
+- \( u_b \) and \( u_i \) denote the displacements of the boundary and internal DOFs, respectively.
+- \( F_b \) is the external force applied at the boundary DOFs.
+
+Using static condensation, the internal DOFs can be expressed as:
+
+\begin{equation}
+    u_i = -K_{ii}^{-1} K_{ib} u_b
+\end{equation}
+
+Substituting this into the system equations results in a reduced-order system where only the boundary DOFs remain.
+
+
+
+
+
+
+
+\section{Benchmark RTHS model verification and validation} \label{sec4}
+
+The simulation was conducted using Matlab/Simulink, employing two distinct signals to obtain the controlled degree-of-freedom responses for both reduced-order models and the full-order structure. The first signal was a seismic excitation, while the second was a chirp signal ranging from 0.1 to 20 Hz, selected to validate the operational frequency bands of each reduction method. This approach aligns with the principles of dynamic system simulation and structural dynamics, ensuring a comprehensive evaluation of the model reduction techniques under both broadband and specific frequency excitations.
+
+\subsection{Excitations}
+
+\subsubsection{Results from seismic exciations} \label{sec41}
+
+The displacement profile of the first story, retaining the first-order modal contribution (both Guyan and Craig-Bampton consentration algorithms considered), is illustrated. This representation focuses on the influence of the fundamental mode on the structural response, which is critical in structural dynamics and vibration analysis for understanding the dominant behavior of the system under dynamic loading conditions.
+
+
+\subsection{Chirp excitation}
+
+Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named $Heading 1$, $Heading 2$, $Heading 3$, and $Heading 4$ are prescribed.
+
+\subsection{Critieria measurements}
+
+Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation $Fig. 1$, even at the beginning of a sentence.
+
+\begin{table}[h]
+\caption{An Example of a Table}
+\label{table_example}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+One & Two\\
+\hline
+Three & Four\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+   \begin{figure}[thpb]
+      \centering
+      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+}}
+      %\includegraphics[scale=1.0]{figurefile}
+      \caption{Inductance of oscillation winding on amorphous
+       magnetic core versus DC bias magnetic field}
+      \label{figurelabel}
+   \end{figure}
+   
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity $Magnetization$, or $Magnetization, M$, not just $M$. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write $Magnetization (A/m)$ or $Magnetization {A[m(1)]}$, not just $A/m$. Do not label axes with a ratio of quantities and units. For example, write $Temperature (K)$, not $Temperature/K.$
+
+\section{CONCLUSIONS}
+
+A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. 
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{APPENDIX}
+
+%Appendixes should appear before the acknowledgment.
+
+\section*{ACKNOWLEDGMENT}
+
+The authors gratefully acknowledge the support of International Science \& Technology Cooperation Program of China (2024YFE0198400), National Natural Science Foundation of 437 China (grant Nos. 52478544 and 52178496),
+China Scholarship Council (grant No.202406250181) towards this research.
+
+
+%\begin{thebibliography}{99}
+%\bibitem{c1}
+%\end{thebibliography}
+
+\bibliographystyle{IEEEtran} 
+\bibliography{ref}
+
+
+
+\end{document}

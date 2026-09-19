@@ -1,0 +1,70 @@
+{
+  "status": "DISCUSSION_ARCHIVED",
+  "files": [
+    {
+      "path": "chat_complete.json",
+      "sha256": "4df85d5665b4dcf878b3b667ed0c623f051c269a2c07eecfe888bc49345e7a1e",
+      "bytes": 53564
+    },
+    {
+      "path": "chat_round1.json",
+      "sha256": "d523a009b5ca48432cbbe4e5101e4175150a88e45af130f0e2f65c084cc904a0",
+      "bytes": 74504
+    },
+    {
+      "path": "chat_snapshot_initial.json",
+      "sha256": "5b897ee44c7b7582b05bafc21b609975f372bffed6dff41bd52b8451360e6b79",
+      "bytes": 11004
+    },
+    {
+      "path": "discussion_checks.json",
+      "sha256": "936eb9a5d2c0eec1f4af52ca1f478a1eb6b43244d8a9f5a7ebb7238710172597",
+      "bytes": 6077
+    },
+    {
+      "path": "DISCUSSION_SUMMARY.md",
+      "sha256": "0605b6efffd11e4c2388eb90c6f4a5740dc2202148a6607d89499f40bfc05201",
+      "bytes": 3051
+    },
+    {
+      "path": "PRO_RESPONSE_01.md",
+      "sha256": "569ce0a6782bf5705aabb0e1c54a0dbad8f31656ff848a5555448f0302353930",
+      "bytes": 32688
+    },
+    {
+      "path": "PRO_RESPONSE_02.md",
+      "sha256": "98f7b898cbd1bdccd69415ae535b492789034435d47419d14ed93eebcd93aff4",
+      "bytes": 5127
+    },
+    {
+      "path": "review_manifest.json",
+      "sha256": "9200ae51d105e389d9529231b6ef3d16af94ced8570522e2d5ddb3118130d087",
+      "bytes": 2359
+    },
+    {
+      "path": "REVIEW_REQUEST.md",
+      "sha256": "46fbdc16e7fb6fe9536e205a24afd9f7852cade16cbdc3dc1e2cca090f4a450f",
+      "bytes": 4880
+    },
+    {
+      "path": "SENT_MESSAGE_01.md",
+      "sha256": "eba1126b4b2fd8f855e74313ac350c1e282f07071520328e6538cf1f64c68f31",
+      "bytes": 5016
+    },
+    {
+      "path": "SENT_MESSAGE_02.md",
+      "sha256": "0ab072823d5ceeea3f8076c6b0258c4dee4b992ab15b2a34e619a907c4aee682",
+      "bytes": 2501
+    },
+    {
+      "path": "unified_full15_review.zip",
+      "sha256": "43e8b2d7c9b36e1d6e26ea5c0a665e05db636badf2e6382235d3c6cd77442f94",
+      "bytes": 12577447
+    }
+  ],
+  "report": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\reports\\GPT Pro完整框架等时滞模型讨论汇报.html",
+    "sha256": "95eaf38d117c81ee10628eb7c5931fff1ac2c3357aac688d4e12ee686339fcd7"
+  },
+  "qa": "STATIC_PASS_VISUAL_BLOCKED"
+}

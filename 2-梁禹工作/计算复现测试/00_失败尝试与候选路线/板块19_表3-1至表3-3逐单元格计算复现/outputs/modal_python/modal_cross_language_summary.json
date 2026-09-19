@@ -1,0 +1,19 @@
+{
+  "full_model_first_two_frequency_hz": [
+    2.707425741915122,
+    9.328408686762627
+  ],
+  "full_model_relative_eigen_residual": 1.3088638616931216e-14,
+  "maximum_python_reduced_eigen_residual": 1.832482989285017e-14,
+  "comparison_rows": 64,
+  "comparison_pass_count": 64,
+  "comparison_fail_count": 0,
+  "maximum_frequency_error_absolute_difference": 2.490452288839151e-12,
+  "maximum_frequency_hz_absolute_difference": 3.730349362740526e-14,
+  "maximum_mac_absolute_difference": 1.5543122344752192e-15,
+  "table3_1_cells": 8,
+  "table3_1_rounded_matches": 4,
+  "table3_2_cells": 8,
+  "table3_2_rounded_matches": 7,
+  "status": "PASS"
+}

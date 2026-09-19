@@ -1,0 +1,32 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v3_precheck_run1_baseline_v1",
+  "recorded_date": "2026-08-25",
+  "purpose": "Immutable external baseline recorded after the first authorized validator V3 precheck and before any repeat run.",
+  "precheck_status": "PASS_STATIC_POSTCHECK_NOT_AUTHORIZED",
+  "exit_code": 0,
+  "pass_count": 35,
+  "info_count": 0,
+  "fail_count": 0,
+  "protected_file_count": 81,
+  "protected_file_change_count": 0,
+  "candidate_computation_launched": false,
+  "candidate_outputs_modified": false,
+  "v4_pilot_directory_existed": false,
+  "v4_full_directory_existed": false,
+  "validator_identity": {
+    "script_sha256": "FF2129C32B0698B5871D77C699D4398C12802D7A9D952B65D78D67EFA874C50B",
+    "contract_sha256": "A00F3A0C605579ABC7058C2592ED6145A8659166A51E3CEE360E9673993D6F54",
+    "binding_sha256": "BCCD145D3F251F1CB98CF8E9C05B5B3C203E424E3242F5EDFCDB63B9E197C965",
+    "revision_contract_sha256": "55A73B53BA79E514AA93C20454F63041ABE65FCDCA50DE0A107161142129ED7E"
+  },
+  "run1_artifact_sha256": {
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck.json": "EA7186294466486AF03C5DACB2B41C231A2522DECA0EA1703E07B87A7E72BF17",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_checks.csv": "7B34D326470589EE39B79D375FFC8FEBAD9254A3CDA1733C8342430864C5F033",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_protected_hashes.csv": "FA3A6BAC0E5D0298A651D84BB97A7E4B241C8074280896CDBE0C7526EF9F4353",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_report.md": "7741D12F5B819DDC0FBBAE909CCE69BFB7EF40AFF8D1B2F19A59F7FD87817089",
+    "outputs/step5_fullq_svd_candidate_audit_v3/v4_validator_v3_precheck_artifact_manifest.csv": "28268AFB03D9E01F3D345D78BB22F5EBE2F9F861B8A7E70070EA8347F2F4C7E3",
+    "logs/step5_fullq_svd_candidate_validation_v3/v4_validator_v3_precheck.log": "3606858A3502D57715FB05F9AC8CA684AEFBFF88BD7216A4B18E6A17B49927B3"
+  },
+  "repeat_run_authorized_by_this_record": false,
+  "pilot_or_full_authorized_by_this_record": false
+}

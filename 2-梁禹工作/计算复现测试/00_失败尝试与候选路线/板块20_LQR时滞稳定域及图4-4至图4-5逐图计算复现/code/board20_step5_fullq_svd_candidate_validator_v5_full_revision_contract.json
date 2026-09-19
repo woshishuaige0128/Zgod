@@ -1,0 +1,97 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_validator_v5_full_revision_contract_v1",
+  "recorded_date": "2026-08-25",
+  "status": "SEALED_REVISION_SCOPE_FULL_POSTCHECK_ONLY",
+  "purpose": "Authorize a new isolated validator V5 for read-only independent validation of the completed V4 candidate full grid (five routes, 10385 points). Validator V1, the permanently failed validator V2, validator V3, validator V4, their audits, the candidate, and the formal full-run gate remain immutable.",
+  "predecessor_validator_v4": {
+    "script_relpath": "code/validate_board20_step5_fullq_svd_candidate_v4.py",
+    "script_sha256": "8BB46EEC8A4F6592AFC3F4F5EEAC137F9BD6666C808F6AAB7293A982BCF6E5C1",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_validation_contract_v4.json",
+    "contract_sha256": "2C7C7EB737F1DAB1B88A0AEAF9FCA9324E0B48E0789BB070696141DF30B1FE8D",
+    "revision_relpath": "code/board20_step5_fullq_svd_candidate_validator_v4_revision_contract.json",
+    "revision_sha256": "A484E2A066D4071C2A6705AA288F7D6E9C04651A94A35053BF009125D1C21A9F",
+    "binding_relpath": "code/board20_step5_fullq_svd_candidate_validator_v4_binding_record.json",
+    "binding_sha256": "A94978BDF49F45D4F61EAB92BA541ADA4D1CA9A4A3AA9EEAC64B1B3444FB5582",
+    "pilot_postcheck_run1_baseline_relpath": "code/board20_step5_fullq_svd_candidate_validator_v4_pilot_postcheck_run1_baseline.json",
+    "pilot_postcheck_run1_baseline_sha256": "E2C05F3211E03B0D37F707760D3C37A7C81AAF76FDEC6156F5823F71BB94F4E8",
+    "pilot_postcheck_repeatability_relpath": "code/board20_step5_fullq_svd_candidate_validator_v4_pilot_postcheck_repeatability.json",
+    "pilot_postcheck_repeatability_sha256": "337E79B7120A033A45C23E9E57C254C9DC43FCB7D7C5A711288C57FEAFE791C5"
+  },
+  "formal_full_run_gate": {
+    "authorization_relpath": "code/full_authorization.json",
+    "authorization_sha256": "5DC24D62F3AC77D6326D51D86492D9BD75497252FB32E959D0DF8F021CE7DE8A",
+    "contract_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_contract.json",
+    "contract_sha256": "83F2DBFF885C9E9BCDF92E1BA6ED20EAC64CA82F25AE798559A07B9E496E58EC",
+    "launcher_relpath": "code/launch_board20_step5_fullq_svd_candidate_v4_full_v2.py",
+    "launcher_sha256": "6E4512997E12C733570B1B91B669315FE924745C20E08AE0C91DA81C1ADE155C",
+    "revision_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_revision_contract.json",
+    "revision_sha256": "03AFD62B2CB57B883C389D9E748F918EE1DE9860D239981891DD6E837F01A61F",
+    "binding_relpath": "code/board20_step5_fullq_svd_candidate_v4_full_gate_binding_record.json",
+    "binding_sha256": "6689B7B80D05DB74D99956DC551044CCEE319ED69394A1C7DA1819AB4F3EB427"
+  },
+  "sealed_full_candidate": {
+    "candidate_contract_sha256": "72FD113075D759B366B43EFCC55ADCCB79081A63A3F1A289F311C7A88F3E71E5",
+    "candidate_script_sha256": "094B71A4D551897AC382DC40C4285900B07DA8CD832E6EE8F79AECA3A7EBD8FE",
+    "input_seal_sha256": "04D3969CACAAF6E1BDF224B772CB3A1EF64FBA9CEFF7B676740F7BDC5100C55F",
+    "full_artifact_manifest_sha256": "F35365D414E722ABCE201750B5D7F6DC3B315348414CD057C7A51FB817E135B9",
+    "full_run_status_sha256": "6B5225875E708CA3580D715D8071F8A76FB29A9E80FD39AFA7BE8EF1F941B7C4",
+    "full_run_metadata_sha256": "3298ABD78A710973238BD39221FB129317CDB485F2480B3AD99A91E5C1FED95F",
+    "route_count": 5,
+    "point_count": 10385,
+    "points_per_route": 2077,
+    "scientific_manifest_row_count": 18
+  },
+  "unchanged_scientific_core_functions": [
+    "matlab_numeric",
+    "matrix_order",
+    "prepared_terms",
+    "normalized_svd_residual",
+    "as_bool",
+    "as_float",
+    "parse_csv_record",
+    "float_equal",
+    "load_route_math",
+    "selector",
+    "direct_terms",
+    "consolidate_terms",
+    "polynomial_terms_from_coefficients",
+    "direct_formula_matrix",
+    "formula_identity_difference",
+    "h5_text",
+    "validate_root_group_layout",
+    "root_slice",
+    "expected_points",
+    "load_step4_reference",
+    "verify_run_status",
+    "verify_checkpoint",
+    "h5_point_scalar"
+  ],
+  "unchanged_operational_scientific_functions": [
+    "verify_candidate_manifest",
+    "validate_route_scientific"
+  ],
+  "allowed_changes": [
+    "New validator V5 full-only script, contract, revision record, binding record, audit_v5_full directory, and validation_v5_full log directory only.",
+    "Precheck now binds the root authorization, four formal full-gate files, the candidate contract/script/input seal, the complete validator V4 chain, and the sealed full manifest/run status/run metadata.",
+    "Full-postcheck is enabled and pilot-postcheck is rejected before candidate scientific output is parsed.",
+    "The missing candidate full_repeatability.json is reported as not applicable because the formal candidate full run was intentionally executed once; deterministic evidence is instead produced by two byte-compared V5 validator runs.",
+    "A hard cross-route relation check verifies that main_ori_div2 and main_guyan_div2 have identical scientific arrays except the contracted route_id and declared_method labels.",
+    "Audit paths, version labels, audit prefixes, report prose, predecessor identity checks, and full authorization binding advance to validator V5 full-only."
+  ],
+  "prohibited_changes": [
+    "Any change to Step-4 indexing or MAT transpose semantics.",
+    "Any change to Laurent or polynomial formulas, normalized full-matrix SVD residuals, rho/stable gates, unmatched-root safety gates, HDF5 layout, checkpoint identity, or manifest identity logic.",
+    "Any change to the 1e-8 rho/residual gates, 1e-12 formula gate, rho<1 stable rule, or prior-failure verdicts.",
+    "Any modification of candidate, Step-4, original Step-5, validator V1/V2/V3/V4, predecessor audits, formal full-run gate, or authorization files.",
+    "Any candidate computation, candidate resume, pilot postcheck, or unsealed full postcheck."
+  ],
+  "activation_scope": {
+    "precheck": true,
+    "pilot_postcheck": false,
+    "full_postcheck": true,
+    "candidate_computation": false,
+    "explicit_postcheck_cli_authorization_required": true,
+    "full_postcheck_run_count_required_for_repeatability_record": 2
+  },
+  "scientific_gate_change": false
+}

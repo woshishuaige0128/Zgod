@@ -1,0 +1,5 @@
+﻿object_id,object_name,successful_route,evidence_level,overall_status,success_directory_created,failure_directory_created,blocking_route
+U03,第一类物理/数值子结构划分,当前完整15自由度组合划分、6维Guyan、9维CB及恢复接口,部分计算级复现,待决定,0,1,局部数值侧缩聚、P/N散布组装与12维矩阵未闭合
+U04,第二类物理/数值子结构划分,当前完整15自由度组合划分、5维Guyan、8维CB及psi6恢复接口,部分计算级复现,待决定,0,1,局部数值侧缩聚、P/N散布组装与12维矩阵未闭合
+U05,Guyan历史单侧实现、论文公式与标准双侧合同投影,历史单边、论文/标准合同投影均重建并交叉验证,计算级复现,PASS_WITH_RECORDED_FORMULA_CONFLICT,1,1,无；历史与标准质量/阻尼不同是保留冲突，不是缺失
+U06,Craig--Bampton三固定界面模态的实际实现,当前完整模型第一类9维、第二类8维，均保留3个固定界面模态,计算级复现,PASS_CURRENT_9_8_ROUTE;12D_PENDING,1,1,论文分子结构12维组装未闭合，单独保留为失败/待决定分支

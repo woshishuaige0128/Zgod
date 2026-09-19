@@ -1,0 +1,7 @@
+figure_id,division,method,historical_stable_points,primary_route_id,primary_candidate_stable_points,mask_mismatch_points,target_status,calculation_level_target_gate_pass
+F4-4,div1,Original,1454,main_ori_div1,65,1389,PRIMARY_MASK_MISMATCH,False
+F4-4,div1,Craig-Bampton,1175,,,,MISSING_PRIMARY_CONTINUOUS_RHO,False
+F4-4,div1,Guyan,1044,main_guyan_div1,93,951,PRIMARY_MASK_MISMATCH,False
+F4-5,div2,Original,1247,main_ori_div2,34,1213,PRIMARY_MASK_MISMATCH,False
+F4-5,div2,Craig-Bampton,1072,,,,MISSING_PRIMARY_CONTINUOUS_RHO,False
+F4-5,div2,Guyan,929,main_guyan_div2,34,895,PRIMARY_MASK_MISMATCH,False

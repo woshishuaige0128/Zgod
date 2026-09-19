@@ -1,0 +1,60 @@
+﻿check,actual,expected,result,evidence
+326项保护源当前哈希,rows=326;problems=0,rows=326;problems=0,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\input\project_contract\源文件冻结清单.csv
+板块16工件当前哈希,rows=166;problems=0,rows=166;problems=0,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\input\upstream_u01\board16_artifact_manifest.csv
+板块14源与冻结副本当前哈希,rows=23;problems=0,rows=23;source/copy problems=0,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\test\2026-08-24_Guyan双侧投影结论影响核查\source_manifest.csv
+板块17输入冻结独立复核,pass=True;sources=32;rehashed=64;problems=0,true;32;64;0,PASS,outputs/input_freeze_independent_summary.json
+自由度公式Simulink契约门槛,status=PASS;gates=22/22,PASS;22/22,PASS,outputs/contract_summary.json
+七个契约冲突已显式保留,7,7,PASS,outputs/contract_conflicts.csv
+第一类组合维数,"{'cb_width': 9, 'guyan_width': 6, 'master': [1, 6, 11, 4, 9, 14], 'slave': [2, 3, 5, 7, 8, 10, 12, 13, 15]}",Guyan6;CB9,PASS,outputs/contract_divisions.csv
+第二类组合维数与psi6恢复,"{'cb_width': 8, 'guyan_width': 5, 'master': [1, 11, 4, 9, 14], 'psi6': 'slave_recovered_by_P_times_T_and_P_times_Tcb', 'slave': [6, 2, 3, 5, 7, 8, 10, 12, 13, 15]}",Guyan5;CB8;psi6 slave recovered,PASS,outputs/contract_divisions.csv;outputs/contract_recovery.csv
+Simulink输出变量顺序,"{'simout': 'floor2', 'simout1': 'floor3', 'simout3': 'floor1'}",simout3=floor1;simout=floor2;simout1=floor3,PASS,outputs/contract_simulink_outputs.csv
+冻结SLX标准callback为空,no_nonempty_standard_model_callbacks_in_frozen_slx,no_nonempty_standard_model_callbacks_in_frozen_slx,PASS,outputs/contract_simulink_callbacks.csv
+MATLAB全局缩聚内部门槛,True,true,PASS,outputs/global_route_summary.json
+第1类MATLAB维数,6/9,6/9,PASS,outputs/global_dimension_gates.csv
+第1类作者脚本ASCII字节副本成功,status=SUCCESS;hash=True;compare=True,SUCCESS;true;true,PASS,outputs/global_original_script_comparison.csv
+第1类中文原文件名入口失败保留,FAILED;MATLAB:m_illegal_character,FAILED;MATLAB:m_illegal_character,PASS,logs/global_routes_matlab.log
+第2类MATLAB维数,5/8,5/8,PASS,outputs/global_dimension_gates.csv
+第2类作者脚本ASCII字节副本成功,status=SUCCESS;hash=True;compare=True,SUCCESS;true;true,PASS,outputs/global_original_script_comparison.csv
+第2类中文原文件名入口失败保留,FAILED;MATLAB:m_illegal_character,FAILED;MATLAB:m_illegal_character,PASS,logs/global_routes_matlab.log
+独立Python全局公式重建,68/68;fail=0,68/68;fail=0,PASS,outputs/independent_global_summary.json
+历史与标准Guyan质量差复现,0.09977893886275215;0.3730127025329254,0.09977893886275215;0.3730127025329254,PASS,outputs/independent_global_summary.json
+MATLAB-Python跨语言验证,82/82;fail=0,82/82;fail=0,PASS,outputs/cross_language_summary.json
+跨语言矩阵最大误差,4.030710936150385e-16,<=5e-12,PASS,outputs/cross_language_matrix_checks.csv
+跨语言CB子空间角,7.70384137618203e-15,<=5e-8 rad,PASS,outputs/cross_language_summary.json
+跨语言频率最大差,9.947598300641403e-14,<=5e-10 Hz,PASS,outputs/cross_language_modal_comparison.csv
+局部候选独立公式审计,status=PASS;rows=630,PASS;630,PASS,outputs/local_candidate_python_audit.json
+局部PD2/PD3公式误差,"{'PDmonicanshu2.m': {'T_author_formula_rel': 7.872468610470589e-17, 'K_guyan_author_formula_rel': 0.0, 'M_guyan_author_formula_rel': 0.0, 'C_guyan_author_formula_rel': 5.548042059279182e-17, 'M_cb_projection_rel': 0.0, 'C_cb_projection_rel': 0.0, 'K_cb_projection_rel': 0.0, 'max': 7.872468610470589e-17}, 'PDmonicanshu3.m': {'T_author_formula_rel': 2.102811933524109e-16, 'K_guyan_author_formula_rel': 2.3509985869073085e-16, 'M_guyan_author_formula_rel': 0.0, 'C_guyan_author_formula_rel': 1.4695128369676502e-16, 'M_cb_projection_rel': 8.61899924100772e-19, 'C_cb_projection_rel': 2.1295930711233934e-17, 'K_cb_projection_rel': 6.337683977505997e-18, 'max': 2.3509985869073085e-16}}",each max<=1e-12,PASS,outputs/local_candidate_python_audit.json
+四个New脚本12次尝试,"{'attempt_count': 12, 'literal_error_count': 4, 'context_missing_coeff_error_count': 4, 'dimension_probe_success_count': 4, 'ns2_matrix_vector_rows': [11, 15], 'ps3_matrix_vector_rows': [9, 6], 'ns3_matrix_vector_locate_rows': [15, 15, 14]}",12 attempts;4 literal errors;4 missing-coefficient errors;4 probes,PASS,outputs/local_new_script_attempts.csv
+12维装配失败且未造矩阵,status=FAIL_PENDING_DECISION;created=False,FAIL_PENDING_DECISION;false,PASS,outputs/local_assembly_12d_gate.csv
+U03-U06逐对象裁决行,"['U03', 'U04', 'U05', 'U06']","U03,U04,U05,U06",PASS,outputs/object_adjudication.csv
+U03/U04部分计算级且整体待决定,"U03={'object_id': 'U03', 'object_name': '第一类物理/数值子结构划分', 'successful_route': '当前完整15自由度组合划分、6维Guyan、9维CB及恢复接口', 'evidence_level': '部分计算级复现', 'overall_status': '待决定', 'success_directory_created': '0', 'failure_directory_created': '1', 'blocking_route': '局部数值侧缩聚、P/N散布组装与12维矩阵未闭合'};U04={'object_id': 'U04', 'object_name': '第二类物理/数值子结构划分', 'successful_route': '当前完整15自由度组合划分、5维Guyan、8维CB及psi6恢复接口', 'evidence_level': '部分计算级复现', 'overall_status': '待决定', 'success_directory_created': '0', 'failure_directory_created': '1', 'blocking_route': '局部数值侧缩聚、P/N散布组装与12维矩阵未闭合'}",evidence=部分计算级复现;status=待决定;no success dir,PASS,outputs/object_adjudication.csv
+U05/U06计算级成功,"U05={'object_id': 'U05', 'object_name': 'Guyan历史单侧实现、论文公式与标准双侧合同投影', 'successful_route': '历史单边、论文/标准合同投影均重建并交叉验证', 'evidence_level': '计算级复现', 'overall_status': 'PASS_WITH_RECORDED_FORMULA_CONFLICT', 'success_directory_created': '1', 'failure_directory_created': '1', 'blocking_route': '无；历史与标准质量/阻尼不同是保留冲突，不是缺失'};U06={'object_id': 'U06', 'object_name': 'Craig--Bampton三固定界面模态的实际实现', 'successful_route': '当前完整模型第一类9维、第二类8维，均保留3个固定界面模态', 'evidence_level': '计算级复现', 'overall_status': 'PASS_CURRENT_9_8_ROUTE;12D_PENDING', 'success_directory_created': '1', 'failure_directory_created': '1', 'blocking_route': '论文分子结构12维组装未闭合，单独保留为失败/待决定分支'}",evidence=计算级复现;success dir created,PASS,outputs/object_adjudication.csv
+局部与组合自由度集合表,6,6 rows,PASS,outputs/local_dof_sets.csv
+U03成功目录不存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U04成功目录不存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U03失败证据包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U04失败证据包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U05成功包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U05公式冲突包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U06成功包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+U06的12维失败包存在,True,true,PASS,test/00_上游模型身份证;test/00_失败尝试与候选路线
+119项发布文件当前哈希,rows=119;problems=0,rows=119;problems=0,PASS,outputs/publish_artifact_hashes.csv
+六个对象包内部清单,rows=110;problems=0,problems=0,PASS,各对象包/package_manifest.csv
+45项总索引结构,rows=45;unique=45;columns=15,45;45;15,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_总索引与复现规则\全部对象总索引.csv
+总索引U03/U04状态,部分计算级复现|当前15自由度组合划分、6维Guyan、9维CB与恢复接口已闭合；局部数值侧缩聚、P/N散布组装和12维矩阵未闭合；对象整体待决定|部分计算级复现|当前15自由度组合划分、5维Guyan、8维CB与psi6恢复接口已闭合；局部数值侧缩聚、P/N散布组装和12维矩阵未闭合；对象整体待决定,部分计算级复现;状态含待决定,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_总索引与复现规则\全部对象总索引.csv
+总索引U05/U06证据等级,计算级复现;计算级复现,计算级复现;计算级复现,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_总索引与复现规则\全部对象总索引.csv
+总索引U06实际eig身份,"论文Craig--Bampton公式；原Live Script eig(Kss,Mss)未显式排序；当前生成器eig后按特征值升序取3阶",contains eig and not svds,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_总索引与复现规则\全部对象总索引.csv
+中文证据报告长度,19893,>=10000 characters,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+中文证据报告必含主题,missing=[],missing=[],PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C01_DIV1_R_COMMENT,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C03_DIV1_MODAL_SORT,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C01_DIV2_R_COMMENT,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C03_DIV2_MODAL_SORT,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C02_GUYAN_FORMULA_ROUTE,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C04_DIV2_PHYSICAL_PRELUDE,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+报告包含冲突C05_DIV2_THIRD_FLOOR_REPAIR,True,true,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\板块17_两类自由度划分与缩聚路线复现报告.md
+硕士论文保护哈希,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\梁禹手稿.pdf
+manuscript_0824.tex保护哈希,15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76,15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript_0824.tex
+板块17全部Python脚本语法,scripts=8;problems=0,problems=0,PASS,candidate/code/*.py
+MATLAB/Python/PythonW残留进程,[],[] (current validator excluded),PASS,psutil process inventory
+板块17完整工件清单当前哈希,rows=305;problems=0,problems=0,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\report\board17_artifact_manifest.csv

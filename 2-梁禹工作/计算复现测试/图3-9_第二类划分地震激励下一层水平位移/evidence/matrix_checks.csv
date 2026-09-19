@@ -1,0 +1,61 @@
+﻿scope,object,metric,actual,criterion,result,evidence
+source_contract,PDmonicanshu.m,token:MRrt,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\author_source\模型与参数原件\PDmonicanshu.m
+source_contract,PDmonicanshu.m,token:CRrt,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\author_source\模型与参数原件\PDmonicanshu.m
+source_contract,PDmonicanshu.m,token:KRrt,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\author_source\模型与参数原件\PDmonicanshu.m
+source_contract,PDmonicanshu.m,token:damping = 0.05,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\author_source\模型与参数原件\PDmonicanshu.m
+source_contract,regenerate_chapter3_data.m,token:dt = 1/1024;,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:stopTime = 40;,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:unitStep = double(fineTime >= 1);,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:chirpAcceleration = sin(2*pi*0.1*fineTime,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,"token:eqAcceleration = EQ_intensity * ElCentroAccel(2,:)'",True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,"token:'Interpolate', interpolateText",True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,"token:'Solver', 'ode4', 'FixedStep', 'dt'",True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:T = [eye(nm); -Kss\Ksm];,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:Mg = Mmm - Mms*(Kss\Ksm);,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:Cg = Cmm - Cms*(Kss\Ksm);,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:Kg = Kmm - Kms*(Kss\Ksm);,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+source_contract,regenerate_chapter3_data.m,token:Mf = diag(forceMask .* Mforce);,True,present=True,PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\current_reproduction_code\regenerate_chapter3_data.m
+force_contract,原SLX静态合同,six_exact_positive_gain_expressions,"[('lvxvjie_guyan.slx', '4384', 'diag([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0].*MRrt)'), ('lvxvjie_guyan.slx', '4386', ""T'*Mf""), ('lvxvjie_guyan.slx', '4398', ""T_cb'*Mf""), ('lvxvjie_guyan_2.slx', '4384', 'diag([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0].*MRrt)'), ('lvxvjie_guyan_2.slx', '4386', ""T'*Mf""), ('lvxvjie_guyan_2.slx', '4398', ""T_cb'*Mf"")]","exactly six model/SID/expression tuples, all without leading minus",PASS,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块18_图3-5至图3-15逐图计算复现\input\upstream_passports\board17\contract_simulink_workspace.csv
+full_model,MRrt,reference_vs_board17_relative_error,0.0,<=5e-12,PASS,reference_model_matlab.mat vs global_routes_matlab.mat
+full_model,CRrt,reference_vs_board17_relative_error,0.0,<=5e-12,PASS,reference_model_matlab.mat vs global_routes_matlab.mat
+full_model,KRrt,reference_vs_board17_relative_error,0.0,<=5e-12,PASS,reference_model_matlab.mat vs global_routes_matlab.mat
+division_1,Mo,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,Co,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,Ko,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,T,independent_vs_board17_relative_error,1.181940843677321e-16,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,M_historical,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,C_historical,independent_vs_board17_relative_error,2.565428830882846e-17,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,K_historical,independent_vs_board17_relative_error,1.3579893280426738e-16,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,Mf,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,input_guyan,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,floor_recovery_guyan,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_1,input_full_natural,positive_projection_relative_error,0.0,<=5e-12,PASS,原SLX SID4384正号质量增益
+division_1,T_cb_retained_mode_subspace,maximum_principal_angle_rad,9.719897978548043e-16,<=5e-8 rad,PASS,允许固定界面模态符号/尺度/基底旋转，不改变传递函数
+division_1,T_cb,basis_aligned_relative_error,1.2053611201138603e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,M_cb,basis_aligned_relative_error,5.265388170566239e-18,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,C_cb,basis_aligned_relative_error,1.515841491369292e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,K_cb,basis_aligned_relative_error,1.8726226025805244e-17,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,input_cb,basis_aligned_relative_error,0.0,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,floor_recovery_cb,basis_aligned_relative_error,0.0,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_1,fixed_interface_eigenvalues_sorted,relative_error,3.1461744306624016e-16,<=5e-12,PASS,"scipy.linalg.eig(Kss,Mss)升序"
+division_1,static_relation,constraint_relative_residual,1.507626977896377e-16,<=5e-12,PASS,Ksm+Kss*R=0
+division_2,Mo,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,Co,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,Ko,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,T,independent_vs_board17_relative_error,2.0650230441676593e-16,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,M_historical,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,C_historical,independent_vs_board17_relative_error,1.4801660492235566e-16,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,K_historical,independent_vs_board17_relative_error,3.360233275318385e-16,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,Mf,independent_vs_board17_relative_error,0.0,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,input_guyan,independent_vs_board17_relative_error,9.148609855502003e-18,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,floor_recovery_guyan,independent_vs_board17_relative_error,7.57076043496814e-17,<=5e-12,PASS,独立公式重建；未调用MATLAB缩聚代码
+division_2,input_full_natural,positive_projection_relative_error,0.0,<=5e-12,PASS,原SLX SID4384正号质量增益
+division_2,T_cb_retained_mode_subspace,maximum_principal_angle_rad,7.722379680984194e-15,<=5e-8 rad,PASS,允许固定界面模态符号/尺度/基底旋转，不改变传递函数
+division_2,T_cb,basis_aligned_relative_error,3.210441375460743e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,M_cb,basis_aligned_relative_error,1.4860343945026957e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,C_cb,basis_aligned_relative_error,4.0415821452196037e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,K_cb,basis_aligned_relative_error,1.4618872000764288e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,input_cb,basis_aligned_relative_error,1.0240207463386906e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,floor_recovery_cb,basis_aligned_relative_error,1.583986128989394e-16,<=5e-12,PASS,独立CB基底经可逆坐标映射后与板块17比较
+division_2,fixed_interface_eigenvalues_sorted,relative_error,4.178826452532889e-16,<=5e-12,PASS,"scipy.linalg.eig(Kss,Mss)升序"
+division_2,static_relation,constraint_relative_residual,2.8759745924128205e-16,<=5e-12,PASS,Ksm+Kss*R=0

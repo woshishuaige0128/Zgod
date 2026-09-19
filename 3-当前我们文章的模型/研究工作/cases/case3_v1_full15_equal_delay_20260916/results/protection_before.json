@@ -1,0 +1,2086 @@
+[
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\frame_model.m",
+    "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\PLOT_COMPARISON.py",
+    "sha256": "f62f0ed190ba8d4a120cc8f44d09ea92bb2f355a9193f4dc29573f9e72dda313"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_inputs.m",
+    "sha256": "3d28583cc0cc72316612d66e2f7054681a38658871fad5b8eba5950b154290cd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_make_simulink.m",
+    "sha256": "3a9dc80a689edf3f7f2a1911ac9db2408585251711e52631c2450315355177bc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_metrics.m",
+    "sha256": "186c62666d15680bd03c50b798aab7dc769ca2eba17147fdb9f303fc03c0fabb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_modes.m",
+    "sha256": "fdd70fc87845f4c364c6e6c3eef0c8ef8aa4c33c96d26effa9df10dedbccea42"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_reduce.m",
+    "sha256": "b55b77493ce53fd1185e3d478f3872fe8191378ae9d26248d115be7dc165b9db"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\code\\rths_simulate.m",
+    "sha256": "a5b550f3eaac376463959bca0e2cf0c8866047fd783a7d7c7ded29921674b389"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\delivery_manifest.json",
+    "sha256": "42e3817f908ea299c6e36dcaa1da4d4e0bc7e3d140f6a3e54a7c58fc20d24ae2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig05.pdf",
+    "sha256": "833b1edd5f65546d214c309dfa715d230edb2fcdbfea137ac7d0fcfd017bafca"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig05.png",
+    "sha256": "e206057ff3edd049c27a49319a344f2aa885edd6e9733a218a53a07de265937b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig06.pdf",
+    "sha256": "6eb322d307009e97a2ed3ebdd3911faf6e9917be00d07c52185da54b58a6696a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig06.png",
+    "sha256": "a573ed3b3bb1c8c31dfc896b23ece3940417787a60ee0f32220ec013920c0e59"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig07.pdf",
+    "sha256": "2c9d4a97294db54a34852ed77b1fb3abf3e56a927038ca3471beb29909c1bafa"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig07.png",
+    "sha256": "cef80503400d34e0ec7c0371a1adbaf448b27dc0420e4c8b76250d7f2f72d958"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig08.pdf",
+    "sha256": "dc9543d1ae7bbc87ba76e86d6e40a0f43b9a75c9abfc72310b004914ad392601"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig08.png",
+    "sha256": "fa68c33891da5ea02801038d749ff65151f242d0d30bc1b3e3aaa76053bee286"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig09.pdf",
+    "sha256": "d5a9adbbd6609cf264fc0794d3679167a8288a38c79b1334e370d0faffc82272"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig09.png",
+    "sha256": "460b561e91fa0e693124553dc62a4091af1d5841762ba781e74a91eda72e9172"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig10.pdf",
+    "sha256": "d4c7d6409d18abf3504e84a87551349384b60089095cc39a8399a678f75ed127"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig10.png",
+    "sha256": "4110719c14329e3c7c49e05262dae160a2020ed2a7cea94aae4708663ca28079"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig11.pdf",
+    "sha256": "bbff71682bbe76be1ba85dfdb43602e4763743f054d757e6acd9e8f00f220773"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig11.png",
+    "sha256": "322513dc5c98b6bdca09bbf58de0316d975b88643146cb5ffcd284eade43a7c4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig12.pdf",
+    "sha256": "4e6de7d23ad4cb60368d49aaf7b3a483452899ea574d7cad123997a93951fd3c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig12.png",
+    "sha256": "51064187bf69879cab5b3b659a0e11b715c51a7a7562e500b01ad217524f2702"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig13.pdf",
+    "sha256": "5e400f279bc7c228b3e28a189647257c8ad690af92e40b9f19d6676659cc789a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig13.png",
+    "sha256": "6ff4978a2c0176ac2323466fceccffa1e8953dcc3f9421d6cf680374fdcdfe8e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig15.pdf",
+    "sha256": "510ebb5f93e4eddc5a2b27295db531f0d2a3c79221d82fe7f55fc0ad2ef8e979"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\legacy_same_scale\\fig15.png",
+    "sha256": "b259fd8d0f3def59730d828c670c0cd4462af44ce270cfebb048a9dc1099cc92"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig05_old_vs_standard.png",
+    "sha256": "ce21715cb0e9e47c729947f8e3368af6ae76b17c1c0901e0dbba9a2a23efac73"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig06_old_vs_standard.png",
+    "sha256": "4719710ab8212b943a7294841374510545b3b323a13aefdc6ef033ca8a302149"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig07_old_vs_standard.png",
+    "sha256": "11151fa188c3c7a53dd99e163652ecc6d95f842049c4eb7bccb71b139cf67ab4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig08_old_vs_standard.png",
+    "sha256": "85ee4d1fc65d73dc89d9e2d135d071842a77887b15b847e3f073b681d9aad923"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig09_old_vs_standard.png",
+    "sha256": "3492230968ff7a0da277096d93ab522bba39f5df75d606b44117e0991abcd6fe"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig10_old_vs_standard.png",
+    "sha256": "a439cc15c4530e99d1e81e7118ece0097ec859d539608e050ca83cad9e933bd6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig11_old_vs_standard.png",
+    "sha256": "16e634422fce180fcb4327dc42073348351b7bbc88751a494920cd9697280d7d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig12_old_vs_standard.png",
+    "sha256": "447edd5b180b786a800a35983a7a91dd9812fd1ef15b112a56133d3685233130"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig13_old_vs_standard.png",
+    "sha256": "ec28d23776a936afbb3f23c58855517968dc1f778af31a07263a144416b9eaef"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig14_old_vs_standard.png",
+    "sha256": "7efe6167abde21ed77005dc7a8df48344c9515dc6c630677c7b872fb8b931283"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\pairs\\fig15_old_vs_standard.png",
+    "sha256": "cc1035d6dd64e0f54ccdd88fbe10f06d7f1dc83f1773f7b92700c3fcc96120ec"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig05.pdf",
+    "sha256": "03d244302d7e4aa4ed49901a721721419759ed570b35fa2056cb2d50ee6a7fea"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig05.png",
+    "sha256": "e206057ff3edd049c27a49319a344f2aa885edd6e9733a218a53a07de265937b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig06.pdf",
+    "sha256": "c40aa28f077b0d697873f4dff308e6ed5e473b4a7f55f35d593e3c588bf72680"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig06.png",
+    "sha256": "5cd0a557c73f75cce0b2380be4755cc6ec63361ceb9daf93f120ffbbb6a7fef7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig07.pdf",
+    "sha256": "6dbd4c7cf01cd7633fdb8fb99f2338e81fdbfbef2c241a48004912b4fdcfbe0d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig07.png",
+    "sha256": "bf00aa78d877e36145d6ae456945246b6ac75b059134c0aa066b292713f87596"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig08.pdf",
+    "sha256": "3ca7c2c7e3e1d0388c6486f9b38e28c5ae7b992e542fda16f454bae6fcf3ae1d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig08.png",
+    "sha256": "a58ed46ae3c80c0d2d463f340be3328dc9a1bad9d296c535c256e58942898df7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig09.pdf",
+    "sha256": "b49a74201a7b4be93f0e1650e85348b806a934733e00a9ad0fe431a88ff37af7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig09.png",
+    "sha256": "1090707b1344b1389f8a8e2c386fc96338d8c204946293ca98db756b9a6ec712"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig10.pdf",
+    "sha256": "584bc80c09d7c4381c54b552202d179818f44b23978e9ab880e45082024fd98d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig10.png",
+    "sha256": "83915a1ea56f7cb0bb3d46105a1b7c9543c88e11c4d4b0f3699cc305efe08829"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig11.pdf",
+    "sha256": "f2a9e2b962329b15a79d2f7bd62acf48cf92bec40a43fa6308ff678581686244"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig11.png",
+    "sha256": "d4adb7bb5e3ba6e0d85c4e974525ef94951723239a74c724099c37a33891731a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig12.pdf",
+    "sha256": "647de30a6f4cd54afd74dfb44402909de5fd32f992d148cbd89a8f0247f1756f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig12.png",
+    "sha256": "9723dc5219fb7336e6de4bc8659a65cc659f1216e127d1d4624bec21774b49bf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig13.pdf",
+    "sha256": "1499b5145090ebe26a438aee3b2c288bc05e67049bdebcd27dbca9bad369505e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig13.png",
+    "sha256": "d0509a7df0523b65143c2508b89ce07eee99e95c7091479c9b753891b5ad7f34"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig15.pdf",
+    "sha256": "c6f1722f6b49828fd64e8cb87d4792520497a1fb674d432a36f406aa95f19e05"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\figures\\standard\\fig15.png",
+    "sha256": "00314807a184c421d2899e18305101e66667a81e397e150ffe30f618a957ceae"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\README.md",
+    "sha256": "bc6ad1698b6568860ba741848c6cbbbdc75a6e935012d6d83b3c81dc3f1c2ec4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\browser_qa.json",
+    "sha256": "7f01c1581b40b934c4509e403cfaf0eae77d988d561cc96703b28c4412a81a4e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\figure_qa.json",
+    "sha256": "dc47142343607b9ac0fe97882ed5c95096f40c44d18347dbed95f1e101e3f969"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\calculation.mat",
+    "sha256": "bc11cf0d50870bd11393490f3536986d67366d540f4c4e1e7415aabe0e17f742"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_chirp\\response.csv",
+    "sha256": "ca437eb209678b7cfc32f426fe679876d7a46596f08ff9c40e1fa9dcb67637d4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_chirp\\response.mat",
+    "sha256": "51c1d087c7284ef0ca9b54866f43c344f7037017f1efd7559f749947eda50607"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_chirp\\rths_tp077b5d81_4964_4526_95b7_da57f1cf37cd.slx",
+    "sha256": "20b8aa572aace4de43429a9f3f31691f14a1bed3fec4c27ebf619098e1802b20"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_eq\\response.csv",
+    "sha256": "97c280753aeff0de592f199a8b36579731ff388ea3c75b5ff13092d5ee74fdea"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_eq\\response.mat",
+    "sha256": "0bbada972a591b5cb610a5d087d54ab0ff2c87ec6cc4e5e3146064437c8b83b6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division1_eq\\rths_tp8426f70b_f84c_4001_9c1f_974c2b2a68ac.slx",
+    "sha256": "8c142fea8756577cb64ace7419cacf8c2a7e5f81832a686fccb7000a04dc630b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_chirp\\response.csv",
+    "sha256": "17e8d869ac314d64ddd2c1cd66b795ad2c6a31f7be3584d2bd31917859d1e4e1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_chirp\\response.mat",
+    "sha256": "1a43c60859a39d5c0fde16263a932f4dfa8681dc0e842d116475dcd08ba5e1da"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_chirp\\rths_tp001522b0_c062_474a_aa68_0aaecf13a307.slx",
+    "sha256": "4563ce0c67e85d8ebdc8c601e2cbac1f5fbb470536c8752cae8f3dc132ab80ef"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_eq\\response.csv",
+    "sha256": "be3843a1d5af1e3888ba83934bf38ec8d4c93723b48a42890ef02ca9bdf68c7b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_eq\\response.mat",
+    "sha256": "34a2908c8a5ae5b12529bcb85e712ec544292153ebdd3db5a2eb440b6a7fa252"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\division2_eq\\rths_tpab41c6a3_40f2_422d_bf1c_fda034303a1c.slx",
+    "sha256": "290fddfe5327d6026221e9e49d6bf903a8ca2172edf77d3bbf8a61e26dc3b9bb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_deviations.csv",
+    "sha256": "f28e371a7f5f66369ad93d7b79fbac5d1e211e0c3e413ab94e1163a15d1e9df8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_drifts.csv",
+    "sha256": "afd276e57c4b1def3fd03d4fc36cf2de46a920871cce76229f0303894e7c4550"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_errors.csv",
+    "sha256": "c579f737892f90a4fc14de15fb401e6dd0849bc9626ba900bd2646ceb04ac05b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_modal.csv",
+    "sha256": "5bfc7abd6966ccabb4b3328d995abb638c38dc5f8fd24bf2e1d871e35dee6389"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_shares.csv",
+    "sha256": "1c803346035fa99e70a8a6260534f65c45e936d7170f9873bbc512d47a656f03"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_totals.csv",
+    "sha256": "af56ae7356ed3c0b5f3b72186a223e1543c978323242ef55a748d06cc99819ff"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\legacy\\metric_weights.csv",
+    "sha256": "c6302112757f3fe20e2d3387b44834b6b122067e21f22212f76b51803e9dbe2a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\matlab_run.log",
+    "sha256": "bc53a8702ac7f9210abbe68bb53bb3233a7f0649ac2e3ff4c4f28b8976c14257"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\numeric_checks.json",
+    "sha256": "13ec39b94324481469af4e01bc7c57734a47a36556b4c7614daf93b4a7b59c4b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\print_qa.json",
+    "sha256": "db0a9321850db289ecebc6a3fce72238f3a2866a1d22a77a84e1bf8fa90be52f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_chirp\\response.csv",
+    "sha256": "461ba47f4d5491485ace90b05a5492b43c0a8b3da40382e84cc4768f94f436c9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_chirp\\response.mat",
+    "sha256": "1334a980a556a4b758698395a27334f554d047834cde2c7c852e3901a4378247"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_chirp\\rths_tp9268dbfb_33ec_4127_aadf_5a8f8c5f2c47.slx",
+    "sha256": "393528e5dd81861ee35cc71ee57267ae666815a7bccc8255c349b492a1c67db7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_eq\\response.csv",
+    "sha256": "8da90d5b569d91aabcb2c3c67b899106c4c2e011b9aec55e09dc86f8586915f0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_eq\\response.mat",
+    "sha256": "338ea2579aa7e49b0f70e5bdbcf5772958bf098d6a1f762f82a34f53ca3ab015"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division1_eq\\rths_tp9b220fef_db46_4bb3_a14b_72814e96bbde.slx",
+    "sha256": "c8a3e53bd224e5147ce718c9cf9caabb4e18a36eae9576a3fba8947cdfc88a07"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_chirp\\response.csv",
+    "sha256": "0c1aa32929bab6b4113ca967a9451aa910eb448bede75161d94caf555b5aaaf0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_chirp\\response.mat",
+    "sha256": "16a33870ac00dde8a91bc160f0eae47a640c65a37f4687a76d12ce204f5f0567"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_chirp\\rths_tp5b707349_fd62_4425_8506_d65370c4e4cc.slx",
+    "sha256": "1fd23f34e52f7f86dd412cb4e22680d18cd8afd8f946bbb485057a5056abd091"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_eq\\response.csv",
+    "sha256": "6a5146cd232e0f173922b028240fb61d9cbdc90a5412e130f74cdb7e1512e94b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_eq\\response.mat",
+    "sha256": "93bf60e3cae6100b7624cbe3ee9ea2c96b08a7f7dfca5611970db233423985ad"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\division2_eq\\rths_tp8510f3e0_5974_4fd7_b433_4de2525f9d5e.slx",
+    "sha256": "a2d863815566a60f6cd5b186300d198fb710db193379bb4beed568c06dfd6f63"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_deviations.csv",
+    "sha256": "b4e4d9bb04d4e055d0a729b264cf9445fbb789f8f82dfd6659cc6d0cae0968a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_drifts.csv",
+    "sha256": "6577cbc6ff0ae2549262b877ad9e8fcb3989e15666987c10534ef37c67384190"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_errors.csv",
+    "sha256": "fe7e1327fe67527f5b5e839575397edaae559644da8a8be05cc38318e706f78e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_modal.csv",
+    "sha256": "1131c2c1ab39c074038bf6a084adb5a793e2ed499d9eccb548fb56e3db9bd57d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_shares.csv",
+    "sha256": "5dc29aa73767aae121b7baf44228b392accbf0263c7e6f3da0d201d0b1a456f6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_totals.csv",
+    "sha256": "b90c34e7a46249df69a805e2025cb5c053c0df7fbf16691f2d9500d3cf920486"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\standard\\metric_weights.csv",
+    "sha256": "a1f7e8fd5699c48501d693bce8103d952b81b01b38cf2fdea5a8c1841f50c51d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\results\\summary_metrics.json",
+    "sha256": "24a69e7bf44cc6451a7c07707a25c6ee2966dbbd34384ff736c979809eae3637"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\RUN_COMPARISON.m",
+    "sha256": "5dc4c66a7198935ae3e692d0b851ff7f4ea6d2d92364554c1aee74231deaad1e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\figure_map.json",
+    "sha256": "043419958925ef75a1c7c48024596e4a3fb2ec52ad1398fdac1c50b75c409c33"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\manuscript_baseline.pdf",
+    "sha256": "76e72c791548935c2cda0152164cb1a752070d54fda642934fac83fced0f40a8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\manuscript_baseline.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig01.png",
+    "sha256": "4313366249e2b914756439a3104f611a8335bb1dccc96573718977feb3cec818"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig02.png",
+    "sha256": "eae72f3e908831c86209ee1b27a247924c01e3a44e6fff83694e39381d8094a1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig03.png",
+    "sha256": "a05436946100d5610b565bd4fb16affd7e9da87769184b403355706c1cdf3035"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig04.png",
+    "sha256": "313dec01b16368eec75d9fe90c8d64c4708ec17043575d7e17ca2e50f3489508"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig05.png",
+    "sha256": "d31e771e01baaedf668444c52b7e61fd68093af208223eef0e7e946b20ca0b96"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig06.png",
+    "sha256": "3db839f27436b137fdd4cfe72202fe07f9a228ad7c48338925ba7ccbf30c65c4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig07.png",
+    "sha256": "58a47aa92bc813f5a4948b6c44552ce75facc3668c1c0d7fe72d6d3acfa266a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig08.png",
+    "sha256": "a4c22b07d2218597fc5fcac391d242eb77b5809d14ab9392d13f4e1fe6076fa8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig09.png",
+    "sha256": "9ef0114dbfd59437a05686d6c8c3187064a3acffbfa0fb6eec04c42d920eb90e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig10.png",
+    "sha256": "3eba853a9253dc6ad23ab90b2f3b92977d6dbbe948d51905388b1bf7a612f396"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig11.png",
+    "sha256": "90a68c3932c1c0161c6748b65608597210a99feafac4da3d83c47e3fe769e3dc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig12.png",
+    "sha256": "6fc3be2dbf1708e1ac9a361040f6ce642583def05203e19c18aa7e586da8435d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig13.png",
+    "sha256": "55f284a86437ceee34ac7c3e2e9871ade9e81065f07fe6b3207fa821da6cbfd4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig14.png",
+    "sha256": "994d11a6a9af5fa4f1ff3cfca02e663c7f09e04ab292a06a2a01fa893a2a95e8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\original_figures\\fig15.png",
+    "sha256": "7d1c8253829547a40b7cf23cbc768e155c495834ac1dd623971c66a4bd24fa22"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\sources\\source_manifest.json",
+    "sha256": "39acb90c8140e6f0e5b6cd4c8fab8cee98eabe11ed0737d58e1ff574b8110ec2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case1_v1_standard_guyan_20260916\\必要输入\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\__pycache__\\check_responses.cpython-314.pyc",
+    "sha256": "766c2da9fbf530f586c04d99f091376473d9acc86e202dad06682a8380a8fbec"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\__pycache__\\delay_model.cpython-314.pyc",
+    "sha256": "030093137716d625ca887d74d96603f1127c81b4e15758f532fce96805c77dd6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\build_selection_report.py",
+    "sha256": "d423a822ba5e5b479afdd1004386ce0805da9dc90a160126facafc57a2961e0b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\check_responses.py",
+    "sha256": "52c9c4690e20f289ea8a76758b6832bd09741b6775e50d9baa35a55f0aef531f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\delay_model.py",
+    "sha256": "cdfa736d793e40acab9a47e68165cd45eb4deceeffe2fbc5f3b57063d790a96a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\plot_delays.py",
+    "sha256": "6649a2d13b8daaf9a3c6585ed9ba68b4e6d25a11b43c79b80b794d529bb6e294"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\prepare_delays.py",
+    "sha256": "059c029f32b2ff619e05424eb3d7eb803992ebecf095976e9caa458d04740d17"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\RUN_DELAY_RESPONSES.m",
+    "sha256": "401bd5e8bfe0d8ec21dd8d1a48a7f6f3d836ccfbfeca370f0176694d46c05dff"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\verify_figures.py",
+    "sha256": "8d8afd88a4a6a0c717ae1eedf25fa7e6d63f1b0a417827cef8052318bcbab944"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\code\\VERIFY_LQR.m",
+    "sha256": "4ef29372b3b474231f94b4308dcaac3d0e2ec37b3b8abe0e851d7b5d07fdd319"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\data\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\delivery_manifest.json",
+    "sha256": "6424c46f68e0b542343c400720a777a6b14f3fbab0da140f6edb24b47ce1088b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\delay_grid.pdf",
+    "sha256": "034b2884abfb87a0af7264062d61be596132ff459db40bfa1c0ed692dc4c0e3b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\delay_grid.png",
+    "sha256": "bfb0c8c51a026592c728c5fb7cff1856801c9ca5928147a4a0774d13c8fcd7a3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\equal_delay_progression.pdf",
+    "sha256": "fcdc7e9c7440eda265f158eb96b632f9db071630426806495b9e522e570a4f8c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\equal_delay_progression.png",
+    "sha256": "2174838225f62810454d23ecd27352e8349c4f2809cd9da0a5398d32c303cbb9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_00_chirp.pdf",
+    "sha256": "b8a8e845ee769047ba8b1008a03f967d559cb3734a2ca2fb08240d20f2ff920c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_00_chirp.png",
+    "sha256": "6f6652ded22afc8db0f762601bb163324717abc78f4623596c67bc14203ae3c7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_00_eq.pdf",
+    "sha256": "b8751ca49db3d88244bcd627411a2727f122a1d7e3c7d8b60920994fd5fa49e2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_00_eq.png",
+    "sha256": "c828d743dacb4769ddf7680c64868c8b0ec65b126592d39021d9ec057c86e31b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_04_chirp.pdf",
+    "sha256": "fefc80423636962ca55ca7ecf55ad2dedba21e3645e5fe5c7428cc9b987b4b5e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_04_chirp.png",
+    "sha256": "188f3f4d6376d2e7dd92e8a1411ef4f70dc270adbf8e5c909cb897c8f601a99c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_04_eq.pdf",
+    "sha256": "1dc45906c85c6c0233a706e698f0a889a4bdfbd939eb24704954eb0bf9cf570f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n00_04_eq.png",
+    "sha256": "ae50db4b51dbbc566eb5ef3bd9e045ecbe866c29da64b81eba85f8c76edea9b0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_01_chirp.pdf",
+    "sha256": "87f692e6503a79dc5d6dfa32669032a7ac7e3c18d95b21e68e408bfdebfe119a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_01_chirp.png",
+    "sha256": "0b7e87e7a72ce24563091e851e6d0eaafdab5d049a20aa35013efa852a0db49a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_01_eq.pdf",
+    "sha256": "5c51f34b935b3b39089448225ab922ceed46a2a53d63354fda78072722738cfa"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_01_eq.png",
+    "sha256": "7d159cd271d9c0fdc16ff491ed562563bdfa770d15334e6cff641de14b45f66f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_03_chirp.pdf",
+    "sha256": "183edecf308933ffaee2b35b6da78a5ef546261c21baed503c74c8866fb0b682"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_03_chirp.png",
+    "sha256": "911abe5f0d8c238d530dd1bb1405908d13048a872644b7d2269b3bbc3ed3a16c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_03_eq.pdf",
+    "sha256": "cb2fd5b649a56b4a88a75897dd912cfc5f1a95efc1f01c4ea158d9ec12709006"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_03_eq.png",
+    "sha256": "b1e13e0f1f965c7b50eff89fe6eb7a02abdc3b403aa38a845aaa854c12754844"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_04_chirp.pdf",
+    "sha256": "87092e1b7fe3f116ce1aa5c48209443d42c24420fb7d81bfb22098babef264b2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_04_chirp.png",
+    "sha256": "aeaa0e3b64d61f4f4374558f01a1314fce2106415fa4e2b2b0baaf20e305f460"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_04_eq.pdf",
+    "sha256": "eb482f0b5a33ae5a230064848e8497cafc432017329230c25e0cc56495ffa78c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n01_04_eq.png",
+    "sha256": "a93cac8a42b257195d9c051bb0a87d7bd0ba1c94e4abd3fd7ef6788b3fda84b8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_02_chirp.pdf",
+    "sha256": "beee6bda98e0498723230c7eba4010bcac0170161b78f41c8181fbdb01df9d05"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_02_chirp.png",
+    "sha256": "6df0b4e56eb0838849a941e1d9ec7325daaea517b93c9c0e331411bb8514719f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_02_eq.pdf",
+    "sha256": "1dc4ca7e5c823e8eaae803471745ed216350901bb7d536c248356c2469005900"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_02_eq.png",
+    "sha256": "d7386db54df76a409edbce288bf6ad6584d96ff9f8b528daf08a0d88a0e39421"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_04_chirp.pdf",
+    "sha256": "f5ab5e1430e033619e6ae1065998121b39c8119cd75ab876b9e9f23ce07befa2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_04_chirp.png",
+    "sha256": "5e374989df978da82e7454fb28179d8b81e72eebaa1644b461c931c06dca6ab1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_04_eq.pdf",
+    "sha256": "1f47b7e33f896396ff16bcc8f1436b1e2920c71d168a8b56db21463957540d03"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n02_04_eq.png",
+    "sha256": "fcdeb1eb8ed90c4d0c5e99e42ec728fc555cabfe44eeef0dc564bb20dbfb1faa"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_01_chirp.pdf",
+    "sha256": "5dab3566ed846227ec8011b95fd5a02c3cb69d7ec1485ce60df7f4fa83d2826e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_01_chirp.png",
+    "sha256": "8ee6451b529947d2743441f5b49d7d37e6c0bcc62cd2efae082b0ca713967353"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_01_eq.pdf",
+    "sha256": "3a9e0b49c97099988730691bc61aa02545476784dab1a6ea3c22f5c950345a51"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_01_eq.png",
+    "sha256": "478017ab2b90a9f6e5fbae6a2f320b4306d6255cbf3d96066f6022bacd434e80"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_03_chirp.pdf",
+    "sha256": "ba5f2a0825989f148ed1a10cb0564e5ba5422ab062df50b9e9a318325f6620d5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_03_chirp.png",
+    "sha256": "4aaacfdd25ae4d5975bae0b476d449d440a7c1738194186b444e8b45e844fd6d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_03_eq.pdf",
+    "sha256": "e8a8b0ff558691b504dd98794e87383976e26fd12393bafe755acb14cf2e2b83"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_03_eq.png",
+    "sha256": "fa4365aaee55c5c8c5ea0b6238368330ce56bfc6f503c9a598299c2aa640e8da"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_04_chirp.pdf",
+    "sha256": "a5b682add5aab79e4e6b6f3d93c2480599c53d9a807b7cca866e2d0ad2853e1c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_04_chirp.png",
+    "sha256": "01cc17ef30ce64680e772cdb22125869fd257fe432e5a891b860a4ad44650572"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_04_eq.pdf",
+    "sha256": "f0a3cd8a5ee5b36bb981c946a2b2c6504e92c92c6561c2dea7342487ce7a03dc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n03_04_eq.png",
+    "sha256": "883dc97d407a90044b642a4de93d82b8f29a539c028ef8a686ed76d95b38f01f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_00_chirp.pdf",
+    "sha256": "1b330839bd1056980018a3d83fb5a52bd145debc1fa6111fc92c0f075fed4e7d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_00_chirp.png",
+    "sha256": "3affb9319b52c0a9476539c2f78b27a0ce20085144280889d76bd9f3bf65bbcf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_00_eq.pdf",
+    "sha256": "7fdeac2ebf61da9a2fdbc2dfe2256d533813975b51e6722b3d2634e0dbd9f370"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_00_eq.png",
+    "sha256": "6253ebeb208b4dfb4a2de849dcb43bddf6d380facba56a33fe751e7decd4da26"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_01_chirp.pdf",
+    "sha256": "6fbbddd8ff50081665a9f1fd8e75e0edc1ab59d65d2a54f24251b574eca5e71f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_01_chirp.png",
+    "sha256": "886fa7650b24d309e5af68ffef6a7fa812d069404e6c3ac7486bba418035b471"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_01_eq.pdf",
+    "sha256": "30bd880bbda4f6bbeb78671a5d01ebb5d9a709740622c4ba97fb14ad39f5f314"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_01_eq.png",
+    "sha256": "193a8127adf6cee87acfea3d4eda76d6dcbcd4b7920918be142f5556e830b6ab"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_02_chirp.pdf",
+    "sha256": "55ca6e9117eff24d4f983724bdc697fad15c34810baa4a006d090f5d4995e429"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_02_chirp.png",
+    "sha256": "a7bc7ddaa138f564acb11d42a77247ee5448124cc19f24b9a842d492bca3ad4c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_02_eq.pdf",
+    "sha256": "20dc1b53373c88c8acfdfc957ef3a41a93e7af6b9144f4bbbe0c33e82a5b401a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_02_eq.png",
+    "sha256": "dc0a53e77010fe26398f2911eb86cf2dd06559925417a70b7fd8c7eaa4877991"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_03_chirp.pdf",
+    "sha256": "67a319f457a1ed112bca681c0dff62b9fd125ead6106328ee015304c91c0fcb7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_03_chirp.png",
+    "sha256": "01f0ac272f3b90b9f98236d5996087f9ba1808e40c1168f6e66a0a82013a3523"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_03_eq.pdf",
+    "sha256": "7be8b25449b63fe2438ea0bb6898227a8e89702f203cbc3555a4df43cd718e95"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_03_eq.png",
+    "sha256": "2b63a413b2e2d7de662c084f824000e57b4bdd10353c2b8379a7fd4263c39382"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_04_chirp.pdf",
+    "sha256": "f0399e6226f6063d7f9491bf986e0cf29b735df827eaec9b35079a8e2b25efaf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_04_chirp.png",
+    "sha256": "110b30dc3dab9386b5c199a4a02357c7284b509afb02350358dcce32c1318279"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_04_eq.pdf",
+    "sha256": "e039d7057b041196c96acf5aa97bc46b58155b6a0cb5d58353b1b4b3ec2e8444"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n04_04_eq.png",
+    "sha256": "8d2b6cd43c528a086f14899dc767b98129d3d0a3a47ec728c10fe2d139ed2afe"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_01_chirp.pdf",
+    "sha256": "cef9d5266dd91d1853decbeabbc18f6bcf4b2d8b650fcc896cef1d9e77d1fd4b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_01_chirp.png",
+    "sha256": "f51eb8066fcd133969fe2e5956c6c4b10fce67eff202c6fd7886ad7030684ca6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_01_eq.pdf",
+    "sha256": "5f747daf4a7acaf368770b8fcc477b88622e2106a35e833dc2d0ea8812c5ae80"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_01_eq.png",
+    "sha256": "22daedb9ae6b35728266211e93b069e67b2c2a51f9263c018816a0b8893a44c0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_02_chirp.pdf",
+    "sha256": "94a82b755d423102fadc7372f75e8338d0b31d7067f870253411f5608b9f13f4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_02_chirp.png",
+    "sha256": "963cf032aa1f9afbf6a359a113a3a943b450ac68a1e80a461600075b41ed1ae7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_02_eq.pdf",
+    "sha256": "6731e5d3b63ccb850553f287fed1363e4fe8ae890096c288a74a28d0b02beb70"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_02_eq.png",
+    "sha256": "181be26b6b0447a6e21bfdf76db8274b36e2a147b5b94a24fb41cfee2d94b553"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_05_chirp.pdf",
+    "sha256": "c601b61edb8616aeb24b9374b88704ef18199799fb31df076b0bed0ed789adde"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_05_chirp.png",
+    "sha256": "95b072893ea9881c71c0473c614bd3bd29e4e451c601704b8adb50c3e0a5a27a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_05_eq.pdf",
+    "sha256": "48c3f487685013ddfc598cb40157d8d03da30981c719ff3e3a7dc436f700a9cf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\n05_05_eq.png",
+    "sha256": "f9fcfe4e270dc10a37d9209aceb7d8c9b93497513efed19b7bd7a519a3e1a211"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\two_candidate_windows.pdf",
+    "sha256": "dde3d79a786594c7fe16e227106178ae1d620582d9d676f04b1099e74d0f6152"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\figures\\two_candidate_windows.png",
+    "sha256": "886e2fccdd27ff85793f4bd6727d40068cf5b1c8e7fd9b02185efc8a6371fb48"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\MODEL_SPECIFICATION.md",
+    "sha256": "33976d59f8c9c648ad9a756cf3fb8986ded1bbe879b5a1d34c179a869b6d7418"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\README.md",
+    "sha256": "c2c4c2225d42f4a207f1d9d7488ee0b555c44ced56832fe37d698ab090b89d0f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\delay_survey.csv",
+    "sha256": "fd1bf6d47624a3ec454cda80a84c100e6c9a82deda505372d71f74dc11ea6a07"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\delivery_checks.json",
+    "sha256": "fbeac613c020ff05bcaea4552b6641438b7eab5742451ac14ab7d69717ea46c6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\figure_checks.json",
+    "sha256": "6d93b5236af360d735c8007dce2ccf2de1865681667440110b5014c622e96f04"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\figure_records.json",
+    "sha256": "4417bfffcb1d93b7994b31a8ec7113dacc2e33bbcb69a72a00e4195485147c7c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\matlab_lqr_check.mat",
+    "sha256": "472a64465932c758e08b6645c7f9282fa5b66fc68efc76ade37b605557ddf6a0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\model_and_cases.mat",
+    "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\model_checks.json",
+    "sha256": "73705036445bffb7bab36697a38ac487aa41ede7a76fc6408f240a72296e530d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n00_00_responses.npz",
+    "sha256": "b6c2bbf7195fe8cf12a3f24737247ea87a49290738405782989b9a178f267a63"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n00_04_responses.npz",
+    "sha256": "e3be9b09f34c4777038559ece1468be51417ce1811f1e7fb5e44f1114d0b67cd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n01_01_responses.npz",
+    "sha256": "ec79b9cdb8016869706ef9944bc2a77ae12f43afc11076fae7606b3a111fd8d4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n01_03_responses.npz",
+    "sha256": "951e94a918be821e2822efad593252a6bb38a536d6faa12f2904774748af693e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n01_04_responses.npz",
+    "sha256": "49767bfc335522e32b633690fb8148fe7cf2027349dca7737ac73f93655c8153"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n02_02_responses.npz",
+    "sha256": "8edd355d788f8672e81402a2427e0a50dbbf74322bd364e927ae8cf60e8a1c38"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n02_04_responses.npz",
+    "sha256": "4d582a4a7c062c734cd2eb0f327a0af8f2fcf46724950a3e8981ab4ebc0bd83e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n03_01_responses.npz",
+    "sha256": "2deb359cc40f24f95ddf78be6ede60d9788b58abb91ce54720c97ff776c5f89a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n03_03_responses.npz",
+    "sha256": "91bb02bfdd18ca42036e3b22aca292f57582fbdd452c6070d60393ae0e9de580"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n03_04_responses.npz",
+    "sha256": "9a643dbe8bae8fd18775acbad4a80bb4cd8343e3bfd16c5d0e0d3e3ef6f6a6ba"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n04_00_responses.npz",
+    "sha256": "cfb921a13108b0859450e5f08d3c5933de3a207849b62c5530fe1f17861adb53"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n04_01_responses.npz",
+    "sha256": "532a2d4a77c46717e2c3b703127ca3d0e91e2560cf4fa07cf728ba8786827ef3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n04_02_responses.npz",
+    "sha256": "b48f7c390151f6f58f71cac5e7d45fa9434505147bb8e8fb6748f374cc64261e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n04_03_responses.npz",
+    "sha256": "28794cfef3a586d25bc4ef26d9ece623517251f4019ad96a04f0582c29479e88"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n04_04_responses.npz",
+    "sha256": "2d22a1dba03b574f89ad99e6bb628284dc077cdabd1498854887e7bcd5e94615"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n05_01_responses.npz",
+    "sha256": "d83c35fc37a4bb881c9e9c1fe71e0e2eb87eef3381139e6ce9a976f3c9a31605"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n05_02_responses.npz",
+    "sha256": "8e0a1e2c04fd5750ab00e25a2eb2d8c55b41e8c9671eca51a7789125bd865780"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\n05_05_responses.npz",
+    "sha256": "160eea763ae7f59989ef1aa09afe107474d9dab7570cbbe15344f9b2e38f08bb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\pdf_checks.json",
+    "sha256": "481c34d6c7ba433c5c8fd74548e311e1015191fb27f7328d62ed9f0e965bc2e0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\repeat_check.json",
+    "sha256": "088f33836c34db4f69f1629a34b19ab593df1d5563dca862d4b08f40ca12961f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\report_checks.json",
+    "sha256": "953eb01f976dd14583c5439bb2ce21f0a5f50b8462f3c75a84ae8546e7edefe2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\response_checks.json",
+    "sha256": "6375e5b763d77a345f37c7ae02c4553574cb84b341e73e4b2a0b13694dc01776"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\response_metrics.csv",
+    "sha256": "24f3f071a05a4836510908eeb5f9de0b4e8ed50fceda3e1c62749ece6cc91be8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\results\\selected_delays.json",
+    "sha256": "d5a7cdcbbb9fc6db05208e013ed80a9465966050cf16683514aab772a974b7fc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\EQ.mat",
+    "sha256": "f0292ef78e5b3fa585931f382bdfbf325fbc2e79dda55ed4fc97568a3344f9c9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\frame_model.m",
+    "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\main_review_20260911_terms_red.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\PDmonicanshu3.m",
+    "sha256": "c35c7bfb19c3a5e98626ff1a07c14481f53973947e2c382eb81bd9642d9cf40e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\sources\\source_manifest.json",
+    "sha256": "b69a9040483ca6b08245b29b7c9e2e449699e44b09189b2c8d9d0575ac164c3b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\fontlist-v390.json",
+    "sha256": "17f1ab2beccb1e9b63e362deecaf2a6ff352f708a27bf433f47a6f59862241b5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\04\\3e\\043ea0fb61947d28d76422b3f75616cb7eb9e9de5b657af42b2b15672e880c87.dvi",
+    "sha256": "6680caf1f65063a658559c340f7159a6bae5b6f4dafc29bdfcf5211e7b3f0b13"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\04\\3e\\043ea0fb61947d28d76422b3f75616cb7eb9e9de5b657af42b2b15672e880c87.tex",
+    "sha256": "2468565530d2695b39d590824b776309efd49949e44157ade702394fa641efbd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\0b\\6a\\0b6a527045bbbd8957bf040d6a324add973d6494acd49eb69f2c288977d7a382.dvi",
+    "sha256": "d2ee527494849cbf2d3f144d285e4a211407058b4bf3bcee623355fd8fa67eeb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\0b\\6a\\0b6a527045bbbd8957bf040d6a324add973d6494acd49eb69f2c288977d7a382.tex",
+    "sha256": "d7b9e351db4744843352ced2203f3b5cdb0304410c9dbe4710f2eef56f0e4531"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\0b\\e9\\0be98db9aad0dae6e5129909e65515e809c6d3c0ba4b35a905dc858326dab02e.dvi",
+    "sha256": "64e92baad7a74ed53e78af803728749053f06d12dc6f8a9f92283158f65c75fb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\0b\\e9\\0be98db9aad0dae6e5129909e65515e809c6d3c0ba4b35a905dc858326dab02e.tex",
+    "sha256": "29f1911c5d042747df50ab1af46dad8d08cbd2497a47024f0237cb502771708a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\10\\da\\10dacacd478eaf9bd34bfcab7f1d69a6e3995328b9d4d6b4ec719fbf60530293.dvi",
+    "sha256": "64a5e8839fc2cbe9631757b7dd10e90aab7c46ed6ccc65c752ad87552000bfb8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\10\\da\\10dacacd478eaf9bd34bfcab7f1d69a6e3995328b9d4d6b4ec719fbf60530293.tex",
+    "sha256": "c2659997fdff64ae4f1118f3beb8f85e55980b46133f00bce44ff639a24476f1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\13\\10\\1310d6f3d6be0e92adacbfd44f0c0937a8b18b1c0a19a3f26210384ca7d0a128.dvi",
+    "sha256": "cff1ea49ca085d7fe1cbad42bfd8ece3203e201270be128f53280aefe206acd2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\13\\10\\1310d6f3d6be0e92adacbfd44f0c0937a8b18b1c0a19a3f26210384ca7d0a128.tex",
+    "sha256": "aa33ec70c5a3127f6e0026e6752e5cc418ea3d34d6b6f047cec361d8b053f9a5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\13\\8a\\138ad9a76bffefcf58282465b2ebf315a79aceec65705edb2f8adef273202339.dvi",
+    "sha256": "c1d4256986fd058e11e24baf3ca111ef6286c24666ac8cf8d0ed055bf244feab"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\13\\8a\\138ad9a76bffefcf58282465b2ebf315a79aceec65705edb2f8adef273202339.tex",
+    "sha256": "3ccb3ebaf8f2a522c43e3e957dd3a409ccdaa66c215da2fe3e05aa55b3f5da70"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\14\\40\\14406b30675315db9b743d2bbedaa72b8115c5271b3543630f010ddfc1c673bb.dvi",
+    "sha256": "8a469e70a6d839118d142c502152a6121cd971d166581370f036ac542088780f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\14\\40\\14406b30675315db9b743d2bbedaa72b8115c5271b3543630f010ddfc1c673bb.tex",
+    "sha256": "ea8a7d5886d423f99df53901c2c308740d0b254080fcba162843c85daac1fd33"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\14\\df\\14df7823e7e691ce99a31025a4f99fa966bdb4ff27cb86808f0b7ce7a26665d3.dvi",
+    "sha256": "fda8e3a74c9328ecef43c85937ebbadd371269f0374989d11bfcaab1a2277fae"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\14\\df\\14df7823e7e691ce99a31025a4f99fa966bdb4ff27cb86808f0b7ce7a26665d3.tex",
+    "sha256": "384abb4c1e22bf1d4a4ba26d653b8ef74ebb8775aa61ef6dd03712ec2214264b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\15\\ec\\15ec7fe73404b7459d6230c0f7d564bbdbc2d4020f497e70bfa15ea336264923.dvi",
+    "sha256": "c6ce9bfd022bb424c625247b9e7b88b50a36305b557d2127f13dd0b8cc7c03b7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\15\\ec\\15ec7fe73404b7459d6230c0f7d564bbdbc2d4020f497e70bfa15ea336264923.tex",
+    "sha256": "2db75d08614c521b5c28ff2c93946d70bd70f64b4966839f1c1d1b9990543869"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\18\\d7\\18d7367a84e81c1b5c78cb844f1f03ab3501cee80f7b56cd0621b694c6843b61.dvi",
+    "sha256": "b8800fc8ab70903ebde0e0bc1c3eeffa952df9ce7788f80bf7451c6b9d157a76"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\18\\d7\\18d7367a84e81c1b5c78cb844f1f03ab3501cee80f7b56cd0621b694c6843b61.tex",
+    "sha256": "be615471f83568442cffde29279b4ef5cf13a7c793f41233a4730a313bdbe747"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\19\\9a\\199a9e43119e37d70655564c6421c8c97cc756f5c1c952eb184e31cfde364306.dvi",
+    "sha256": "8699bebef9b0e1c0fbf54faeba2bb20c3b9b77820cbef5962a028d07f8d82a64"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\19\\9a\\199a9e43119e37d70655564c6421c8c97cc756f5c1c952eb184e31cfde364306.tex",
+    "sha256": "28f97e94d347dfdb282361f3b050514e7fcf7591937c2f782cc599b60ea5b454"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1a\\06\\1a06c0178634a94c43832591f013b40682a5c3823822553c6ad9eb06b34e6e12.dvi",
+    "sha256": "47d2a3837a27cb2c31000071eda0dd20cb99a4a7318cb57bb8a12f6394c9052c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1a\\06\\1a06c0178634a94c43832591f013b40682a5c3823822553c6ad9eb06b34e6e12.tex",
+    "sha256": "ba99214dea2ab88bcb8305759b51a3397e77cca5e7704e917693ce776586ceb1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1a\\9f\\1a9f9e0cd25bf651c09a3390ecfae76b5e503c91dd139aaee28399bb246fc28c.dvi",
+    "sha256": "0bbeb369b57d04fa09d3156bc539758624701ac30af2a63bb1256bce95a495ee"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1a\\9f\\1a9f9e0cd25bf651c09a3390ecfae76b5e503c91dd139aaee28399bb246fc28c.tex",
+    "sha256": "da401589a2dce8a375975f8033aaa5c685713eb48c46474b93ba728b2e44f573"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1c\\74\\1c74bf71e74ff58e0570d5851846f401c4de365ddc0584c0ebf68ac3c2660bb9.dvi",
+    "sha256": "2c85947c9812a2e29b88aee0900ab2f8fafe6553b21f80e49d40c27971f83e3c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\1c\\74\\1c74bf71e74ff58e0570d5851846f401c4de365ddc0584c0ebf68ac3c2660bb9.tex",
+    "sha256": "c359a8f8e05cabed295b13984e04d283087a9d198088e0e7bc22a4238345c252"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\20\\03\\2003d6b5ca0be65aac0f85ff6b997f6297bc1a21d35b8a7a288a3cac55d054c7.dvi",
+    "sha256": "adb163cdd7312b20482f275244b8309e66bbb4abed90bed409dac36162e0726b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\20\\03\\2003d6b5ca0be65aac0f85ff6b997f6297bc1a21d35b8a7a288a3cac55d054c7.tex",
+    "sha256": "27af508613bef504fff051b1ad57f42817d406394509e52b516f863132f8d1ad"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\20\\d6\\20d67ad4271cb01f7cb4e85e325b939e1a0acc8b34a91921fa95fdab1f7ab0e0.dvi",
+    "sha256": "c4e370ee5c84bb2318e85bbb89859734e1dacb0810f1e8423fdd8cff747253e4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\20\\d6\\20d67ad4271cb01f7cb4e85e325b939e1a0acc8b34a91921fa95fdab1f7ab0e0.tex",
+    "sha256": "0a21e09726b6201880ce322fdd104ad032b976d18c3954ec5c5d0c811eff85e6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\22\\cd\\22cd35d673ce0d5bede4bc9f9c75a27389571302ca71508b7af272018d4e3c18.dvi",
+    "sha256": "3f39f5bd10df2b8daef910d22f4ef443e772051d0d386049bcf6fcf63b3c22c4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\22\\cd\\22cd35d673ce0d5bede4bc9f9c75a27389571302ca71508b7af272018d4e3c18.tex",
+    "sha256": "3163f23d3c5a19ba8e7975a35210bebeebe02125df90ad32cbd55284c679b9f6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\23\\a0\\23a0e7ca70353b6fac0caa1f4211ba042408bdfb2ea1780e2efcfdda36aadafe.dvi",
+    "sha256": "1322c8427f1e366698699864df7250510d7e8250c763fb782345615fc79882da"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\23\\a0\\23a0e7ca70353b6fac0caa1f4211ba042408bdfb2ea1780e2efcfdda36aadafe.tex",
+    "sha256": "cb003ce47d10191e39b2a255291fe0c3fde9380d3cb34b9775e096d7cfd0f375"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\27\\c2\\27c296db6bf5dc8457e06b71aed8bf099297df9d679d232b61f7725fe337f19a.dvi",
+    "sha256": "ff3a031d49494aaa483a420592324bb70f21d7aafe626a8a5811c92fc14a4f31"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\27\\c2\\27c296db6bf5dc8457e06b71aed8bf099297df9d679d232b61f7725fe337f19a.tex",
+    "sha256": "6d777a6ed59a48dabb0eb5252179ddeb600ef051203a356f684fe3bb0ca1f688"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\27\\d0\\27d08b5a1bd1269158f7a770e7bb2ff38f94fc78db1607e3fcf1b2dc4a291435.dvi",
+    "sha256": "4fc12626a7afb2d6b2e16bb8f6f4eacfd6355d023fedf7508da2be3df0308ace"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\27\\d0\\27d08b5a1bd1269158f7a770e7bb2ff38f94fc78db1607e3fcf1b2dc4a291435.tex",
+    "sha256": "e7548d50840e50ada64b8aed337b1a58df9972a604f2df6804599b3aec379b0f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\2e\\c9\\2ec98db06734c4557274e1cb747a1ee603a8c2356321cfe2345cbee45baddf0c.dvi",
+    "sha256": "364a239f573fc3f0573193a9a32a270af1f317169113afad9b89c1a57ec68928"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\2e\\c9\\2ec98db06734c4557274e1cb747a1ee603a8c2356321cfe2345cbee45baddf0c.tex",
+    "sha256": "06deded94ff49762abbf96ad9c8e18744b20858aee5ad6b26ecfe6528f2782e5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\2f\\6b\\2f6b70fca990b4fd97c92f340c96e12494f147b557b6b8dd85a3ae1022317c62.dvi",
+    "sha256": "6258e09f274e713eddd4d2c28d551e9091e2a8464c6f34c46d10029f81883a15"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\2f\\6b\\2f6b70fca990b4fd97c92f340c96e12494f147b557b6b8dd85a3ae1022317c62.tex",
+    "sha256": "c9327378e3f999541d2f7368a94d6fe918412646b7e8c3e26b4e584ff4121a8d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\32\\42\\3242e2efeac5e6c64e25ea3b21dae3d0de8847817444219b939859761f497147.dvi",
+    "sha256": "23a5e13ecf6dc231641a596be162a43b08c39535221a2481f905e7a8a5d5d111"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\32\\42\\3242e2efeac5e6c64e25ea3b21dae3d0de8847817444219b939859761f497147.tex",
+    "sha256": "524b651b20cb9758c1fdcbf37fe918cf80d74d3068b2603b67e2359e808b5079"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\34\\ed\\34eda026b876d36fce69842586ea77dbe990cf4198257660aa194a9f9d0d47da.dvi",
+    "sha256": "756811a687486498daa80df54c5c7ffedae4fdc37b072ed335a37c060306a1f4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\34\\ed\\34eda026b876d36fce69842586ea77dbe990cf4198257660aa194a9f9d0d47da.tex",
+    "sha256": "add719edb038386f49e2ec57670a2140b1851ca5db2088d848eee8278c23779f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\35\\13\\3513a23228458cf6845006a8616bc18adfb05df72acc885660c77257593ef6f7.dvi",
+    "sha256": "426470c05123b7e12da22d231f040ce712bcc2fddb7312eafb7ae19d7d2986cb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\35\\13\\3513a23228458cf6845006a8616bc18adfb05df72acc885660c77257593ef6f7.tex",
+    "sha256": "17f320583a27ffe9bdfdd74a4583d9b5c95e310d6494eff874e12bde10f4223a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\38\\57\\385719430526c7d6712c60b62fd401e4296c2686217bd5254d288376b3cb894a.dvi",
+    "sha256": "6c49112471e173eda800974f50c505f2a954894c32a3829039b6008a9c0cb526"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\38\\57\\385719430526c7d6712c60b62fd401e4296c2686217bd5254d288376b3cb894a.tex",
+    "sha256": "53d750750f5092be9804eb09d8dda1291697cd7a5ad27512b33f92a775817444"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3d\\0f\\3d0f0a9363750d208e3c348b82a50954386e190fe11df30f3d3793e8a8ef1c01.dvi",
+    "sha256": "c5c3bc08dbc075556a31d4fd2a6340a898a1b82cc5ed9b9dfc139e77451cded6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3d\\0f\\3d0f0a9363750d208e3c348b82a50954386e190fe11df30f3d3793e8a8ef1c01.tex",
+    "sha256": "2c980498b0c4ddd0624add5aad605e93e381dfdcd9531eb4de97caa9eb19872d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3e\\6c\\3e6c19ffc71a8cc920ed178325fa07fd70a7347665753e2c90e76e6a5290971a.dvi",
+    "sha256": "79e64572e8e87225ec2be30e3cf4bb32acfd19a6f1499d8404e389758c6792c8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3e\\6c\\3e6c19ffc71a8cc920ed178325fa07fd70a7347665753e2c90e76e6a5290971a.tex",
+    "sha256": "9d74d9a1e62bae2a864a1075ffd3c76a7006e0e43f9df0f610bc320426549937"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3f\\96\\3f9617037bcafe80d70aff31c2a5d2b3f1ac584c8dd70df93f3309c4e8d14fc3.dvi",
+    "sha256": "07f04854b071fc9ec842d04cae5ff5c8be3ab026deec98d82cc86af44a3c43a8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\3f\\96\\3f9617037bcafe80d70aff31c2a5d2b3f1ac584c8dd70df93f3309c4e8d14fc3.tex",
+    "sha256": "b76e8aa00723246d94e248814ffa10f65eec32392ed59c11a45979d4dc54c2a9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\40\\42\\40428e3c8a23a1e8218528219b7301dffa38f509af9adc1264c1c49b76dd37a8.dvi",
+    "sha256": "eee22392b2d61b895dba5123fc0e10f4eccee072bc40772374d8fe3f918afc67"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\40\\42\\40428e3c8a23a1e8218528219b7301dffa38f509af9adc1264c1c49b76dd37a8.tex",
+    "sha256": "90b26e3fab7c7e8a222bbaf078bd2ac0f2c779d5034938437a1142dba2d19803"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\41\\5b\\415be46758b818469d0d84414572f2a5886ca09ae6ff5de2f24346945eb63940.dvi",
+    "sha256": "853adb45bfe029f9a36e29c00166c2472dce9115f7ecf35080aac3c9545e9bce"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\41\\5b\\415be46758b818469d0d84414572f2a5886ca09ae6ff5de2f24346945eb63940.tex",
+    "sha256": "c1b9f4566c5ac8763fac8855396daf2e92dfa73f8324b8bd26c80e2ed7eb7af8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\42\\7d\\427d9ace85e008ad0dc787804c31524fbf94331976ee1e586b1593318c0da6ea.dvi",
+    "sha256": "3338aa29b759f115d54924f5328a631583ff212f94f299eb230a7379f1a41606"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\42\\7d\\427d9ace85e008ad0dc787804c31524fbf94331976ee1e586b1593318c0da6ea.tex",
+    "sha256": "4c71e451e74461eb379ea1d61471eb19f5fca16dafc752ac459d4db110bb98b9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\46\\8c\\468ca1e43f29e86a2fa84fc70c1e3362a56406b379708ef896535a845ffaa536.dvi",
+    "sha256": "7b9e5b6eeb9ec372801ad88c25d73e8814deccea5bf070ce45d9ca8fa7a9ce04"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\46\\8c\\468ca1e43f29e86a2fa84fc70c1e3362a56406b379708ef896535a845ffaa536.tex",
+    "sha256": "15fcf0e901e8a01bb163a3cb2601f9d471e5048d68de94ade2a38019e3c1a513"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\47\\07\\47075616737af64a85a9d86fbc9908f9bdfb523f358adef64d6ae4f70312f220.dvi",
+    "sha256": "850c35766458e33ff1c38a6c3b457b8613144a768707f767673b966ebebcc7b4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\47\\07\\47075616737af64a85a9d86fbc9908f9bdfb523f358adef64d6ae4f70312f220.tex",
+    "sha256": "ca080de5bb67c84c6dd0033b96982d5dac8c53aba0172adb03fecf5b653184da"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\49\\d4\\49d4f811200f214ac499b0730cc736763bd00df519e2b2f8dcbbbe1d941b7108.dvi",
+    "sha256": "67c2f5b1f724d7badcbcb3a55aede2c7c5d649a4fbd2f437c0a3cf03431af319"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\49\\d4\\49d4f811200f214ac499b0730cc736763bd00df519e2b2f8dcbbbe1d941b7108.tex",
+    "sha256": "2a84a89fb90efb96adb1f875b9a99b74bdb80156da980c93105d0cbcd5adebaf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4a\\5c\\4a5c289b611f87305f9423612e7a1eff7bf30b1b0b25c664b71cfb900fd95e26.dvi",
+    "sha256": "e15276622b49035968c157bf55633f4a31ddd964460178c9b1174af960196ac4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4a\\5c\\4a5c289b611f87305f9423612e7a1eff7bf30b1b0b25c664b71cfb900fd95e26.tex",
+    "sha256": "20de392e557d998b8c313bc464066b7b9a5090ac159edf012a5c8091ad02c413"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4c\\a8\\4ca84ccb21f8fd24869e68e03e436070fcbef9bc24e44244ecb025aad3bd134b.dvi",
+    "sha256": "b3cdf70cc416e4f91284730da5c5dd1c711352bfe6a0bec997ca6076d520efb0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4c\\a8\\4ca84ccb21f8fd24869e68e03e436070fcbef9bc24e44244ecb025aad3bd134b.tex",
+    "sha256": "d160151e286e286344e67b55d6bed380d82349262b2c2d0061b2d7f21691e036"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4e\\9a\\4e9ad0cb2bf6c26e7402058d9e05607250f4a11c025339bbf6f0a4c22dfbf379.dvi",
+    "sha256": "107181fb8b5dde75f7354049cea4bbf89042cdebeb0965a0c298a4d9a4fd0dd0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\4e\\9a\\4e9ad0cb2bf6c26e7402058d9e05607250f4a11c025339bbf6f0a4c22dfbf379.tex",
+    "sha256": "630b8b59a3d43a57798085d4d952eb934dcf86376df53f6edf85dc210977b8b3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\50\\dc\\50dc0cf7a936ca648bb1bba82b5ccf738afe24070f0da01d644d2970cc0b06dc.dvi",
+    "sha256": "0aab8885e252a4541e2ad4570c24f6eecba973b63f3f6ef5b62961cc20232789"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\50\\dc\\50dc0cf7a936ca648bb1bba82b5ccf738afe24070f0da01d644d2970cc0b06dc.tex",
+    "sha256": "b58bbe469dd06198ecb04d844fdb5e302adb98191f2f4559cd1e7bddb3235143"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\50\\f2\\50f2f80f4fd8cd23b611784556c61f4e6e74fb91b6d80a2d1588b6975f351942.dvi",
+    "sha256": "b82872eba49bbc416d4af460119eb30fe243c69e3d18f3c48687ac159824e68e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\50\\f2\\50f2f80f4fd8cd23b611784556c61f4e6e74fb91b6d80a2d1588b6975f351942.tex",
+    "sha256": "cde5ec9bcacd09551621ba2cc662489dcc3da8fe2e3964c9d88ec12c27c41ab2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\51\\88\\5188da7f7b02978b492d73b87b201285140fd8e6acbdc5bd11e32bfd19ca413b.dvi",
+    "sha256": "cda71ed962c1503a47d9b5928f4d10e54ea06d0519267f8fd6c600d68b8287b9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\51\\88\\5188da7f7b02978b492d73b87b201285140fd8e6acbdc5bd11e32bfd19ca413b.tex",
+    "sha256": "f41ff9acf25f850f38e8487e89a82d065e4dae3e27329ef008948e7e7e653f92"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\55\\b9\\55b9002b068cdc22f502fde08a3223552abe745773acc001bc0d8cf8ac66d32d.dvi",
+    "sha256": "78af99a5389eed927f378353555a3daf53c2e56dacb3b80328f66c666157825c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\55\\b9\\55b9002b068cdc22f502fde08a3223552abe745773acc001bc0d8cf8ac66d32d.tex",
+    "sha256": "c3370b03d66dff16dbac570476efd49d46f26c9760159c2a3430cf86e45c1e02"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\56\\b1\\56b1dfd137704724bb98f83a67acd2b5d49a945c9b772a28b7275cf5660572a5.dvi",
+    "sha256": "8edfc54b337afe34d4267387f4e7f0e39d6bea00125c33568e296fee6658f01b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\56\\b1\\56b1dfd137704724bb98f83a67acd2b5d49a945c9b772a28b7275cf5660572a5.tex",
+    "sha256": "d66ecd4beeacba0e03a9461889a0387bef76042dd08bed9633814937e672754b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\5d\\e7\\5de7c8fa4e1b62f08e833302898df5efc028ed1d348be4183a97f513879f2e48.dvi",
+    "sha256": "f902913a9c1cafbe8e83c84e6fde8a9a22663a45d5885529e5979a7e67afbc9b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\5d\\e7\\5de7c8fa4e1b62f08e833302898df5efc028ed1d348be4183a97f513879f2e48.tex",
+    "sha256": "da3ebc5a8cb095f7eebe87810651a53c0bbec44498099db18fb424a13c9eaf2d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\5f\\ac\\5fac3feb506b150694bfcb4a63fd0e1f347c6486e23595b1157850a525d6f2f8.dvi",
+    "sha256": "3e42fecbcea105509e907033a4d3dc9b6b5caa0912f452ee82fddde9e1f340ff"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\5f\\ac\\5fac3feb506b150694bfcb4a63fd0e1f347c6486e23595b1157850a525d6f2f8.tex",
+    "sha256": "575358886a974b3f046eba62e7a6d0aae188a330845c06cc2b09930a5e460225"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\70\\3b\\703b949ed6f6a00fc65035c941d598134c6410c814bdc51ef777e832bac567e4.dvi",
+    "sha256": "2b4e67a01e7f9603261a5c7ed3a2ae4db0e62b4cffd7e6e3459e8800a414d62e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\70\\3b\\703b949ed6f6a00fc65035c941d598134c6410c814bdc51ef777e832bac567e4.tex",
+    "sha256": "11b208444674a58af337637b9042458170a473e82f6249558368f688f380220a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\78\\ba\\78baef1ade043292857384d04a87307516369c599f2681da9d4e7ea749fdd724.dvi",
+    "sha256": "163e65e156ba080399a11e5c40e538cf69a7f37501a5d0c7932056e103a35061"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\78\\ba\\78baef1ade043292857384d04a87307516369c599f2681da9d4e7ea749fdd724.tex",
+    "sha256": "35ad6f1d9ad95c27a51c3316f46decd5d3189578cb221f8094663b4d4cc5f9fd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\80\\e2\\80e2fcf19524147e9ac5508e2b2a72cbcf527d02a404fb71f74813f20b48fe81.dvi",
+    "sha256": "7fa9507f39e0991a743f79641507134e2af6db3c4275d3fb7874a4b1830b0cde"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\80\\e2\\80e2fcf19524147e9ac5508e2b2a72cbcf527d02a404fb71f74813f20b48fe81.tex",
+    "sha256": "553913b392a50030ee6d79c63ec4537eac7d5a6c84892e6d7ee237ba9371fe59"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\81\\03\\8103b1074772b577ee953b57c7416a8b222f279a05d039b31e711ed961dd9855.dvi",
+    "sha256": "f2f3ea95c54292bca6bb3a0ac80ecb336b0c41dca42e06c31b424b37f802dd38"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\81\\03\\8103b1074772b577ee953b57c7416a8b222f279a05d039b31e711ed961dd9855.tex",
+    "sha256": "020dfdd8dc45a3fb51741e19ec0c0a39f0319dee7c180d34b938b6b209012492"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\82\\2f\\822f58e0d6b5f16fa423c3175265e2f005a1b12119e24ca749cd71e65c370b78.dvi",
+    "sha256": "e512b9b4bf033fd8e4bd56be70f9f9776541d731560bdb91da259cbb1b37e64c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\82\\2f\\822f58e0d6b5f16fa423c3175265e2f005a1b12119e24ca749cd71e65c370b78.tex",
+    "sha256": "14a5650995501413e3c73f126f16a4ff4e123dc6496e5385f9d7539e007ba19e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\87\\7e\\877e56c76fb957e8cf8e3bb96552e74e42b4176b1fa7ca48d650e255a9592d9a.dvi",
+    "sha256": "7c2cf470fa7efa0cde4983409bb1d96ccd6c0f913b0edce40d14515c8903855a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\87\\7e\\877e56c76fb957e8cf8e3bb96552e74e42b4176b1fa7ca48d650e255a9592d9a.tex",
+    "sha256": "e0922b35eff46a1cf7869e447e2b2463118b270bb99b58806d05109890385fe7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8a\\4f\\8a4f9af01ecab9c229351d4c742384732d5a2f6fee82ed55b94420f62e2654e7.dvi",
+    "sha256": "29afc6fe830ce971bbbfb9afae3d119a24cff4dd3a4f8a77d90d4f56b25dfa91"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8a\\4f\\8a4f9af01ecab9c229351d4c742384732d5a2f6fee82ed55b94420f62e2654e7.tex",
+    "sha256": "6b6c60bb66e5f7e2b48b1534a3af008228f46c9f182280156a5cf8d4567e5cd6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8b\\0b\\8b0bfbcae6ba4e3b15308558d16fc27c1bdc72ac622465f57a762a2e2fd2f149.dvi",
+    "sha256": "4bed291e92ae9e33687a9768fca1c482b61ac709c9c77b13e5a90fd4f9301a07"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8b\\0b\\8b0bfbcae6ba4e3b15308558d16fc27c1bdc72ac622465f57a762a2e2fd2f149.tex",
+    "sha256": "da4643607eaf1887f6701477d7adc5de346867825eefae8f7329db2e2c8eb974"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8d\\70\\8d706bcd322e26b32dbd1a1dab18b917a9149e212d6db96148f09b4514506e68.dvi",
+    "sha256": "78acf2c8162fef71c6f1a94f42c6571b90a59669a0cbc8ab0c0eb70c2d4afdd7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8d\\70\\8d706bcd322e26b32dbd1a1dab18b917a9149e212d6db96148f09b4514506e68.tex",
+    "sha256": "b9de705742f5eaa8c2ca42cc3174fe562a9536ae34919501bf0ebf2305a30786"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8e\\10\\8e1084a953d3b3895f88f8bf9bb9ce4e1b5aa88177f9fa4e356631367ff875b9.dvi",
+    "sha256": "aef27c1a1a8753eb98ec9e1953ec73428187314155d835303ea54469e625ba40"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\8e\\10\\8e1084a953d3b3895f88f8bf9bb9ce4e1b5aa88177f9fa4e356631367ff875b9.tex",
+    "sha256": "d38f811a4aad64bff64f5693e3f36597a8a67aa3549b3f4f5766ce5bedd15ff4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\90\\19\\90195d43959c30469bd3acb2a4d2d530b9358bdba4bf93f8539c3cfcee481a37.dvi",
+    "sha256": "f98014a3ddeadda9c639ff67c07b684825d6120e0b8afd156326e034e78ea38c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\90\\19\\90195d43959c30469bd3acb2a4d2d530b9358bdba4bf93f8539c3cfcee481a37.tex",
+    "sha256": "8722959a4931651735bd572a91edf8a163635fb250151c994e856714c19fb1a8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\92\\9a\\929a532a758e91ceef18f00d2dba597871fa145a3a9f08cffcbff715a8153f1c.dvi",
+    "sha256": "41fa4336f4de68da8fe1d743b5146bf70a2d7fc772b954ca072648fe92e6cab0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\92\\9a\\929a532a758e91ceef18f00d2dba597871fa145a3a9f08cffcbff715a8153f1c.tex",
+    "sha256": "4d35283c2c63058ecedbd815edd44ddc93aba41030bbd46ad6948b8b079549f6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\99\\91\\99919d554c0dcd5f44449adf544f742f90f85392990de8784ad3313bd5750980.dvi",
+    "sha256": "d4c459e6d5b6ee4de21e6a042a029d400b508bb5fc0e4fe13d9da7defd8ae1cf"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\99\\91\\99919d554c0dcd5f44449adf544f742f90f85392990de8784ad3313bd5750980.tex",
+    "sha256": "cf2408e1c2d379a76e6b05a818b229b474dfcdcd8fa7f31217fb6452c7857f55"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\9f\\d7\\9fd72cce14d9a6c81a3e8ce35967441314e8a5c4a439a59a61df06b2ad4b9cfc.dvi",
+    "sha256": "75daff3b194309630c9492d5cd961e0bc1c5a127475d47eb3d1944f008a346d4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\9f\\d7\\9fd72cce14d9a6c81a3e8ce35967441314e8a5c4a439a59a61df06b2ad4b9cfc.tex",
+    "sha256": "657b3b4a215026d46a53646645404275da47fe048e043abf3d6cde8345dc84ff"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a2\\49\\a249a656ae07b1ef07fe23a2507b4c48ae21f8e45104e322b75372438e6b95d1.dvi",
+    "sha256": "fd47dbd755625ab6e446d2cb9d177567b51f9190b47baae2bc0fc478e0c4fbd8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a2\\49\\a249a656ae07b1ef07fe23a2507b4c48ae21f8e45104e322b75372438e6b95d1.tex",
+    "sha256": "38c33ee9e75d9915825bb7ece90f371f325e2c31b23c44c416c0534b1fffdb8e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a3\\1f\\a31f23c6eb9422a3dbef90459ac8c78e50fd78bc0c3d4348b118659d11ed0161.dvi",
+    "sha256": "f65a2f272f3013fc47dea752a88d60d986d8d8a1900eb595892f7ae05b565385"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a3\\1f\\a31f23c6eb9422a3dbef90459ac8c78e50fd78bc0c3d4348b118659d11ed0161.tex",
+    "sha256": "e15a52bbf6449533715f9d277d781af02f9c95a081e2f2913f6511f32ce51073"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a9\\df\\a9df1a461c51912d4f8c80b6ec0e3349fd19a56c41e5ca25359496194033f4d2.dvi",
+    "sha256": "1f70a446bbc487d40dba7babec593132b1539f174776bfa9f2f4122d8cf1dbe4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\a9\\df\\a9df1a461c51912d4f8c80b6ec0e3349fd19a56c41e5ca25359496194033f4d2.tex",
+    "sha256": "74bdfada2ad26e10e5fc966d3ba6abeed917a6f456d9d6a3d28ec37f1ace7cdb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\aa\\2f\\aa2ffa357ce7b2f6158adc19cc9a4f58caae1d3c9488e3591b78a332907a2167.dvi",
+    "sha256": "a14f5feac32ed0af40bc58da44795c57247a572468dbf07792fd2973abc287db"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\aa\\2f\\aa2ffa357ce7b2f6158adc19cc9a4f58caae1d3c9488e3591b78a332907a2167.tex",
+    "sha256": "803cf77e6a9af711a7b16aba45a605fa4d9060e5a4bc16ea589b465ae434b0a5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\b2\\67\\b267a613bc5d4427937eb10dd84fc63d4b64d1a0346dc1ea7d18e7a6f89e05bb.dvi",
+    "sha256": "3bea77098bc9cdb38ad135395aacf4c0c1885749b6db7f03c3a5dd6b48442337"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\b2\\67\\b267a613bc5d4427937eb10dd84fc63d4b64d1a0346dc1ea7d18e7a6f89e05bb.tex",
+    "sha256": "235ff8c069431a1f0886ecf179a85d448e26425ac3c6b96e65be5d2763e31da9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\b2\\80\\b280f1c20a061acd3a987e10a935a5b6d995b009e4ddd316a37d35531349c677.dvi",
+    "sha256": "c83c204720f1194b2f7f4842009de751fcd28b90f03725c4c3bb58f1a19b6851"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\b2\\80\\b280f1c20a061acd3a987e10a935a5b6d995b009e4ddd316a37d35531349c677.tex",
+    "sha256": "8a943637ad85679ffba8a699d1f1721975f4ce764407cc49c392d4b0b7820b7b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ba\\0d\\ba0d00b4151489600427776bb2f7df3bf6397218ab7fa9d4c97c3168ac2ff43b.dvi",
+    "sha256": "92a5a961ef8aefc8672921901e19156a9d921067f6ed667e13efb8705af38b9e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ba\\0d\\ba0d00b4151489600427776bb2f7df3bf6397218ab7fa9d4c97c3168ac2ff43b.tex",
+    "sha256": "7cd784aac1d9362f5f89920b3b231b68e626c10ab1e37d7baa7fdeb4fe4fae15"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bb\\2e\\bb2ef265a6b2f6948d2485fadb5a2ab5183863d32721703eefb70d6a02e84daa.dvi",
+    "sha256": "948410c803bdaca0be66c7c78fbac3feb3ec9331ad00d6caf4d471555ea6b93f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bb\\2e\\bb2ef265a6b2f6948d2485fadb5a2ab5183863d32721703eefb70d6a02e84daa.tex",
+    "sha256": "1000e01b47cadd387dd8d1bbd3d66ff8b7ee7dec148a270de8a6feb70e385490"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bd\\b3\\bdb348ebaca79e550722c03c09135bf84d9e3a2abd06991149e3d89e043f1e00.dvi",
+    "sha256": "989d9d021d6f29abcbc31f33c88d606c4e88ff7133f677ac0c437b15e36b32eb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bd\\b3\\bdb348ebaca79e550722c03c09135bf84d9e3a2abd06991149e3d89e043f1e00.tex",
+    "sha256": "8fb7240a9d38174af8ebc7903016784fcf0949a78fc9b25d062d4d90d11fdb68"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bf\\71\\bf717a42e4a927442a5d78957d0f155c413d96f2e54940b9de70e14699b333b5.dvi",
+    "sha256": "227240a4df3858e7fab4c71cdad64b04fc62785efd408137261818cd0a9c9815"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\bf\\71\\bf717a42e4a927442a5d78957d0f155c413d96f2e54940b9de70e14699b333b5.tex",
+    "sha256": "83c57c6ced2f4672efcad4b481d7d3e6c43e9c0993f45b9797affca54313ba52"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c0\\a2\\c0a2a2bab048d8a0d4993b3ff6a246235a72e964dbd32949652ff5c25fc50bde.dvi",
+    "sha256": "6118c602b2e789c7903cf7f2c81718ede8394120bcd6e2fada0904ed9b79419c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c0\\a2\\c0a2a2bab048d8a0d4993b3ff6a246235a72e964dbd32949652ff5c25fc50bde.tex",
+    "sha256": "444ecb14f9091eb804ba488e83b922a075a0e1872d6f9558c370cc63939f238a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c0\\cd\\c0cd76a27ddff3d06ef2e3771525eefe9e9b05d77e1cea705a3b12bee5b9bc2b.dvi",
+    "sha256": "8ff4b61054fad7a2b83c1b757d06b3d753b34252a45048e057e4d64ca74a20e3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c0\\cd\\c0cd76a27ddff3d06ef2e3771525eefe9e9b05d77e1cea705a3b12bee5b9bc2b.tex",
+    "sha256": "f99ac3b1afd1f5ef4ddcb927a0369cd81b5cf897e69c19cf044b9de36793f052"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c1\\5a\\c15a5ffddcdbc2cad44f2320ccb8a371a75cba60aa0f960db197a588cf29f881.dvi",
+    "sha256": "bf1a928a1c62474672592420e6ce82212170f51f8ed9c3bb7d7a62e4153781a5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c1\\5a\\c15a5ffddcdbc2cad44f2320ccb8a371a75cba60aa0f960db197a588cf29f881.tex",
+    "sha256": "4ee7c50b6014bf22cdfb0a2aea85914802f62a41c919e3490b56afec90a4eaf7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c4\\8b\\c48baeafa43acc278b1254a994b82c5b336a486fdb8d1ec19887dcd5be651a00.dvi",
+    "sha256": "930f5a069ab164f6d483085dc4cb2acacff22796c2766ebf76aaf4924de46840"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c4\\8b\\c48baeafa43acc278b1254a994b82c5b336a486fdb8d1ec19887dcd5be651a00.tex",
+    "sha256": "dd59038d5bc6c7166b4e53ad0818eb490dd7b7a31d2e4a8c0aa009c8aa48f4d1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c7\\25\\c7257b7462fe579794a5d3036419bdda760eb2a6942881d2830888d6b44855bd.dvi",
+    "sha256": "a961486ec2f2acd5413d63c472c6de126854da0620067cc380de1f7d00c72766"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c7\\25\\c7257b7462fe579794a5d3036419bdda760eb2a6942881d2830888d6b44855bd.tex",
+    "sha256": "04d3bebb79dc954d9a70664848c9f06216a752bd6181f1e4f0de73215fbd44bd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c8\\30\\c8305e9f027e4a8c5d6c5e044e5adecc5969b4828e622a6508c81fcae8e87d7f.dvi",
+    "sha256": "02bca9b5064cbcdc18e96d4ec817f952b0ae58d65b6b122a01a8ffc357058657"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c8\\30\\c8305e9f027e4a8c5d6c5e044e5adecc5969b4828e622a6508c81fcae8e87d7f.tex",
+    "sha256": "e84da82320253cccddbb6a3e84d00b47270ea679afb000da60103adb8ec692cd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c9\\0a\\c90a34178c57994496b4033a5dea910446632f6649e05b8dce4decb7c4913277.dvi",
+    "sha256": "6d8125f1a1dde339a194e5f455d129cbf4c85e6ac8d1a0070bcfeeed95d06f9a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c9\\0a\\c90a34178c57994496b4033a5dea910446632f6649e05b8dce4decb7c4913277.tex",
+    "sha256": "f6d377acba08c3f576274c107ee26d6a52d7fc2a1c46f0ce5b45c23606f13af3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c9\\b2\\c9b2436467942b13099032a8b43e33607ad0e1e894886818c823cbf3ff90ec65.dvi",
+    "sha256": "d3c270d762e4a6ec8726781f94c42e31889aa6b42f6e25a017ba093911067fd6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\c9\\b2\\c9b2436467942b13099032a8b43e33607ad0e1e894886818c823cbf3ff90ec65.tex",
+    "sha256": "a82d1c7aa3eebf13d23b277ccf1889a21dac3ee99a56b0a2cb2bb4ee6203c7b0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cc\\42\\cc42aacf3e69fc93e89df94064cc5e3625d89020f773d29b4f33ce3f3411816c.dvi",
+    "sha256": "8b29b849e12cddc3c271f026db4834a411f7bd7f277abe639b176c003acbcf24"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cc\\42\\cc42aacf3e69fc93e89df94064cc5e3625d89020f773d29b4f33ce3f3411816c.tex",
+    "sha256": "1d507565c41c61ea9ea6257f623410b345539936d3c9743d6bd255ea8fc7ebb7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\26\\cd262b92959dfb24820bf98e18ecb36ed554c82e9548badfaddf1c51eb913c68.dvi",
+    "sha256": "972574a5eeab6da6bc8a1c2ea6888d168757db8a0c771753af9077dcb9953831"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\26\\cd262b92959dfb24820bf98e18ecb36ed554c82e9548badfaddf1c51eb913c68.tex",
+    "sha256": "9e6837944407addd9fb5d10b47cb0deb47b109443552d39e2871d2173ce65fb5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\9e\\cd9e44ea426f509ab270ef9ea1153c4fa10d751f77d089daf7694d20d2b2d358.dvi",
+    "sha256": "a1cdec799b6532e12529153a68e988a6a11ccb866053ccc568de6f07c75fb32b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\9e\\cd9e44ea426f509ab270ef9ea1153c4fa10d751f77d089daf7694d20d2b2d358.tex",
+    "sha256": "bcf85a72df709d1ec229332a3eba9415878086ebaae6f380489ed6b01827f23c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\e2\\cde24f5c002f7814955cb8819618ed78f4f897bdb1868df34a3501d699279848.dvi",
+    "sha256": "831a2494970a824ac2d72a5bbd6a86c11f3b69509866883c940599b5a82929c6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cd\\e2\\cde24f5c002f7814955cb8819618ed78f4f897bdb1868df34a3501d699279848.tex",
+    "sha256": "619ea055edd8335eab24236019df3457a8027f3473e897b2249fd5d94f7a01c7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cf\\94\\cf94befc0c6d1a31e1e2fc4352a3a2f5572b9784c5a98cc9dd0f2cbd1f6fc710.dvi",
+    "sha256": "01d43da3c47f97f1b8c861d6c670053a6ce8dbba19462103073cc7a2125c8945"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cf\\94\\cf94befc0c6d1a31e1e2fc4352a3a2f5572b9784c5a98cc9dd0f2cbd1f6fc710.tex",
+    "sha256": "582c820815cfd4303fd6d142d379700a9d443f3fa82a9890d893b6e984d8cd3d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cf\\a1\\cfa1bacfc8a981f7e449b323f8bddb0dffe87bd72d26b93a4f0fafee9015c53e.dvi",
+    "sha256": "d3715c452206ef10c371e3562714db62f0464aab894c9bd45b5df205d884a05e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\cf\\a1\\cfa1bacfc8a981f7e449b323f8bddb0dffe87bd72d26b93a4f0fafee9015c53e.tex",
+    "sha256": "2fef70d73c4de24ab3d4f05c28222bd0a1174f429c6d9c929c017c17687a0f78"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\d9\\dc\\d9dcd6de73834123145cb26a5655be62f84dc90c9a4d8b0088d78eea2bf0ba79.dvi",
+    "sha256": "e66a04ec9f61b012166d97a8d1305abac3acfb1f4608396f25e807b8a8e4a98a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\d9\\dc\\d9dcd6de73834123145cb26a5655be62f84dc90c9a4d8b0088d78eea2bf0ba79.tex",
+    "sha256": "c11e937f25483ae194cfda8846826dc59934aeeed4da4b3aaa801fffaf16ef11"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\df\\aa\\dfaa974d8efcd934ea3d26ad68d28cca63616e0e9f106650f2c5296fa26c1285.dvi",
+    "sha256": "9534828f1b5bc285bf01d687b52a50ba34ec824fa71c78826a3441c0a1818488"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\df\\aa\\dfaa974d8efcd934ea3d26ad68d28cca63616e0e9f106650f2c5296fa26c1285.tex",
+    "sha256": "95ccbc365548d89158b6ea4c6e04775a58cfa2e7363bc680b9aa2c2d9802f365"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e1\\c5\\e1c59e728e3f24b6a4777bb65d84e92adf44a0fa5102a9ff626ddc621da2c6b3.dvi",
+    "sha256": "ca0740f282a0efb0f656735c36df5e1a5429c2e23e73cf8b1c4895a7045ceae8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e1\\c5\\e1c59e728e3f24b6a4777bb65d84e92adf44a0fa5102a9ff626ddc621da2c6b3.tex",
+    "sha256": "2dc3e1f0252938a358bb1b3caadc843ceb9756f4ee68ca359e70f14fd30bb0d5"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e2\\2b\\e22ba50fa2a5e524032647603551f4f0d099bcad6ee0c71e6265c8cc4ce5e3c3.dvi",
+    "sha256": "004fbed60713aa6d33a78ea68284123eda80e7298772c2ddc2353eec24563cc9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e2\\2b\\e22ba50fa2a5e524032647603551f4f0d099bcad6ee0c71e6265c8cc4ce5e3c3.tex",
+    "sha256": "a89c975e7fef82371ba578c7d998213efe73f6ebcc616b5bd22c280f67706113"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e2\\c5\\e2c5b20280123db35c03059142dc86a644b8affc35ac86e42a4b17a627885510.dvi",
+    "sha256": "2933f688a44795528f4044d0c56ab1e9160384222fcf0ceb8a3e0f0892feeaca"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e2\\c5\\e2c5b20280123db35c03059142dc86a644b8affc35ac86e42a4b17a627885510.tex",
+    "sha256": "ee16a508488eb4fe13eda0beabd19bf829f6b5dc8363f0aa351f2fe4190ceeab"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e5\\0b\\e50b3b0c6fdf6dd49de683cf37f13ddbdcf769e6d17194f99a11c6a8693a89e2.dvi",
+    "sha256": "ac987c59879a559a848530c5854164085402afea296a21fb3054bb87644a990a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e5\\0b\\e50b3b0c6fdf6dd49de683cf37f13ddbdcf769e6d17194f99a11c6a8693a89e2.tex",
+    "sha256": "d5c624ca6e6694791fb5c2fc7c3047fa17c2e57338bac27a4912e1eae4a9fd7f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e5\\39\\e539414c5edf402cf08651491574c9e22baeb6b0868e0509901a3d72f3ba12c5.dvi",
+    "sha256": "367bf959293409ae9e09504b9a88f537da195110bfbc8ff694e667d83b220094"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e5\\39\\e539414c5edf402cf08651491574c9e22baeb6b0868e0509901a3d72f3ba12c5.tex",
+    "sha256": "b8f86f179ef542ef798432602535fee780a19ccbc23ef9407f6b3fea93181f08"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e8\\d8\\e8d8cb32fbe0c7ed4d6e1953d27d66c3ba47d32acaf41c9c3df8d291a96995ca.dvi",
+    "sha256": "b6962da04681cafbfe9477685f8f7dc4cd10d28f817921a03cdfce1bcd4aaba4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\e8\\d8\\e8d8cb32fbe0c7ed4d6e1953d27d66c3ba47d32acaf41c9c3df8d291a96995ca.tex",
+    "sha256": "47e424929a16ba4a1e0608e4a9b2a49a6451240ddca6c3bdbc5ccbc77a565fe3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ea\\cb\\eacb8088cb109fb223980772c263f770fa9f2406e91394f73f857844295d4780.dvi",
+    "sha256": "2431c3ed09d85b9e5d9936626d54be0c2245bfed2063d861b9cde3b6def6c78f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ea\\cb\\eacb8088cb109fb223980772c263f770fa9f2406e91394f73f857844295d4780.tex",
+    "sha256": "ded9db0618e9f327d75435f07f45390c2d72d975e3ed4e7bf13f8b05aa1dcd5d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ed\\e2\\ede2e9dc037df90f7fc573ade800327a5c8b07ce8ce07559e9f95f09ebafe9c0.dvi",
+    "sha256": "60f86473cee7cb740c562ee4131fd5faa58b419f3b374de29b86320038797a7c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\ed\\e2\\ede2e9dc037df90f7fc573ade800327a5c8b07ce8ce07559e9f95f09ebafe9c0.tex",
+    "sha256": "3c63881b4f30e09379f113ee3955769cad0eb1c2fb23396378a0909ea3bf22cc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f1\\18\\f118f87e35e080113adca5321aa227e467b06b2629fda14fd1ca73e728c4a09c.dvi",
+    "sha256": "b8d8650b81fc9dcd65c1afbf94e0b3a7c700bf7b9a96c2b486795477d5238525"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f1\\18\\f118f87e35e080113adca5321aa227e467b06b2629fda14fd1ca73e728c4a09c.tex",
+    "sha256": "31b0521ea49fb73a920defcef697e59b6f8b5c97d8d341f8b2f0b4a53a4568e2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f2\\df\\f2df6bfa49106ad5777224172f1b8a8e88d222718b80219ffe33ef8bc65408d8.dvi",
+    "sha256": "dbf2ad3e1015a329344140a278e6d1dd2e5fc79654508215fef00e7e883bddc8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f2\\df\\f2df6bfa49106ad5777224172f1b8a8e88d222718b80219ffe33ef8bc65408d8.tex",
+    "sha256": "43ecd098ddc9496988447f691bdba4022cd1aa0865b4dd73aaa2ef9aad9dd766"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f7\\18\\f71819ef381b556010e6eb0549099417802ef678bce5bf365b262503c8b78b0f.dvi",
+    "sha256": "62ae6a0265861d3619eff02327bb81d1b77125ef5418356d223b4544d3ab5848"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\f7\\18\\f71819ef381b556010e6eb0549099417802ef678bce5bf365b262503c8b78b0f.tex",
+    "sha256": "51173d3ec105c014453ecf816fabe53545acf325264f27fa6484fa3d85855fcb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\fa\\04\\fa047d0c4527df549e815a91d84f5b82a2d809d4fa39e9f1d570443f28e8494c.dvi",
+    "sha256": "6af2d45a16ec05f9d087a75123ceee22bb16e8d1e19d8f613c163f895d578bd6"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\fa\\04\\fa047d0c4527df549e815a91d84f5b82a2d809d4fa39e9f1d570443f28e8494c.tex",
+    "sha256": "fd9439ec45e85232616488a6fede6dc6653acd3f3710b89a5f1b45914ebf3e07"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\fb\\b7\\fbb7da672e08a9ab5572016d3b76468c2621e0fde2591ff8b8243cbb721ee510.dvi",
+    "sha256": "6925a44f2280c0dd2411b93b9bd0055e54069c81516d0a2cb1fd45fa3c1ceefb"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\cases\\case2_v1_divisionII_delays_20260916\\temp\\mplconfig\\tex.cache\\fb\\b7\\fbb7da672e08a9ab5572016d3b76468c2621e0fde2591ff8b8243cbb721ee510.tex",
+    "sha256": "5fe74fd785574d7e2c523f72536cce8c4447afb6f9ed5a867bdd9a1b1ae7e7f7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\code\\audit_models.py",
+    "sha256": "154a3fdfecb0d192bed29e08a9e8a8151d3d7e93f28c7f6ca91867621d343728"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\code\\build_report.py",
+    "sha256": "0b2ddc9fdcbf670c03ddb4060a444c3a6835df9e7b0a5fa8354337f4e22d901e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\code\\finalize_delivery.py",
+    "sha256": "39d91d4ae22302fb8bd8fbb46b7824e80499dbc7f2a853398f9437a8147c16e2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\code\\VERIFY_ALGEBRA.m",
+    "sha256": "accf727340b22c47d8973409dbb7727276e5f0091933f71b7ea205cb13d3d39f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\delivery_manifest.json",
+    "sha256": "8c4e92a2e9ead453c6a73bd060c9e0760bb68dc2c0379f569aebef5201c4770c"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\evidence_map.json",
+    "sha256": "396b29e6627b1e2dec5e0543559a7c2068edb329194a1784b7ee4e8d6d6b4710"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\MODEL_AUDIT.md",
+    "sha256": "323c3929ca4d9081bb8317062243e6d7e9ea7f2d2b66c453241a17f0bee72a38"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\README.md",
+    "sha256": "fd12d594c28d949f880b066a027c5a0589b46df307ff1f9f99d06192c95b3004"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\algebra_checks.json",
+    "sha256": "27a9245d3e24570e4a91549db49d4ff496c3b2c3a96ca8c15a585e54cdc14500"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\audit_matrices.mat",
+    "sha256": "6d4ef2686258bfb8adb1009dfb8f8a2f9c44ce6b001203fce43e087120713e1b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\delivery_checks.json",
+    "sha256": "ac10c91c5439c1999d231d11a746d8dbca7454801d8ed2993815ab68b0eb9224"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\error_decomposition.csv",
+    "sha256": "10b2e1875abbd365288320e7d98822add927709a57f8e9581cfbcb75e8eec28f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\findings.json",
+    "sha256": "d5fee685bbd341d4441f3254e693463d00351a012bcbd5409de8dbb3caae5a37"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\matlab_algebra.mat",
+    "sha256": "074b4a954c222bef630f8787b5928bda1f6ca89d127b1cc338f3b8bef9cc83a9"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\matlab_source_checks.json",
+    "sha256": "c882723708e12ef4634b885f02d9b6de12d1eac8f31370870d1f9beb2f26323e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\print_qa.json",
+    "sha256": "085c278375c4993fc217cacc9dbf3abcf7ae58f8e964d369ca56110f85ba1d28"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\report_qa.json",
+    "sha256": "418898ab43165c81d0a326f0f028e96de58b6f4aa1d6b3bb77a62dcb6db88c55"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\source_protection_after.json",
+    "sha256": "1496ddb95a7bc94f7f90d55d8cd6f20a22ec94d77366a03c0e8e2832ed0b4da4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\results\\source_protection_before.json",
+    "sha256": "2f31b13690ad8799f58d1847b7f3b5df74b5a1c6a18e03edc0bc52a0ae2377c8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\source_manifest.json",
+    "sha256": "bc22e5cf1739bb965758d99c64ff2252fe133caa5ff5401eabd7adbcea222133"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\check_responses.py",
+    "sha256": "52c9c4690e20f289ea8a76758b6832bd09741b6775e50d9baa35a55f0aef531f"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\delay_model.py",
+    "sha256": "cdfa736d793e40acab9a47e68165cd45eb4deceeffe2fbc5f3b57063d790a96a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\model_and_cases.mat",
+    "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\prepare_delays.py",
+    "sha256": "059c029f32b2ff619e05424eb3d7eb803992ebecf095976e9caa458d04740d17"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\delayed\\RUN_DELAY_RESPONSES.m",
+    "sha256": "401bd5e8bfe0d8ec21dd8d1a48a7f6f3d836ccfbfeca370f0176694d46c05dff"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\frame_model.m",
+    "sha256": "ddbd89d1bb3af2e5240355c7facf71445fca2ede2849bed9f53044b3957105a0"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\rths_inputs.m",
+    "sha256": "3d28583cc0cc72316612d66e2f7054681a38658871fad5b8eba5950b154290cd"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\rths_make_simulink.m",
+    "sha256": "3a9dc80a689edf3f7f2a1911ac9db2408585251711e52631c2450315355177bc"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\rths_reduce.m",
+    "sha256": "b55b77493ce53fd1185e3d478f3872fe8191378ae9d26248d115be7dc165b9db"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\full_frame\\rths_simulate.m",
+    "sha256": "a5b550f3eaac376463959bca0e2cf0c8866047fd783a7d7c7ded29921674b389"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\historical\\New_Ns2.m",
+    "sha256": "e4735e9f55f25ee9ed0eb55d585c1d2a97ac84537bf4fc178ff742e3259db18a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\historical\\New_Ns3.m",
+    "sha256": "0415f863b5d1257b8f817af4d0984ef3fb41a0440bf1c5987913622d4c543426"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\historical\\New_Ps2.m",
+    "sha256": "d96be694e8a07f0a6701f12f017d6952e1d53d05419bea280017c5f84d4b85db"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\historical\\PDmonicanshu2.m",
+    "sha256": "adf1c89a4c9443168dcbbbbc5f9aaa1c68ce275c4f49e449c1cbabdef86ff110"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\historical\\PDmonicanshu3.m",
+    "sha256": "c35c7bfb19c3a5e98626ff1a07c14481f53973947e2c382eb81bd9642d9cf40e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\legacy\\calculation.mat",
+    "sha256": "bc11cf0d50870bd11393490f3536986d67366d540f4c4e1e7415aabe0e17f742"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\full_order_consistency_20260916\\sources\\manuscript.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\build_report.py",
+    "sha256": "b3c265cafab0d2c57af6d46a24a16fbb8f0e6ea31710a7264a3eaf1b74fe2368"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\finalize_delivery.py",
+    "sha256": "b86b35ff662b0d8d167bd2d296a8904340f6952c19961dfdbc94053af4d5c984"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\unified_model.py",
+    "sha256": "276f951a3a991719e75fca3c16c7d7f31604deec04b4e5ef3125e59367b279e3"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\verify_error_identities.py",
+    "sha256": "71f6b0c38b1d3f6647ddec50c3ee1f94978283013d3642bc990cf99903887ba8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\VERIFY_UNIFIED.m",
+    "sha256": "1113b9a4deff2404516070f3c07137f789b2856f01a8266b4f126364986a8a13"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\code\\verify_unified.py",
+    "sha256": "5d00fc409686d5e1f5bd0584892a178419765a0b0e373ae01c7b27ee89c166f2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\delivery_manifest.json",
+    "sha256": "7bde8227e7330c436f1572e78ec138bb82e9dcf4edd3894c070b7d1a0cda19ad"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\evidence-map.md",
+    "sha256": "301838a8412977234b7937a9a68ba755bcf9eb4ef30811fc17708d61d524f2c1"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\README.md",
+    "sha256": "c54168f7e20a3d97c01fed3aa7ffe2cfc1d66e544e966143da325b4e30ff4a70"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\browser_qa.json",
+    "sha256": "68d2c8ab3057092c1d311647b493db16199c89b5c28315996c4f0af72fe18dd7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\delivery_checks.json",
+    "sha256": "463e3ec69906863412274c781bcce870a8ad3e48425886b3cd138258d25640f8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\model_summary.json",
+    "sha256": "4a2c1dd177ff693de7389146504446bed0bb9a15a188358e4a71678b41eb17ad"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\operators.mat",
+    "sha256": "2ec2fed404d38c55e8418ebd6a74cf98a07c6de999c6fa1a502abba9550284d2"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\pdf_qa.json",
+    "sha256": "bef7fcca589752c77afee14faceee024405f7b318aac8541f194fd33930ea889"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\protection_after.json",
+    "sha256": "91874d0600ad7fc173e63f191bc54ddaa2221600c71cb62d474b04049e19d652"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\protection_before.json",
+    "sha256": "f70623e57f9fa6ef917fe07b10cc4c10bcd99f8580cc221ab9aac5bd578031f4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\validation_error_identities.json",
+    "sha256": "7c8223fda134242e395de0edb8c789f60b7004f6c99bebf409bd4733ed1fc6d8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\validation_matlab.json",
+    "sha256": "b906e246287fc20ded10c9ed7e05b8da0a9be5d50f33c0f9c870196ef8c73caa"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\results\\validation_python.json",
+    "sha256": "b50a9c8305cef337055c1f3a1f68c9b3d98e6b379bd3db4fbcbdda807c41fea4"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\source_manifest.json",
+    "sha256": "344b97b3d7cc3d3a5dc580b861f2f7a956baa011070904960724b9c6f70e8eea"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\audit_matrices.mat",
+    "sha256": "6d4ef2686258bfb8adb1009dfb8f8a2f9c44ce6b001203fce43e087120713e1b"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\manuscript.tex",
+    "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\model_and_cases.mat",
+    "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\previous_delay_model.py",
+    "sha256": "cdfa736d793e40acab9a47e68165cd45eb4deceeffe2fbc5f3b57063d790a96a"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\prior_findings.json",
+    "sha256": "d5fee685bbd341d4441f3254e693463d00351a012bcbd5409de8dbb3caae5a37"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\sources\\rths_reduce.m",
+    "sha256": "b55b77493ce53fd1185e3d478f3872fe8191378ae9d26248d115be7dc165b9db"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\theory\\unified_full15.pdf",
+    "sha256": "126f1ea3f5b99c5e6b249f1bee2009d51a9ac37a0aa445c0408cd7d25be9fa3e"
+  },
+  {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\audits\\unified_full15_equal_delay_20260916\\theory\\unified_full15.tex",
+    "sha256": "7fe12a8dadddf38b4702bc8d027d3dc8a2a8dac5cb006a90ea55503f6d0d9e80"
+  }
+]

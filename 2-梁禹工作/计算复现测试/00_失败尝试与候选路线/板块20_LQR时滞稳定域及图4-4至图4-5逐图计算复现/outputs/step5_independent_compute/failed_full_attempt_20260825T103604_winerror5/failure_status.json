@@ -1,0 +1,42 @@
+{
+  "schema_version": "board20_step5_failed_full_attempt_v1",
+  "status": "EXECUTION_INTERRUPTED_CHECKPOINT_IO",
+  "evidence_label": "失败尝试",
+  "event_time_from_log": "2026-08-25T10:36:04+08:00",
+  "compute_script_sha256": "AA57AD78ABF3130288F2CEAFB7C60304DBF580537AFEFAE5E0C45087F3B12931",
+  "compute_contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+  "failure_type": "PermissionError",
+  "winerror": 5,
+  "failure_operation": "atomic os.replace of main_guyan_div1 checkpoint.json temporary file",
+  "failure_message": "Access is denied while replacing checkpoint.json.",
+  "scientific_solver_failure": false,
+  "completed_before_interrupt": {
+    "main_ori_div1": {
+      "computed_points": 2077,
+      "expected_points": 2077,
+      "route_outputs_completed": true
+    },
+    "main_guyan_div1": {
+      "computed_points": 725,
+      "expected_points": 2077,
+      "route_outputs_completed": false,
+      "checkpoint_h5_contains_points": 725,
+      "checkpoint_json_preceding_generation_points": 700
+    },
+    "remaining_three_routes": {
+      "computed_points": 0,
+      "route_outputs_completed": false
+    }
+  },
+  "preservation": {
+    "failure_directory": "outputs/step5_independent_compute/failed_full_attempt_20260825T103604_winerror5",
+    "shared_log_relpath": "logs/step5/compute_full.log",
+    "shared_log_sha256_immediately_after_failure_before_retry_append": "5DFEA29C18CDB93E485CCAF7057D144BCABAFA4540B9FC493671008D0E303C82",
+    "note": "The shared log is append-only and later contains the clean retry. The recorded hash is the read-only snapshot observed immediately after this failure."
+  },
+  "recovery_policy": {
+    "old_checkpoint_reused": false,
+    "reason": "The atomic-retry source change creates a new code hash; old-hash checkpoint data must not be mixed into new-hash scientific output.",
+    "action": "Preserve the failed directory, rerun preflight/selftest/pilot, then recompute the full grid from a clean formal output directory."
+  }
+}

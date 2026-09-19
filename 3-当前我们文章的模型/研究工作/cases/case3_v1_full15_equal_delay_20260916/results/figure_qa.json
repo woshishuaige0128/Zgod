@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "figures": [
+    {
+      "file": "01_frequency_convergence.pdf",
+      "sha256": "96b80de920ad75d3584276ac37599212022f863fcdfa52d7d105d28d4c2ba46f",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "02_mode_shapes.pdf",
+      "sha256": "97f30cde369d6dd8b4afc15730291bb596ad2e2f6ddd0117ffcaeaae69d80cb2",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "03_static_internal_load.pdf",
+      "sha256": "6902afd71d5e6284e04859a2383ae4da29e6debccf24a72412b8ff9b8d7a7a51",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "04_frf_normal.pdf",
+      "sha256": "fe77fc096d6db116e92d4b766dd36144f9e9a036453421b8b1eff4f2d04bf9df",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "04_frf_near.pdf",
+      "sha256": "485947fa482882be0191817e89e5cf1211cb21304a5605d8325a7f41e587ee74",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "05_equal_delay_poles.pdf",
+      "sha256": "f6a1e1aa4425bcea0334dc2bc805d2515fcc55757fd483272624802a26e68e1b",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "06_delay_boundary_refinement.pdf",
+      "sha256": "ba2a25c357734730c30e0d1379d04bbae60c225a4c6b881fbdc034898771c884",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "07_earthquake_division1.pdf",
+      "sha256": "d579a3c9928b3746e31788b26149e2aa22efab2150df8985a692be1f5d1fb712",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "08_tone_division1_3.pdf",
+      "sha256": "6c245793f65f1f55c80b2fed6f21c83ad7400e8a3e0a683d85f82c2e34b8d6a9",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "08_tone_division1_4.pdf",
+      "sha256": "a9c500b116e820c0ef02173e272a9d2871c40e3e2392935b1a6d1f214e215b21",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "07_earthquake_division2.pdf",
+      "sha256": "48bfb6a922d21ec70f9578e4fa7c58e27d971ccd2d4e5aa78a0316d613f5e7ce",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "08_tone_division2_1.pdf",
+      "sha256": "289bad5cb47b080a8f44e70fb11d568d679144a8f45a37f17cf87c24e51fd5e9",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "08_tone_division2_2.pdf",
+      "sha256": "c35f350fc982697632c724c0713bbffddc1a75991bbade230ee522d16ee6c378",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "09_earthquake_errors.pdf",
+      "sha256": "e252e56a7c17649db7bf82817369e5e1b92a0d262d7898353c312dd4e73a27c7",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "10_slow_chirp.pdf",
+      "sha256": "163990430a591ed801ea7902c6f30124f143ff0fd2f96aa5966f7986e0281e90",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "11_fast_chirp_division1.pdf",
+      "sha256": "b2787e96662da53dc85d8c2c3ee62830048e6bdecc4f4bcd93e65df3e97267ed",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "11_fast_chirp_division2.pdf",
+      "sha256": "5ed50c8d9f5265cc964a7ea650cbc0afee896c6c41b68aad51b2baae1334651b",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "12_peak_story_drift.pdf",
+      "sha256": "a36ec34f0d6848212de2d47965a18fae1329651afbc28c7adb8d8664fb62adf0",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "13_prediction_identification.pdf",
+      "sha256": "a52706c5fd25425406cfd5b21598a4fbffd9eec680c1122006eacd2cff88b36b",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "14_fixed_gain_supplement.pdf",
+      "sha256": "4f4bbe4d0697558f5a43ff1b2cc56ee93cb1e051b5b11b28640d48e79b7515d1",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "15_critical_frequency.pdf",
+      "sha256": "ef4fdd914b5948a1a35af713300a07d7b0fb66dfee590741784d6e938ed76698",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "16_sweep_speed_check.pdf",
+      "sha256": "8450f721e168343d98f1ec013a0d69b62729dc35cb66f9b3c386cb8c70da6845",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    },
+    {
+      "file": "17_steady_free_detail.pdf",
+      "sha256": "96703799aa2c6a1b307f0b0b36a37b426a78e6c71972275df59f098f720f8269",
+      "visual_review": "PASS; 22 figures in six contact sheets, final focus image inspected at full preview size",
+      "font": "Computer Modern 9pt",
+      "dpi": 600
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "B1_vs_B2": {
+    "actual_paths": [
+      "actuation_and_delay_channels.division_2.coordinates",
+      "actuation_and_delay_channels.division_2.local_selector_zero_based",
+      "controller_channels.division_2.coordinates",
+      "controller_channels.division_2.local_selector_zero_based",
+      "delay_and_feedback.feedback_formula",
+      "delay_and_feedback.feedback_placement",
+      "delay_and_feedback.inside_bundle_rule"
+    ],
+    "expected_paths": [
+      "actuation_and_delay_channels.division_2.coordinates",
+      "actuation_and_delay_channels.division_2.local_selector_zero_based",
+      "controller_channels.division_2.coordinates",
+      "controller_channels.division_2.local_selector_zero_based",
+      "delay_and_feedback.feedback_formula",
+      "delay_and_feedback.feedback_placement",
+      "delay_and_feedback.inside_bundle_rule"
+    ],
+    "missing_expected_paths": [],
+    "pass": true,
+    "unexpected_paths": []
+  },
+  "B1_vs_B3": {
+    "actual_paths": [
+      "delay_and_feedback.feedback_formula",
+      "delay_and_feedback.feedback_placement",
+      "delay_and_feedback.inside_bundle_rule"
+    ],
+    "expected_paths": [
+      "delay_and_feedback.feedback_formula",
+      "delay_and_feedback.feedback_placement",
+      "delay_and_feedback.inside_bundle_rule"
+    ],
+    "missing_expected_paths": [],
+    "pass": true,
+    "unexpected_paths": []
+  },
+  "B2_vs_B3": {
+    "actual_paths": [
+      "actuation_and_delay_channels.division_2.coordinates",
+      "actuation_and_delay_channels.division_2.local_selector_zero_based",
+      "controller_channels.division_2.coordinates",
+      "controller_channels.division_2.local_selector_zero_based"
+    ],
+    "expected_paths": [
+      "actuation_and_delay_channels.division_2.coordinates",
+      "actuation_and_delay_channels.division_2.local_selector_zero_based",
+      "controller_channels.division_2.coordinates",
+      "controller_channels.division_2.local_selector_zero_based"
+    ],
+    "missing_expected_paths": [],
+    "pass": true,
+    "unexpected_paths": []
+  }
+}

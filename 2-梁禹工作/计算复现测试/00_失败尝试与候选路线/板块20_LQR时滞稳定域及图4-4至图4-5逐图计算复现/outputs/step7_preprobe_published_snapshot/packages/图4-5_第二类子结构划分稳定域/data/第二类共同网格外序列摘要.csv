@@ -1,0 +1,3 @@
+method,variable,raw_rows,raw_columns,common_grid_cells,outside_common_grid_cells,outside_nonzero_sequence_cells,outside_zero_cells,outside_strict_stable_cells,sequence_values_exact_1_to_28,comparison_disposition
+Craig-Bampton,stab_C,45,95,2077,2198,28,2170,0,True,EXCLUDED_FROM_COMMON_GRID_NOT_RHO
+Guyan,stab_g,41,95,2077,1818,28,1790,0,True,EXCLUDED_FROM_COMMON_GRID_NOT_RHO

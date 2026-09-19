@@ -1,0 +1,207 @@
+{
+  "completed_point_count": 10385,
+  "contracts_status_sha256": "EA0D0CCDE62F82501F60CEF4A628F47947BD1FAA1A367CD8C9C34359E109CBC4",
+  "expected_point_count": 10385,
+  "fail_point_count": 0,
+  "input_identity": {
+    "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+    "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+    "workspace_sha256": {
+      "alt_guyan_div1_stable_full_ps3": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "main_guyan_div1": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "main_guyan_div2": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "main_ori_div1": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "main_ori_div2": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+    }
+  },
+  "mode": "full",
+  "noncomputable_failed_routes": [
+    {
+      "route_id": "main_cb_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "main_cb_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "energy_guyan_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "energy_guyan_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    }
+  ],
+  "pass_point_count": 10385,
+  "route_count": 5,
+  "route_statuses": [
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 2077,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 2077,
+      "expected_points_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 2.3573449296398466e-13,
+      "max_compact_polynomial_residual": 2.3573449296398466e-13,
+      "mode": "full",
+      "pass_point_count": 2077,
+      "point_summary_sha256": "40CB37669C97E6502EF75D86CA77CF8C4F5722DFBB274F2687E6CE0432E9E503",
+      "rho_max": 1.0170454259293837,
+      "rho_min": 0.9991697741274307,
+      "roots_h5_sha256": "B26E0CFECC8E0B3F374BE937267BCC5FC9C66AE323146EA727E15401024FBF2D",
+      "route_id": "main_ori_div1",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 2077,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 2077,
+      "expected_points_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 7.101667279240747e-09,
+      "max_compact_polynomial_residual": 7.104317597797595e-09,
+      "mode": "full",
+      "pass_point_count": 2077,
+      "point_summary_sha256": "198060C688B2308FCF271D44B5A097987A9E43F7894351AF36F0380747DB49CF",
+      "rho_max": 1.0111448918202315,
+      "rho_min": 0.9991641004386275,
+      "roots_h5_sha256": "96546E55D18D2E81D027A49C0C87B34C0CDB70DDC226ECF98CBB65A3BF06F857",
+      "route_id": "main_guyan_div1",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 2077,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 2077,
+      "expected_points_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 5.246331150910536e-09,
+      "max_compact_polynomial_residual": 5.246331150995178e-09,
+      "mode": "full",
+      "pass_point_count": 2077,
+      "point_summary_sha256": "343A98B122D0AA04A4654E1EB7E44C44123607DFA6F581519F340A6269811D50",
+      "rho_max": 1.0513836883833476,
+      "rho_min": 0.9984119710423955,
+      "roots_h5_sha256": "C0AA3210C02DB1708F23F211ABCD3AE6D8D922818F3F9D01E7F13C3645514507",
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 2077,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 2077,
+      "expected_points_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 5.152133680136634e-09,
+      "max_compact_polynomial_residual": 5.2467552244894574e-09,
+      "mode": "full",
+      "pass_point_count": 2077,
+      "point_summary_sha256": "DF4C30ACC58719D16943AEB780D996B74F1A7FA21AC6B0C955E10EF3C39F90C6",
+      "rho_max": 1.034499241290367,
+      "rho_min": 0.986692287490048,
+      "roots_h5_sha256": "1A13F06E278615035411FDE77DC5D7ECF390538BCE8D2BA2889CE4B696D7D07B",
+      "route_id": "main_ori_div2",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 2077,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 2077,
+      "expected_points_sha256": "8786966A2E33B09BF11DA543CF0CA8C5FDCF5C77A16F784F3DAF9B4C784B7CED",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 5.152133680136634e-09,
+      "max_compact_polynomial_residual": 5.2467552244894574e-09,
+      "mode": "full",
+      "pass_point_count": 2077,
+      "point_summary_sha256": "8CFC5132BA9E3813A1A1EA80A06713800C8B7B010E95B47F75118A6CDEE80ECA",
+      "rho_max": 1.034499241290367,
+      "rho_min": 0.986692287490048,
+      "roots_h5_sha256": "2F1500FD1F7789795F4CD1B73997877D16428942CF266158422D146195B98C7F",
+      "route_id": "main_guyan_div2",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21"
+    }
+  ],
+  "schema_version": "board20_step5_run_status_v1",
+  "scientific_contracts": {
+    "manuscript_0824_route": {
+      "borrowing_policy": "Do not substitute any historical outside-H feedback matrix or author-workspace al.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique Ba and actuator-input unit",
+        "complete psi1/psi11 actuator and psi6 reconstruction coordinate map",
+        "executable scalar alpha value tied to the manuscript route",
+        "unambiguous full-state ordering and division matrix entry"
+      ],
+      "required_interface": [
+        "M",
+        "C",
+        "K",
+        "alpha_scalar",
+        "dt",
+        "Ba",
+        "Kx",
+        "Kv",
+        "Sa",
+        "physical_delay_matrices",
+        "channel_coordinate_map",
+        "input_unit",
+        "state_order",
+        "division_coordinate_map"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "master_thesis_route": {
+      "borrowing_policy": "Do not substitute the author program's discrete K_lqr, matrix al, or five-DOF workspace.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique input unit convention",
+        "unique control-input matrix B",
+        "second-division three-master-DOF matrix entry",
+        "executable scalar alpha value tied to the thesis route"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "sealed_author_file_identity_routes": {
+      "evidence_label": "计算级复现候选",
+      "route_count": 5,
+      "status": "CALCULABLE"
+    }
+  },
+  "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+  "status": "PASS"
+}

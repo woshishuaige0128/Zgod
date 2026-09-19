@@ -1,0 +1,28 @@
+{
+  "overall_status": "PASS",
+  "evidence_level": "PLOT_LEVEL_VECTOR_TRACE_ONLY",
+  "calculation_reproduction": false,
+  "source_pdf_vector_grid_path_point_match_100_percent": true,
+  "source_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+  "check_count": 17,
+  "pass_count": 17,
+  "fail_count": 0,
+  "figure_hashes": [
+    {
+      "file": "figures\\图4-4_第一类子结构划分稳定域_论文矢量边界逐点复刻.pdf",
+      "sha256": "5F0E91E1A1BD3C821657D1AA82C90269BC14B4E45C4B77D23240D4F8463396A6"
+    },
+    {
+      "file": "figures\\图4-4_第一类子结构划分稳定域_论文矢量边界逐点复刻.png",
+      "sha256": "3F07D22AF155E53F69F44BB06C7E76DF921269C5BF70A187AE58EDAA43916E72"
+    },
+    {
+      "file": "figures\\图4-5_第二类子结构划分稳定域_论文矢量边界逐点复刻.pdf",
+      "sha256": "1DA6FB389941CF5ECCB727F3539EA5E310FAB088968F7E3A1E182BFC7FE37D94"
+    },
+    {
+      "file": "figures\\图4-5_第二类子结构划分稳定域_论文矢量边界逐点复刻.png",
+      "sha256": "18150201D7296A784B11FDE3331A72356D28FB77E68E74146D9D1E669125D12E"
+    }
+  ]
+}

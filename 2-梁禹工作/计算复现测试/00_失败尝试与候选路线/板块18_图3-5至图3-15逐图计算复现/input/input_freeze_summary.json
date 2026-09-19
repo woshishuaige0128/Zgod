@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-08-24T18:23:55.987672+00:00",
+  "source_count": 80,
+  "copy_count": 80,
+  "match_count": 80,
+  "copied_count": 1,
+  "reused_match_count": 79,
+  "all_match": true,
+  "thesis_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1",
+  "thesis_hash_ok": true,
+  "manifest_sha256": "C3622F98E9CBCD5C1CC8B45C7225027F29F8BB6556FDFF0ACD199AD0F82185BB"
+}

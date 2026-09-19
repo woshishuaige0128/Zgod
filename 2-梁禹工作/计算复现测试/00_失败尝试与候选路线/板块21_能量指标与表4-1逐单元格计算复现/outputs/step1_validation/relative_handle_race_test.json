@@ -1,0 +1,147 @@
+{
+  "schema_version": "BOARD21_RELATIVE_HANDLE_RACE_TEST_V1",
+  "overall_status": "PASS",
+  "module_results": [
+    {
+      "module_role": "freeze",
+      "module_relative_path": "code/freeze_board21_inputs.py",
+      "module_sha256": "93096C845CF6A1ABDEA1CADD2F37086CE4C464BD66576A343E317EE3A375385A",
+      "status": "PASS",
+      "scenarios": [
+        {
+          "timing": "during_ancestor_chain_acquisition",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": false,
+          "attack_completed": true,
+          "operation_succeeded": false,
+          "operation_error_type": "RuntimeError",
+          "path_mismatch_detected": true,
+          "replacement_tree_not_written": true,
+          "renamed_original_tree_not_written": true,
+          "replacement_sentinel_unchanged": true,
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "board_root/sentinel.bin"
+          ],
+          "safe_outcome": true
+        },
+        {
+          "timing": "before_temporary_open",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": false,
+          "attack_completed": true,
+          "operation_succeeded": false,
+          "operation_error_type": "RuntimeError",
+          "path_mismatch_detected": true,
+          "payload_at_original_path": false,
+          "payload_at_renamed_original_object": false,
+          "replacement_directory_not_written": true,
+          "replacement_sentinel_unchanged": true,
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "locked_parent/sentinel.bin"
+          ],
+          "safe_outcome": true
+        },
+        {
+          "timing": "after_temporary_open",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": true,
+          "attack_completed": false,
+          "operation_succeeded": true,
+          "operation_error_type": "",
+          "path_mismatch_detected": false,
+          "payload_at_original_path": true,
+          "payload_at_renamed_original_object": false,
+          "replacement_directory_not_written": "NOT_CREATED",
+          "replacement_sentinel_unchanged": "NOT_CREATED",
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "locked_parent/result.bin"
+          ],
+          "safe_outcome": true
+        }
+      ]
+    },
+    {
+      "module_role": "validator",
+      "module_relative_path": "code/validate_board21_step1.py",
+      "module_sha256": "A9B38D2949FA351F35A1F8443E368244F46CC55DF9F057DE3047A1433DC621BB",
+      "status": "PASS",
+      "scenarios": [
+        {
+          "timing": "during_ancestor_chain_acquisition",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": false,
+          "attack_completed": true,
+          "operation_succeeded": false,
+          "operation_error_type": "RuntimeError",
+          "path_mismatch_detected": true,
+          "replacement_tree_not_written": true,
+          "renamed_original_tree_not_written": true,
+          "replacement_sentinel_unchanged": true,
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "board_root/sentinel.bin"
+          ],
+          "safe_outcome": true
+        },
+        {
+          "timing": "before_temporary_open",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": false,
+          "attack_completed": true,
+          "operation_succeeded": false,
+          "operation_error_type": "RuntimeError",
+          "path_mismatch_detected": true,
+          "payload_at_original_path": false,
+          "payload_at_renamed_original_object": false,
+          "replacement_directory_not_written": true,
+          "replacement_sentinel_unchanged": true,
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "locked_parent/sentinel.bin"
+          ],
+          "safe_outcome": true
+        },
+        {
+          "timing": "after_temporary_open",
+          "status": "PASS",
+          "attack_attempted": true,
+          "attack_blocked_by_windows": true,
+          "attack_completed": false,
+          "operation_succeeded": true,
+          "operation_error_type": "",
+          "path_mismatch_detected": false,
+          "payload_at_original_path": true,
+          "payload_at_renamed_original_object": false,
+          "replacement_directory_not_written": "NOT_CREATED",
+          "replacement_sentinel_unchanged": "NOT_CREATED",
+          "temporary_file_leak_absent": true,
+          "actual_files": [
+            "locked_parent/result.bin"
+          ],
+          "safe_outcome": true
+        }
+      ]
+    }
+  ],
+  "boundary_protocol_result": {
+    "status": "PASS",
+    "checks": {
+      "junction_created": true,
+      "target_removed": true,
+      "dangling_entry_lexists": true,
+      "dangling_entry_exists_is_false": true,
+      "nofollow_reparse_detected": true,
+      "named_boundary_detected": true,
+      "junction_cleanup_complete": true
+    },
+    "creation_returncode": 0
+  }
+}

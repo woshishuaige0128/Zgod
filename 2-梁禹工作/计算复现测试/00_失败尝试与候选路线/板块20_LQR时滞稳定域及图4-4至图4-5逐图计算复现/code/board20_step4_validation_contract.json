@@ -1,0 +1,472 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "board20_step4_validation_contract_v1",
+  "title": "板块20最小步骤4路线清单与网格验收合同",
+  "description": "本合同只定义独立验收器所需接口。作者原代码活动点、注释循环意图点和同公式公共网格补算点必须分层标记；历史0/0.999掩膜及1至28索引序列不得作为连续谱半径输入。",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "routes",
+    "failed_routes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "board20_step4_route_manifest_v1"
+    },
+    "output_root_relpath": {
+      "type": "string",
+      "default": "outputs/step4_rho_grids"
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/route"
+      }
+    },
+    "failed_routes": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "$ref": "#/$defs/failedRoute"
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "coordinate": {
+      "description": "MATLAB 1-based坐标，顺序固定为[l,j]。",
+      "oneOf": [
+        {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        {
+          "type": "object",
+          "required": [
+            "l",
+            "j"
+          ],
+          "properties": {
+            "l": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "j": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "provenance": {
+              "enum": [
+                "ORIGINAL_ACTIVE_POINT",
+                "COMMENTED_AUTHOR_INTENT",
+                "SAME_FORMULA_SUPPLEMENT"
+              ]
+            },
+            "grids": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "author_code_grid",
+                  "common_grid"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "fileContract": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        }
+      }
+    },
+    "grid": {
+      "type": "object",
+      "required": [
+        "output_relpath",
+        "expected_shape",
+        "expected_point_count"
+      ],
+      "properties": {
+        "output_relpath": {
+          "type": "string"
+        },
+        "expected_shape": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "expected_point_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/coordinate"
+          }
+        },
+        "index_base": {
+          "const": 1
+        },
+        "status_code_map": {
+          "type": "object",
+          "required": [
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "provenance_code_map": {
+          "type": "object",
+          "required": [
+            "ORIGINAL_ACTIVE_POINT",
+            "COMMENTED_AUTHOR_INTENT",
+            "SAME_FORMULA_SUPPLEMENT",
+            "FAIL"
+          ]
+        },
+        "mat_variables": {
+          "type": "object",
+          "properties": {
+            "rho": {
+              "type": "string"
+            },
+            "stable": {
+              "type": "string"
+            },
+            "critical": {
+              "type": "string"
+            },
+            "residual": {
+              "type": "string"
+            },
+            "point_status_code": {
+              "type": "string"
+            },
+            "diagnostic": {
+              "type": "string"
+            },
+            "provenance_code": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "route": {
+      "type": "object",
+      "required": [
+        "route_id",
+        "division",
+        "route_formula",
+        "role",
+        "source_step2_relpath",
+        "workspace_relpath",
+        "run_config_relpath",
+        "run_status_relpath",
+        "source_m_relpath",
+        "active_points",
+        "commented_author_intent_points",
+        "supplemental_points",
+        "active_regions",
+        "commented_author_intent_regions",
+        "file_contracts",
+        "author_code_grid",
+        "common_grid"
+      ],
+      "properties": {
+        "route_id": {
+          "enum": [
+            "main_ori_div1",
+            "main_guyan_div1",
+            "main_ori_div2",
+            "main_guyan_div2",
+            "alt_guyan_div1_stable_full_ps3"
+          ]
+        },
+        "division": {
+          "enum": [
+            "div1",
+            "div2",
+            "DIV1",
+            "DIV2",
+            1,
+            2
+          ]
+        },
+        "route_formula": {
+          "enum": [
+            "ORI_DIV1_H_RIGHT",
+            "GUYAN_DIV1_H_LEFT",
+            "DIV2_H_LEFT_FEEDBACK_OUTSIDE"
+          ]
+        },
+        "role": {
+          "enum": [
+            "PRIMARY",
+            "ALTERNATIVE_NOT_PRIMARY"
+          ]
+        },
+        "source_step2_relpath": {
+          "type": "string"
+        },
+        "workspace_relpath": {
+          "type": "string"
+        },
+        "run_config_relpath": {
+          "type": "string"
+        },
+        "run_status_relpath": {
+          "type": "string"
+        },
+        "source_m_relpath": {
+          "type": "string"
+        },
+        "active_points": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/coordinate"
+              }
+            }
+          ]
+        },
+        "supplemental_points": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/coordinate"
+              }
+            }
+          ]
+        },
+        "commented_author_intent_points": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "active_regions": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/region"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/region"
+              }
+            }
+          ]
+        },
+        "commented_author_intent_regions": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/region"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/region"
+              }
+            }
+          ]
+        },
+        "file_contracts": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/fileContract"
+          }
+        },
+        "author_code_grid": {
+          "$ref": "#/$defs/grid"
+        },
+        "common_grid": {
+          "$ref": "#/$defs/grid"
+        }
+      }
+    },
+    "region": {
+      "type": "object",
+      "required": [
+        "l_start",
+        "l_end",
+        "j_start",
+        "j_end",
+        "provenance",
+        "grids"
+      ],
+      "properties": {
+        "l_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "l_end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "j_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "j_end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "provenance": {
+          "enum": [
+            "ORIGINAL_ACTIVE_POINT",
+            "COMMENTED_AUTHOR_INTENT",
+            "SAME_FORMULA_SUPPLEMENT"
+          ]
+        },
+        "grids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "author_code_grid",
+              "common_grid"
+            ]
+          }
+        }
+      }
+    },
+    "failedRoute": {
+      "type": "object",
+      "required": [
+        "route_id",
+        "step2_replicate",
+        "execution_status",
+        "error_message",
+        "run_config_relpath",
+        "run_config_sha256",
+        "run_status_relpath",
+        "run_status_sha256",
+        "workspace_relpath",
+        "workspace_sha256",
+        "rho_grid_policy"
+      ],
+      "properties": {
+        "route_id": {
+          "enum": [
+            "main_cb_div1",
+            "main_cb_div2",
+            "energy_guyan_div1",
+            "energy_guyan_div2"
+          ]
+        },
+        "step2_replicate": {
+          "type": "string"
+        },
+        "execution_status": {
+          "const": "EXECUTION_FAIL"
+        },
+        "error_message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "run_config_relpath": {
+          "type": "string"
+        },
+        "run_config_sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        },
+        "run_status_relpath": {
+          "type": "string"
+        },
+        "run_status_sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        },
+        "workspace_relpath": {
+          "type": "string"
+        },
+        "workspace_sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        },
+        "rho_grid_policy": {
+          "const": "DO_NOT_CREATE"
+        }
+      }
+    }
+  },
+  "x-validation-semantics": {
+    "coordinate_order": "MATLAB 1-based [l,j]",
+    "author_expected_points": {
+      "div1": 441,
+      "div2": 1517
+    },
+    "common_expected_shape": [
+      31,
+      67
+    ],
+    "common_expected_points": 2077,
+    "stable": "point_status == PASS and isfinite(rho) and rho > 0 and rho < 1",
+    "critical": "point_status == PASS and abs(rho - 1) <= 1e-8",
+    "pass_residual_limit": 1e-8,
+    "original_active_rho_abs_tolerance": 1e-8,
+    "forbidden_rho_encodings": [
+      "historical 0/0.999 mask",
+      "ordered integer sequence 1..28"
+    ],
+    "mat_support": [
+      "MATLAB v5-v7 via scipy.io.loadmat",
+      "MATLAB v7.3 HDF5 via h5py with MATLAB axis restoration"
+    ]
+  }
+}

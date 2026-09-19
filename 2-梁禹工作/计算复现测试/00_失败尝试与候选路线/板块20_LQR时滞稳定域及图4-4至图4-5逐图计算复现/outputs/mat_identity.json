@@ -1,0 +1,976 @@
+{
+  "schema": "board20_mat_identity_v1",
+  "created_at": "2026-08-25T04:20:08.178854+08:00",
+  "input_boundary": "frozen input only",
+  "relevant_mat_count": 17,
+  "variable_count": 53,
+  "duplicate_file_groups": [
+    {
+      "sha256": "2FA0817CCA2A50DB630DDC4743EA9DC7F7EA1AD1703CAD85D7C1E821066A48AB",
+      "count": 4,
+      "members": [
+        "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+        "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+        "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+        "historical_plotting/作者绘图目录/origin_lqr_3.mat"
+      ]
+    },
+    {
+      "sha256": "69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_3.mat",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat"
+      ]
+    },
+    {
+      "sha256": "9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_2.mat",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat"
+      ]
+    }
+  ],
+  "duplicate_array_groups": [
+    {
+      "sha256": "130790CFD9B66EAEFF5A416E9F350294AB03A4EB062E6DAE579291FE9C9A186E",
+      "count": 4,
+      "members": [
+        "historical_plotting/作者绘图目录/guyan_lqr_2.mat::stab_o",
+        "historical_plotting/作者绘图目录/lqr_2.mat::stab_o",
+        "historical_plotting/作者绘图目录/origin_lqr_2.mat::stab_o",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat::stab_o"
+      ]
+    },
+    {
+      "sha256": "401FD1F78CB8956C39C4EBA936CFB4DDA4C47A4B97941020823F8B57AF554A0F",
+      "count": 2,
+      "members": [
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_清洗数据.mat::dt_seconds",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_清洗数据.mat::dt_seconds"
+      ]
+    },
+    {
+      "sha256": "4F9011EFF14BFA8C62CADF58816914F9711E01FE01581A58B06A98B2B1D7B450",
+      "count": 2,
+      "members": [
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_清洗数据.mat::common_grid_shape",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_清洗数据.mat::common_grid_shape"
+      ]
+    },
+    {
+      "sha256": "60A2C952E9A8989A6A03C3E61426C97A7B30F560D0BBF415907BC60A5AE40B82",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_3.mat::stab_C",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat::stab_C"
+      ]
+    },
+    {
+      "sha256": "982E0C1BE893C8AB17FB246B4C0305472F3F589CD790CDDEFBC680559BE50C74",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_2.mat::stab_C",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat::stab_C"
+      ]
+    },
+    {
+      "sha256": "A8CE6F7DC18649E8DE2F198A8CE76AAAB373FAB90FD514E1C78ADB93FC5BF4E5",
+      "count": 2,
+      "members": [
+        "historical_stability_route/稳定域/stab_2_guyan.mat::stab",
+        "historical_stability_route/稳定域/stab_guyan_lqr.mat::stab"
+      ]
+    },
+    {
+      "sha256": "A9DEDE522941CA94FF7C1CBB620093FAC5CF2792761A1E87B3C058276B6EB52D",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_3.mat::stab_o",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat::stab_o"
+      ]
+    },
+    {
+      "sha256": "C3B4B4A5D3175F2D352B6AF806CC00E53E7465FA00E3775C09EADB62874798B5",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_2.mat::stab_g",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第一类划分最终绘图数据_lqr_2.mat::stab_g"
+      ]
+    },
+    {
+      "sha256": "DEDE0C59E17664D78FF936C1932802566B578A9342575C36BD7EC56A71CD0993",
+      "count": 4,
+      "members": [
+        "historical_plotting/作者绘图目录/CB_lqr_2.mat::stab",
+        "historical_plotting/作者绘图目录/CB_lqr_3.mat::stab",
+        "historical_plotting/作者绘图目录/guyan_lqr_3.mat::stab",
+        "historical_plotting/作者绘图目录/origin_lqr_3.mat::stab"
+      ]
+    },
+    {
+      "sha256": "E24897A4AE1632A4C47376CDBF977B9FF53C6A4CD764D56DF057F7D01447A769",
+      "count": 2,
+      "members": [
+        "historical_plotting/作者绘图目录/lqr_3.mat::stab_g",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/原始来源副本/第二类划分最终绘图数据_lqr_3.mat::stab_g"
+      ]
+    },
+    {
+      "sha256": "F67EC58CF658185C4D13643C153A7CAD125039DA51B82ACE4FE7BE97612B9AE9",
+      "count": 2,
+      "members": [
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-4_第一类子结构划分稳定域_清洗数据.mat::plot_index_offset",
+        "plotting_baseline/第4章_缩聚对试验稳定性的影响/输入数据/图4-5_第二类子结构划分稳定域_清洗数据.mat::plot_index_offset"
+      ]
+    }
+  ],
+  "final_mask_summary": {
+    "lqr_2": {
+      "stab_o": {
+        "shape": [
+          31,
+          67
+        ],
+        "stable_points_0_lt_x_lt_1": 1454,
+        "unique": [
+          0.0,
+          0.999
+        ]
+      },
+      "stab_C": {
+        "shape": [
+          31,
+          67
+        ],
+        "stable_points_0_lt_x_lt_1": 1175,
+        "unique": [
+          0.0,
+          0.999
+        ]
+      },
+      "stab_g": {
+        "shape": [
+          31,
+          67
+        ],
+        "stable_points_0_lt_x_lt_1": 1044,
+        "unique": [
+          0.0,
+          0.999
+        ]
+      }
+    },
+    "lqr_3": {
+      "stab_o": {
+        "shape": [
+          31,
+          67
+        ],
+        "stable_points_common_31x67": 1247,
+        "min": 0.0,
+        "max": 0.999
+      },
+      "stab_C": {
+        "shape": [
+          45,
+          95
+        ],
+        "stable_points_common_31x67": 1072,
+        "min": 0.0,
+        "max": 28.0
+      },
+      "stab_g": {
+        "shape": [
+          41,
+          95
+        ],
+        "stable_points_common_31x67": 929,
+        "min": 0.0,
+        "max": 28.0
+      }
+    }
+  },
+  "plotting_chain_checks": [
+    {
+      "check": "4-4:共同网格",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": [
+        31,
+        67
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          64,
+          2
+        ],
+        "computed_shape": [
+          64,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          64,
+          2
+        ],
+        "computed_shape": [
+          64,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          64,
+          2
+        ],
+        "computed_shape": [
+          64,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:boundary_csv",
+      "expected": [
+        64,
+        6
+      ],
+      "actual": [
+        64,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-4:原结构:stable_count_stats_csv",
+      "expected": 1454,
+      "actual": 1454,
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          55,
+          2
+        ],
+        "computed_shape": [
+          55,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          55,
+          2
+        ],
+        "computed_shape": [
+          55,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          55,
+          2
+        ],
+        "computed_shape": [
+          55,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:boundary_csv",
+      "expected": [
+        55,
+        6
+      ],
+      "actual": [
+        55,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-4:Craig-Bampton:stable_count_stats_csv",
+      "expected": 1175,
+      "actual": 1175,
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          52,
+          2
+        ],
+        "computed_shape": [
+          52,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          52,
+          2
+        ],
+        "computed_shape": [
+          52,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          52,
+          2
+        ],
+        "computed_shape": [
+          52,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:boundary_csv",
+      "expected": [
+        52,
+        6
+      ],
+      "actual": [
+        52,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-4:Guyan:stable_count_stats_csv",
+      "expected": 1044,
+      "actual": 1044,
+      "passed": true
+    },
+    {
+      "check": "4-5:共同网格",
+      "expected": [
+        31,
+        67
+      ],
+      "actual": [
+        31,
+        67
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          57,
+          2
+        ],
+        "computed_shape": [
+          57,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          57,
+          2
+        ],
+        "computed_shape": [
+          57,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          57,
+          2
+        ],
+        "computed_shape": [
+          57,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:boundary_csv",
+      "expected": [
+        57,
+        6
+      ],
+      "actual": [
+        57,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-5:原结构:stable_count_stats_csv",
+      "expected": 1247,
+      "actual": 1247,
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          54,
+          2
+        ],
+        "computed_shape": [
+          54,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          54,
+          2
+        ],
+        "computed_shape": [
+          54,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          54,
+          2
+        ],
+        "computed_shape": [
+          54,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:boundary_csv",
+      "expected": [
+        54,
+        6
+      ],
+      "actual": [
+        54,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-5:Craig-Bampton:stable_count_stats_csv",
+      "expected": 1072,
+      "actual": 1072,
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:stable_mask",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          31,
+          67
+        ],
+        "computed_shape": [
+          31,
+          67
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:boundary_plot_index",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          51,
+          2
+        ],
+        "computed_shape": [
+          51,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:boundary_delay_steps",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          51,
+          2
+        ],
+        "computed_shape": [
+          51,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:boundary_delay_ms",
+      "expected": "computed_from_raw_mask",
+      "actual": {
+        "stored_shape": [
+          51,
+          2
+        ],
+        "computed_shape": [
+          51,
+          2
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:boundary_csv",
+      "expected": [
+        51,
+        6
+      ],
+      "actual": [
+        51,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "check": "4-5:Guyan:stable_count_stats_csv",
+      "expected": 929,
+      "actual": 929,
+      "passed": true
+    },
+    {
+      "check": "4-5:共同网格外异常序列",
+      "expected": "两段1..28且共同网格外0<x<1点数均为0",
+      "actual": {
+        "stab_C_row36_cols68_95_is_1_to_28": true,
+        "stab_g_row32_cols68_95_is_1_to_28": true,
+        "stab_C_outside_common_grid_between_zero_one_count": 0,
+        "stab_g_outside_common_grid_between_zero_one_count": 0
+      },
+      "passed": true
+    }
+  ],
+  "plotting_chain_passed": 39,
+  "plotting_chain_checked": 39,
+  "anomalies": {
+    "stab_C_row36_cols68_95_is_1_to_28": true,
+    "stab_g_row32_cols68_95_is_1_to_28": true,
+    "stab_C_outside_common_grid_between_zero_one_count": 0,
+    "stab_g_outside_common_grid_between_zero_one_count": 0
+  },
+  "continuous_candidate_comparisons": [
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-4:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 284,
+      "match_fraction": 0.8369690011481057,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-4:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 335,
+      "match_fraction": 0.8076923076923077,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-4:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 350,
+      "match_fraction": 0.799081515499426,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-5:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 348,
+      "match_fraction": 0.8002296211251435,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-5:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 382,
+      "match_fraction": 0.7807118254879448,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/origin_lqr_3.mat",
+      "target": "4-5:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 443,
+      "match_fraction": 0.7456946039035591,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-4:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 284,
+      "match_fraction": 0.8369690011481057,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-4:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 335,
+      "match_fraction": 0.8076923076923077,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-4:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 350,
+      "match_fraction": 0.799081515499426,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-5:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 348,
+      "match_fraction": 0.8002296211251435,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-5:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 382,
+      "match_fraction": 0.7807118254879448,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/guyan_lqr_3.mat",
+      "target": "4-5:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 443,
+      "match_fraction": 0.7456946039035591,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-4:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 284,
+      "match_fraction": 0.8369690011481057,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-4:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 335,
+      "match_fraction": 0.8076923076923077,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-4:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 350,
+      "match_fraction": 0.799081515499426,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-5:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 348,
+      "match_fraction": 0.8002296211251435,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-5:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 382,
+      "match_fraction": 0.7807118254879448,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_2.mat",
+      "target": "4-5:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 443,
+      "match_fraction": 0.7456946039035591,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-4:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 284,
+      "match_fraction": 0.8369690011481057,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-4:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 335,
+      "match_fraction": 0.8076923076923077,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-4:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 350,
+      "match_fraction": 0.799081515499426,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-5:stab_o",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 348,
+      "match_fraction": 0.8002296211251435,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-5:stab_C",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 382,
+      "match_fraction": 0.7807118254879448,
+      "scientific_status": "MISMATCH"
+    },
+    {
+      "candidate": "historical_plotting/作者绘图目录/CB_lqr_3.mat",
+      "target": "4-5:stab_g",
+      "comparison_shape": [
+        26,
+        67
+      ],
+      "mismatch_points": 443,
+      "match_fraction": 0.7456946039035591,
+      "scientific_status": "MISMATCH"
+    }
+  ],
+  "minimum_continuous_candidate_mismatch_points": 284,
+  "status": "PASS"
+}

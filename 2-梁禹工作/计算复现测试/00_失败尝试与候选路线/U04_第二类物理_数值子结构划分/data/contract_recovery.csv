@@ -1,0 +1,11 @@
+﻿division,quantity,value,interpretation,evidence,status
+1,floor_original_dofs,"[1,6,11]",三层水平位移的原始自由度,input/response_chain/regenerate_chapter3_data.m:283,PASS
+1,floor_rows_in_ordered_system,"[1,2,3]",按 order 定位三层水平自由度,input/response_chain/regenerate_chapter3_data.m:284,PASS
+1,guyan_floor_recovery,P*T,从 Guyan 广义坐标恢复三层物理位移,input/response_chain/regenerate_chapter3_data.m:287,PASS
+1,cb_floor_recovery,P*Tcb,从 Craig-Bampton 广义坐标恢复三层物理位移,input/response_chain/regenerate_chapter3_data.m:288,PASS
+1,psi6_rule,"{""role"":""master"",""ordered_position"":2,""forced"":true,""recovered_in_floor_outputs"":true}",psi6 是组合主自由度并直接保留,input/response_chain/regenerate_chapter3_data.m:248;input/response_chain/regenerate_chapter3_data.m:249;input/response_chain/regenerate_chapter3_data.m:250;input/response_chain/regenerate_chapter3_data.m:287;input/response_chain/regenerate_chapter3_data.m:288,PASS
+2,floor_original_dofs,"[1,6,11]",三层水平位移的原始自由度,input/response_chain/regenerate_chapter3_data.m:283,PASS
+2,floor_rows_in_ordered_system,"[1,6,2]",按 order 定位三层水平自由度,input/response_chain/regenerate_chapter3_data.m:284,PASS
+2,guyan_floor_recovery,P*T,从 Guyan 广义坐标恢复三层物理位移,input/response_chain/regenerate_chapter3_data.m:287,PASS
+2,cb_floor_recovery,P*Tcb,从 Craig-Bampton 广义坐标恢复三层物理位移,input/response_chain/regenerate_chapter3_data.m:288,PASS
+2,psi6_rule,"{""role"":""slave_recovered"",""ordered_position"":6,""forced"":true,""recovered_in_floor_outputs"":true}",psi6 是从自由度，但通过 P*T/P*Tcb 恢复且仍计入惯性力掩码,input/response_chain/regenerate_chapter3_data.m:252;input/response_chain/regenerate_chapter3_data.m:253;input/response_chain/regenerate_chapter3_data.m:254;input/response_chain/regenerate_chapter3_data.m:287;input/response_chain/regenerate_chapter3_data.m:288,PASS

@@ -1,0 +1,1082 @@
+{
+  "status": "PASS",
+  "model": {
+    "assembled_K": 0.0,
+    "assembled_M": 0.0,
+    "assembled_C": 0.0,
+    "care_residual": 1.7715549707036917e-13,
+    "gain": [
+      [
+        11.440297459847402,
+        -0.010652177618556849,
+        14.411430029172708,
+        8.436237365123988
+      ],
+      [
+        47.63957186503307,
+        13.47179306460911,
+        20.309450241647976,
+        44.215310746897295
+      ]
+    ],
+    "model_orders": {
+      "Full15": 15,
+      "Uncondensed19": 19,
+      "Guyan6": 6,
+      "CB12": 12
+    },
+    "local_modes_hz": {
+      "N": [
+        20.399878791986374,
+        20.39987879198638,
+        20.39987879198638,
+        25.482042220672334,
+        35.413393333494795,
+        43.3748884900343
+      ],
+      "P": [
+        12.990819721045105,
+        24.102104867568627,
+        28.120101252244538,
+        34.43378298566629,
+        38.009575112940176,
+        42.57884374703074,
+        44.282989060419936
+      ]
+    },
+    "P_M_symmetry": 0.0,
+    "P_M_min_eigenvalue": 51.08781197921776,
+    "P_C_symmetry": 0.0,
+    "P_C_min_eigenvalue": 1064.873115912041,
+    "P_K_symmetry": 0.0,
+    "P_K_min_eigenvalue": 315185.96497157763,
+    "N_M_symmetry": 0.0,
+    "N_M_min_eigenvalue": 16.799422099716665,
+    "N_C_symmetry": 0.0,
+    "N_C_min_eigenvalue": 363.61336978547786,
+    "N_K_symmetry": 0.0,
+    "N_K_min_eigenvalue": 238695.78611439062
+  },
+  "tests": [
+    {
+      "name": "assembled_M",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "assembled_C",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "assembled_K",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "care_residual",
+      "value": 1.7715549707036917e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_M_symmetry",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_C_symmetry",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_K_symmetry",
+      "value": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_M_symmetry",
+      "value": 2.731454079769739e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_C_symmetry",
+      "value": 6.742446668271681e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_K_symmetry",
+      "value": 7.451174941383018e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_M_symmetry",
+      "value": 2.7308073257331875e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_C_symmetry",
+      "value": 6.729422886126841e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_K_symmetry",
+      "value": 7.441305364031868e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_M_symmetry",
+      "value": 2.7310883261658262e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_C_symmetry",
+      "value": 6.73086023079313e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_K_symmetry",
+      "value": 7.44291177255355e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB_all_modes_M",
+      "value": 7.84408416574765e-17,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB_all_modes_C",
+      "value": 2.793009409582584e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB_all_modes_K",
+      "value": 2.181403846177979e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB_zero_modes_M",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "CB_zero_modes_C",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "CB_zero_modes_K",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Full15_0_0_dominant_characteristic",
+      "value": 9.364328229582362e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_0_0_eigen_residual",
+      "value": 3.6393334247478324e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_0_0_dominant_characteristic",
+      "value": 6.603991236724168e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_0_0_eigen_residual",
+      "value": 5.768851700600074e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_0_0_dominant_characteristic",
+      "value": 6.992759734836244e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_0_0_eigen_residual",
+      "value": 4.159695243602753e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_0_0_dominant_characteristic",
+      "value": 9.298073885794836e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_0_0_eigen_residual",
+      "value": 3.498157719776353e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_1_dominant_characteristic",
+      "value": 2.4444568464354357e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_1_eigen_residual",
+      "value": 6.740455148190797e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_1_dominant_characteristic",
+      "value": 6.346380606843568e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_1_eigen_residual",
+      "value": 2.175852948297206e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_1_dominant_characteristic",
+      "value": 6.238932069852745e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_1_eigen_residual",
+      "value": 4.1620770587874335e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_1_dominant_characteristic",
+      "value": 1.0771821531404499e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_1_eigen_residual",
+      "value": 5.39483341551056e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_2_2_dominant_characteristic",
+      "value": 1.3227457914465242e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_2_2_eigen_residual",
+      "value": 2.234973335563363e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_2_2_dominant_characteristic",
+      "value": 7.590319092096681e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_2_2_eigen_residual",
+      "value": 2.430568790042327e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_2_2_dominant_characteristic",
+      "value": 9.120507941432482e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_2_2_eigen_residual",
+      "value": 3.346385279012211e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_2_2_dominant_characteristic",
+      "value": 5.019144577684095e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_2_2_eigen_residual",
+      "value": 3.0686868733214685e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_3_dominant_characteristic",
+      "value": 2.2096508318295334e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_3_eigen_residual",
+      "value": 4.2976638523678014e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_3_dominant_characteristic",
+      "value": 1.5739637693423358e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_3_eigen_residual",
+      "value": 3.327574169066269e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_3_dominant_characteristic",
+      "value": 3.975814872278442e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_3_eigen_residual",
+      "value": 1.9248995529624826e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_3_dominant_characteristic",
+      "value": 6.1746650726118e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_3_eigen_residual",
+      "value": 3.280424622691936e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_4_dominant_characteristic",
+      "value": 1.3648386842557144e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_4_eigen_residual",
+      "value": 2.757452325386505e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_4_dominant_characteristic",
+      "value": 2.9177803735866984e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_4_eigen_residual",
+      "value": 6.413825352709179e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_4_dominant_characteristic",
+      "value": 6.025527777086658e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_4_eigen_residual",
+      "value": 1.5231155052929244e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_4_dominant_characteristic",
+      "value": 2.3946898008168372e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_4_eigen_residual",
+      "value": 7.2072743553909e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_0_4_dominant_characteristic",
+      "value": 2.5927191019573782e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_0_4_eigen_residual",
+      "value": 1.0665402884630713e-12,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_0_4_dominant_characteristic",
+      "value": 3.251281050920996e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_0_4_eigen_residual",
+      "value": 1.4221502987105086e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_0_4_dominant_characteristic",
+      "value": 8.68366197555309e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_0_4_eigen_residual",
+      "value": 8.132524369386839e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_0_4_dominant_characteristic",
+      "value": 6.509734866792e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_0_4_eigen_residual",
+      "value": 1.2191927831035664e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_0_dominant_characteristic",
+      "value": 1.4252303295590338e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_0_eigen_residual",
+      "value": 1.6441101836725889e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_0_dominant_characteristic",
+      "value": 7.620483118519181e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_0_eigen_residual",
+      "value": 4.949297466734333e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_0_dominant_characteristic",
+      "value": 7.420999782801778e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_0_eigen_residual",
+      "value": 6.220395474810996e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_0_dominant_characteristic",
+      "value": 6.637597233394846e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_0_eigen_residual",
+      "value": 5.590279070005753e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_3_dominant_characteristic",
+      "value": 1.488378678998107e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_3_eigen_residual",
+      "value": 6.767220403994088e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_3_dominant_characteristic",
+      "value": 3.3162670162217456e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_3_eigen_residual",
+      "value": 1.2769725575094167e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_3_dominant_characteristic",
+      "value": 1.4309759155808322e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_3_eigen_residual",
+      "value": 2.1172744468967706e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_3_dominant_characteristic",
+      "value": 6.5574944199233e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_3_eigen_residual",
+      "value": 9.503496341110792e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_1_dominant_characteristic",
+      "value": 1.3688827719011777e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_1_eigen_residual",
+      "value": 8.512051849396962e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_1_dominant_characteristic",
+      "value": 3.797931996741835e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_1_eigen_residual",
+      "value": 1.7027470968712128e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_1_dominant_characteristic",
+      "value": 5.998564544258103e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_1_eigen_residual",
+      "value": 3.267590100650559e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_1_dominant_characteristic",
+      "value": 9.20439537486182e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_1_eigen_residual",
+      "value": 1.9725572242826448e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_4_dominant_characteristic",
+      "value": 1.8625517431318012e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_1_4_eigen_residual",
+      "value": 4.979201009871008e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_4_dominant_characteristic",
+      "value": 7.760536567787986e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_1_4_eigen_residual",
+      "value": 3.896760205571717e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_4_dominant_characteristic",
+      "value": 5.4424596959757595e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_1_4_eigen_residual",
+      "value": 3.157994976825473e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_4_dominant_characteristic",
+      "value": 6.367795722815725e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_1_4_eigen_residual",
+      "value": 2.9408597334111476e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_1_dominant_characteristic",
+      "value": 1.3577403240633903e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_1_eigen_residual",
+      "value": 2.39870374108854e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_1_dominant_characteristic",
+      "value": 1.2458675034930154e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_1_eigen_residual",
+      "value": 3.3840735063468695e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_1_dominant_characteristic",
+      "value": 5.160413296656538e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_1_eigen_residual",
+      "value": 6.246770469359921e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_1_dominant_characteristic",
+      "value": 2.2391548774650092e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_1_eigen_residual",
+      "value": 1.9926220473322828e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_2_4_dominant_characteristic",
+      "value": 1.4658965861188915e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_2_4_eigen_residual",
+      "value": 5.013245027494823e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_2_4_dominant_characteristic",
+      "value": 6.263967740138201e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_2_4_eigen_residual",
+      "value": 8.176448607930108e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_2_4_dominant_characteristic",
+      "value": 8.795085699377231e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_2_4_eigen_residual",
+      "value": 7.339754403530693e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_2_4_dominant_characteristic",
+      "value": 4.991413520809934e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_2_4_eigen_residual",
+      "value": 2.2476573142968626e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_2_dominant_characteristic",
+      "value": 1.2535819299059868e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_2_eigen_residual",
+      "value": 1.6780603014474466e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_2_dominant_characteristic",
+      "value": 6.191936874473603e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_2_eigen_residual",
+      "value": 1.3244035430688006e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_2_dominant_characteristic",
+      "value": 1.1998686495889671e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_2_eigen_residual",
+      "value": 6.315098657456289e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_2_dominant_characteristic",
+      "value": 1.6682174460783097e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_2_eigen_residual",
+      "value": 3.459721379588163e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_4_dominant_characteristic",
+      "value": 1.2717571861914485e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_3_4_eigen_residual",
+      "value": 9.674361290691672e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_4_dominant_characteristic",
+      "value": 6.18289938550687e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_3_4_eigen_residual",
+      "value": 3.636637849689239e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_4_dominant_characteristic",
+      "value": 6.239870309553035e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_3_4_eigen_residual",
+      "value": 4.362936846678481e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_4_dominant_characteristic",
+      "value": 4.132910832063185e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_3_4_eigen_residual",
+      "value": 5.3514137418043024e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_3_dominant_characteristic",
+      "value": 1.3572479706446648e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_4_3_eigen_residual",
+      "value": 8.681778845285469e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_3_dominant_characteristic",
+      "value": 4.068404550967616e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_4_3_eigen_residual",
+      "value": 9.843075337696229e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_3_dominant_characteristic",
+      "value": 3.168646977756077e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_4_3_eigen_residual",
+      "value": 6.005286067259536e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_3_dominant_characteristic",
+      "value": 7.57437756602985e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_4_3_eigen_residual",
+      "value": 8.934619563233745e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_5_dominant_characteristic",
+      "value": 1.3764218252769549e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_5_eigen_residual",
+      "value": 4.906834388904602e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_5_dominant_characteristic",
+      "value": 6.447031164361923e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_5_eigen_residual",
+      "value": 4.443777967918601e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_5_dominant_characteristic",
+      "value": 4.365552512935546e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_5_eigen_residual",
+      "value": 1.2936725058255821e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_5_dominant_characteristic",
+      "value": 6.157863507591144e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_5_eigen_residual",
+      "value": 4.23369335951896e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_1_dominant_characteristic",
+      "value": 3.095365595238167e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_1_eigen_residual",
+      "value": 1.0660811085625567e-12,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_1_dominant_characteristic",
+      "value": 2.49551839437307e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_1_eigen_residual",
+      "value": 1.2165342976395208e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_1_dominant_characteristic",
+      "value": 3.749877467277179e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_1_eigen_residual",
+      "value": 1.0968640924103838e-12,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_1_dominant_characteristic",
+      "value": 2.763471879594085e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_1_eigen_residual",
+      "value": 2.522206028677391e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_2_dominant_characteristic",
+      "value": 1.2578142642777027e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Full15_5_2_eigen_residual",
+      "value": 4.810123658041999e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_2_dominant_characteristic",
+      "value": 2.5610500987721013e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_5_2_eigen_residual",
+      "value": 2.885854954173849e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_2_dominant_characteristic",
+      "value": 9.810719417197066e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_5_2_eigen_residual",
+      "value": 3.3352139133231164e-13,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_2_dominant_characteristic",
+      "value": 1.4298303277299214e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "CB12_5_2_eigen_residual",
+      "value": 5.197087575209536e-15,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "Full15_zero_delay_transition",
+      "value": 3.956689654564977e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Uncondensed19_zero_delay_transition",
+      "value": 2.7021414727038236e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Guyan6_zero_delay_transition",
+      "value": 2.7240229685680195e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "CB12_zero_delay_transition",
+      "value": 4.096858858266606e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ]
+}

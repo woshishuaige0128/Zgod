@@ -1,0 +1,272 @@
+{
+  "contract_hash": "29ff1a6876172bd811eef4341a55cd9a51c07855d2b31e760ee26e2a6cfb94fe",
+  "contract_id": "B1",
+  "difference_from_r03": [
+    {
+      "candidate_value": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      },
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "actuation_and_delay_channels.division_2",
+      "r03_value": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "candidate_value": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      },
+      "classification": "SOURCE_DISCRETE_FACTOR",
+      "field": "controller_channels.division_2",
+      "r03_value": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      }
+    }
+  ],
+  "evidence_level": "SOURCE_FACTORS_COMBINED_DIAGNOSTIC",
+  "label_cn": "第二类psi1/psi11与H外反馈骨架",
+  "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+  "notes": [
+    "只隔离第二类通道因素；第一类三路线的求解算子应直接复用R03。",
+    "第二类控制器局部M/C/K必须以[0,6]从完整九维局部矩阵重新做标准静力投影。"
+  ],
+  "record_kind": "NEW_SKELETON",
+  "reuse_evidence": null,
+  "route_bundle_plan": [
+    {
+      "bundle_plan_id": "B1_D1_Original",
+      "dimension": 15,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Original",
+      "operator_action": "REUSE_EXISTING_R03_ROUTE",
+      "reuse_from": "D1_Original_R03",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B1_D1_Guyan",
+      "dimension": 6,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Guyan",
+      "operator_action": "REUSE_EXISTING_R03_ROUTE",
+      "reuse_from": "D1_Guyan_R03",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B1_D1_Craig_Bampton",
+      "dimension": 9,
+      "division": 1,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Craig_Bampton",
+      "operator_action": "REUSE_EXISTING_R03_ROUTE",
+      "reuse_from": "D1_Craig_Bampton_R03",
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B1_D2_Original",
+      "dimension": 15,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Original",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B1_D2_Guyan",
+      "dimension": 5,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Guyan",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    },
+    {
+      "bundle_plan_id": "B1_D2_Craig_Bampton",
+      "dimension": 8,
+      "division": 2,
+      "materialization_status": "CONTRACT_ONLY_NOT_MATERIALIZED",
+      "matrix_source_contract": "BOARD20_STEP8B_SUFFIX2_SUFFIX3",
+      "method": "Craig_Bampton",
+      "operator_action": "MATERIALIZE_LATER",
+      "reuse_from": null,
+      "route_operator_sha256": null
+    }
+  ],
+  "schema_version": "fig10-contract-v1",
+  "scientific_contract": {
+    "actuation_and_delay_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      }
+    },
+    "controller": {
+      "B_lower_block": "M_inverse",
+      "Q_diagonal": [
+        1000000,
+        1000000,
+        10000,
+        10000
+      ],
+      "R_diagonal": [
+        0.01,
+        0.01
+      ],
+      "force_embedding": "gain_direct",
+      "input_semantics": "generalized_force",
+      "local_matrix_contract": "standard_static_projection_of_full_local_MCK_on_actuation_coordinates",
+      "solver": "CARE",
+      "state_order": [
+        "q1",
+        "q2",
+        "qdot1",
+        "qdot2"
+      ]
+    },
+    "controller_channels": {
+      "division_1": {
+        "coordinates": [
+          "psi1",
+          "psi6"
+        ],
+        "local_selector_zero_based": [
+          0,
+          3
+        ]
+      },
+      "division_2": {
+        "coordinates": [
+          "psi1",
+          "psi11"
+        ],
+        "local_selector_zero_based": [
+          0,
+          6
+        ]
+      }
+    },
+    "delay_and_feedback": {
+      "channel_to_delay_exponent": {
+        "channel_1": "l",
+        "channel_2": "j"
+      },
+      "delay_orientation": "H_LEFT",
+      "feedback_formula": "S_L^T [v(z) DeltaC + DeltaK] S_R",
+      "feedback_placement": "OUTSIDE_H",
+      "inside_bundle_rule": "not_applicable; active physical delay factors remain W_C and W_K; projected feedback is external",
+      "physical_delay_formula": "S_L^T H(z) [v(z) W_C + W_K]"
+    },
+    "integration": {
+      "al_formula": "solve(4M+2dtC+dt^2K,4M)",
+      "alpha": null,
+      "mass_operator": "M/al",
+      "mass_operator_identity": "M/al = M + 0.5dtC + 0.25dt^2K",
+      "mode": "route_matrix_al"
+    },
+    "matrix_package": {
+      "article_dimension_contract_status": "BOARD20_NUMERIC_PACKAGE_IS_NOT_ARTICLE_6_AND_12_MODEL",
+      "craig_bampton_mode_count": 3,
+      "division_method_dimensions": {
+        "division_1": {
+          "Craig_Bampton": 9,
+          "Guyan": 6,
+          "Original": 15
+        },
+        "division_2": {
+          "Craig_Bampton": 8,
+          "Guyan": 5,
+          "Original": 15
+        }
+      },
+      "frozen_mat_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "guyan_projection": "standard_congruence_TtAT",
+      "id": "BOARD20_STEP8B_SUFFIX2_SUFFIX3"
+    },
+    "sampling": {
+      "delay_grid_status": "NOT_ASSIGNED_BY_CONTRACT_LAYER",
+      "dt_seconds": {
+        "denominator": 1024,
+        "numerator": 1
+      }
+    },
+    "stability_classification": {
+      "critical_rule": "abs(rho - 1) <= 1e-9",
+      "grid_assignment": "NOT_PART_OF_CONTRACT_LAYER",
+      "quantity": "maximum_modulus_of_physical_roots",
+      "stable_rule": "rho < 1"
+    }
+  },
+  "search_action": "MATERIALIZE_LATER_NO_SEARCH",
+  "source_basis": [
+    {
+      "claim": "当前文章第二类作动坐标为psi1/psi11；局部九维坐标对应选择行[0,6]。",
+      "classification": "SOURCE",
+      "pointer": "C08 and C14",
+      "source_id": "board20_conflict_adjudication"
+    },
+    {
+      "claim": "R03提供CARE、论文Q/R、广义力、逐路线矩阵al、标准Guyan、H左乘和H外反馈基线。",
+      "classification": "VERIFIED_PRIOR_COMPUTATION",
+      "pointer": "R03 fullgrid contract",
+      "source_id": "board20_r03"
+    },
+    {
+      "claim": "psi11与H外反馈的组合用于隔离通道因素，并非已恢复的作者完整合同。",
+      "classification": "INFERENCE",
+      "pointer": "B1 design decision",
+      "source_id": "board28_factor_isolation"
+    }
+  ]
+}

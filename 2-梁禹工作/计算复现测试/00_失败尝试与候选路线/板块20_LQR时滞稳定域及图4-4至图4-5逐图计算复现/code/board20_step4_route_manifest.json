@@ -1,0 +1,416 @@
+{
+  "schema_version": "board20_step4_route_manifest_v1",
+  "created_at": "2026-08-25T09:00:00+08:00",
+  "purpose": "Five immutable file-identity routes for continuous spectral-radius grids. Four step-2 execution failures are evidence-only and must never receive rho grids.",
+  "path_base": "parent directory of this manifest's code directory",
+  "output_root_relpath": "outputs/step4_rho_grids",
+  "solver": {
+    "function": "solve_board20_author_poles",
+    "call_signature": "result = solve_board20_author_poles(matrices, route_formula, l, j)",
+    "required_result_fields": [
+      "poles",
+      "rho",
+      "poly_degree",
+      "clearing_power",
+      "removed_zero_root_count",
+      "max_relative_residual",
+      "point_status",
+      "stable"
+    ],
+    "additional_result_fields": [
+      "raw_roots",
+      "retained_root_count",
+      "critical",
+      "diagnostic"
+    ]
+  },
+  "status_code_map": {
+    "PASS": 1,
+    "FAIL": 2
+  },
+  "provenance_code_map": {
+    "ORIGINAL_ACTIVE_POINT": 1,
+    "COMMENTED_AUTHOR_INTENT": 2,
+    "SAME_FORMULA_SUPPLEMENT": 3,
+    "FAIL": 4
+  },
+  "common_grid_definition": {
+    "grid_name": "common_31x67_same_formula_candidate",
+    "l_start": 0,
+    "l_end": 30,
+    "j_start": 0,
+    "j_end": 66,
+    "expected_shape": [31, 67],
+    "expected_point_count": 2077,
+    "interpretation": "Same sealed matrices and same route_formula, extended only over a common delay grid; this is not an original-author active-grid claim."
+  },
+  "step2_match_tolerance": 1e-8,
+  "routes": [
+    {
+      "route_id": "main_ori_div1",
+      "route_name": "First-division original-structure file-identity route",
+      "role": "PRIMARY",
+      "route_role": "PRIMARY",
+      "declared_method": "Original",
+      "division": "div1",
+      "step2_replicate": "rep03",
+      "route_formula": "ORI_DIV1_H_RIGHT",
+      "source_step2_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03",
+      "workspace_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat",
+      "run_config_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_config.json",
+      "run_status_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_status.json",
+      "raw_stab_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/scientific/raw_stab.mat",
+      "source_m_relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR2.m",
+      "candidate_mlx_sha256": "B8D80F17C8EC1112D14188BF2C01666B339D9A400E8FEBAE6C38656AB68558CD",
+      "matrix_variable_map": {
+        "M": "MRrt",
+        "C1": "C1",
+        "K1": "K1",
+        "C2": "C2",
+        "K2": "K2",
+        "al": "al",
+        "dt": "dt",
+        "step2_rho_reference": "stab"
+      },
+      "feedback_variables": [],
+      "feedback_placement": "NO_LQR_IN_EXECUTED_SOURCE",
+      "expected_total_points": 2077,
+      "active_points": 1,
+      "commented_author_intent_points": 440,
+      "supplemental_points": 1636,
+      "expected_shape": [31, 67],
+      "active_regions": [
+        {"l_start": 0, "l_end": 0, "j_start": 0, "j_end": 0, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "commented_author_intent_regions": [
+        {"l_start": 0, "l_end": 0, "j_start": 1, "j_end": 20, "provenance": "COMMENTED_AUTHOR_INTENT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 1, "l_end": 20, "j_start": 0, "j_end": 20, "provenance": "COMMENTED_AUTHOR_INTENT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [10, 10], [20, 20]],
+      "author_code_grid": {
+        "grid_name": "author_code_grid",
+        "output_relpath": "outputs/step4_rho_grids/main_ori_div1/author_code_grid.mat",
+        "expected_shape": [21, 21],
+        "expected_point_count": 441,
+        "l_start": 0,
+        "l_end": 20,
+        "j_start": 0,
+        "j_end": 20,
+        "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2},
+        "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "common_grid": {
+        "grid_name": "common_31x67_same_formula_candidate",
+        "output_relpath": "outputs/step4_rho_grids/main_ori_div1/common_31x67_same_formula_candidate.mat",
+        "expected_shape": [31, 67],
+        "expected_point_count": 2077,
+        "l_start": 0,
+        "l_end": 30,
+        "j_start": 0,
+        "j_end": 66,
+        "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2},
+        "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "file_contracts": [
+        {"kind": "workspace_complete", "role": "workspace_complete", "path": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat", "relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat", "sha256": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923"},
+        {"kind": "run_config", "role": "run_config", "path": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_config.json", "relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_config.json", "sha256": "76A951B9A998CD2219EDFB7498FC49B33AD90EEA65878255C7C483D2E89A4DB4"},
+        {"kind": "run_status", "role": "run_status", "path": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_status.json", "relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/metadata/run_status.json", "sha256": "D0DC8000FD222B7A64BF7DEE9A4BA63B34755F0E25127D9205CE29CA117BE4CC"},
+        {"kind": "extracted_author_m", "role": "extracted_author_m", "path": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR2.m", "relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR2.m", "sha256": "E0E220E1B7549FA2F623DEDA02CE16C1726CEC061247626BF7A407438440D2FA"},
+        {"kind": "raw_stab", "role": "raw_stab", "path": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/scientific/raw_stab.mat", "relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/scientific/raw_stab.mat", "sha256": "FC47A86F4ECE4F5C84323C2135520C76055C76D1EFD9692F7D21A5FFC8A026BA"}
+      ]
+    },
+    {
+      "route_id": "main_guyan_div1",
+      "route_name": "First-division Guyan main file-identity route",
+      "role": "PRIMARY",
+      "route_role": "PRIMARY",
+      "declared_method": "Guyan",
+      "division": "div1",
+      "step2_replicate": "rep03",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "source_step2_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03",
+      "workspace_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat",
+      "run_config_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_config.json",
+      "run_status_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_status.json",
+      "raw_stab_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/scientific/raw_stab.mat",
+      "source_m_relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m",
+      "candidate_mlx_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "matrix_variable_map": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "step2_rho_reference": "stab"},
+      "feedback_variables": [],
+      "feedback_placement": "NO_LQR_IN_EXECUTED_SOURCE",
+      "expected_total_points": 2077,
+      "active_points": 441,
+      "commented_author_intent_points": 0,
+      "supplemental_points": 1636,
+      "expected_shape": [31, 67],
+      "active_regions": [
+        {"l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "commented_author_intent_regions": [],
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [10, 10], [20, 20]],
+      "author_code_grid": {
+        "grid_name": "author_code_grid", "output_relpath": "outputs/step4_rho_grids/main_guyan_div1/author_code_grid.mat", "expected_shape": [21, 21], "expected_point_count": 441,
+        "l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "common_grid": {
+        "grid_name": "common_31x67_same_formula_candidate", "output_relpath": "outputs/step4_rho_grids/main_guyan_div1/common_31x67_same_formula_candidate.mat", "expected_shape": [31, 67], "expected_point_count": 2077,
+        "l_start": 0, "l_end": 30, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "file_contracts": [
+        {"kind": "workspace_complete", "role": "workspace_complete", "path": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat", "relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat", "sha256": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7"},
+        {"kind": "run_config", "role": "run_config", "path": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_config.json", "relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_config.json", "sha256": "1DBF7929BCD096F02D294AED29AF196A92F8289A51DF770599816C07F7C097D6"},
+        {"kind": "run_status", "role": "run_status", "path": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_status.json", "relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/metadata/run_status.json", "sha256": "BD86753392039D45F5444621F370A50BB83B891861BEF351D49DAA752E3E1DF3"},
+        {"kind": "extracted_author_m", "role": "extracted_author_m", "path": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m", "relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m", "sha256": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F"},
+        {"kind": "raw_stab", "role": "raw_stab", "path": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/scientific/raw_stab.mat", "relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/scientific/raw_stab.mat", "sha256": "FEA2C539A79EE9A2E20AA05E2C02B5E559DD8D2ADCDDA646BA227FB3EA515237"}
+      ]
+    },
+    {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "route_name": "First-division Guyan same-directory alternative using stable-directory New_Full plus New_Ps3",
+      "role": "ALTERNATIVE_NOT_PRIMARY",
+      "route_role": "ALTERNATIVE_NOT_PRIMARY",
+      "declared_method": "Guyan",
+      "division": "div1",
+      "step2_replicate": "rep01",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "source_step2_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01",
+      "workspace_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat",
+      "run_config_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_config.json",
+      "run_status_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_status.json",
+      "raw_stab_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/scientific/raw_stab.mat",
+      "source_m_relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m",
+      "candidate_mlx_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "matrix_variable_map": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "step2_rho_reference": "stab"},
+      "feedback_variables": [],
+      "feedback_placement": "NO_LQR_IN_EXECUTED_SOURCE",
+      "expected_total_points": 2077,
+      "active_points": 441,
+      "commented_author_intent_points": 0,
+      "supplemental_points": 1636,
+      "expected_shape": [31, 67],
+      "active_regions": [
+        {"l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "commented_author_intent_regions": [],
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [10, 10], [20, 20]],
+      "author_code_grid": {
+        "grid_name": "author_code_grid", "output_relpath": "outputs/step4_rho_grids/alt_guyan_div1_stable_full_ps3/author_code_grid.mat", "expected_shape": [21, 21], "expected_point_count": 441,
+        "l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "common_grid": {
+        "grid_name": "common_31x67_same_formula_candidate", "output_relpath": "outputs/step4_rho_grids/alt_guyan_div1_stable_full_ps3/common_31x67_same_formula_candidate.mat", "expected_shape": [31, 67], "expected_point_count": 2077,
+        "l_start": 0, "l_end": 30, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "file_contracts": [
+        {"kind": "workspace_complete", "role": "workspace_complete", "path": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat", "relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat", "sha256": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305"},
+        {"kind": "run_config", "role": "run_config", "path": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_config.json", "relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_config.json", "sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF"},
+        {"kind": "run_status", "role": "run_status", "path": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_status.json", "relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/metadata/run_status.json", "sha256": "F2C5A93034D93273939784C5B8BCE29D7E0390CEC96DAFBAD1F15CC13D0C8A71"},
+        {"kind": "extracted_author_m", "role": "extracted_author_m", "path": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m", "relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR2.m", "sha256": "D8965FD60986BF60854116E44686A206C79C5E9C794755F3B20ECFB35A71D90F"},
+        {"kind": "raw_stab", "role": "raw_stab", "path": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/scientific/raw_stab.mat", "relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/scientific/raw_stab.mat", "sha256": "D70FF3F74B8771794AB91D821EA1BA5BC66532C6972191E9AFA0A6135EC98BCA"}
+      ],
+      "identity_warning": "The candidate MLX is identical to the main Guyan LQR2 source, but the upstream New_Full/New_Ps3 file identity is different and remains a separate route. New_Ps3 is 9x9 while the script uses its leading six indices."
+    },
+    {
+      "route_id": "main_ori_div2",
+      "route_name": "Second-division original-structure file-identity route",
+      "role": "PRIMARY",
+      "route_role": "PRIMARY",
+      "declared_method": "Original",
+      "division": "div2",
+      "step2_replicate": "rep03",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "source_step2_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03",
+      "workspace_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat",
+      "run_config_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_config.json",
+      "run_status_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_status.json",
+      "raw_stab_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/scientific/raw_stab.mat",
+      "source_m_relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR3.m",
+      "candidate_mlx_sha256": "2606758B347C01574B812A4CD79BB2C353DCD6680C1DBF07B9AF485C5C03569D",
+      "matrix_variable_map": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK", "step2_rho_reference": "stab"},
+      "feedback_variables": ["S", "DeltaC", "DeltaK"],
+      "feedback_placement": "OUTSIDE_H_AS_S_TRANSPOSE_DELTA_G_S",
+      "expected_total_points": 2077,
+      "active_points": 1517,
+      "commented_author_intent_points": 0,
+      "supplemental_points": 560,
+      "expected_shape": [31, 67],
+      "active_regions": [
+        {"l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 25, "j_start": 21, "j_end": 40, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 25, "j_start": 41, "j_end": 60, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 5, "j_start": 61, "j_end": 66, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "commented_author_intent_regions": [],
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [10, 10], [20, 20], [25, 40], [25, 60], [5, 66]],
+      "author_code_grid": {
+        "grid_name": "author_code_grid", "output_relpath": "outputs/step4_rho_grids/main_ori_div2/author_code_grid.mat", "expected_shape": [26, 67], "expected_point_count": 1517,
+        "l_start": 0, "l_end": 25, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "common_grid": {
+        "grid_name": "common_31x67_same_formula_candidate", "output_relpath": "outputs/step4_rho_grids/main_ori_div2/common_31x67_same_formula_candidate.mat", "expected_shape": [31, 67], "expected_point_count": 2077,
+        "l_start": 0, "l_end": 30, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "file_contracts": [
+        {"kind": "workspace_complete", "role": "workspace_complete", "path": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat", "relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat", "sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"},
+        {"kind": "run_config", "role": "run_config", "path": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_config.json", "relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_config.json", "sha256": "6C8164ED4F659642A118C5453E6C2807027F0C1CDCBC1B33DE7B29A0DA51823A"},
+        {"kind": "run_status", "role": "run_status", "path": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_status.json", "relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/metadata/run_status.json", "sha256": "658ABA74288920BA5E2DF999FF211E2D5C049F6B419216024EF5CDBD3652D5B3"},
+        {"kind": "extracted_author_m", "role": "extracted_author_m", "path": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR3.m", "relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_ori_LQR3.m", "sha256": "7366D13BDDEC707AB7DD98F9BC7C359935CBE9AC0037A4FA28680B457BD4AADE"},
+        {"kind": "raw_stab", "role": "raw_stab", "path": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/scientific/raw_stab.mat", "relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/scientific/raw_stab.mat", "sha256": "C4EA3005174054829456C24C74770F57ADF422DFD075A39E347CBA6876899E85"}
+      ]
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "route_name": "Second-division Guyan file-identity route",
+      "role": "PRIMARY",
+      "route_role": "PRIMARY",
+      "declared_method": "Guyan",
+      "division": "div2",
+      "step2_replicate": "rep03",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "source_step2_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03",
+      "workspace_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat",
+      "run_config_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_config.json",
+      "run_status_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_status.json",
+      "raw_stab_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/scientific/raw_stab.mat",
+      "source_m_relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR3.m",
+      "candidate_mlx_sha256": "C9A843A87F4B45D02DDB80F8780AB8E549E70BF6D2BE61A0C4B621E746CC2451",
+      "matrix_variable_map": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK", "step2_rho_reference": "stab"},
+      "feedback_variables": ["S", "DeltaC", "DeltaK"],
+      "feedback_placement": "OUTSIDE_H_AS_S_TRANSPOSE_DELTA_G_S",
+      "expected_total_points": 2077,
+      "active_points": 1517,
+      "commented_author_intent_points": 0,
+      "supplemental_points": 560,
+      "expected_shape": [31, 67],
+      "active_regions": [
+        {"l_start": 0, "l_end": 20, "j_start": 0, "j_end": 20, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 25, "j_start": 21, "j_end": 40, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 25, "j_start": 41, "j_end": 60, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]},
+        {"l_start": 0, "l_end": 5, "j_start": 61, "j_end": 66, "provenance": "ORIGINAL_ACTIVE_POINT", "grids": ["author_code_grid", "common_grid"]}
+      ],
+      "commented_author_intent_regions": [],
+      "pilot_points": [[0, 0], [1, 0], [0, 1], [10, 10], [20, 20], [25, 40], [25, 60], [5, 66]],
+      "author_code_grid": {
+        "grid_name": "author_code_grid", "output_relpath": "outputs/step4_rho_grids/main_guyan_div2/author_code_grid.mat", "expected_shape": [26, 67], "expected_point_count": 1517,
+        "l_start": 0, "l_end": 25, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "common_grid": {
+        "grid_name": "common_31x67_same_formula_candidate", "output_relpath": "outputs/step4_rho_grids/main_guyan_div2/common_31x67_same_formula_candidate.mat", "expected_shape": [31, 67], "expected_point_count": 2077,
+        "l_start": 0, "l_end": 30, "j_start": 0, "j_end": 66, "index_base": 1,
+        "status_code_map": {"PASS": 1, "FAIL": 2}, "provenance_code_map": {"ORIGINAL_ACTIVE_POINT": 1, "COMMENTED_AUTHOR_INTENT": 2, "SAME_FORMULA_SUPPLEMENT": 3, "FAIL": 4},
+        "mat_variables": {"rho": "rho", "stable": "stable", "critical": "critical", "residual": "residual", "point_status_code": "status", "diagnostic": "diagnostic", "provenance_code": "provenance_code"}
+      },
+      "file_contracts": [
+        {"kind": "workspace_complete", "role": "workspace_complete", "path": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat", "relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat", "sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21"},
+        {"kind": "run_config", "role": "run_config", "path": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_config.json", "relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_config.json", "sha256": "D86844031A20C270AA6D8EC680FC94E6DF73FE5B962D590935A7F4DFB66A37E4"},
+        {"kind": "run_status", "role": "run_status", "path": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_status.json", "relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/metadata/run_status.json", "sha256": "790ADB62FB1EA25B82DD73495A197327B002EDF4B9FF07AF3D20545433444AD9"},
+        {"kind": "extracted_author_m", "role": "extracted_author_m", "path": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR3.m", "relpath": "outputs/mlx_code/historical_stability_route/稳定域/luxvjie_guyan_LQR3.m", "sha256": "49DA7B5D7E8B57E311C263555E94FADB053341D6B5BDA5AAEAC4C28445298624"},
+        {"kind": "raw_stab", "role": "raw_stab", "path": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/scientific/raw_stab.mat", "relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/scientific/raw_stab.mat", "sha256": "798BF53D873943F3CE17EFDE69F10D7CD94FF055539CE80B5FC317499664433D"}
+      ]
+    }
+  ],
+  "failed_routes": [
+    {
+      "route_id": "main_cb_div1",
+      "source_step2_relpath": "outputs/step2_runs/main_cb_div1/original_mlx/rep02",
+      "step2_replicate": "rep02",
+      "execution_status": "EXECUTION_FAIL",
+      "failure_reason": "MATLAB:UndefinedFunction: MRren was undefined in the original MLX execution.",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "Function or variable MRren is not recognized.",
+      "run_config_relpath": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/run_config.json",
+      "run_config_sha256": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E",
+      "run_status_relpath": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/run_status.json",
+      "run_status_sha256": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D",
+      "workspace_relpath": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/workspace/workspace_failure.mat",
+      "workspace_sha256": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516",
+      "file_contracts": [
+        {"kind": "run_config", "path": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/run_config.json", "sha256": "36700A4F24FECC621EEAFCA1C0BA2C389DA1C0C9990A492044389F5F5C961E8E"},
+        {"kind": "run_status", "path": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/metadata/run_status.json", "sha256": "F4D4E3318D913029E8937856ECA1F49FDF9D6913AEDE34106F3A5F99850A330D"},
+        {"kind": "workspace_failure", "path": "outputs/step2_runs/main_cb_div1/original_mlx/rep02/workspace/workspace_failure.mat", "sha256": "EDEF15BC3A9E5966830E81F9FA5F338684EC2BE8AFC064AC3EB12EC9D8D59516"}
+      ],
+      "rho_grid_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "main_cb_div2",
+      "source_step2_relpath": "outputs/step2_runs/main_cb_div2/original_mlx/rep02",
+      "step2_replicate": "rep02",
+      "execution_status": "EXECUTION_FAIL",
+      "failure_reason": "MATLAB:UndefinedFunction: MRren was undefined in the original MLX execution.",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "Function or variable MRren is not recognized.",
+      "run_config_relpath": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/run_config.json",
+      "run_config_sha256": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38",
+      "run_status_relpath": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/run_status.json",
+      "run_status_sha256": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061",
+      "workspace_relpath": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/workspace/workspace_failure.mat",
+      "workspace_sha256": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10",
+      "file_contracts": [
+        {"kind": "run_config", "path": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/run_config.json", "sha256": "E5CF4931FC0859CCA3EA9C7796B7F3F85FD433BFCF39D8F4F895F513FDFC5B38"},
+        {"kind": "run_status", "path": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/metadata/run_status.json", "sha256": "53E67624B1F2E8B70E347D4FA2E0F4403859AD86A515C81640583310A3515061"},
+        {"kind": "workspace_failure", "path": "outputs/step2_runs/main_cb_div2/original_mlx/rep02/workspace/workspace_failure.mat", "sha256": "964DDA02559E5AEDEC698350A3FC839F884801088053499EC42B89B706A03F10"}
+      ],
+      "rho_grid_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "energy_guyan_div1",
+      "source_step2_relpath": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02",
+      "step2_replicate": "rep02",
+      "execution_status": "EXECUTION_FAIL",
+      "failure_reason": "MATLAB:UndefinedFunction: KPren was undefined in the original MLX execution.",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "Function or variable KPren is not recognized.",
+      "run_config_relpath": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/run_config.json",
+      "run_config_sha256": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70",
+      "run_status_relpath": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/run_status.json",
+      "run_status_sha256": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141",
+      "workspace_relpath": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/workspace/workspace_failure.mat",
+      "workspace_sha256": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848",
+      "file_contracts": [
+        {"kind": "run_config", "path": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/run_config.json", "sha256": "C4BA508DD4E397F4999E34AB5E439ED3B35C8152DDC8BFF9B2BA8FCD52DFDA70"},
+        {"kind": "run_status", "path": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/metadata/run_status.json", "sha256": "AD2F98B43D5BDC0CBF1F0980CE9073325144E41FA80B31097CCDACC4D6BAE141"},
+        {"kind": "workspace_failure", "path": "outputs/step2_runs/energy_guyan_div1/original_mlx/rep02/workspace/workspace_failure.mat", "sha256": "2BF1E8519FF971C1D8316D86673C594EFE74842CE2498BC7BFEC3FC269E8D848"}
+      ],
+      "rho_grid_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "energy_guyan_div2",
+      "source_step2_relpath": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02",
+      "step2_replicate": "rep02",
+      "execution_status": "EXECUTION_FAIL",
+      "failure_reason": "MATLAB:UndefinedFunction: KPren was undefined in the original MLX execution.",
+      "error_identifier": "MATLAB:UndefinedFunction",
+      "error_message": "Function or variable KPren is not recognized.",
+      "run_config_relpath": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/run_config.json",
+      "run_config_sha256": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028",
+      "run_status_relpath": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/run_status.json",
+      "run_status_sha256": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F",
+      "workspace_relpath": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/workspace/workspace_failure.mat",
+      "workspace_sha256": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801",
+      "file_contracts": [
+        {"kind": "run_config", "path": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/run_config.json", "sha256": "8EB91BD7A252ED60FE9965F53824D8EBE18EB2ED7E985AF1B950C09A042D1028"},
+        {"kind": "run_status", "path": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/metadata/run_status.json", "sha256": "29FBC2E1DC5C25BD6949CA45DE36738E5EE432E12F565F2A18F54C38BE6BA33F"},
+        {"kind": "workspace_failure", "path": "outputs/step2_runs/energy_guyan_div2/original_mlx/rep02/workspace/workspace_failure.mat", "sha256": "B66FAF62642E59C508D1B69628A3E4563543B3E7D7BFC3DE415EA78FC8F40801"}
+      ],
+      "rho_grid_policy": "DO_NOT_CREATE"
+    }
+  ]
+}

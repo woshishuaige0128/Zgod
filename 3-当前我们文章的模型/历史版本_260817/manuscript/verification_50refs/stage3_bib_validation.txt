@@ -1,0 +1,29 @@
+RHTS STAGE 3 BIBTEX VALIDATION
+
+Mode: full
+Source Bib: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\rths_references_verified_expanded.bib
+Target Bib: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\reference_50refs_clean.bib
+Target TeX: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\main_50refs_clean.tex
+Crossref cache: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\verification_50refs\crossref_metadata_50.json
+Metadata audit: D:\JZ_PhD\10_论文_Papers\Li\RHTS\260817\manuscript\verification_50refs\stage3_metadata_audit.md
+Target bytes: 16906
+Target SHA-256: 7B0B812989075F310B237C9D4E1E54CBCEA2B08D44E96EB9C131CFD5B5F4649A
+
+Source entries: 50
+Target entries: 50
+Citation occurrences: 60
+Unique cited keys: 50
+Parsed authors in Family, Given form: 170/170
+Duplicate normalized titles: 0
+Target DOI literals: 0
+Protected source DOI values: 50 (50 unique)
+Crossref records: 50
+Crossref titles compared: 50
+Crossref author lists compared: 50
+Crossref cache SHA-256: 013C3C48255FFFFAF3102F065B0EC98B1189AD93E56C43CBA3DD221CB00199AF
+
+STATUS: PASS
+PASS | 50-key TeX/Bib closure and all static bibliography contracts passed
+PASS | All original DOI values map one-to-one to successful Crossref cache records
+PASS | Target metadata agrees with populated Crossref fields
+PASS | Stage-3 metadata audit interface passed

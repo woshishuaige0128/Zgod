@@ -1,0 +1,2 @@
+﻿comparison_status,left_route_id,right_route_id,valid_point_count,finite_pair_count,exact_equal_count,nonzero_difference_count,absolute_difference_gt_1e_12_count,maximum_absolute_difference,mean_absolute_difference,rms_difference,allclose_rtol_0_atol_1e_12,stable_mask_disagreement_count,reason
+READY,alt_guyan_div1_stable_full_ps3,main_guyan_div1,441,441,0,441,441,0.02254349312243842,0.015409199366519893,0.016353492748391745,FALSE,86,

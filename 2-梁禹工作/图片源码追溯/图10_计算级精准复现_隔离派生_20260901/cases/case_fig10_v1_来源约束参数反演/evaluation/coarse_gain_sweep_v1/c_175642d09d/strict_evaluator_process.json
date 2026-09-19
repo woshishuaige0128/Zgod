@@ -1,0 +1,15 @@
+{
+  "returncode": 2,
+  "command": [
+    "D:\\Software\\python\\python.exe",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\strict_target_evaluator.py",
+    "--manifest",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_175642d09d\\m.json",
+    "--target",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+    "--output-dir",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\coarse_gain_sweep_v1\\c_175642d09d\\e",
+    "--matlab",
+    "D:\\Downlad\\Matlab\\bin\\matlab.exe"
+  ]
+}

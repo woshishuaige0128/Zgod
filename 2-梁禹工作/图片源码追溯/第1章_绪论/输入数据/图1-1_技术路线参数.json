@@ -1,0 +1,9 @@
+{
+  "图题": "技术路线图",
+  "恢复性质": "依据论文PDF、图书馆DOCX嵌入对象和答辩PPT进行的新建矢量重绘",
+  "三层主线": ["系统缩聚理论与参考结构", "缩聚对试验精度的影响", "缩聚对系统稳定性的影响"],
+  "缩聚方法": ["Craig-Bampton", "Guyan"],
+  "激励": ["El Centro", "Chirp"],
+  "稳定性工具": ["s transform", "z transform", "pole distribution"],
+  "样式": {"字体": "Computer Modern", "字号_pt": 9, "配色": "Tol Bright", "图内标题": false}
+}

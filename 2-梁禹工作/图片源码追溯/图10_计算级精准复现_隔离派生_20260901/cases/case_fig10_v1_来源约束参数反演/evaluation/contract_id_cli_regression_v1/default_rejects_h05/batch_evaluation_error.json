@@ -1,0 +1,6 @@
+{
+  "schema_version": "FIG10_BATCH_TARGET_EVALUATOR_V1",
+  "status": "ERROR",
+  "error_type": "ValueError",
+  "error_message": "盲算manifest含未经--contract-id允许的合同：H05；当前允许：B1/B2/B3"
+}

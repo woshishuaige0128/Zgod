@@ -1,0 +1,41 @@
+document_id,field_id,field_name_cn,required_for_unique_reproduction,status,specified_value,evidence,gap_consequence,cross_document_conflict,contract_closed_for_field
+liang_thesis,controller_design_domain,控制器设计域,TRUE,SPECIFIED,连续时间CARE，K=R^{-1}B^T P,步骤3报告:50-61；硕士论文式(4-31)至式(4-35),两篇论文均不是历史程序的c2d+dlqr路线,FALSE,TRUE
+manuscript_0824,controller_design_domain,控制器设计域,TRUE,SPECIFIED,连续时间LQR/代数Riccati方程,manuscript_0824.tex:397-413,两篇论文均不是历史程序的c2d+dlqr路线,FALSE,TRUE
+liang_thesis,state_order,状态顺序,TRUE,SPECIFIED,前两项位移、后两项速度,步骤3报告:52-59,状态排序可确定，但仍需与数值矩阵坐标顺序对应,FALSE,TRUE
+manuscript_0824,state_order,状态顺序,TRUE,SPECIFIED,"v=[(S_a q)^T,(S_a qdot)^T]^T",manuscript_0824.tex:397-406,状态排序可确定，但仍需与数值矩阵坐标顺序对应,FALSE,TRUE
+liang_thesis,q_weights,Q权重,TRUE,SPECIFIED,"diag(1e6,1e6,1e4,1e4)",步骤3报告:52-59,"与历史主程序diag(1e6,1,1e5,1)不同",FALSE,TRUE
+manuscript_0824,q_weights,Q权重,TRUE,SPECIFIED,"diag(1e6,1e6,1e4,1e4)",manuscript_0824.tex:553；步骤3报告:250-260,"与历史主程序diag(1e6,1,1e5,1)不同",FALSE,TRUE
+liang_thesis,r_weights,R权重,TRUE,SPECIFIED,"diag(1e-2,1e-2)",步骤3报告:52-59,"与历史主程序diag(1e-1,1e-2)不同",FALSE,TRUE
+manuscript_0824,r_weights,R权重,TRUE,SPECIFIED,"diag(1e-2,1e-2)",manuscript_0824.tex:553；步骤3报告:250-260,"与历史主程序diag(1e-1,1e-2)不同",FALSE,TRUE
+liang_thesis,numeric_A,连续状态矩阵A的数值入口,TRUE,SYMBOLIC_ONLY,只写xdot=A x+B u,步骤3报告:50-58,没有唯一数值A就不能复算连续CARE增益,FALSE,FALSE
+manuscript_0824,numeric_A,连续状态矩阵A的数值入口,TRUE,SYMBOLIC_ONLY,只声明A为状态空间矩阵,manuscript_0824.tex:406-413,没有唯一数值A就不能复算连续CARE增益,FALSE,FALSE
+liang_thesis,numeric_B_and_input_semantics,输入矩阵B/B_a及输入物理语义,TRUE,AMBIGUOUS,B u；u未唯一说明为位移、力或加速度,"步骤3报告:54,270-280",输入尺度和嵌入映射未闭合，K的单位与DeltaK/DeltaC转换不唯一,FALSE,FALSE
+manuscript_0824,numeric_B_and_input_semantics,输入矩阵B/B_a及输入物理语义,TRUE,SYMBOLIC_ONLY,u_L称为命令位移；B与B_a仅给符号和尺寸,"manuscript_0824.tex:397-413,423-426",输入尺度和嵌入映射未闭合，K的单位与DeltaK/DeltaC转换不唯一,FALSE,FALSE
+liang_thesis,state_input_units_and_normalization,状态/输入单位与归一化,TRUE,MISSING,未给出,步骤3报告:270-280,Q/R的数值不能脱离量纲与归一化唯一解释,FALSE,FALSE
+manuscript_0824,state_input_units_and_normalization,状态/输入单位与归一化,TRUE,MISSING,命令位移语义已给出，但量纲缩放/归一化未给出,步骤3报告:270-280,Q/R的数值不能脱离量纲与归一化唯一解释,FALSE,FALSE
+liang_thesis,numeric_reduced_matrices,稳定方程所需缩聚M/C/K与通道C_l/K_l数值矩阵,TRUE,EXTERNAL_NUMERIC_INPUT_REQUIRED,论文公式未自包含列出全部矩阵数值,"步骤3报告:348-357,359-365",必须绑定明确文件及坐标顺序才能形成唯一极点网格,FALSE,FALSE
+manuscript_0824,numeric_reduced_matrices,稳定方程所需缩聚M/C/K与通道C_l/K_l数值矩阵,TRUE,EXTERNAL_NUMERIC_INPUT_REQUIRED,正文给出符号装配关系，未在合同处列出可直接计算的矩阵文件,"manuscript_0824.tex:380-386,414-429",必须绑定明确文件及坐标顺序才能形成唯一极点网格,FALSE,FALSE
+liang_thesis,selection_and_embedding_matrices,选择矩阵S/S_a与反馈嵌入矩阵B_a,TRUE,SYMBOLIC_ONLY,自由度语义存在，数值选择/嵌入矩阵未唯一给出,"步骤3报告:282-288,348-353",无法唯一把局部2通道增益嵌入组装坐标,FALSE,FALSE
+manuscript_0824,selection_and_embedding_matrices,选择矩阵S/S_a与反馈嵌入矩阵B_a,TRUE,SYMBOLIC_ONLY,S_a为Boolean选择矩阵、B_a给出尺寸，未给数值矩阵,manuscript_0824.tex:406-426,无法唯一把局部2通道增益嵌入组装坐标,FALSE,FALSE
+liang_thesis,division_I_coordinates,第一类物理/作动自由度,TRUE,SPECIFIED,psi1、psi6，两者分别带独立时滞,步骤3报告:90-95,两篇论文在第一类自由度语义上一致,FALSE,TRUE
+manuscript_0824,division_I_coordinates,第一类物理/作动自由度,TRUE,SPECIFIED,保留并作动psi1、psi6,"manuscript_0824.tex:508,553",两篇论文在第一类自由度语义上一致,FALSE,TRUE
+liang_thesis,division_II_coordinates,第二类物理/作动自由度,TRUE,SPECIFIED,主自由度psi1、psi6、psi11；psi1/psi6延迟，psi11无延迟,"步骤3报告:90-95,282-288",两篇论文定义的是不同第二类模型，不能共享一条极点网格,TRUE,TRUE
+manuscript_0824,division_II_coordinates,第二类物理/作动自由度,TRUE,SPECIFIED,作动psi1、psi11；psi6被缩聚并重构,"manuscript_0824.tex:508,553",两篇论文定义的是不同第二类模型，不能共享一条极点网格,TRUE,TRUE
+liang_thesis,sampling_period,采样周期/积分步长,TRUE,SPECIFIED,dt=1/1024 s,步骤3报告:97-105,一个采样步为0.9765625 ms,FALSE,TRUE
+manuscript_0824,sampling_period,采样周期/积分步长,TRUE,SPECIFIED,Delta t=1/1024 s,manuscript_0824.tex:553,一个采样步为0.9765625 ms,FALSE,TRUE
+liang_thesis,feedback_delay_placement,LQR反馈相对H(z)的位置,TRUE,CONFLICT,式(4-38)至式(4-40)在H外；文字信号路径暗示作动器时滞,"步骤3报告:63-88,242-248",硕士论文内部文字/公式断点待决定，且两篇论文不能共用特征方程,TRUE,FALSE
+manuscript_0824,feedback_delay_placement,LQR反馈相对H(z)的位置,TRUE,SPECIFIED,B_a H_a(z)[K_x+(z-1)/(z dt)K_v]S_a，反馈在H_a内,manuscript_0824.tex:413-429,硕士论文内部文字/公式断点待决定，且两篇论文不能共用特征方程,TRUE,TRUE
+liang_thesis,continuous_gain_discrete_insertion,连续CARE增益进入z域方程的单位/离散插入规则,TRUE,MISSING,未解释连续K如何成为K_q/K_qdot及其单位,步骤3报告:262-280,不能用历史离散dlqr增益静默替代连续CARE增益,FALSE,FALSE
+manuscript_0824,continuous_gain_discrete_insertion,连续CARE增益进入z域方程的单位/离散插入规则,TRUE,SYMBOLIC_ONLY,给出K_x/K_v的z域代入形式，但B/B_a数值和单位尺度未闭合,manuscript_0824.tex:406-426；步骤3报告:262-280,不能用历史离散dlqr增益静默替代连续CARE增益,FALSE,FALSE
+liang_thesis,cr_alpha_numeric,CR算法标量alpha数值,TRUE,MISSING,公式含标量alpha但未给数值,步骤3报告:305-318,加速度z变换系数不唯一；代码矩阵al不能冒充该标量,FALSE,FALSE
+manuscript_0824,cr_alpha_numeric,CR算法标量alpha数值,TRUE,MISSING,定义为CR算法参数但未给数值,manuscript_0824.tex:388-395,加速度z变换系数不唯一；代码矩阵al不能冒充该标量,FALSE,FALSE
+liang_thesis,delay_grid_and_axis_mapping,整数时滞网格范围及l/j到tau1/tau2轴映射,TRUE,AMBIGUOUS,论文说明采样步语义，但历史代码/绘图轴映射未闭合,步骤3报告:290-303,逐图比较必须同时保存原矩阵和转置候选，保持待决定,FALSE,FALSE
+manuscript_0824,delay_grid_and_axis_mapping,整数时滞网格范围及l/j到tau1/tau2轴映射,TRUE,SYMBOLIC_ONLY,定义n_l与两个通道，但未绑定历史l/j矩阵行列身份,"manuscript_0824.tex:388-395,553,711；步骤3报告:290-303",逐图比较必须同时保存原矩阵和转置候选，保持待决定,FALSE,FALSE
+liang_thesis,negative_power_clearing,清除z负次幂的具体幂次,TRUE,MISSING,未给具体清幂次数,步骤3报告:328-334,不同清幂实现可能引入不同数量的原点伪根,FALSE,FALSE
+manuscript_0824,negative_power_clearing,清除z负次幂的具体幂次,TRUE,GENERAL_RULE_ONLY,只写乘以sufficient power of z,manuscript_0824.tex:430-434,不同清幂实现可能引入不同数量的原点伪根,FALSE,FALSE
+liang_thesis,origin_root_removal,原点伪根数量与剔除容差,TRUE,MISSING,未给出,步骤3报告:328-334,不能独立验收最终根数和主导极点,FALSE,FALSE
+manuscript_0824,origin_root_removal,原点伪根数量与剔除容差,TRUE,GENERAL_RULE_ONLY,要求discard原点根，但没有数量/容差,manuscript_0824.tex:430-434,不能独立验收最终根数和主导极点,FALSE,FALSE
+liang_thesis,root_solver_and_residual_gate,根求解器、根数合同与残差门槛,TRUE,MISSING,未给出,"步骤3报告:328-334,348-355",论文公式路线无法形成可审计的数值验收门,FALSE,FALSE
+manuscript_0824,root_solver_and_residual_gate,根求解器、根数合同与残差门槛,TRUE,MISSING,未给出数值求根器和残差阈值,步骤3报告:328-355,论文公式路线无法形成可审计的数值验收门,FALSE,FALSE
+liang_thesis,stability_predicate,稳定判据,TRUE,SPECIFIED,rho_cl<1稳定，=1临界，>1失稳,步骤3报告:36-48,程序实现还必须排除未计算零值并要求有限正值,FALSE,TRUE
+manuscript_0824,stability_predicate,稳定判据,TRUE,SPECIFIED,rho_cl<1,manuscript_0824.tex:711；步骤3报告:320-326,程序实现还必须排除未计算零值并要求有限正值,FALSE,TRUE

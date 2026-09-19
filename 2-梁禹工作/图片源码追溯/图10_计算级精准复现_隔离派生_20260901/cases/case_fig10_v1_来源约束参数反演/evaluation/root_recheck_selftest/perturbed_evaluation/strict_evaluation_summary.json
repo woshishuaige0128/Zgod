@@ -1,0 +1,336 @@
+{
+  "schema_version": "FIG10_STRICT_TARGET_EVALUATOR_V1",
+  "overall_status": "FAIL",
+  "evidence_label": "评估器自测，不是计算复现",
+  "claim_boundary": "目标引导的校准计算复现；本评估器不证明已恢复作者原始参数合同。",
+  "candidate_id": "SELFTEST_ONE_POINT_PERTURBATION",
+  "manifest": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\manifest.json",
+    "sha256": "2E1BED274021ECBFEB672A893E33AE4EBF6CAC8F7D2F108D46819C851361B937",
+    "candidate_id": "SELFTEST_ONE_POINT_PERTURBATION",
+    "evidence_label": "评估器自测，不是计算复现"
+  },
+  "target": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\code\\Fig10_双时滞稳定域\\输出\\plotted_data.mat",
+    "sha256": "9312FB45595499C4242BF00DAC344CE016CB64F844CB410EA89ECB1F6C8BC7E4",
+    "point_count": 386,
+    "target_internal_step_to_ms_max_abs_error": 0.0
+  },
+  "coordinate_contract": {
+    "step_index_base": 1,
+    "sampling_frequency_hz": 1024,
+    "conversion": "tau_ms=(tau_step-1)*1000/1024",
+    "ms_tolerance": 1e-12
+  },
+  "strict_gate": {
+    "expected_curve_point_counts": [
+      72,
+      69,
+      67,
+      69,
+      56,
+      53
+    ],
+    "expected_total_point_count": 386,
+    "candidate_total_point_count": 386,
+    "total_point_count_exact": true,
+    "curve_pass_count": 5,
+    "curve_count": 6,
+    "ordered_exact_required_orientation": "ORIGINAL_ONLY",
+    "set_difference_count": 2
+  },
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Original",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division1_original.csv",
+      "candidate_source_sha256": "CE8F9812986580232158A48FBF2E88E4356963334165F9B4DDE2F495C1CB18D0",
+      "target_point_count": 72,
+      "candidate_point_count": 72,
+      "expected_point_count": 72,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 72,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 72,
+      "ordered_exact_original": false,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": false,
+      "start_endpoint_exact": false,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        65,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        31
+      ],
+      "target_start_endpoint": [
+        64,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        31
+      ],
+      "endpoint_l1_error_steps_original": 1,
+      "symmetric_hausdorff_steps": 1.0,
+      "symmetric_hausdorff_ms": 0.9765625,
+      "point_levenshtein_original": 1,
+      "point_levenshtein_reversed_diagnostic": 72,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.9765625,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "FAIL",
+      "mask_metadata": null
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Craig-Bampton",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division1_craig_bampton.csv",
+      "candidate_source_sha256": "F78D7AE87595BED146069B52205C674CBFB3CB3F97E9EE3967BAAF94B24C4546",
+      "target_point_count": 69,
+      "candidate_point_count": 69,
+      "expected_point_count": 69,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 69,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 69,
+      "ordered_exact_original": true,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": true,
+      "start_endpoint_exact": true,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        59,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        26
+      ],
+      "target_start_endpoint": [
+        59,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        26
+      ],
+      "endpoint_l1_error_steps_original": 0,
+      "symmetric_hausdorff_steps": 0.0,
+      "symmetric_hausdorff_ms": 0.0,
+      "point_levenshtein_original": 0,
+      "point_levenshtein_reversed_diagnostic": 68,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.0,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "PASS",
+      "mask_metadata": null
+    },
+    {
+      "curve_id": "division1_guyan",
+      "figure_id": "4-4",
+      "division": 1,
+      "method": "Guyan",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division1_guyan.csv",
+      "candidate_source_sha256": "C8B3D3A7218B9CCA992DD951057C6D58E0664C9DB07B20EB01FA16629FDD4B11",
+      "target_point_count": 67,
+      "candidate_point_count": 67,
+      "expected_point_count": 67,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 67,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 67,
+      "ordered_exact_original": true,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": true,
+      "start_endpoint_exact": true,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        58,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        24
+      ],
+      "target_start_endpoint": [
+        58,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        24
+      ],
+      "endpoint_l1_error_steps_original": 0,
+      "symmetric_hausdorff_steps": 0.0,
+      "symmetric_hausdorff_ms": 0.0,
+      "point_levenshtein_original": 0,
+      "point_levenshtein_reversed_diagnostic": 66,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.0,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "PASS",
+      "mask_metadata": null
+    },
+    {
+      "curve_id": "division2_original",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Original",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division2_original.csv",
+      "candidate_source_sha256": "F3654F6CA24347EF5040E2233789821EBF84BE2865BABAD16BCC53627CC9A4F9",
+      "target_point_count": 69,
+      "candidate_point_count": 69,
+      "expected_point_count": 69,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 69,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 69,
+      "ordered_exact_original": true,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": true,
+      "start_endpoint_exact": true,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        57,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        28
+      ],
+      "target_start_endpoint": [
+        57,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        28
+      ],
+      "endpoint_l1_error_steps_original": 0,
+      "symmetric_hausdorff_steps": 0.0,
+      "symmetric_hausdorff_ms": 0.0,
+      "point_levenshtein_original": 0,
+      "point_levenshtein_reversed_diagnostic": 68,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.0,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "PASS",
+      "mask_metadata": null
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Craig-Bampton",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division2_craig_bampton.csv",
+      "candidate_source_sha256": "9A01DEFE80EF38EC95E983BA1D9DB7AC34981D33FB5695BE55162EA91BFE795B",
+      "target_point_count": 56,
+      "candidate_point_count": 56,
+      "expected_point_count": 56,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 56,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 56,
+      "ordered_exact_original": true,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": true,
+      "start_endpoint_exact": true,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        51,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        24
+      ],
+      "target_start_endpoint": [
+        51,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        24
+      ],
+      "endpoint_l1_error_steps_original": 0,
+      "symmetric_hausdorff_steps": 0.0,
+      "symmetric_hausdorff_ms": 0.0,
+      "point_levenshtein_original": 0,
+      "point_levenshtein_reversed_diagnostic": 56,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.0,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "PASS",
+      "mask_metadata": null
+    },
+    {
+      "curve_id": "division2_guyan",
+      "figure_id": "4-5",
+      "division": 2,
+      "method": "Guyan",
+      "input_type": "boundary_csv",
+      "candidate_source_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\root_recheck_selftest\\selftest_inputs\\perturbed\\division2_guyan.csv",
+      "candidate_source_sha256": "CC37836BE4FB63EFDF38B7E9F30D5AA1C15D13B644CCCD5F3536CE37C316CC27",
+      "target_point_count": 53,
+      "candidate_point_count": 53,
+      "expected_point_count": 53,
+      "point_count_exact": true,
+      "candidate_unique_point_count": 53,
+      "candidate_duplicate_point_count": 0,
+      "target_unique_point_count": 53,
+      "ordered_exact_original": true,
+      "ordered_exact_reversed_diagnostic": false,
+      "set_exact": true,
+      "start_endpoint_exact": true,
+      "end_endpoint_exact": true,
+      "candidate_start_endpoint": [
+        48,
+        2
+      ],
+      "candidate_end_endpoint": [
+        2,
+        23
+      ],
+      "target_start_endpoint": [
+        48,
+        2
+      ],
+      "target_end_endpoint": [
+        2,
+        23
+      ],
+      "endpoint_l1_error_steps_original": 0,
+      "symmetric_hausdorff_steps": 0.0,
+      "symmetric_hausdorff_ms": 0.0,
+      "point_levenshtein_original": 0,
+      "point_levenshtein_reversed_diagnostic": 52,
+      "candidate_declared_ms_present": true,
+      "candidate_declared_step_to_ms_max_abs_error": 0.0,
+      "ordered_candidate_to_target_ms_max_abs_error": 0.0,
+      "ms_tolerance": 1e-12,
+      "strict_curve_status": "PASS",
+      "mask_metadata": null
+    }
+  ],
+  "evaluator": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\strict_target_evaluator.py",
+    "sha256": "B3407620429F9EA2578E80450F59D88F2BDB5A0F6687193ED3C012AA93A35382"
+  }
+}

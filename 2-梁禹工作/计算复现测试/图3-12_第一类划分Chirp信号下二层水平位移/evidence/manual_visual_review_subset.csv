@@ -1,0 +1,2 @@
+﻿figure_pair_id,object_id,version,png_relative_path,montage_relative_path,no_cutoff_garble_overlap,style_and_linework,legend_and_labels,time_window_semantics,status,reviewer,review_date,notes
+F3-12:standard,F3-12,standard,F3-12_第一类子结构划分-Chirp信号的二层水平位移/figures/F3-12_第一类子结构划分-Chirp信号的二层水平位移.png,outputs/visual_review_tmp/board18_visual_montage_1.png,PASS,PASS,PASS,PASS,PASS,main-agent,2026-08-25,第一类划分Chirp二层整段波形清晰

@@ -1,0 +1,16 @@
+dof_number,dof_label,floor_number,dof_type,node_or_floor,in_horizontal_influence
+1,psi1,1,horizontal_translation,floor_1_shared_x,1
+2,psi2,1,node_rotation,floor_1_column_node_1,0
+3,psi3,1,node_rotation,floor_1_column_node_2,0
+4,psi4,1,node_rotation,floor_1_column_node_3,0
+5,psi5,1,node_rotation,floor_1_column_node_4,0
+6,psi6,2,horizontal_translation,floor_2_shared_x,1
+7,psi7,2,node_rotation,floor_2_column_node_1,0
+8,psi8,2,node_rotation,floor_2_column_node_2,0
+9,psi9,2,node_rotation,floor_2_column_node_3,0
+10,psi10,2,node_rotation,floor_2_column_node_4,0
+11,psi11,3,horizontal_translation,floor_3_shared_x,1
+12,psi12,3,node_rotation,floor_3_column_node_1,0
+13,psi13,3,node_rotation,floor_3_column_node_2,0
+14,psi14,3,node_rotation,floor_3_column_node_3,0
+15,psi15,3,node_rotation,floor_3_column_node_4,0

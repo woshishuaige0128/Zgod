@@ -1,0 +1,199 @@
+{
+  "pass": true,
+  "records": [
+    {
+      "format": "pptx",
+      "slides": [
+        {
+          "slide": 1,
+          "shape_count": 39,
+          "native_text_count": 15,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 2,
+          "shape_count": 94,
+          "native_text_count": 19,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 3,
+          "shape_count": 114,
+          "native_text_count": 33,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 4,
+          "shape_count": 274,
+          "native_text_count": 81,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 5,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 6,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 7,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 8,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 9,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 10,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 11,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 12,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 13,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 14,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 15,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        }
+      ],
+      "11_emf_vector_only": true,
+      "15_captions_present": true
+    },
+    {
+      "format": "ppt",
+      "slides": [
+        {
+          "slide": 1,
+          "shape_count": 39,
+          "native_text_count": 15,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 2,
+          "shape_count": 94,
+          "native_text_count": 19,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 3,
+          "shape_count": 114,
+          "native_text_count": 33,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 4,
+          "shape_count": 274,
+          "native_text_count": 81,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 5,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 6,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 7,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 8,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 9,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 10,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 11,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 12,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 13,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 14,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        },
+        {
+          "slide": 15,
+          "shape_count": 1,
+          "native_text_count": 0,
+          "text_and_math_format_match": true
+        }
+      ],
+      "11_emf_vector_only": true,
+      "15_captions_present": true
+    }
+  ]
+}

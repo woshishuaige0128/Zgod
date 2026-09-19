@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "divisions": {
+    "1": {
+      "n": 3,
+      "tau_s": 0.0029296875,
+      "first_unstable_tau_s": 0.0048828125,
+      "critical_frequency_hz": 18.324935186083636,
+      "critical_input_output_residue_abs": [
+        1.17080429626396e-06,
+        7.564572036493302e-07,
+        2.1067898638533695e-07
+      ],
+      "common_stable_reference_peak_hz": 18.45215503805418,
+      "window_hz": [
+        14.65994814886691,
+        21.98992222330036
+      ],
+      "models": {
+        "Full15": {
+          "frf_norm_error_pct": 0.0
+        },
+        "Guyan": {
+          "frf_norm_error_pct": 101.41325571359432,
+          "residual_identity": 1.0198290733430778e-15
+        },
+        "CB3": {
+          "frf_norm_error_pct": 3.979921823918763,
+          "residual_identity": 8.998543588847698e-16
+        }
+      },
+      "internal_force_norm": 0.0,
+      "static_omitted_load_identity_residual": 1.1777324194778767e-15,
+      "static_relative_error_pct": {
+        "Guyan": [
+          1.0519259862037905e-13,
+          1.30344857045965e-13,
+          8.206010630887385e-14
+        ],
+        "CB3": [
+          1.0519259862037905e-13,
+          1.30344857045965e-13,
+          8.206010630887385e-14
+        ]
+      }
+    },
+    "2": {
+      "n": 3,
+      "tau_s": 0.0029296875,
+      "first_unstable_tau_s": 0.005859375,
+      "critical_frequency_hz": 18.19341179605188,
+      "critical_input_output_residue_abs": [
+        1.337074723929762e-06,
+        8.728617258305997e-07,
+        2.4618936043447175e-07
+      ],
+      "common_stable_reference_peak_hz": 18.407335974546587,
+      "window_hz": [
+        14.554729436841505,
+        21.832094155262254
+      ],
+      "models": {
+        "Full15": {
+          "frf_norm_error_pct": 0.0
+        },
+        "Guyan": {
+          "frf_norm_error_pct": 77.59687423457666,
+          "residual_identity": 4.4089881047143555e-16
+        },
+        "CB3": {
+          "frf_norm_error_pct": 22.915439473710364,
+          "residual_identity": 8.829667890087766e-16
+        }
+      },
+      "internal_force_norm": 6164.83060128188,
+      "static_omitted_load_identity_residual": 1.7660170476927294e-15,
+      "static_relative_error_pct": {
+        "Guyan": [
+          0.0,
+          -3.830975862449552,
+          -1.4360518604052925e-13
+        ],
+        "CB3": [
+          0.0,
+          -0.14458856004854148,
+          -1.4360518604052925e-13
+        ]
+      }
+    }
+  }
+}

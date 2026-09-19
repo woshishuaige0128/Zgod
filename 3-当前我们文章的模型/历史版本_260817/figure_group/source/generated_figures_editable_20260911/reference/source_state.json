@@ -1,0 +1,23 @@
+{
+  "target": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\figure_group",
+  "reference_conversation": "6aa3a503-6c14-83e9-bdf4-8e7e6d2f9e3d",
+  "live": false,
+  "input_sha256": {
+    "generated_fig1.png": "750a5360df79e57216bccdc967acca155233ab5b3e86461a6b92ae3b87e7be8e",
+    "generated_fig2.png": "d37c86de342838c1b1f154c1fb123f7ce7bddc40515a1506867b2bbfbec1805e",
+    "generated_fig3.png": "998e99f25a697d192d3668ff1384ebf018399f1ffc2cf98e13db2c10559031e2",
+    "generated_fig4.png": "2d5d6bf1d1df5b04c7665080de9e8a298e3f25a7d355334620ee497fe07080d5",
+    "main_review_20260911.tex": "b9df7379a0b670e96f79f2653c55cd222a37c6b39da6912d2518ac8539881f5e",
+    "main_review_20260911.pdf": "75861398f42e5235e9e842ce362cb8fc9acba90e258e920920f950dbb8f6c471",
+    "fig01_force_feedback.pdf": "20e4d96bbe809a0daf89c2b9b43e2c4973c561cf1a2bf4bf7d75f4292224f467",
+    "fig02_geometry.pdf": "5bc55cd6892b43d613761d8637370c8ce456ad87ffd981a624ad0e7bf2ea58ab",
+    "fig03_dofs.pdf": "5733cef2dd958baa673b99f44d1f2764c2a7d4ee6a38dad4846cfc69022695c1",
+    "fig04_divisions.pdf": "c198830f0245426c5411a3b320aa42ed7b62ef8bf7ce0a7b2e06cad4460496f0"
+  },
+  "slides_before": 15,
+  "slide_size_points": [
+    720.0,
+    540.0
+  ],
+  "authoritative": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure1_4_editable_20260911\\backup\\disk_current.pptx"
+}

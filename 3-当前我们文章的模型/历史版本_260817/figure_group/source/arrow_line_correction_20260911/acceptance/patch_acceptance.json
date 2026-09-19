@@ -1,0 +1,418 @@
+{
+  "pass": true,
+  "arrows": 58,
+  "rotational_arrows": 42,
+  "translational_and_axis_arrows": 16,
+  "objects_after": {
+    "18": 102,
+    "19": 253
+  },
+  "records": [
+    {
+      "slide": 18,
+      "name": "fig3_floor_1_translation",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_1",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_2",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_3",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_1_4",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_floor_2_translation",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_1",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_2",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_3",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_2_4",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_floor_3_translation",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_1",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_2",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_3",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_rotation_3_4",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_axis_y",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 18,
+      "name": "fig3_axis_x",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi12_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi13_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi14_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi15_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi7_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi8_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi9_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi10_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi3_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi4_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi5_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi11_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi6_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_num_psi1_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi7_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi8_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi2_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi3_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi6_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_I_phys_psi1_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi13_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi14_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi15_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi8_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi9_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi10_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi3_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi4_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi5_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi11_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi6_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_num_psi1_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi12_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi13_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi7_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi8_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi2_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi3_arrow",
+      "curve": true,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi11_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi6_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    },
+    {
+      "slide": 19,
+      "name": "fig4_II_phys_psi1_arrow",
+      "curve": false,
+      "native_end_arrow": "triangle",
+      "one_shape": true
+    }
+  ]
+}

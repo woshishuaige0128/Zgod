@@ -1,0 +1,200 @@
+{
+  "schema": "board20_alt_guyan_div1_stage_validation_v1",
+  "created_at": "2026-08-25T08:22:03.601692+08:00",
+  "route_id": "alt_guyan_div1_stable_full_ps3",
+  "replicate": "rep01",
+  "overall_status": "PASS",
+  "matlab_launched_by_validation": false,
+  "check_count": 11,
+  "pass_count": 11,
+  "fail_count": 0,
+  "checks": [
+    {
+      "name": "CONFIG_SCHEMA_ROUTE_REPLICATE",
+      "status": "PASS",
+      "detail": {
+        "schema": "board20_original_mlx_run_config_v2",
+        "route_id": "alt_guyan_div1_stable_full_ps3",
+        "replicate": "rep01"
+      }
+    },
+    {
+      "name": "CONFIG_SEAL",
+      "status": "PASS",
+      "detail": {
+        "expected_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF",
+        "actual_sha256": "65F6CE0A87E950197D6F5D1AAEE0D17787EE53ACC59023F06F2E33F3B87ACDDF"
+      }
+    },
+    {
+      "name": "FOUR_FROZEN_INPUT_CONTRACTS",
+      "status": "PASS",
+      "detail": [
+        {
+          "item_id": "B20-0028",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Full.m",
+          "expected_sha256": "ABCC622ABB1E10ECA1A027DB04AF765719E16F8EFC4B14F1B73AE9E6A03A6C8E",
+          "actual_sha256": "ABCC622ABB1E10ECA1A027DB04AF765719E16F8EFC4B14F1B73AE9E6A03A6C8E",
+          "manifest_sha256": "ABCC622ABB1E10ECA1A027DB04AF765719E16F8EFC4B14F1B73AE9E6A03A6C8E",
+          "match": true
+        },
+        {
+          "item_id": "B20-0031",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Ps3.m",
+          "expected_sha256": "1F7ECDBDE5003486A6E742EEA63AB72F17D349978550BE419B327E763F276C49",
+          "actual_sha256": "1F7ECDBDE5003486A6E742EEA63AB72F17D349978550BE419B327E763F276C49",
+          "manifest_sha256": "1F7ECDBDE5003486A6E742EEA63AB72F17D349978550BE419B327E763F276C49",
+          "match": true
+        },
+        {
+          "item_id": "B20-0185",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\dependencies\\fcn_newmark_beta_const.m",
+          "expected_sha256": "0EE9605726A9FFC773F1DFEA1A6090F4AA35705D8F4BB8611E804D7D830689B0",
+          "actual_sha256": "0EE9605726A9FFC773F1DFEA1A6090F4AA35705D8F4BB8611E804D7D830689B0",
+          "manifest_sha256": "0EE9605726A9FFC773F1DFEA1A6090F4AA35705D8F4BB8611E804D7D830689B0",
+          "match": true
+        },
+        {
+          "item_id": "B20-0018",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\luxvjie_guyan_LQR2.mlx",
+          "expected_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+          "actual_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+          "manifest_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "EXACT_WORK_ALLOWLIST",
+      "status": "PASS",
+      "detail": {
+        "expected": [
+          "New_Full.m",
+          "New_Ps3.m",
+          "dependencies/fcn_newmark_beta_const.m",
+          "luxvjie_guyan_LQR2.mlx"
+        ],
+        "actual": [
+          "New_Full.m",
+          "New_Ps3.m",
+          "dependencies/fcn_newmark_beta_const.m",
+          "luxvjie_guyan_LQR2.mlx"
+        ],
+        "configured": [
+          "New_Full.m",
+          "New_Ps3.m",
+          "dependencies/fcn_newmark_beta_const.m",
+          "luxvjie_guyan_LQR2.mlx"
+        ]
+      }
+    },
+    {
+      "name": "FRESH_WORKDIR_NO_STAB_OUTPUT",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "NO_EXECUTION_OUTPUT_EXISTS",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "THREE_EXISTING_CODE_SEALS",
+      "status": "PASS",
+      "detail": [
+        {
+          "name": "stager",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+          "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+          "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+          "match": true
+        },
+        {
+          "name": "matlab_runner",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+          "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+          "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+          "match": true
+        },
+        {
+          "name": "outer_executor",
+          "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+          "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+          "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "FOUR_EXISTING_SEALED_FILES_UNCHANGED",
+      "status": "PASS",
+      "detail": [
+        {
+          "filename": "stage_board20_step2_runs.py",
+          "expected_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+          "actual_sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+          "match": true
+        },
+        {
+          "filename": "validate_board20_step2_stage.py",
+          "expected_sha256": "7F31B862D8614536AFC4599C718F09868F925A333D0FD3C65A1C3C73AD435C22",
+          "actual_sha256": "7F31B862D8614536AFC4599C718F09868F925A333D0FD3C65A1C3C73AD435C22",
+          "match": true
+        },
+        {
+          "filename": "run_one_board20_candidate.m",
+          "expected_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+          "actual_sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+          "match": true
+        },
+        {
+          "filename": "execute_board20_step2_route.py",
+          "expected_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+          "actual_sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "INDEPENDENT_STAGER_PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_alt_guyan_div1_stable_full_ps3.py",
+        "expected_sha256": "1B3A6DF0CEE2C9AA94BAF1ADE7DD5DC598E0BFCC73647DA798FB47B685416DC5",
+        "actual_sha256": "1B3A6DF0CEE2C9AA94BAF1ADE7DD5DC598E0BFCC73647DA798FB47B685416DC5",
+        "matlab_launched_by_stager": false
+      }
+    },
+    {
+      "name": "PS3_9X9_VS_LQR2_FIRST6_CONFLICT_DISCLOSED",
+      "status": "PASS",
+      "detail": {
+        "new_ps3_native_9d_static_evidence": true,
+        "candidate_first_6d_static_evidence": true,
+        "config_disclosure": true
+      }
+    },
+    {
+      "name": "RUNNER_EXECUTOR_COMPATIBLE_ROUTE_CONTRACT",
+      "status": "PASS",
+      "detail": {
+        "upstream_identity_status": "PRECOMMITTED_SAME_DIRECTORY_CANDIDATE_WITH_DIMENSION_SEMANTIC_CONFLICT",
+        "expected_scan_point_count": 441,
+        "expected_stab_shape": [
+          21,
+          21
+        ],
+        "expected_written_regions": [
+          [
+            1,
+            21,
+            1,
+            21
+          ]
+        ],
+        "upstream_count": 2,
+        "dependency_directory_count": 1
+      }
+    }
+  ]
+}

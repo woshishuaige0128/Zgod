@@ -1,0 +1,27 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_pilot_run2_wrapper_failure_v1",
+  "recorded_date": "2026-08-25",
+  "status": "OPERATIONAL_READ_ONLY_WRAPPER_FAIL_CANDIDATE_UNAFFECTED",
+  "failed_attempt_count": 1,
+  "cause": "The read-only wrapper used shortened repeatability field names that are not present in the sealed schema.",
+  "incorrect_field_names": [
+    "baseline_manifest_sha256",
+    "repeat_manifest_sha256",
+    "actual_manifest_sha256"
+  ],
+  "actual_schema_field_names": [
+    "baseline_artifact_manifest_sha256",
+    "repeat_artifact_manifest_sha256"
+  ],
+  "external_actual_manifest_source": "SHA-256 recomputed directly from outputs/step5_fullq_svd_candidate_v4/pilot/artifact_manifest.csv",
+  "candidate_rerun_due_to_failure": false,
+  "candidate_output_modified_due_to_failure": false,
+  "scientific_failure": false,
+  "resolution": "Re-read the existing repeatability JSON with the actual schema keys and independently recompute the current manifest SHA-256.",
+  "corrected_read_only_check_count": 10,
+  "corrected_read_only_pass_count": 10,
+  "corrected_read_only_fail_count": 0,
+  "pilot_repeatability_sha256": "A574B00F434D7AD471134F52288D6B474503D53F02C824A35FD3677EEAE2A560",
+  "artifact_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+  "full_run_authorized_by_this_record": false
+}

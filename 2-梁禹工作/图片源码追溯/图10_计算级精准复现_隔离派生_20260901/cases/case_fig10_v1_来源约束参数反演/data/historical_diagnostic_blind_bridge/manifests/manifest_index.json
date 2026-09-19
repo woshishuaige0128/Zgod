@@ -1,0 +1,23 @@
+{
+  "contract_count": 2,
+  "contracts": {
+    "H05": {
+      "contract_sha256": "1AA8245F4C403D9EDD773B8C0AC5434553EAAB9D2D367EE387DA044F6B4CE959",
+      "manifest_path": "manifests/H05.json",
+      "manifest_sha256": "37ADF9E0AE0035EB8690931DB568B392A23D78933E6A8CEC374E932004E675E6",
+      "route_count": 6
+    },
+    "H06": {
+      "contract_sha256": "B9F62E7F4A31429244822D28BE40BECA4020EBC5FB0E98D86EF55F256574B23F",
+      "manifest_path": "manifests/H06.json",
+      "manifest_sha256": "58B5ED0DA7D786ABBFB3824A9137BB73130DB98BA565D5B2CF153F829F8136AD",
+      "route_count": 6
+    }
+  },
+  "diagnostic_status": "HISTORICAL_DIAGNOSTIC_NOT_PAPER_FORMULA_VALID",
+  "grid_points_computed": 0,
+  "roots_computed": 0,
+  "route_count": 12,
+  "schema_version": "FIG10_HISTORICAL_DIAGNOSTIC_MANIFEST_INDEX_V1",
+  "status": "PASS_STAGE0_ONLY"
+}

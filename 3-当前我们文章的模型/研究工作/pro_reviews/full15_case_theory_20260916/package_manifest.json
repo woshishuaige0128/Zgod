@@ -1,0 +1,77 @@
+[
+  {
+    "path": "code/full15_model.py",
+    "sha256": "d0ca588bac0066be5743b2381ae6abed3b5794864886736984a870e58d0cc0aa",
+    "bytes": 10366
+  },
+  {
+    "path": "code/VERIFY_MODEL.m",
+    "sha256": "c8f9458b95b512d7c61ef4dc21c85884d1a816b4f60e987f739583384a75f728",
+    "bytes": 2405
+  },
+  {
+    "path": "code/verify_model.py",
+    "sha256": "7c6bd6f06f90dc560ec6503fc23e2db45877e31a897c181b3ae0572943d68199",
+    "bytes": 9809
+  },
+  {
+    "path": "code/verify_theory.py",
+    "sha256": "623af24d6deb2a8f0de20f7fb61859d10bfbbec1950d4eb6ab54181753964ae2",
+    "bytes": 3022
+  },
+  {
+    "path": "data/audit_matrices.mat",
+    "sha256": "6d4ef2686258bfb8adb1009dfb8f8a2f9c44ce6b001203fce43e087120713e1b",
+    "bytes": 6371
+  },
+  {
+    "path": "data/calculation.mat",
+    "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7",
+    "bytes": 11674973
+  },
+  {
+    "path": "data/model_and_cases.mat",
+    "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8",
+    "bytes": 877015
+  },
+  {
+    "path": "theory/full15_error_theory.pdf",
+    "sha256": "7bd66d18bd5ed25b0f52282c3c58bf9d59c3b30cf5f900b816d2abf18b350a9f",
+    "bytes": 157161
+  },
+  {
+    "path": "theory/full15_error_theory.tex",
+    "sha256": "339e59265c0f542e1bbaf16dbfa9604bd9190f8d5530993b356bd1804c8519d7",
+    "bytes": 13606
+  },
+  {
+    "path": "MODEL_SPECIFICATION.md",
+    "sha256": "4a2eed85334b2e8ff591a10120978aba203ad7469d59e5293c8efd5d8298ffa6",
+    "bytes": 3488
+  },
+  {
+    "path": "CASE_PROTOCOL.md",
+    "sha256": "4695924174d210fc9041fc93a3c0442afaa4a095a864630416ca2328ca21a5ad",
+    "bytes": 4235
+  },
+  {
+    "path": "source_manifest.json",
+    "sha256": "af8a5cd4e6a6e0ab0a874641122f3b0d6952ab832530dd9f3d890643ae25d216",
+    "bytes": 850
+  },
+  {
+    "path": "results/model_validation.json",
+    "sha256": "20c3c63533eeb0abf0ac79a5c4bbb5040ff4c19a56f99622447ab9ec7e928bbf",
+    "bytes": 219088
+  },
+  {
+    "path": "results/theory_validation.json",
+    "sha256": "ec6df952aa3184ec830f70bb8bff6569eaea72fede24aacf4bdebf38a2e105d2",
+    "bytes": 35992
+  },
+  {
+    "path": "results/matlab_validation.json",
+    "sha256": "0e1de596a372505c7cd1f956adc005518c7303759750925db89cecb0e43a3b73",
+    "bytes": 15207
+  }
+]

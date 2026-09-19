@@ -1,0 +1,201 @@
+[
+  {
+    "number": 1,
+    "label": "fig:rths-loop",
+    "files": [
+      "fig01_force_feedback.pdf"
+    ],
+    "source_line": 311,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Selected option: Figure 1-D. Compare with TU thesis Fig. 2-1 (PDF p.21).\n\t\\includegraphics[width=0.96\\textwidth]{fig01_force_feedback.pdf}\n\t\\caption{\\rev{Virtual MDOF RTHS model with delayed physical reactions and an additional delayed force feedback.}}\n\t\\label{fig:rths-loop}\n\\end{figure}",
+    "old_number": 1,
+    "old_files": [
+      "fig01_rths_loop_optionD.png"
+    ],
+    "page": 10
+  },
+  {
+    "number": 2,
+    "label": "fig:benchmark-geometry",
+    "files": [
+      "fig02_geometry.pdf"
+    ],
+    "source_line": 445,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Selected option: Figure 3-C. Compare with TU thesis Fig. 2-3 (PDF p.28).\n\t\\includegraphics[width=0.89\\textwidth]{fig02_geometry.pdf}\n\t\\caption{\\rev{Geometry and member sections of the reference frame; dimensions in mm. The numerical section properties are specified in the text.}}\n\t\\label{fig:benchmark-geometry}\n\\end{figure}",
+    "old_number": 2,
+    "old_files": [
+      "fig03_benchmark_geometry_optionC.png"
+    ],
+    "page": 14
+  },
+  {
+    "number": 3,
+    "label": "fig:dof-idealization",
+    "files": [
+      "fig03_dofs.pdf"
+    ],
+    "source_line": 471,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Selected option: Figure 4-D.\n\t% Panel (a): TU thesis Fig. 2-4 (PDF p.29); panel (b): Fig. 2-5 (PDF p.30).\n\t\\includegraphics[width=0.77\\textwidth]{fig03_dofs.pdf}\n\t\\caption{\\rev{Degrees of freedom and node numbering of the idealized numerical model.}}\n\t\\label{fig:dof-idealization}\n\\end{figure}",
+    "old_number": 3,
+    "old_files": [
+      "fig04b_dof_idealized_optionD.png"
+    ],
+    "page": 16
+  },
+  {
+    "number": 4,
+    "label": "fig:division",
+    "files": [
+      "fig04_divisions.pdf"
+    ],
+    "source_line": 497,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth,height=.74\\textheight,keepaspectratio]{fig04_divisions.pdf}\n\\caption{\\rev{Substructure divisions and local retained coordinates. (a) Division I. (b) Division II. The physical and numerical coordinate sets are listed in Table \\ref{tab:dof-sets}.}}\n\\label{fig:division}\n\\end{figure}",
+    "old_number": 4,
+    "old_files": [
+      "fig05a_divisionI_concept_optionD.png",
+      "fig05b_divisionII_concept_optionD.png"
+    ],
+    "page": 18
+  },
+  {
+    "number": 5,
+    "label": "fig:inputs",
+    "files": [
+      "fig11_excitation.pdf"
+    ],
+    "source_line": 538,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig11_excitation.pdf}\n\\caption{\\rev{Ground-acceleration inputs. (a) Scaled El Centro record. (b) Linear chirp.}}\n\\label{fig:inputs}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 20
+  },
+  {
+    "number": 6,
+    "label": "fig:horizontal-modes",
+    "files": [
+      "fig12_horizontal_modes.pdf"
+    ],
+    "source_line": 639,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig12_horizontal_modes.pdf}\n\\caption{\\rev{First two horizontal mode shapes expanded to the three storeys. Each shape is normalised by its largest horizontal component; the corresponding natural frequency is given in the legend.}}\n\\label{fig:horizontal-modes}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 24
+  },
+  {
+    "number": 7,
+    "label": "fig:eq-div1",
+    "files": [
+      "fig06_eq_div1.pdf"
+    ],
+    "source_line": 654,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Calculation-result plot: source/results mapping in figure/results_v2.\n\t% Compare with TU thesis Fig. 3-6 (PDF p.42) and Fig. 3-8 (PDF p.43).\n\t\\includegraphics[width=0.98\\textwidth]{fig06_eq_div1.pdf}\n\t\\caption{Horizontal storey displacement of division I under the El Centro record. (a) First storey. (b) Third storey.}\n\t\\label{fig:eq-div1}\n\\end{figure}",
+    "old_number": 5,
+    "old_files": [
+      "fig06_eq_div1.pdf"
+    ],
+    "page": 25
+  },
+  {
+    "number": 8,
+    "label": "fig:eq-div2",
+    "files": [
+      "fig07_eq_div2.pdf"
+    ],
+    "source_line": 663,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Calculation-result plot: source/results mapping in figure/results_v2.\n\t% Compare with TU thesis Fig. 3-9 (PDF p.44) and Fig. 3-10 (PDF p.45).\n\t\\includegraphics[width=0.98\\textwidth]{fig07_eq_div2.pdf}\n\t\\caption{Horizontal storey displacement of division II under the El Centro record. (a) First storey. (b) Third storey.}\n\t\\label{fig:eq-div2}\n\\end{figure}",
+    "old_number": 6,
+    "old_files": [
+      "fig07_eq_div2.pdf"
+    ],
+    "page": 26
+  },
+  {
+    "number": 9,
+    "label": "fig:middle-eq",
+    "files": [
+      "fig13_middle_eq.pdf"
+    ],
+    "source_line": 674,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig13_middle_eq.pdf}\n\\caption{\\rev{Reconstructed middle-storey displacement in division II under El Centro excitation. (a) Response comparison. (b) Guyan error. (c) Craig--Bampton error. Errors are measured relative to the full-order response; the two error panels use different vertical scales.}}\n\\label{fig:middle-eq}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 27
+  },
+  {
+    "number": 10,
+    "label": "fig:chirp-div1",
+    "files": [
+      "fig08_chirp_div1.pdf"
+    ],
+    "source_line": 685,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Calculation-result plot: source/results mapping in figure/results_v2.\n\t% Compare with unique thesis Fig. 3-11 (PDF p.46) and Fig. 3-13 (p.47--48).\n\t\\includegraphics[width=0.98\\textwidth]{fig08_chirp_div1.pdf}\n\t\\caption{Horizontal storey displacement of division I under the chirp excitation. (a) First storey. (b) Third storey.}\n\t\\label{fig:chirp-div1}\n\\end{figure}",
+    "old_number": 7,
+    "old_files": [
+      "fig08_chirp_div1.pdf"
+    ],
+    "page": 28
+  },
+  {
+    "number": 11,
+    "label": "fig:chirp-div2",
+    "files": [
+      "fig09_chirp_div2.pdf"
+    ],
+    "source_line": 694,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Calculation-result plot: source/results mapping in figure/results_v2.\n\t% Compare with unique thesis Fig. 3-14 (PDF p.48 lower) and Fig. 3-15 (PDF p.49).\n\t\\includegraphics[width=0.98\\textwidth]{fig09_chirp_div2.pdf}\n\t\\caption{Horizontal storey displacement of division II under the chirp excitation. (a) First storey. (b) Third storey.}\n\t\\label{fig:chirp-div2}\n\\end{figure}",
+    "old_number": 8,
+    "old_files": [
+      "fig09_chirp_div2.pdf"
+    ],
+    "page": 29
+  },
+  {
+    "number": 12,
+    "label": "fig:middle-chirp",
+    "files": [
+      "fig14_middle_chirp.pdf"
+    ],
+    "source_line": 705,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig14_middle_chirp.pdf}\n\\caption{\\rev{Reconstructed middle-storey displacement in division II under chirp excitation. (a) Response comparison. (b) Guyan error. (c) Craig--Bampton error. The two error panels use different vertical scales.}}\n\\label{fig:middle-chirp}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 30
+  },
+  {
+    "number": 13,
+    "label": "fig:peak-drift",
+    "files": [
+      "fig15_peak_drift.pdf"
+    ],
+    "source_line": 739,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig15_peak_drift.pdf}\n\\caption{\\rev{Peak absolute interstorey drift profiles. (a,b) El Centro excitation. (c,d) Chirp excitation. The left and right columns correspond to divisions I and II, respectively.}}\n\\label{fig:peak-drift}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 31
+  },
+  {
+    "number": 14,
+    "label": "fig:stability-domain",
+    "files": [
+      "fig10_stability_domain.pdf"
+    ],
+    "source_line": 752,
+    "block": "\\begin{figure}[htbp]\n\t\\centering\n\t% Historical stability-boundary snapshot, plotting-level reproduction only.\n\t% Compare with TU thesis Fig. 4-4 and Fig. 4-5 (both on PDF p.70).\n\t\\includegraphics[width=0.98\\textwidth]{fig10_stability_domain.pdf}\n\t\\caption{Stability domains in the plane of the two actuator delays. (a) Division I. (b) Division II.}\n\t\\label{fig:stability-domain}\n\\end{figure}",
+    "old_number": 9,
+    "old_files": [
+      "fig10_stability_domain.pdf"
+    ],
+    "page": 32
+  },
+  {
+    "number": 15,
+    "label": "fig:modal-shares",
+    "files": [
+      "fig16_modal_shares.pdf"
+    ],
+    "source_line": 789,
+    "block": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=.98\\textwidth]{fig16_modal_shares.pdf}\n\\caption{\\rev{Low-order modal-share distribution and actuator contributions. (a,c) Shares on the fifteen physical coordinates. (b,d) Signed relative changes at the two actuated coordinates, whose sum gives the ratio in Table \\ref{tab:energy}. The top and bottom rows correspond to divisions I and II, respectively.}}\n\\label{fig:modal-shares}\n\\end{figure}",
+    "old_number": null,
+    "old_files": [],
+    "page": 34
+  }
+]

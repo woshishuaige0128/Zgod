@@ -1,0 +1,62 @@
+{
+  "blocked_diagnostic_count": 12,
+  "bundle_count": 36,
+  "conclusion": "六条源干净模型链和24个公式候选可进入步骤8D；R05/R06共12包仅保留为BLOCKED历史诊断，禁止进入论文稳定域网格。",
+  "deterministic_file_count": 42,
+  "formula_candidate_count": 24,
+  "gate_count": 22,
+  "gate_pass_count": 22,
+  "generator_hashes": {
+    "matlab": "7e544495595d67b214ca0e1083a8244637d3d6b03531a0d652c6913734d65441",
+    "python_after": "b3f09be226275994cd2a570b81a8a19e59dd0e0a7da96fac904ea9e0201f053a",
+    "python_before": "b3f09be226275994cd2a570b81a8a19e59dd0e0a7da96fac904ea9e0201f053a",
+    "validator": "96379ee64d79f9495a187efdf3dc60212ebf210f84e504305325462a4d89254a"
+  },
+  "independence": "不导入任何生成器；子进程复跑后从磁盘独立重算",
+  "input_audit": {
+    "forbidden_import_hits": [],
+    "forbidden_reader_hits": [],
+    "loadmat_calls": [
+      "INPUT_MAT"
+    ]
+  },
+  "maximum_errors": {
+    "CARE_closed_loop_max_real": -1.2373194020996015,
+    "CARE_residual": 2.214043111382997e-12,
+    "Petrov_relative_error": 1.2368618905282994e-16,
+    "R06_open_loop_max_real": -1.2787616960883832,
+    "complex_laurent_probe_relative_error": 9.55829063558939e-15,
+    "laurent_same_power_relative_error": 1.5370301034332022e-16,
+    "matlab_python_base_relative_error": 9.122915216646865e-17,
+    "matrix_al_relative_error": 2.5916412151923004e-16,
+    "zero_delay_factor_relative_error": 5.117973944714969e-18
+  },
+  "schema": "board20-step8c-independent-validation-v1",
+  "source_hashes": [
+    {
+      "actual_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "expected_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8b_论文代码矩阵合同\\步骤8B_基础矩阵与选择矩阵.mat"
+    },
+    {
+      "actual_sha256": "e0fff9b1b0cff5db7013fe888d8a5957d3ac8776952ea40446109fe5a1c35923",
+      "expected_sha256": "e0fff9b1b0cff5db7013fe888d8a5957d3ac8776952ea40446109fe5a1c35923",
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div1\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "actual_sha256": "7781807f01b9d95ca9554f3ae5449065c4deb4c2ff8ffc62679e08bec8757061",
+      "expected_sha256": "7781807f01b9d95ca9554f3ae5449065c4deb4c2ff8ffc62679e08bec8757061",
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\main_ori_div2\\original_mlx\\rep03\\workspace\\workspace_complete.mat"
+    },
+    {
+      "actual_sha256": "dda04ce3dbff6a5dce33e6a7d07191f5a33d27f025174087ee395dfe4cf9d5d1",
+      "expected_sha256": "dda04ce3dbff6a5dce33e6a7d07191f5a33d27f025174087ee395dfe4cf9d5d1",
+      "pass": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\梁禹手稿.pdf"
+    }
+  ],
+  "status": "PASS"
+}

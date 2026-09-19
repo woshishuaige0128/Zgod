@@ -1,0 +1,149 @@
+{
+  "schema": "board20_original_mlx_run_config_v2",
+  "created_at": "2026-08-25T08:21:54.209636+08:00",
+  "route_id": "alt_guyan_div1_stable_full_ps3",
+  "declared_method": "Guyan",
+  "declared_division": "第一类子结构划分（稳定域同目录Ps3替代候选）",
+  "actual_code_identity": "Guyan-LQR2命名脚本；无LQR；21x21双时滞扫描；New_Ps3原生物理矩阵为9x9，候选脚本仅取前6维缩聚",
+  "upstream_selection_basis": "运行前预先固定为稳定域同目录New_Full.m+New_Ps3.m；不根据数值结果选路或拟合",
+  "upstream_identity_status": "PRECOMMITTED_SAME_DIRECTORY_CANDIDATE_WITH_DIMENSION_SEMANTIC_CONFLICT",
+  "dependency_closure_status": "CLOSED_WITH_AUTHOR_EXTERNAL_NEWMARK_DEPENDENCY",
+  "semantic_conflicts": [
+    {
+      "id": "PS3_9X9_TRUNCATED_TO_FIRST_6_DOF",
+      "status": "DISCLOSED_NOT_RESOLVED",
+      "evidence": "New_Ps3.m定义9x9 KPrt/MPrt/CPrt；luxvjie_guyan_LQR2.mlx的物理缩聚索引仅为index3=[1,4]与index4=[2,3,5,6]，因而忽略第7-9维"
+    }
+  ],
+  "execution_artifact": "ORIGINAL_MLX",
+  "replicate": "rep01",
+  "dependency_mode": "AUTHOR_FROZEN_EXTERNAL_DEPENDENCY",
+  "work_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work",
+  "run_output_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01",
+  "run_log_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01",
+  "upstream_files": [
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Full.m",
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Ps3.m"
+  ],
+  "dependency_directories": [
+    "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\dependencies"
+  ],
+  "candidate_mlx": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\luxvjie_guyan_LQR2.mlx",
+  "candidate_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+  "file_contracts": [
+    {
+      "kind": "upstream",
+      "execution_order": 1,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Full.m",
+      "expected_sha256": "ABCC622ABB1E10ECA1A027DB04AF765719E16F8EFC4B14F1B73AE9E6A03A6C8E",
+      "frozen_manifest_item_id": "B20-0028"
+    },
+    {
+      "kind": "upstream",
+      "execution_order": 2,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\New_Ps3.m",
+      "expected_sha256": "1F7ECDBDE5003486A6E742EEA63AB72F17D349978550BE419B327E763F276C49",
+      "frozen_manifest_item_id": "B20-0031"
+    },
+    {
+      "kind": "author_external_dependency",
+      "execution_order": 3,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\dependencies\\fcn_newmark_beta_const.m",
+      "expected_sha256": "0EE9605726A9FFC773F1DFEA1A6090F4AA35705D8F4BB8611E804D7D830689B0",
+      "frozen_manifest_item_id": "B20-0185"
+    },
+    {
+      "kind": "candidate_original_mlx",
+      "execution_order": 4,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\tmp\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\work\\luxvjie_guyan_LQR2.mlx",
+      "expected_sha256": "48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077",
+      "frozen_manifest_item_id": "B20-0018"
+    }
+  ],
+  "allowed_work_files": [
+    "New_Full.m",
+    "New_Ps3.m",
+    "dependencies/fcn_newmark_beta_const.m",
+    "luxvjie_guyan_LQR2.mlx"
+  ],
+  "source_contains_dlqr": false,
+  "expected_scan_point_count": 441,
+  "expected_stab_shape": [
+    21,
+    21
+  ],
+  "expected_written_regions": [
+    [
+      1,
+      21,
+      1,
+      21
+    ]
+  ],
+  "source_save_call_count": 0,
+  "enable_profile": false,
+  "runtime_call_evidence": "CLEAN_BASE_WORKSPACE_VARIABLE_K_lqr",
+  "actual_scan_point_count_method": "NOT_MEASURED_PROFILE_DISABLED",
+  "expected_stab_required_on_execution_success": true,
+  "author_save_targets": [],
+  "status_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_status.json",
+  "diary_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\matlab_diary.log",
+  "workspace_success": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_complete.mat",
+  "workspace_failure": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\workspace\\workspace_failure.mat",
+  "scientific_arrays": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\scientific\\scientific_arrays.mat",
+  "raw_stab": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\scientific\\raw_stab.mat",
+  "profile_info": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\profile_info.mat",
+  "author_saved_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\author_saved",
+  "process_exit_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\process_exit.json",
+  "command_txt": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\matlab_command.txt",
+  "shell_log": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\logs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\shell_stdout_stderr.log",
+  "config_hash_file": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step2_runs\\alt_guyan_div1_stable_full_ps3\\original_mlx\\rep01\\metadata\\run_config.sha256",
+  "instrumentation": {
+    "stager": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+      "sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7"
+    },
+    "matlab_runner": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+      "sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27"
+    },
+    "outer_executor": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+      "sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604"
+    }
+  },
+  "protected_existing_files": [
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+      "sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7",
+      "status_at_staging": "MATCH"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\validate_board20_step2_stage.py",
+      "sha256": "7F31B862D8614536AFC4599C718F09868F925A333D0FD3C65A1C3C73AD435C22",
+      "status_at_staging": "MATCH"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\run_one_board20_candidate.m",
+      "sha256": "76682306E224E5C02B6EFC6C3D2FD4B69048C7CBF58A9337A7378B5A823E6D27",
+      "status_at_staging": "MATCH"
+    },
+    {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\execute_board20_step2_route.py",
+      "sha256": "B5B31D2C72643CDCE24D85D4745C924BE3CFF1A47D6839EBA76FB7206420E604",
+      "status_at_staging": "MATCH"
+    }
+  ],
+  "staging_provenance": {
+    "mode": "INDEPENDENT_ALT_ROUTE_STAGER",
+    "actual_stager": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_alt_guyan_div1_stable_full_ps3.py",
+      "sha256": "1B3A6DF0CEE2C9AA94BAF1ADE7DD5DC598E0BFCC73647DA798FB47B685416DC5"
+    },
+    "compatibility_reference_stager": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\code\\stage_board20_step2_runs.py",
+      "sha256": "918C786BD8E1A1FBFB9A9B156B30A45A90D4207EB56F1509C2D29F3F08943FD7"
+    },
+    "matlab_launched_by_stager": false
+  }
+}

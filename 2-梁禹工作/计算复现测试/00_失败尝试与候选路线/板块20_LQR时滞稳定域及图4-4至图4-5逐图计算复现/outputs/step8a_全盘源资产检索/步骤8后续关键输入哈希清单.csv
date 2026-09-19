@@ -1,0 +1,13 @@
+﻿角色,绝对路径,是否存在,文件字节数,SHA256,后续用途
+硕士论文,D:\JZ_PhD\10_论文_Papers\Li\RHTS\梁禹手稿.pdf,是,3800682,DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1,仅作论文边界验收，不作计算输入
+作者最终绘图脚本,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\huitu_2.m,是,1497,85CB7D5300F3F820AFA80926B76F0430718709BD55722F45486F2F8B9848D1BC,计算合同或来源身份
+第一类历史最终MAT,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_2.mat,是,932,9B08117CEA7A9DF95D60C4300F3BDCB515765209CD03162114F0436C5094A4C4,计算合同或来源身份
+第二类历史最终MAT,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\绘图\lqr_3.mat,是,1431,69344E2E703AFE3BDFC1FA6DA133D36E450299B774C085ECE3252BCB18BDDEC1,计算合同或来源身份
+第一类原结构Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_ori_LQR2.mlx,是,4001,B8D80F17C8EC1112D14188BF2C01666B339D9A400E8FEBAE6C38656AB68558CD,计算合同或来源身份
+第二类原结构Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_ori_LQR3.mlx,是,6756,2606758B347C01574B812A4CD79BB2C353DCD6680C1DBF07B9AF485C5C03569D,计算合同或来源身份
+第一类Guyan Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_guyan_LQR2.mlx,是,14736,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,计算合同或来源身份
+第二类Guyan Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_guyan_LQR3.mlx,是,6779,C9A843A87F4B45D02DDB80F8780AB8E549E70BF6D2BE61A0C4B621E746CC2451,计算合同或来源身份
+第一类Craig-Bampton Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_cb_LQR2.mlx,是,16267,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,计算合同或来源身份
+第二类Craig-Bampton Live Script,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\liangyustability-master\新结构稳定\稳定域\luxvjie_cb_LQR3.mlx,是,16267,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,计算合同或来源身份
+板块17六路线全局矩阵,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\outputs\global_routes_matlab.mat,是,28817,A58A830134259585ECD091BA37B3A69640E79D3AA10B5094E106F2EC01ED56ED,计算合同或来源身份
+板块17局部物理子结构矩阵,D:\JZ_PhD\10_论文_Papers\Li\RHTS\liangyustability-master\test\00_失败尝试与候选路线\板块17_两类划分与缩聚候选路线\outputs\local_pd_reductions.mat,是,4285,763C0BB0158F942E392246776D0B5D3926A71AFF69DB50473EFA41DE0263A36F,计算合同或来源身份

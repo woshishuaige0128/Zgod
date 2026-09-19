@@ -1,0 +1,33 @@
+function modelFile = rths_make_simulink(outputDir)
+% 三个模型使用同一输入，分别经过广义力、状态空间和毫米转换。
+% 保留已核验链的运算顺序；没有历史From File路径、控制器或延迟块。
+[~,suffix]=fileparts(tempname);name=['rths_' suffix];
+modelFile=fullfile(outputDir,[name '.slx']);
+new_system(name);cleanup=onCleanup(@()close_system(name,0));
+set_param(name,'SolverType','Fixed-step','Solver','ode4','FixedStep','dt',...
+    'StopTime','40','ReturnWorkspaceOutputs','on','SaveTime','off',...
+    'SaveOutput','off','SignalLogging','off','BlockReduction','on');
+add_block('simulink/Sources/From Workspace',[name '/Ground_acceleration'],...
+    'VariableName','excitation_input','Interpolate','on',...
+    'OutputAfterFinalValue','Holding final value','Position',[35 145 180 175]);
+labels={'Full_order','Guyan','Craig_Bampton'};
+force={'full_force','guyan_force','cb_force'};
+for j=1:3
+    y=50+(j-1)*160;suffix=num2str(j);
+    add_block('simulink/Math Operations/Gain',[name '/' labels{j} '_force'],...
+        'Gain',force{j},'Multiplication','Element-wise(K.*u)','Position',[240 y 345 y+45]);
+    add_block('simulink/Continuous/State-Space',[name '/' labels{j}],...
+        'A',['A' suffix],'B',['B' suffix],'C',['C' suffix],'D',['D' suffix],...
+        'InitialCondition','0','Position',[410 y 565 y+55]);
+    add_block('simulink/Math Operations/Gain',[name '/m_to_mm_' suffix],...
+        'Gain','1000','Position',[610 y 675 y+45]);
+    add_block('simulink/Sinks/To Workspace',[name '/Storeys_' suffix],...
+        'VariableName',['response_' suffix],'SaveFormat','Timeseries',...
+        'MaxDataPoints','inf','SampleTime','-1','Position',[730 y 865 y+45]);
+    add_line(name,'Ground_acceleration/1',[labels{j} '_force/1'],'autorouting','on');
+    add_line(name,[labels{j} '_force/1'],[labels{j} '/1'],'autorouting','on');
+    add_line(name,[labels{j} '/1'],['m_to_mm_' suffix '/1'],'autorouting','on');
+    add_line(name,['m_to_mm_' suffix '/1'],['Storeys_' suffix '/1'],'autorouting','on');
+end
+save_system(name,modelFile);
+end

@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000
+      },
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "offenders": [
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": "本轮数据直接绘图",
+          "left": 1379.4,
+          "right": 1509.4,
+          "width": 130
+        },
+        {
+          "tag": "BR",
+          "cls": "",
+          "text": "",
+          "left": 1476.4,
+          "right": 1476.4,
+          "width": 0
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "→",
+          "left": 1516.6,
+          "right": 1540.6,
+          "width": 24
+        },
+        {
+          "tag": "DIV",
+          "cls": "",
+          "text": "最后才读参考CSV验收",
+          "left": 1547.8,
+          "right": 1677.8,
+          "width": 130
+        },
+        {
+          "tag": "BR",
+          "cls": "",
+          "text": "",
+          "left": 1644.8,
+          "right": 1644.8,
+          "width": 0
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "offenders": [
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "论文差异",
+          "left": 354.3,
+          "right": 413.2,
+          "width": 58.9
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "验收证据",
+          "left": 430.8,
+          "right": 489.6,
+          "width": 58.9
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "text": "小论文图MATLAB 中打开的主文件工况",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "小论文图MATLAB 中打开的主文件工况",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "text": "工况",
+          "left": 336.9,
+          "right": 764.8,
+          "width": 427.8
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "text": "Fig.6RUN_FIG06_FULLCHAIN.m第一类子结构划分；El Centro 1940 NS × 0.40Fig.7RUN_FIG07_FULLCH",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "Fig.6RUN_FIG06_FULLCHAIN.m第一类子结构划分；El Centro 1940 NS × 0.40",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "第一类子结构划分；El Centro 1940 NS × 0.40",
+          "left": 336.9,
+          "right": 764.8,
+          "width": 427.8
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "Fig.7RUN_FIG07_FULLCHAIN.m第二类子结构划分；El Centro 1940 NS × 0.40",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "第二类子结构划分；El Centro 1940 NS × 0.40",
+          "left": 336.9,
+          "right": 764.8,
+          "width": 427.8
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "Fig.8RUN_FIG08_FULLCHAIN.m第一类子结构划分；0.1–10 Hz、40 s 线性 Chirp",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "第一类子结构划分；0.1–10 Hz、40 s 线性 Chirp",
+          "left": 336.9,
+          "right": 764.8,
+          "width": 427.8
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "Fig.9RUN_FIG09_FULLCHAIN.m第二类子结构划分；同一次 0.1–10 Hz、40 s 线性 Chirp",
+          "left": 20,
+          "right": 764.8,
+          "width": 744.8
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "第二类子结构划分；同一次 0.1–10 Hz、40 s 线性 Chirp",
+          "left": 336.9,
+          "right": 764.8,
+          "width": 427.8
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "text": "函数/行号作用现场可以指出的变量",
+          "left": 20,
+          "right": 1182.5,
+          "width": 1162.5
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "函数/行号作用现场可以指出的变量",
+          "left": 20,
+          "right": 1182.5,
+          "width": 1162.5
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "text": "作用",
+          "left": 240.1,
+          "right": 914.4,
+          "width": 674.3
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "text": "现场可以指出的变量",
+          "left": 914.4,
+          "right": 1182.5,
+          "width": 268.1
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "text": "prepare_model_copy290–368复制和适配模型副本，设定 ode4、40 s、固定步长；修复第二类模型三层输出。runtime_model_f",
+          "left": 20,
+          "right": 1182.5,
+          "width": 1162.5
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "prepare_model_copy290–368复制和适配模型副本，设定 ode4、40 s、固定步长；修复第二类模型三层输出。runtime_model_f",
+          "left": 20,
+          "right": 1182.5,
+          "width": 1162.5
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "复制和适配模型副本，设定 ode4、40 s、固定步长；修复第二类模型三层输出。",
+          "left": 240.1,
+          "right": 914.4,
+          "width": 674.3
+        },
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "ode4",
+          "left": 450.2,
+          "right": 485.3,
+          "width": 35.2
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "runtime_model_file",
+          "left": 914.4,
+          "right": 1182.5,
+          "width": 268.1
+        },
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "runtime_model_file",
+          "left": 927.7,
+          "right": 1086,
+          "width": 158.3
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "text": "build_reduction_models370–428主从自由度重排、Guyan缩聚、固定界面模态排序、Craig–Bampton变换和楼层恢复矩阵。T_g",
+          "left": 20,
+          "right": 1182.5,
+          "width": 1162.5
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "主从自由度重排、Guyan缩聚、固定界面模态排序、Craig–Bampton变换和楼层恢复矩阵。",
+          "left": 240.1,
+          "right": 914.4,
+          "width": 674.3
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "text": "T_guyan、T_cb、M_guyan、M_cb",
+          "left": 914.4,
+          "right": 1182.5,
+          "width": 268.1
+        },
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "T_guyan",
+          "left": 927.7,
+          "right": 989.3,
+          "width": 61.6
+        },
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "T_cb",
+          "left": 1005.3,
+          "right": 1040.5,
+          "width": 35.2
+        },
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "M_guyan",
+          "left": 1056.5,
+          "right": 1118,
+          "width": 61.6
+        }
+      ]
+    }
+  ]
+}

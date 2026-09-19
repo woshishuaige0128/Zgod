@@ -1,0 +1,7 @@
+{
+  "script_count": 5,
+  "success_count": 0,
+  "failure_count": 5,
+  "empty_workspace_before_each": true,
+  "status": "EXPECTED_FAILURES_RECORDED"
+}

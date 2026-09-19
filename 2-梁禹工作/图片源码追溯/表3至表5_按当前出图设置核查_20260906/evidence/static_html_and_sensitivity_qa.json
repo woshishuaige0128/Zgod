@@ -1,0 +1,12 @@
+{
+  "html_utf8_parse": "PASS",
+  "external_rendering_resources": 0,
+  "sensitivity_matches_out_of_24": {
+    "正文倍频_2.7Hz / integral_nrmse_percent": 3,
+    "正文倍频_2.7Hz / sample_mean_nrmse_percent": 3,
+    "正文倍频_当前实算基频 / integral_nrmse_percent": 3,
+    "正文倍频_当前实算基频 / sample_mean_nrmse_percent": 3,
+    "表4标签 / integral_nrmse_percent": 3,
+    "表4标签 / sample_mean_nrmse_percent": 3
+  }
+}

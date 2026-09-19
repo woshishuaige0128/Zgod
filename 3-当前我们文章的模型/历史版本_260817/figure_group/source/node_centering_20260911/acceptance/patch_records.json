@@ -1,0 +1,920 @@
+[
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_1_number",
+    "old_circle_name": "fig3_node_1_circle",
+    "name": "fig3_node_1_labeled_circle",
+    "text": "1",
+    "xfrm": {
+      "off": {
+        "x": "2156862",
+        "y": "5506292"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_2_number",
+    "old_circle_name": "fig3_node_2_circle",
+    "name": "fig3_node_2_labeled_circle",
+    "text": "2",
+    "xfrm": {
+      "off": {
+        "x": "3330190",
+        "y": "5506292"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_3_number",
+    "old_circle_name": "fig3_node_3_circle",
+    "name": "fig3_node_3_labeled_circle",
+    "text": "3",
+    "xfrm": {
+      "off": {
+        "x": "4503518",
+        "y": "5506292"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_4_number",
+    "old_circle_name": "fig3_node_4_circle",
+    "name": "fig3_node_4_labeled_circle",
+    "text": "4",
+    "xfrm": {
+      "off": {
+        "x": "5672280",
+        "y": "5506292"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_5_number",
+    "old_circle_name": "fig3_node_5_circle",
+    "name": "fig3_node_5_labeled_circle",
+    "text": "5",
+    "xfrm": {
+      "off": {
+        "x": "2156862",
+        "y": "3999685"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_6_number",
+    "old_circle_name": "fig3_node_6_circle",
+    "name": "fig3_node_6_labeled_circle",
+    "text": "6",
+    "xfrm": {
+      "off": {
+        "x": "3330190",
+        "y": "3999685"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_7_number",
+    "old_circle_name": "fig3_node_7_circle",
+    "name": "fig3_node_7_labeled_circle",
+    "text": "7",
+    "xfrm": {
+      "off": {
+        "x": "4503518",
+        "y": "3999685"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_8_number",
+    "old_circle_name": "fig3_node_8_circle",
+    "name": "fig3_node_8_labeled_circle",
+    "text": "8",
+    "xfrm": {
+      "off": {
+        "x": "5672280",
+        "y": "3999685"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_9_number",
+    "old_circle_name": "fig3_node_9_circle",
+    "name": "fig3_node_9_labeled_circle",
+    "text": "9",
+    "xfrm": {
+      "off": {
+        "x": "2156862",
+        "y": "2465684"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_10_number",
+    "old_circle_name": "fig3_node_10_circle",
+    "name": "fig3_node_10_labeled_circle",
+    "text": "10",
+    "xfrm": {
+      "off": {
+        "x": "3330190",
+        "y": "2465684"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_11_number",
+    "old_circle_name": "fig3_node_11_circle",
+    "name": "fig3_node_11_labeled_circle",
+    "text": "11",
+    "xfrm": {
+      "off": {
+        "x": "4503518",
+        "y": "2465684"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_12_number",
+    "old_circle_name": "fig3_node_12_circle",
+    "name": "fig3_node_12_labeled_circle",
+    "text": "12",
+    "xfrm": {
+      "off": {
+        "x": "5672280",
+        "y": "2465684"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_13_number",
+    "old_circle_name": "fig3_node_13_circle",
+    "name": "fig3_node_13_labeled_circle",
+    "text": "13",
+    "xfrm": {
+      "off": {
+        "x": "2316654",
+        "y": "945380"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_14_number",
+    "old_circle_name": "fig3_node_14_circle",
+    "name": "fig3_node_14_labeled_circle",
+    "text": "14",
+    "xfrm": {
+      "off": {
+        "x": "3489982",
+        "y": "945380"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_15_number",
+    "old_circle_name": "fig3_node_15_circle",
+    "name": "fig3_node_15_labeled_circle",
+    "text": "15",
+    "xfrm": {
+      "off": {
+        "x": "4663310",
+        "y": "945380"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 18,
+    "old_number_name": "fig3_node_16_number",
+    "old_circle_name": "fig3_node_16_circle",
+    "name": "fig3_node_16_labeled_circle",
+    "text": "16",
+    "xfrm": {
+      "off": {
+        "x": "5832072",
+        "y": "945380"
+      },
+      "ext": {
+        "cx": "283060",
+        "cy": "283060"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node13_number",
+    "old_circle_name": "fig4_I_num_node13_circle",
+    "name": "fig4_I_num_node13_labeled_circle",
+    "text": "13",
+    "xfrm": {
+      "off": {
+        "x": "1930522",
+        "y": "716061"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node14_number",
+    "old_circle_name": "fig4_I_num_node14_circle",
+    "name": "fig4_I_num_node14_labeled_circle",
+    "text": "14",
+    "xfrm": {
+      "off": {
+        "x": "2706376",
+        "y": "716061"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node15_number",
+    "old_circle_name": "fig4_I_num_node15_circle",
+    "name": "fig4_I_num_node15_labeled_circle",
+    "text": "15",
+    "xfrm": {
+      "off": {
+        "x": "3482231",
+        "y": "716061"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node16_number",
+    "old_circle_name": "fig4_I_num_node16_circle",
+    "name": "fig4_I_num_node16_labeled_circle",
+    "text": "16",
+    "xfrm": {
+      "off": {
+        "x": "4268294",
+        "y": "716061"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node9_number",
+    "old_circle_name": "fig4_I_num_node9_circle",
+    "name": "fig4_I_num_node9_labeled_circle",
+    "text": "9",
+    "xfrm": {
+      "off": {
+        "x": "1894791",
+        "y": "1400038"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node10_number",
+    "old_circle_name": "fig4_I_num_node10_circle",
+    "name": "fig4_I_num_node10_labeled_circle",
+    "text": "10",
+    "xfrm": {
+      "off": {
+        "x": "2665542",
+        "y": "1400038"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node11_number",
+    "old_circle_name": "fig4_I_num_node11_circle",
+    "name": "fig4_I_num_node11_labeled_circle",
+    "text": "11",
+    "xfrm": {
+      "off": {
+        "x": "3446500",
+        "y": "1400038"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node12_number",
+    "old_circle_name": "fig4_I_num_node12_circle",
+    "name": "fig4_I_num_node12_labeled_circle",
+    "text": "12",
+    "xfrm": {
+      "off": {
+        "x": "4237668",
+        "y": "1400038"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node6_number",
+    "old_circle_name": "fig4_I_num_node6_circle",
+    "name": "fig4_I_num_node6_labeled_circle",
+    "text": "6",
+    "xfrm": {
+      "off": {
+        "x": "2665542",
+        "y": "2053389"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node7_number",
+    "old_circle_name": "fig4_I_num_node7_circle",
+    "name": "fig4_I_num_node7_labeled_circle",
+    "text": "7",
+    "xfrm": {
+      "off": {
+        "x": "3426083",
+        "y": "2053389"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node8_number",
+    "old_circle_name": "fig4_I_num_node8_circle",
+    "name": "fig4_I_num_node8_labeled_circle",
+    "text": "8",
+    "xfrm": {
+      "off": {
+        "x": "4222355",
+        "y": "2053389"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node3_number",
+    "old_circle_name": "fig4_I_num_node3_circle",
+    "name": "fig4_I_num_node3_labeled_circle",
+    "text": "3",
+    "xfrm": {
+      "off": {
+        "x": "3426083",
+        "y": "2681219"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_num_node4_number",
+    "old_circle_name": "fig4_I_num_node4_circle",
+    "name": "fig4_I_num_node4_labeled_circle",
+    "text": "4",
+    "xfrm": {
+      "off": {
+        "x": "4217251",
+        "y": "2681219"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node9_number",
+    "old_circle_name": "fig4_I_phys_node9_circle",
+    "name": "fig4_I_phys_node9_labeled_circle",
+    "text": "9",
+    "xfrm": {
+      "off": {
+        "x": "5845524",
+        "y": "1236700"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node10_number",
+    "old_circle_name": "fig4_I_phys_node10_circle",
+    "name": "fig4_I_phys_node10_labeled_circle",
+    "text": "10",
+    "xfrm": {
+      "off": {
+        "x": "6606066",
+        "y": "1226492"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node5_number",
+    "old_circle_name": "fig4_I_phys_node5_circle",
+    "name": "fig4_I_phys_node5_labeled_circle",
+    "text": "5",
+    "xfrm": {
+      "off": {
+        "x": "5814899",
+        "y": "1884947"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node6_number",
+    "old_circle_name": "fig4_I_phys_node6_circle",
+    "name": "fig4_I_phys_node6_labeled_circle",
+    "text": "6",
+    "xfrm": {
+      "off": {
+        "x": "6570336",
+        "y": "1884947"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node1_number",
+    "old_circle_name": "fig4_I_phys_node1_circle",
+    "name": "fig4_I_phys_node1_labeled_circle",
+    "text": "1",
+    "xfrm": {
+      "off": {
+        "x": "5814899",
+        "y": "2619967"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_I_phys_node2_number",
+    "old_circle_name": "fig4_I_phys_node2_circle",
+    "name": "fig4_I_phys_node2_labeled_circle",
+    "text": "2",
+    "xfrm": {
+      "off": {
+        "x": "6580544",
+        "y": "2619967"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node14_number",
+    "old_circle_name": "fig4_II_num_node14_circle",
+    "name": "fig4_II_num_node14_labeled_circle",
+    "text": "14",
+    "xfrm": {
+      "off": {
+        "x": "2706376",
+        "y": "3717393"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node15_number",
+    "old_circle_name": "fig4_II_num_node15_circle",
+    "name": "fig4_II_num_node15_labeled_circle",
+    "text": "15",
+    "xfrm": {
+      "off": {
+        "x": "3482231",
+        "y": "3717393"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node16_number",
+    "old_circle_name": "fig4_II_num_node16_circle",
+    "name": "fig4_II_num_node16_labeled_circle",
+    "text": "16",
+    "xfrm": {
+      "off": {
+        "x": "4268294",
+        "y": "3717393"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node10_number",
+    "old_circle_name": "fig4_II_num_node10_circle",
+    "name": "fig4_II_num_node10_labeled_circle",
+    "text": "10",
+    "xfrm": {
+      "off": {
+        "x": "2665542",
+        "y": "4386057"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node11_number",
+    "old_circle_name": "fig4_II_num_node11_circle",
+    "name": "fig4_II_num_node11_labeled_circle",
+    "text": "11",
+    "xfrm": {
+      "off": {
+        "x": "3446500",
+        "y": "4386057"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node12_number",
+    "old_circle_name": "fig4_II_num_node12_circle",
+    "name": "fig4_II_num_node12_labeled_circle",
+    "text": "12",
+    "xfrm": {
+      "off": {
+        "x": "4237668",
+        "y": "4386057"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node6_number",
+    "old_circle_name": "fig4_II_num_node6_circle",
+    "name": "fig4_II_num_node6_labeled_circle",
+    "text": "6",
+    "xfrm": {
+      "off": {
+        "x": "2665542",
+        "y": "5039409"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node7_number",
+    "old_circle_name": "fig4_II_num_node7_circle",
+    "name": "fig4_II_num_node7_labeled_circle",
+    "text": "7",
+    "xfrm": {
+      "off": {
+        "x": "3426083",
+        "y": "5039409"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node8_number",
+    "old_circle_name": "fig4_II_num_node8_circle",
+    "name": "fig4_II_num_node8_labeled_circle",
+    "text": "8",
+    "xfrm": {
+      "off": {
+        "x": "4222355",
+        "y": "5039409"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node3_number",
+    "old_circle_name": "fig4_II_num_node3_circle",
+    "name": "fig4_II_num_node3_labeled_circle",
+    "text": "3",
+    "xfrm": {
+      "off": {
+        "x": "3426083",
+        "y": "5677447"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_num_node4_number",
+    "old_circle_name": "fig4_II_num_node4_circle",
+    "name": "fig4_II_num_node4_labeled_circle",
+    "text": "4",
+    "xfrm": {
+      "off": {
+        "x": "4217251",
+        "y": "5677447"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node13_number",
+    "old_circle_name": "fig4_II_phys_node13_circle",
+    "name": "fig4_II_phys_node13_labeled_circle",
+    "text": "13",
+    "xfrm": {
+      "off": {
+        "x": "5830211",
+        "y": "3722498"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node14_number",
+    "old_circle_name": "fig4_II_phys_node14_circle",
+    "name": "fig4_II_phys_node14_labeled_circle",
+    "text": "14",
+    "xfrm": {
+      "off": {
+        "x": "6600962",
+        "y": "3717393"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node9_number",
+    "old_circle_name": "fig4_II_phys_node9_circle",
+    "name": "fig4_II_phys_node9_labeled_circle",
+    "text": "9",
+    "xfrm": {
+      "off": {
+        "x": "5814899",
+        "y": "4386057"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node10_number",
+    "old_circle_name": "fig4_II_phys_node10_circle",
+    "name": "fig4_II_phys_node10_labeled_circle",
+    "text": "10",
+    "xfrm": {
+      "off": {
+        "x": "6570336",
+        "y": "4386057"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node5_number",
+    "old_circle_name": "fig4_II_phys_node5_circle",
+    "name": "fig4_II_phys_node5_labeled_circle",
+    "text": "5",
+    "xfrm": {
+      "off": {
+        "x": "5799586",
+        "y": "5034304"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node6_number",
+    "old_circle_name": "fig4_II_phys_node6_circle",
+    "name": "fig4_II_phys_node6_labeled_circle",
+    "text": "6",
+    "xfrm": {
+      "off": {
+        "x": "6565232",
+        "y": "5039409"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node1_number",
+    "old_circle_name": "fig4_II_phys_node1_circle",
+    "name": "fig4_II_phys_node1_labeled_circle",
+    "text": "1",
+    "xfrm": {
+      "off": {
+        "x": "5814899",
+        "y": "5687656"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  },
+  {
+    "slide": 19,
+    "old_number_name": "fig4_II_phys_node2_number",
+    "old_circle_name": "fig4_II_phys_node2_circle",
+    "name": "fig4_II_phys_node2_labeled_circle",
+    "text": "2",
+    "xfrm": {
+      "off": {
+        "x": "6580544",
+        "y": "5687656"
+      },
+      "ext": {
+        "cx": "199068",
+        "cy": "199068"
+      }
+    }
+  }
+]

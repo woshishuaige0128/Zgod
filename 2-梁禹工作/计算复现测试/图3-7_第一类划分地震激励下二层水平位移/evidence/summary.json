@@ -1,0 +1,154 @@
+{
+  "generated_at_utc": "2026-08-24T18:35:58.466484+00:00",
+  "status": "PASS",
+  "route": "Independent Python continuous state space + fixed-step classical RK4",
+  "simulink_response_columns_read": false,
+  "simulink_called": false,
+  "force_equation": "M*qdd + C*qd + K*q = +f_projection*u(t)",
+  "force_sign": 1.0,
+  "force_sign_evidence": {
+    "Original": "frozen SLX SID4384 positive diag(horizontal_mask.*MRrt)",
+    "Guyan": "frozen SLX SID4386 positive T'*Mf",
+    "Craig-Bampton": "frozen SLX SID4398 positive T_cb'*Mf",
+    "state_input": "regenerate_chapter3_data.m second_order_ss B=[0;M\\I]"
+  },
+  "interpolation_contract": {
+    "unit_step": "From Workspace Interpolate=off; zero-order hold; exact timestamp uses new sample",
+    "chirp": "From Workspace Interpolate=on; piecewise linear values at each RK4 half/full stage",
+    "elcentro": "EQ_intensity*ElCentroAccel; piecewise linear values at each RK4 half/full stage",
+    "after_final_value": "hold final value"
+  },
+  "dt_s": 0.0009765625,
+  "stop_time_s": 40.0,
+  "samples": 40961,
+  "method_order": [
+    "Original",
+    "Guyan",
+    "Craig-Bampton"
+  ],
+  "floor_order": [
+    "Floor 1",
+    "Floor 2",
+    "Floor 3"
+  ],
+  "inputs": {
+    "reference": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board16\\reference_model_matlab.mat",
+      "sha256": "7F9C7C6ACEEDA106304B943F280CCFFF06CBA9137059857A4D89CB06D5B0DAB3",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board16\\reference_model_matlab.mat"
+      ]
+    },
+    "global_routes": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board17\\global_routes_matlab.mat",
+      "sha256": "A58A830134259585ECD091BA37B3A69640E79D3AA10B5094E106F2EC01ED56ED",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board17\\global_routes_matlab.mat"
+      ]
+    },
+    "pd_script": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\PDmonicanshu.m",
+      "sha256": "CB25DFABD21175FE0CE5F93ABE722B365D25C0D4ADE9BEAF3B7EBD25328D1C4D",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\PDmonicanshu.m"
+      ]
+    },
+    "generator": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\current_reproduction_code\\regenerate_chapter3_data.m",
+      "sha256": "CBD7D4BE3927DEC5C18D5C16FBE164528AE6DC022F0B81DB28BD93416F4E7CEE",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\current_reproduction_code\\regenerate_chapter3_data.m"
+      ]
+    },
+    "eq": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\EQ.mat",
+      "sha256": "F0292EF78E5B3FA585931F382BDFBF325FBC2E79DDA55ED4FC97568A3344F9C9",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\author_source\\模型与参数原件\\EQ.mat"
+      ]
+    },
+    "workspace_contract": {
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board17\\contract_simulink_workspace.csv",
+      "sha256": "15B934A84AD78C78704A81079B71C2F899E1932A9F2E38ACF78BC1C4DEA077B7",
+      "equivalent_candidates": [
+        "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\input\\upstream_passports\\board17\\contract_simulink_workspace.csv"
+      ]
+    }
+  },
+  "matrix_check_count": 60,
+  "matrix_pass_count": 60,
+  "response_check_count": 47,
+  "response_pass_count": 47,
+  "response_failures": [],
+  "uncertainties": [
+    "单位阶跃Interpolate=off在t=1 s不连续点的右端事件命中语义须与MATLAB逐点交叉核对；当前实现为精确时间戳采用新样本。"
+  ],
+  "datasets": {
+    "unit_step_division1": {
+      "basename": "单位激励_原结构三层响应",
+      "mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\单位激励_原结构三层响应.mat",
+      "mat_sha256": "B66BDB10D55F2C32433A9B5B2DBF1E47496608576DA7BB6F79E38056FB8D1B55",
+      "csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\单位激励_原结构三层响应.csv",
+      "csv_sha256": "F7A2107D39F5E49D89CBA14A9D664B1F04F4DE1AAA4DE993FDDFBB302A3119BC",
+      "shape": [
+        40961,
+        3,
+        3
+      ]
+    },
+    "division1_elcentro": {
+      "basename": "第一类划分_ElCentro地震响应",
+      "mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第一类划分_ElCentro地震响应.mat",
+      "mat_sha256": "01B9F37816718FBA0B00AD07206865002334B0AA3C50B9BB2D318C45FE36365C",
+      "csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第一类划分_ElCentro地震响应.csv",
+      "csv_sha256": "6D1C6FEC59A34135DCF8CEF88FA6173349DCF369D3FDDBCAFDD55C81B237AF25",
+      "shape": [
+        40961,
+        3,
+        3
+      ]
+    },
+    "division2_elcentro": {
+      "basename": "第二类划分_ElCentro地震响应",
+      "mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第二类划分_ElCentro地震响应.mat",
+      "mat_sha256": "2551BC18031C3A373A565E94EF9D233D2CDED0F082366FB9AD730C5AC3DFD772",
+      "csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第二类划分_ElCentro地震响应.csv",
+      "csv_sha256": "5FCEB2157E8ED264BE471E41AAB00811F11B4DE8B48206537BCC8628F89824C4",
+      "shape": [
+        40961,
+        3,
+        3
+      ]
+    },
+    "division1_chirp": {
+      "basename": "第一类划分_Chirp响应",
+      "mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第一类划分_Chirp响应.mat",
+      "mat_sha256": "A994A04AFC5F4EA971055D680C7FB318D73C9CF06A7D7DACC252606B832C3752",
+      "csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第一类划分_Chirp响应.csv",
+      "csv_sha256": "B74BDEC83372E581D484334ED0A39DF892902FECAE076844EA4F43B2AF9E83A2",
+      "shape": [
+        40961,
+        3,
+        3
+      ]
+    },
+    "division2_chirp": {
+      "basename": "第二类划分_Chirp响应",
+      "mat": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第二类划分_Chirp响应.mat",
+      "mat_sha256": "C40C4795DAF9A3B3E4653940A0BD55592DE189F1DE9BCA5E93AC7E046E6DE6D4",
+      "csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\输入数据\\第二类划分_Chirp响应.csv",
+      "csv_sha256": "2DC0C0BF22EFBAD759B7F5377321B31CFBF1D79348619C4C62888631386EDF26",
+      "shape": [
+        40961,
+        3,
+        3
+      ]
+    }
+  },
+  "check_files": {
+    "matrix_checks": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\matrix_checks.csv",
+    "matrix_checks_sha256": "1D337FB116FB76C6535A42F3DF98D5F7A820423B1C3A819EF5350B76ACF5CE1A",
+    "response_checks": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块18_图3-5至图3-15逐图计算复现\\outputs\\independent\\response_checks.csv",
+    "response_checks_sha256": "2382AFB12FE15EE667DBE3097B0C19105811AD7FAAF6C83E39BB419915E9BF9F"
+  }
+}

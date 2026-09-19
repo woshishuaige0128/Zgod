@@ -1,0 +1,3 @@
+﻿figure_pair_id,object_id,version,png_relative_path,montage_relative_path,no_cutoff_garble_overlap,style_and_linework,legend_and_labels,time_window_semantics,status,reviewer,review_date,notes
+F3-15:paper_historical_composite,F3-15,paper_historical_composite,F3-15_第二类子结构划分-Chirp信号的三层水平位移/figures/F3-15_论文历史组合版.png,outputs/visual_review_tmp/board18_visual_montage_2.png,PASS,PASS,PASS,PASS,PASS,main-agent,2026-08-25,明确标识历史组合版；整段来自第二类Chirp，两局部窗来自图3-10地震数据
+F3-15:physically_consistent_corrected,F3-15,physically_consistent_corrected,F3-15_第二类子结构划分-Chirp信号的三层水平位移/figures/F3-15_物理一致修正版.png,outputs/visual_review_tmp/board18_visual_montage_2.png,PASS,PASS,PASS,PASS,PASS,main-agent,2026-08-25,明确标识物理一致修正版；整段及13--14 s、38--38.3 s局部窗全部来自第二类Chirp

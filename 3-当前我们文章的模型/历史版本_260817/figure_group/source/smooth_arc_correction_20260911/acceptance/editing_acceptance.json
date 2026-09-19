@@ -1,0 +1,530 @@
+{
+  "pass": true,
+  "test_copies_only": true,
+  "move_points": [
+    7,
+    5
+  ],
+  "scale": 1.25,
+  "actual_arrow_edits": 84,
+  "results": [
+    {
+      "format": "pptx",
+      "passed": true,
+      "moved_scaled_saved_arrow_count": 42,
+      "records": [
+        {
+          "name": "fig3_rotation_1_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi12_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi14_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi15_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi9_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi10_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi4_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi5_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi2_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi14_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi15_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi9_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi10_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi4_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi5_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi12_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi2_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        }
+      ]
+    },
+    {
+      "format": "ppt",
+      "passed": true,
+      "moved_scaled_saved_arrow_count": 42,
+      "records": [
+        {
+          "name": "fig3_rotation_1_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_1_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_2_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_1",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_2",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_3",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig3_rotation_3_4",
+          "slide": 18,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi12_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi14_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi15_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi9_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi10_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi4_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_num_psi5_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi2_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_I_phys_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi14_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi15_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi9_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi10_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi4_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_num_psi5_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi12_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi13_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi7_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi8_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi2_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        },
+        {
+          "name": "fig4_II_phys_psi3_arrow",
+          "slide": 19,
+          "native_end_style": 2,
+          "one_freeform_object": true
+        }
+      ]
+    }
+  ]
+}

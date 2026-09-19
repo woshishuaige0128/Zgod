@@ -1,0 +1,70 @@
+[
+  {
+    "xml_index": 68,
+    "region": [
+      132.88000000000002,
+      28.886968315972226,
+      213.70000000000002,
+      108.3505325882523
+    ],
+    "grid_step_pt": 0.05,
+    "union_area": 202.00250000000003,
+    "compound_nonzero_area": 202.00250000000003,
+    "compound_evenodd_area": 113.54500000000002,
+    "nonzero_missing_fraction": 0.0,
+    "evenodd_missing_fraction": 0.4379029962500464,
+    "negative_local_winding_area": 0.0,
+    "polygons_with_negative_local_winding": 0
+  },
+  {
+    "xml_index": 75,
+    "region": [
+      132.89125,
+      29.349999999999998,
+      213.70000000000002,
+      108.1875
+    ],
+    "grid_step_pt": 0.05,
+    "union_area": 295.39750000000004,
+    "compound_nonzero_area": 295.39750000000004,
+    "compound_evenodd_area": 156.68250000000003,
+    "nonzero_missing_fraction": 0.0,
+    "evenodd_missing_fraction": 0.46958758960383884,
+    "negative_local_winding_area": 0.0,
+    "polygons_with_negative_local_winding": 0
+  },
+  {
+    "xml_index": 377,
+    "region": [
+      132.77312500000005,
+      151.61249999999998,
+      213.47500000000002,
+      230.32500000000002
+    ],
+    "grid_step_pt": 0.05,
+    "union_area": 218.90500000000003,
+    "compound_nonzero_area": 218.90500000000003,
+    "compound_evenodd_area": 123.80000000000003,
+    "nonzero_missing_fraction": 0.0,
+    "evenodd_missing_fraction": 0.43445786985221896,
+    "negative_local_winding_area": 0.0,
+    "polygons_with_negative_local_winding": 0
+  },
+  {
+    "xml_index": 384,
+    "region": [
+      132.89000000000001,
+      155.2118408203125,
+      213.6875,
+      225.8
+    ],
+    "grid_step_pt": 0.05,
+    "union_area": 191.14250000000004,
+    "compound_nonzero_area": 191.14250000000004,
+    "compound_evenodd_area": 107.60500000000002,
+    "nonzero_missing_fraction": 0.0,
+    "evenodd_missing_fraction": 0.4370430438023988,
+    "negative_local_winding_area": 0.0,
+    "polygons_with_negative_local_winding": 0
+  }
+]

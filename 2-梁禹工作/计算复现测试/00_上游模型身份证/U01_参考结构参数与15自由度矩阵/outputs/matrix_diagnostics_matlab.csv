@@ -1,0 +1,4 @@
+matrix_names,matrix_rows,matrix_cols,matrix_rank,symmetry_relative,minimum_eigenvalue,maximum_eigenvalue
+MRrt,15,15,15,0,51.0878119792178,6164.83060128188
+CRrt,15,15,15,0,1302.00899475064,182751.736039413
+KRrt,15,15,15,0,533776.276862509,132081273.377818

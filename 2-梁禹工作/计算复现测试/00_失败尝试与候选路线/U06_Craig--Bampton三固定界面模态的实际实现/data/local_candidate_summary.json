@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-08-25T01:47:26.499+08:00",
+  "scope": "Frozen local P/N candidates only; no Simulink, excitation, response, stability, or plotting run.",
+  "status_labels": {
+    "pd2_pd3": "CALCULATION_LEVEL_LOCAL_SUBSTRUCTURE_ONLY",
+    "new_scripts": "FAILED_ATTEMPTS_OR_DIMENSION_PROBES",
+    "assembled_12d": "FAILED_ATTEMPT_PENDING_DECISION"
+  },
+  "pd_candidates": [
+    {
+      "script": "PDmonicanshu2.m",
+      "run_status": "success",
+      "full_dof": 6,
+      "master_dof": 2,
+      "slave_dof": 4,
+      "guyan_dof": 2,
+      "cb_modes": 3,
+      "cb_dof": 5,
+      "damping_numeric": 0.1,
+      "damping_comment_claim": 0.05,
+      "damping_comment_consistency": false,
+      "matrix_finite": true
+    },
+    {
+      "script": "PDmonicanshu3.m",
+      "run_status": "success",
+      "full_dof": 9,
+      "master_dof": 2,
+      "slave_dof": 7,
+      "guyan_dof": 2,
+      "cb_modes": 3,
+      "cb_dof": 5,
+      "damping_numeric": 0.1,
+      "damping_comment_claim": 0.05,
+      "damping_comment_consistency": false,
+      "matrix_finite": true
+    }
+  ],
+  "new_attempt_count": 12,
+  "new_attempt_success_count": 4,
+  "new_attempt_error_count": 8,
+  "dimension_probe_disclaimer": "a0=a1=1 was used only to expose dimensions and is not an author value or historical result.",
+  "assembly_12d_claim_arithmetic": "manuscript: numerical CB 9 + physical CB 5 - two shared interfaces = 12",
+  "assembly_12d_observed": "FAIL_PENDING_DECISION",
+  "assembly_12d_result": "FAIL_PENDING_DECISION",
+  "no_assembled_matrix_created": true
+}

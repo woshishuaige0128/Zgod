@@ -1,0 +1,10 @@
+{
+  "byte_identical_file_count": 26,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "run1_file_count": 26,
+  "run2_file_count": 26,
+  "run_count": 2,
+  "same_file_set": true,
+  "status": "PASS"
+}

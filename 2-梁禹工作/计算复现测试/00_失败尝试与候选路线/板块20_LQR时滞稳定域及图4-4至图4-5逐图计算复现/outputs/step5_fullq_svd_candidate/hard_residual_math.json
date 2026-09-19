@@ -1,0 +1,31 @@
+{
+  "hard_residual_math": {
+    "hard_gate_scope": "Both r_P and r_G must be finite and <=1e-8 for every gated physical root.",
+    "laurent_definition": "For G(z)=sum_e B_e z^e, r_G(z)=sigma_min(G(z))/sum_e ||B_e||_2 |z|^e, using the original unconsolidated direct Laurent terms.",
+    "matrix_norm": "spectral 2-norm",
+    "near_unit_and_dominant_reporting": "For gated roots with abs(z)>=0.9 and for the selected dominant root, report maxima/values of both direct-SVD residuals and old vector-block residuals.",
+    "old_vector_residual_role": "The V2 residuals obtained by substituting the leading matrix_order entries of the ordinary/compact companion eigenvector are saved for every finite root as DIAGNOSTIC_ONLY_VECTOR_BLOCK_CONDITIONING. They never determine V3 PASS/FAIL.",
+    "polynomial_definition": "For P(z)=sum_k A_k z^k, r_P(z)=sigma_min(P(z))/sum_k ||A_k||_2 |z|^k.",
+    "scale_stable_evaluation": "For nonzero finite z, let h_e=e*log(|z|)+log(||B_e||_2), h=max_e h_e. Form Gs=sum_e exp(h_e-h)*exp(i*e*arg(z))*B_e/||B_e||_2 and ds=sum_e exp(h_e-h). Return sigma_min(Gs)/ds. The same rule with k>=0 is used for P. This is algebraically the stated normalized residual and avoids overflow/underflow.",
+    "svd_vector": "No companion eigenvector or fitted null vector is used: sigma_min is computed directly from the scaled characteristic matrix.",
+    "zero_boundary": "At z=0, polynomial terms with k>0 vanish and k=0 terms are evaluated by the same common scaling. A Laurent expression containing a negative exponent is undefined and recorded as +Inf. Cleared zero roots are not gated."
+  },
+  "numeric_gates": {
+    "critical_definition": "abs(rho-1) <= 1e-8",
+    "direct_formula_coefficient_relative_difference": 1e-12,
+    "full_q_compact_rho_difference_gate_role": "DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING",
+    "full_q_compact_root_distance_gate_role": "DIAGNOSTIC_ONLY_KNOWN_COMPACT_CONDITIONING",
+    "full_q_compact_stable_classification_must_match": true,
+    "gate_relaxation_allowed": false,
+    "max_gated_physical_svd_direct_laurent_residual": 1e-08,
+    "max_gated_physical_svd_polynomial_residual": 1e-08,
+    "near_unit_root_threshold": 0.9,
+    "rho_finite_and_strictly_positive": true,
+    "stable_definition": "rho < 1",
+    "unmatched_full_count_not_above_theoretical_extra": true,
+    "unmatched_full_max_abs_strictly_below": 0.9,
+    "unmatched_full_must_be_strictly_nondominant": true,
+    "vector_block_residual_gate_role": "DIAGNOSTIC_ONLY_VECTOR_BLOCK_CONDITIONING"
+  },
+  "schema_version": "board20_step5_fullq_svd_candidate_residual_math_v3"
+}

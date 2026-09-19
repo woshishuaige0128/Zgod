@@ -1,0 +1,11 @@
+metric,value,expected,status
+rows,40961,40961,PASS
+columns,10,10,PASS
+time_start_s,0,0,PASS
+time_end_s,40,40,PASS
+time_step_s,0.0009765625,0.0009765625,PASS
+max_time_step_error,0,<=1e-14,PASS
+finite_values,409610,409610,PASS
+axes_count,6,6,PASS
+curves_count,18,18,PASS
+font_used,Times New Roman,CMU Serif or fallback,PASS

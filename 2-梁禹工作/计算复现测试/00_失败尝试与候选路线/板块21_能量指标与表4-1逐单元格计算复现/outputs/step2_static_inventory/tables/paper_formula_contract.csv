@@ -1,0 +1,6 @@
+equation,pdf_page,printed_page,literal_formula,required_inputs,hard_invariant,open_issue,evidence_level
+4-41,72,62,Gamma_i=(phi_i^T M r)/(phi_i^T M phi_i),phi_i|M|r,denominator_nonzero,modal normalization convention is not stated,论文原文公式
+4-42,72,62,p_i=Gamma_i^2/sum_{k=1}^m Gamma_k^2,Gamma|m|modal_order,sum_i(p_i)=1,m and modal ordering are not stated for Table 4-1,论文原文公式
+4-43,72,62,"E_{j,i}=m_j phi_{j,i}^2/sum_{l=1}^n(m_l phi_{l,i}^2)",scalar_m_j|phi|n,"for each i: sum_j(E_{j,i})=1",off-diagonal mass and translational/rotational mass convention are not stated,论文原文公式
+4-44,72,62,"E_j^total=sum_{i=1}^m p_i E_{j,i}","p_i|E_{j,i}|m",sum_j(E_j^total)=1,Craig-Bampton physical-coordinate recovery is not stated,论文原文公式
+4-45,72,62,Delta E_k=sum_{k=1}^q[(E_guyan^total(k)-E^total(d_k))/E^total(d_k)],"D={d_1,...,d_q}|E_guyan^total|E^total",all reference denominators nonzero; preserve signed sum,left index conflicts with summed k; D mapping is underdefined; only Guyan symbol is printed,论文原文公式

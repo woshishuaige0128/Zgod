@@ -1,0 +1,238 @@
+{
+  "schema_version": "board20_step5_independent_compute_contract_v1",
+  "purpose": "Independent Python time-domain scalar-delay augmentation for the five sealed author file-identity routes. This contract never uses MATLAB spectral-radius results as computation inputs.",
+  "path_base": "parent directory of this contract's code directory",
+  "route_manifest_relpath": "code/board20_step4_route_manifest.json",
+  "route_manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+  "manifest_field_policy": {
+    "allowed": [
+      "route_id",
+      "route_name",
+      "route_role",
+      "declared_method",
+      "division",
+      "route_formula",
+      "workspace_relpath",
+      "matrix_variable_map",
+      "file_contracts"
+    ],
+    "workspace_contract_role": "workspace_complete",
+    "forbidden_scientific_input_names": [
+      "rho",
+      "poles",
+      "stable",
+      "critical",
+      "residual",
+      "stab"
+    ],
+    "statement": "The manifest is consumed only for route identity, matrix-variable identity, workspace path, and the workspace SHA-256 seal. Grid result paths and all MATLAB numerical results are ignored."
+  },
+  "allowed_input_roots": [
+    "code",
+    "outputs/step2_runs"
+  ],
+  "output_root_relpath": "outputs/step5_independent_compute",
+  "log_root_relpath": "logs/step5",
+  "numeric_gates": {
+    "rho_finite_and_strictly_positive": true,
+    "max_polynomial_residual": 1e-8,
+    "max_direct_laurent_residual": 1e-8,
+    "direct_formula_coefficient_relative_difference": 1e-12,
+    "compact_full_rho_absolute_difference": 1e-8,
+    "compact_full_root_relative_matching_difference": 1e-8,
+    "near_unit_root_threshold": 0.9,
+    "near_unit_root_relative_matching_difference": 1e-8,
+    "stable_definition": "rho < 1",
+    "critical_definition": "abs(rho - 1) <= 1e-8",
+    "zero_root_rule": "Only when clearing_power>0, remove finite roots whose magnitude is at most max(1e-12,100*eps*solver_order*max(1,median(abs(finite_nonzero_roots))))."
+  },
+  "matlab_storage_policy": {
+    "format": "MATLAB v7.3 HDF5",
+    "array_restore": "Every numeric dataset is converted to float64 and transposed after h5py read.",
+    "right_division": "M/al is computed only as scipy.linalg.solve(al.T,M.T).T; no inverse and no elementwise division."
+  },
+  "augmentation_policy": {
+    "compact_state": "[q_k,q_(k-1),channel-1 scalar delay chain,channel-2 scalar delay chain]",
+    "compact_order": "2*n+l+j",
+    "right_H_signal": "y_r(k)=e_r^T q_k; q_k and q_(k-1) supply the first two values and only d older scalars are appended.",
+    "left_H_signal": "u_r(k)=row_r(D0) q_k + row_r(Dminus1) q_(k-1); only d past u values are appended.",
+    "full_q_crosscheck": "Every one of the 41 real pilot points is also solved by the ordinary full-q history companion matrix. The exact algebraic order difference is at z=0, but a high-multiplicity zero can split into nonzero numerical roots in the ordinary companion eigensolve. The fixed zero tolerance must not be relaxed and roots must not be deleted by expected count. Strict all-root matching is therefore retained as DIAGNOSTIC_ONLY; rho, stable class, and roots with abs(z)>=0.9 remain acceptance gates.",
+    "full_q_order": "n*(max(l,j)+2)"
+  },
+  "modes": {
+    "preflight": "Read-only input and contract checks; writes only preflight metadata.",
+    "selftest": "Deterministic synthetic algorithm tests; no project scientific result.",
+    "pilot": "Exactly 41 sealed-workspace points; compact and full-q solvers both run.",
+    "full": "Five independent 31x67 grids using the compact solver; creates atomic checkpoints.",
+    "resume": "Resume the full-grid checkpoint only after code, contract, manifest, and workspace identity checks pass."
+  },
+  "full_grid": {
+    "l_start": 0,
+    "l_end": 30,
+    "j_start": 0,
+    "j_end": 66,
+    "shape": [31, 67],
+    "points_per_route": 2077,
+    "total_points": 10385
+  },
+  "pilot_points": {
+    "main_ori_div1": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]],
+    "main_guyan_div1": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]],
+    "alt_guyan_div1_stable_full_ps3": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66]],
+    "main_ori_div2": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66], [25, 40], [25, 60], [5, 66]],
+    "main_guyan_div2": [[0, 0], [1, 0], [0, 1], [2, 5], [5, 2], [10, 10], [30, 66], [25, 40], [25, 60], [5, 66]]
+  },
+  "routes": [
+    {
+      "route_id": "main_ori_div1",
+      "route_role": "PRIMARY",
+      "route_formula": "ORI_DIV1_H_RIGHT",
+      "workspace_relpath": "outputs/step2_runs/main_ori_div1/original_mlx/rep03/workspace/workspace_complete.mat",
+      "workspace_sha256": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "matrix_variables": {"M": "MRrt", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"},
+      "delay_dofs_matlab_1_based": [1, 6]
+    },
+    {
+      "route_id": "main_guyan_div1",
+      "route_role": "PRIMARY",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "workspace_relpath": "outputs/step2_runs/main_guyan_div1/original_mlx/rep03/workspace/workspace_complete.mat",
+      "workspace_sha256": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"},
+      "delay_dofs_matlab_1_based": [1, 2]
+    },
+    {
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "route_role": "ALTERNATIVE_NOT_PRIMARY",
+      "route_formula": "GUYAN_DIV1_H_LEFT",
+      "workspace_relpath": "outputs/step2_runs/alt_guyan_div1_stable_full_ps3/original_mlx/rep01/workspace/workspace_complete.mat",
+      "workspace_sha256": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt"},
+      "delay_dofs_matlab_1_based": [1, 2]
+    },
+    {
+      "route_id": "main_ori_div2",
+      "route_role": "PRIMARY",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "workspace_relpath": "outputs/step2_runs/main_ori_div2/original_mlx/rep03/workspace/workspace_complete.mat",
+      "workspace_sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK"},
+      "delay_dofs_matlab_1_based": [1, 2]
+    },
+    {
+      "route_id": "main_guyan_div2",
+      "route_role": "PRIMARY",
+      "route_formula": "DIV2_H_LEFT_FEEDBACK_OUTSIDE",
+      "workspace_relpath": "outputs/step2_runs/main_guyan_div2/original_mlx/rep03/workspace/workspace_complete.mat",
+      "workspace_sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "matrix_variables": {"M": "MRren", "C1": "C1", "K1": "K1", "C2": "C2", "K2": "K2", "al": "al", "dt": "dt", "S": "S", "DeltaC": "DeltaC", "DeltaK": "DeltaK"},
+      "delay_dofs_matlab_1_based": [1, 2]
+    }
+  ],
+  "scientific_contracts": {
+    "sealed_author_file_identity_routes": {
+      "status": "CALCULABLE",
+      "evidence_label": "计算级复现候选",
+      "route_count": 5
+    },
+    "master_thesis_route": {
+      "status": "CONTRACT_NOT_CLOSED",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique input unit convention",
+        "unique control-input matrix B",
+        "second-division three-master-DOF matrix entry",
+        "executable scalar alpha value tied to the thesis route"
+      ],
+      "borrowing_policy": "Do not substitute the author program's discrete K_lqr, matrix al, or five-DOF workspace."
+    },
+    "manuscript_0824_route": {
+      "status": "CONTRACT_NOT_CLOSED",
+      "evidence_label": "待决定",
+      "required_interface": [
+        "M", "C", "K", "alpha_scalar", "dt", "Ba", "Kx", "Kv", "Sa",
+        "physical_delay_matrices", "channel_coordinate_map", "input_unit",
+        "state_order", "division_coordinate_map"
+      ],
+      "missing_required_fields": [
+        "unique Ba and actuator-input unit",
+        "complete psi1/psi11 actuator and psi6 reconstruction coordinate map",
+        "executable scalar alpha value tied to the manuscript route",
+        "unambiguous full-state ordering and division matrix entry"
+      ],
+      "borrowing_policy": "Do not substitute any historical outside-H feedback matrix or author-workspace al."
+    }
+  },
+  "noncomputable_failed_routes": [
+    {
+      "route_id": "main_cb_div1",
+      "upstream_status": "EXECUTION_FAIL",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "step5_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "main_cb_div2",
+      "upstream_status": "EXECUTION_FAIL",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "step5_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "energy_guyan_div1",
+      "upstream_status": "EXECUTION_FAIL",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "step5_policy": "DO_NOT_CREATE"
+    },
+    {
+      "route_id": "energy_guyan_div2",
+      "upstream_status": "EXECUTION_FAIL",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "step5_policy": "DO_NOT_CREATE"
+    }
+  ],
+  "per_route_files": [
+    "point_summary.csv",
+    "roots.h5",
+    "route_status.json",
+    "checkpoint.h5",
+    "checkpoint.json",
+    "point_runtime.csv"
+  ],
+  "repeatability_policy": {
+    "deterministic_scientific_files": [
+      "point_summary.csv",
+      "roots.h5",
+      "route_status.json",
+      "run_status.json",
+      "artifact_manifest.csv",
+      "contracts_status.json"
+    ],
+    "runtime_files_excluded_from_scientific_hash_gate": [
+      "checkpoint.h5",
+      "checkpoint.json",
+      "point_runtime.csv",
+      "run_metadata.json",
+      "logs/step5"
+    ],
+    "statement": "Wall-clock timestamps and elapsed times are truthful operational metadata, never fields in sealed scientific CSV/HDF5/status files."
+  },
+  "hdf5_schema": {
+    "points": [
+      "l", "j", "point_status", "rho_compact", "stable_compact", "critical_compact",
+      "max_polynomial_residual_compact", "max_laurent_residual_compact",
+      "compact_order", "full_q_order", "poly_degree", "clearing_power",
+      "compact_zero_root_tolerance", "full_zero_root_tolerance",
+      "compact_removed_zero_count", "full_removed_zero_count", "full_crosscheck_performed",
+      "rho_full", "compact_full_rho_abs_diff", "root_match_max_relative_diff",
+      "near_unit_root_match_max_relative_diff", "extra_full_roots_are_zero",
+      "strict_root_set_status", "theoretical_extra_zero_count",
+      "observed_extra_zero_count", "full_q_origin_multiplicity_splitting_count",
+      "full_q_origin_multiplicity_splitting_max_abs"
+    ],
+    "ragged_root_groups": [
+      "compact/raw", "compact/retained", "full_q/raw", "full_q/retained"
+    ],
+    "ragged_fields": [
+      "offset", "count", "real", "imag", "polynomial_residual", "laurent_residual"
+    ]
+  }
+}

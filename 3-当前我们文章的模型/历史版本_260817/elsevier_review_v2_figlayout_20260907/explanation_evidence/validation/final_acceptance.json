@@ -1,0 +1,759 @@
+{
+  "status": "PASS",
+  "checks_passed": 154,
+  "checks": [
+    {
+      "name": "previous version unchanged: cas-common.sty",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-common.sty"
+    },
+    {
+      "name": "previous version unchanged: cas-email.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-email.jpeg"
+    },
+    {
+      "name": "previous version unchanged: cas-facebook.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-facebook.jpeg"
+    },
+    {
+      "name": "previous version unchanged: cas-gplus.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-gplus.jpeg"
+    },
+    {
+      "name": "previous version unchanged: cas-linkedin.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-linkedin.jpeg"
+    },
+    {
+      "name": "previous version unchanged: cas-sc.cls",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-sc.cls"
+    },
+    {
+      "name": "previous version unchanged: cas-twitter.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-twitter.jpeg"
+    },
+    {
+      "name": "previous version unchanged: cas-url.jpeg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\cas-url.jpeg"
+    },
+    {
+      "name": "previous version unchanged: elsarticle-num-names.bst",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\elsarticle-num-names.bst"
+    },
+    {
+      "name": "previous version unchanged: main.abs",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.abs"
+    },
+    {
+      "name": "previous version unchanged: main.aux",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.aux"
+    },
+    {
+      "name": "previous version unchanged: main.bbl",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.bbl"
+    },
+    {
+      "name": "previous version unchanged: main.log",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.log"
+    },
+    {
+      "name": "previous version unchanged: main.out",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.out"
+    },
+    {
+      "name": "previous version unchanged: main.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.pdf"
+    },
+    {
+      "name": "previous version unchanged: main.synctex.gz",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.synctex.gz"
+    },
+    {
+      "name": "previous version unchanged: main.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\main.tex"
+    },
+    {
+      "name": "previous version unchanged: references.bib",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\references.bib"
+    },
+    {
+      "name": "previous version unchanged: RHTS第二版全文修改逐项对照与回退决策汇报.html",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\RHTS第二版全文修改逐项对照与回退决策汇报.html"
+    },
+    {
+      "name": "previous version unchanged: 文件清单_SHA256.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\文件清单_SHA256.csv"
+    },
+    {
+      "name": "previous version unchanged: 阅读与编译说明.md",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\阅读与编译说明.md"
+    },
+    {
+      "name": "previous version unchanged: change_operations.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\change_operations.json"
+    },
+    {
+      "name": "previous version unchanged: figure_mapping.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\figure_mapping.json"
+    },
+    {
+      "name": "previous version unchanged: main_changes.diff",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\main_changes.diff"
+    },
+    {
+      "name": "previous version unchanged: raw_hunks.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\raw_hunks.json"
+    },
+    {
+      "name": "previous version unchanged: report_manifest.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\report_manifest.json"
+    },
+    {
+      "name": "previous version unchanged: reviewer_comments.md",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\reviewer_comments.md"
+    },
+    {
+      "name": "previous version unchanged: validation_summary.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation_summary.json"
+    },
+    {
+      "name": "previous version unchanged: fig01_force_feedback.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig01_force_feedback.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig01_force_feedback.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig01_force_feedback.png"
+    },
+    {
+      "name": "previous version unchanged: fig01_force_feedback.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig01_force_feedback.tex"
+    },
+    {
+      "name": "previous version unchanged: fig02_geometry.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig02_geometry.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig02_geometry.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig02_geometry.png"
+    },
+    {
+      "name": "previous version unchanged: fig02_geometry.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig02_geometry.tex"
+    },
+    {
+      "name": "previous version unchanged: fig03_dofs.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig03_dofs.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig03_dofs.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig03_dofs.png"
+    },
+    {
+      "name": "previous version unchanged: fig03_dofs.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig03_dofs.tex"
+    },
+    {
+      "name": "previous version unchanged: fig04_divisions.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig04_divisions.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig04_divisions.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig04_divisions.png"
+    },
+    {
+      "name": "previous version unchanged: fig04_divisions.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig04_divisions.tex"
+    },
+    {
+      "name": "previous version unchanged: fig06_eq_div1.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig06_eq_div1.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig07_eq_div2.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig07_eq_div2.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig08_chirp_div1.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig08_chirp_div1.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig09_chirp_div2.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig09_chirp_div2.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig10_stability_domain.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig10_stability_domain.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig11_excitation.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig11_excitation.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig11_excitation.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig11_excitation.png"
+    },
+    {
+      "name": "previous version unchanged: fig12_horizontal_modes.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig12_horizontal_modes.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig12_horizontal_modes.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig12_horizontal_modes.png"
+    },
+    {
+      "name": "previous version unchanged: fig13_middle_eq.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig13_middle_eq.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig13_middle_eq.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig13_middle_eq.png"
+    },
+    {
+      "name": "previous version unchanged: fig14_middle_chirp.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig14_middle_chirp.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig14_middle_chirp.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig14_middle_chirp.png"
+    },
+    {
+      "name": "previous version unchanged: fig15_peak_drift.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig15_peak_drift.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig15_peak_drift.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig15_peak_drift.png"
+    },
+    {
+      "name": "previous version unchanged: fig16_modal_shares.pdf",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig16_modal_shares.pdf"
+    },
+    {
+      "name": "previous version unchanged: fig16_modal_shares.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\submit_figure\\fig16_modal_shares.png"
+    },
+    {
+      "name": "previous version unchanged: C_full.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\C_full.csv"
+    },
+    {
+      "name": "previous version unchanged: division_II_matrices.mat",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\division_II_matrices.mat"
+    },
+    {
+      "name": "previous version unchanged: division_I_matrices.mat",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\division_I_matrices.mat"
+    },
+    {
+      "name": "previous version unchanged: EQ.mat",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\EQ.mat"
+    },
+    {
+      "name": "previous version unchanged: K_full.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\K_full.csv"
+    },
+    {
+      "name": "previous version unchanged: M_full.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\M_full.csv"
+    },
+    {
+      "name": "previous version unchanged: README.txt",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\README.txt"
+    },
+    {
+      "name": "previous version unchanged: response_division_1_chirp.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\response_division_1_chirp.csv"
+    },
+    {
+      "name": "previous version unchanged: response_division_1_eq.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\response_division_1_eq.csv"
+    },
+    {
+      "name": "previous version unchanged: response_division_2_chirp.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\response_division_2_chirp.csv"
+    },
+    {
+      "name": "previous version unchanged: response_division_2_eq.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\supplementary_data\\response_division_2_eq.csv"
+    },
+    {
+      "name": "previous version unchanged: main_before.tex",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\main_before.tex"
+    },
+    {
+      "name": "previous version unchanged: references_before.bib",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\references_before.bib"
+    },
+    {
+      "name": "previous version unchanged: build_report.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\build_report.py"
+    },
+    {
+      "name": "previous version unchanged: check_portable_figures.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\check_portable_figures.py"
+    },
+    {
+      "name": "previous version unchanged: final_acceptance.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\final_acceptance.py"
+    },
+    {
+      "name": "previous version unchanged: make_diagrams.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\make_diagrams.py"
+    },
+    {
+      "name": "previous version unchanged: make_figures.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\make_figures.py"
+    },
+    {
+      "name": "previous version unchanged: package_cleanup.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\package_cleanup.py"
+    },
+    {
+      "name": "previous version unchanged: qa_report.cjs",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\qa_report.cjs"
+    },
+    {
+      "name": "previous version unchanged: revise_manuscript.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\revise_manuscript.py"
+    },
+    {
+      "name": "previous version unchanged: validate_package.py",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\validate_package.py"
+    },
+    {
+      "name": "previous version unchanged: verify_new_metrics.m",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\code\\verify_new_metrics.m"
+    },
+    {
+      "name": "previous version unchanged: additional_metrics.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\additional_metrics.json"
+    },
+    {
+      "name": "previous version unchanged: diagram_manifest.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\diagram_manifest.json"
+    },
+    {
+      "name": "previous version unchanged: new_actuator_share_contributions.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_actuator_share_contributions.csv"
+    },
+    {
+      "name": "previous version unchanged: new_excitation.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_excitation.csv"
+    },
+    {
+      "name": "previous version unchanged: new_figure_manifest.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_figure_manifest.json"
+    },
+    {
+      "name": "previous version unchanged: new_figure_metrics.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_figure_metrics.json"
+    },
+    {
+      "name": "previous version unchanged: new_horizontal_modes.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_horizontal_modes.csv"
+    },
+    {
+      "name": "previous version unchanged: new_metrics_matlab_validation.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_metrics_matlab_validation.json"
+    },
+    {
+      "name": "previous version unchanged: new_middle_chirp.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_middle_chirp.csv"
+    },
+    {
+      "name": "previous version unchanged: new_middle_eq.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_middle_eq.csv"
+    },
+    {
+      "name": "previous version unchanged: new_modal_shares.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_modal_shares.csv"
+    },
+    {
+      "name": "previous version unchanged: new_modes_frequencies.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_modes_frequencies.csv"
+    },
+    {
+      "name": "previous version unchanged: new_peak_drift.csv",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\new_peak_drift.csv"
+    },
+    {
+      "name": "previous version unchanged: table345_verified_values.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\data\\table345_verified_values.json"
+    },
+    {
+      "name": "previous version unchanged: final_acceptance.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\final_acceptance.json"
+    },
+    {
+      "name": "previous version unchanged: html_browser_checks.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\html_browser_checks.json"
+    },
+    {
+      "name": "previous version unchanged: html_visual_review.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\html_visual_review.json"
+    },
+    {
+      "name": "previous version unchanged: main.aux",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\main.aux"
+    },
+    {
+      "name": "previous version unchanged: main.blg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\main.blg"
+    },
+    {
+      "name": "previous version unchanged: main.log",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\main.log"
+    },
+    {
+      "name": "previous version unchanged: manuscript_visual_review.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\manuscript_visual_review.json"
+    },
+    {
+      "name": "previous version unchanged: portable_figure_check.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\portable_figure_check.json"
+    },
+    {
+      "name": "previous version unchanged: technical_checks.json",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\technical_checks.json"
+    },
+    {
+      "name": "previous version unchanged: main.abs",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\production_compile\\main.abs"
+    },
+    {
+      "name": "previous version unchanged: main.aux",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\production_compile\\main.aux"
+    },
+    {
+      "name": "previous version unchanged: main.blg",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\production_compile\\main.blg"
+    },
+    {
+      "name": "previous version unchanged: main.log",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\production_compile\\main.log"
+    },
+    {
+      "name": "previous version unchanged: main.out",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\validation\\production_compile\\main.out"
+    },
+    {
+      "name": "previous version unchanged: fig01_rths_loop_optionD.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig01_rths_loop_optionD.png"
+    },
+    {
+      "name": "previous version unchanged: fig02_pole_mapping_optionB.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig02_pole_mapping_optionB.png"
+    },
+    {
+      "name": "previous version unchanged: fig03_benchmark_geometry_optionC.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig03_benchmark_geometry_optionC.png"
+    },
+    {
+      "name": "previous version unchanged: fig04a_dof_assumptions_optionD.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig04a_dof_assumptions_optionD.png"
+    },
+    {
+      "name": "previous version unchanged: fig04b_dof_idealized_optionD.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig04b_dof_idealized_optionD.png"
+    },
+    {
+      "name": "previous version unchanged: fig05a_divisionI_concept_optionD.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig05a_divisionI_concept_optionD.png"
+    },
+    {
+      "name": "previous version unchanged: fig05b_divisionII_concept_optionD.png",
+      "passed": true,
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260817\\elsevier_review_v2_20260907\\revision_evidence\\baseline\\submit_figure\\fig05b_divisionII_concept_optionD.png"
+    },
+    {
+      "name": "previous version file set unchanged",
+      "passed": true
+    },
+    {
+      "name": "only figure6 and figure13 PDFs changed",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: C_full.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: division_II_matrices.mat",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: division_I_matrices.mat",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: EQ.mat",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: K_full.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: M_full.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: README.txt",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: response_division_1_chirp.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: response_division_1_eq.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: response_division_2_chirp.csv",
+      "passed": true
+    },
+    {
+      "name": "supplementary source identical: response_division_2_eq.csv",
+      "passed": true
+    },
+    {
+      "name": "two 1 by 4 figures",
+      "passed": true
+    },
+    {
+      "name": "24 original data series retained",
+      "passed": true
+    },
+    {
+      "name": "12 frequencies retained",
+      "passed": true
+    },
+    {
+      "name": "figure manifest hash: fig12_horizontal_modes.pdf",
+      "passed": true
+    },
+    {
+      "name": "figure manifest hash: fig12_horizontal_modes.png",
+      "passed": true
+    },
+    {
+      "name": "figure manifest hash: fig15_peak_drift.pdf",
+      "passed": true
+    },
+    {
+      "name": "figure manifest hash: fig15_peak_drift.png",
+      "passed": true
+    },
+    {
+      "name": "completed validation: independent_numeric_checks.json",
+      "passed": true
+    },
+    {
+      "name": "completed validation: manuscript_compile.json",
+      "passed": true
+    },
+    {
+      "name": "completed validation: browser_report_checks.json",
+      "passed": true
+    },
+    {
+      "name": "completed validation: render_checks.json",
+      "passed": true
+    },
+    {
+      "name": "full mass diagonal 1",
+      "passed": true
+    },
+    {
+      "name": "full mass normalization 1/Full",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "full mass normalization 1/Guyan",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "full mass normalization 1/CB",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "full mass diagonal 2",
+      "passed": true
+    },
+    {
+      "name": "full mass normalization 2/Full",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "full mass normalization 2/Guyan",
+      "passed": true,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "name": "full mass normalization 2/CB",
+      "passed": true,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "name": "HTML three inline PNGs",
+      "passed": true
+    },
+    {
+      "name": "HTML no external rendering dependencies",
+      "passed": true
+    },
+    {
+      "name": "HTML unique element IDs",
+      "passed": true
+    },
+    {
+      "name": "HTML embedded exact numeric calculation data",
+      "passed": true
+    },
+    {
+      "name": "HTML key calculations present",
+      "passed": true
+    },
+    {
+      "name": "figure15 source image unchanged",
+      "passed": true
+    },
+    {
+      "name": "final manuscript tex/pdf match compiled files",
+      "passed": true
+    }
+  ],
+  "previous_version_files_protected": 115,
+  "main_pdf_pages": 38,
+  "numeric_checks_passed": 144,
+  "browser_checks_passed": 142,
+  "report_print_pages": 11,
+  "expanded_report_print_pages": 14,
+  "report_sha256": "f44155057647baa49c0a89c612a829d72d1390f0a275be5e86e5393407c31e20",
+  "main_tex_sha256": "0b9e021dfaa87eb184fdba769cc1b06c7a895d6d9ded20d9546a97a929a6655c",
+  "main_pdf_sha256": "c646687b6ffffb3e6767aab4107f0220d4c4fe8a8cd8767f735d4862231a8fb3",
+  "visual_review": {
+    "updated_figures": "PASS",
+    "manuscript_changed_pages": "24 and 31--38 inspected; 29 other pages pixel-identical to prior PDF",
+    "report_desktop_mobile": "PASS",
+    "report_print": "PASS after removing a trailing paragraph-only page and footer-only page",
+    "inherited_limit": "Original 42 negative skips and corresponding tight/overlapping formula layout retained."
+  }
+}

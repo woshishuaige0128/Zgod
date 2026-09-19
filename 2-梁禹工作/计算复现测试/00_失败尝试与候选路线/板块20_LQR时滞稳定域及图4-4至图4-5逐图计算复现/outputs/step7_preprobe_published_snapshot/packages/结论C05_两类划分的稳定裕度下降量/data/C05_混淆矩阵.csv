@@ -1,0 +1,8 @@
+﻿figure_id,division,method,route_id,route_role,route_formula,availability,evaluated_points,expected_points,historical_stable_points,candidate_stable_points,true_positive,true_negative,false_positive,false_negative,mask_mismatch_points,agreement_fraction,candidate_is_subset_of_historical,comparison_status,calculation_level_mask_gate_pass,max_rho_step4_v4_abs_diff,candidate_hole_columns,candidate_hole_cells,candidate_connected_components
+F4-4,div1,Original,main_ori_div1,PRIMARY,ORI_DIV1_H_RIGHT,COMPUTABLE_CONTINUOUS_RHO,2077,2077,1454,65,65,623,0,1389,1389,0.33124699085219067,True,MASK_MISMATCH,False,9.9475983006414026e-14,0,0,1
+F4-4,div1,Craig-Bampton,,PRIMARY_REQUIRED,,NOT_COMPUTABLE_MISSING_ROUTE,0,2077,1175,,,,,,,,,NOT_EVALUATED_MISSING_ROUTE,False,,,,
+F4-4,div1,Guyan,main_guyan_div1,PRIMARY,GUYAN_DIV1_H_LEFT,COMPUTABLE_CONTINUOUS_RHO,2077,2077,1044,93,93,1033,0,951,951,0.54212806933076552,True,MASK_MISMATCH,False,2.708944180085382e-14,0,0,1
+F4-5,div2,Original,main_ori_div2,PRIMARY,DIV2_H_LEFT_FEEDBACK_OUTSIDE,COMPUTABLE_CONTINUOUS_RHO,2077,2077,1247,34,34,830,0,1213,1213,0.41598459316321618,True,MASK_MISMATCH,False,5.9996452250743459e-13,3,29,2
+F4-5,div2,Craig-Bampton,,PRIMARY_REQUIRED,,NOT_COMPUTABLE_MISSING_ROUTE,0,2077,1072,,,,,,,,,NOT_EVALUATED_MISSING_ROUTE,False,,,,
+F4-5,div2,Guyan,main_guyan_div2,PRIMARY,DIV2_H_LEFT_FEEDBACK_OUTSIDE,COMPUTABLE_CONTINUOUS_RHO,2077,2077,929,34,34,1148,0,895,895,0.56909003370245548,True,MASK_MISMATCH,False,5.9996452250743459e-13,3,29,2
+F4-4,div1,Guyan,alt_guyan_div1_stable_full_ps3,ALTERNATIVE_NOT_PRIMARY,GUYAN_DIV1_H_LEFT,COMPUTABLE_CONTINUOUS_RHO,2077,2077,1044,7,7,1033,0,1037,1037,0.50072219547424168,True,MASK_MISMATCH,False,3.8080649744642869e-13,0,0,1

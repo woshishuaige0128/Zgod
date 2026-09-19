@@ -1,0 +1,90 @@
+{
+  "archive_status": "FAILED_INFRASTRUCTURE_ATTEMPT_PRESERVED",
+  "artifact_file_count": 89,
+  "artifact_total_size_bytes": 1732889,
+  "attempt_file_manifest": "attempt_file_manifest.csv",
+  "attempt_id": "step3_attempt01_20260826_pid_contract_failure",
+  "created_at": "2026-08-26T03:28:28.964967+08:00",
+  "internal_absolute_paths_are_historical": true,
+  "moved_roots": [
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\step3_attempt01_20260826_pid_contract_failure\\outputs\\step3_stage",
+      "logical_root": "outputs_step3_stage",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_stage"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\step3_attempt01_20260826_pid_contract_failure\\outputs\\step3_runs",
+      "logical_root": "outputs_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\step3_attempt01_20260826_pid_contract_failure\\outputs\\step3_orchestration",
+      "logical_root": "outputs_step3_orchestration",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_orchestration"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\step3_attempt01_20260826_pid_contract_failure\\tmp\\step3_runs",
+      "logical_root": "tmp_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\tmp\\step3_runs"
+    },
+    {
+      "destination": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\attempts\\step3_attempt01_20260826_pid_contract_failure\\logs\\step3_runs",
+      "logical_root": "logs_step3_runs",
+      "source_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\logs\\step3_runs"
+    }
+  ],
+  "process_after_archive": {
+    "returncode": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_size_bytes": 0,
+    "stdout_sha256": "AA020E2B0C54FEBA599D8C5983377072C11AAE3F0D7E7A6EA614DC6CF6BF0983",
+    "stdout_size_bytes": 316,
+    "target_processes": []
+  },
+  "process_before_archive": {
+    "returncode": 0,
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_size_bytes": 0,
+    "stdout_sha256": "AA020E2B0C54FEBA599D8C5983377072C11AAE3F0D7E7A6EA614DC6CF6BF0983",
+    "stdout_size_bytes": 316,
+    "target_processes": []
+  },
+  "reason": "Windows MATLAB launcher PID and actual MATLAB child PID were distinct; the V1 evidence contract incorrectly required equality.",
+  "schema_version": "BOARD21_STEP3_ATTEMPT_ARCHIVE_V1",
+  "scientific_interpretation": "The first author route completed inside MATLAB, but this attempt is not accepted as Step3 evidence because the outer infrastructure contract failed.",
+  "semantic_diagnosis": {
+    "checks": {
+      "correct_interruption_point": true,
+      "executor_rejected_evidence": true,
+      "infrastructure_failure": true,
+      "launcher_and_matlab_pid_are_positive_and_distinct": true,
+      "matlab_exit_zero": true,
+      "one_run_executed": true,
+      "only_environment_contract_failed": true,
+      "orchestration_failed": true,
+      "orchestration_schema_v2": true,
+      "runner_completed_science": true,
+      "thirteen_runs_unstarted": true,
+      "zero_final_processes": true
+    },
+    "false_status_contract_checks": [
+      "environment"
+    ],
+    "launcher_pid": 9232,
+    "matlab_pid": 27592,
+    "orchestration_path_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_orchestration\\run_all_summary.json",
+    "process_exit_path_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\reference15_pd19_energy\\rep01\\metadata\\process_exit.json",
+    "status_path_before_archive": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块21_能量指标与表4-1逐单元格计算复现\\outputs\\step3_runs\\reference15_pd19_energy\\rep01\\metadata\\run_status.json"
+  },
+  "standard_step3_roots_absent_after_archive": true,
+  "step3_validation_was_absent": true,
+  "tool_snapshot_count": 5,
+  "tool_snapshot_manifest": "tool_snapshot_manifest.csv",
+  "tool_snapshot_sha256": {
+    "execute_board21_step3_route.py": "1FE62446A444C41409C21409AE40E773E73E105082DCE02BC197B5C67D6BEA53",
+    "run_board21_step3_all.py": "F80F3F5375679BDD912A204ED5AFE6DD1F45D7F401F7D06F5A852571D489C930",
+    "run_one_board21_energy_route.m": "8363F5BCE4139AF24174B63A6EDE71006E0D5EFFA057EFFC592A2BA14B654DF7",
+    "stage_board21_step3_runs.py": "9DEE64A057A82343227C2F49B23BEECB5A5AF076877CB2A54B478FCFAE769AA1",
+    "validate_board21_step3_runs.py": "A37138D25E45FD10F8B674FDB5C46785F188C9B248B85322B0FBBD90EF8A0183"
+  }
+}

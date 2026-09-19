@@ -1,0 +1,4993 @@
+{
+  "passed": true,
+  "tolerance_source_pt": 0.02,
+  "checked_measurements": 72,
+  "per_format": {
+    "pptx": 36,
+    "ppt": 36
+  },
+  "max_absolute_error_source_pt": 0.00035547971179017424,
+  "input_sha256": {
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\backup\\disk_current.pptx": "79a08582d410fe107a1b993a9db3114d34319f82221cbf97b062f503bbd97e67",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig5.pdf": "54ab1e63391954a6c4992ab71ba5ee1b88cfff48c8646f2156c0e2724d54cdbd",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig6.pdf": "c3ddf9e76ea7b6c96e8845493f79f307cf4d2e240e025e2658b8fbe32769baf2",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig7.pdf": "8eb8be66a7c07451c925155d60d8bb114ff819198342919c06a91cd9ea6c8536",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig8.pdf": "5fbc84021ac1aa2f7ec35c149bbb2971fb4bdf7928d638d84962b210cf75cb8b",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig9.pdf": "6e7f28981255c516b6409ce3567d964c0c68ebd587a55b6f7f675f78fba3497a",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig10.pdf": "eaa1eef5abff583a2ad30d0cdbec1746aee944bd8cb65841ce0e80333d16f8cb",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig11.pdf": "e5c5cff288e448cbde0a11a16d351234da9f40f9ea350962cf81274de94b8af7",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig12.pdf": "7e1037e9b41482a50fade5e0d2552721f7ff170445cc0473f09047eb92c26105",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig13.pdf": "8b730781c07834206cc115a6d98bffc22c64965fefae6772da4da4e73d92b467",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig14.pdf": "83d1d3a804c91dd1ab7c56a85fb7abb012c74b2b768b627343b6726347534fc0",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\260817\\figure_group\\fig15.pdf": "9af338f9e11ad4f686f5ad1b41094f205e5f358668d8efe9cd3813e5e291539b",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\preview\\explicit_pptx\\render.pdf": "cca33c0769fb4e504a24ad3d4eafdf754dac9682746acfeb08793ded1a2896c0",
+    "D:\\JZ_PhD\\10_\u8bba\u6587_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\figure_linewidth_fix_20260908\\preview\\explicit_ppt\\render.pdf": "20893fd6f38631d4cde362c322f7194fdf02bdbd352d82279eeb63b92ecd1bf0"
+  },
+  "all_inputs_unchanged": true,
+  "source_selection": "fig6-15: each non-black/non-white horizontal stroke path made of collinear l segments; fig5: both actual long solid acceleration curves",
+  "source_path_observation": "Matplotlib legends use two collinear l segments within one path, not one l item",
+  "rows": [
+    {
+      "format": "pptx",
+      "figure": 5,
+      "purpose": "actual_solid_acceleration_curve",
+      "color": "gray",
+      "source_draw_index": 22,
+      "target_draw_index": 64,
+      "source_pdf_width_pt": 0.800000011920929,
+      "picture_scale_x": 1.2516774792485057,
+      "picture_scale_y": 1.2517041296416322,
+      "width_scale": 1.2516908043741406,
+      "expected_ppt_width_pt": 1.0013526584206296,
+      "actual_ppt_width_pt": 1.0010000467300415,
+      "actual_width_in_source_pt": 0.7997183036193612,
+      "absolute_error_in_source_pt": 0.0002817083015677069,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        38.50553512573242,
+        27.497024536132812,
+        530.11181640625,
+        114.26766967773438
+      ],
+      "expected_target_rect": [
+        72.19651114329156,
+        129.66813916473473,
+        687.5290220792216,
+        238.27931402014605
+      ],
+      "actual_target_rect": [
+        72.21700286865234,
+        129.71400451660156,
+        687.4959716796875,
+        238.30799865722656
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 5,
+      "purpose": "actual_solid_acceleration_curve",
+      "color": "gray",
+      "source_draw_index": 48,
+      "target_draw_index": 138,
+      "source_pdf_width_pt": 0.800000011920929,
+      "picture_scale_x": 1.2516774792485057,
+      "picture_scale_y": 1.2517041296416322,
+      "width_scale": 1.2516908043741406,
+      "expected_ppt_width_pt": 1.0013526584206296,
+      "actual_ppt_width_pt": 1.0010000467300415,
+      "actual_width_in_source_pt": 0.7997183036193612,
+      "absolute_error_in_source_pt": 0.0002817083015677069,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        38.50553512573242,
+        161.41383361816406,
+        530.11181640625,
+        248.18447875976562
+      ],
+      "expected_target_rect": [
+        72.19651114329156,
+        297.2923621211433,
+        687.5290220792216,
+        405.9035369765546
+      ],
+      "actual_target_rect": [
+        72.21700286865234,
+        297.31298828125,
+        687.4959716796875,
+        405.906005859375
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 157,
+      "target_draw_index": [
+        671,
+        672,
+        673
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 671,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            224.31300354003906,
+            118.83699798583984,
+            229.98199462890625,
+            118.83699798583984
+          ]
+        },
+        {
+          "draw_index": 672,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            232.42999267578125,
+            118.83699798583984,
+            238.0919952392578,
+            118.83699798583984
+          ]
+        },
+        {
+          "draw_index": 673,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            240.5399932861328,
+            118.83699798583984,
+            244.9810028076172,
+            118.83699798583984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.531000018119812,
+        1.531000018119812
+      ],
+      "source_rect": [
+        157.0045928955078,
+        9.6300048828125,
+        173.20460510253906,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        224.31776189157338,
+        118.78694899770748,
+        244.98690365412315,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        224.31300354003906,
+        118.83699798583984,
+        244.9810028076172,
+        118.83699798583984
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 159,
+      "target_draw_index": [
+        684,
+        685,
+        686
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 684,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            325.3500061035156,
+            118.84500122070312,
+            335.1579895019531,
+            118.84500122070312
+          ]
+        },
+        {
+          "draw_index": 685,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            337.5979919433594,
+            118.84500122070312,
+            339.1289978027344,
+            118.84500122070312
+          ]
+        },
+        {
+          "draw_index": 686,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            341.5849914550781,
+            118.84500122070312,
+            346.01800537109375,
+            118.84500122070312
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.531000018119812,
+        1.531000018119812
+      ],
+      "source_rect": [
+        236.19818115234375,
+        9.6300048828125,
+        252.398193359375,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        325.3586426913481,
+        118.78694899770748,
+        346.0277844538979,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        325.3500061035156,
+        118.84500122070312,
+        346.01800537109375,
+        118.84500122070312
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 161,
+      "target_draw_index": 693,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        302.4840393066406,
+        9.6300048828125,
+        318.6840515136719,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        409.9309122386994,
+        118.78694899770748,
+        430.6000540012492,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        409.9209899902344,
+        118.84500122070312,
+        430.5899963378906,
+        118.84500122070312
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 259,
+      "target_draw_index": [
+        3194,
+        3195,
+        3196,
+        3197,
+        3198
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3194,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            177.83999633789062,
+            82.56600189208984,
+            182.6320037841797,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3195,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            184.70899963378906,
+            82.56600189208984,
+            189.50100708007812,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3196,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            191.5780029296875,
+            82.56600189208984,
+            196.37100219726562,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3197,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            198.447998046875,
+            82.56600189208984,
+            203.24000549316406,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3198,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            205.30799865722656,
+            82.56600189208984,
+            208.0229949951172,
+            82.56600189208984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        100.91645050048828,
+        8.19000244140625,
+        120.7164535522461,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.86501416932734,
+        82.61230881524628,
+        208.05362796819156,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        177.83999633789062,
+        82.56600189208984,
+        208.0229949951172,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 260,
+      "target_draw_index": 3207,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        168.80299377441406,
+        8.19000244140625,
+        188.60299682617188,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        281.3700808947836,
+        82.61230881524628,
+        311.55869469364785,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        281.3269958496094,
+        82.56600189208984,
+        311.510009765625,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 261,
+      "target_draw_index": [
+        3221,
+        3222,
+        3223,
+        3224,
+        3225
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3221,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            429.8890075683594,
+            82.57499694824219,
+            438.1780090332031,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3222,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            440.2550048828125,
+            82.57499694824219,
+            441.54998779296875,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3223,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            443.62701416015625,
+            82.57499694824219,
+            451.9159851074219,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3224,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            453.9930114746094,
+            82.57499694824219,
+            455.28900146484375,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3225,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            457.34698486328125,
+            82.57499694824219,
+            460.0719909667969,
+            82.57499694824219
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        266.2548522949219,
+        8.19000244140625,
+        286.05487060546875,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        429.9527105624082,
+        82.61230881524628,
+        460.14134762600065,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        429.8890075683594,
+        82.57499694824219,
+        460.0719909667969,
+        82.57499694824219
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 259,
+      "target_draw_index": [
+        3392,
+        3393,
+        3394,
+        3395,
+        3396
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3392,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            177.83999633789062,
+            82.56600189208984,
+            182.6320037841797,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3393,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            184.70899963378906,
+            82.56600189208984,
+            189.50100708007812,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3394,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            191.5780029296875,
+            82.56600189208984,
+            196.37100219726562,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3395,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            198.447998046875,
+            82.56600189208984,
+            203.24000549316406,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3396,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            205.30799865722656,
+            82.56600189208984,
+            208.0229949951172,
+            82.56600189208984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        100.91645050048828,
+        8.19000244140625,
+        120.7164535522461,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.86501416932734,
+        82.61230881524628,
+        208.05362796819156,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        177.83999633789062,
+        82.56600189208984,
+        208.0229949951172,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 260,
+      "target_draw_index": 3405,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        168.80299377441406,
+        8.19000244140625,
+        188.60299682617188,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        281.3700808947836,
+        82.61230881524628,
+        311.55869469364785,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        281.3269958496094,
+        82.56600189208984,
+        311.510009765625,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 261,
+      "target_draw_index": [
+        3419,
+        3420,
+        3421,
+        3422,
+        3423
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3419,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            429.8890075683594,
+            82.57499694824219,
+            438.1780090332031,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3420,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            440.2550048828125,
+            82.57499694824219,
+            441.54998779296875,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3421,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            443.62701416015625,
+            82.57499694824219,
+            451.9159851074219,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3422,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            453.9930114746094,
+            82.57499694824219,
+            455.28900146484375,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3423,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            457.34698486328125,
+            82.57499694824219,
+            460.0719909667969,
+            82.57499694824219
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        266.2548522949219,
+        8.19000244140625,
+        286.05487060546875,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        429.9527105624082,
+        82.61230881524628,
+        460.14134762600065,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        429.8890075683594,
+        82.57499694824219,
+        460.0719909667969,
+        82.57499694824219
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 29,
+      "target_draw_index": [
+        1407,
+        1408,
+        1409,
+        1410
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1407,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            374.3710021972656,
+            38.14099884033203,
+            378.9049987792969,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1408,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            380.8659973144531,
+            38.14099884033203,
+            385.3999938964844,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1409,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            387.3599853515625,
+            38.14099884033203,
+            391.8940124511719,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1410,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            393.8550109863281,
+            38.14099884033203,
+            396.4280090332031,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        280.24462890625,
+        13.40997314453125,
+        298.24462890625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        374.4680596264265,
+        38.1847841906218,
+        396.5288751981814,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        374.3710021972656,
+        38.14099884033203,
+        396.4280090332031,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 30,
+      "target_draw_index": [
+        1420,
+        1421,
+        1422
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1420,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            475.8349914550781,
+            38.14099884033203,
+            483.6780090332031,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1421,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            485.63800048828125,
+            38.14099884033203,
+            486.864013671875,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1422,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            488.8240051269531,
+            38.14099884033203,
+            496.6669921875,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        363.0382080078125,
+        13.40997314453125,
+        381.0382080078125,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        475.9399417978194,
+        38.1847841906218,
+        498.00075736957433,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        475.8349914550781,
+        38.14099884033203,
+        496.6669921875,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 31,
+      "target_draw_index": 1428,
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        432.924072265625,
+        13.40997314453125,
+        450.924072265625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        561.5921174902805,
+        38.1847841906218,
+        583.6529330620355,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        561.4609985351562,
+        38.15599822998047,
+        583.5180053710938,
+        38.15599822998047
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 9,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 33,
+      "target_draw_index": 1443,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        46.78448486328125,
+        201.68641662597656,
+        530.11181640625,
+        201.68641662597656
+      ],
+      "expected_target_rect": [
+        88.33910512157817,
+        268.92966961623074,
+        680.7055007859045,
+        268.92966961623074
+      ],
+      "actual_target_rect": [
+        88.29900360107422,
+        268.9440002441406,
+        680.5700073242188,
+        268.9440002441406
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 9,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 60,
+      "target_draw_index": 2256,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        46.78448486328125,
+        328.09259033203125,
+        530.11181640625,
+        328.09259033203125
+      ],
+      "expected_target_rect": [
+        88.33910512157817,
+        423.84856190860444,
+        680.7055007859045,
+        423.84856190860444
+      ],
+      "actual_target_rect": [
+        88.29900360107422,
+        423.885986328125,
+        680.5700073242188,
+        423.885986328125
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 255,
+      "target_draw_index": [
+        3510,
+        3511,
+        3512,
+        3513,
+        3514
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3510,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            182.3820037841797,
+            85.5,
+            187.11000061035156,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3511,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            189.14500427246094,
+            85.5,
+            193.86399841308594,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3512,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            195.90899658203125,
+            85.5,
+            200.6269989013672,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3513,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            202.6719970703125,
+            85.5,
+            207.38999938964844,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3514,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            209.43499755859375,
+            85.5,
+            212.0989990234375,
+            85.5
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        105.52413940429688,
+        8.19000244140625,
+        125.32414245605469,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        182.40622179840918,
+        85.54587991432764,
+        212.1287449360697,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        182.3820037841797,
+        85.5,
+        212.0989990234375,
+        85.5
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 256,
+      "target_draw_index": 3523,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        173.4106903076172,
+        8.19000244140625,
+        193.210693359375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        284.3132555844859,
+        85.54587991432764,
+        314.0357787221464,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        284.27398681640625,
+        85.5,
+        313.9909973144531,
+        85.5
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 257,
+      "target_draw_index": [
+        3537,
+        3538,
+        3539,
+        3540,
+        3541
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3537,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            430.5360107421875,
+            85.50900268554688,
+            438.71600341796875,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3538,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            440.74200439453125,
+            85.50900268554688,
+            442.01800537109375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3539,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            444.06298828125,
+            85.50900268554688,
+            452.2239990234375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3540,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            454.2690124511719,
+            85.50900268554688,
+            455.54400634765625,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3541,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            457.5889892578125,
+            85.50900268554688,
+            460.25299072265625,
+            85.50900268554688
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        270.862548828125,
+        8.19000244140625,
+        290.66253662109375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        430.60187544541384,
+        85.54587991432764,
+        460.3243756775369,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        430.5360107421875,
+        85.50900268554688,
+        460.25299072265625,
+        85.50900268554688
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 255,
+      "target_draw_index": [
+        3546,
+        3547,
+        3548,
+        3549,
+        3550
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3546,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            182.3820037841797,
+            85.5,
+            187.11000061035156,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3547,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            189.14500427246094,
+            85.5,
+            193.86399841308594,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3548,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            195.90899658203125,
+            85.5,
+            200.6269989013672,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3549,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            202.6719970703125,
+            85.5,
+            207.38999938964844,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3550,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            209.43499755859375,
+            85.5,
+            212.0989990234375,
+            85.5
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        105.52413940429688,
+        8.19000244140625,
+        125.32414245605469,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        182.40622179840918,
+        85.54587991432764,
+        212.1287449360697,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        182.3820037841797,
+        85.5,
+        212.0989990234375,
+        85.5
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 256,
+      "target_draw_index": 3559,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        173.4106903076172,
+        8.19000244140625,
+        193.210693359375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        284.3132555844859,
+        85.54587991432764,
+        314.0357787221464,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        284.27398681640625,
+        85.5,
+        313.9909973144531,
+        85.5
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 257,
+      "target_draw_index": [
+        3573,
+        3574,
+        3575,
+        3576,
+        3577
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3573,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            430.5360107421875,
+            85.50900268554688,
+            438.71600341796875,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3574,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            440.74200439453125,
+            85.50900268554688,
+            442.01800537109375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3575,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            444.06298828125,
+            85.50900268554688,
+            452.2239990234375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3576,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            454.2690124511719,
+            85.50900268554688,
+            455.54400634765625,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3577,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            457.5889892578125,
+            85.50900268554688,
+            460.25299072265625,
+            85.50900268554688
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        270.862548828125,
+        8.19000244140625,
+        290.66253662109375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        430.60187544541384,
+        85.54587991432764,
+        460.3243756775369,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        430.5360107421875,
+        85.50900268554688,
+        460.25299072265625,
+        85.50900268554688
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 29,
+      "target_draw_index": [
+        1251,
+        1252,
+        1253,
+        1254
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1251,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            374.3710021972656,
+            38.14099884033203,
+            378.9049987792969,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1252,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            380.8659973144531,
+            38.14099884033203,
+            385.3999938964844,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1253,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            387.3599853515625,
+            38.14099884033203,
+            391.8940124511719,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1254,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            393.8550109863281,
+            38.14099884033203,
+            396.4280090332031,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        280.24462890625,
+        13.40997314453125,
+        298.24462890625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        374.4680596264265,
+        38.1847841906218,
+        396.5288751981814,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        374.3710021972656,
+        38.14099884033203,
+        396.4280090332031,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 30,
+      "target_draw_index": [
+        1264,
+        1265,
+        1266
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1264,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            475.8349914550781,
+            38.14099884033203,
+            483.6780090332031,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1265,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            485.63800048828125,
+            38.14099884033203,
+            486.864013671875,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1266,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            488.8240051269531,
+            38.14099884033203,
+            496.6669921875,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        363.0382080078125,
+        13.40997314453125,
+        381.0382080078125,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        475.9399417978194,
+        38.1847841906218,
+        498.00075736957433,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        475.8349914550781,
+        38.14099884033203,
+        496.6669921875,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 31,
+      "target_draw_index": 1272,
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        432.924072265625,
+        13.40997314453125,
+        450.924072265625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        561.5921174902805,
+        38.1847841906218,
+        583.6529330620355,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        561.4609985351562,
+        38.15599822998047,
+        583.5180053710938,
+        38.15599822998047
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 12,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 33,
+      "target_draw_index": 1287,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        42.176795959472656,
+        201.44937133789062,
+        530.11181640625,
+        201.44937133789062
+      ],
+      "expected_target_rect": [
+        82.69191761497024,
+        268.63915537648484,
+        680.7055007859045,
+        268.63915537648484
+      ],
+      "actual_target_rect": [
+        82.66200256347656,
+        268.63800048828125,
+        680.5700073242188,
+        268.63800048828125
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 12,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 60,
+      "target_draw_index": 1891,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        42.176795959472656,
+        328.77593994140625,
+        530.11181640625,
+        328.77593994140625
+      ],
+      "expected_target_rect": [
+        82.69191761497024,
+        424.686050786157,
+        680.7055007859045,
+        424.686050786157
+      ],
+      "actual_target_rect": [
+        82.66200256347656,
+        424.7439880371094,
+        680.5700073242188,
+        424.7439880371094
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 125,
+      "target_draw_index": [
+        409,
+        410,
+        411
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 409,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            214.7209930419922,
+            130.08999633789062,
+            220.26100158691406,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 410,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            222.656005859375,
+            130.08999633789062,
+            228.2030029296875,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 411,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            230.59800720214844,
+            130.08999633789062,
+            234.94400024414062,
+            130.08999633789062
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        152.77615356445312,
+        11.25,
+        168.9761505126953,
+        11.25
+      ],
+      "expected_target_rect": [
+        214.71494078058447,
+        130.04199128237497,
+        234.9378707768304,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        214.7209930419922,
+        130.08999633789062,
+        234.94400024414062,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 127,
+      "target_draw_index": [
+        422,
+        423,
+        424
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 422,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            313.58099365234375,
+            130.08999633789062,
+            323.1619873046875,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 423,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            325.56500244140625,
+            130.08999633789062,
+            327.06298828125,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 424,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            329.46600341796875,
+            130.08999633789062,
+            333.8039855957031,
+            130.08999633789062
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        231.96974182128906,
+        11.25,
+        248.16973876953125,
+        11.25
+      ],
+      "expected_target_rect": [
+        313.5746131981954,
+        130.04199128237497,
+        333.79754319444135,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        313.58099365234375,
+        130.08999633789062,
+        333.8039855957031,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 129,
+      "target_draw_index": 431,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        298.255615234375,
+        11.25,
+        314.4555969238281,
+        11.25
+      ],
+      "expected_target_rect": [
+        396.32120766087587,
+        130.04199128237497,
+        416.54411860912916,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        396.3290100097656,
+        130.08999633789062,
+        416.552001953125,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 107,
+      "target_draw_index": [
+        322,
+        323,
+        324,
+        325
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 322,
+          "width_pt": 1.875,
+          "rect": [
+            177.7100067138672,
+            140.1300048828125,
+            184.6439971923828,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 323,
+          "width_pt": 1.875,
+          "rect": [
+            187.64300537109375,
+            140.1300048828125,
+            194.58700561523438,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 324,
+          "width_pt": 1.875,
+          "rect": [
+            197.5850067138672,
+            140.1300048828125,
+            204.52000427246094,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 325,
+          "width_pt": 1.875,
+          "rect": [
+            207.51800537109375,
+            140.1300048828125,
+            208.6510009765625,
+            140.1300048828125
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.875,
+        1.875
+      ],
+      "source_rect": [
+        98.35662078857422,
+        8.19000244140625,
+        118.15662384033203,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.71160838618874,
+        140.17569836253574,
+        208.65502928389705,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        177.7100067138672,
+        140.1300048828125,
+        208.6510009765625,
+        140.1300048828125
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 109,
+      "target_draw_index": 335,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        166.24317932128906,
+        8.19000244140625,
+        186.0431671142578,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        283.80464021469726,
+        140.17569836253574,
+        314.7480372659884,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        283.7869873046875,
+        140.1300048828125,
+        314.72900390625,
+        140.1300048828125
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 111,
+      "target_draw_index": [
+        351,
+        352,
+        353
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 351,
+          "width_pt": 1.875,
+          "rect": [
+            436.08099365234375,
+            140.13999938964844,
+            448.07501220703125,
+            140.13999938964844
+          ]
+        },
+        {
+          "draw_index": 352,
+          "width_pt": 1.875,
+          "rect": [
+            451.0830078125,
+            140.13999938964844,
+            452.9580078125,
+            140.13999938964844
+          ]
+        },
+        {
+          "draw_index": 353,
+          "width_pt": 1.875,
+          "rect": [
+            455.96600341796875,
+            140.13999938964844,
+            467.0220031738281,
+            140.13999938964844
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.875,
+        1.875
+      ],
+      "source_rect": [
+        263.6950378417969,
+        8.19000244140625,
+        283.4950256347656,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        436.10228721916496,
+        140.17569836253574,
+        467.0456842704561,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        436.08099365234375,
+        140.13999938964844,
+        467.0220031738281,
+        140.13999938964844
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 76,
+      "target_draw_index": [
+        309,
+        310,
+        311
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 309,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            282.46600341796875,
+            64.72599792480469,
+            288.0060119628906,
+            64.72599792480469
+          ]
+        },
+        {
+          "draw_index": 310,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            290.40899658203125,
+            64.72599792480469,
+            295.947998046875,
+            64.72599792480469
+          ]
+        },
+        {
+          "draw_index": 311,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            298.33599853515625,
+            64.72599792480469,
+            303.8909912109375,
+            64.72599792480469
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        207.0404052734375,
+        17.24334716796875,
+        225.0404052734375,
+        17.24334716796875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        64.7709932503623,
+        304.92451972130516,
+        64.7709932503623
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        64.72599792480469,
+        303.8909912109375,
+        64.72599792480469
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 78,
+      "target_draw_index": [
+        322,
+        323,
+        324
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 322,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            282.46600341796875,
+            80.37100219726562,
+            292.0469970703125,
+            80.37100219726562
+          ]
+        },
+        {
+          "draw_index": 323,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            294.45001220703125,
+            80.37100219726562,
+            295.947998046875,
+            80.37100219726562
+          ]
+        },
+        {
+          "draw_index": 324,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            298.33599853515625,
+            80.37100219726562,
+            304.9360046386719,
+            80.37100219726562
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        207.0404052734375,
+        29.78680419921875,
+        225.0404052734375,
+        29.78680419921875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        80.42617037323527,
+        304.92451972130516,
+        80.42617037323527
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        80.37100219726562,
+        304.9360046386719,
+        80.37100219726562
+      ]
+    },
+    {
+      "format": "pptx",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 80,
+      "target_draw_index": 331,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        207.0404052734375,
+        42.33026123046875,
+        225.0404052734375,
+        42.33026123046875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        96.08134749610824,
+        304.92451972130516,
+        96.08134749610824
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        96.03199768066406,
+        304.9360046386719,
+        96.03199768066406
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 5,
+      "purpose": "actual_solid_acceleration_curve",
+      "color": "gray",
+      "source_draw_index": 22,
+      "target_draw_index": 64,
+      "source_pdf_width_pt": 0.800000011920929,
+      "picture_scale_x": 1.2516774792485057,
+      "picture_scale_y": 1.2517041296416322,
+      "width_scale": 1.2516908043741406,
+      "expected_ppt_width_pt": 1.0013526584206296,
+      "actual_ppt_width_pt": 1.0010000467300415,
+      "actual_width_in_source_pt": 0.7997183036193612,
+      "absolute_error_in_source_pt": 0.0002817083015677069,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        38.50553512573242,
+        27.497024536132812,
+        530.11181640625,
+        114.26766967773438
+      ],
+      "expected_target_rect": [
+        72.19651114329156,
+        129.66813916473473,
+        687.5290220792216,
+        238.27931402014605
+      ],
+      "actual_target_rect": [
+        72.21700286865234,
+        129.71400451660156,
+        687.4959716796875,
+        238.30799865722656
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 5,
+      "purpose": "actual_solid_acceleration_curve",
+      "color": "gray",
+      "source_draw_index": 48,
+      "target_draw_index": 138,
+      "source_pdf_width_pt": 0.800000011920929,
+      "picture_scale_x": 1.2516774792485057,
+      "picture_scale_y": 1.2517041296416322,
+      "width_scale": 1.2516908043741406,
+      "expected_ppt_width_pt": 1.0013526584206296,
+      "actual_ppt_width_pt": 1.0010000467300415,
+      "actual_width_in_source_pt": 0.7997183036193612,
+      "absolute_error_in_source_pt": 0.0002817083015677069,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        38.50553512573242,
+        161.41383361816406,
+        530.11181640625,
+        248.18447875976562
+      ],
+      "expected_target_rect": [
+        72.19651114329156,
+        297.2923621211433,
+        687.5290220792216,
+        405.9035369765546
+      ],
+      "actual_target_rect": [
+        72.21700286865234,
+        297.31298828125,
+        687.4959716796875,
+        405.906005859375
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 157,
+      "target_draw_index": [
+        671,
+        672,
+        673
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 671,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            224.31300354003906,
+            118.83699798583984,
+            229.98199462890625,
+            118.83699798583984
+          ]
+        },
+        {
+          "draw_index": 672,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            232.42999267578125,
+            118.83699798583984,
+            238.0919952392578,
+            118.83699798583984
+          ]
+        },
+        {
+          "draw_index": 673,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            240.5399932861328,
+            118.83699798583984,
+            244.9810028076172,
+            118.83699798583984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.531000018119812,
+        1.531000018119812
+      ],
+      "source_rect": [
+        157.0045928955078,
+        9.6300048828125,
+        173.20460510253906,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        224.31776189157338,
+        118.78694899770748,
+        244.98690365412315,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        224.31300354003906,
+        118.83699798583984,
+        244.9810028076172,
+        118.83699798583984
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 159,
+      "target_draw_index": [
+        684,
+        685,
+        686
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 684,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            325.3500061035156,
+            118.84500122070312,
+            335.1579895019531,
+            118.84500122070312
+          ]
+        },
+        {
+          "draw_index": 685,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            337.5979919433594,
+            118.84500122070312,
+            339.1289978027344,
+            118.84500122070312
+          ]
+        },
+        {
+          "draw_index": 686,
+          "width_pt": 1.531000018119812,
+          "rect": [
+            341.5849914550781,
+            118.84500122070312,
+            346.01800537109375,
+            118.84500122070312
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.531000018119812,
+        1.531000018119812
+      ],
+      "source_rect": [
+        236.19818115234375,
+        9.6300048828125,
+        252.398193359375,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        325.3586426913481,
+        118.78694899770748,
+        346.0277844538979,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        325.3500061035156,
+        118.84500122070312,
+        346.01800537109375,
+        118.84500122070312
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 6,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 161,
+      "target_draw_index": 693,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2758719869099118,
+      "picture_scale_y": 1.2759026757750729,
+      "width_scale": 1.2759026757750729,
+      "expected_ppt_width_pt": 1.5310832717698681,
+      "actual_ppt_width_pt": 1.531000018119812,
+      "actual_width_in_source_pt": 1.199934796899595,
+      "absolute_error_in_source_pt": 6.5250784120785e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        302.4840393066406,
+        9.6300048828125,
+        318.6840515136719,
+        9.6300048828125
+      ],
+      "expected_target_rect": [
+        409.9309122386994,
+        118.78694899770748,
+        430.6000540012492,
+        118.78694899770748
+      ],
+      "actual_target_rect": [
+        409.9209899902344,
+        118.84500122070312,
+        430.5899963378906,
+        118.84500122070312
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 259,
+      "target_draw_index": [
+        3194,
+        3195,
+        3196,
+        3197,
+        3198
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3194,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            177.83999633789062,
+            82.56600189208984,
+            182.6320037841797,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3195,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            184.70899963378906,
+            82.56600189208984,
+            189.50100708007812,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3196,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            191.5780029296875,
+            82.56600189208984,
+            196.37100219726562,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3197,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            198.447998046875,
+            82.56600189208984,
+            203.24000549316406,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3198,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            205.30799865722656,
+            82.56600189208984,
+            208.0229949951172,
+            82.56600189208984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        100.91645050048828,
+        8.19000244140625,
+        120.7164535522461,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.86501416932734,
+        82.61230881524628,
+        208.05362796819156,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        177.83999633789062,
+        82.56600189208984,
+        208.0229949951172,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 260,
+      "target_draw_index": 3207,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        168.80299377441406,
+        8.19000244140625,
+        188.60299682617188,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        281.3700808947836,
+        82.61230881524628,
+        311.55869469364785,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        281.3269958496094,
+        82.56600189208984,
+        311.510009765625,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 7,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 261,
+      "target_draw_index": [
+        3221,
+        3222,
+        3223,
+        3224,
+        3225
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3221,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            429.8890075683594,
+            82.57499694824219,
+            438.1780090332031,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3222,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            440.2550048828125,
+            82.57499694824219,
+            441.54998779296875,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3223,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            443.62701416015625,
+            82.57499694824219,
+            451.9159851074219,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3224,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            453.9930114746094,
+            82.57499694824219,
+            455.28900146484375,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3225,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            457.34698486328125,
+            82.57499694824219,
+            460.0719909667969,
+            82.57499694824219
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        266.2548522949219,
+        8.19000244140625,
+        286.05487060546875,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        429.9527105624082,
+        82.61230881524628,
+        460.14134762600065,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        429.8890075683594,
+        82.57499694824219,
+        460.0719909667969,
+        82.57499694824219
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 259,
+      "target_draw_index": [
+        3392,
+        3393,
+        3394,
+        3395,
+        3396
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3392,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            177.83999633789062,
+            82.56600189208984,
+            182.6320037841797,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3393,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            184.70899963378906,
+            82.56600189208984,
+            189.50100708007812,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3394,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            191.5780029296875,
+            82.56600189208984,
+            196.37100219726562,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3395,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            198.447998046875,
+            82.56600189208984,
+            203.24000549316406,
+            82.56600189208984
+          ]
+        },
+        {
+          "draw_index": 3396,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            205.30799865722656,
+            82.56600189208984,
+            208.0229949951172,
+            82.56600189208984
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        100.91645050048828,
+        8.19000244140625,
+        120.7164535522461,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.86501416932734,
+        82.61230881524628,
+        208.05362796819156,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        177.83999633789062,
+        82.56600189208984,
+        208.0229949951172,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 260,
+      "target_draw_index": 3405,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        168.80299377441406,
+        8.19000244140625,
+        188.60299682617188,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        281.3700808947836,
+        82.61230881524628,
+        311.55869469364785,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        281.3269958496094,
+        82.56600189208984,
+        311.510009765625,
+        82.56600189208984
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 8,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 261,
+      "target_draw_index": [
+        3419,
+        3420,
+        3421,
+        3422,
+        3423
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.524677229591848,
+      "picture_scale_y": 1.5246966694461,
+      "width_scale": 1.5246966694461,
+      "expected_ppt_width_pt": 1.2959922053807862,
+      "actual_ppt_width_pt": 1.2960000038146973,
+      "actual_width_in_source_pt": 0.8500051385863623,
+      "absolute_error_in_source_pt": 5.114744504375324e-06,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3419,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            429.8890075683594,
+            82.57499694824219,
+            438.1780090332031,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3420,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            440.2550048828125,
+            82.57499694824219,
+            441.54998779296875,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3421,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            443.62701416015625,
+            82.57499694824219,
+            451.9159851074219,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3422,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            453.9930114746094,
+            82.57499694824219,
+            455.28900146484375,
+            82.57499694824219
+          ]
+        },
+        {
+          "draw_index": 3423,
+          "width_pt": 1.2960000038146973,
+          "rect": [
+            457.34698486328125,
+            82.57499694824219,
+            460.0719909667969,
+            82.57499694824219
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2960000038146973,
+        1.2960000038146973
+      ],
+      "source_rect": [
+        266.2548522949219,
+        8.19000244140625,
+        286.05487060546875,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        429.9527105624082,
+        82.61230881524628,
+        460.14134762600065,
+        82.61230881524628
+      ],
+      "actual_target_rect": [
+        429.8890075683594,
+        82.57499694824219,
+        460.0719909667969,
+        82.57499694824219
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 29,
+      "target_draw_index": [
+        1407,
+        1408,
+        1409,
+        1410
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1407,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            374.3710021972656,
+            38.14099884033203,
+            378.9049987792969,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1408,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            380.8659973144531,
+            38.14099884033203,
+            385.3999938964844,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1409,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            387.3599853515625,
+            38.14099884033203,
+            391.8940124511719,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1410,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            393.8550109863281,
+            38.14099884033203,
+            396.4280090332031,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        280.24462890625,
+        13.40997314453125,
+        298.24462890625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        374.4680596264265,
+        38.1847841906218,
+        396.5288751981814,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        374.3710021972656,
+        38.14099884033203,
+        396.4280090332031,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 30,
+      "target_draw_index": [
+        1420,
+        1421,
+        1422
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1420,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            475.8349914550781,
+            38.14099884033203,
+            483.6780090332031,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1421,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            485.63800048828125,
+            38.14099884033203,
+            486.864013671875,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1422,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            488.8240051269531,
+            38.14099884033203,
+            496.6669921875,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        363.0382080078125,
+        13.40997314453125,
+        381.0382080078125,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        475.9399417978194,
+        38.1847841906218,
+        498.00075736957433,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        475.8349914550781,
+        38.14099884033203,
+        496.6669921875,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 9,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 31,
+      "target_draw_index": 1428,
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        432.924072265625,
+        13.40997314453125,
+        450.924072265625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        561.5921174902805,
+        38.1847841906218,
+        583.6529330620355,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        561.4609985351562,
+        38.15599822998047,
+        583.5180053710938,
+        38.15599822998047
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 9,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 33,
+      "target_draw_index": 1443,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        46.78448486328125,
+        201.68641662597656,
+        530.11181640625,
+        201.68641662597656
+      ],
+      "expected_target_rect": [
+        88.33910512157817,
+        268.92966961623074,
+        680.7055007859045,
+        268.92966961623074
+      ],
+      "actual_target_rect": [
+        88.29900360107422,
+        268.9440002441406,
+        680.5700073242188,
+        268.9440002441406
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 9,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 60,
+      "target_draw_index": 2256,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        46.78448486328125,
+        328.09259033203125,
+        530.11181640625,
+        328.09259033203125
+      ],
+      "expected_target_rect": [
+        88.33910512157817,
+        423.84856190860444,
+        680.7055007859045,
+        423.84856190860444
+      ],
+      "actual_target_rect": [
+        88.29900360107422,
+        423.885986328125,
+        680.5700073242188,
+        423.885986328125
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 255,
+      "target_draw_index": [
+        3510,
+        3511,
+        3512,
+        3513,
+        3514
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3510,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            182.3820037841797,
+            85.5,
+            187.11000061035156,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3511,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            189.14500427246094,
+            85.5,
+            193.86399841308594,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3512,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            195.90899658203125,
+            85.5,
+            200.6269989013672,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3513,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            202.6719970703125,
+            85.5,
+            207.38999938964844,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3514,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            209.43499755859375,
+            85.5,
+            212.0989990234375,
+            85.5
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        105.52413940429688,
+        8.19000244140625,
+        125.32414245605469,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        182.40622179840918,
+        85.54587991432764,
+        212.1287449360697,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        182.3820037841797,
+        85.5,
+        212.0989990234375,
+        85.5
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 256,
+      "target_draw_index": 3523,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        173.4106903076172,
+        8.19000244140625,
+        193.210693359375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        284.3132555844859,
+        85.54587991432764,
+        314.0357787221464,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        284.27398681640625,
+        85.5,
+        313.9909973144531,
+        85.5
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 10,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 257,
+      "target_draw_index": [
+        3537,
+        3538,
+        3539,
+        3540,
+        3541
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3537,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            430.5360107421875,
+            85.50900268554688,
+            438.71600341796875,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3538,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            440.74200439453125,
+            85.50900268554688,
+            442.01800537109375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3539,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            444.06298828125,
+            85.50900268554688,
+            452.2239990234375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3540,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            454.2690124511719,
+            85.50900268554688,
+            455.54400634765625,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3541,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            457.5889892578125,
+            85.50900268554688,
+            460.25299072265625,
+            85.50900268554688
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        270.862548828125,
+        8.19000244140625,
+        290.66253662109375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        430.60187544541384,
+        85.54587991432764,
+        460.3243756775369,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        430.5360107421875,
+        85.50900268554688,
+        460.25299072265625,
+        85.50900268554688
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 255,
+      "target_draw_index": [
+        3546,
+        3547,
+        3548,
+        3549,
+        3550
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3546,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            182.3820037841797,
+            85.5,
+            187.11000061035156,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3547,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            189.14500427246094,
+            85.5,
+            193.86399841308594,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3548,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            195.90899658203125,
+            85.5,
+            200.6269989013672,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3549,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            202.6719970703125,
+            85.5,
+            207.38999938964844,
+            85.5
+          ]
+        },
+        {
+          "draw_index": 3550,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            209.43499755859375,
+            85.5,
+            212.0989990234375,
+            85.5
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        105.52413940429688,
+        8.19000244140625,
+        125.32414245605469,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        182.40622179840918,
+        85.54587991432764,
+        212.1287449360697,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        182.3820037841797,
+        85.5,
+        212.0989990234375,
+        85.5
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 256,
+      "target_draw_index": 3559,
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        173.4106903076172,
+        8.19000244140625,
+        193.210693359375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        284.3132555844859,
+        85.54587991432764,
+        314.0357787221464,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        284.27398681640625,
+        85.5,
+        313.9909973144531,
+        85.5
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 11,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 257,
+      "target_draw_index": [
+        3573,
+        3574,
+        3575,
+        3576,
+        3577
+      ],
+      "source_pdf_width_pt": 0.8500000238418579,
+      "picture_scale_x": 1.5011373008360112,
+      "picture_scale_y": 1.5013279913279738,
+      "width_scale": 1.5013279913279738,
+      "expected_ppt_width_pt": 1.2761288284232264,
+      "actual_ppt_width_pt": 1.2760000228881836,
+      "actual_width_in_source_pt": 0.8499142294413093,
+      "absolute_error_in_source_pt": 8.579440054856668e-05,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 3573,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            430.5360107421875,
+            85.50900268554688,
+            438.71600341796875,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3574,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            440.74200439453125,
+            85.50900268554688,
+            442.01800537109375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3575,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            444.06298828125,
+            85.50900268554688,
+            452.2239990234375,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3576,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            454.2690124511719,
+            85.50900268554688,
+            455.54400634765625,
+            85.50900268554688
+          ]
+        },
+        {
+          "draw_index": 3577,
+          "width_pt": 1.2760000228881836,
+          "rect": [
+            457.5889892578125,
+            85.50900268554688,
+            460.25299072265625,
+            85.50900268554688
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2760000228881836,
+        1.2760000228881836
+      ],
+      "source_rect": [
+        270.862548828125,
+        8.19000244140625,
+        290.66253662109375,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        430.60187544541384,
+        85.54587991432764,
+        460.3243756775369,
+        85.54587991432764
+      ],
+      "actual_target_rect": [
+        430.5360107421875,
+        85.50900268554688,
+        460.25299072265625,
+        85.50900268554688
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 29,
+      "target_draw_index": [
+        1251,
+        1252,
+        1253,
+        1254
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1251,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            374.3710021972656,
+            38.14099884033203,
+            378.9049987792969,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1252,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            380.8659973144531,
+            38.14099884033203,
+            385.3999938964844,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1253,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            387.3599853515625,
+            38.14099884033203,
+            391.8940124511719,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1254,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            393.8550109863281,
+            38.14099884033203,
+            396.4280090332031,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        280.24462890625,
+        13.40997314453125,
+        298.24462890625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        374.4680596264265,
+        38.1847841906218,
+        396.5288751981814,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        374.3710021972656,
+        38.14099884033203,
+        396.4280090332031,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 30,
+      "target_draw_index": [
+        1264,
+        1265,
+        1266
+      ],
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 1264,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            475.8349914550781,
+            38.14099884033203,
+            483.6780090332031,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1265,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            485.63800048828125,
+            38.14099884033203,
+            486.864013671875,
+            38.14099884033203
+          ]
+        },
+        {
+          "draw_index": 1266,
+          "width_pt": 1.2259999513626099,
+          "rect": [
+            488.8240051269531,
+            38.14099884033203,
+            496.6669921875,
+            38.14099884033203
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.2259999513626099,
+        1.2259999513626099
+      ],
+      "source_rect": [
+        363.0382080078125,
+        13.40997314453125,
+        381.0382080078125,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        475.9399417978194,
+        38.1847841906218,
+        498.00075736957433,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        475.8349914550781,
+        38.14099884033203,
+        496.6669921875,
+        38.14099884033203
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 12,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 31,
+      "target_draw_index": 1272,
+      "source_pdf_width_pt": 1.0,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 1.2255642881226876,
+      "actual_ppt_width_pt": 1.2259999513626099,
+      "actual_width_in_source_pt": 1.0003554797117902,
+      "absolute_error_in_source_pt": 0.00035547971179017424,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        432.924072265625,
+        13.40997314453125,
+        450.924072265625,
+        13.40997314453125
+      ],
+      "expected_target_rect": [
+        561.5921174902805,
+        38.1847841906218,
+        583.6529330620355,
+        38.1847841906218
+      ],
+      "actual_target_rect": [
+        561.4609985351562,
+        38.15599822998047,
+        583.5180053710938,
+        38.15599822998047
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 12,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 33,
+      "target_draw_index": 1287,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        42.176795959472656,
+        201.44937133789062,
+        530.11181640625,
+        201.44937133789062
+      ],
+      "expected_target_rect": [
+        82.69191761497024,
+        268.63915537648484,
+        680.7055007859045,
+        268.63915537648484
+      ],
+      "actual_target_rect": [
+        82.66200256347656,
+        268.63800048828125,
+        680.5700073242188,
+        268.63800048828125
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 12,
+      "purpose": "horizontal_zero_reference",
+      "color": "light_gray_reference",
+      "source_draw_index": 60,
+      "target_draw_index": 1891,
+      "source_pdf_width_pt": 0.5,
+      "picture_scale_x": 1.2256008650974952,
+      "picture_scale_y": 1.2255642881226876,
+      "width_scale": 1.2255642881226876,
+      "expected_ppt_width_pt": 0.6127821440613438,
+      "actual_ppt_width_pt": 0.6129999756813049,
+      "actual_width_in_source_pt": 0.5001777398558951,
+      "absolute_error_in_source_pt": 0.00017773985589508712,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        42.176795959472656,
+        328.77593994140625,
+        530.11181640625,
+        328.77593994140625
+      ],
+      "expected_target_rect": [
+        82.69191761497024,
+        424.686050786157,
+        680.7055007859045,
+        424.686050786157
+      ],
+      "actual_target_rect": [
+        82.66200256347656,
+        424.7439880371094,
+        680.5700073242188,
+        424.7439880371094
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 125,
+      "target_draw_index": [
+        409,
+        410,
+        411
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 409,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            214.7209930419922,
+            130.08999633789062,
+            220.26100158691406,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 410,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            222.656005859375,
+            130.08999633789062,
+            228.2030029296875,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 411,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            230.59800720214844,
+            130.08999633789062,
+            234.94400024414062,
+            130.08999633789062
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        152.77615356445312,
+        11.25,
+        168.9761505126953,
+        11.25
+      ],
+      "expected_target_rect": [
+        214.71494078058447,
+        130.04199128237497,
+        234.9378707768304,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        214.7209930419922,
+        130.08999633789062,
+        234.94400024414062,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 127,
+      "target_draw_index": [
+        422,
+        423,
+        424
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 422,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            313.58099365234375,
+            130.08999633789062,
+            323.1619873046875,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 423,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            325.56500244140625,
+            130.08999633789062,
+            327.06298828125,
+            130.08999633789062
+          ]
+        },
+        {
+          "draw_index": 424,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            329.46600341796875,
+            130.08999633789062,
+            333.8039855957031,
+            130.08999633789062
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        231.96974182128906,
+        11.25,
+        248.16973876953125,
+        11.25
+      ],
+      "expected_target_rect": [
+        313.5746131981954,
+        130.04199128237497,
+        333.79754319444135,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        313.58099365234375,
+        130.08999633789062,
+        333.8039855957031,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 13,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 129,
+      "target_draw_index": 431,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.2481770028777737,
+      "width_scale": 1.2481770028777737,
+      "expected_ppt_width_pt": 1.4978124629710459,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2001503170587549,
+      "absolute_error_in_source_pt": 0.00015026937503903603,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        298.255615234375,
+        11.25,
+        314.4555969238281,
+        11.25
+      ],
+      "expected_target_rect": [
+        396.32120766087587,
+        130.04199128237497,
+        416.54411860912916,
+        130.04199128237497
+      ],
+      "actual_target_rect": [
+        396.3290100097656,
+        130.08999633789062,
+        416.552001953125,
+        130.08999633789062
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 107,
+      "target_draw_index": [
+        322,
+        323,
+        324,
+        325
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 322,
+          "width_pt": 1.875,
+          "rect": [
+            177.7100067138672,
+            140.1300048828125,
+            184.6439971923828,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 323,
+          "width_pt": 1.875,
+          "rect": [
+            187.64300537109375,
+            140.1300048828125,
+            194.58700561523438,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 324,
+          "width_pt": 1.875,
+          "rect": [
+            197.5850067138672,
+            140.1300048828125,
+            204.52000427246094,
+            140.1300048828125
+          ]
+        },
+        {
+          "draw_index": 325,
+          "width_pt": 1.875,
+          "rect": [
+            207.51800537109375,
+            140.1300048828125,
+            208.6510009765625,
+            140.1300048828125
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.875,
+        1.875
+      ],
+      "source_rect": [
+        98.35662078857422,
+        8.19000244140625,
+        118.15662384033203,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        177.71160838618874,
+        140.17569836253574,
+        208.65502928389705,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        177.7100067138672,
+        140.1300048828125,
+        208.6510009765625,
+        140.1300048828125
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 109,
+      "target_draw_index": 335,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        166.24317932128906,
+        8.19000244140625,
+        186.0431671142578,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        283.80464021469726,
+        140.17569836253574,
+        314.7480372659884,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        283.7869873046875,
+        140.1300048828125,
+        314.72900390625,
+        140.1300048828125
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 14,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 111,
+      "target_draw_index": [
+        351,
+        352,
+        353
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.5627987943648929,
+      "picture_scale_y": 1.5629615600284354,
+      "width_scale": 1.5629615600284354,
+      "expected_ppt_width_pt": 1.8755539465619373,
+      "actual_ppt_width_pt": 1.875,
+      "actual_width_in_source_pt": 1.1996456265795095,
+      "absolute_error_in_source_pt": 0.0003544211042063594,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 351,
+          "width_pt": 1.875,
+          "rect": [
+            436.08099365234375,
+            140.13999938964844,
+            448.07501220703125,
+            140.13999938964844
+          ]
+        },
+        {
+          "draw_index": 352,
+          "width_pt": 1.875,
+          "rect": [
+            451.0830078125,
+            140.13999938964844,
+            452.9580078125,
+            140.13999938964844
+          ]
+        },
+        {
+          "draw_index": 353,
+          "width_pt": 1.875,
+          "rect": [
+            455.96600341796875,
+            140.13999938964844,
+            467.0220031738281,
+            140.13999938964844
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.875,
+        1.875
+      ],
+      "source_rect": [
+        263.6950378417969,
+        8.19000244140625,
+        283.4950256347656,
+        8.19000244140625
+      ],
+      "expected_target_rect": [
+        436.10228721916496,
+        140.17569836253574,
+        467.0456842704561,
+        140.17569836253574
+      ],
+      "actual_target_rect": [
+        436.08099365234375,
+        140.13999938964844,
+        467.0220031738281,
+        140.13999938964844
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "gray",
+      "source_draw_index": 76,
+      "target_draw_index": [
+        309,
+        310,
+        311
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 309,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            282.46600341796875,
+            64.72599792480469,
+            288.0060119628906,
+            64.72599792480469
+          ]
+        },
+        {
+          "draw_index": 310,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            290.40899658203125,
+            64.72599792480469,
+            295.947998046875,
+            64.72599792480469
+          ]
+        },
+        {
+          "draw_index": 311,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            298.33599853515625,
+            64.72599792480469,
+            303.8909912109375,
+            64.72599792480469
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        207.0404052734375,
+        17.24334716796875,
+        225.0404052734375,
+        17.24334716796875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        64.7709932503623,
+        304.92451972130516,
+        64.7709932503623
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        64.72599792480469,
+        303.8909912109375,
+        64.72599792480469
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "blue",
+      "source_draw_index": 78,
+      "target_draw_index": [
+        322,
+        323,
+        324
+      ],
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "each_native_dash_stroke_width_maximum_error_reported",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": [
+        {
+          "draw_index": 322,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            282.46600341796875,
+            80.37100219726562,
+            292.0469970703125,
+            80.37100219726562
+          ]
+        },
+        {
+          "draw_index": 323,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            294.45001220703125,
+            80.37100219726562,
+            295.947998046875,
+            80.37100219726562
+          ]
+        },
+        {
+          "draw_index": 324,
+          "width_pt": 1.4980000257492065,
+          "rect": [
+            298.33599853515625,
+            80.37100219726562,
+            304.9360046386719,
+            80.37100219726562
+          ]
+        }
+      ],
+      "native_dash_width_range_pt": [
+        1.4980000257492065,
+        1.4980000257492065
+      ],
+      "source_rect": [
+        207.0404052734375,
+        29.78680419921875,
+        225.0404052734375,
+        29.78680419921875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        80.42617037323527,
+        304.92451972130516,
+        80.42617037323527
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        80.37100219726562,
+        304.9360046386719,
+        80.37100219726562
+      ]
+    },
+    {
+      "format": "ppt",
+      "figure": 15,
+      "purpose": "horizontal_legend_line",
+      "color": "red",
+      "source_draw_index": 80,
+      "target_draw_index": 331,
+      "source_pdf_width_pt": 1.2000000476837158,
+      "picture_scale_x": 1.2483292472743512,
+      "picture_scale_y": 1.248075158536488,
+      "width_scale": 1.248075158536488,
+      "expected_ppt_width_pt": 1.4976902497566467,
+      "actual_ppt_width_pt": 1.4980000257492065,
+      "actual_width_in_source_pt": 1.2002482506788967,
+      "absolute_error_in_source_pt": 0.0002482029951809128,
+      "tolerance_source_pt": 0.02,
+      "passed": true,
+      "method": "PDF_get_drawings_stroke_width",
+      "target_paint_type": "s",
+      "additional_stroke_width_pt": 0.0,
+      "companion_border_drawings": [],
+      "native_dash_members": null,
+      "native_dash_width_range_pt": null,
+      "source_rect": [
+        207.0404052734375,
+        42.33026123046875,
+        225.0404052734375,
+        42.33026123046875
+      ],
+      "expected_target_rect": [
+        282.45459327036684,
+        96.08134749610824,
+        304.92451972130516,
+        96.08134749610824
+      ],
+      "actual_target_rect": [
+        282.46600341796875,
+        96.03199768066406,
+        304.9360046386719,
+        96.03199768066406
+      ]
+    }
+  ]
+}

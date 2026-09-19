@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "code\\build_report.py",
+      "sha256": "b3c265cafab0d2c57af6d46a24a16fbb8f0e6ea31710a7264a3eaf1b74fe2368",
+      "bytes": 16686
+    },
+    {
+      "path": "code\\finalize_delivery.py",
+      "sha256": "b86b35ff662b0d8d167bd2d296a8904340f6952c19961dfdbc94053af4d5c984",
+      "bytes": 4802
+    },
+    {
+      "path": "code\\unified_model.py",
+      "sha256": "276f951a3a991719e75fca3c16c7d7f31604deec04b4e5ef3125e59367b279e3",
+      "bytes": 6027
+    },
+    {
+      "path": "code\\verify_error_identities.py",
+      "sha256": "71f6b0c38b1d3f6647ddec50c3ee1f94978283013d3642bc990cf99903887ba8",
+      "bytes": 1578
+    },
+    {
+      "path": "code\\VERIFY_UNIFIED.m",
+      "sha256": "1113b9a4deff2404516070f3c07137f789b2856f01a8266b4f126364986a8a13",
+      "bytes": 5266
+    },
+    {
+      "path": "code\\verify_unified.py",
+      "sha256": "5d00fc409686d5e1f5bd0584892a178419765a0b0e373ae01c7b27ee89c166f2",
+      "bytes": 7444
+    },
+    {
+      "path": "evidence-map.md",
+      "sha256": "301838a8412977234b7937a9a68ba755bcf9eb4ef30811fc17708d61d524f2c1",
+      "bytes": 2200
+    },
+    {
+      "path": "README.md",
+      "sha256": "c54168f7e20a3d97c01fed3aa7ffe2cfc1d66e544e966143da325b4e30ff4a70",
+      "bytes": 3403
+    },
+    {
+      "path": "results\\browser_qa.json",
+      "sha256": "68d2c8ab3057092c1d311647b493db16199c89b5c28315996c4f0af72fe18dd7",
+      "bytes": 513
+    },
+    {
+      "path": "results\\delivery_checks.json",
+      "sha256": "463e3ec69906863412274c781bcce870a8ad3e48425886b3cd138258d25640f8",
+      "bytes": 1273
+    },
+    {
+      "path": "results\\model_summary.json",
+      "sha256": "4a2c1dd177ff693de7389146504446bed0bb9a15a188358e4a71678b41eb17ad",
+      "bytes": 10102
+    },
+    {
+      "path": "results\\operators.mat",
+      "sha256": "2ec2fed404d38c55e8418ebd6a74cf98a07c6de999c6fa1a502abba9550284d2",
+      "bytes": 11938
+    },
+    {
+      "path": "results\\pdf_qa.json",
+      "sha256": "bef7fcca589752c77afee14faceee024405f7b318aac8541f194fd33930ea889",
+      "bytes": 636
+    },
+    {
+      "path": "results\\protection_after.json",
+      "sha256": "91874d0600ad7fc173e63f191bc54ddaa2221600c71cb62d474b04049e19d652",
+      "bytes": 560
+    },
+    {
+      "path": "results\\protection_before.json",
+      "sha256": "f70623e57f9fa6ef917fe07b10cc4c10bcd99f8580cc221ab9aac5bd578031f4",
+      "bytes": 440
+    },
+    {
+      "path": "results\\validation_error_identities.json",
+      "sha256": "7c8223fda134242e395de0edb8c789f60b7004f6c99bebf409bd4733ed1fc6d8",
+      "bytes": 3412
+    },
+    {
+      "path": "results\\validation_matlab.json",
+      "sha256": "b906e246287fc20ded10c9ed7e05b8da0a9be5d50f33c0f9c870196ef8c73caa",
+      "bytes": 20884
+    },
+    {
+      "path": "results\\validation_python.json",
+      "sha256": "b50a9c8305cef337055c1f3a1f68c9b3d98e6b379bd3db4fbcbdda807c41fea4",
+      "bytes": 143448
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "344b97b3d7cc3d3a5dc580b861f2f7a956baa011070904960724b9c6f70e8eea",
+      "bytes": 1994
+    },
+    {
+      "path": "sources\\audit_matrices.mat",
+      "sha256": "6d4ef2686258bfb8adb1009dfb8f8a2f9c44ce6b001203fce43e087120713e1b",
+      "bytes": 6371
+    },
+    {
+      "path": "sources\\calculation.mat",
+      "sha256": "c1a938c67964033b18f226e9c1dda773c7bed22bce94bdbaaa1ab51f551568a7",
+      "bytes": 11674973
+    },
+    {
+      "path": "sources\\manuscript.tex",
+      "sha256": "e1975f448d25dc66d721237b92cd8fee9ab52cd2cc3e90d7d6a5eac100957b5d",
+      "bytes": 78066
+    },
+    {
+      "path": "sources\\model_and_cases.mat",
+      "sha256": "5332b75118c7c6b01a891900dbf25fea52ae0b0d367fe768fca9f74297d0dda8",
+      "bytes": 877015
+    },
+    {
+      "path": "sources\\previous_delay_model.py",
+      "sha256": "cdfa736d793e40acab9a47e68165cd45eb4deceeffe2fbc5f3b57063d790a96a",
+      "bytes": 9024
+    },
+    {
+      "path": "sources\\prior_findings.json",
+      "sha256": "d5fee685bbd341d4441f3254e693463d00351a012bcbd5409de8dbb3caae5a37",
+      "bytes": 3698
+    },
+    {
+      "path": "sources\\rths_reduce.m",
+      "sha256": "b55b77493ce53fd1185e3d478f3872fe8191378ae9d26248d115be7dc165b9db",
+      "bytes": 2901
+    },
+    {
+      "path": "theory\\unified_full15.pdf",
+      "sha256": "126f1ea3f5b99c5e6b249f1bee2009d51a9ac37a0aa445c0408cd7d25be9fa3e",
+      "bytes": 178256
+    },
+    {
+      "path": "theory\\unified_full15.tex",
+      "sha256": "7fe12a8dadddf38b4702bc8d027d3dc8a2a8dac5cb006a90ea55503f6d0d9e80",
+      "bytes": 18342
+    }
+  ],
+  "delivered_files": 28,
+  "report": {
+    "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\260915\\research\\reports\\完整框架等时滞统一模型方案汇报.html",
+    "sha256": "22470491d06595498dee8c1d862e32620657bd93a3c23ef596c11451915f20a8"
+  }
+}

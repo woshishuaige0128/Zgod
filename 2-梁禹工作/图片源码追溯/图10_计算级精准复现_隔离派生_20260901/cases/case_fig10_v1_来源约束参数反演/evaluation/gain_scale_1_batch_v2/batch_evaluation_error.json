@@ -1,0 +1,6 @@
+{
+  "schema_version": "FIG10_BATCH_TARGET_EVALUATOR_V1",
+  "status": "ERROR",
+  "error_type": "NameError",
+  "error_message": "name 'expected_ids' is not defined"
+}

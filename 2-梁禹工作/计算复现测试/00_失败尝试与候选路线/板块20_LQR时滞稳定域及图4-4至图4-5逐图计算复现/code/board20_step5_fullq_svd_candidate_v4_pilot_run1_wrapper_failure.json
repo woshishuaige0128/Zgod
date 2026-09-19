@@ -1,0 +1,19 @@
+{
+  "schema_version": "board20_step5_fullq_svd_candidate_v4_pilot_run1_wrapper_failure_v1",
+  "recorded_date": "2026-08-25",
+  "status": "OPERATIONAL_READ_ONLY_WRAPPER_FAIL_CANDIDATE_UNAFFECTED",
+  "failed_attempt_count": 2,
+  "error_type": "KeyError",
+  "error_field_requested": "relpath",
+  "actual_first_field_with_plain_utf8": "\\ufeffrelpath",
+  "cause": "The candidate artifact manifest is UTF-8 with BOM; the read-only wrapper used plain UTF-8 instead of UTF-8-SIG.",
+  "candidate_rerun_due_to_failure": false,
+  "candidate_output_modified_due_to_failure": false,
+  "scientific_failure": false,
+  "resolution": "Read the already sealed manifest with UTF-8-SIG; all 18 entries then passed path, byte-count, and SHA-256 checks.",
+  "artifact_manifest_sha256": "A39260970722004E015211F7173C79A15F6120C35D46DF160DF0076C74B6C8B2",
+  "pilot_candidate_status": "PASS",
+  "pilot_completed_point_count": 49,
+  "pilot_fail_point_count": 0,
+  "full_run_authorized_by_this_record": false
+}

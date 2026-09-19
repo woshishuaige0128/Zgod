@@ -1,0 +1,6 @@
+route_id,point_count,max_rho_abs_diff_to_step4,rho_gate_fail_count,stable_mismatch_count,max_recomputed_svd_polynomial_residual,max_recomputed_svd_laurent_residual,residual_gate_fail_count,formula_gate_fail_count,unmatched_safety_fail_count,origin_splitting_point_count,status
+main_ori_div1,5,2.7977620220553945e-14,0,0,7.732775576606241e-15,7.791891124854608e-15,0,0,0,0,FAIL
+main_guyan_div1,11,9.325873406851315e-15,0,0,3.4569665221979755e-13,3.438763653621465e-13,0,0,0,7,FAIL
+alt_guyan_div1_stable_full_ps3,11,3.1308289294429414e-14,0,0,2.62105353407024e-13,2.6317628663817e-13,0,0,0,7,FAIL
+main_ori_div2,11,5.999645225074346e-13,0,0,3.4514326012693565e-13,3.390852442787521e-13,0,0,0,7,FAIL
+main_guyan_div2,11,5.999645225074346e-13,0,0,3.4514326012693565e-13,3.390852442787521e-13,0,0,0,7,FAIL

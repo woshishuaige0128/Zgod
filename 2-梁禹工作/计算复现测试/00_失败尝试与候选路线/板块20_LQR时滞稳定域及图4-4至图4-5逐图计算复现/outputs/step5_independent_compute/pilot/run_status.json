@@ -1,0 +1,207 @@
+{
+  "completed_point_count": 41,
+  "contracts_status_sha256": "EA0D0CCDE62F82501F60CEF4A628F47947BD1FAA1A367CD8C9C34359E109CBC4",
+  "expected_point_count": 41,
+  "fail_point_count": 0,
+  "input_identity": {
+    "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+    "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+    "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+    "workspace_sha256": {
+      "alt_guyan_div1_stable_full_ps3": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "main_guyan_div1": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "main_guyan_div2": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "main_ori_div1": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "main_ori_div2": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+    }
+  },
+  "mode": "pilot",
+  "noncomputable_failed_routes": [
+    {
+      "route_id": "main_cb_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "main_cb_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "energy_guyan_div1",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    },
+    {
+      "route_id": "energy_guyan_div2",
+      "step5_policy": "DO_NOT_CREATE",
+      "step5_status": "CONTRACT_NOT_EXECUTABLE",
+      "upstream_status": "EXECUTION_FAIL"
+    }
+  ],
+  "pass_point_count": 41,
+  "route_count": 5,
+  "route_statuses": [
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 7,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 7,
+      "expected_points_sha256": "16C35479DE4C50092D9D2C2CF8E8A08182C5B7C1DCC580835ABD15628B8707D0",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 3.450271919894072e-14,
+      "max_compact_polynomial_residual": 3.483282958287221e-14,
+      "mode": "pilot",
+      "pass_point_count": 7,
+      "point_summary_sha256": "C0DA12AADBFF768E2D9F6F85BF7BC882DF76A2F88353C1232966F28B0630B325",
+      "rho_max": 1.0114132792850472,
+      "rho_min": 0.9991697741274307,
+      "roots_h5_sha256": "2CA5A10AD5F519DBE4B14C769E01629193B71AFEFDAA26CE40EF271ABA724B68",
+      "route_id": "main_ori_div1",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 7,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 7,
+      "expected_points_sha256": "16C35479DE4C50092D9D2C2CF8E8A08182C5B7C1DCC580835ABD15628B8707D0",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 1.2451710272152543e-09,
+      "max_compact_polynomial_residual": 1.245171035905228e-09,
+      "mode": "pilot",
+      "pass_point_count": 7,
+      "point_summary_sha256": "EF3444287B59A5C96F363194287DF88DCCC886DF69D243CD6582E1FD535A0F4B",
+      "rho_max": 1.0111448918202315,
+      "rho_min": 0.9991641004386275,
+      "roots_h5_sha256": "D98FA5AE07D96829FEC0BFE6507AD4CC163B12CA03F64F0AD31F2BC2DE6138C7",
+      "route_id": "main_guyan_div1",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 7,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 7,
+      "expected_points_sha256": "16C35479DE4C50092D9D2C2CF8E8A08182C5B7C1DCC580835ABD15628B8707D0",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 1.332232703873893e-09,
+      "max_compact_polynomial_residual": 1.3322326997832298e-09,
+      "mode": "pilot",
+      "pass_point_count": 7,
+      "point_summary_sha256": "5D4DAE7EC97953585B5CBDDE3B878CDA340E3E30B5116FFF4D83974268670532",
+      "rho_max": 1.0490320325987028,
+      "rho_min": 0.9987026845106827,
+      "roots_h5_sha256": "F2E609C6F0FFC97B67447ED23A1A5914F44175C162AF2AD4350CF56B4521C223",
+      "route_id": "alt_guyan_div1_stable_full_ps3",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 10,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 10,
+      "expected_points_sha256": "24B838DE16EA489E0CC9530C07C2FE6D9FFBC3EBEAE68AB1B938F20F6C97C4D0",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 1.8269023419851392e-09,
+      "max_compact_polynomial_residual": 1.8630085744165855e-09,
+      "mode": "pilot",
+      "pass_point_count": 10,
+      "point_summary_sha256": "669442B953F0FA4A91137687974C1F00C39A31C736A7080B0BF2CE507F00EBD9",
+      "rho_max": 1.0341351654341353,
+      "rho_min": 0.986692287490048,
+      "roots_h5_sha256": "286B342556CB68D3B17F5E57183ADBBD6E9B942530924D1ABA9CFF4A791F10A5",
+      "route_id": "main_ori_div2",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061"
+    },
+    {
+      "code_sha256": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "completed_point_count": 10,
+      "contract_sha256": "558C778EFBC6F924A037A59B9ED3E439C8E6A5C1A6D36861CBF75BD59CB3D2D2",
+      "expected_point_count": 10,
+      "expected_points_sha256": "24B838DE16EA489E0CC9530C07C2FE6D9FFBC3EBEAE68AB1B938F20F6C97C4D0",
+      "fail_point_count": 0,
+      "manifest_sha256": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "max_compact_laurent_residual": 1.8269023419851392e-09,
+      "max_compact_polynomial_residual": 1.8630085744165855e-09,
+      "mode": "pilot",
+      "pass_point_count": 10,
+      "point_summary_sha256": "FE8DDA2AFA6EF923F7301B2E09B0C60AABAEC13B10614E2C8ED4F57E43E145B9",
+      "rho_max": 1.0341351654341353,
+      "rho_min": 0.986692287490048,
+      "roots_h5_sha256": "6D6BD4D77B5F9DAADD5DF96B2BB1E6EE5F9B0C0A5D24CF51795D6DF62D7C5F88",
+      "route_id": "main_guyan_div2",
+      "schema_version": "board20_step5_checkpoint_identity_v1",
+      "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+      "status": "PASS",
+      "workspace_sha256": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21"
+    }
+  ],
+  "schema_version": "board20_step5_run_status_v1",
+  "scientific_contracts": {
+    "manuscript_0824_route": {
+      "borrowing_policy": "Do not substitute any historical outside-H feedback matrix or author-workspace al.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique Ba and actuator-input unit",
+        "complete psi1/psi11 actuator and psi6 reconstruction coordinate map",
+        "executable scalar alpha value tied to the manuscript route",
+        "unambiguous full-state ordering and division matrix entry"
+      ],
+      "required_interface": [
+        "M",
+        "C",
+        "K",
+        "alpha_scalar",
+        "dt",
+        "Ba",
+        "Kx",
+        "Kv",
+        "Sa",
+        "physical_delay_matrices",
+        "channel_coordinate_map",
+        "input_unit",
+        "state_order",
+        "division_coordinate_map"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "master_thesis_route": {
+      "borrowing_policy": "Do not substitute the author program's discrete K_lqr, matrix al, or five-DOF workspace.",
+      "evidence_label": "待决定",
+      "missing_required_fields": [
+        "unique input unit convention",
+        "unique control-input matrix B",
+        "second-division three-master-DOF matrix entry",
+        "executable scalar alpha value tied to the thesis route"
+      ],
+      "status": "CONTRACT_NOT_CLOSED"
+    },
+    "sealed_author_file_identity_routes": {
+      "evidence_label": "计算级复现候选",
+      "route_count": 5,
+      "status": "CALCULABLE"
+    }
+  },
+  "scientific_status_policy": "DETERMINISTIC_NO_WALL_CLOCK_FIELDS",
+  "status": "PASS"
+}

@@ -1,0 +1,666 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fig10_contract_schema.json",
+  "title": "Fig10 blind-computation contract record",
+  "description": "板块28盲算合同记录。该模式只描述结构、控制、离散化与时滞合同，不包含论文边界、目标点或目标评价量。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "record_kind",
+    "label_cn",
+    "evidence_level",
+    "search_action",
+    "materialization_status",
+    "scientific_contract",
+    "contract_hash",
+    "source_basis",
+    "difference_from_r03",
+    "route_bundle_plan",
+    "reuse_evidence",
+    "notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "fig10-contract-v1"
+    },
+    "contract_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "record_kind": {
+      "enum": [
+        "NEW_SKELETON",
+        "KNOWN_REUSE"
+      ]
+    },
+    "label_cn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_level": {
+      "enum": [
+        "SOURCE_FACTORS_COMBINED_DIAGNOSTIC",
+        "ARTICLE_FORMULA_ON_BOARD20_MATRIX_PACKAGE_DIAGNOSTIC",
+        "BOARD20_FULLGRID_VERIFIED_REUSE"
+      ]
+    },
+    "search_action": {
+      "enum": [
+        "MATERIALIZE_LATER_NO_SEARCH",
+        "REUSE_EXISTING_NO_RERUN"
+      ]
+    },
+    "materialization_status": {
+      "enum": [
+        "CONTRACT_ONLY_NOT_MATERIALIZED",
+        "EXISTING_BOARD20_BUNDLES_REUSED"
+      ]
+    },
+    "scientific_contract": {
+      "$ref": "#/$defs/scientific_contract"
+    },
+    "contract_hash": {
+      "$ref": "#/$defs/sha256"
+    },
+    "source_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source_basis"
+      }
+    },
+    "difference_from_r03": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/difference"
+      }
+    },
+    "route_bundle_plan": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/route_plan"
+      }
+    },
+    "reuse_evidence": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/reuse_evidence"
+        }
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "NEW_SKELETON"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "route_bundle_plan": {
+            "minItems": 6,
+            "maxItems": 6
+          },
+          "reuse_evidence": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "const": "KNOWN_REUSE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "route_bundle_plan": {
+            "maxItems": 0
+          },
+          "reuse_evidence": {
+            "$ref": "#/$defs/reuse_evidence"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "channel_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coordinates",
+        "local_selector_zero_based"
+      ],
+      "properties": {
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "enum": [
+              "psi1",
+              "psi6",
+              "psi11"
+            ]
+          }
+        },
+        "local_selector_zero_based": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "scientific_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "matrix_package",
+        "controller",
+        "integration",
+        "sampling",
+        "actuation_and_delay_channels",
+        "controller_channels",
+        "delay_and_feedback",
+        "stability_classification"
+      ],
+      "properties": {
+        "matrix_package": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "frozen_mat_sha256",
+            "division_method_dimensions",
+            "guyan_projection",
+            "craig_bampton_mode_count",
+            "article_dimension_contract_status"
+          ],
+          "properties": {
+            "id": {
+              "const": "BOARD20_STEP8B_SUFFIX2_SUFFIX3"
+            },
+            "frozen_mat_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "division_method_dimensions": {
+              "type": "object"
+            },
+            "guyan_projection": {
+              "const": "standard_congruence_TtAT"
+            },
+            "craig_bampton_mode_count": {
+              "const": 3
+            },
+            "article_dimension_contract_status": {
+              "const": "BOARD20_NUMERIC_PACKAGE_IS_NOT_ARTICLE_6_AND_12_MODEL"
+            }
+          }
+        },
+        "controller": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "solver",
+            "state_order",
+            "input_semantics",
+            "B_lower_block",
+            "force_embedding",
+            "Q_diagonal",
+            "R_diagonal",
+            "local_matrix_contract"
+          ],
+          "properties": {
+            "solver": {
+              "const": "CARE"
+            },
+            "state_order": {
+              "const": [
+                "q1",
+                "q2",
+                "qdot1",
+                "qdot2"
+              ]
+            },
+            "input_semantics": {
+              "enum": [
+                "generalized_force",
+                "acceleration"
+              ]
+            },
+            "B_lower_block": {
+              "enum": [
+                "M_inverse",
+                "identity"
+              ]
+            },
+            "force_embedding": {
+              "enum": [
+                "gain_direct",
+                "left_multiply_local_mass"
+              ]
+            },
+            "Q_diagonal": {
+              "const": [
+                1000000,
+                1000000,
+                10000,
+                10000
+              ]
+            },
+            "R_diagonal": {
+              "const": [
+                0.01,
+                0.01
+              ]
+            },
+            "local_matrix_contract": {
+              "const": "standard_static_projection_of_full_local_MCK_on_actuation_coordinates"
+            }
+          }
+        },
+        "integration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "alpha",
+            "al_formula",
+            "mass_operator",
+            "mass_operator_identity"
+          ],
+          "properties": {
+            "mode": {
+              "enum": [
+                "scalar_alpha_0p25",
+                "route_matrix_al"
+              ]
+            },
+            "alpha": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "al_formula": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "mass_operator": {
+              "enum": [
+                "M/alpha",
+                "M/al"
+              ]
+            },
+            "mass_operator_identity": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "sampling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dt_seconds",
+            "delay_grid_status"
+          ],
+          "properties": {
+            "dt_seconds": {
+              "const": {
+                "numerator": 1,
+                "denominator": 1024
+              }
+            },
+            "delay_grid_status": {
+              "const": "NOT_ASSIGNED_BY_CONTRACT_LAYER"
+            }
+          }
+        },
+        "actuation_and_delay_channels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "division_1",
+            "division_2"
+          ],
+          "properties": {
+            "division_1": {
+              "$ref": "#/$defs/channel_contract"
+            },
+            "division_2": {
+              "$ref": "#/$defs/channel_contract"
+            }
+          }
+        },
+        "controller_channels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "division_1",
+            "division_2"
+          ],
+          "properties": {
+            "division_1": {
+              "$ref": "#/$defs/channel_contract"
+            },
+            "division_2": {
+              "$ref": "#/$defs/channel_contract"
+            }
+          }
+        },
+        "delay_and_feedback": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "delay_orientation",
+            "feedback_placement",
+            "physical_delay_formula",
+            "feedback_formula",
+            "inside_bundle_rule",
+            "channel_to_delay_exponent"
+          ],
+          "properties": {
+            "delay_orientation": {
+              "const": "H_LEFT"
+            },
+            "feedback_placement": {
+              "enum": [
+                "OUTSIDE_H",
+                "INSIDE_H"
+              ]
+            },
+            "physical_delay_formula": {
+              "const": "S_L^T H(z) [v(z) W_C + W_K]"
+            },
+            "feedback_formula": {
+              "type": "string",
+              "minLength": 1
+            },
+            "inside_bundle_rule": {
+              "type": "string",
+              "minLength": 1
+            },
+            "channel_to_delay_exponent": {
+              "const": {
+                "channel_1": "l",
+                "channel_2": "j"
+              }
+            }
+          }
+        },
+        "stability_classification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "quantity",
+            "stable_rule",
+            "critical_rule",
+            "grid_assignment"
+          ],
+          "properties": {
+            "quantity": {
+              "const": "maximum_modulus_of_physical_roots"
+            },
+            "stable_rule": {
+              "const": "rho < 1"
+            },
+            "critical_rule": {
+              "const": "abs(rho - 1) <= 1e-9"
+            },
+            "grid_assignment": {
+              "const": "NOT_PART_OF_CONTRACT_LAYER"
+            }
+          }
+        }
+      }
+    },
+    "source_basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "source_id",
+        "pointer",
+        "claim"
+      ],
+      "properties": {
+        "classification": {
+          "enum": [
+            "SOURCE",
+            "VERIFIED_PRIOR_COMPUTATION",
+            "INFERENCE"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pointer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "difference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "r03_value",
+        "candidate_value",
+        "classification"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "r03_value": {},
+        "candidate_value": {},
+        "classification": {
+          "enum": [
+            "SOURCE_DISCRETE_FACTOR",
+            "NO_CHANGE_REUSE"
+          ]
+        }
+      }
+    },
+    "route_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_plan_id",
+        "division",
+        "method",
+        "dimension",
+        "matrix_source_contract",
+        "materialization_status",
+        "operator_action",
+        "reuse_from",
+        "route_operator_sha256"
+      ],
+      "properties": {
+        "bundle_plan_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "division": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "method": {
+          "enum": [
+            "Original",
+            "Guyan",
+            "Craig_Bampton"
+          ]
+        },
+        "dimension": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "matrix_source_contract": {
+          "const": "BOARD20_STEP8B_SUFFIX2_SUFFIX3"
+        },
+        "materialization_status": {
+          "const": "CONTRACT_ONLY_NOT_MATERIALIZED"
+        },
+        "operator_action": {
+          "enum": [
+            "MATERIALIZE_LATER",
+            "REUSE_EXISTING_R03_ROUTE",
+            "REUSE_B2_ROUTE_AFTER_MATERIALIZATION"
+          ]
+        },
+        "reuse_from": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "route_operator_sha256": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/sha256"
+            }
+          ]
+        }
+      }
+    },
+    "reuse_bundle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_id",
+        "division",
+        "method",
+        "dimension",
+        "repo_relative_path",
+        "mat_sha256",
+        "overall_pass",
+        "stable_point_count",
+        "critical_point_count",
+        "rightmost_stable_j",
+        "maximum_rho_difference"
+      ],
+      "properties": {
+        "bundle_id": {
+          "type": "string"
+        },
+        "division": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "method": {
+          "enum": [
+            "Original",
+            "Guyan",
+            "Craig_Bampton"
+          ]
+        },
+        "dimension": {
+          "type": "integer"
+        },
+        "repo_relative_path": {
+          "type": "string"
+        },
+        "mat_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "overall_pass": {
+          "const": true
+        },
+        "stable_point_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "critical_point_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rightmost_stable_j": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maximum_rho_difference": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "reuse_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_candidate_id",
+        "fullgrid_status",
+        "fullgrid_point_count",
+        "rerun_policy",
+        "route_bundles"
+      ],
+      "properties": {
+        "source_candidate_id": {
+          "const": "R03"
+        },
+        "fullgrid_status": {
+          "const": "PASS_FULLGRID_DUAL_SOLVER_SHARED_CERTIFICATE"
+        },
+        "fullgrid_point_count": {
+          "const": 12462
+        },
+        "rerun_policy": {
+          "const": "DO_NOT_RERUN_KNOWN_CONTRACT"
+        },
+        "route_bundles": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/$defs/reuse_bundle"
+          }
+        }
+      }
+    }
+  }
+}

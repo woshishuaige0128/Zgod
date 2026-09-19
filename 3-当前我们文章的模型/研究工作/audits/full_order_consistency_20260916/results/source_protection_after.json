@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_files_unchanged": 29,
+  "previous_cases": [
+    {
+      "case": "case1_v1_standard_guyan_20260916",
+      "verified_files": 127
+    },
+    {
+      "case": "case2_v1_divisionII_delays_20260916",
+      "verified_files": 323
+    }
+  ]
+}

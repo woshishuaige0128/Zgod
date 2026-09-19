@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "pages": 23,
+  "candidate_pages": [
+    {
+      "key": "n00_00",
+      "page": 5,
+      "images": 2
+    },
+    {
+      "key": "n01_01",
+      "page": 6,
+      "images": 2
+    },
+    {
+      "key": "n02_02",
+      "page": 7,
+      "images": 2
+    },
+    {
+      "key": "n03_03",
+      "page": 8,
+      "images": 2
+    },
+    {
+      "key": "n04_04",
+      "page": 9,
+      "images": 2
+    },
+    {
+      "key": "n00_04",
+      "page": 10,
+      "images": 2
+    },
+    {
+      "key": "n04_00",
+      "page": 11,
+      "images": 2
+    },
+    {
+      "key": "n01_03",
+      "page": 12,
+      "images": 2
+    },
+    {
+      "key": "n03_01",
+      "page": 13,
+      "images": 2
+    },
+    {
+      "key": "n01_04",
+      "page": 14,
+      "images": 2
+    },
+    {
+      "key": "n04_01",
+      "page": 15,
+      "images": 2
+    },
+    {
+      "key": "n02_04",
+      "page": 16,
+      "images": 2
+    },
+    {
+      "key": "n04_02",
+      "page": 17,
+      "images": 2
+    },
+    {
+      "key": "n03_04",
+      "page": 18,
+      "images": 2
+    },
+    {
+      "key": "n04_03",
+      "page": 19,
+      "images": 2
+    },
+    {
+      "key": "n05_05",
+      "page": 20,
+      "images": 2
+    },
+    {
+      "key": "n05_01",
+      "page": 21,
+      "images": 2
+    },
+    {
+      "key": "n05_02",
+      "page": 22,
+      "images": 2
+    }
+  ],
+  "all_candidate_pairs_same_page": true,
+  "no_blank_pages": true,
+  "text_within_page": true,
+  "visual_review": "All 23 pages inspected through four contact sheets; all 18 candidates retain earthquake and chirp on one page.",
+  "final_navigation_fix_pdf_pixels_unchanged": true,
+  "sha256": "16837f20aaccdff40a073d20902f1f3fd3b78b885890d5ec7716f97718b607eb"
+}

@@ -1,0 +1,330 @@
+{
+  "check_count": 45,
+  "checks": [
+    {
+      "check_id": "candidate_contract_schema",
+      "detail": "board20_step5_fullq_candidate_contract_v2",
+      "status": "PASS"
+    },
+    {
+      "check_id": "route_manifest_hash",
+      "detail": "397564F6884DE082995D04DF9AB62F13244DFA8C6129BDDB1F18A2DF0BE88D6E",
+      "status": "PASS"
+    },
+    {
+      "check_id": "base_compute_hash",
+      "detail": "F30032228779711BAA03CCD1D1FE2A2FCAFF14335B4D3F0290831CEBDBF26C69",
+      "status": "PASS"
+    },
+    {
+      "check_id": "route_count",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "forbidden_computation_inputs_preregistered",
+      "detail": [
+        "outputs/step4_rho_grids",
+        "outputs/step5_independent_compute",
+        "outputs/step5_audit",
+        "outputs/step5_solver_conditioning",
+        "logs/step5_validation",
+        "MATLAB rho/poles/stable/critical arrays",
+        "validator or conditioning results",
+        "prior Step-5 CSV/HDF5/JSON"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "four_failed_route_identity",
+      "detail": [
+        "energy_guyan_div1",
+        "energy_guyan_div2",
+        "main_cb_div1",
+        "main_cb_div2"
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "failed_routes_do_not_create",
+      "detail": "DO_NOT_CREATE",
+      "status": "PASS"
+    },
+    {
+      "check_id": "failed_route_directories_absent",
+      "detail": [],
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.matrix_order",
+      "detail": 15,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.algorithm_by_order",
+      "detail": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.workspace_hash",
+      "detail": "E0FFF9B1B0CFF5DB7013FE888D8A5957D3AC8776952EA40446109FE5A1C35923",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.right_division_residual",
+      "detail": 2.555039981566444e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div1.pilot_unique",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.algorithm_by_order",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.workspace_hash",
+      "detail": "2CE61CAC0828B9D7DF1151B456A559D051CF6C48C60714756CCFABE03E392FD7",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.right_division_residual",
+      "detail": 1.9046106453310572e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.pilot_unique",
+      "detail": 11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div1.required_four_points",
+      "detail": [
+        [
+          11,
+          39
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          23,
+          41
+        ],
+        [
+          28,
+          43
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.algorithm_by_order",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.workspace_hash",
+      "detail": "5264AAE6FFACD10E87E4EA7067CD00EF547F0AA850BFC9CAAA1443C923DEC305",
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.pilot_unique",
+      "detail": 11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "alt_guyan_div1_stable_full_ps3.required_four_points",
+      "detail": [
+        [
+          11,
+          39
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          23,
+          41
+        ],
+        [
+          28,
+          43
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.algorithm_by_order",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.workspace_hash",
+      "detail": "7781807F01B9D95CA9554F3AE5449065C4DEB4C2FF8FFC62679E08BEC8757061",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.pilot_unique",
+      "detail": 11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_ori_div2.required_four_points",
+      "detail": [
+        [
+          11,
+          39
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          23,
+          41
+        ],
+        [
+          28,
+          43
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.matrix_order",
+      "detail": 5,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.algorithm_by_order",
+      "detail": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.workspace_hash",
+      "detail": "5B677B11EDCEC3AA7EE4955BE7B46ADB3F1BC7957BD7A7673456AE3F24476F21",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.finite_matrices",
+      "detail": "finite",
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.right_division_residual",
+      "detail": 1.144381911476969e-16,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.pilot_unique",
+      "detail": 11,
+      "status": "PASS"
+    },
+    {
+      "check_id": "main_guyan_div2.required_four_points",
+      "detail": [
+        [
+          11,
+          39
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          23,
+          41
+        ],
+        [
+          28,
+          43
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "check_id": "algorithm_selection_only_by_matrix_order",
+      "detail": {
+        "alt_guyan_div1_stable_full_ps3": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+        "main_guyan_div1": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+        "main_guyan_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION",
+        "main_ori_div1": "COMPACT_SCALAR_DELAY_AUGMENTATION",
+        "main_ori_div2": "FULL_Q_ORDINARY_HISTORY_COMPANION"
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "master_contract_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    },
+    {
+      "check_id": "manuscript_contract_not_closed",
+      "detail": "CONTRACT_NOT_CLOSED",
+      "status": "PASS"
+    }
+  ],
+  "fail_count": 0,
+  "input_seal_sha256": "A38F16625FE8597FDF91F62BC50C0BC25CB485234694CDCF3C94D35EAD3F203F",
+  "matrix_payload_sha256": {
+    "alt_guyan_div1_stable_full_ps3": "034391887A79A820031772F1BD2E445BEE850F32BD2027DC48E2DFBB83589BFD",
+    "main_guyan_div1": "CBE845A810C4FAD8AF25E51437294FBC305FD480BF3F93232CF593BA0C5AAD88",
+    "main_guyan_div2": "12BF9DC606089884D8792DF423D00BDF6A456D9E6FC1A3D5D52CD83A62F3618F",
+    "main_ori_div1": "84F104BABE8EC641F9EBA0DDB45771DA1F0A6524B3E1FCD11ACF5AA53D4BD8AF",
+    "main_ori_div2": "12BF9DC606089884D8792DF423D00BDF6A456D9E6FC1A3D5D52CD83A62F3618F"
+  },
+  "pass_count": 45,
+  "schema_version": "board20_step5_fullq_candidate_preflight_v2",
+  "status": "PASS"
+}

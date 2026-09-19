@@ -1,0 +1,126 @@
+{
+  "schema_version": "FIG10_BATCH_TARGET_EVALUATOR_V1",
+  "status": "PASS",
+  "evidence_label": "目标引导的校准计算复现",
+  "claim_boundary": "排名结果不证明已恢复作者原始参数合同。",
+  "independence_contract": {
+    "blind_solver_imported": false,
+    "blind_solver_executed": false,
+    "parameter_search_executed": false,
+    "target_mat_opened_by_batch_bridge": false,
+    "target_mat_reader": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\strict_target_evaluator.py",
+    "matlab_boundary_helper": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\code\\fig10_extract_mask_boundaries.m"
+  },
+  "input_root_count": 1,
+  "candidate_count": 1,
+  "strict_pass_candidate_count": 0,
+  "strict_fail_candidate_count": 1,
+  "target_sha256_reported_by_strict_evaluator": "9312FB45595499C4242BF00DAC344CE016CB64F844CB410EA89ECB1F6C8BC7E4",
+  "strict_evaluator_sha256": "B3407620429F9EA2578E80450F59D88F2BDB5A0F6687193ED3C012AA93A35382",
+  "matlab_boundary_helper_sha256": "E3B1951FBA82199DECB0AACC27759D8E4A0961DF3D97EFE35B7F68FC7C0B15CF",
+  "ranking": {
+    "direction": "ASCENDING_LEXICOGRAPHIC",
+    "fields": [
+      "failed_route_count",
+      "total_set_difference_count",
+      "total_point_levenshtein_original",
+      "total_abs_boundary_point_count_error",
+      "maximum_symmetric_hausdorff_steps",
+      "sum_symmetric_hausdorff_steps",
+      "total_endpoint_l1_error_steps_original",
+      "candidate_id"
+    ],
+    "tie_breaker": "candidate_id.casefold()"
+  },
+  "axis_intercept_contract": {
+    "primary": "origin-connected contiguous stable prefix last zero-based sample index",
+    "tau1_axis": "mask row l_samples=0; scan j_samples from 0 until first unstable cell",
+    "tau2_axis": "mask column j_samples=0; scan l_samples from 0 until first unstable cell",
+    "conversion": "tau_ms=zero_based_sample_index*1000/1024",
+    "diagnostic": "also report farthest stable index and holes before it"
+  },
+  "batch_sha256": "D2B3AF3E5829DFEE57FE754E23E528BC99ECE04D032F8B2E5F6E106EACA201CA",
+  "batch_hash_contract": "SHA-256 of canonical path-independent target/evaluator/helper hashes, ranking definition, ranked candidate metrics and six mask hashes",
+  "regression_interface_status": "PASS",
+  "regression_checks": [
+    {
+      "candidate_id": "BOARD20_HISTORICAL_MASK_EXTRACTOR_REGRESSION",
+      "applicable": true,
+      "expected_pass_curve_ids": [
+        "division1_original",
+        "division2_original"
+      ],
+      "actual_pass_curve_ids": [
+        "division1_original",
+        "division2_original"
+      ],
+      "expected_failed_route_count": 4,
+      "actual_failed_route_count": 4,
+      "status": "PASS"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "BOARD20_HISTORICAL_MASK_EXTRACTOR_REGRESSION",
+      "contract_id": "REGRESSION",
+      "input_mode": "STRICT_MANIFEST_REGRESSION_ROOT",
+      "input_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression",
+      "source_manifest": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\mask_extractor_regression\\board20_historical_mask_manifest.json",
+      "strict_overall_status": "FAIL",
+      "strict_evaluator_returncode": 2,
+      "strict_curve_pass_count": 2,
+      "failed_route_count": 4,
+      "candidate_total_boundary_point_count": 383,
+      "target_total_boundary_point_count": 386,
+      "total_abs_boundary_point_count_error": 15,
+      "total_set_difference_count": 287,
+      "total_point_levenshtein_original": 151,
+      "maximum_symmetric_hausdorff_steps": 6.0,
+      "sum_symmetric_hausdorff_steps": 16.72865690108165,
+      "total_endpoint_l1_error_steps_original": 20,
+      "total_stable_point_count": 6921,
+      "strict_manifest_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\batch_ranker_reg_v3\\c_cb0eaf9fa9\\m.json",
+      "strict_manifest_sha256": "2E7BEAE4473A5A4A49C1FD5FBB90DA519E7C325B27FA43B908904E762E0C24B7",
+      "strict_summary_path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\batch_ranker_reg_v3\\c_cb0eaf9fa9\\e\\strict_evaluation_summary.json",
+      "strict_summary_sha256": "FBA94C6A54B11B57077BE9D664407DB1BF92A2D0E9860D1B5A11CC9A7569496B",
+      "stable_points__division1_original": 1454,
+      "tau1_intercept_index__division1_original": 63,
+      "tau1_intercept_ms__division1_original": 61.5234375,
+      "tau2_intercept_index__division1_original": 30,
+      "tau2_intercept_ms__division1_original": 29.296875,
+      "stable_points__division1_craig_bampton": 1175,
+      "tau1_intercept_index__division1_craig_bampton": 54,
+      "tau1_intercept_ms__division1_craig_bampton": 52.734375,
+      "tau2_intercept_index__division1_craig_bampton": 25,
+      "tau2_intercept_ms__division1_craig_bampton": 24.4140625,
+      "stable_points__division1_guyan": 1044,
+      "tau1_intercept_index__division1_guyan": 51,
+      "tau1_intercept_ms__division1_guyan": 49.8046875,
+      "tau2_intercept_index__division1_guyan": 22,
+      "tau2_intercept_ms__division1_guyan": 21.484375,
+      "stable_points__division2_original": 1247,
+      "tau1_intercept_index__division2_original": 56,
+      "tau1_intercept_ms__division2_original": 54.6875,
+      "tau2_intercept_index__division2_original": 27,
+      "tau2_intercept_ms__division2_original": 26.3671875,
+      "stable_points__division2_craig_bampton": 1072,
+      "tau1_intercept_index__division2_craig_bampton": 53,
+      "tau1_intercept_ms__division2_craig_bampton": 51.7578125,
+      "tau2_intercept_index__division2_craig_bampton": 25,
+      "tau2_intercept_ms__division2_craig_bampton": 24.4140625,
+      "stable_points__division2_guyan": 929,
+      "tau1_intercept_index__division2_guyan": 50,
+      "tau1_intercept_ms__division2_guyan": 48.828125,
+      "tau2_intercept_index__division2_guyan": 24,
+      "tau2_intercept_ms__division2_guyan": 23.4375,
+      "rank": 1,
+      "ranking_key_json": "[4,287,151,15,6.0,16.72865690108165,20,\"board20_historical_mask_extractor_regression\"]",
+      "batch_sha256": "D2B3AF3E5829DFEE57FE754E23E528BC99ECE04D032F8B2E5F6E106EACA201CA"
+    }
+  ],
+  "outputs": {
+    "candidate_ranking_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\batch_ranker_reg_v3\\candidate_ranking.csv",
+    "curve_metrics_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\batch_ranker_reg_v3\\curve_metrics.csv",
+    "input_mask_hashes_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\batch_ranker_reg_v3\\input_mask_hashes.csv"
+  }
+}

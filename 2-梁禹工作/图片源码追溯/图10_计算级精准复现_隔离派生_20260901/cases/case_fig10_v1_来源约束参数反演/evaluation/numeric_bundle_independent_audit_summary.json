@@ -1,0 +1,1783 @@
+{
+  "case_dir": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演",
+  "checks": [
+    {
+      "check": "contract_axes_B1_vs_B2",
+      "detail": {
+        "actual_paths": [
+          "actuation_and_delay_channels.division_2.coordinates",
+          "actuation_and_delay_channels.division_2.local_selector_zero_based",
+          "controller_channels.division_2.coordinates",
+          "controller_channels.division_2.local_selector_zero_based",
+          "delay_and_feedback.feedback_formula",
+          "delay_and_feedback.feedback_placement",
+          "delay_and_feedback.inside_bundle_rule"
+        ],
+        "expected_paths": [
+          "actuation_and_delay_channels.division_2.coordinates",
+          "actuation_and_delay_channels.division_2.local_selector_zero_based",
+          "controller_channels.division_2.coordinates",
+          "controller_channels.division_2.local_selector_zero_based",
+          "delay_and_feedback.feedback_formula",
+          "delay_and_feedback.feedback_placement",
+          "delay_and_feedback.inside_bundle_rule"
+        ],
+        "missing_expected_paths": [],
+        "pass": true,
+        "unexpected_paths": []
+      },
+      "passed": true
+    },
+    {
+      "check": "contract_axes_B1_vs_B3",
+      "detail": {
+        "actual_paths": [
+          "delay_and_feedback.feedback_formula",
+          "delay_and_feedback.feedback_placement",
+          "delay_and_feedback.inside_bundle_rule"
+        ],
+        "expected_paths": [
+          "delay_and_feedback.feedback_formula",
+          "delay_and_feedback.feedback_placement",
+          "delay_and_feedback.inside_bundle_rule"
+        ],
+        "missing_expected_paths": [],
+        "pass": true,
+        "unexpected_paths": []
+      },
+      "passed": true
+    },
+    {
+      "check": "contract_axes_B2_vs_B3",
+      "detail": {
+        "actual_paths": [
+          "actuation_and_delay_channels.division_2.coordinates",
+          "actuation_and_delay_channels.division_2.local_selector_zero_based",
+          "controller_channels.division_2.coordinates",
+          "controller_channels.division_2.local_selector_zero_based"
+        ],
+        "expected_paths": [
+          "actuation_and_delay_channels.division_2.coordinates",
+          "actuation_and_delay_channels.division_2.local_selector_zero_based",
+          "controller_channels.division_2.coordinates",
+          "controller_channels.division_2.local_selector_zero_based"
+        ],
+        "missing_expected_paths": [],
+        "pass": true,
+        "unexpected_paths": []
+      },
+      "passed": true
+    },
+    {
+      "check": "generator_has_no_target_asset_reference",
+      "detail": {
+        "build_fig10_candidate_bundles.py": [],
+        "materialize_fig10_numeric_bundles.py": []
+      },
+      "passed": true
+    },
+    {
+      "check": "generator_does_not_import_solver_or_evaluator",
+      "detail": {
+        "build_fig10_candidate_bundles.py": [
+          "__future__",
+          "argparse",
+          "copy",
+          "csv",
+          "hashlib",
+          "json",
+          "pathlib",
+          "typing"
+        ],
+        "materialize_fig10_numeric_bundles.py": [
+          "__future__",
+          "argparse",
+          "build_fig10_candidate_bundles",
+          "copy",
+          "csv",
+          "dataclasses",
+          "decimal",
+          "hashlib",
+          "io",
+          "json",
+          "numpy",
+          "pathlib",
+          "scipy.io",
+          "scipy.linalg",
+          "typing"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "all_declared_sources_frozen_and_target_free",
+      "detail": [
+        {
+          "actual_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+          "expected_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/步骤8B_基础矩阵与选择矩阵.mat",
+          "source_id": "board20_step8b_frozen_mat",
+          "under_board20_frozen_scope": true
+        },
+        {
+          "actual_sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+          "expected_sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/有限候选整链清单.csv",
+          "source_id": "board20_candidate_chain_contract",
+          "under_board20_frozen_scope": true
+        },
+        {
+          "actual_sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+          "expected_sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/合同冲突与裁决.csv",
+          "source_id": "board20_conflict_adjudication",
+          "under_board20_frozen_scope": true
+        },
+        {
+          "actual_sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+          "expected_sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/六路线六候选索引.csv",
+          "source_id": "board20_bundle_index",
+          "under_board20_frozen_scope": true
+        },
+        {
+          "actual_sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+          "expected_sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/24组稳定统计.csv",
+          "source_id": "board20_fullgrid_route_statistics",
+          "under_board20_frozen_scope": true
+        },
+        {
+          "actual_sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+          "expected_sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+          "forbidden_marker_hits": [],
+          "pass": true,
+          "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/验证摘要.json",
+          "source_id": "board20_fullgrid_validation",
+          "under_board20_frozen_scope": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "reused_fullgrid_certificate_declares_no_boundary_scope",
+      "detail": {
+        "scope": "no paper/PDF/history boundary"
+      },
+      "passed": true
+    },
+    {
+      "check": "manifest_counts",
+      "detail": {
+        "delay_grid_points_computed": 0,
+        "global_contracts": 3,
+        "new_numeric_route_bundles": 12,
+        "parameter_candidates_evaluated": 0,
+        "reused_route_assignments": 6,
+        "roots_computed": 0,
+        "route_assignments": 18,
+        "stage0_fail": 0,
+        "stage0_pass": 12
+      },
+      "passed": true
+    },
+    {
+      "check": "table_cardinalities",
+      "detail": {
+        "assignments": 18,
+        "mat_hash_rows": 12,
+        "stage0_rows": 12,
+        "unique_assignments": 18
+      },
+      "passed": true
+    },
+    {
+      "check": "all_18_assignment_artifact_and_operator_hashes",
+      "detail": [
+        {
+          "actual_artifact_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b",
+          "actual_operator_sha256": "befad996aec9a899a9d18fcc06b37229e5124fa84d39cd5add11acd7927fae2a",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b",
+          "expected_operator_sha256": "befad996aec9a899a9d18fcc06b37229e5124fa84d39cd5add11acd7927fae2a",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_原结构15维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94",
+          "actual_operator_sha256": "a6bf471e2d8604caa6d44e043db904331e2daee2212f658964ff34a845e12ab3",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94",
+          "expected_operator_sha256": "a6bf471e2d8604caa6d44e043db904331e2daee2212f658964ff34a845e12ab3",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Guyan缩聚6维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7",
+          "actual_operator_sha256": "08369fe94d7813867b91cff2d99dd8875defb57b9e515618e3ad84aeca7c52f8",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7",
+          "expected_operator_sha256": "08369fe94d7813867b91cff2d99dd8875defb57b9e515618e3ad84aeca7c52f8",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Craig-Bampton缩聚9维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "9443b206724d36f2a091af2917a62b51830ce089e2f89aba04c8390bff9d21e6",
+          "actual_operator_sha256": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "9443b206724d36f2a091af2917a62b51830ce089e2f89aba04c8390bff9d21e6",
+          "expected_operator_sha256": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "66f9ccb546781638913f5e0e658dbe4dc653f4053edcc186a713921c17a3b4c0",
+          "actual_operator_sha256": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "66f9ccb546781638913f5e0e658dbe4dc653f4053edcc186a713921c17a3b4c0",
+          "expected_operator_sha256": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "98ae3f01ce83a27032e2b77040c92ce9274445ca3aa887f2c94669a639ad2597",
+          "actual_operator_sha256": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "98ae3f01ce83a27032e2b77040c92ce9274445ca3aa887f2c94669a639ad2597",
+          "expected_operator_sha256": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "actual_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "expected_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "actual_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "expected_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "actual_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "expected_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "b045711c995112bafcaab135039a14bef16f59d9f1600e9996b4a55832cf2808",
+          "actual_operator_sha256": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "b045711c995112bafcaab135039a14bef16f59d9f1600e9996b4a55832cf2808",
+          "expected_operator_sha256": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "2a889001ef1b0d883b4c251c19d92837d601f623affb90bb557cb3a63751b9f3",
+          "actual_operator_sha256": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "2a889001ef1b0d883b4c251c19d92837d601f623affb90bb557cb3a63751b9f3",
+          "expected_operator_sha256": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "b09b5107b818987dd83ac02379d205b3ffb2b9bdc7031b417ea75751c5deee96",
+          "actual_operator_sha256": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "b09b5107b818987dd83ac02379d205b3ffb2b9bdc7031b417ea75751c5deee96",
+          "expected_operator_sha256": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "actual_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "expected_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "actual_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "expected_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "actual_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "expected_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "d386e1bc9c735df13b27dba35a64c7009cbe29965ff275e22a0c6d2dc160d4e5",
+          "actual_operator_sha256": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d386e1bc9c735df13b27dba35a64c7009cbe29965ff275e22a0c6d2dc160d4e5",
+          "expected_operator_sha256": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "d07d242891db07b3b5be05fd91d7f254c1e3870daf26c3c70a5f4ef7b6738bb0",
+          "actual_operator_sha256": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d07d242891db07b3b5be05fd91d7f254c1e3870daf26c3c70a5f4ef7b6738bb0",
+          "expected_operator_sha256": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "373c01ca13d91db7f26ac9b8e84d363bdddc5aaa20ab4fd6f90890ea876b89cd",
+          "actual_operator_sha256": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "373c01ca13d91db7f26ac9b8e84d363bdddc5aaa20ab4fd6f90890ea876b89cd",
+          "expected_operator_sha256": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Craig_Bampton.mat"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "all_18_assignment_paths_satisfy_blind_core_shapes",
+      "detail": [
+        {
+          "actual_artifact_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b",
+          "actual_operator_sha256": "befad996aec9a899a9d18fcc06b37229e5124fa84d39cd5add11acd7927fae2a",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d5e81b75e16f038f14c8cf0d9e4da4550c875bf3cc17f513f31352ddf512df2b",
+          "expected_operator_sha256": "befad996aec9a899a9d18fcc06b37229e5124fa84d39cd5add11acd7927fae2a",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_原结构15维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94",
+          "actual_operator_sha256": "a6bf471e2d8604caa6d44e043db904331e2daee2212f658964ff34a845e12ab3",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d15501392a4adaf20f54c7187053f7c82920f80f1d7ed8fc21eeee3ccf3d3d94",
+          "expected_operator_sha256": "a6bf471e2d8604caa6d44e043db904331e2daee2212f658964ff34a845e12ab3",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Guyan缩聚6维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7",
+          "actual_operator_sha256": "08369fe94d7813867b91cff2d99dd8875defb57b9e515618e3ad84aeca7c52f8",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_BOARD20_R03_ROUTE",
+          "assignment_id": "B1_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "6b3727fadeeb5c46a812a656c65df882e683a3f9dce52cca1b0e42296b6814d7",
+          "expected_operator_sha256": "08369fe94d7813867b91cff2d99dd8875defb57b9e515618e3ad84aeca7c52f8",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/候选数值包/第1类_Craig-Bampton缩聚9维__R03_论文CARE_矩阵al_广义力.mat"
+        },
+        {
+          "actual_artifact_sha256": "9443b206724d36f2a091af2917a62b51830ce089e2f89aba04c8390bff9d21e6",
+          "actual_operator_sha256": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "9443b206724d36f2a091af2917a62b51830ce089e2f89aba04c8390bff9d21e6",
+          "expected_operator_sha256": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "66f9ccb546781638913f5e0e658dbe4dc653f4053edcc186a713921c17a3b4c0",
+          "actual_operator_sha256": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "66f9ccb546781638913f5e0e658dbe4dc653f4053edcc186a713921c17a3b4c0",
+          "expected_operator_sha256": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "98ae3f01ce83a27032e2b77040c92ce9274445ca3aa887f2c94669a639ad2597",
+          "actual_operator_sha256": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B1_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "98ae3f01ce83a27032e2b77040c92ce9274445ca3aa887f2c94669a639ad2597",
+          "expected_operator_sha256": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B1_D2_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "actual_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "expected_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "actual_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "expected_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "actual_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "expected_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "b045711c995112bafcaab135039a14bef16f59d9f1600e9996b4a55832cf2808",
+          "actual_operator_sha256": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "b045711c995112bafcaab135039a14bef16f59d9f1600e9996b4a55832cf2808",
+          "expected_operator_sha256": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "2a889001ef1b0d883b4c251c19d92837d601f623affb90bb557cb3a63751b9f3",
+          "actual_operator_sha256": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "2a889001ef1b0d883b4c251c19d92837d601f623affb90bb557cb3a63751b9f3",
+          "expected_operator_sha256": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "b09b5107b818987dd83ac02379d205b3ffb2b9bdc7031b417ea75751c5deee96",
+          "actual_operator_sha256": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B2_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "b09b5107b818987dd83ac02379d205b3ffb2b9bdc7031b417ea75751c5deee96",
+          "expected_operator_sha256": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D2_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "actual_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "expected_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "actual_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "expected_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "actual_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "artifact_hash_pass": true,
+          "assignment_action": "REUSE_MATERIALIZED_B2_ROUTE",
+          "assignment_id": "B3_D1_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "expected_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B2_D1_Craig_Bampton.mat"
+        },
+        {
+          "actual_artifact_sha256": "d386e1bc9c735df13b27dba35a64c7009cbe29965ff275e22a0c6d2dc160d4e5",
+          "actual_operator_sha256": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Original",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d386e1bc9c735df13b27dba35a64c7009cbe29965ff275e22a0c6d2dc160d4e5",
+          "expected_operator_sha256": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Original.mat"
+        },
+        {
+          "actual_artifact_sha256": "d07d242891db07b3b5be05fd91d7f254c1e3870daf26c3c70a5f4ef7b6738bb0",
+          "actual_operator_sha256": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Guyan",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "d07d242891db07b3b5be05fd91d7f254c1e3870daf26c3c70a5f4ef7b6738bb0",
+          "expected_operator_sha256": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Guyan.mat"
+        },
+        {
+          "actual_artifact_sha256": "373c01ca13d91db7f26ac9b8e84d363bdddc5aaa20ab4fd6f90890ea876b89cd",
+          "actual_operator_sha256": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "artifact_hash_pass": true,
+          "assignment_action": "MATERIALIZED_STAGE0_PASS",
+          "assignment_id": "B3_D2_Craig_Bampton",
+          "core_schema_pass": true,
+          "expected_artifact_sha256": "373c01ca13d91db7f26ac9b8e84d363bdddc5aaa20ab4fd6f90890ea876b89cd",
+          "expected_operator_sha256": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "missing_core_fields": "",
+          "operator_hash_pass": true,
+          "repo_relative_path": "figure/图10_计算级精准复现_隔离派生_20260901/cases/case_fig10_v1_来源约束参数反演/data/numeric_bundles/gain_scale_1_source_anchor/new_route_bundles/B3_D2_Craig_Bampton.mat"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "B3_division1_reuses_exact_B2_operators",
+      "detail": [
+        {
+          "method": "Original",
+          "pass": true,
+          "same_artifact_sha256": true,
+          "same_operator_sha256": true,
+          "same_path": true
+        },
+        {
+          "method": "Guyan",
+          "pass": true,
+          "same_artifact_sha256": true,
+          "same_operator_sha256": true,
+          "same_path": true
+        },
+        {
+          "method": "Craig_Bampton",
+          "pass": true,
+          "same_artifact_sha256": true,
+          "same_operator_sha256": true,
+          "same_path": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "production_blind_core_loads_all_18_assignments",
+      "detail": [
+        {
+          "assignment_id": "B1_D1_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B1_D1_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B1_D1_Craig_Bampton",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B1_D2_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B1_D2_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B1_D2_Craig_Bampton",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D1_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D1_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D1_Craig_Bampton",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D2_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D2_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B2_D2_Craig_Bampton",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D1_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D1_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D1_Craig_Bampton",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D2_Original",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D2_Guyan",
+          "error": "",
+          "passed": true
+        },
+        {
+          "assignment_id": "B3_D2_Craig_Bampton",
+          "error": "",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "all_12_native_bundles_independently_reconstructed",
+      "detail": [
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B1",
+          "dimension": 8,
+          "division": 2,
+          "feedback_placement": "OUTSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Craig_Bampton",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "operator_sha256_recorded": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4",
+          "route_id": "B1_D2_Craig_Bampton",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B1",
+          "dimension": 5,
+          "division": 2,
+          "feedback_placement": "OUTSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Guyan",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "operator_sha256_recorded": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1",
+          "route_id": "B1_D2_Guyan",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B1",
+          "dimension": 15,
+          "division": 2,
+          "feedback_placement": "OUTSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Original",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "operator_sha256_recorded": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce",
+          "route_id": "B1_D2_Original",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 9,
+          "division": 1,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Craig_Bampton",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "operator_sha256_recorded": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1",
+          "route_id": "B2_D1_Craig_Bampton",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 6,
+          "division": 1,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Guyan",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "operator_sha256_recorded": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382",
+          "route_id": "B2_D1_Guyan",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 15,
+          "division": 1,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Original",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "operator_sha256_recorded": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de",
+          "route_id": "B2_D1_Original",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 8,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Craig_Bampton",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "operator_sha256_recorded": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3",
+          "route_id": "B2_D2_Craig_Bampton",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 5,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Guyan",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "operator_sha256_recorded": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5",
+          "route_id": "B2_D2_Guyan",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi6",
+          "contract_id": "B2",
+          "dimension": 15,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Original",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "operator_sha256_recorded": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254",
+          "route_id": "B2_D2_Original",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B3",
+          "dimension": 8,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Craig_Bampton",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "operator_sha256_recorded": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d",
+          "route_id": "B3_D2_Craig_Bampton",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B3",
+          "dimension": 5,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Guyan",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "operator_sha256_recorded": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808",
+          "route_id": "B3_D2_Guyan",
+          "route_reconstruction_pass": true
+        },
+        {
+          "channel_pair": "psi1/psi11",
+          "contract_id": "B3",
+          "dimension": 15,
+          "division": 2,
+          "feedback_placement": "INSIDE_H",
+          "identity_fields_pass": true,
+          "maximum_independent_field_relative_error": 0.0,
+          "method": "Original",
+          "operator_sha256_pass": true,
+          "operator_sha256_recomputed": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "operator_sha256_recorded": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930",
+          "route_id": "B3_D2_Original",
+          "route_reconstruction_pass": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "division2_psi11_is_global_e11_through_recovery",
+      "detail": [
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Craig_Bampton",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B1_D2_Craig_Bampton"
+        },
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Guyan",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B1_D2_Guyan"
+        },
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Original",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B1_D2_Original"
+        },
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Craig_Bampton",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B3_D2_Craig_Bampton"
+        },
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Guyan",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B3_D2_Guyan"
+        },
+        {
+          "embedding_e11_error": 0.0,
+          "embedding_e1_error": 0.0,
+          "local_rows_zero_based": [
+            0,
+            6
+          ],
+          "method": "Original",
+          "pass": true,
+          "recovered_selector_error": 0.0,
+          "route_id": "B3_D2_Original"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "B1_vs_B3_only_feedback_placement_changes_numeric_decomposition",
+      "detail": [
+        {
+          "maximum_invariant_field_error": 1.0082476996950024e-16,
+          "method": "Original",
+          "pass": true
+        },
+        {
+          "maximum_invariant_field_error": 1.611893526069606e-16,
+          "method": "Guyan",
+          "pass": true
+        },
+        {
+          "maximum_invariant_field_error": 1.611891873145282e-16,
+          "method": "Craig_Bampton",
+          "pass": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "B2_vs_B3_only_division2_channel_mapping_changes_numeric_control_path",
+      "detail": [
+        {
+          "maximum_invariant_field_error": 0.0,
+          "method": "Original",
+          "pass": true
+        },
+        {
+          "maximum_invariant_field_error": 0.0,
+          "method": "Guyan",
+          "pass": true
+        },
+        {
+          "maximum_invariant_field_error": 0.0,
+          "method": "Craig_Bampton",
+          "pass": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "H_inside_outside_nonzero_delay_coefficients_have_correct_sign_and_exponent",
+      "detail": [
+        {
+          "allowed_difference_relative_error": 2.6507990655832838e-09,
+          "delays_l_j": [
+            2,
+            5
+          ],
+          "method": "Original",
+          "nonzero_delay_coefficient_difference_norm": 252984.7444957526,
+          "nonzero_delay_expected_difference_relative_error": 4.761998888714753e-12,
+          "pass": true,
+          "subtraction_conditioned_roundoff_bound": 2.6507990655832838e-09,
+          "zero_delay_operator_relative_error": 0.0
+        },
+        {
+          "allowed_difference_relative_error": 3.156866836215143e-09,
+          "delays_l_j": [
+            2,
+            5
+          ],
+          "method": "Guyan",
+          "nonzero_delay_coefficient_difference_norm": 252984.74449580666,
+          "nonzero_delay_expected_difference_relative_error": 4.989957989903494e-12,
+          "pass": true,
+          "subtraction_conditioned_roundoff_bound": 3.156866836215143e-09,
+          "zero_delay_operator_relative_error": 2.4048236358123175e-17
+        },
+        {
+          "allowed_difference_relative_error": 3.157023937755335e-09,
+          "delays_l_j": [
+            2,
+            5
+          ],
+          "method": "Craig_Bampton",
+          "nonzero_delay_coefficient_difference_norm": 252984.74449580666,
+          "nonzero_delay_expected_difference_relative_error": 4.989957989903494e-12,
+          "pass": true,
+          "subtraction_conditioned_roundoff_bound": 3.157023937755335e-09,
+          "zero_delay_operator_relative_error": 2.404702697951886e-17
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "R03_reuse_contract_closes_all_six_legacy_routes",
+      "detail": {
+        "pairs": [
+          "D1_Craig_Bampton",
+          "D1_Guyan",
+          "D1_Original",
+          "D2_Craig_Bampton",
+          "D2_Guyan",
+          "D2_Original"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "stage0_csv_matches_independent_recalculation",
+      "detail": [
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 2.404702697951886e-17,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B1_D2_Craig_Bampton"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 2.4048236358123175e-17,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B1_D2_Guyan"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 0.0,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B1_D2_Original"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 7.895029974740018e-17,
+          "independent_r03_source_regression_error": 4.4696855516554836e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D1_Craig_Bampton"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 7.895073047343443e-17,
+          "independent_r03_source_regression_error": 4.469685551655484e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D1_Guyan"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 1.2075004420547912e-16,
+          "independent_r03_source_regression_error": 4.4696855516554836e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D1_Original"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 1.5318886393249852e-16,
+          "independent_r03_source_regression_error": 3.388794324095e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D2_Craig_Bampton"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 1.5318912451368314e-16,
+          "independent_r03_source_regression_error": 3.389312236417012e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D2_Guyan"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 1.1688566357985163e-16,
+          "independent_r03_source_regression_error": 2.4817212138721186e-14,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B2_D2_Original"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 2.404702697951886e-17,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B3_D2_Craig_Bampton"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 2.4048236358123175e-17,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B3_D2_Guyan"
+        },
+        {
+          "identity_and_pass_flags_match": true,
+          "independent_paired_zero_delay_error": 0.0,
+          "independent_r03_source_regression_error": null,
+          "numeric_mismatch_count": 0,
+          "numeric_mismatches": {},
+          "pass": true,
+          "route_id": "B3_D2_Original"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "array_hash_inventory_matches_all_12_MAT_fields",
+      "detail": {
+        "extra_rows": [],
+        "mismatches": []
+      },
+      "passed": true
+    },
+    {
+      "check": "mat_artifact_hash_table_matches_all_12_MAT_files",
+      "detail": [
+        {
+          "artifact_sha256": "9443b206724d36f2a091af2917a62b51830ce089e2f89aba04c8390bff9d21e6",
+          "bytes": 15547,
+          "pass": true,
+          "route_id": "B1_D2_Original",
+          "route_operator_sha256": "49862715379a666cdf39ec8306c1e1a8a382989d3de285713d91391ddd2b17ce"
+        },
+        {
+          "artifact_sha256": "66f9ccb546781638913f5e0e658dbe4dc653f4053edcc186a713921c17a3b4c0",
+          "bytes": 11253,
+          "pass": true,
+          "route_id": "B1_D2_Guyan",
+          "route_operator_sha256": "991ef4d1b421cc397277f6da2deb30c5e68239aaf183cfebdd0f61dfc04a5df1"
+        },
+        {
+          "artifact_sha256": "98ae3f01ce83a27032e2b77040c92ce9274445ca3aa887f2c94669a639ad2597",
+          "bytes": 15612,
+          "pass": true,
+          "route_id": "B1_D2_Craig_Bampton",
+          "route_operator_sha256": "c64551e06f4eeb6c50512a3f01683b67961b16da51cdddf57cf7574eec8ee6a4"
+        },
+        {
+          "artifact_sha256": "92aeea7e549d8630ceb1d7395add1575b22afdf1226b493061b16362cb6e42ed",
+          "bytes": 15368,
+          "pass": true,
+          "route_id": "B2_D1_Original",
+          "route_operator_sha256": "dd8ce8c2f8579d17506a8a3541e05ad096569f9ef33bc938dfc548456bcf03de"
+        },
+        {
+          "artifact_sha256": "fa8de5d7fd3b5eb65a24c0188d2cd164ef4d3e21b864442754dc27f3c0954e51",
+          "bytes": 11954,
+          "pass": true,
+          "route_id": "B2_D1_Guyan",
+          "route_operator_sha256": "a53f94b0e6811e383a5654651cf9d156e91a3eb0283c42fe995f229de5c7e382"
+        },
+        {
+          "artifact_sha256": "37ac8e2b26d19ab01993bbb652891c982dbe7aca3be85de8e1641d9cca1b4e51",
+          "bytes": 16631,
+          "pass": true,
+          "route_id": "B2_D1_Craig_Bampton",
+          "route_operator_sha256": "b1513103c1fcc4ba94a967c402009cdd0d61431ac5ba7b27254a732dfe00a6b1"
+        },
+        {
+          "artifact_sha256": "b045711c995112bafcaab135039a14bef16f59d9f1600e9996b4a55832cf2808",
+          "bytes": 15570,
+          "pass": true,
+          "route_id": "B2_D2_Original",
+          "route_operator_sha256": "8fe914070aceea3189b1e37caf1e582850d7b64af6015f287176ab0c68e43254"
+        },
+        {
+          "artifact_sha256": "2a889001ef1b0d883b4c251c19d92837d601f623affb90bb557cb3a63751b9f3",
+          "bytes": 12222,
+          "pass": true,
+          "route_id": "B2_D2_Guyan",
+          "route_operator_sha256": "4742952cb998eb3998426f1ca00d105e7fa3b0e93d9b3c0deb46480c5820d5d5"
+        },
+        {
+          "artifact_sha256": "b09b5107b818987dd83ac02379d205b3ffb2b9bdc7031b417ea75751c5deee96",
+          "bytes": 18379,
+          "pass": true,
+          "route_id": "B2_D2_Craig_Bampton",
+          "route_operator_sha256": "cea38b7895ffbdf7048dc5aa55327e5a6069121898ed43022edc77be119beae3"
+        },
+        {
+          "artifact_sha256": "d386e1bc9c735df13b27dba35a64c7009cbe29965ff275e22a0c6d2dc160d4e5",
+          "bytes": 15599,
+          "pass": true,
+          "route_id": "B3_D2_Original",
+          "route_operator_sha256": "03f7990dde0459637c9fcfe5fb151b9b6de3fb5bf5bd0c292d17bacdd2c12930"
+        },
+        {
+          "artifact_sha256": "d07d242891db07b3b5be05fd91d7f254c1e3870daf26c3c70a5f4ef7b6738bb0",
+          "bytes": 11174,
+          "pass": true,
+          "route_id": "B3_D2_Guyan",
+          "route_operator_sha256": "53fa59a02517fe5463262298763c3b052ac76e1680eabc880da99c3d597ab808"
+        },
+        {
+          "artifact_sha256": "373c01ca13d91db7f26ac9b8e84d363bdddc5aaa20ab4fd6f90890ea876b89cd",
+          "bytes": 15539,
+          "pass": true,
+          "route_id": "B3_D2_Craig_Bampton",
+          "route_operator_sha256": "b697b40922d43b5f5d06d59746d11780ce26bb185cf124aefd9dda83c21ae20d"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "contract_differences": {
+    "B1_vs_B2": {
+      "actual_paths": [
+        "actuation_and_delay_channels.division_2.coordinates",
+        "actuation_and_delay_channels.division_2.local_selector_zero_based",
+        "controller_channels.division_2.coordinates",
+        "controller_channels.division_2.local_selector_zero_based",
+        "delay_and_feedback.feedback_formula",
+        "delay_and_feedback.feedback_placement",
+        "delay_and_feedback.inside_bundle_rule"
+      ],
+      "expected_paths": [
+        "actuation_and_delay_channels.division_2.coordinates",
+        "actuation_and_delay_channels.division_2.local_selector_zero_based",
+        "controller_channels.division_2.coordinates",
+        "controller_channels.division_2.local_selector_zero_based",
+        "delay_and_feedback.feedback_formula",
+        "delay_and_feedback.feedback_placement",
+        "delay_and_feedback.inside_bundle_rule"
+      ],
+      "missing_expected_paths": [],
+      "pass": true,
+      "unexpected_paths": []
+    },
+    "B1_vs_B3": {
+      "actual_paths": [
+        "delay_and_feedback.feedback_formula",
+        "delay_and_feedback.feedback_placement",
+        "delay_and_feedback.inside_bundle_rule"
+      ],
+      "expected_paths": [
+        "delay_and_feedback.feedback_formula",
+        "delay_and_feedback.feedback_placement",
+        "delay_and_feedback.inside_bundle_rule"
+      ],
+      "missing_expected_paths": [],
+      "pass": true,
+      "unexpected_paths": []
+    },
+    "B2_vs_B3": {
+      "actual_paths": [
+        "actuation_and_delay_channels.division_2.coordinates",
+        "actuation_and_delay_channels.division_2.local_selector_zero_based",
+        "controller_channels.division_2.coordinates",
+        "controller_channels.division_2.local_selector_zero_based"
+      ],
+      "expected_paths": [
+        "actuation_and_delay_channels.division_2.coordinates",
+        "actuation_and_delay_channels.division_2.local_selector_zero_based",
+        "controller_channels.division_2.coordinates",
+        "controller_channels.division_2.local_selector_zero_based"
+      ],
+      "missing_expected_paths": [],
+      "pass": true,
+      "unexpected_paths": []
+    }
+  },
+  "counts": {
+    "checks": 22,
+    "failed": 0,
+    "new_mat_files": 12,
+    "passed": 22,
+    "route_assignments": 18,
+    "stage0_rows": 12
+  },
+  "failed_checks": [],
+  "nonzero_delay_feedback_placement": [
+    {
+      "allowed_difference_relative_error": 2.6507990655832838e-09,
+      "delays_l_j": [
+        2,
+        5
+      ],
+      "method": "Original",
+      "nonzero_delay_coefficient_difference_norm": 252984.7444957526,
+      "nonzero_delay_expected_difference_relative_error": 4.761998888714753e-12,
+      "pass": true,
+      "subtraction_conditioned_roundoff_bound": 2.6507990655832838e-09,
+      "zero_delay_operator_relative_error": 0.0
+    },
+    {
+      "allowed_difference_relative_error": 3.156866836215143e-09,
+      "delays_l_j": [
+        2,
+        5
+      ],
+      "method": "Guyan",
+      "nonzero_delay_coefficient_difference_norm": 252984.74449580666,
+      "nonzero_delay_expected_difference_relative_error": 4.989957989903494e-12,
+      "pass": true,
+      "subtraction_conditioned_roundoff_bound": 3.156866836215143e-09,
+      "zero_delay_operator_relative_error": 2.4048236358123175e-17
+    },
+    {
+      "allowed_difference_relative_error": 3.157023937755335e-09,
+      "delays_l_j": [
+        2,
+        5
+      ],
+      "method": "Craig_Bampton",
+      "nonzero_delay_coefficient_difference_norm": 252984.74449580666,
+      "nonzero_delay_expected_difference_relative_error": 4.989957989903494e-12,
+      "pass": true,
+      "subtraction_conditioned_roundoff_bound": 3.157023937755335e-09,
+      "zero_delay_operator_relative_error": 2.404702697951886e-17
+    }
+  ],
+  "psi11_mapping": [
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Craig_Bampton",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B1_D2_Craig_Bampton"
+    },
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Guyan",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B1_D2_Guyan"
+    },
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Original",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B1_D2_Original"
+    },
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Craig_Bampton",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B3_D2_Craig_Bampton"
+    },
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Guyan",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B3_D2_Guyan"
+    },
+    {
+      "embedding_e11_error": 0.0,
+      "embedding_e1_error": 0.0,
+      "local_rows_zero_based": [
+        0,
+        6
+      ],
+      "method": "Original",
+      "pass": true,
+      "recovered_selector_error": 0.0,
+      "route_id": "B3_D2_Original"
+    }
+  ],
+  "repo_root": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master",
+  "schema_version": "FIG10_NUMERIC_BUNDLE_INDEPENDENT_AUDIT_V1",
+  "scope": "READ_ONLY_NUMERIC_BUNDLE_AUDIT_NO_ROOTS_NO_GRID_NO_TARGET_EVALUATION",
+  "stage0_recalculation": [
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 2.404702697951886e-17,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B1_D2_Craig_Bampton"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 2.4048236358123175e-17,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B1_D2_Guyan"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 0.0,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B1_D2_Original"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 7.895029974740018e-17,
+      "independent_r03_source_regression_error": 4.4696855516554836e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D1_Craig_Bampton"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 7.895073047343443e-17,
+      "independent_r03_source_regression_error": 4.469685551655484e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D1_Guyan"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 1.2075004420547912e-16,
+      "independent_r03_source_regression_error": 4.4696855516554836e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D1_Original"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 1.5318886393249852e-16,
+      "independent_r03_source_regression_error": 3.388794324095e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D2_Craig_Bampton"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 1.5318912451368314e-16,
+      "independent_r03_source_regression_error": 3.389312236417012e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D2_Guyan"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 1.1688566357985163e-16,
+      "independent_r03_source_regression_error": 2.4817212138721186e-14,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B2_D2_Original"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 2.404702697951886e-17,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B3_D2_Craig_Bampton"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 2.4048236358123175e-17,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B3_D2_Guyan"
+    },
+    {
+      "identity_and_pass_flags_match": true,
+      "independent_paired_zero_delay_error": 0.0,
+      "independent_r03_source_regression_error": null,
+      "numeric_mismatch_count": 0,
+      "numeric_mismatches": {},
+      "pass": true,
+      "route_id": "B3_D2_Original"
+    }
+  ],
+  "status": "PASS",
+  "target_dependency_audit": {
+    "forbidden_asset_markers": [
+      "plotted_data",
+      "plotteddata",
+      "fig10_stability_domain",
+      "submit_figure",
+      "vector_boundary",
+      "boundary_csv",
+      "strict_evaluator",
+      "目标边界",
+      "论文矢量"
+    ],
+    "generator_forbidden_hits": {
+      "build_fig10_candidate_bundles.py": [],
+      "materialize_fig10_numeric_bundles.py": []
+    },
+    "imported_modules": {
+      "build_fig10_candidate_bundles.py": [
+        "__future__",
+        "argparse",
+        "copy",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "materialize_fig10_numeric_bundles.py": [
+        "__future__",
+        "argparse",
+        "build_fig10_candidate_bundles",
+        "copy",
+        "csv",
+        "dataclasses",
+        "decimal",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.io",
+        "scipy.linalg",
+        "typing"
+      ]
+    },
+    "reused_fullgrid_validation_scope": "no paper/PDF/history boundary",
+    "source_fingerprints": [
+      {
+        "actual_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+        "expected_sha256": "261852003eea79a6c7c609c472e82b8782bb7619191c2cfa3759ac39efcc80ff",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/步骤8B_基础矩阵与选择矩阵.mat",
+        "source_id": "board20_step8b_frozen_mat",
+        "under_board20_frozen_scope": true
+      },
+      {
+        "actual_sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+        "expected_sha256": "ad60f44f104b08cdd1d1a0cf89c70724efd9a9e746c4d2fae0e75f7a69035110",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/有限候选整链清单.csv",
+        "source_id": "board20_candidate_chain_contract",
+        "under_board20_frozen_scope": true
+      },
+      {
+        "actual_sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+        "expected_sha256": "1ce11b24d26127702605c56bb92d542dcaffd74019180b79a8cd727ea03fe5b3",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8b_论文代码矩阵合同/合同冲突与裁决.csv",
+        "source_id": "board20_conflict_adjudication",
+        "under_board20_frozen_scope": true
+      },
+      {
+        "actual_sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+        "expected_sha256": "e78f3aae56ccef63b222bc5bf2cf648ac6305c78e40d86b8a48b047c5ea3adda",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8c_六链模型生成/python/六路线六候选索引.csv",
+        "source_id": "board20_bundle_index",
+        "under_board20_frozen_scope": true
+      },
+      {
+        "actual_sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+        "expected_sha256": "e4f43af90b8ad23b05c3079d1157e7d642dc9653e5032d2f4192d41c460d8072",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/24组稳定统计.csv",
+        "source_id": "board20_fullgrid_route_statistics",
+        "under_board20_frozen_scope": true
+      },
+      {
+        "actual_sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+        "expected_sha256": "9c7a47f4ab3b1b1f9c8c426dad09291e7d3a855cd90ac34b4cd30ff704eec2e1",
+        "forbidden_marker_hits": [],
+        "pass": true,
+        "path": "test/00_失败尝试与候选路线/板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现/outputs/step8e_四候选全网格/validation/验证摘要.json",
+        "source_id": "board20_fullgrid_validation",
+        "under_board20_frozen_scope": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "pass": true,
+  "changed_parts": [
+    "ppt/slides/slide18.xml",
+    "ppt/slides/slide19.xml"
+  ],
+  "all_other_parts_byte_identical": true,
+  "non_arrow_objects_on_target_pages_byte_identical": true,
+  "all_texts_preserved_two_formats": true,
+  "58_arrows_are_single_native_objects_two_formats": true,
+  "original_media_sha_preserved": true,
+  "protected_files_unchanged": 203,
+  "png_export_note": "Native WPS PNG export had different stroke rasterization across sessions although unchanged PDF vector instructions and identical common-engine PDF raster were confirmed for all 17 untouched pages. Both native PNG sets are retained.",
+  "render_comparisons": [
+    {
+      "slide": 1,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.7941484375,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 2,
+      "two_format_pixel_identical": false,
+      "two_format_mean_channel_error": 0.028301041666666665,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.6707517361111112,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 3,
+      "two_format_pixel_identical": false,
+      "two_format_mean_channel_error": 0.05988020833333333,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.8988411458333333,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 4,
+      "two_format_pixel_identical": false,
+      "two_format_mean_channel_error": 0.0035625,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.9839640625,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 5,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014184027777777778,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 6,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.029421354166666667,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 7,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014909375,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 8,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014909375,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 9,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.01889236111111111,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 10,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014909375,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 11,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014909375,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 12,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.01889236111111111,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 13,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.0292796875,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 14,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.014996875,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 15,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.03528871527777778,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 16,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.6791456597222222,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 17,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0,
+      "before_after_pixel_identical": false,
+      "before_after_mean_channel_error": 0.7925074652777778,
+      "before_after_pdf_vector_exact": true,
+      "before_after_pdf_common_renderer_pixel_identical": true
+    },
+    {
+      "slide": 18,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0
+    },
+    {
+      "slide": 19,
+      "two_format_pixel_identical": true,
+      "two_format_mean_channel_error": 0.0
+    }
+  ],
+  "sha256": {
+    "pptx": "5a453b3ea96af549e75d404ef1faafce1d6d3042e680b76d2d225e844bcc8c3f",
+    "ppt": "7e6268f75ba2dcd77926c254ac252373374ab089ecac9c050df53bd5fc394fd3"
+  }
+}

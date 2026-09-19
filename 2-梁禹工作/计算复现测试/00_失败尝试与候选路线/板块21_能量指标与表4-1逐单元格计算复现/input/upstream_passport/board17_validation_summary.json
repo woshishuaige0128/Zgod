@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-08-24T18:01:38.394765+00:00",
+  "check_count": 59,
+  "pass_count": 59,
+  "failure_count": 0,
+  "protected_source_count": 326,
+  "board16_artifact_count": 166,
+  "board14_source_count": 23,
+  "published_artifact_count": 119,
+  "board17_artifact_manifest_count": 305,
+  "report_character_count": 19893,
+  "report_sha256": "8BE40CC77EC884C2A99D7DFF536CD46557AAD4247F5860DBBA5F08C6ADBA200B",
+  "index_sha256": "CF7B23BD6780B6AB9684CB4BBD3ED251D231DDB664FBB3AD0AEF97A059D477AF",
+  "preliminary_validation_attempts": [
+    {
+      "attempt": 1,
+      "result": "验证器未进入门槛检查",
+      "cause": "指定Python环境未安装psutil；改用Windows自带tasklist核对MATLAB/Python/PythonW残留进程，不安装新依赖。"
+    }
+  ],
+  "failures": [],
+  "pass": true
+}

@@ -1,0 +1,4 @@
+﻿l_samples,j_samples,expected_rho,actual_rho,rho_abs_error,expected_root_count,actual_root_count,dominant_root_abs_error,expected_stability_code,actual_stability_code,maximum_state_residual
+0,0,0.9991686925639454,0.9991686925639454,0.0,30,30,0.0,-1,-1,5.092848436625681e-16
+7,13,1.0085777726708756,1.0085777726708756,0.0,50,50,0.0,1,1,4.184301371693703e-16
+30,66,1.005622771865623,1.005622771865623,0.0,126,126,0.0,1,1,4.3047058387953413e-16

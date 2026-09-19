@@ -1,0 +1,59 @@
+{
+  "schema_version": "FIG10_MASK_EXTRACTION_TASKS_V1",
+  "curves": [
+    {
+      "curve_id": "division1_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Original_R01_稳定掩膜31x67.csv",
+      "source_sha256": "C7524823B1180A4E99975FB20AB0F2C6B94E9B2CA819E705A2CEB44616245362",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_original.meta.json"
+    },
+    {
+      "curve_id": "division1_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Craig-Bampton_R01_稳定掩膜31x67.csv",
+      "source_sha256": "F1ACAC5CAFCAF7D6C8CCF578B7B7831C508D38E4B2AD073C78A2E8245CF816B1",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division1_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-4_Guyan_R01_稳定掩膜31x67.csv",
+      "source_sha256": "AABB0E0689FF4A150601C6C15AC68FC7391E0DF328C0FD6BA4B92765C5B167CB",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division1_guyan.meta.json"
+    },
+    {
+      "curve_id": "division2_original",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Original_R01_稳定掩膜31x67.csv",
+      "source_sha256": "DDAFC10A663AF765427A2659FEF00F55F55E027766BBFF765E36629123C51257",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_original.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_original.meta.json"
+    },
+    {
+      "curve_id": "division2_craig_bampton",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Craig-Bampton_R01_稳定掩膜31x67.csv",
+      "source_sha256": "A8ABFEF9A4920B2DB85577F71A89E4FE7941A0CD1404E6F3CCFC86C57FFD7A57",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_craig_bampton.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_craig_bampton.meta.json"
+    },
+    {
+      "curve_id": "division2_guyan",
+      "path": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\test\\00_失败尝试与候选路线\\板块20_LQR时滞稳定域及图4-4至图4-5逐图计算复现\\outputs\\step8g_图4-4图4-5最终中文失败审计包\\计算结果\\候选掩膜与边界\\候选稳定掩膜31x67\\候选_图4-5_Guyan_R01_稳定掩膜31x67.csv",
+      "source_sha256": "D4F8D11D5F0DF1DCA1119857CF651A309FC71A0353C0466CFB3BD128B8DFACFE",
+      "expected_rows": "31",
+      "expected_columns": "67",
+      "boundary_csv": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_guyan.csv",
+      "metadata_json": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\figure\\图10_计算级精准复现_隔离派生_20260901\\cases\\case_fig10_v1_来源约束参数反演\\evaluation\\r01_r04_target_audit_v1\\r01\\e\\mask_boundary_extraction\\division2_guyan.meta.json"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "全文修改逐项对照与回退决策汇报.html": "afa8ec1881db5df8eaf92c9a1c23b7271c62d16dc98b6eb746fbead51f393bd4",
+  "revision_evidence/逐项修改报告/browser_qa.json": "d48b3dcdcf492b62aee3a20b21812acc166c504554daf94c7300f6d15bf654be",
+  "revision_evidence/逐项修改报告/build_report.py": "f2e7b1e6fbffb84eb49d57a07892ae12a27121883887391f8a1f0cacb0e2f5f7",
+  "revision_evidence/逐项修改报告/catalog.py": "d176587dce36dec17cb5d77af9c8be1b983a41d6019734fcb1194dccc2fb6590",
+  "revision_evidence/逐项修改报告/coverage_check.json": "fed76ef3b3e088d4b65f6afcfa2cc1bb440ab953ad837e1758bc65a91161dca1",
+  "revision_evidence/逐项修改报告/final_acceptance.json": "81436929c571f6ba2d4f0ee0460aa6546f1ab772b5e03406b566a5df6cbab04d",
+  "revision_evidence/逐项修改报告/finalize_report.py": "52d84a2c35cb88d259e02f8a01fcf7cc9efd5051394412ba0a0814f5592c3191",
+  "revision_evidence/逐项修改报告/hunks.json": "698a45cf2ae5424c857eab25519de35198b6a3c3bc90e6e3e2cd04b3202b8a21",
+  "revision_evidence/逐项修改报告/main_全部104项.diff": "451401ee1bf6aad34cc4bc538231b2e052f94a9ea5acbd0999af0f52c25a47cc",
+  "revision_evidence/逐项修改报告/qa_report.cjs": "e06fc30794bedde2a4e2f1fb631150a02a15e3bf4e56d1467cc1d6667f451763",
+  "revision_evidence/逐项修改报告/references_两处删除.diff": "898919ae2b6ae2374f8a5905c32110caffe0401a4bc6d14482bd2977587588b2",
+  "revision_evidence/逐项修改报告/static_and_protection_qa.json": "23bf485f0df876fb3ec9d91274cf0475ad546cc1f07535e3d571ff48e2326b8e",
+  "revision_evidence/逐项修改报告/turn_start_hashes.json": "d4de21e99a4665b94eda432ed74380afd378f3527fe6740feb3159104b15530f",
+  "revision_evidence/逐项修改报告/visual_qa.json": "0b59399d137f9ab2a0b274a5940d1e2102a7af573d3bfe4e743d384380798edf",
+  "revision_evidence/逐项修改报告/全部修改清单.csv": "ad04d345d6f6d41b179cfbe99f86431cd7dc483193438fefddf53902c9a8247f",
+  "revision_evidence/逐项修改报告/全部修改清单.json": "c12615fdb8766a434c29a95f44d16b38604ead01a1fa95f9c258c184a65cc539"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "desktop_and_narrow": "最终1440/390像素截图检查，无整页溢出；原文、图件和单格决定可读",
+  "images": "4组旧/新图共9图已内嵌；修复最初PDF裁图缺少边缘文字的问题后复核",
+  "print": "首轮全页缩略检查发现个别条目标题与首个对照跨页；增加标题+首个对照整体分页约束。最终76/118页两种打印模式，全部70个非间距主项标题与首个对照同页，全文无越界文字和空白页；最终重点页面实际渲染查看通过",
+  "print_default_pages": 76,
+  "print_with_source_pages": 118,
+  "main_report": "全文修改逐项对照与回退决策汇报.html",
+  "screenshots_in_temp": "D:\\JZ_PhD\\10_论文_Papers\\Li\\RHTS\\liangyustability-master\\tmp\\revision_change_report_20260906",
+  "limitation": "未因此接受上轮新增模型条件或补齐历史稳定边界生成链；本轮未运行新的科研计算。"
+}

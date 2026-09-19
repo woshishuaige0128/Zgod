@@ -1,0 +1,4 @@
+﻿comparison,dataset_id,filename,sample_count,time_max_abs_s,max_response_abs_mm,max_peak_normalized_abs,status
+adapted_run1_vs_run2,division1_chirp,第一类划分_Chirp响应.mat,40961,0.0,0.0,0.0,PASS
+adapted_run1_vs_2026_plotting_baseline,division1_chirp,第一类划分_Chirp响应.mat,40961,0.0,0.0,0.0,PASS
+independent_rk4_vs_adapted_run1,division1_chirp,第一类划分_Chirp响应.mat,40961,0.0,2.7711166694643907e-13,8.017243769472209e-15,PASS

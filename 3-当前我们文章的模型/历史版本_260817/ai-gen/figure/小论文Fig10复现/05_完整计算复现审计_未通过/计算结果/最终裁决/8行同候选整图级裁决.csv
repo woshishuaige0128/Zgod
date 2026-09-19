@@ -1,0 +1,9 @@
+﻿figure_id,division,candidate_id,candidate_short_name,method_count,visible_path_exact_count,visible_path_all_exact,authoritative_full_mask_count,missing_source_mask_count,authoritative_full_mask_exact_count,full_mask_verifiability,all_full_masks_verifiable,complete_reproduction_exact,whole_figure_status
+图4-4,1,R01,"R01: \alpha=0.25, generalized force",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-4,1,R02,"R02: \alpha=0.25, acceleration",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-4,1,R03,"R03: matrix a_l, generalized force",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-4,1,R04,"R04: matrix a_l, acceleration",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-5,2,R01,"R01: \alpha=0.25, generalized force",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-5,2,R02,"R02: \alpha=0.25, acceleration",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-5,2,R03,"R03: matrix a_l, generalized force",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY
+图4-5,2,R04,"R04: matrix a_l, acceleration",3,0,False,1,2,0,PARTIAL_1_OF_3_AUTHORITATIVE,False,False,FAIL_VISIBLE_PATH_MISMATCH_WITH_PARTIAL_MASK_VERIFIABILITY

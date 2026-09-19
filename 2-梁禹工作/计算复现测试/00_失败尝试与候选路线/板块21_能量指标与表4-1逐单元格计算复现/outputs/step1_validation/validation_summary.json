@@ -1,0 +1,26 @@
+{
+  "author_energy_file_count": 36,
+  "board22_boundary_scope": "directories under test whose names start with 板块22",
+  "board22_named_root_count": 0,
+  "board22_named_root_started": false,
+  "central_protected_source_match_count": 326,
+  "check_summary": {
+    "fail": 0,
+    "pass": 495,
+    "total": 495
+  },
+  "evidence_levels": {
+    "C06": "历史值",
+    "T4-1": "历史值"
+  },
+  "formal_success_directory_count": 0,
+  "index_pre_board21_sha256": "E1BCE04ADB90E03EC74BE25647D643EE7578D92AE8E34EFAB2C507608897A839",
+  "input_count": 53,
+  "manuscript_sha256": "15A5025246A25809E33E8A38F13C3E71C23607C7765D967730F6105B5445DB76",
+  "overall_status": "PASS",
+  "prepublication_failure_directory_count": 0,
+  "relative_handle_race_status": "PASS",
+  "residual_target_process_count": 0,
+  "schema_version": "BOARD21_STEP1_VALIDATION_V2",
+  "thesis_sha256": "DDA04CE3DBFF6A5DCE33E6A7D07191F5A33D27F025174087EE395DFE4CF9D5D1"
+}

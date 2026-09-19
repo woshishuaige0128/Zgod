@@ -1,0 +1,3656 @@
+source_name,source_sha256,paragraph_index,xml_xpath,kind,cell_index,style,text_sha256,extracted_header_line,extracted_code_start_line,extracted_code_end_line,text
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,1,/w:document/w:body/w:p[1],code,1,code,AE0E76FAC4C29A85BBD14624A49FD2E4B57AE6527B9076093DDA2979831CDAF1,5,6,67,"% 假设 M, K, r 已定义，r 是激励方向向量
+index1 = [1,4];
+index2 = [2,3,5,6];
+r0=MPrt([index1,index2],[index1,index2])*[1,1,1,1,1,1]';
+r = r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    sum(E(:,i))
+    %E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,3,/w:document/w:body/w:p[3],code,2,code,D17BC5B6A473EBEFFD36579CA0DF044741FA1CECDE7F8FFEF5F67D7F7A6338A2,69,70,135,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KPren;
+M = MPren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    %E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];  % 缩聚前对应自由度索引
+
+increase_rate = (E_total_guyan - E_total(d))./ E_total(d) * 100 ;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,5,/w:document/w:body/w:p[5],code,3,code,C5AD3B4586C18F57C8E2A24C875813539D516F3DA3A42220D56D784FF5DE13DB,137,138,201,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KP_cb;
+M = MP_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    %E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d = [1,2];  % 缩聚前对应自由度索引
+d2 = [1,2];
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d))./ E_total(d) * 100 ;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+Copy_2_of_energy_zonghe2.mlx,8EBC3ACBD47B1D112395D4DCD951FE018F71A857E604187B443A2BFD572ADA66,7,/w:document/w:body/w:p[7],code,4,code,3B134C062ACB23B5C9F94F7685C284B0EA2B4EC1F5F7A9D8C28DBA4555103FB2,203,204,211,"energy_sum_guyan = sum(E_total_guyan);
+%energy_sum_orig = sum(E_total(d));
+energy_sum_orig = sum(E_total);
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100
+
+energy_sum_cb = sum(E_total_cb);
+%energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100"
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,1,/w:document/w:body/w:p[1],code,1,code,87BF6023E70FC6AE39A606A359F17F10F1E3F079EFFAAA7EEF2856BCF48ABC8F,5,6,65,"% 假设 M, K, r 已定义，r 是激励方向向量
+r0=[1,1,1,0,0,0,0,0,0]';
+r = r0;
+index1 = [1,7];
+index2 = [4,2,3,5,6,8,9];
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    %E(:,i) = E(:,i) / sum(E(:,i));
+    % 对每个模态归一化
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,3,/w:document/w:body/w:p[3],code,2,code,B0EC066DC22F717BF0E2F4DDF538AA070C99F8B3BF26649507AE1B9B28FCD5A3,67,68,132,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KPren;
+M = MPren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    %E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];  % 缩聚前对应自由度索引
+increase_rate = (E_total_guyan - E_total(d))./ E_total(d) * 100 ;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,5,/w:document/w:body/w:p[5],code,3,code,FF6324B69613061FC0D16025BCF9933776EFCC193BCE84996F7E239D5183D70C,134,135,197,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KP_cb;
+M = MP_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    %E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d2 = d;
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d))./ E_total(d) * 100 ;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+Copy_2_of_energy_zonghe3.mlx,446840E932376D1F16B05A16EC8DEA2D8CA5CB733AE6448E64337306CCC7A98D,7,/w:document/w:body/w:p[7],code,4,code,954F2A68BE41E4EBFFAF676F2C13719E806B1E742BD6FBF8F8D7C63A2768BD11,199,200,206,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_guyan * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_guyan * 100
+"
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,1,/w:document/w:body/w:p[1],code,1,code,3B21EA63A4F1835B98D141D5BE27EB4F9C0303A544906C3833CC3004B8F258C6,5,6,64,"% 假设 M, K, r 已定义，r 是激励方向向量
+r0=[1,1,0,0,0,0]';
+r = r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2));
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,3,/w:document/w:body/w:p[3],code,2,code,5E8043D6BBDF74695B1CBAADD07441BB4C5BE2986CCF8304D132059A22D5C509,66,67,132,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KRren;
+M = MRren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];;  % 缩聚前对应自由度索引
+
+increase_rate = (E_total_guyan - E_total(d)) ./ E_total(d) * 100;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,5,/w:document/w:body/w:p[5],code,3,code,39453AE676F9F072D5ACA84EBA9D35CD02BAEAC08BED61CC03689BD3ADC86E2B,134,135,198,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KR_cb;
+M = MR_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d = [1,2];  % 缩聚前对应自由度索引
+d2 = [1,2];
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d)) ./ E_total(d) * 100;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+Copy_of_energy_zonghe2.mlx,80C4B3FE2A860552054D8FCEABA40365C5EE646BBB2EB21C9AF68E81AFE4715D,7,/w:document/w:body/w:p[7],code,4,code,B8352B282B911A07CCEA20A8382B38CFC694C0EF2274B5B1EC71B2EC0077826C,200,201,207,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100"
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,1,/w:document/w:body/w:p[1],code,1,code,5C924DBDBA4A8B0DBAC4B64E262BC56456B159CC51B03E68790129FFE933D9E0,5,6,64,"% 假设 M, K, r 已定义，r 是激励方向向量
+r0=[1,1,1,0,0,0,0,0,0]';
+r = r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,3,/w:document/w:body/w:p[3],code,2,code,5E8043D6BBDF74695B1CBAADD07441BB4C5BE2986CCF8304D132059A22D5C509,66,67,132,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KRren;
+M = MRren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];;  % 缩聚前对应自由度索引
+
+increase_rate = (E_total_guyan - E_total(d)) ./ E_total(d) * 100;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,5,/w:document/w:body/w:p[5],code,3,code,D21F805EED0D1496AF156932E53C36992CC7400410C9336F91B9AA56A7E7E539,134,135,197,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KR_cb;
+M = MR_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d2 = [1,2];
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d)) ./ E_total(d) * 100;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+Copy_of_energy_zonghe3.mlx,C067893CE26DA706774A886523F9000A2A0779268BB12A93A21E0EF0034296AC,7,/w:document/w:body/w:p[7],code,4,code,B8352B282B911A07CCEA20A8382B38CFC694C0EF2274B5B1EC71B2EC0077826C,199,200,206,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100"
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,1,/w:document/w:body/w:p[1],code,1,code,E6E8BBCD2143177C009481F8E4FB89358F8DB09B1889681960CDE546EFF38E4C,5,6,62,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=[1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]';
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index3,index4];
+K = KRrt(order,order);
+M = MRrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2));
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,3,/w:document/w:body/w:p[3],code,2,code,6B8DF9908B67A6FCAE4DCA242942F0BB30C12FA8261DD1B67D10A0574ADE4B98,64,65,129,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T' *[1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]';
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KRren;
+M = MRren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2));
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2,3];;  % 缩聚前对应自由度索引
+
+increase_rate = (E_total_guyan - E_total(d)) ./ E_total(d) * 100;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,5,/w:document/w:body/w:p[5],code,3,code,7B0BD0EAF4163F0C79055B9FFB502CFEDF4AF015ED8404BC0505E752FCD3F472,131,132,195,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=T_cb' *[1,1,1,0,0,0,0,0,0,0,0,0,0,0,0]';
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KR_cb;
+M = MR_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2));
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d = [1,2,3];  % 缩聚前对应自由度索引
+d2 = [1,2,3];
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d)) ./ E_total(d) * 100;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+energy_zonghe.mlx,BCEDEF1887ABEE046A3018EB746B2088B0D63F9ACC917B9B4A78D97DEC84159D,7,/w:document/w:body/w:p[7],code,4,code,B8352B282B911A07CCEA20A8382B38CFC694C0EF2274B5B1EC71B2EC0077826C,197,198,204,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100"
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,1,/w:document/w:body/w:p[1],code,1,code,297A351C180EF75F02F75B1671D8ABBBD11D36E066E6CE4CB0F2D8488F76B18B,5,6,66,"% 假设 M, K, r 已定义，r 是激励方向向量
+index1 = [1,4];
+index2 = [2,3,5,6];
+r0=MPrt([index1,index2],[index1,index2])*[1,1,1,1,1,1]';
+r = r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,3,/w:document/w:body/w:p[3],code,2,code,7BA63B26A1D5D3EE009FD7AA7EF11772E1302532C281DC258EC626ABA92E12E6,68,69,134,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KPren;
+M = MPren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];;  % 缩聚前对应自由度索引
+
+increase_rate = (E_total_guyan - E_total(d)) ./ E_total(d) * 100;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,5,/w:document/w:body/w:p[5],code,3,code,8B05011D09E5FB41A1A97F4606146DF437D3E266B03ADDE5E7EE3835B37D5BC9,136,137,200,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KP_cb;
+M = MP_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d = [1,2];  % 缩聚前对应自由度索引
+d2 = [1,2];
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d)) ./ E_total(d) * 100;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+energy_zonghe2.mlx,A84F903A5163AC0792FEA6BD0222003B3D2E1ED12B4D1B2CD6EABF325CA5CAAD,7,/w:document/w:body/w:p[7],code,4,code,B8352B282B911A07CCEA20A8382B38CFC694C0EF2274B5B1EC71B2EC0077826C,202,203,209,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100"
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,1,/w:document/w:body/w:p[1],code,1,code,B786A17B121E1A64222990A245688E0D8BFAD0BC1462A4E88BE2F98F9E7E30AD,5,6,65,"% 假设 M, K, r 已定义，r 是激励方向向量
+r0=[1,1,1,0,0,0,0,0,0]';
+r = r0;
+index1 = [1,7];
+index2 = [4,2,3,5,6,8,9];
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+order = [index1,index2];
+K = KPrt(order,order);
+M = MPrt(order,order);
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    E(:,i) = E(:,i) / sum(E(:,i));
+    % 对每个模态归一化
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total = E * participation_ratio;  % n_dof x 1，综合能量指标
+% 可视化
+bar(E_total)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')"
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,2,/w:document/w:body/w:p[2],text,1,text,B17A0F74CD968E568BE28C9B690A47878AEB9A9C763856529F29836C0C8F1575,,,,guyan能量
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,3,/w:document/w:body/w:p[3],code,2,code,DD86B55047CA7ABC5433520E04394CE43DEDCBAE95D6D05ACA6ADEB49B4F2C02,67,68,133,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KPren;
+M = MPren;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+
+E_total_guyan = E * participation_ratio;  % n_dof x 1，综合能量指标
+
+% 可视化
+bar(E_total_guyan)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+d = [1,2];  % 缩聚前对应自由度索引
+E_total_guyan_scalar = sum(sum(E_total_guyan .* participation_ratio')) % Guyan 缩聚系统总能量
+increase_rate = (E_total_guyan - E_total(d)) ./ E_total(d) * 100;
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,4,/w:document/w:body/w:p[4],text,2,text,B610B8B7C154B7124E3482E4E435818B64786B6A29CBBDDF22561DA3CAD17827,,,,cb能量
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,5,/w:document/w:body/w:p[5],code,3,code,C2713251A535900ED316199DA5F550FADDF9405E9671B672554CB2C134256729,135,136,198,"% 假设 M, K, r 已定义，r 是激励方向向量
+r=TP_cb' *r0;
+%r=[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0]';
+K = KP_cb;
+M = MP_cb;
+[phi, omega2] = eig(K, M);   % 计算模态
+omega = sqrt(diag(omega2))
+n = size(phi, 2);
+Gamma = zeros(n, 1);
+
+for i = 1:n
+    phi(:,i) = phi(:,i) / sqrt(phi(:,i)' * M * phi(:,i));  % 质量归一化
+    Gamma(i) = phi(:,i)' * M * r;   % 模态参与因子
+end
+
+% 可视化参与因子或其平方
+GammaSq = Gamma.^2;
+participation_ratio = GammaSq / sum(GammaSq)
+bar(participation_ratio);
+xlabel('模态编号');
+ylabel('参与比');
+title('模态参与比估计（归一化的 Γ^2）');
+
+% 假设 phi 是 15自由度 x n模态的矩阵，M 是 15x15的质量矩阵
+m = diag(M); % 取对角元素作为等效质量
+
+n_dof = length(m);
+n_modes = size(phi, 2);
+
+% 计算角频率 omega_i
+omega = sqrt(diag(omega2));  % omega2为广义特征值矩阵
+
+% 初始化自由度-模态能量矩阵
+E = zeros(n_dof, n_modes);
+
+for i = 1:n_modes
+    for j = 1:n_dof
+        E(j,i) = 0.5 * omega(i)^2 * m(j) * phi(j,i)^2;
+    end
+    % 对每个模态归一化
+    E(:,i) = E(:,i) / sum(E(:,i));
+end
+
+% E(:,i) 就是模态 i 下各自由度的能量分布比例
+
+% 假设:
+% E 是 n_dof x n_modes 的自由度-模态能量矩阵（每列归一化过）
+% participation_ratio 是 n_modes x 1 的模态能量占比，且和为1
+d2 = d;
+
+E_total_cb = E * participation_ratio;  % n_dof x 1，综合能量指标
+increase_rate = (E_total_cb(d2) - E_total(d)) ./ E_total(d) * 100;
+
+% 可视化
+bar(E_total_cb)
+xlabel('自由度编号')
+ylabel('综合能量占比')
+title('自由度综合能量指标（加权模态能量）')
+
+% 显示结果
+for k = 1:length(d)
+    fprintf('自由度 %d -> 缩聚后自由度 %d, 能量占比增加率: %.2f%%\n', d(k), k, increase_rate(k));
+end"
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,6,/w:document/w:body/w:p[6],text,3,text,DCE2E1EE7D0C914D474B5AA6FAC4D20692D822CFA5EFBABFFC17AED20CA95ABF,,,,总能量
+energy_zonghe3.mlx,1F3B84A542AF40563F05C23402C2355345100D38A94D8EF130D5545A33D36614,7,/w:document/w:body/w:p[7],code,4,code,B8352B282B911A07CCEA20A8382B38CFC694C0EF2274B5B1EC71B2EC0077826C,200,201,207,"energy_sum_guyan = sum(E_total_guyan);
+energy_sum_orig = sum(E_total(d));
+total_increase_guyan = (energy_sum_guyan - energy_sum_orig)./ energy_sum_orig * 100
+
+energy_sum_cb = sum(E_total_cb(d2));
+energy_sum_orig = sum(E_total(d));
+total_increase_cb = (energy_sum_cb - energy_sum_orig)./ energy_sum_orig * 100"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,2,/w:document/w:body/w:p[2],code,1,code,E0C9989F5C1061D6FF5866A4FFCC4A1321BD685726503D804831C7F67C28CA72,5,6,57,"index3 = [1,4];
+index4 = [2,3,5,6];
+
+Mmn = MPrt(index3,index3);
+Mmsn = MPrt(index3,index4);
+
+Cmn = CPrt(index3,index3);
+Cmsn = CPrt(index3,index4);
+
+Kmn = KPrt(index3,index3);
+Kmsn = KPrt(index3,index4);
+Ksn = KPrt(index4,index4);
+Ksmn = KPrt(index4,index3);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+index3 = [1,6,4,9,11];
+index4 = [3,5,7,8,10,12,13,14,15];
+
+Kmm = KRrt(index3,index3);
+Kms = KRrt(index3,index4);
+Ksm = KRrt(index4,index3);
+Kss = KRrt(index4,index4);
+
+Mmm = MRrt(index3,index3);
+Mms = MRrt(index3,index4);
+Msm = MRrt(index4,index3);
+Mss = MRrt(index4,index4);
+
+Cmm = CRrt(index3,index3);
+Cms = CRrt(index3,index4);
+Csm = CRrt(index4,index3);
+Css = CRrt(index4,index4);
+
+% Step 2: 计算静力部分
+Tg = -Kss \ Ksm;
+
+N_r = 3;
+% Step 3: 固定主自由度的特征值问题（提取前 N_r 个模态）
+[Phi, D] = eigs(Kss, Mss, N_r, 'SM');  % N_r 是你要保留的模态数
+% 通常可取 N_r = 3–6，看频率变化而定
+
+% Step 4: 构造变换矩阵 Tcb
+Tcb = [eye(length(index3)), zeros(length(index3), N_r);
+       Tg,                   Phi];
+
+% Step 5: 缩聚后的矩阵
+MRcb = Tcb' * MRrt([index3, index4], [index3, index4]) * Tcb;
+CRcb = Tcb' * CRrt([index3, index4], [index3, index4]) * Tcb;
+KRcb = Tcb' * KRrt([index3, index4], [index3, index4]) * Tcb;"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,4,/w:document/w:body/w:p[4],code,2,code,279F52DD1344226986CBDB5F7F5E89918A7D5D49A3E00B30EFDF7849EBA9E4DF,59,60,66,"%K2_1 = zeros(15);
+%K2_1(3:4,3) = [Kb(3,3);Kb(6,3)];
+%K2_2 = zeros(15);
+%K2_2(6:8,6) = [2*Kc(1,1);Kc(3,1);Kc(3,1)];
+%K2_2(11:13,6) = [2*Kc(4,1);Kc(6,1);Kc(6,1)];
+
+%K1 = KRrt-K2_1-K2_2;"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,5,/w:document/w:body/w:p[5],text,2,text,DA62038CE00873F28517637E67D01ED7A4CC10AB94DB486EA71665050554BB60,,,,计算稳定性时将时滞施加在K2上，得到系统运动方程
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,6,/w:document/w:body/w:p[6],text,3,text,FC6B3998BB6FE345250F64740F986A617C37F866591BE4ED096A1FDDD3E14E3D,,,,计算CR积分的alpha
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,7,/w:document/w:body/w:p[7],text,4,text,0B2B1FDF9FC28A30FF2B45909C94D86341C513CB05C6A038E4257449E31CD603,,,,计算CR积分算法的alpha，定义为al
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,8,/w:document/w:body/w:p[8],text,5,text,C130A479836E1AA2935DD15387FF48FF8BEBE74221FC35DBE21DDBF7795C9C32,,,,al = 4*inv(4*M+2*dt*C+2*dt^2*K)*M;
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,9,/w:document/w:body/w:p[9],text,6,text,63CF40A6C6FD9D504673C50320351A52B64586B96023FA455E2DBF58D174A3CD,,,,al = (4*M+2*dt*C+dt^2*K)\(4*M);
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,10,/w:document/w:body/w:p[10],code,3,code,0DFB0B34DC1DA534DF2A446D41E342C6EDC51E659F2E48A3FEDC72DE8AB070C4,68,69,71,"dt = 1/1024;
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+al = diag(diag(al));"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,11,/w:document/w:body/w:p[11],text,7,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,12,/w:document/w:body/w:p[12],text,8,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,13,/w:document/w:body/w:p[13],code,4,code,7D4611EEFFFE01DA23B4CAE93DC64F831FB37D8AF4C6206E289D0BE1C9D8FD21,73,74,91,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 5);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+l = 0;
+j = 0;
+
+syms z
+
+%for l = 1:20
+%    for j = 1:30"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,14,/w:document/w:body/w:p[14],text,9,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,15,/w:document/w:body/w:p[15],text,10,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,16,/w:document/w:body/w:p[16],code,5,code,D7A65500F74D3A255D05F480A9B1692678EC6A2D183BADBCDBB9A8E318B02264,93,94,135,"M = MRren;
+K = KRren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRren = alphas(1) * M + alphas(2) * K;
+
+M = MPren;
+%C = CRren;
+K = KPren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CPren = alphas(1) * M + alphas(2) * K;"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,17,/w:document/w:body/w:p[17],text,11,text,22D26848748A8013C15555CC0C8E0AD87122BE01A6E63FBF47D396E6D6CEA634,,,,确定C2和K2
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,18,/w:document/w:body/w:p[18],code,6,code,68A016E47010FDC6278ED4E64231960A2827875480388859C31A555BFB1839B7,137,138,145,"C2 = zeros(8);
+K2 = zeros(8);
+C2([1,2],[1,2]) = CPren;
+K2([1,2],[1,2]) = KPren;
+C1 = CRcb-C2;
+K1 = KRcb-K2;
+
+al = (4*MRcb+2*dt*CRcb+dt^2*KRcb)\MRcb*4;"
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,19,/w:document/w:body/w:p[19],text,12,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_cb_2.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,20,/w:document/w:body/w:p[20],code,7,code,70BABC23ABA96F29AD53AAA92EF0F14D0D8FEC1DB07102141E0360165047807E,147,148,173,"stab = zeros(20);
+for l = 0:20
+%l =5;
+for j = 0:20
+%j = 25;
+%l = 0
+%j = 0
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(zeros(8,8));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRcb/al+(z-1)/z/dt*C1+K1+...
+    H*((z-1)/z/dt*C2+K2);
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+end"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,2,/w:document/w:body/w:p[2],code,1,code,E0C9989F5C1061D6FF5866A4FFCC4A1321BD685726503D804831C7F67C28CA72,5,6,57,"index3 = [1,4];
+index4 = [2,3,5,6];
+
+Mmn = MPrt(index3,index3);
+Mmsn = MPrt(index3,index4);
+
+Cmn = CPrt(index3,index3);
+Cmsn = CPrt(index3,index4);
+
+Kmn = KPrt(index3,index3);
+Kmsn = KPrt(index3,index4);
+Ksn = KPrt(index4,index4);
+Ksmn = KPrt(index4,index3);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+index3 = [1,6,4,9,11];
+index4 = [3,5,7,8,10,12,13,14,15];
+
+Kmm = KRrt(index3,index3);
+Kms = KRrt(index3,index4);
+Ksm = KRrt(index4,index3);
+Kss = KRrt(index4,index4);
+
+Mmm = MRrt(index3,index3);
+Mms = MRrt(index3,index4);
+Msm = MRrt(index4,index3);
+Mss = MRrt(index4,index4);
+
+Cmm = CRrt(index3,index3);
+Cms = CRrt(index3,index4);
+Csm = CRrt(index4,index3);
+Css = CRrt(index4,index4);
+
+% Step 2: 计算静力部分
+Tg = -Kss \ Ksm;
+
+N_r = 3;
+% Step 3: 固定主自由度的特征值问题（提取前 N_r 个模态）
+[Phi, D] = eigs(Kss, Mss, N_r, 'SM');  % N_r 是你要保留的模态数
+% 通常可取 N_r = 3–6，看频率变化而定
+
+% Step 4: 构造变换矩阵 Tcb
+Tcb = [eye(length(index3)), zeros(length(index3), N_r);
+       Tg,                   Phi];
+
+% Step 5: 缩聚后的矩阵
+MRcb = Tcb' * MRrt([index3, index4], [index3, index4]) * Tcb;
+CRcb = Tcb' * CRrt([index3, index4], [index3, index4]) * Tcb;
+KRcb = Tcb' * KRrt([index3, index4], [index3, index4]) * Tcb;"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,4,/w:document/w:body/w:p[4],code,2,code,279F52DD1344226986CBDB5F7F5E89918A7D5D49A3E00B30EFDF7849EBA9E4DF,59,60,66,"%K2_1 = zeros(15);
+%K2_1(3:4,3) = [Kb(3,3);Kb(6,3)];
+%K2_2 = zeros(15);
+%K2_2(6:8,6) = [2*Kc(1,1);Kc(3,1);Kc(3,1)];
+%K2_2(11:13,6) = [2*Kc(4,1);Kc(6,1);Kc(6,1)];
+
+%K1 = KRrt-K2_1-K2_2;"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,5,/w:document/w:body/w:p[5],text,2,text,DA62038CE00873F28517637E67D01ED7A4CC10AB94DB486EA71665050554BB60,,,,计算稳定性时将时滞施加在K2上，得到系统运动方程
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,6,/w:document/w:body/w:p[6],text,3,text,FC6B3998BB6FE345250F64740F986A617C37F866591BE4ED096A1FDDD3E14E3D,,,,计算CR积分的alpha
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,7,/w:document/w:body/w:p[7],text,4,text,0B2B1FDF9FC28A30FF2B45909C94D86341C513CB05C6A038E4257449E31CD603,,,,计算CR积分算法的alpha，定义为al
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,8,/w:document/w:body/w:p[8],text,5,text,C130A479836E1AA2935DD15387FF48FF8BEBE74221FC35DBE21DDBF7795C9C32,,,,al = 4*inv(4*M+2*dt*C+2*dt^2*K)*M;
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,9,/w:document/w:body/w:p[9],text,6,text,63CF40A6C6FD9D504673C50320351A52B64586B96023FA455E2DBF58D174A3CD,,,,al = (4*M+2*dt*C+dt^2*K)\(4*M);
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,10,/w:document/w:body/w:p[10],code,3,code,0DFB0B34DC1DA534DF2A446D41E342C6EDC51E659F2E48A3FEDC72DE8AB070C4,68,69,71,"dt = 1/1024;
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+al = diag(diag(al));"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,11,/w:document/w:body/w:p[11],text,7,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,12,/w:document/w:body/w:p[12],text,8,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,13,/w:document/w:body/w:p[13],code,4,code,7D4611EEFFFE01DA23B4CAE93DC64F831FB37D8AF4C6206E289D0BE1C9D8FD21,73,74,91,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 5);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+l = 0;
+j = 0;
+
+syms z
+
+%for l = 1:20
+%    for j = 1:30"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,14,/w:document/w:body/w:p[14],text,9,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,15,/w:document/w:body/w:p[15],text,10,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,16,/w:document/w:body/w:p[16],code,5,code,D7A65500F74D3A255D05F480A9B1692678EC6A2D183BADBCDBB9A8E318B02264,93,94,135,"M = MRren;
+K = KRren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRren = alphas(1) * M + alphas(2) * K;
+
+M = MPren;
+%C = CRren;
+K = KPren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CPren = alphas(1) * M + alphas(2) * K;"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,17,/w:document/w:body/w:p[17],text,11,text,22D26848748A8013C15555CC0C8E0AD87122BE01A6E63FBF47D396E6D6CEA634,,,,确定C2和K2
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,18,/w:document/w:body/w:p[18],code,6,code,68A016E47010FDC6278ED4E64231960A2827875480388859C31A555BFB1839B7,137,138,145,"C2 = zeros(8);
+K2 = zeros(8);
+C2([1,2],[1,2]) = CPren;
+K2([1,2],[1,2]) = KPren;
+C1 = CRcb-C2;
+K1 = KRcb-K2;
+
+al = (4*MRcb+2*dt*CRcb+dt^2*KRcb)\MRcb*4;"
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,19,/w:document/w:body/w:p[19],text,12,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_cb_3.mlx,39E05BDFF4DC6C7AFB775AC136A8948FEADAE6F29A70D2017DD82E75A261EF6B,20,/w:document/w:body/w:p[20],code,7,code,70BABC23ABA96F29AD53AAA92EF0F14D0D8FEC1DB07102141E0360165047807E,147,148,173,"stab = zeros(20);
+for l = 0:20
+%l =5;
+for j = 0:20
+%j = 25;
+%l = 0
+%j = 0
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(zeros(8,8));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRcb/al+(z-1)/z/dt*C1+K1+...
+    H*((z-1)/z/dt*C2+K2);
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+end"
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,2,/w:document/w:body/w:p[2],code,1,code,F4432D198643C713C0115BA67057F8939FD8CCAA1BAECC356262CB0904CD0801,5,6,20,"index1 = [1,2,7,8,9];
+index2 = [3,4,5,6,7,8,9];
+K2 = KR_cb;
+K2(index1,index1) = KR_cb(index1,index1)-KP_cb;
+K2(index2,index2) = KR_cb(index2,index2)-KN_cb;
+C2 = CR_cb;
+C2(index1,index1) = CR_cb(index1,index1)-CP_cb;
+C2(index2,index2) = CR_cb(index2,index2)-CN_cb;
+C1 = CR_cb-C2;
+K1 = KR_cb-K2;
+
+
+dt = 1/1024;
+al = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\MR_cb*4;
+al = diag(diag(al));"
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,3,/w:document/w:body/w:p[3],text,2,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,4,/w:document/w:body/w:p[4],text,3,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,5,/w:document/w:body/w:p[5],code,2,code,2CE7F0544A0F8FF37CF9F5AA00798419D18CC38998286480171E94057C952169,22,23,34,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 9);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+%    for j = 1:30"
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,6,/w:document/w:body/w:p[6],text,4,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,7,/w:document/w:body/w:p[7],text,5,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,8,/w:document/w:body/w:p[8],text,6,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_cb_LQR2.mlx,803A5CCE13D2E15F5761D62F87B12F0B0C77376A8AD1718647D226A8DD3E20FD,9,/w:document/w:body/w:p[9],code,3,code,120FA3FCED6E033AAD6AC29E9D10C9DED92E1226C24ADFE2F137D72F6EE08CE3,36,37,62,"stab = zeros(20);
+for l = 0:15
+%l =5;
+%for j = 0:15
+%j = 25;
+j = 0;
+%j = 0;
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(eye(9,9));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MR_cb/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+%end
+"
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,2,/w:document/w:body/w:p[2],code,1,code,7D32F3513AEB716C7E97C86A510FEF3C0401FF2A9A71A8F3198DE50016133D7E,5,6,20,"index1 = [1,2,6,7,8];
+index2 = [3,4,5,6,7,8];
+K2 = KR_cb;
+K2(index1,index1) = KR_cb(index1,index1)-KP_cb;
+K2(index2,index2) = KR_cb(index2,index2)-KN_cb;
+C2 = CR_cb;
+C2(index1,index1) = CR_cb(index1,index1)-CP_cb;
+C2(index2,index2) = CR_cb(index2,index2)-CN_cb;
+C1 = CR_cb-C2;
+K1 = KR_cb-K2;
+
+
+dt = 1/1024;
+al = (4*MR_cb+2*dt*CR_cb+dt^2*KR_cb)\MR_cb*4;
+al = diag(diag(al));"
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,3,/w:document/w:body/w:p[3],text,2,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,4,/w:document/w:body/w:p[4],text,3,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,5,/w:document/w:body/w:p[5],code,2,code,AA14A4461E940EBE2E40FACB1AB9FB88179ABD5F8D406E12D0C08868F847894B,22,23,34,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 8);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+%    for j = 1:30"
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,6,/w:document/w:body/w:p[6],text,4,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,7,/w:document/w:body/w:p[7],text,5,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,8,/w:document/w:body/w:p[8],text,6,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_cb_LQR3.mlx,4BC123ED437DD7E632F0638A009D6BFD08649335480B9730DBAAC01691B72689,9,/w:document/w:body/w:p[9],code,3,code,8EA5569AA706EB69EA44FA27E054808481E9DE4E68E861C347FA6CC2F1487D60,36,37,63,"stab = zeros(20);
+%for l = 0:15
+%l =5;
+for j = 0:15
+%j = 25;
+l = 0;
+%j = 0;
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(eye(8));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MR_cb/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H;
+%+S'*DeltaG*S
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+%end
+"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,2,/w:document/w:body/w:p[2],code,1,code,32B7F68FDCD40B40ECF9B2975C1CCFE08FD7FA533B94277FA60D07782FE39BDC,5,6,58,"index3 = [1,4];
+index4 = [2,3,5,6];
+
+Mmn = MPrt(index3,index3);
+Mmsn = MPrt(index3,index4);
+
+Cmn = CPrt(index3,index3);
+Cmsn = CPrt(index3,index4);
+
+Kmn = KPrt(index3,index3);
+Kmsn = KPrt(index3,index4);
+Ksn = KPrt(index4,index4);
+Ksmn = KPrt(index4,index3);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+index3 = [1,6,4,9,11];
+index4 = [3,5,7,8,10,12,13,14,15];
+
+%Mmn = MNrt(index3,index3);
+%Mmsn = MNrt(index3,index4);
+
+%Cmn = CNrt(index3,index3);
+%Cmsn = CNrt(index3,index4);
+
+%Kmn = KNrt(index3,index3);
+%Kmsn = KNrt(index3,index4);
+%Ksn = KNrt(index4,index4);
+%Ksmn = KNrt(index4,index3);
+
+%KNren = (Kmn-Kmsn*(Ksn\Ksmn));
+%MNren = (Mmn-Mmsn*(Ksn\Ksmn));
+%CNren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+index3 = [1,6,4,9,11];
+index4 = [2,3,5,7,8,10,12,13,14,15];
+
+Mmn = MRrt(index3,index3);
+Mmsn = MRrt(index3,index4);
+
+Cmn = CRrt(index3,index3);
+Cmsn = CRrt(index3,index4);
+
+Kmn = KRrt(index3,index3);
+Kmsn = KRrt(index3,index4);
+Ksn = KRrt(index4,index4);
+Ksmn = KRrt(index4,index3);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,4,/w:document/w:body/w:p[4],code,2,code,279F52DD1344226986CBDB5F7F5E89918A7D5D49A3E00B30EFDF7849EBA9E4DF,60,61,67,"%K2_1 = zeros(15);
+%K2_1(3:4,3) = [Kb(3,3);Kb(6,3)];
+%K2_2 = zeros(15);
+%K2_2(6:8,6) = [2*Kc(1,1);Kc(3,1);Kc(3,1)];
+%K2_2(11:13,6) = [2*Kc(4,1);Kc(6,1);Kc(6,1)];
+
+%K1 = KRrt-K2_1-K2_2;"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,5,/w:document/w:body/w:p[5],text,2,text,DA62038CE00873F28517637E67D01ED7A4CC10AB94DB486EA71665050554BB60,,,,计算稳定性时将时滞施加在K2上，得到系统运动方程
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,6,/w:document/w:body/w:p[6],text,3,text,FC6B3998BB6FE345250F64740F986A617C37F866591BE4ED096A1FDDD3E14E3D,,,,计算CR积分的alpha
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,7,/w:document/w:body/w:p[7],text,4,text,0B2B1FDF9FC28A30FF2B45909C94D86341C513CB05C6A038E4257449E31CD603,,,,计算CR积分算法的alpha，定义为al
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,8,/w:document/w:body/w:p[8],text,5,text,C130A479836E1AA2935DD15387FF48FF8BEBE74221FC35DBE21DDBF7795C9C32,,,,al = 4*inv(4*M+2*dt*C+2*dt^2*K)*M;
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,9,/w:document/w:body/w:p[9],text,6,text,63CF40A6C6FD9D504673C50320351A52B64586B96023FA455E2DBF58D174A3CD,,,,al = (4*M+2*dt*C+dt^2*K)\(4*M);
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,10,/w:document/w:body/w:p[10],code,3,code,0DFB0B34DC1DA534DF2A446D41E342C6EDC51E659F2E48A3FEDC72DE8AB070C4,69,70,72,"dt = 1/1024;
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+al = diag(diag(al));"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,11,/w:document/w:body/w:p[11],text,7,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,12,/w:document/w:body/w:p[12],text,8,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,13,/w:document/w:body/w:p[13],code,4,code,7D4611EEFFFE01DA23B4CAE93DC64F831FB37D8AF4C6206E289D0BE1C9D8FD21,74,75,92,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 5);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+l = 0;
+j = 0;
+
+syms z
+
+%for l = 1:20
+%    for j = 1:30"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,14,/w:document/w:body/w:p[14],text,9,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,15,/w:document/w:body/w:p[15],text,10,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,16,/w:document/w:body/w:p[16],code,5,code,D7A65500F74D3A255D05F480A9B1692678EC6A2D183BADBCDBB9A8E318B02264,94,95,136,"M = MRren;
+K = KRren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRren = alphas(1) * M + alphas(2) * K;
+
+M = MPren;
+%C = CRren;
+K = KPren;
+
+% Rayleigh Damping Method
+[V, D] = eig(K, M);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CPren = alphas(1) * M + alphas(2) * K;"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,17,/w:document/w:body/w:p[17],text,11,text,22D26848748A8013C15555CC0C8E0AD87122BE01A6E63FBF47D396E6D6CEA634,,,,确定C2和K2
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,18,/w:document/w:body/w:p[18],code,6,code,0F51DF4BB0E4D2ACC75691A16EB727465D498F762DF838E6F2EA9A24C1750E49,138,139,146,"C2 = zeros(5);
+K2 = zeros(5);
+C2([1,2],[1,2]) = CPren;
+K2([1,2],[1,2]) = KPren;
+C1 = CRren-C2;
+K1 = KRren-K2;
+
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;"
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,19,/w:document/w:body/w:p[19],text,12,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_guyan_2.mlx,48A76D80D7771273B874CD8EDF6FCE6D4FC78B02012F9BC73D2769982C534077,20,/w:document/w:body/w:p[20],code,7,code,271E679E060047BFC5B120AC265E3EC8DB280506A459A559F18E712FD3449AD2,148,149,174,"stab = zeros(20);
+for l = 0:20
+%l =5;
+for j = 0:20
+%j = 25;
+%l = 0
+%j = 0
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(zeros(5,5));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRren/al+(z-1)/z/dt*C1+K1+...
+    H*((z-1)/z/dt*C2+K2);
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+end"
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,2,/w:document/w:body/w:p[2],code,1,code,96079D6E4E6A51CB50C1B2A16DCC515DE5DAE899BA4E3EBD6C93FE059936633E,5,6,19,"index1 = [1,2];
+index2 = [3,4,5,6,7,8];
+K2 = KRren;
+K2(index1,index1) = KRren(index1,index1)-KPren;
+K2(index2,index2) = KRren(index2,index2)-KNren;
+C2 = CRren;
+C2(index1,index1) = CRren(index1,index1)-CPren;
+C2(index2,index2) = CRren(index2,index2)-CNren;
+C1 = CRren-C2;
+K1 = KRren-K2;
+
+dt = 1/1024;
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+al = diag(diag(al));"
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,3,/w:document/w:body/w:p[3],text,2,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,4,/w:document/w:body/w:p[4],text,3,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,5,/w:document/w:body/w:p[5],code,2,code,69F15A93DD1DD053026AC3C77CE5E3F608A6C23D68B5F8842F2F82DBD179F4FF,21,22,61,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 6);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+M = MPren;
+C = CPren;
+K = KPren;
+n = length(M);
+% 系统矩阵
+A = [zeros(n) eye(n); -M\K -M\C];
+B = [zeros(n); M\eye(n)];
+
+% 连续系统 -> 离散
+sys_c = ss(A, B, eye(2*n), zeros(2*n, n));
+dt = 1/1024;  % 离散化周期
+sys_d = c2d(sys_c, dt);
+Ad = sys_d.A;
+Bd = sys_d.B;
+
+Q = diag([4e8, 1e4, 1e2, 1e1]);
+R = diag([3e-3,1e-2]);
+[K_lqr, ~, ~] = dlqr(Ad, Bd, Q, R);
+% 闭环系统矩阵
+Acl = Ad - Bd * K_lqr;
+
+% 分解增益为刚度、阻尼反馈
+DeltaK = diag(diag(MPren*K_lqr(:, 1:n)))
+DeltaC = diag(diag(MPren*K_lqr(:, n+1:end)));
+
+DeltaG = (z-1)/z/dt*DeltaC+DeltaK;
+
+%for l = 1:20
+%    for j = 1:30"
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,6,/w:document/w:body/w:p[6],text,4,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,7,/w:document/w:body/w:p[7],text,5,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,8,/w:document/w:body/w:p[8],text,6,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_guyan_LQR2.mlx,85B71050673BCB956E397490E41A8BC6D748AF2E633F00F5D0D8968BAFB67102,9,/w:document/w:body/w:p[9],code,3,code,C62006CB1B4755984CF1AAB8210352A657230F16EC16A3CCF1CED050DDFAA329,63,64,89,"stab = zeros(20);
+for l = 0:15
+%l =5;
+%for j = 0:15
+%j = 25;
+j = 0;
+%j = 0;
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(eye(6,6));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRren/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+%end"
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,2,/w:document/w:body/w:p[2],code,1,code,52DEA49E770CFEE0EE1659EBA23E96D4F5AEBBEB2AAF0EC4DA5B2220CC78A7FF,5,6,19,"index1 = [1,2];
+index2 = [3,4,5];
+K2 = KRren;
+K2(index1,index1) = KRren(index1,index1)-KPren;
+K2(index2,index2) = KRren(index2,index2)-KNren;
+C2 = CRren;
+C2(index1,index1) = CRren(index1,index1)-CPren;
+C2(index2,index2) = CRren(index2,index2)-CNren;
+C1 = CRren-C2;
+K1 = KRren-K2;
+
+dt = 1/1024;
+al = (4*MRren+2*dt*CRren+dt^2*KRren)\MRren*4;
+al = diag(diag(al));"
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,3,/w:document/w:body/w:p[3],text,2,text,1D75124C33541F352B7F523ECDFFC4619B9537F85C02CFBD152AFC174D7F9A11,,,,\frac{X\left(z\right)}{F\left(z\right)}=\frac{1}{\frac{{\left(z-1\right)}^2 }{\alpha z\Delta t^2 }M+\frac{z-1}{z\Delta t}C_1 +{\mathrm{K}}_1 +z^{-j} \left(\frac{z-1}{z\Delta t}C_2 +{\mathrm{K}}_2 \right)}
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,4,/w:document/w:body/w:p[4],text,3,text,2DE48E6C7EBCE8E9674178E8867BE5525F78B1C131C4D607603034B85BBF28A2,,,,按照上述公式计算传递函数
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,5,/w:document/w:body/w:p[5],code,2,code,F5A6FA7A15FDEC67B896530CE2B281C506EA03DD99B4AF9E760C951BA454A2C3,21,22,61,"% 2. 选择矩阵 S: 6x15
+S = zeros(2, 5);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 2];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end
+
+M = MPren;
+C = CPren;
+K = KPren;
+n = length(M);
+% 系统矩阵
+A = [zeros(n) eye(n); -M\K -M\C];
+B = [zeros(n); M\eye(n)];
+
+% 连续系统 -> 离散
+sys_c = ss(A, B, eye(2*n), zeros(2*n, n));
+dt = 1/1024;  % 离散化周期
+sys_d = c2d(sys_c, dt);
+Ad = sys_d.A;
+Bd = sys_d.B;
+
+Q = diag([4e8, 1e4, 1e2, 1e1]);
+R = diag([3e-3,1e-2]);
+[K_lqr, ~, ~] = dlqr(Ad, Bd, Q, R);
+% 闭环系统矩阵
+Acl = Ad - Bd * K_lqr;
+
+% 分解增益为刚度、阻尼反馈
+DeltaK = diag(diag(MPren*K_lqr(:, 1:n)))
+DeltaC = diag(diag(MPren*K_lqr(:, n+1:end)));
+
+DeltaG = (z-1)/z/dt*DeltaC+DeltaK;
+
+%for l = 1:20
+%    for j = 1:30"
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,6,/w:document/w:body/w:p[6],text,4,text,6EDAA2DC4559EC4FCC9D9296D5FF2E8391A46BB187D4F7607A57B92558D3E4FE,,,,这里不采用之前的阻尼矩阵进行缩聚，而是采用使用缩聚后的刚度和阻尼矩阵求出新的阻尼
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,7,/w:document/w:body/w:p[7],text,5,text,E2B5ACE1F26382F8215930B73F8CC7B98C97E3976E40E3E99FFEAC3B30969DF1,,,,实际测试表明两者没有区别，虽然矩阵数值上存在差距，但是稳定域没差别
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,8,/w:document/w:body/w:p[8],text,6,text,1F02EA3680ADE6C074E485CF9E12A8E6A0372679B1ED9B1F154F0AD4D2AC46E5,,,,定义循环，求解稳定域
+luxvjie_guyan_LQR3.mlx,3A9291D5FC4B5DD183C88874879B34623B38F3C020F0FBC66991E070936EDE05,9,/w:document/w:body/w:p[9],code,3,code,759BC0E53F20987098F6E57729A2B1C2B305C2F8D951D3D6EEDCF21B9B8D9FC5,63,64,90,"stab = zeros(20);
+%for l = 0:15
+%l =5;
+for j = 0:15
+%j = 25;
+l = 0;
+%j = 0;
+%z=tf('z',dt);
+syms z
+%l = 19;
+%j = 5;
+H = sym(eye(5));
+H(1,1) = z^(-l);
+H(2,2) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRren/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H;
+%+S'*DeltaG*S
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+end
+%end"
+luxvjie_ori_LQR2.mlx,8ECA148D813F0C7652F412F5896D2DB8EF5B1279CA0DCBBF10A1FFB45FEA5509,1,/w:document/w:body/w:p[1],code,1,code,9041F57EE7BEAEE582EF47120E3E9C2130DEF655C32378AB4F4EA37597AF3034,5,6,25,"locate2 = [1,2,3,7,8,9]
+
+
+
+K2 = KRrt-KNrt_1-KPrt_1;
+C2 = CRrt-CNrt_1-CPrt_1;
+K1 = KRrt-K2;
+C1 = CRrt-C2;
+
+al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\MRrt*4;
+
+S = zeros(2, 18);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 7];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end"
+luxvjie_ori_LQR2.mlx,8ECA148D813F0C7652F412F5896D2DB8EF5B1279CA0DCBBF10A1FFB45FEA5509,3,/w:document/w:body/w:p[3],code,2,code,E776E8EA68C5230CF817AD71A3215D42E22AA3E4098DCC8BEC4BBB9D3B91C977,27,28,50,"stab = zeros(20);
+%for l = 0:5
+l = 0;
+%for j = 0:5
+j = 9;
+
+syms z
+H = sym(eye(18));
+H(1,1) = z^(-l);
+H(7,7) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H+S'*DeltaG*S;
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+%end
+%end
+%save('stab_guyan_lqr.mat', 'stab');
+"
+luxvjie_ori_LQR3.mlx,149E9FDD7F98CFD0A5B581D7BD2B27521908BC89FFB2DEF1F891D4402E4B89D5,1,/w:document/w:body/w:p[1],code,1,code,61EC3D3170E8D0005A6621F803E30D181E8DF3556785726051366E404C2D97EF,5,6,25,"locate2 = [1,2,3,7,8,9]
+
+
+
+K2 = KRrt-KNrt_1-KPrt_1;
+C2 = CRrt-CNrt_1-CPrt_1;
+K1 = KRrt-K2;
+C1 = CRrt-C2;
+
+al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\MRrt*4;
+
+S = zeros(2, 18);
+
+% 定义映射：小矩阵第1-3行 → 大矩阵第1-3行
+% 小矩阵第4-6行 → 大矩阵第6-8行
+row_map = [1 13];
+
+for i = 1:2
+    S(i, row_map(i)) = 1;
+end"
+luxvjie_ori_LQR3.mlx,149E9FDD7F98CFD0A5B581D7BD2B27521908BC89FFB2DEF1F891D4402E4B89D5,3,/w:document/w:body/w:p[3],code,2,code,7D25356DAEC9A4A1BBD39C05D9ACAA708DDBCCD1F5E46FFC7EF1E523D8A46E85,27,28,51,"stab = zeros(20);
+%for l = 0:5
+l = 0;
+%for j = 0:5
+j = 6;
+
+syms z
+H = sym(eye(18));
+H(1,1) = z^(-l);
+H(13,13) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H;
+%+S'*DeltaG*S
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero))
+stab(l+1,j+1) = s;
+%end
+%end
+%save('stab_guyan_lqr.mat', 'stab');
+"
+monicanshu_2.mlx,B4F8F6C523BF3068C142CE40F1ABE898F56D251E0B94D67AADE4A26B43855645,1,/w:document/w:body/w:p[1],code,1,code,D1AA47D82378B68494D503AA8EB642D70D33364CB28268B0E680465196F799E2,5,6,162,"dt = 1/1024;
+%%% MATERIAL PROPERTIES
+Lb = 762/1000;                      % Beam length (m)
+Lc = 635/1000;                      % Column length (m)
+Ic = 2.520*(25.4/1000)^4;           % 2nd Moment of Area x column (m^4)
+Ib = 0.6132*(25.4/1000)^4;          % 2nd Moment of Area x beam (m^4)
+Ac = 1.670*(25.4/1000)^2;           % Cross sectional Area column (m^2)
+Ab = 0.947*(25.4/1000)^2;           % Cross sectional Area beam (m^2)
+
+KRrt  = zeros(15,15);                   % Initialize stiffness matrix
+MRrt  = zeros(15,15);                   % Initialize mass matrix
+CRrt  = zeros(15,15);                   % Initialize damping matrix
+
+E = 206e9;                          % steel modulus of elasticity (Pa)
+rho = 785e3.*1.7;                       % steel density (kg/m^3)
+
+%%% MASS MATRIX
+
+mass_b = rho*Ab*Lb;                 % Total Beam Element Mass [kg]
+mass_c = rho*Ac*Lc;                 % Total Beam Column Mass [kg]
+
+% Lumped mass matrix
+M1 = (3*mass_b + 4*mass_c)/2;
+%M1 = mass_b + mass_c;
+
+M2 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3*2)/8;
+M3 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3*2)/8;
+M4 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3)/8;
+M5 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3)/8;
+MRrt = diag([M1 M2 M3 M1 M3 M2 M1 M2 M3 M1 M3 M2 M1 M4 M5 M1 M5 M4]);
+
+%%% STIFFNESS MATRIX
+
+% Plane Beam-Column Element Stiffness Matrix
+kc = [Ac*E/Lc       0              0         -Ac*E/Lc    0              0           ;
+       0        12*E*Ic/Lc^3   6*E*Ic/Lc^2    0         -12*E*Ic/Lc^3   6*E*Ic/Lc^2 ;
+       0        6*E*Ic/Lc^2    4*E*Ic/Lc      0         -6*E*Ic/Lc^2    2*E*Ic/Lc   ;
+      -Ac*E/Lc      0              0         Ac*E/Lc     0              0           ;
+       0        -12*E*Ic/Lc^3  -6*E*Ic/Lc^2   0         12*E*Ic/Lc^3    -6*E*Ic/Lc^2;
+       0        6*E*Ic/Lc^2    2*E*Ic/Lc      0         -6*E*Ic/Lc^2    4*E*Ic/Lc]  ;
+kb = [Ab*E/Lb       0              0         -Ab*E/Lb    0              0           ;
+       0        12*E*Ib/Lb^3   6*E*Ib/Lb^2    0         -12*E*Ib/Lb^3   6*E*Ib/Lb^2 ;
+       0        6*E*Ib/Lb^2    4*E*Ib/Lb      0         -6*E*Ib/Lb^2    2*E*Ib/Lb   ;
+      -Ab*E/Lb      0              0         Ab*E/Lb     0              0           ;
+       0        -12*E*Ib/Lb^3  -6*E*Ib/Lb^2   0         12*E*Ib/Lb^3    -6*E*Ib/Lb^2;
+       0        6*E*Ib/Lb^2    2*E*Ib/Lb      0         -6*E*Ib/Lb^2    4*E*Ib/Lb]  ;
+% Neglecting axial deformations:
+kc(1,1:end) = zeros(1,size(kc,1));
+kc(4,1:end) = zeros(1,size(kc,1));
+kc(1:end,1) = zeros(1,size(kc,1));
+kc(1:end,4) = zeros(1,size(kc,1));
+%%% Transformation matrices
+theta_c = pi/2;
+theta_b = 0;
+
+Tc = [cos(theta_c)   sin(theta_c)   0       0             0          0 ;
+      -sin(theta_c)  cos(theta_c)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_c)   sin(theta_c)  0 ;  
+       0                    0       0   -sin(theta_c)  cos(theta_c)  0 ;
+       0                    0       0       0             0          1  ];
+   
+Tb = [cos(theta_b)   sin(theta_b)   0       0             0          0 ;
+      -sin(theta_b)  cos(theta_b)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_b)   sin(theta_b)  0 ;  
+       0                    0       0   -sin(theta_b)  cos(theta_b)  0 ;
+       0                    0       0       0             0          1  ];
+
+Kc = Tc'*kc*Tc;         %Global stiffness matrix of columns
+Kb = Tb'*kb*Tb;         %Global stiffness matrix of the beam
+KRrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0	0	0	0;
+Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0;
+0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0;
+0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0;
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0;
+0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6);
+0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6)	Kb(1,4)	0	0;
+0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6)	0	0	0;
+0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)	0	Kb(3,6)	0;
+0	0	0	0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+Kb(4,4)	Kc(4,6)	Kc(4,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)	Kb(6,6)+Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+% Rayleigh Damping Method
+[V, D] = eig(KRrt, MRrt);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+fre = diag(sqrt(D)/(2*pi))
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRrt = alphas(1) * MRrt + alphas(2) * KRrt;
+
+%给出物理子结构定位
+locate2 = [1,2,3,7,8,9];
+KPrt = [2*Kc(4,4)+2*Kc(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6);
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)	Kc(4,6)	Kc(4,6);
+Kc(6,1)	Kc(6,3)	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6);
+Kc(6,1)	0	Kc(6,3)	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+M6 = mass_b + 2*mass_c;
+%M3 = (mass_b)*(Lb.^2)/12+(mass_c)*(Lc.^2)/12;
+MPrt = diag([M6 M2 M2 M6 M4 M4]);
+
+% Compute damping matrix
+CPrt = alphas(1) * MPrt + alphas(2) * KPrt;
+
+KNrt = KRrt;
+KNrt(locate2,locate2) = KRrt(locate2,locate2)-KPrt;
+MNrt = MRrt;
+MNrt(locate2,locate2) = MRrt(locate2,locate2)-MPrt;
+CNrt = CRrt;
+CNrt(locate2,locate2) = CRrt(locate2,locate2)-CPrt;
+
+KNrt_1 = KNrt;
+KPrt_1 = KRrt-KNrt_1;
+MNrt_1 = MNrt;
+MPrt_1 = MRrt-MNrt_1;
+CNrt_1 = CNrt;
+CPrt_1 = CRrt-CNrt_1;
+
+locate1 = [4,5,6,10,11,12,13,14,15,16,17,18];
+KNrt_2 = KNrt(locate1,locate1);
+MNrt_2 = MNrt(locate1,locate1);
+CNrt_2 = alphas(1) * MNrt_2 + alphas(2) * KNrt_2;
+
+KNrt_1 = zeros(18);
+CNrt_1 = zeros(18);
+KNrt_1(locate1,locate1) = KNrt_2;
+CNrt_1(locate1,locate1) = CNrt_2;
+
+K2 = KRrt-KNrt_1-KPrt_1;
+C2 = CRrt-CNrt_1-CPrt_1;
+K1 = KRrt-K2;
+C1 = CRrt-C2;
+
+al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\MRrt*4;"
+monicanshu_2_suoju.mlx,1F885E0971033EBCB8632110EC5A47DA507126C718A80176FF3347B2ED6A08C5,1,/w:document/w:body/w:p[1],code,1,code,E34D84C1D8749BFF9B3CE3FF3792EB574393D082F503F66C10F9CCEAE11D7F78,5,6,178,"dt = 1/1024;
+%%% MATERIAL PROPERTIES
+Lb = 762/1000;                      % Beam length (m)
+Lc = 635/1000;                      % Column length (m)
+Ic = 2.520*(25.4/1000)^4;           % 2nd Moment of Area x column (m^4)
+Ib = 0.6132*(25.4/1000)^4;          % 2nd Moment of Area x beam (m^4)
+Ac = 1.670*(25.4/1000)^2;           % Cross sectional Area column (m^2)
+Ab = 0.947*(25.4/1000)^2;           % Cross sectional Area beam (m^2)
+
+KRrt  = zeros(15,15);                   % Initialize stiffness matrix
+MRrt  = zeros(15,15);                   % Initialize mass matrix
+CRrt  = zeros(15,15);                   % Initialize damping matrix
+
+E = 206e9;                          % steel modulus of elasticity (Pa)
+rho = 785e3.*1.7;                       % steel density (kg/m^3)
+
+%%% MASS MATRIX
+
+mass_b = rho*Ab*Lb;                 % Total Beam Element Mass [kg]
+mass_c = rho*Ac*Lc;                 % Total Beam Column Mass [kg]
+
+% Lumped mass matrix
+M1 = (3*mass_b + 4*mass_c)/2;
+%M1 = mass_b + mass_c;
+
+M2 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3*2)/8;
+M3 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3*2)/8;
+M4 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3)/8;
+M5 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3)/8;
+MRrt = diag([M1 M2 M3 M1 M3 M2 M1 M2 M3 M1 M3 M2 M1 M4 M5 M1 M5 M4]);
+
+%%% STIFFNESS MATRIX
+
+% Plane Beam-Column Element Stiffness Matrix
+kc = [Ac*E/Lc       0              0         -Ac*E/Lc    0              0           ;
+       0        12*E*Ic/Lc^3   6*E*Ic/Lc^2    0         -12*E*Ic/Lc^3   6*E*Ic/Lc^2 ;
+       0        6*E*Ic/Lc^2    4*E*Ic/Lc      0         -6*E*Ic/Lc^2    2*E*Ic/Lc   ;
+      -Ac*E/Lc      0              0         Ac*E/Lc     0              0           ;
+       0        -12*E*Ic/Lc^3  -6*E*Ic/Lc^2   0         12*E*Ic/Lc^3    -6*E*Ic/Lc^2;
+       0        6*E*Ic/Lc^2    2*E*Ic/Lc      0         -6*E*Ic/Lc^2    4*E*Ic/Lc]  ;
+kb = [Ab*E/Lb       0              0         -Ab*E/Lb    0              0           ;
+       0        12*E*Ib/Lb^3   6*E*Ib/Lb^2    0         -12*E*Ib/Lb^3   6*E*Ib/Lb^2 ;
+       0        6*E*Ib/Lb^2    4*E*Ib/Lb      0         -6*E*Ib/Lb^2    2*E*Ib/Lb   ;
+      -Ab*E/Lb      0              0         Ab*E/Lb     0              0           ;
+       0        -12*E*Ib/Lb^3  -6*E*Ib/Lb^2   0         12*E*Ib/Lb^3    -6*E*Ib/Lb^2;
+       0        6*E*Ib/Lb^2    2*E*Ib/Lb      0         -6*E*Ib/Lb^2    4*E*Ib/Lb]  ;
+% Neglecting axial deformations:
+kc(1,1:end) = zeros(1,size(kc,1));
+kc(4,1:end) = zeros(1,size(kc,1));
+kc(1:end,1) = zeros(1,size(kc,1));
+kc(1:end,4) = zeros(1,size(kc,1));
+%%% Transformation matrices
+theta_c = pi/2;
+theta_b = 0;
+
+Tc = [cos(theta_c)   sin(theta_c)   0       0             0          0 ;
+      -sin(theta_c)  cos(theta_c)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_c)   sin(theta_c)  0 ;  
+       0                    0       0   -sin(theta_c)  cos(theta_c)  0 ;
+       0                    0       0       0             0          1  ];
+   
+Tb = [cos(theta_b)   sin(theta_b)   0       0             0          0 ;
+      -sin(theta_b)  cos(theta_b)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_b)   sin(theta_b)  0 ;  
+       0                    0       0   -sin(theta_b)  cos(theta_b)  0 ;
+       0                    0       0       0             0          1  ];
+
+Kc = Tc'*kc*Tc;         %Global stiffness matrix of columns
+Kb = Tb'*kb*Tb;         %Global stiffness matrix of the beam
+KRrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0	0	0	0;
+Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0;
+0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0;
+0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0;
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0;
+0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6);
+0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6)	Kb(1,4)	0	0;
+0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6)	0	0	0;
+0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)	0	Kb(3,6)	0;
+0	0	0	0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+Kb(4,4)	Kc(4,6)	Kc(4,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)	Kb(6,6)+Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+% Rayleigh Damping Method
+[V, D] = eig(KRrt, MRrt);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+fre = diag(sqrt(D)/(2*pi))
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRrt = alphas(1) * MRrt + alphas(2) * KRrt;
+
+%给出物理子结构定位
+locate2 = [1,2,3,7,8,9];
+KPrt = [2*Kc(4,4)+2*Kc(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6);
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)	Kc(4,6)	Kc(4,6);
+Kc(6,1)	Kc(6,3)	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6);
+Kc(6,1)	0	Kc(6,3)	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+M6 = mass_b + 2*mass_c;
+%M3 = (mass_b)*(Lb.^2)/12+(mass_c)*(Lc.^2)/12;
+MPrt = diag([M6 M2 M2 M6 M4 M4]);
+
+% Compute damping matrix
+CPrt = alphas(1) * MPrt + alphas(2) * KPrt;
+
+index1 = [1,4];
+index2 = [2,3,5,6];
+index3 = [1,4,7,10];
+index4 = [2,3,5,6,8,9,11,12];
+order = [index3,index4];
+
+Mmn = MPrt(index1,index1);
+Mmsn = MPrt(index1,index2);
+
+Cmn = CPrt(index1,index1);
+Cmsn = CPrt(index1,index2);
+
+Kmn = KPrt(index1,index1);
+Kmsn = KPrt(index1,index2);
+Ksn = KPrt(index2,index2);
+Ksmn = KPrt(index2,index1);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index1)); % 主自由度单位矩阵
+TP = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KPrt(index2,index2);
+Mss = MPrt(index2,index2);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KPrt(index2,index1);
+
+n_mn = length(index1);
+TP_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index1, index2];
+
+MP_cb = TP_cb' * MPrt(idx_all, idx_all) * TP_cb;
+KP_cb = TP_cb' * KPrt(idx_all, idx_all) * TP_cb;
+CP_cb = TP_cb' * CPrt(idx_all, idx_all) * TP_cb;"
+monicanshu_2_suoju.mlx,1F885E0971033EBCB8632110EC5A47DA507126C718A80176FF3347B2ED6A08C5,3,/w:document/w:body/w:p[3],code,2,code,381DD92AE98570A7CC5C940431067E105930509B7633674BEF3DAD21F173D1CA,180,181,244,"KNrt = KRrt;
+KNrt(locate2,locate2) = KRrt(locate2,locate2)-KPrt;
+MNrt = MRrt;
+MNrt(locate2,locate2) = MRrt(locate2,locate2)-MPrt;
+CNrt = CRrt;
+CNrt(locate2,locate2) = CRrt(locate2,locate2)-CPrt;
+
+KNrt_1 = KNrt;
+KPrt_1 = KRrt-KNrt_1;
+MNrt_1 = MNrt;
+MPrt_1 = MRrt-MNrt_1;
+CNrt_1 = CNrt;
+CPrt_1 = CRrt-CNrt_1;
+
+locate1 = [4,5,6,10,11,12,13,14,15,16,17,18];
+KNrt_2 = KNrt(locate1,locate1);
+MNrt_2 = MNrt(locate1,locate1);
+CNrt_2 = alphas(1) * MNrt_2 + alphas(2) * KNrt_2;
+
+KNrt_1 = zeros(18);
+CNrt_1 = zeros(18);
+KNrt_1(locate1,locate1) = KNrt_2;
+CNrt_1(locate1,locate1) = CNrt_2;
+
+Mmn = MNrt_2(index3,index3);
+Mmsn = MNrt_2(index3,index4);
+
+Cmn = CNrt_2(index3,index3);
+Cmsn = CNrt_2(index3,index4);
+
+Kmn = KNrt_2(index3,index3);
+Kmsn = KNrt_2(index3,index4);
+Ksn = KNrt_2(index4,index4);
+Ksmn = KNrt_2(index4,index3);
+
+KNren = (Kmn-Kmsn*(Ksn\Ksmn));
+MNren = (Mmn-Mmsn*(Ksn\Ksmn));
+CNren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵
+TN = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KNrt_2(index4,index4);
+Mss = MNrt_2(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KNrt_2(index4,index3);
+
+n_mn = length(index3);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MN_cb = T_cb' * MNrt_2(idx_all, idx_all) * T_cb;
+KN_cb = T_cb' * KNrt_2(idx_all, idx_all) * T_cb;
+CN_cb = T_cb' * CNrt_2(idx_all, idx_all) * T_cb;"
+monicanshu_2_suoju.mlx,1F885E0971033EBCB8632110EC5A47DA507126C718A80176FF3347B2ED6A08C5,5,/w:document/w:body/w:p[5],code,3,code,FDE4863AA5D4E80DD2A069F74B0519F5D21F0C006613FEE0F32C2784E8178548,246,247,290,"index5 = [1,7,4,10,13,16];
+index6 = [2,3,5,6,8,9,11,12,14,15,17,18];
+order = [index5,index6];
+
+Mmn = MRrt(index5,index5);
+Mmsn = MRrt(index5,index6);
+
+Cmn = CRrt(index5,index5);
+Cmsn = CRrt(index5,index6);
+
+Kmn = KRrt(index5,index5);
+Kmsn = KRrt(index5,index6);
+Ksn = KRrt(index6,index6);
+Ksmn = KRrt(index6,index5);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index5)); % 主自由度单位矩阵
+T = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KRrt(index6,index6);
+Mss = MRrt(index6,index6);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index6,index5);
+
+n_mn = length(index5);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index5, index6];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;"
+monicanshu_3.mlx,C3FDA13F5EA5625E576315DEDE63513A8AE6E8639818915DE0AF958276970ECC,1,/w:document/w:body/w:p[1],code,1,code,93B065DF094C670138AAFC6F0890CCDF7EAABDEC9765C6E7FC6047DDD5D08EE0,5,6,165,"dt = 1/1024;
+%%% MATERIAL PROPERTIES
+Lb = 762/1000;                      % Beam length (m)
+Lc = 635/1000;                      % Column length (m)
+Ic = 2.520*(25.4/1000)^4;           % 2nd Moment of Area x column (m^4)
+Ib = 0.6132*(25.4/1000)^4;          % 2nd Moment of Area x beam (m^4)
+Ac = 1.670*(25.4/1000)^2;           % Cross sectional Area column (m^2)
+Ab = 0.947*(25.4/1000)^2;           % Cross sectional Area beam (m^2)
+
+KRrt  = zeros(15,15);                   % Initialize stiffness matrix
+MRrt  = zeros(15,15);                   % Initialize mass matrix
+CRrt  = zeros(15,15);                   % Initialize damping matrix
+
+E = 206e9;                          % steel modulus of elasticity (Pa)
+rho = 785e3.*1.7;                       % steel density (kg/m^3)
+
+%%% MASS MATRIX
+
+mass_b = rho*Ab*Lb;                 % Total Beam Element Mass [kg]
+mass_c = rho*Ac*Lc;                 % Total Beam Column Mass [kg]
+
+% Lumped mass matrix
+M1 = (3*mass_b + 4*mass_c)/2;
+%M1 = mass_b + mass_c;
+M2 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3*2)/8;
+M3 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3*2)/8;
+M4 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3)/8;
+M5 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3)/8;
+MRrt = diag([M1 M2 M3 M1 M3 M2 M1 M2 M3 M1 M3 M2 M1 M4 M5 M1 M5 M4]);
+
+
+%%% STIFFNESS MATRIX
+
+% Plane Beam-Column Element Stiffness Matrix
+kc = [Ac*E/Lc       0              0         -Ac*E/Lc    0              0           ;
+       0        12*E*Ic/Lc^3   6*E*Ic/Lc^2    0         -12*E*Ic/Lc^3   6*E*Ic/Lc^2 ;
+       0        6*E*Ic/Lc^2    4*E*Ic/Lc      0         -6*E*Ic/Lc^2    2*E*Ic/Lc   ;
+      -Ac*E/Lc      0              0         Ac*E/Lc     0              0           ;
+       0        -12*E*Ic/Lc^3  -6*E*Ic/Lc^2   0         12*E*Ic/Lc^3    -6*E*Ic/Lc^2;
+       0        6*E*Ic/Lc^2    2*E*Ic/Lc      0         -6*E*Ic/Lc^2    4*E*Ic/Lc]  ;
+kb = [Ab*E/Lb       0              0         -Ab*E/Lb    0              0           ;
+       0        12*E*Ib/Lb^3   6*E*Ib/Lb^2    0         -12*E*Ib/Lb^3   6*E*Ib/Lb^2 ;
+       0        6*E*Ib/Lb^2    4*E*Ib/Lb      0         -6*E*Ib/Lb^2    2*E*Ib/Lb   ;
+      -Ab*E/Lb      0              0         Ab*E/Lb     0              0           ;
+       0        -12*E*Ib/Lb^3  -6*E*Ib/Lb^2   0         12*E*Ib/Lb^3    -6*E*Ib/Lb^2;
+       0        6*E*Ib/Lb^2    2*E*Ib/Lb      0         -6*E*Ib/Lb^2    4*E*Ib/Lb]  ;
+% Neglecting axial deformations:
+kc(1,1:end) = zeros(1,size(kc,1));
+kc(4,1:end) = zeros(1,size(kc,1));
+kc(1:end,1) = zeros(1,size(kc,1));
+kc(1:end,4) = zeros(1,size(kc,1));
+%%% Transformation matrices
+theta_c = pi/2;
+theta_b = 0;
+
+Tc = [cos(theta_c)   sin(theta_c)   0       0             0          0 ;
+      -sin(theta_c)  cos(theta_c)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_c)   sin(theta_c)  0 ;  
+       0                    0       0   -sin(theta_c)  cos(theta_c)  0 ;
+       0                    0       0       0             0          1  ];
+   
+Tb = [cos(theta_b)   sin(theta_b)   0       0             0          0 ;
+      -sin(theta_b)  cos(theta_b)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_b)   sin(theta_b)  0 ;  
+       0                    0       0   -sin(theta_b)  cos(theta_b)  0 ;
+       0                    0       0       0             0          1  ];
+
+Kc = Tc'*kc*Tc;         %Global stiffness matrix of columns
+Kb = Tb'*kb*Tb;         %Global stiffness matrix of the beam
+KRrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0	0	0	0;
+Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0;
+0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0;
+0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0;
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0;
+0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6);
+0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6)	Kb(1,4)	0	0;
+0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6)	0	0	0;
+0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)	0	Kb(3,6)	0;
+0	0	0	0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+Kb(4,4)	Kc(4,6)	Kc(4,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)	Kb(6,6)+Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+% Rayleigh Damping Method
+[V, D] = eig(KRrt, MRrt);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+fre = diag(sqrt(D)/(2*pi))
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRrt = alphas(1) * MRrt + alphas(2) * KRrt;
+
+%给出物理子结构定位
+locate2 = [1,2,3,7,8,9,13,14,15];
+KPrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6)	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+Kc(6,1)	Kc(6,3)	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0;
+Kc(6,1)	0	Kc(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6);
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	Kc(6,1)	0	Kc(6,3)	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6);
+];
+
+M6 = mass_b + 2*mass_c;
+%M3 = (mass_b)*(Lb.^2)/12+(mass_c)*(Lc.^2)/12;
+MPrt = diag([M6 M2 M2 M6 M4 M4 M6 M4 M4]);
+
+% Compute damping matrix
+CPrt = alphas(1) * MPrt + alphas(2) * KPrt;
+
+KNrt = KRrt;
+KNrt(locate2,locate2) = KRrt(locate2,locate2)-KPrt;
+MNrt = MRrt;
+MNrt(locate2,locate2) = MRrt(locate2,locate2)-MPrt;
+CNrt = CRrt;
+CNrt(locate2,locate2) = CRrt(locate2,locate2)-CPrt;
+
+KNrt_1 = KNrt;
+KPrt_1 = KRrt-KNrt_1;
+MNrt_1 = MNrt;
+MPrt_1 = MRrt-MNrt_1;
+CNrt_1 = CNrt;
+CPrt_1 = CRrt-CNrt_1;
+
+locate1 = [4,5,6,10,11,12,13,14,15,16,17,18];
+KNrt_2 = KNrt(locate1,locate1);
+MNrt_2 = MNrt(locate1,locate1);
+CNrt_2 = alphas(1) * MNrt_2 + alphas(2) * KNrt_2;
+
+KNrt_1 = zeros(18);
+CNrt_1 = zeros(18);
+KNrt_1(locate1,locate1) = KNrt_2;
+CNrt_1(locate1,locate1) = CNrt_2;
+
+K2 = KRrt-KNrt_1-KPrt_1;
+C2 = CRrt-CNrt_1-CPrt_1;
+K1 = KRrt-K2;
+C1 = CRrt-C2;
+
+al = (4*MRrt+2*dt*CRrt+dt^2*KRrt)\MRrt*4;"
+monicanshu_3.mlx,C3FDA13F5EA5625E576315DEDE63513A8AE6E8639818915DE0AF958276970ECC,3,/w:document/w:body/w:p[3],code,2,code,21F88F17652C2CD687E2A7CD1D8CF52F967FA6D0D4E61AE617E0F6FA1F00DF64,167,168,190,"stab = zeros(20);
+for l = 0:10
+%l = 3;
+for j = 0:10
+%j = 1;
+
+syms z
+H = sym(eye(18));
+H(1,1) = z^(-l);
+H(7,7) = z^(-j);
+
+%syms z
+G = (z-1)^2/z/dt^2*MRrt/al+(z-1)/z/dt*C1+K1+...
+    ((z-1)/z/dt*C2+K2)*H;
+%G = (z-1)^2/z/dt^2*MNren/al+(z-1)/z/dt*CNren+KNren+...
+%    S'*H*((z-1)/z/dt*CPren+KPren+(z-1)/z/dt*Kd_ctrl+Kp_ctrl)*S;
+det_G = det(G);
+Gcls_zero = vpa(solve(det_G == 0, z));
+s = max(abs(Gcls_zero));
+stab(l+1,j+1) = s;
+end
+end
+save('stab_guyan_lqr.mat', 'stab');"
+monicanshu_3_suoju.mlx,D7AC9307B1A07D7AA442FDF37E7882BAE3EC519C021A5A317FFE9D9374E70D01,1,/w:document/w:body/w:p[1],code,1,code,0241F2AB42C3814A7DA5D495EBBE786B37F5A0096C4967E8CDFDA0FF5636AC2C,5,6,181,"dt = 1/1024;
+%%% MATERIAL PROPERTIES
+Lb = 762/1000;                      % Beam length (m)
+Lc = 635/1000;                      % Column length (m)
+Ic = 2.520*(25.4/1000)^4;           % 2nd Moment of Area x column (m^4)
+Ib = 0.6132*(25.4/1000)^4;          % 2nd Moment of Area x beam (m^4)
+Ac = 1.670*(25.4/1000)^2;           % Cross sectional Area column (m^2)
+Ab = 0.947*(25.4/1000)^2;           % Cross sectional Area beam (m^2)
+
+KRrt  = zeros(15,15);                   % Initialize stiffness matrix
+MRrt  = zeros(15,15);                   % Initialize mass matrix
+CRrt  = zeros(15,15);                   % Initialize damping matrix
+
+E = 206e9;                          % steel modulus of elasticity (Pa)
+rho = 785e3.*1.7;                       % steel density (kg/m^3)
+
+%%% MASS MATRIX
+
+mass_b = rho*Ab*Lb;                 % Total Beam Element Mass [kg]
+mass_c = rho*Ac*Lc;                 % Total Beam Column Mass [kg]
+
+% Lumped mass matrix
+M1 = (3*mass_b + 4*mass_c)/2;
+%M1 = mass_b + mass_c;
+M2 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3*2)/8;
+M3 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3*2)/8;
+M4 = (mass_b*(Lb.^2)/3+mass_c*(Lc.^2)/3)/8;
+M5 = (mass_b*(Lb.^2)/3*2+mass_c*(Lc.^2)/3)/8;
+MRrt = diag([M1 M2 M3 M1 M3 M2 M1 M2 M3 M1 M3 M2 M1 M4 M5 M1 M5 M4]);
+
+
+%%% STIFFNESS MATRIX
+
+% Plane Beam-Column Element Stiffness Matrix
+kc = [Ac*E/Lc       0              0         -Ac*E/Lc    0              0           ;
+       0        12*E*Ic/Lc^3   6*E*Ic/Lc^2    0         -12*E*Ic/Lc^3   6*E*Ic/Lc^2 ;
+       0        6*E*Ic/Lc^2    4*E*Ic/Lc      0         -6*E*Ic/Lc^2    2*E*Ic/Lc   ;
+      -Ac*E/Lc      0              0         Ac*E/Lc     0              0           ;
+       0        -12*E*Ic/Lc^3  -6*E*Ic/Lc^2   0         12*E*Ic/Lc^3    -6*E*Ic/Lc^2;
+       0        6*E*Ic/Lc^2    2*E*Ic/Lc      0         -6*E*Ic/Lc^2    4*E*Ic/Lc]  ;
+kb = [Ab*E/Lb       0              0         -Ab*E/Lb    0              0           ;
+       0        12*E*Ib/Lb^3   6*E*Ib/Lb^2    0         -12*E*Ib/Lb^3   6*E*Ib/Lb^2 ;
+       0        6*E*Ib/Lb^2    4*E*Ib/Lb      0         -6*E*Ib/Lb^2    2*E*Ib/Lb   ;
+      -Ab*E/Lb      0              0         Ab*E/Lb     0              0           ;
+       0        -12*E*Ib/Lb^3  -6*E*Ib/Lb^2   0         12*E*Ib/Lb^3    -6*E*Ib/Lb^2;
+       0        6*E*Ib/Lb^2    2*E*Ib/Lb      0         -6*E*Ib/Lb^2    4*E*Ib/Lb]  ;
+% Neglecting axial deformations:
+kc(1,1:end) = zeros(1,size(kc,1));
+kc(4,1:end) = zeros(1,size(kc,1));
+kc(1:end,1) = zeros(1,size(kc,1));
+kc(1:end,4) = zeros(1,size(kc,1));
+%%% Transformation matrices
+theta_c = pi/2;
+theta_b = 0;
+
+Tc = [cos(theta_c)   sin(theta_c)   0       0             0          0 ;
+      -sin(theta_c)  cos(theta_c)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_c)   sin(theta_c)  0 ;  
+       0                    0       0   -sin(theta_c)  cos(theta_c)  0 ;
+       0                    0       0       0             0          1  ];
+   
+Tb = [cos(theta_b)   sin(theta_b)   0       0             0          0 ;
+      -sin(theta_b)  cos(theta_b)   0       0             0          0 ;
+       0                    0       1       0             0          0 ;
+       0                    0       0   cos(theta_b)   sin(theta_b)  0 ;  
+       0                    0       0   -sin(theta_b)  cos(theta_b)  0 ;
+       0                    0       0       0             0          1  ];
+
+Kc = Tc'*kc*Tc;         %Global stiffness matrix of columns
+Kb = Tb'*kb*Tb;         %Global stiffness matrix of the beam
+KRrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0	0	0	0;
+Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0	0	0	0;
+0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0	0	0	0;
+0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6)	0	0	0	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	Kb(1,4)	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	0	Kb(3,6)	0	Kc(3,4)	0	Kc(3,6)	0	0	0;
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+2*Kc(1,1)+Kb(4,4)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	0	0	0	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	0	0	0	Kc(3,4)	Kc(3,6)	0;
+0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kc(6,6)+Kc(3,3)	0	0	0	Kc(3,4)	0	Kc(3,6);
+0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	0	0	0	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6)	Kb(1,4)	0	0;
+0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6)	0	0	0;
+0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)	0	Kb(3,6)	0;
+0	0	0	0	0	0	0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	Kb(4,1)	0	0	2*Kc(4,4)+Kb(4,4)	Kc(4,6)	Kc(4,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	Kc(6,3)	0	0	0	Kb(6,3)	Kc(6,4)	Kb(6,6)+Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	0	0	0	0	0	0	Kc(6,1)	0	Kc(6,3)	0	0	0	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kc(6,6);
+];
+
+% Rayleigh Damping Method
+[V, D] = eig(KRrt, MRrt);          % Eigenvectors and Eigenvalues
+[~, idx] = sort(diag(D));      % Sort eigenvalues in ascending order
+V = V(:, idx);
+D = D(idx, idx);
+
+w1 = sqrt(D(1,1));             % First natural frequency (rad/s)
+w2 = sqrt(D(2,2));             % Second natural frequency (rad/s)
+fre = diag(sqrt(D)/(2*pi))
+damping = 0.05;                % Damping ratio (5%)
+
+% Construct Rayleigh damping coefficients
+Art = (1/2) * [(1/w1) w1; (1/w2) w2];
+Brt = [damping; damping];
+alphas = Art \ Brt;            % Solve for alpha and beta
+
+% Compute damping matrix
+CRrt = alphas(1) * MRrt + alphas(2) * KRrt;
+
+%给出物理子结构定位
+locate2 = [1,2,3,7,8,9,13,14,15];
+KPrt = [2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6)	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0	0	0	0;
+Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6)	0	0	0;
+2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+2*Kc(1,1)+Kb(1,1)	Kc(4,6)+Kc(1,3)	Kc(4,6)+Kc(1,3)	2*Kc(1,4)	Kc(1,6)	Kc(1,6);
+Kc(6,1)	Kc(6,3)	0	Kc(6,4)+Kc(3,1)	Kb(3,3)+Kc(6,6)+Kc(3,3)	Kb(3,6)	Kc(3,4)	Kc(3,6)	0;
+Kc(6,1)	0	Kc(6,3)	Kc(6,4)+Kc(3,1)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6)+Kc(3,3)	Kc(3,4)	0	Kc(3,6);
+0	0	0	2*Kc(4,1)	Kc(4,3)	Kc(4,3)	2*Kc(4,4)+Kb(1,1)	Kc(4,6)	Kc(4,6);
+0	0	0	Kc(6,1)	Kc(6,3)	0	Kc(6,4)	Kb(3,3)+Kc(6,6)	Kb(3,6);
+0	0	0	Kc(6,1)	0	Kc(6,3)	Kc(6,4)	Kb(6,3)	Kb(6,6)+Kb(3,3)+Kc(6,6);
+];
+
+M6 = mass_b + 2*mass_c;
+%M3 = (mass_b)*(Lb.^2)/12+(mass_c)*(Lc.^2)/12;
+MPrt = diag([M6 M2 M2 M6 M4 M4 M6 M4 M4]);
+
+% Compute damping matrix
+CPrt = alphas(1) * MPrt + alphas(2) * KPrt;
+
+index1 = [1,7];
+index2 = [2,3,4,5,6,8,9];
+index3 = [1,4,7];
+index4 = [2,3,5,6,8,9];
+order = [index3,index4];
+
+Mmn = MPrt(index1,index1);
+Mmsn = MPrt(index1,index2);
+
+Cmn = CPrt(index1,index1);
+Cmsn = CPrt(index1,index2);
+
+Kmn = KPrt(index1,index1);
+Kmsn = KPrt(index1,index2);
+Ksn = KPrt(index2,index2);
+Ksmn = KPrt(index2,index1);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index1)); % 主自由度单位矩阵
+TP = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KPrt(index2,index2);
+Mss = MPrt(index2,index2);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KPrt(index2,index1);
+
+n_mn = length(index1);
+TP_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index1, index2];
+
+MP_cb = TP_cb' * MPrt(idx_all, idx_all) * TP_cb;
+KP_cb = TP_cb' * KPrt(idx_all, idx_all) * TP_cb;
+CP_cb = TP_cb' * CPrt(idx_all, idx_all) * TP_cb;"
+monicanshu_3_suoju.mlx,D7AC9307B1A07D7AA442FDF37E7882BAE3EC519C021A5A317FFE9D9374E70D01,3,/w:document/w:body/w:p[3],code,2,code,4B729A4992DE2E0D9A26361A56BDF6F7145F17FF540C58C34AAA7BD709882A7C,183,184,247,"KNrt = KRrt;
+KNrt(locate2,locate2) = KRrt(locate2,locate2)-KPrt;
+MNrt = MRrt;
+MNrt(locate2,locate2) = MRrt(locate2,locate2)-MPrt;
+CNrt = CRrt;
+CNrt(locate2,locate2) = CRrt(locate2,locate2)-CPrt;
+
+KNrt_1 = KNrt;
+KPrt_1 = KRrt-KNrt_1;
+MNrt_1 = MNrt;
+MPrt_1 = MRrt-MNrt_1;
+CNrt_1 = CNrt;
+CPrt_1 = CRrt-CNrt_1;
+
+locate1 = [4,5,6,10,11,12,16,17,18];
+KNrt_2 = KNrt(locate1,locate1);
+MNrt_2 = MNrt(locate1,locate1);
+CNrt_2 = alphas(1) * MNrt_2 + alphas(2) * KNrt_2;
+
+KNrt_1 = zeros(18);
+CNrt_1 = zeros(18);
+KNrt_1(locate1,locate1) = KNrt_2;
+CNrt_1(locate1,locate1) = CNrt_2;
+
+Mmn = MNrt_2(index3,index3);
+Mmsn = MNrt_2(index3,index4);
+
+Cmn = CNrt_2(index3,index3);
+Cmsn = CNrt_2(index3,index4);
+
+Kmn = KNrt_2(index3,index3);
+Kmsn = KNrt_2(index3,index4);
+Ksn = KNrt_2(index4,index4);
+Ksmn = KNrt_2(index4,index3);
+
+KNren = (Kmn-Kmsn*(Ksn\Ksmn));
+MNren = (Mmn-Mmsn*(Ksn\Ksmn));
+CNren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵
+TN = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KNrt_2(index4,index4);
+Mss = MNrt_2(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KNrt_2(index4,index3);
+
+n_mn = length(index3);
+TN_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MN_cb = TN_cb' * MNrt_2(idx_all, idx_all) * TN_cb;
+KN_cb = TN_cb' * KNrt_2(idx_all, idx_all) * TN_cb;
+CN_cb = TN_cb' * CNrt_2(idx_all, idx_all) * TN_cb;"
+monicanshu_3_suoju.mlx,D7AC9307B1A07D7AA442FDF37E7882BAE3EC519C021A5A317FFE9D9374E70D01,5,/w:document/w:body/w:p[5],code,3,code,C6E2FBC8EA0657EF86BCDB72FF704F70EB37087E1F32A5304A8E3BED3B115656,249,250,293,"index5 = [1,13,4,10,16];
+index6 = [7,2,3,5,6,8,9,11,12,14,15,17,18];
+order = [index5,index6];
+
+Mmn = MRrt(index5,index5);
+Mmsn = MRrt(index5,index6);
+
+Cmn = CRrt(index5,index5);
+Cmsn = CRrt(index5,index6);
+
+Kmn = KRrt(index5,index5);
+Kmsn = KRrt(index5,index6);
+Ksn = KRrt(index6,index6);
+Ksmn = KRrt(index6,index5);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index5)); % 主自由度单位矩阵
+T = [I; -Ksn\Ksmn]; % 拼接得到转换矩阵
+
+Kss = KRrt(index6,index6);
+Mss = MRrt(index6,index6);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index6,index5);
+
+n_mn = length(index5);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+-Kss\Ksmn, phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index5, index6];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;
+"
+simulink_str_2.mlx,A442C31EE6F7D86B16EDB8A2916E2194F87B10BC1069F98CF824AB29AA22CED9,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+simulink_str_2.mlx,A442C31EE6F7D86B16EDB8A2916E2194F87B10BC1069F98CF824AB29AA22CED9,2,/w:document/w:body/w:p[2],code,1,code,92111E1C10ACD9A6A23F9EF8F4091E2CB0947291AED24C148548B8783389A1E7,5,6,59,"index1 = [1,4];
+index2 = [2,3,5,6];
+index3 = [1,7,13,4,10,16];
+index4 = [2,3,6,8,9,12,14,15,18,5,11,17];
+order = [index3,index4];
+
+Mforce = MRrt(order,order);
+Mf = diag([1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0].*Mforce);
+
+Mmn = MRrt(index3,index3);
+Mmsn = MRrt(index3,index4);
+
+Cmn = CRrt(index3,index3);
+Cmsn = CRrt(index3,index4);
+
+Kmn = KRrt(index3,index3);
+Kmsn = KRrt(index3,index4);
+Ksn = KRrt(index4,index4);
+Ksmn = KRrt(index4,index3);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵
+T = [I; -Ksn\Ksmn];      % 拼接得到转换矩阵
+
+%index3 = [1,7,13,4,10,16];
+%index4 = [2,3,5,6,8,9,11,12,14,15,17,18];
+
+%Kguyan = selection_matrix(6,[1,2]);
+
+Kss = KRrt(index4,index4);
+Mss = MRrt(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 6; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index4,index3);
+
+n_mn = length(index3);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+        -Kss\Ksmn,   phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;"
+simulink_str_2.mlx,A442C31EE6F7D86B16EDB8A2916E2194F87B10BC1069F98CF824AB29AA22CED9,4,/w:document/w:body/w:p[4],code,2,code,EEDB3204EACF1E400F2929959631AD093A645207DCCEA64713415C080DFCE32E,61,62,109,"s = tf('s');
+M = MRrt(order,order);
+C = CRrt(order,order);
+K = KRrt(order,order);
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_1 = ss(A, B, C, D);
+
+M = MRren;
+C = CRren;
+K = KRren;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_2 = ss(A, B, C, D);
+
+M = MR_cb;
+C = CR_cb;
+K = KR_cb;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_3 = ss(A, B, C, D);"
+simulink_str_3.mlx,7FC5068FC843F0A95CA2B688F31BEFDDD97906500AEC5FA2E30CAB97D8DC5223,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+simulink_str_3.mlx,7FC5068FC843F0A95CA2B688F31BEFDDD97906500AEC5FA2E30CAB97D8DC5223,2,/w:document/w:body/w:p[2],code,1,code,5690713629A1AE0F7165E8EFFD538CC48D3C902AD41C4820457D5956FFC025A0,5,6,59,"index1 = [1,4];
+index2 = [2,3,5,6];
+index3 = [1,13,4,10,16];
+index4 = [7,2,3,6,8,9,12,14,15,18,5,11,17];
+order = [index3,index4];
+
+Mforce = MRrt(order,order);
+Mf = diag([1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0].*Mforce);
+
+Mmn = MRrt(index3,index3);
+Mmsn = MRrt(index3,index4);
+
+Cmn = CRrt(index3,index3);
+Cmsn = CRrt(index3,index4);
+
+Kmn = KRrt(index3,index3);
+Kmsn = KRrt(index3,index4);
+Ksn = KRrt(index4,index4);
+Ksmn = KRrt(index4,index3);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵
+T = [I; -Ksn\Ksmn];      % 拼接得到转换矩阵
+
+%index3 = [1,7,13,4,10,16];
+%index4 = [2,3,5,6,8,9,11,12,14,15,17,18];
+
+%Kguyan = selection_matrix(6,[1,2]);
+
+Kss = KRrt(index4,index4);
+Mss = MRrt(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 5; % 选取前3个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index4,index3);
+
+n_mn = length(index3);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+        -Kss\Ksmn,   phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;"
+simulink_str_3.mlx,7FC5068FC843F0A95CA2B688F31BEFDDD97906500AEC5FA2E30CAB97D8DC5223,4,/w:document/w:body/w:p[4],code,2,code,EEDB3204EACF1E400F2929959631AD093A645207DCCEA64713415C080DFCE32E,61,62,109,"s = tf('s');
+M = MRrt(order,order);
+C = CRrt(order,order);
+K = KRrt(order,order);
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_1 = ss(A, B, C, D);
+
+M = MRren;
+C = CRren;
+K = KRren;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_2 = ss(A, B, C, D);
+
+M = MR_cb;
+C = CR_cb;
+K = KR_cb;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_3 = ss(A, B, C, D);"
+untitled.mlx,0D645804E69D6C127DE71A40F594E34AC1F1D6D143AB9FEB8B871A9C3E109228,1,/w:document/w:body/w:p[1],text,1,text,92C5424F092CEB53F93D00D6614FCEE0A7D46C0626BC1E2BF1F11827BE36A985,,,,缩聚
+untitled.mlx,0D645804E69D6C127DE71A40F594E34AC1F1D6D143AB9FEB8B871A9C3E109228,2,/w:document/w:body/w:p[2],code,1,code,123635344C98DED619EE3C512867AA41D1FA88FC93B105AE5157CAC6995FC173,5,6,73,"index3 = [1,4];
+index4 = [2,3,5,6];
+dt = 1/1024
+Mmn = MPrt(index3,index3);
+Mmsn = MPrt(index3,index4);
+
+Cmn = CPrt(index3,index3);
+Cmsn = CPrt(index3,index4);
+
+Kmn = KPrt(index3,index3);
+Kmsn = KPrt(index3,index4);
+Ksn = KPrt(index4,index4);
+Ksmn = KPrt(index4,index3);
+
+KPren = (Kmn-Kmsn*(Ksn\Ksmn));
+MPren = (Mmn-Mmsn*(Ksn\Ksmn));
+CPren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+index3 = [1,11,4,9,14];
+index4 = [6,2,3,5,7,8,10,12,13,15];
+order = [1,11,4,9,14,6,2,3,5,7,8,10,12,13,15];
+
+Mforce = MRrt(order,order);
+Mf = diag([1,1,0,0,0,1,0,0,0,0,0,0,0,0,0].*Mforce);
+
+Mmn = MRrt(index3,index3);
+Mmsn = MRrt(index3,index4);
+
+Cmn = CRrt(index3,index3);
+Cmsn = CRrt(index3,index4);
+
+Kmn = KRrt(index3,index3);
+Kmsn = KRrt(index3,index4);
+Ksn = KRrt(index4,index4);
+Ksmn = KRrt(index4,index3);
+
+KRren = (Kmn-Kmsn*(Ksn\Ksmn));
+MRren = (Mmn-Mmsn*(Ksn\Ksmn));
+CRren = (Cmn-Cmsn*(Ksn\Ksmn));
+
+I = eye(length(index3)); % 主自由度单位矩阵 3x3
+T = [I; -Ksn\Ksmn];      % 拼接得到转换矩阵
+
+index3 = [1,11,4,9,14];
+index4 = [6,2,3,5,7,8,10,12,13,15];
+
+Kss = KRrt(index4,index4);
+Mss = MRrt(index4,index4);
+
+% 固定边界模态分析
+[phi_s, D] = eig(Kss, Mss);
+omega = sqrt(diag(D));
+
+r = 3; % 选取前5个模态
+phi_s_r = phi_s(:,1:r);
+
+Ksmn = KRrt(index4,index3);
+
+n_mn = length(index3);
+T_cb = [eye(n_mn), zeros(n_mn, r);
+        -Kss\Ksmn,   phi_s_r];
+
+% 组合主自由度和被缩聚自由度索引
+idx_all = [index3, index4];
+
+MR_cb = T_cb' * MRrt(idx_all, idx_all) * T_cb;
+KR_cb = T_cb' * KRrt(idx_all, idx_all) * T_cb;
+CR_cb = T_cb' * CRrt(idx_all, idx_all) * T_cb;"
+untitled.mlx,0D645804E69D6C127DE71A40F594E34AC1F1D6D143AB9FEB8B871A9C3E109228,4,/w:document/w:body/w:p[4],code,2,code,779AF004353DA61AB3A12BE7E50EAF656109BE9201DD395BC74EFF416F23DAA1,75,76,123,"s = tf('s');
+M = MRrt;
+C = CRrt;
+K = KRrt;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_1 = ss(A, B, C, D);
+
+M = MRren;
+C = CRren;
+K = KRren;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_2 = ss(A, B, C, D);
+
+M = MR_cb;
+C = CR_cb;
+K = KR_cb;
+n = size(M, 1);  % 自由度数
+
+A = [zeros(n) eye(n);
+     -M \ K  -M \ C];
+
+B = [zeros(n);
+     M \ eye(n)];
+
+C = [eye(n), zeros(n)];
+D = zeros(n, n);
+
+G_3 = ss(A, B, C, D);"
+untitled2.mlx,8D2E0BA775C6028C3572976C26B3A4B7109D887441D6DB0379758D2B5B822A55,1,/w:document/w:body/w:p[1],code,1,code,CCB1793198757A6BE3BBFFBB3A3B8D7E6F9FADCF3DAC152556FC4C46435EC181,5,6,80,"% 1. 原系统模态分析
+[phi_full, omega2_full] = eig(KPrt, MPrt);
+omega_full = sqrt(diag(omega2_full));
+n_modes_full = size(phi_full, 2);
+
+% 质量归一化模态矩阵
+for i = 1:n_modes_full
+    phi_full(:,i) = phi_full(:,i) / sqrt(phi_full(:,i)' * MPrt * phi_full(:,i));
+end
+
+% 2. Guyan 缩聚模态分析
+[phi_guyan, omega2_guyan] = eig(KPren, MPren);
+omega_guyan = sqrt(diag(omega2_guyan));
+n_modes_guyan = size(phi_guyan, 2);
+for i = 1:n_modes_guyan
+    phi_guyan(:,i) = phi_guyan(:,i) / sqrt(phi_guyan(:,i)' * MPren * phi_guyan(:,i));
+end
+
+% 3. Craig-Bampton 缩聚模态分析（假设 KPCB、MPCB 已定义）
+[phi_cb, omega2_cb] = eig(KP_cb, MP_cb);
+omega_cb = sqrt(diag(omega2_cb));
+n_modes_cb = size(phi_cb, 2);
+for i = 1:n_modes_cb
+    phi_cb(:,i) = phi_cb(:,i) / sqrt(phi_cb(:,i)' * MP_cb * phi_cb(:,i));
+end
+
+% --- 计算模态能量占比函数 ---
+calc_modal_energy_ratio = @(phi, omega, M) ...
+    (omega.^2) ./ sum(omega.^2);
+
+% 计算模态能量占比 (这里用频率平方归一化近似)
+E_ratio_full = calc_modal_energy_ratio(omega_full, omega_full, MPrt);
+E_ratio_guyan = calc_modal_energy_ratio(omega_guyan, omega_guyan, MPren);
+E_ratio_cb = calc_modal_energy_ratio(omega_cb, omega_cb, MP_cb);
+
+% 归一化确保和为1
+E_ratio_full = E_ratio_full / sum(E_ratio_full);
+E_ratio_guyan = E_ratio_guyan / sum(E_ratio_guyan);
+E_ratio_cb = E_ratio_cb / sum(E_ratio_cb);
+
+% --- 保留率指标计算示范 ---
+% 用转换矩阵 T 计算缩聚模态在原模态空间的映射
+% 这里举例 Guyan 缩聚
+T = TP; % Guyan转换矩阵
+
+% 把缩聚模态映射回原空间
+phi_guyan_expand = T * phi_guyan;
+
+% 对应模态能量投影保留率：
+modal_preservation_guyan = zeros(n_modes_guyan,1);
+for i = 1:n_modes_guyan
+    % 计算映射后模态与原系统模态的重叠（能量保留率）
+    modal_preservation_guyan(i) = ...
+        (phi_guyan_expand(:,i)' * MPrt * phi_guyan_expand(:,i)) / ...
+        (phi_guyan(:,i)' * MPren * phi_guyan(:,i)); % 理论上=1，计算投影大小则用不同方法
+end
+
+% 或者用模态投影的平方和作为能量保留率指标：
+modal_preservation_guyan = zeros(n_modes_guyan,1);
+for i = 1:n_modes_guyan
+    phi_proj = T' * phi_full(:,i); % 主自由度上的投影
+    modal_preservation_guyan(i) = sum(phi_proj.^2);
+end
+
+% 同理，Craig-Bampton对应计算即可
+
+% 总结输出：
+fprintf('原系统模态能量占比前5个:\n');
+disp(E_ratio_full(1:5));
+fprintf('Guyan缩聚模态能量占比前5个:\n');
+disp(E_ratio_guyan(1:5));
+fprintf('Craig-Bampton缩聚模态能量占比前5个:\n');
+disp(E_ratio_cb(1:5));
+fprintf('Guyan模态投影能量保留率示例:\n');
+disp(modal_preservation_guyan(1:5));
+"
+untitled3.mlx,CC021A80CBD7D2E5C820B1B9141936AE197DE028C4983A6D60B5ED0C3FD0F777,1,/w:document/w:body/w:p[1],code,1,code,D68B0A7F543018F3D87F7B4E1F99C2A7F8A0808C88E4AFA517FDCFA7A4649339,5,6,34,"% 原系统模态
+K = KPrt;
+M = MPrt;
+
+% 模态分析
+[phi, omega2] = eig(K, M);
+omega = sqrt(diag(omega2));
+E_modal = 0.5 * omega.^2;
+
+% 加权因子（如模态参与因子）
+r = [1;0;0;1;0;0];     % 激励方向
+r_r = TP'*r
+Gamma = phi' * M * r;
+w = Gamma.^2;          % 可作为加权因子
+
+% 加权总能量
+E_weighted = sum(w .* E_modal);
+
+% 缩聚后相同步骤
+[phi_r, omega2_r] = eig(K_r, M_r);
+omega_r = sqrt(diag(omega2_r));
+E_modal_r = 0.5 * omega_r.^2;
+Gamma_r = phi_r' * M_r * r_r;   % 若缩聚后激励向量变了也要换
+w_r = Gamma_r.^2;
+E_weighted_r = sum(w_r .* E_modal_r);
+
+% 加权能量变化率
+delta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100
+
+"
+untitled4.mlx,AA7CB11E993998938AFDC1A085A1E9FC8EDB03151DBD33B34A1684C71142BF6D,1,/w:document/w:body/w:p[1],code,1,code,5D6F2C8EA90A57A38DA7B816066CE57E47967E769599E08F6CE2C31C1D630328,5,6,41,"% 原系统模态
+K = KPrt;
+M = MPrt;
+
+% 模态分析
+[phi, omega2] = eig(K, M);
+omega = sqrt(diag(omega2));
+E_modal = 0.5 * omega.^2;
+
+% 加权因子（如模态参与因子）
+r = [1;0;0;1;0;0;1;0;0];     % 激励方向
+r_r = TP'*r
+% 假设你已有 M, phi, r
+Gamma = phi' * M * r;
+Gamma2 = Gamma.^2;
+Gamma2_norm = Gamma2 / sum(Gamma2);  % 归一化
+
+% 可用于加权能量
+omega = sqrt(diag(omega2));  % 来自 eig(K, M)
+E_weighted = sum(Gamma2_norm .* E_modal);
+
+% 缩聚后相同步骤
+[phi_r, omega2_r] = eig(K_r, M_r);
+omega_r = sqrt(diag(omega2_r));
+E_modal_r = 0.5 * omega_r.^2;
+Gamma = phi_r' * M_r * r_r;
+Gamma2 = Gamma.^2;
+Gamma2_norm = Gamma2 / sum(Gamma2);  % 归一化
+
+% 可用于加权能量
+omega = sqrt(diag(omega2));  % 来自 eig(K, M)
+E_weighted_r = sum(Gamma2_norm .* E_modal_r);
+
+% 加权能量变化率
+delta_E_weighted = (E_weighted_r - E_weighted) / E_weighted * 100
+
+"

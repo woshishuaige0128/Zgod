@@ -1,0 +1,6 @@
+{
+  "error": "RuntimeError: Step4 compute failed: a/matlab",
+  "finished_at": "2026-08-26T05:35:11.261653+08:00",
+  "schema_version": "BOARD21_STEP4_ORCHESTRATION_FAILURE_V1",
+  "status": "FAIL"
+}

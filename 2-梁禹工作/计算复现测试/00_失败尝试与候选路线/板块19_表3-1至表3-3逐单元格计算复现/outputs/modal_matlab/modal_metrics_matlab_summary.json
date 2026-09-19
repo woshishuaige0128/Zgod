@@ -1,0 +1,15 @@
+{
+  "full_model_first_two_frequency_hz": [
+    2.707425741915066,
+    9.328408686762609
+  ],
+  "full_model_relative_eigen_residual": 2.8077391419234187E-15,
+  "frequency_candidate_rows": 16,
+  "mac_candidate_rows": 48,
+  "table3_1_target_cells": 8,
+  "table3_1_rounded_matches": 4,
+  "table3_2_target_cells": 8,
+  "table3_2_rounded_matches": 7,
+  "maximum_reduced_eigen_residual": 1.7937522790845955E-14,
+  "status": "MATLAB_COMPUTATION_COMPLETE_PENDING_INDEPENDENT_CHECK"
+}
